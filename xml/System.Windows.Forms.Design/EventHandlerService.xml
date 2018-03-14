@@ -1,0 +1,174 @@
+<Type Name="EventHandlerService" FullName="System.Windows.Forms.Design.EventHandlerService">
+  <TypeSignature Language="C#" Value="public sealed class EventHandlerService" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EventHandlerService extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.EventHandlerService" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a systematic way to manage event handlers for the current document.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Developers may want to be able to write code in one place that handles events of a certain type.  
+  
+ Also, developers may need to globally change the behavior of the handlers for specific events or types of events, which may be distributed among designer components.  
+  
+ The designers for a typical project are many different objects so it can be useful to list and store reference to these events from a common place.  
+  
+ This service implements an "event stack" that contains the current set of event handlers. The stack may have a variety of different types of handlers on the stack.  
+  
+ For example, a designer might push, or add, a keyboard handler and a mouse handler onto the stack. When a designer requests an event handler, the service will find the topmost handler on the stack that matches the class you requested.  
+  
+ This way the service can be extended to any eventing scheme, and it also allows specific types of event handlers to be replaced. For example, you can replace mouse event handlers without affecting menu event handlers or keyboard event handlers.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EventHandlerService (System.Windows.Forms.Control focusWnd);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.Control focusWnd) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.EventHandlerService.#ctor(System.Windows.Forms.Control)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="focusWnd" Type="System.Windows.Forms.Control" />
+      </Parameters>
+      <Docs>
+        <param name="focusWnd">The <see cref="T:System.Windows.Forms.Control" /> which is being designed.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.EventHandlerService" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EventHandlerChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler EventHandlerChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler EventHandlerChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Design.EventHandlerService.EventHandlerChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Fires an OnEventHandlerChanged event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FocusWindow">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.Control FocusWindow { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.Control FocusWindow" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.EventHandlerService.FocusWindow" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Control</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the control to which event handlers are attached.</summary>
+        <value>The <see cref="T:System.Windows.Forms.Control" /> which was attached through the constructor.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHandler">
+      <MemberSignature Language="C#" Value="public object GetHandler (Type handlerType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetHandler(class System.Type handlerType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.EventHandlerService.GetHandler(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handlerType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="handlerType">The type of the handler to get.</param>
+        <summary>Gets the currently active event handler of the specified type.</summary>
+        <returns>An instance of the handler, or <see langword="null" /> if there is no handler of the requested type.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You should never cache this value because other components are free to change it. This call is fairly quick, however, especially for cases when you are always asking for the same type of handler.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PopHandler">
+      <MemberSignature Language="C#" Value="public void PopHandler (object handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PopHandler(object handler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.EventHandlerService.PopHandler(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handler" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="handler">The handler to remove from the stack.</param>
+        <summary>Pops the given handler off of the stack.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the handler is not the topmost component on the stack, this will pop all handlers up to and including handler.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PushHandler">
+      <MemberSignature Language="C#" Value="public void PushHandler (object handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PushHandler(object handler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.EventHandlerService.PushHandler(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handler" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="handler">The handler to add to the stack.</param>
+        <summary>Pushes a new event handler on the stack.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This handler will be used by all components that request a compatible handler type. If this handler does not support the requested type, the next handler on the stack will be used.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

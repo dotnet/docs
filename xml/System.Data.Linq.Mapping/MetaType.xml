@@ -1,0 +1,609 @@
+<Type Name="MetaType" FullName="System.Data.Linq.Mapping.MetaType">
+  <TypeSignature Language="C#" Value="public abstract class MetaType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit MetaType extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Linq.Mapping.MetaType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Linq</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the mapping of a domain object type to the columns of a database table.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected MetaType ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.MetaType.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Linq.Mapping.MetaType" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Associations">
+      <MemberSignature Language="C#" Value="public abstract System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Linq.Mapping.MetaAssociation&gt; Associations { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Data.Linq.Mapping.MetaAssociation&gt; Associations" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.MetaType.Associations" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Linq.Mapping.MetaAssociation&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an enumeration of all the associations.</summary>
+        <value>A collection of associations.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanInstantiate">
+      <MemberSignature Language="C#" Value="public abstract bool CanInstantiate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanInstantiate" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.MetaType.CanInstantiate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets whether the underlying type can be instantiated as the result of a query.</summary>
+        <value>
+          <see langword="true" /> if the underlying type can be instantiated as the result of a query; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataMembers">
+      <MemberSignature Language="C#" Value="public abstract System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Linq.Mapping.MetaDataMember&gt; DataMembers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Data.Linq.Mapping.MetaDataMember&gt; DataMembers" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.MetaType.DataMembers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Linq.Mapping.MetaDataMember&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an enumeration of all the data members (fields and properties).</summary>
+        <value>A collection of the data members.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DBGeneratedIdentityMember">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Linq.Mapping.MetaDataMember DBGeneratedIdentityMember { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Linq.Mapping.MetaDataMember DBGeneratedIdentityMember" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.MetaType.DBGeneratedIdentityMember" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Linq.Mapping.MetaDataMember</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the member that represents the auto-generated identity column.</summary>
+        <value>The member that represents the auto-generated identity column, or <see langword="null" /> if there is no auto-generated identity column.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DerivedTypes">
+      <MemberSignature Language="C#" Value="public abstract System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Linq.Mapping.MetaType&gt; DerivedTypes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Data.Linq.Mapping.MetaType&gt; DerivedTypes" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.MetaType.DerivedTypes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Linq.Mapping.MetaType&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an enumeration of the immediate derived types in an inheritance hierarchy.</summary>
+        <value>An enumeration of meta-types.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Discriminator">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Linq.Mapping.MetaDataMember Discriminator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Linq.Mapping.MetaDataMember Discriminator" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.MetaType.Discriminator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Linq.Mapping.MetaDataMember</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the member that represents the inheritance discriminator column.</summary>
+        <value>The member that represents the inheritance discriminator column, or <see langword="null" /> if there is none.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDataMember">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Linq.Mapping.MetaDataMember GetDataMember (System.Reflection.MemberInfo member);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Linq.Mapping.MetaDataMember GetDataMember(class System.Reflection.MemberInfo member) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.MetaType.GetDataMember(System.Reflection.MemberInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Linq.Mapping.MetaDataMember</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="member" Type="System.Reflection.MemberInfo" />
+      </Parameters>
+      <Docs>
+        <param name="member">The member for which the associated <see cref="T:System.Data.Linq.Mapping.MetaDataMember" /> is sought.</param>
+        <summary>Gets the <see cref="T:System.Data.Linq.Mapping.MetaDataMember" /> associated with the specified member.</summary>
+        <returns>The <see cref="T:System.Data.Linq.Mapping.MetaDataMember" /> if one is associated with the specified member; otherwise, <see langword="null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetInheritanceType">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Linq.Mapping.MetaType GetInheritanceType (Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Linq.Mapping.MetaType GetInheritanceType(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.MetaType.GetInheritanceType(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Linq.Mapping.MetaType</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="type">The subtype.</param>
+        <summary>Gets the <see cref="T:System.Data.Linq.Mapping.MetaType" /> for an inheritance subtype.</summary>
+        <returns>The <see cref="T:System.Data.Linq.Mapping.MetaType" /> for an inheritance subtype.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTypeForInheritanceCode">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Linq.Mapping.MetaType GetTypeForInheritanceCode (object code);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Linq.Mapping.MetaType GetTypeForInheritanceCode(object code) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.MetaType.GetTypeForInheritanceCode(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Linq.Mapping.MetaType</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="code" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="code">The inheritance code.</param>
+        <summary>Gets the meta-type associated with the specified inheritance code.</summary>
+        <returns>The meta-type associated with the specified inheritance code.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasAnyLoadMethod">
+      <MemberSignature Language="C#" Value="public abstract bool HasAnyLoadMethod { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasAnyLoadMethod" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.MetaType.HasAnyLoadMethod" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the current <see cref="T:System.Data.Linq.Mapping.MetaType" /> or any of its bases types has an <c>OnLoaded</c> method.</summary>
+        <value>
+          <see langword="true" /> if the meta-type or any base meta-type has an <c>OnLoaded</c> method; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasAnyValidateMethod">
+      <MemberSignature Language="C#" Value="public abstract bool HasAnyValidateMethod { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasAnyValidateMethod" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.MetaType.HasAnyValidateMethod" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Data.Linq.Mapping.MetaType" /> or any of its bases types has an <c>OnValidate</c> method.</summary>
+        <value>
+          <see langword="true" /> if the meta-type or any base meta-type has an <c>OnValidate</c> method; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasInheritance">
+      <MemberSignature Language="C#" Value="public abstract bool HasInheritance { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasInheritance" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.MetaType.HasInheritance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the type is part of a mapped inheritance hierarchy.</summary>
+        <value>
+          <see langword="true" /> if the type is part of a mapped inheritance hierarchy; otherwise <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasInheritanceCode">
+      <MemberSignature Language="C#" Value="public abstract bool HasInheritanceCode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasInheritanceCode" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.MetaType.HasInheritanceCode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether this type defines an inheritance code.</summary>
+        <value>
+          <see langword="true" /> if this type defines an inheritance code; otherwise <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasUpdateCheck">
+      <MemberSignature Language="C#" Value="public abstract bool HasUpdateCheck { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasUpdateCheck" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.MetaType.HasUpdateCheck" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the type has any persistent member that may require a test for optimistic concurrency conflicts.</summary>
+        <value>
+          <see langword="true" /> if the type has any persistent member with an <see cref="T:System.Data.Linq.Mapping.UpdateCheck" /> policy other than <see cref="F:System.Data.Linq.Mapping.UpdateCheck.Never" />; otherwise <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IdentityMembers">
+      <MemberSignature Language="C#" Value="public abstract System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Linq.Mapping.MetaDataMember&gt; IdentityMembers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Data.Linq.Mapping.MetaDataMember&gt; IdentityMembers" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.MetaType.IdentityMembers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Linq.Mapping.MetaDataMember&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an enumeration of all the data members that define the unique identity of the type.</summary>
+        <value>An enumeration of members that define the unique identity of the type.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InheritanceBase">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Linq.Mapping.MetaType InheritanceBase { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Linq.Mapping.MetaType InheritanceBase" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.MetaType.InheritanceBase" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Linq.Mapping.MetaType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the base meta-type in the inheritance hierarchy.</summary>
+        <value>The base meta-type for the current inheritance hierarchy.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InheritanceCode">
+      <MemberSignature Language="C#" Value="public abstract object InheritanceCode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object InheritanceCode" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.MetaType.InheritanceCode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether this type defines an inheritance code.</summary>
+        <value>
+          <see langword="true" /> if this type defines an inheritance code; otherwise <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InheritanceDefault">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Linq.Mapping.MetaType InheritanceDefault { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Linq.Mapping.MetaType InheritanceDefault" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.MetaType.InheritanceDefault" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Linq.Mapping.MetaType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether this type is used as the default of an inheritance hierarchy.</summary>
+        <value>The metadata for the default type in the inheritance mapping.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InheritanceRoot">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Linq.Mapping.MetaType InheritanceRoot { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Linq.Mapping.MetaType InheritanceRoot" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.MetaType.InheritanceRoot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Linq.Mapping.MetaType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the root type of the inheritance hierarchy.</summary>
+        <value>The root type.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InheritanceTypes">
+      <MemberSignature Language="C#" Value="public abstract System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Linq.Mapping.MetaType&gt; InheritanceTypes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Data.Linq.Mapping.MetaType&gt; InheritanceTypes" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.MetaType.InheritanceTypes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Linq.Mapping.MetaType&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of all types that are defined by an inheritance hierarchy.</summary>
+        <value>A collection of meta-types in the current inheritance hierarchy.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEntity">
+      <MemberSignature Language="C#" Value="public abstract bool IsEntity { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsEntity" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.MetaType.IsEntity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the <see cref="T:System.Data.Linq.Mapping.MetaType" /> is an entity type.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Data.Linq.Mapping.MetaType" /> is an entity type; otherwise <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsInheritanceDefault">
+      <MemberSignature Language="C#" Value="public abstract bool IsInheritanceDefault { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsInheritanceDefault" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.MetaType.IsInheritanceDefault" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether this type is used as the default of an inheritance hierarchy.</summary>
+        <value>
+          <see langword="true" /> if this type is used as the default of an inheritance hierarchy; otherwise <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Model">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Linq.Mapping.MetaModel Model { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Linq.Mapping.MetaModel Model" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.MetaType.Model" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Linq.Mapping.MetaModel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Data.Linq.Mapping.MetaModel" /> that contains this <see cref="T:System.Data.Linq.Mapping.MetaType" />.</summary>
+        <value>The containing meta-model.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public abstract string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.MetaType.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the <see cref="T:System.Data.Linq.Mapping.MetaType" />.</summary>
+        <value>The name of the current meta-type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This name is the same as the name of the common language runtime (CLR) type.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnLoadedMethod">
+      <MemberSignature Language="C#" Value="public abstract System.Reflection.MethodInfo OnLoadedMethod { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.MethodInfo OnLoadedMethod" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.MetaType.OnLoadedMethod" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.MethodInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets information about the <c>OnLoaded</c> method contained by this meta-type.</summary>
+        <value>A description of the <c>OnLoaded</c> method for this meta-type.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnValidateMethod">
+      <MemberSignature Language="C#" Value="public abstract System.Reflection.MethodInfo OnValidateMethod { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.MethodInfo OnValidateMethod" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.MetaType.OnValidateMethod" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.MethodInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets information about the <c>OnValidate</c> method contained by this meta-type.</summary>
+        <value>A description of the <c>OnValidate</c> method for this meta-type.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PersistentDataMembers">
+      <MemberSignature Language="C#" Value="public abstract System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Linq.Mapping.MetaDataMember&gt; PersistentDataMembers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Data.Linq.Mapping.MetaDataMember&gt; PersistentDataMembers" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.MetaType.PersistentDataMembers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Linq.Mapping.MetaDataMember&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of all the persistent data members.</summary>
+        <value>A collection of all the meta-data members in the current type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Persistent data members are those fields and properties that are mapped to database columns.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Table">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Linq.Mapping.MetaTable Table { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Linq.Mapping.MetaTable Table" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.MetaType.Table" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Linq.Mapping.MetaTable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Data.Linq.Mapping.MetaTable" /> that uses this <see cref="T:System.Data.Linq.Mapping.MetaType" /> for row definition.</summary>
+        <value>A meta-table that uses the current meta-type for its row definition.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public abstract Type Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type Type" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.MetaType.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the underlying common language runtime (CLR) type.</summary>
+        <value>The associated CLR type.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VersionMember">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Linq.Mapping.MetaDataMember VersionMember { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Linq.Mapping.MetaDataMember VersionMember" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.MetaType.VersionMember" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Linq.Mapping.MetaDataMember</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a row-version or timestamp column for this <see cref="T:System.Data.Linq.Mapping.MetaType" />.</summary>
+        <value>The meta-data member that represents the row-version or timestamp column for this meta-type, or <see langword="null" /> if there is none.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

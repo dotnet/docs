@@ -1,0 +1,80 @@
+<Type Name="MarkupExtensionBracketCharactersAttribute" FullName="System.Windows.Markup.MarkupExtensionBracketCharactersAttribute">
+  <TypeSignature Language="C#" Value="public sealed class MarkupExtensionBracketCharactersAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MarkupExtensionBracketCharactersAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Markup.MarkupExtensionBracketCharactersAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xaml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property, AllowMultiple=true, Inherited=false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Reports the bracket characters that a markup extension can return.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MarkupExtensionBracketCharactersAttribute (char openingBracket, char closingBracket);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(char openingBracket, char closingBracket) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.MarkupExtensionBracketCharactersAttribute.#ctor(System.Char,System.Char)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="openingBracket" Type="System.Char" />
+        <Parameter Name="closingBracket" Type="System.Char" />
+      </Parameters>
+      <Docs>
+        <param name="openingBracket">A <see cref="T:System.Char" /> that defines the opening bracket character.</param>
+        <param name="closingBracket">A <see cref="T:System.Char" /> that defines the closing bracket character.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.MarkupExtensionBracketCharactersAttribute" /> class using the provided characters.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClosingBracket">
+      <MemberSignature Language="C#" Value="public char ClosingBracket { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance char ClosingBracket" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Markup.MarkupExtensionBracketCharactersAttribute.ClosingBracket" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the character to be used as the closing delimiter in a <see cref="T:System.Windows.Markup.MarkupExtension" />.</summary>
+        <value>A <see cref="T:System.Char" /> representing the character.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpeningBracket">
+      <MemberSignature Language="C#" Value="public char OpeningBracket { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance char OpeningBracket" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Markup.MarkupExtensionBracketCharactersAttribute.OpeningBracket" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the character to be used as the opening delimiter in a <see cref="T:System.Windows.Markup.MarkupExtension" />.</summary>
+        <value>A <see cref="T:System.Char" /> representing the character.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,17 @@
+﻿<Window x:Class="CSharp.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="MainWindow" Height="664" Width="494" Loaded="MainWindow_Loaded"
+    >
+  <DockPanel>
+
+    <!--Address bar-->
+    <DockPanel DockPanel.Dock="Top">
+      <Button DockPanel.Dock="Right" Name="goButton" Click="goButton_Click">Go</Button>
+    </DockPanel>
+    
+    <!--Navigator-->
+    <Frame Name="browserFrame" NavigationUIVisibility="Hidden"></Frame>
+    
+  </DockPanel>
+</Window>

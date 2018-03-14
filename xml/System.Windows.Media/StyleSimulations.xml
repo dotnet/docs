@@ -1,0 +1,87 @@
+<Type Name="StyleSimulations" FullName="System.Windows.Media.StyleSimulations">
+  <TypeSignature Language="C#" Value="public enum StyleSimulations" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StyleSimulations extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.StyleSimulations" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines an enumerator class that describes the simulation style of a font.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BoldItalicSimulation">
+      <MemberSignature Language="C#" Value="BoldItalicSimulation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.StyleSimulations BoldItalicSimulation = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.StyleSimulations.BoldItalicSimulation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.StyleSimulations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bold and Italic style simulation.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BoldSimulation">
+      <MemberSignature Language="C#" Value="BoldSimulation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.StyleSimulations BoldSimulation = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.StyleSimulations.BoldSimulation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.StyleSimulations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bold style simulation.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ItalicSimulation">
+      <MemberSignature Language="C#" Value="ItalicSimulation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.StyleSimulations ItalicSimulation = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.StyleSimulations.ItalicSimulation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.StyleSimulations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Italic style simulation.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.StyleSimulations None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.StyleSimulations.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.StyleSimulations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No font style simulation.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

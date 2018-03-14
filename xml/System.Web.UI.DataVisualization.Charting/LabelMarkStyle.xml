@@ -1,0 +1,89 @@
+<Type Name="LabelMarkStyle" FullName="System.Web.UI.DataVisualization.Charting.LabelMarkStyle">
+  <TypeSignature Language="C#" Value="public enum LabelMarkStyle" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LabelMarkStyle extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.LabelMarkStyle" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.DataVisualization</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies a mark for custom labels.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.DataVisualization.Charting.LabelMarkStyle> enumeration represents mark(s) for custom labels that are displayed along the second axis label row. This row can only be generated from custom labels. This enumeration is used in conjunction with the <xref:System.Web.UI.DataVisualization.Charting.CustomLabel.LabelMark%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.CustomLabel> class.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Box">
+      <MemberSignature Language="C#" Value="Box" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.LabelMarkStyle Box = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LabelMarkStyle.Box" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.LabelMarkStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A box is drawn around the label.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LineSideMark">
+      <MemberSignature Language="C#" Value="LineSideMark" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.LabelMarkStyle LineSideMark = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LabelMarkStyle.LineSideMark" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.LabelMarkStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Custom labels use line and side marks.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.LabelMarkStyle None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LabelMarkStyle.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.LabelMarkStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No label marks are used.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SideMark">
+      <MemberSignature Language="C#" Value="SideMark" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.LabelMarkStyle SideMark = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LabelMarkStyle.SideMark" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.LabelMarkStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Custom labels use side marks.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

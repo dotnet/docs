@@ -1,0 +1,66 @@
+<Type Name="InstanceLockedExceptionAction" FullName="System.Activities.DurableInstancing.InstanceLockedExceptionAction">
+  <TypeSignature Language="C#" Value="public enum InstanceLockedExceptionAction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed InstanceLockedExceptionAction extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.DurableInstancing.InstanceLockedExceptionAction" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.DurableInstancing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Contains options that specify what action the SQL persistence provider should take when it receives an exception when trying to lock an instance.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AggressiveRetry">
+      <MemberSignature Language="C#" Value="AggressiveRetry" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.DurableInstancing.InstanceLockedExceptionAction AggressiveRetry = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.DurableInstancing.InstanceLockedExceptionAction.AggressiveRetry" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.DurableInstancing.InstanceLockedExceptionAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the persistence provider reattempts to lock an instance with an exponentially increasing delay between successive attempts. The persistence provider passes the <see cref="T:System.Runtime.Persistence.InstanceLockedException" /> to the caller at the end of the sequence (after retrying predefined number of times).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BasicRetry">
+      <MemberSignature Language="C#" Value="BasicRetry" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.DurableInstancing.InstanceLockedExceptionAction BasicRetry = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.DurableInstancing.InstanceLockedExceptionAction.BasicRetry" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.DurableInstancing.InstanceLockedExceptionAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the persistence provider reattempts to lock the instance with a linear retry interval. The persistence provider passes the <see cref="T:System.Runtime.Persistence.InstanceLockedException" /> to the caller at the end of the sequence (after retrying predefined number of times).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoRetry">
+      <MemberSignature Language="C#" Value="NoRetry" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.DurableInstancing.InstanceLockedExceptionAction NoRetry = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.DurableInstancing.InstanceLockedExceptionAction.NoRetry" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.DurableInstancing.InstanceLockedExceptionAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the persistence provider does not reattempt to lock an instance if the instance is already locked by another host.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

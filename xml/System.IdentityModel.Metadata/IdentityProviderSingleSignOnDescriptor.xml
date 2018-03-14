@@ -1,0 +1,89 @@
+<Type Name="IdentityProviderSingleSignOnDescriptor" FullName="System.IdentityModel.Metadata.IdentityProviderSingleSignOnDescriptor">
+  <TypeSignature Language="C#" Value="public class IdentityProviderSingleSignOnDescriptor : System.IdentityModel.Metadata.SingleSignOnDescriptor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IdentityProviderSingleSignOnDescriptor extends System.IdentityModel.Metadata.SingleSignOnDescriptor" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Metadata.IdentityProviderSingleSignOnDescriptor" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.IdentityModel.Metadata.SingleSignOnDescriptor</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>The identity provider single sign-on descriptor (IDPSSODescriptor) class.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IdentityProviderSingleSignOnDescriptor ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.IdentityProviderSingleSignOnDescriptor.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Metadata.IdentityProviderSingleSignOnDescriptor" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SingleSignOnServices">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;System.IdentityModel.Metadata.ProtocolEndpoint&gt; SingleSignOnServices { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class System.IdentityModel.Metadata.ProtocolEndpoint&gt; SingleSignOnServices" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.IdentityProviderSingleSignOnDescriptor.SingleSignOnServices" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.ICollection&lt;System.IdentityModel.Metadata.ProtocolEndpoint&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of <see cref="T:System.IdentityModel.Metadata.ProtocolEndpoint" /> representing single sign-on services.</summary>
+        <value>The collection of protocol endpoints that represent single sign-on services. The default is an empty collection.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportedAttributes">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;System.IdentityModel.Tokens.Saml2Attribute&gt; SupportedAttributes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class System.IdentityModel.Tokens.Saml2Attribute&gt; SupportedAttributes" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.IdentityProviderSingleSignOnDescriptor.SupportedAttributes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.ICollection&lt;System.IdentityModel.Tokens.Saml2Attribute&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the supported <see cref="T:Microsoft.IdentityModel.Tokens.Saml2Attribute" /> collection.</summary>
+        <value>The collection of supported attributes. The default is an empty collection.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WantAuthenticationRequestsSigned">
+      <MemberSignature Language="C#" Value="public bool WantAuthenticationRequestsSigned { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool WantAuthenticationRequestsSigned" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.IdentityProviderSingleSignOnDescriptor.WantAuthenticationRequestsSigned" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether authentication requests should be signed.</summary>
+        <value>
+          <see langword="true" /> if authentication requests should be signed; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

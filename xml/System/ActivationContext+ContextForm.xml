@@ -1,0 +1,60 @@
+<Type Name="ActivationContext+ContextForm" FullName="System.ActivationContext+ContextForm">
+  <TypeSignature Language="C#" Value="public enum ActivationContext.ContextForm" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed ActivationContext/ContextForm extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.ActivationContext.ContextForm" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Indicates the context for a manifest-activated application.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The values of this enumeration specify whether an application has been loaded into the ClickOnce store.  A manifest activated application that is not installed in the ClickOnce store is classified as Loose. An example of an application not in the store is a manifest-activated application executing in Visual Studio.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Loose">
+      <MemberSignature Language="C#" Value="Loose" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ActivationContext/ContextForm Loose = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.ActivationContext.ContextForm.Loose" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ActivationContext+ContextForm</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The application is not in the ClickOnce store.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StoreBounded">
+      <MemberSignature Language="C#" Value="StoreBounded" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ActivationContext/ContextForm StoreBounded = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.ActivationContext.ContextForm.StoreBounded" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ActivationContext+ContextForm</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The application is contained in the ClickOnce store.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

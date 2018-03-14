@@ -1,0 +1,140 @@
+﻿<Window x:Class="IEditableCollectionViewAddItemExample.AddItemWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:src="clr-namespace:IEditableCollectionViewAddItemExample"
+        Title="Add Library Item" Height="300" Width="300">
+  <!--<SnippetAddItemXaml>-->
+  <StackPanel Margin="10" Width="250">
+    <StackPanel.Resources>
+
+      <!--Add an event handler to select all text when
+          a TextBox gets focus.-->
+      <Style TargetType="TextBox">
+        <EventSetter Event="GotFocus" Handler="TextBoxFocus"/>
+      </Style>
+
+      <!--Create a Template for HeaderedContentControl so the header is
+          to the left of the content.-->
+      <Style TargetType="HeaderedContentControl">
+        <Setter Property="Margin" Value="2"/>
+        <Setter Property="Focusable" Value="False"/>
+        <Setter Property="Template">
+          <Setter.Value>
+            <ControlTemplate TargetType="HeaderedContentControl">
+              <DockPanel LastChildFill="False">
+                <ContentPresenter ContentSource="Header" DockPanel.Dock="Left" 
+                                  Focusable="False" VerticalAlignment="Center"/>
+                <ContentPresenter ContentSource="Content" Margin="5,0,0,0" 
+                                  DockPanel.Dock="Right" VerticalAlignment="Center"/>
+              </DockPanel>
+
+            </ControlTemplate>
+          </Setter.Value>
+        </Setter>
+      </Style>
+
+      <Style TargetType="Button">
+        <Setter Property="Width" Value="100"/>
+        <Setter Property="Margin" Value="10,15,15,15"/>
+
+      </Style>
+
+      <!--The DataTemplate that is used when the user 
+          enters a new LibraryItem.-->
+      <DataTemplate DataType="{x:Type src:LibraryItem}">
+        <StackPanel>
+          <HeaderedContentControl Header="Title">
+            <TextBox Width="150" Text="{Binding Path=Title, Mode=TwoWay}"/>
+          </HeaderedContentControl>
+          <HeaderedContentControl Header="Due Date">
+            <TextBox Width="150" Text="{Binding Path=DueDate, StringFormat=d, Mode=TwoWay}">
+
+            </TextBox>
+          </HeaderedContentControl>
+          <HeaderedContentControl Header="Call Number">
+            <TextBox Width="150" Text="{Binding Path=CallNumber, Mode=TwoWay}"/>
+          </HeaderedContentControl>
+        </StackPanel>
+      </DataTemplate>
+
+      <!--The DataTemplate that is used when the user 
+          enters a new Book.-->
+      <DataTemplate DataType="{x:Type src:Book}">
+        <StackPanel>
+          <HeaderedContentControl Header="Title">
+            <TextBox Width="150" Text="{Binding Path=Title, Mode=TwoWay}"/>
+          </HeaderedContentControl>
+          <HeaderedContentControl Header="Author">
+            <TextBox Width="150" Text="{Binding Path=Author, Mode=TwoWay}"/>
+          </HeaderedContentControl>
+          <HeaderedContentControl Header="Genre">
+            <TextBox Width="150" Text="{Binding Path=Genre, Mode=TwoWay}"/>
+          </HeaderedContentControl>
+          <HeaderedContentControl Header="Due Date">
+            <TextBox Width="150" Text="{Binding Path=DueDate, StringFormat=d, Mode=TwoWay}"/>
+          </HeaderedContentControl>
+          <HeaderedContentControl Header="Call Number">
+            <TextBox Width="150" Text="{Binding Path=CallNumber, Mode=TwoWay}"/>
+          </HeaderedContentControl>
+        </StackPanel>
+      </DataTemplate>
+
+      <!--The DataTemplate that is used when the user 
+          enters a new MusicCD.-->
+      <DataTemplate DataType="{x:Type src:MusicCD}">
+        <StackPanel>
+          <HeaderedContentControl Header="Title">
+            <TextBox Width="150" Text="{Binding Path=Title, Mode=TwoWay}"/>
+          </HeaderedContentControl>
+          <HeaderedContentControl Header="Artist">
+            <TextBox Width="150" Text="{Binding Path=Artist, Mode=TwoWay}"/>
+          </HeaderedContentControl>
+          <HeaderedContentControl Header="Tracks">
+            <TextBox Width="150" Text="{Binding Path=NumberOfTracks, Mode=TwoWay}"/>
+          </HeaderedContentControl>
+          <HeaderedContentControl Header="Due Date">
+            <TextBox Width="150" Text="{Binding Path=DueDate, StringFormat=d, Mode=TwoWay}"/>
+          </HeaderedContentControl>
+          <HeaderedContentControl Header="Call Number">
+            <TextBox Width="150" Text="{Binding Path=CallNumber, Mode=TwoWay}"/>
+          </HeaderedContentControl>
+        </StackPanel>
+      </DataTemplate>
+
+      <!--The DataTemplate that is used when the user 
+          enters a new MovieDVD.-->
+      <DataTemplate DataType="{x:Type src:MovieDVD}">
+        <StackPanel>
+          <HeaderedContentControl Header="Title">
+            <TextBox Width="150" Text="{Binding Path=Title, Mode=TwoWay}"/>
+          </HeaderedContentControl>
+          <HeaderedContentControl Header="Director">
+            <TextBox Width="150" Text="{Binding Path=Director, Mode=TwoWay}"/>
+          </HeaderedContentControl>
+          <HeaderedContentControl Header="Length">
+            <TextBox Width="150" Text="{Binding Path=Length, Mode=TwoWay}"/>
+          </HeaderedContentControl>
+          <HeaderedContentControl Header="Genre">
+            <TextBox Width="150" Text="{Binding Path=Genre, Mode=TwoWay}"/>
+          </HeaderedContentControl>
+          <HeaderedContentControl Header="Due Date">
+            <TextBox Width="150" Text="{Binding Path=DueDate, StringFormat=d, Mode=TwoWay}"/>
+          </HeaderedContentControl>
+          <HeaderedContentControl Header="Call Number">
+            <TextBox Width="150" Text="{Binding Path=CallNumber, Mode=TwoWay}"/>
+          </HeaderedContentControl>
+        </StackPanel>
+      </DataTemplate>
+    </StackPanel.Resources>
+
+    <!--One of the DataTemplates that defined above 
+        is used by this ContentControl when the window is created.-->
+    <ContentControl Content="{Binding}" />
+
+    <StackPanel Orientation="Horizontal">
+      <Button IsDefault="True" Click="Submit_Click">_Submit</Button>
+      <Button IsCancel="True">_Cancel</Button>
+    </StackPanel>
+  </StackPanel>
+  <!--</SnippetAddItemXaml>-->
+</Window>

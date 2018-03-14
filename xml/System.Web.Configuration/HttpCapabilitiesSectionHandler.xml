@@ -1,0 +1,86 @@
+<Type Name="HttpCapabilitiesSectionHandler" FullName="System.Web.Configuration.HttpCapabilitiesSectionHandler">
+  <TypeSignature Language="C#" Value="public class HttpCapabilitiesSectionHandler : System.Configuration.IConfigurationSectionHandler" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HttpCapabilitiesSectionHandler extends System.Object implements class System.Configuration.IConfigurationSectionHandler" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Configuration.HttpCapabilitiesSectionHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Configuration.IConfigurationSectionHandler</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Assists in reading in the <see langword="&lt;browserCaps&gt;" /> section of a configuration file and creating an instance of the <see cref="T:System.Web.HttpBrowserCapabilities" /> class that contains the capabilities information for the client browser.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.HttpCapabilitiesSectionHandler> class and the corresponding `<browserCaps>` configuration section have been deprecated in the .NET Framework version 2.0. The preferred method for managing browser capabilities is through browser definition files that are compiled for use by the <xref:System.Web.Configuration.BrowserCapabilitiesFactory> class. The goal of both configuration methodologies is to generate an instance of the <xref:System.Web.HttpBrowserCapabilities> class that can be accessed from the <xref:System.Web.HttpRequest.Browser%2A> property of the <xref:System.Web.HttpRequest> class.  
+  
+ Using the browser definition files to store browser capabilities affords advantages over the alternative. It offers improved performance because the browser definition information is parsed from the XML configuration file and compiled into a class ahead of time. The browser definition files are also easier to maintain:  
+  
+-   The definitions are hierarchical, and thus rely less on regular expressions to determine the browser capabilities.  
+  
+-   The definitions can be organized in multiple files, making them easier to manage.  
+  
+-   The definitions can be defined at any level, either at the Machine.config level or a specific application level. This eliminates the need to copy the entire set of definitions for the purpose of overriding the capabilities for a specific browser.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HttpCapabilitiesSectionHandler ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.HttpCapabilitiesSectionHandler.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.HttpCapabilitiesSectionHandler" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public object Create (object parent, object configurationContext, System.Xml.XmlNode section);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Create(object parent, object configurationContext, class System.Xml.XmlNode section) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.HttpCapabilitiesSectionHandler.Create(System.Object,System.Object,System.Xml.XmlNode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parent" Type="System.Object" />
+        <Parameter Name="configurationContext" Type="System.Object" />
+        <Parameter Name="section" Type="System.Xml.XmlNode" />
+      </Parameters>
+      <Docs>
+        <param name="parent">The parent configuration node.</param>
+        <param name="configurationContext">The configuration context of the current configuration file.</param>
+        <param name="section">The section of the configuration file that contains the information.</param>
+        <summary>Creates an instance of the <see cref="T:System.Web.HttpBrowserCapabilities" /> class that contains the capabilities information for the client browser.</summary>
+        <returns>An instance of <see cref="T:System.Web.HttpBrowserCapabilities" /> that contains the capabilities information for the client browser.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class derives its browser definition data from the `<browserCaps>` configuration section. This section is deprecated in the .NET Framework version 2.0.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

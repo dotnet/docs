@@ -1,0 +1,20 @@
+﻿<!--<SnippetMainWindowSetWindowsXAML>-->
+<Window x:Class="CSharp.MainWindow"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Title="CSharp" Height="300" Width="300" Activated="MainWindow_Activated"
+    >
+  <StackPanel>
+    <Menu>
+      <MenuItem Header="_File">
+        <MenuItem Name="newWindowMenuItem" Click="newWindowMenuItem_Click" Header="_New Window"></MenuItem>
+        <Separator></Separator>
+        <MenuItem Name="exitMenuItem" Click="exitMenuItem_Click" Header="E_xit"></MenuItem>
+      </MenuItem>
+      <MenuItem Name="windowMenuItem" Header="_Window">
+      </MenuItem>
+    </Menu>
+    <Canvas></Canvas>
+  </StackPanel>
+</Window>
+<!--</SnippetMainWindowSetWindowsXAML>-->

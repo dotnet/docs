@@ -1,0 +1,38 @@
+<Type Name="IPreviewCommandSource" FullName="Microsoft.Windows.Input.IPreviewCommandSource">
+  <TypeSignature Language="C#" Value="public interface IPreviewCommandSource : System.Windows.Input.ICommandSource" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPreviewCommandSource implements class System.Windows.Input.ICommandSource" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Windows.Input.IPreviewCommandSource" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Windows.Input.ICommandSource</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Defines an object that knows how to preview a command.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="PreviewCommandParameter">
+      <MemberSignature Language="C#" Value="public object PreviewCommandParameter { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object PreviewCommandParameter" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Windows.Input.IPreviewCommandSource.PreviewCommandParameter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents a user defined data value that can be passed to the command when it is previewed.</summary>
+        <value>The command specific data.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

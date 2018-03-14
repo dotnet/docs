@@ -1,0 +1,87 @@
+<Type Name="ClientSettings" FullName="System.Windows.Automation.ClientSettings">
+  <TypeSignature Language="C#" Value="public static class ClientSettings" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ClientSettings extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.ClientSettings" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationClient</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains methods that make client-side providers available to the client.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="RegisterClientSideProviderAssembly">
+      <MemberSignature Language="C#" Value="public static void RegisterClientSideProviderAssembly (System.Reflection.AssemblyName assemblyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterClientSideProviderAssembly(class System.Reflection.AssemblyName assemblyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.ClientSettings.RegisterClientSideProviderAssembly(System.Reflection.AssemblyName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assemblyName" Type="System.Reflection.AssemblyName" />
+      </Parameters>
+      <Docs>
+        <param name="assemblyName">Name of the assembly.</param>
+        <summary>Registers an assembly that contains client-side providers.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called on startup by UI Automation clients that use client-side UI Automation providers loaded from an assembly. Applications that use providers implemented in their own assembly should call <xref:System.Windows.Automation.ClientSettings.RegisterClientSideProviders%2A>.  
+  
+   
+  
+## Examples  
+ For example code, see [Register a Client-Side Provider Assembly](~/docs/framework/ui-automation/register-a-client-side-provider-assembly.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Windows.Automation.ProxyAssemblyNotLoadedException">The assembly could not be loaded.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterClientSideProviders">
+      <MemberSignature Language="C#" Value="public static void RegisterClientSideProviders (System.Windows.Automation.ClientSideProviderDescription[] clientSideProviderDescription);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterClientSideProviders(valuetype System.Windows.Automation.ClientSideProviderDescription[] clientSideProviderDescription) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.ClientSettings.RegisterClientSideProviders(System.Windows.Automation.ClientSideProviderDescription[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="clientSideProviderDescription" Type="System.Windows.Automation.ClientSideProviderDescription[]" />
+      </Parameters>
+      <Docs>
+        <param name="clientSideProviderDescription">An array of provider descriptions.</param>
+        <summary>Registers client-side providers.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called on startup by clients that implement their own client-side providers. Clients that use providers from a separate assembly  must call <xref:System.Windows.Automation.ClientSettings.RegisterClientSideProviderAssembly%2A>.  
+  
+   
+  
+## Examples  
+ For example code, see [Implement UI Automation Providers in a Client Application](~/docs/framework/ui-automation/implement-ui-automation-providers-in-a-client-application.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Windows.Automation.ProxyAssemblyNotLoadedException">The assembly could not be loaded.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

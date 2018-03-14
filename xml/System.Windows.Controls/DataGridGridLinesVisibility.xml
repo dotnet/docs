@@ -1,0 +1,91 @@
+<Type Name="DataGridGridLinesVisibility" FullName="System.Windows.Controls.DataGridGridLinesVisibility">
+  <TypeSignature Language="C#" Value="public enum DataGridGridLinesVisibility" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridGridLinesVisibility extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DataGridGridLinesVisibility" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Defines constants that specify the visibility of the grid lines in a <see cref="T:System.Windows.Controls.DataGrid" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by the <xref:System.Windows.Controls.DataGrid.GridLinesVisibility%2A> property.  
+  
+ The style of the grid lines is determined by the <xref:System.Windows.Controls.DataGrid.VerticalGridLinesBrush%2A> and <xref:System.Windows.Controls.DataGrid.HorizontalGridLinesBrush%2A> properties.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="All">
+      <MemberSignature Language="C#" Value="All" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.DataGridGridLinesVisibility All = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridGridLinesVisibility.All" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.DataGridGridLinesVisibility</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Both horizontal and vertical grid lines are visible.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Horizontal">
+      <MemberSignature Language="C#" Value="Horizontal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.DataGridGridLinesVisibility Horizontal = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridGridLinesVisibility.Horizontal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.DataGridGridLinesVisibility</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Only horizontal grid lines are visible.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.DataGridGridLinesVisibility None = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridGridLinesVisibility.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.DataGridGridLinesVisibility</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No grid lines are visible.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Vertical">
+      <MemberSignature Language="C#" Value="Vertical" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.DataGridGridLinesVisibility Vertical = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridGridLinesVisibility.Vertical" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.DataGridGridLinesVisibility</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Only vertical grid lines are visible.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

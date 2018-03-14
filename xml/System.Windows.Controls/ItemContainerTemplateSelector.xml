@@ -1,0 +1,58 @@
+<Type Name="ItemContainerTemplateSelector" FullName="System.Windows.Controls.ItemContainerTemplateSelector">
+  <TypeSignature Language="C#" Value="public abstract class ItemContainerTemplateSelector" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ItemContainerTemplateSelector extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ItemContainerTemplateSelector" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Enables you to select an <see cref="T:System.Windows.Controls.ItemContainerTemplate" /> for each item within an <see cref="T:System.Windows.Controls.ItemsControl" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ItemContainerTemplateSelector ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemContainerTemplateSelector.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.ItemContainerTemplateSelector" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectTemplate">
+      <MemberSignature Language="C#" Value="public virtual System.Windows.DataTemplate SelectTemplate (object item, System.Windows.Controls.ItemsControl parentItemsControl);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.DataTemplate SelectTemplate(object item, class System.Windows.Controls.ItemsControl parentItemsControl) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemContainerTemplateSelector.SelectTemplate(System.Object,System.Windows.Controls.ItemsControl)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DataTemplate</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Object" />
+        <Parameter Name="parentItemsControl" Type="System.Windows.Controls.ItemsControl" />
+      </Parameters>
+      <Docs>
+        <param name="item">The object for which to select the template.</param>
+        <param name="parentItemsControl">The container for the items.</param>
+        <summary>When overridden in a derived class, returns an <see cref="T:System.Windows.Controls.ItemContainerTemplate" /> based on custom logic.</summary>
+        <returns>The template. The default implementation returns <see langword="null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

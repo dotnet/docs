@@ -1,0 +1,111 @@
+<Type Name="IRawElementProviderAdviseEvents" FullName="System.Windows.Automation.Provider.IRawElementProviderAdviseEvents">
+  <TypeSignature Language="C#" Value="public interface IRawElementProviderAdviseEvents : System.Windows.Automation.Provider.IRawElementProviderSimple" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRawElementProviderAdviseEvents implements class System.Windows.Automation.Provider.IRawElementProviderSimple" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.IRawElementProviderAdviseEvents" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationProvider</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Windows.Automation.Provider.IRawElementProviderSimple</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("a407b27b-0f6d-4427-9292-473c7bf93258")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Exposes methods that are called to notify the root element of a fragment when a UI Automation client application begins or ends listening for events.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AdviseEventAdded">
+      <MemberSignature Language="C#" Value="public void AdviseEventAdded (int eventId, int[] properties);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AdviseEventAdded(int32 eventId, int32[] properties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.IRawElementProviderAdviseEvents.AdviseEventAdded(System.Int32,System.Int32[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventId" Type="System.Int32" />
+        <Parameter Name="properties" Type="System.Int32[]" />
+      </Parameters>
+      <Docs>
+        <param name="eventId">The identifier of the event being added.</param>
+        <param name="properties">The identifiers of the properties being added, or <see langword="null" /> if the event listener being added is not listening for property events.</param>
+        <summary>Notifies the UI Automation provider when a UI Automation client begins listening for a specific event, including a property-changed event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method enables the provider to reduce overhead by raising only events that are being listened for.  
+  
+ The `eventId` can be compared with the <xref:System.Windows.Automation.AutomationIdentifier.Id%2A> of an <xref:System.Windows.Automation.AutomationEvent> such as <xref:System.Windows.Automation.WindowPatternIdentifiers.WindowClosedEvent>. You can also obtain the <xref:System.Windows.Automation.AutomationEvent> by using <xref:System.Windows.Automation.AutomationEvent.LookupById%2A>.  
+  
+   
+  
+## Examples  
+ The following example adds to a list of property changes that have been subscribed to.  
+  
+ [!code-csharp[UIAFragmentProvider_snip#124](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAFragmentProvider_snip/CSharp/ListFragment.cs#124)]
+ [!code-vb[UIAFragmentProvider_snip#124](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAFragmentProvider_snip/VisualBasic/ListFragment.vb#124)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AdviseEventRemoved">
+      <MemberSignature Language="C#" Value="public void AdviseEventRemoved (int eventId, int[] properties);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AdviseEventRemoved(int32 eventId, int32[] properties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.IRawElementProviderAdviseEvents.AdviseEventRemoved(System.Int32,System.Int32[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventId" Type="System.Int32" />
+        <Parameter Name="properties" Type="System.Int32[]" />
+      </Parameters>
+      <Docs>
+        <param name="eventId">The identifier of the event being removed</param>
+        <param name="properties">The identifiers of the properties being removed, or <see langword="null" /> if the event listener being removed is not listening for property events.</param>
+        <summary>Notifies the UI Automation provider when a UI Automation client stops listening for a specific event, including a property-changed event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method enables the UI Automation provider to reduce overhead by not raising events that are no longer being listened for.  
+  
+ The `eventId` can be compared with the <xref:System.Windows.Automation.AutomationIdentifier.Id%2A> of an <xref:System.Windows.Automation.AutomationEvent> such as <xref:System.Windows.Automation.WindowPatternIdentifiers.WindowClosedEvent>. You can also obtain the <xref:System.Windows.Automation.AutomationEvent> by using <xref:System.Windows.Automation.AutomationEvent.LookupById%2A>.  
+  
+   
+  
+## Examples  
+ The following example removes property changes from a list of those that have been subscribed to.  
+  
+ [!code-csharp[UIAFragmentProvider_snip#125](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAFragmentProvider_snip/CSharp/ListFragment.cs#125)]
+ [!code-vb[UIAFragmentProvider_snip#125](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAFragmentProvider_snip/VisualBasic/ListFragment.vb#125)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

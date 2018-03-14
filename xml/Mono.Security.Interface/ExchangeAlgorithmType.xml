@@ -1,0 +1,82 @@
+<Type Name="ExchangeAlgorithmType" FullName="Mono.Security.Interface.ExchangeAlgorithmType">
+  <TypeSignature Language="C#" Value="public enum ExchangeAlgorithmType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ExchangeAlgorithmType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Mono.Security.Interface.ExchangeAlgorithmType" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Dhe">
+      <MemberSignature Language="C#" Value="Dhe" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.ExchangeAlgorithmType Dhe = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.ExchangeAlgorithmType.Dhe" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.ExchangeAlgorithmType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EcDhe">
+      <MemberSignature Language="C#" Value="EcDhe" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.ExchangeAlgorithmType EcDhe = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.ExchangeAlgorithmType.EcDhe" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.ExchangeAlgorithmType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.ExchangeAlgorithmType None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.ExchangeAlgorithmType.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.ExchangeAlgorithmType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Rsa">
+      <MemberSignature Language="C#" Value="Rsa" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.ExchangeAlgorithmType Rsa = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.ExchangeAlgorithmType.Rsa" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.ExchangeAlgorithmType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

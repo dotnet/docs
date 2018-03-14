@@ -1,0 +1,603 @@
+<Type Name="SignatureVerificationResult" FullName="System.Security.Cryptography.SignatureVerificationResult">
+  <TypeSignature Language="C#" Value="public enum SignatureVerificationResult" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SignatureVerificationResult extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.SignatureVerificationResult" />
+  <AssemblyInfo>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies most of the result codes for signature verification.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A successful verification returns the Valid result.  
+  
+ HRESULT values are generally returned by the unmanaged Microsoft Cryptographic API (CAPI); the other values are set by managed verification. This enumeration is not comprehensive of all possible HRESULT values and is subject to change.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AssemblyIdentityMismatch">
+      <MemberSignature Language="C#" Value="AssemblyIdentityMismatch" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.SignatureVerificationResult AssemblyIdentityMismatch = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.AssemblyIdentityMismatch" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The identity of the assembly specified in the /asm:assembly/asm:assemblyIdentity node of the manifest does not match the identity of the assembly in the Authenticode signature in the /asm:assembly/ds:signature/ds:KeyInfo/msrel:RelData/r:license/r:grant/as:ManifestInformation/as:assemblyIdentity node.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BadDigest">
+      <MemberSignature Language="C#" Value="BadDigest" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.SignatureVerificationResult BadDigest = int32(-2146869232)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.BadDigest" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The digital signature of the object did not verify.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BadSignatureFormat">
+      <MemberSignature Language="C#" Value="BadSignatureFormat" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.SignatureVerificationResult BadSignatureFormat = int32(-2146762749)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.BadSignatureFormat" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The signature format is invalid.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BasicConstraintsNotObserved">
+      <MemberSignature Language="C#" Value="BasicConstraintsNotObserved" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.SignatureVerificationResult BasicConstraintsNotObserved = int32(-2146869223)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.BasicConstraintsNotObserved" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The basic constraint extension of a certificate has not been observed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CertificateExpired">
+      <MemberSignature Language="C#" Value="CertificateExpired" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.SignatureVerificationResult CertificateExpired = int32(-2146762495)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.CertificateExpired" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The certificate has expired.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CertificateExplicitlyDistrusted">
+      <MemberSignature Language="C#" Value="CertificateExplicitlyDistrusted" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.SignatureVerificationResult CertificateExplicitlyDistrusted = int32(-2146762479)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.CertificateExplicitlyDistrusted" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The certificate was explicitly marked as not trusted by the user.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CertificateMalformed">
+      <MemberSignature Language="C#" Value="CertificateMalformed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.SignatureVerificationResult CertificateMalformed = int32(-2146762488)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.CertificateMalformed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The certificate is missing or has an empty value for an important field, such as a subject or issuer name.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CertificateNotExplicitlyTrusted">
+      <MemberSignature Language="C#" Value="CertificateNotExplicitlyTrusted" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.SignatureVerificationResult CertificateNotExplicitlyTrusted = int32(-2146762748)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.CertificateNotExplicitlyTrusted" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The certificate is not trusted explicitly.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CertificateRevoked">
+      <MemberSignature Language="C#" Value="CertificateRevoked" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.SignatureVerificationResult CertificateRevoked = int32(-2146762484)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.CertificateRevoked" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The certificate has been revoked.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CertificateUsageNotAllowed">
+      <MemberSignature Language="C#" Value="CertificateUsageNotAllowed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.SignatureVerificationResult CertificateUsageNotAllowed = int32(-2146762490)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.CertificateUsageNotAllowed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The certificate cannot be used for signing and verification.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainingSignatureInvalid">
+      <MemberSignature Language="C#" Value="ContainingSignatureInvalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.SignatureVerificationResult ContainingSignatureInvalid = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.ContainingSignatureInvalid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The strong name signature does not verify in the <see cref="T:System.Security.Cryptography.X509Certificates.AuthenticodeSignatureInformation" /> object. Because the strong name signature wraps the Authenticode signature, someone could replace the Authenticode signature with a signature of their choosing. To prevent this, this error code is returned if the strong name does not verify because substituting a part of the strong name signature will invalidate it.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CouldNotBuildChain">
+      <MemberSignature Language="C#" Value="CouldNotBuildChain" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.SignatureVerificationResult CouldNotBuildChain = int32(-2146762486)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.CouldNotBuildChain" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The chain could not be built.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GenericTrustFailure">
+      <MemberSignature Language="C#" Value="GenericTrustFailure" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.SignatureVerificationResult GenericTrustFailure = int32(-2146762485)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.GenericTrustFailure" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>There is a general trust failure with the certificate.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidCertificateName">
+      <MemberSignature Language="C#" Value="InvalidCertificateName" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.SignatureVerificationResult InvalidCertificateName = int32(-2146762476)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.InvalidCertificateName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The certificate has an invalid name. The name is either not included in the permitted list or is explicitly excluded.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidCertificatePolicy">
+      <MemberSignature Language="C#" Value="InvalidCertificatePolicy" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.SignatureVerificationResult InvalidCertificatePolicy = int32(-2146762477)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.InvalidCertificatePolicy" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The certificate has an invalid policy.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidCertificateRole">
+      <MemberSignature Language="C#" Value="InvalidCertificateRole" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.SignatureVerificationResult InvalidCertificateRole = int32(-2146762493)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.InvalidCertificateRole" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The certificate has an invalid role.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidCertificateSignature">
+      <MemberSignature Language="C#" Value="InvalidCertificateSignature" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.SignatureVerificationResult InvalidCertificateSignature = int32(-2146869244)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.InvalidCertificateSignature" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The signature of the certificate cannot be verified.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidCertificateUsage">
+      <MemberSignature Language="C#" Value="InvalidCertificateUsage" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.SignatureVerificationResult InvalidCertificateUsage = int32(-2146762480)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.InvalidCertificateUsage" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The certificate has an invalid usage.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidCountersignature">
+      <MemberSignature Language="C#" Value="InvalidCountersignature" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.SignatureVerificationResult InvalidCountersignature = int32(-2146869245)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.InvalidCountersignature" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>One of the counter signatures is invalid.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidSignerCertificate">
+      <MemberSignature Language="C#" Value="InvalidSignerCertificate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.SignatureVerificationResult InvalidSignerCertificate = int32(-2146869246)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.InvalidSignerCertificate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The certificate for the signer of the message is invalid or not found.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidTimePeriodNesting">
+      <MemberSignature Language="C#" Value="InvalidTimePeriodNesting" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.SignatureVerificationResult InvalidTimePeriodNesting = int32(-2146762494)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.InvalidTimePeriodNesting" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A certificate was issued after the issuing certificate has expired.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidTimestamp">
+      <MemberSignature Language="C#" Value="InvalidTimestamp" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.SignatureVerificationResult InvalidTimestamp = int32(-2146869243)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.InvalidTimestamp" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The time stamp signature or certificate could not be verified or is malformed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IssuerChainingError">
+      <MemberSignature Language="C#" Value="IssuerChainingError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.SignatureVerificationResult IssuerChainingError = int32(-2146762489)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.IssuerChainingError" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A parent of a given certificate did not issue that child certificate.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MissingSignature">
+      <MemberSignature Language="C#" Value="MissingSignature" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.SignatureVerificationResult MissingSignature = int32(-2146762496)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.MissingSignature" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The signature is missing.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PathLengthConstraintViolated">
+      <MemberSignature Language="C#" Value="PathLengthConstraintViolated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.SignatureVerificationResult PathLengthConstraintViolated = int32(-2146762492)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.PathLengthConstraintViolated" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A path length constraint in the certification chain has been violated.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PublicKeyTokenMismatch">
+      <MemberSignature Language="C#" Value="PublicKeyTokenMismatch" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.SignatureVerificationResult PublicKeyTokenMismatch = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.PublicKeyTokenMismatch" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The public key token from the manifest identity in the /asm:assembly/asm:AssemblyIdentity node does not match the public key token of the key that is used to sign the manifest.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PublisherMismatch">
+      <MemberSignature Language="C#" Value="PublisherMismatch" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.SignatureVerificationResult PublisherMismatch = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.PublisherMismatch" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The publisher name from /asm:assembly/asmv2:publisherIdentity does not match the subject name of the signing certificate, or the issuer key hash from the same publisherIdentity node does not match the key hash of the signing certificate.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RevocationCheckFailure">
+      <MemberSignature Language="C#" Value="RevocationCheckFailure" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.SignatureVerificationResult RevocationCheckFailure = int32(-2146762482)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.RevocationCheckFailure" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The revocation check failed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SystemError">
+      <MemberSignature Language="C#" Value="SystemError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.SignatureVerificationResult SystemError = int32(-2146869247)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.SystemError" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-level error occurred while verifying trust.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnknownCriticalExtension">
+      <MemberSignature Language="C#" Value="UnknownCriticalExtension" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.SignatureVerificationResult UnknownCriticalExtension = int32(-2146762491)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.UnknownCriticalExtension" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A certificate contains an unknown extension that is marked critical.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnknownTrustProvider">
+      <MemberSignature Language="C#" Value="UnknownTrustProvider" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.SignatureVerificationResult UnknownTrustProvider = int32(-2146762751)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.UnknownTrustProvider" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The certificate has an unknown trust provider.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnknownVerificationAction">
+      <MemberSignature Language="C#" Value="UnknownVerificationAction" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.SignatureVerificationResult UnknownVerificationAction = int32(-2146762750)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.UnknownVerificationAction" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The certificate has an unknown verification action.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UntrustedCertificationAuthority">
+      <MemberSignature Language="C#" Value="UntrustedCertificationAuthority" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.SignatureVerificationResult UntrustedCertificationAuthority = int32(-2146762478)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.UntrustedCertificationAuthority" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The certification chain processed correctly, but one of the CA certificates is not trusted by the policy provider.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UntrustedRootCertificate">
+      <MemberSignature Language="C#" Value="UntrustedRootCertificate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.SignatureVerificationResult UntrustedRootCertificate = int32(-2146762487)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.UntrustedRootCertificate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The root certificate is not trusted.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UntrustedTestRootCertificate">
+      <MemberSignature Language="C#" Value="UntrustedTestRootCertificate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.SignatureVerificationResult UntrustedTestRootCertificate = int32(-2146762483)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.UntrustedTestRootCertificate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The test root certificate is not trusted.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Valid">
+      <MemberSignature Language="C#" Value="Valid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.SignatureVerificationResult Valid = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SignatureVerificationResult.Valid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.SignatureVerificationResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The certificate verification result is valid.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

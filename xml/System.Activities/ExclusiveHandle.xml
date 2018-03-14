@@ -1,0 +1,136 @@
+<Type Name="ExclusiveHandle" FullName="System.Activities.ExclusiveHandle">
+  <TypeSignature Language="C#" Value="public class ExclusiveHandle : System.Activities.Handle" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ExclusiveHandle extends System.Activities.Handle" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.ExclusiveHandle" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Activities.Handle</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Adds supplementary information to a bookmark that enables it to access a subset of its scope handles, excluding handles that are not required.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ExclusiveHandle ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.ExclusiveHandle.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.ExclusiveHandle" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnInitialize">
+      <MemberSignature Language="C#" Value="protected override void OnInitialize (System.Activities.HandleInitializationContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnInitialize(class System.Activities.HandleInitializationContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.ExclusiveHandle.OnInitialize(System.Activities.HandleInitializationContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Activities.HandleInitializationContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">The environment in which the handle is created.</param>
+        <summary>Creates a list of default <see cref="T:System.Activities.BookmarkScopeHandle" /> objects from handle variables in the specified handle initialization context.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterBookmarkScope">
+      <MemberSignature Language="C#" Value="public void RegisterBookmarkScope (System.Activities.NativeActivityContext context, System.Activities.BookmarkScopeHandle bookmarkScopeHandle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterBookmarkScope(class System.Activities.NativeActivityContext context, class System.Activities.BookmarkScopeHandle bookmarkScopeHandle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.ExclusiveHandle.RegisterBookmarkScope(System.Activities.NativeActivityContext,System.Activities.BookmarkScopeHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Activities.NativeActivityContext" />
+        <Parameter Name="bookmarkScopeHandle" Type="System.Activities.BookmarkScopeHandle" />
+      </Parameters>
+      <Docs>
+        <param name="context">The environment in which the handle is created.</param>
+        <param name="bookmarkScopeHandle">The token used to identify and access a group of bookmarks that operate under the same protocol in a workflow activity operation.</param>
+        <summary>Adds the specified bookmark scope handle to the <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> of <see cref="T:System.Activities.BookmarkScopeHandle" /> objects using the specified context.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this method is called after a bookmark has been created under this exclusive scope, a <xref:System.InvalidOperationException> will be thrown.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisteredBookmarkScopes">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Activities.BookmarkScopeHandle&gt; RegisteredBookmarkScopes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Activities.BookmarkScopeHandle&gt; RegisteredBookmarkScopes" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.ExclusiveHandle.RegisteredBookmarkScopes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Activities.BookmarkScopeHandle&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a new or existing <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> of <see cref="T:System.Activities.BookmarkScopeHandle" /> objects.</summary>
+        <value>A read-only collection of bookmark scope handles.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reinitialize">
+      <MemberSignature Language="C#" Value="public void Reinitialize (System.Activities.NativeActivityContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Reinitialize(class System.Activities.NativeActivityContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.ExclusiveHandle.Reinitialize(System.Activities.NativeActivityContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Activities.NativeActivityContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">The environment in which the handle is created.</param>
+        <summary>Sets the registered bookmark scope handles back to the defaults.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this method is called when there are bookmarks registered with the exclusive handle, a <xref:System.InvalidOperationException> will be thrown.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,252 @@
+<Type Name="ImageSourceTypeConverter" FullName="System.Windows.Xps.Serialization.ImageSourceTypeConverter">
+  <TypeSignature Language="C#" Value="public class ImageSourceTypeConverter : System.ComponentModel.ExpandableObjectConverter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ImageSourceTypeConverter extends System.ComponentModel.ExpandableObjectConverter" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Serialization.ImageSourceTypeConverter" />
+  <AssemblyInfo>
+    <AssemblyName>ReachFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.ExpandableObjectConverter</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides type converters for converting <see cref="T:System.Windows.Media.Imaging.BitmapSource" /> objects to and from objects of other types.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See the base classes <xref:System.ComponentModel.TypeConverter> and <xref:System.ComponentModel.ExpandableObjectConverter> for important usage notes.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ImageSourceTypeConverter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.ImageSourceTypeConverter.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Xps.Serialization.ImageSourceTypeConverter" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See the base classes <xref:System.ComponentModel.TypeConverter> and <xref:System.ComponentModel.ExpandableObjectConverter> for important usage notes.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanConvertFrom">
+      <MemberSignature Language="C#" Value="public override bool CanConvertFrom (System.ComponentModel.ITypeDescriptorContext context, Type sourceType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanConvertFrom(class System.ComponentModel.ITypeDescriptorContext context, class System.Type sourceType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.ImageSourceTypeConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="sourceType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="context">An object that provides contextual information.</param>
+        <param name="sourceType">The type of object to convert.</param>
+        <summary>Returns a value that indicates whether this converter can convert an instance of a specified type to a <see cref="T:System.Windows.Media.Imaging.BitmapSource" />.</summary>
+        <returns>
+          <see langword="true" /> if objects of the specified type can be converted; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ As implemented in this class, this method returns `true` only if `sourceType` is a <xref:System.Uri>.  
+  
+ The `context` parameter is not used. See **Notes for Inheritors**.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Override this method to provide your own conversion requirements. Use the <paramref name="context" /> parameter to extract additional information about the environment from which this converter is invoked. This parameter can be <see langword="null" />; therefore, always check it. Also, properties on the <paramref name="context" /> object can return a null reference (<see langword="Nothing" />).</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="CanConvertTo">
+      <MemberSignature Language="C#" Value="public override bool CanConvertTo (System.ComponentModel.ITypeDescriptorContext context, Type destinationType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanConvertTo(class System.ComponentModel.ITypeDescriptorContext context, class System.Type destinationType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.ImageSourceTypeConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="destinationType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="context">An object that provides contextual information.</param>
+        <param name="destinationType">The type of object that you want to convert to a <see cref="T:System.Windows.Media.Imaging.BitmapSource" />.</param>
+        <summary>Returns a value that indicates whether this <see cref="T:System.Windows.Xps.Serialization.ImageSourceTypeConverter" /> can convert a <see cref="T:System.Windows.Media.Imaging.BitmapSource" /> to an instance of a specified type.</summary>
+        <returns>
+          <see langword="true" /> if the conversion is possible; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ As implemented in this class, this method returns `true` only if `destinationType` is a <xref:System.Uri>.  
+  
+ The `context` parameter is not used. See **Notes for Inheritors**.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Override this method to provide your own conversion requirements. Use the <paramref name="context" /> parameter to extract additional information about the environment from which this converter is invoked. This parameter can be <see langword="null" />; therefore, always check it. Also, properties on the <paramref name="context" /> object can return a null reference (<see langword="Nothing" />).</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertFrom">
+      <MemberSignature Language="C#" Value="public override object ConvertFrom (System.ComponentModel.ITypeDescriptorContext context, System.Globalization.CultureInfo culture, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertFrom(class System.ComponentModel.ITypeDescriptorContext context, class System.Globalization.CultureInfo culture, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.ImageSourceTypeConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="context">An object that provides contextual information.</param>
+        <param name="culture">The language and culture that are used during the conversion.</param>
+        <param name="value">The object that is converted.</param>
+        <summary>Converts a specified object to a <see cref="T:System.Windows.Media.Imaging.BitmapSource" />.</summary>
+        <returns>The new <see cref="T:System.Windows.Media.Imaging.BitmapSource" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is not implemented in this class—except to throw the exceptions. See **Notes for Inheritors**.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException">This method is called from this class instead of from a derived class.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.NotSupportedException">The <paramref name="value" /> is not a type that can be converted.</exception>
+        <block subset="none" type="overrides">
+          <para>Override this method to provide a conversion method. Use the <paramref name="context" /> parameter to extract additional information about the environment from which this converter is invoked. Use the <paramref name="culture" /> parameter to provide information about the language or culture.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertTo">
+      <MemberSignature Language="C#" Value="public override object ConvertTo (System.ComponentModel.ITypeDescriptorContext context, System.Globalization.CultureInfo culture, object value, Type destinationType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertTo(class System.ComponentModel.ITypeDescriptorContext context, class System.Globalization.CultureInfo culture, object value, class System.Type destinationType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.ImageSourceTypeConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Security.SecurityTreatAsSafe</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="destinationType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="context">An object that provides contextual information.</param>
+        <param name="culture">The language and culture that are used during the conversion.</param>
+        <param name="value">The object that you want to convert.</param>
+        <param name="destinationType">The type that you want <c>value</c> converted to.</param>
+        <summary>Converts a <see cref="T:System.Windows.Media.Imaging.BitmapSource" /> to an object of the specified type.</summary>
+        <returns>The new <see cref="T:System.Object" /> of the designated type. As implemented in this class, the object must be a <see cref="T:System.Uri" />. The object expresses the [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] of the serialized image.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ As implemented in this class, `value` must be a <xref:System.Windows.Media.Imaging.BitmapSource>.  
+  
+ As implemented in this class, `destinationType` must be a <xref:System.Uri> or the <xref:System.NotSupportedException> is thrown.  
+  
+ The `culture` parameter is not used. See **Notes for Inheritors**.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The <paramref name="destinationType" /> is not a type that <paramref name="value" /> can be converted to.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="context" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="value" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Windows.Xps.XpsSerializationException">An error occurs when serializing the image.</exception>
+        <block subset="none" type="overrides">
+          <para>Override this method to provide your own conversion. Use the <paramref name="culture" /> parameter to specify the language and culture. Use the <paramref name="context" /> parameter to extract additional information about the environment from which this converter is invoked. This parameter can be <see langword="null" />; therefore, always check it. Also, properties on the <paramref name="context" /> object can return a null reference (<see langword="Nothing" />).</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProperties">
+      <MemberSignature Language="C#" Value="public override System.ComponentModel.PropertyDescriptorCollection GetProperties (System.ComponentModel.ITypeDescriptorContext context, object value, Attribute[] attributes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ComponentModel.PropertyDescriptorCollection GetProperties(class System.ComponentModel.ITypeDescriptorContext context, object value, class System.Attribute[] attributes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.ImageSourceTypeConverter.GetProperties(System.ComponentModel.ITypeDescriptorContext,System.Object,System.Attribute[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.PropertyDescriptorCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="attributes" Type="System.Attribute[]" />
+      </Parameters>
+      <Docs>
+        <param name="context">An object that provides contextual information.</param>
+        <param name="value">An object that you need property descriptions for.</param>
+        <param name="attributes">An array of attributes that are used to filter the returned collection in order to exclude irrelevant properties.</param>
+        <summary>Gets a collection of property descriptions for the specified type.</summary>
+        <returns>A <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> that contains the property descriptions that are exposed for the component; or <see langword="null" /> if no property descriptions are returned.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is not implemented in this class—except to throw the exception. See **Notes for Inheritors**.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException">This method is called from this class instead of from a derived class.</exception>
+        <block subset="none" type="overrides">
+          <para>Override this method to provide a method for obtaining selected <see cref="T:System.ComponentModel.PropertyDescriptor" /> objects for the types. Use the <paramref name="context" /> parameter to extract additional information about the environment from which this converter is invoked. Use the <paramref name="attributes" /> array to designate the properties to include or to exclude.</para>
+        </block>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

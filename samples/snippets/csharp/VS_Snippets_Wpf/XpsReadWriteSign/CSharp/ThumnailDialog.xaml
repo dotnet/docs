@@ -1,0 +1,14 @@
+﻿<Window x:Class="SDKSample.ThumnailDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="200" Width="136">
+    <StackPanel>
+        <Border BorderThickness="1" BorderBrush="Black" Margin="3">
+                <Rectangle Name="thumbnailDisplay" Height="128" Width="128"/>
+        </Border>
+        <StackPanel Orientation="Horizontal">
+            <Button Margin="3" Name="addThumbnailButton" Click="AddThumbnail">Add Thumbnail</Button>
+            <!--Button Margin="3">Done</Button-->
+        </StackPanel>
+    </StackPanel>
+</Window>

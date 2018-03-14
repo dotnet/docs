@@ -1,0 +1,75 @@
+<Type Name="IWebSocketCloseDetails" FullName="System.ServiceModel.Channels.IWebSocketCloseDetails">
+  <TypeSignature Language="C#" Value="public interface IWebSocketCloseDetails" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWebSocketCloseDetails" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.IWebSocketCloseDetails" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the details of the close status of the web socket connection.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="InputCloseStatus">
+      <MemberSignature Language="C#" Value="public Nullable&lt;System.Net.WebSockets.WebSocketCloseStatus&gt; InputCloseStatus { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Net.WebSockets.WebSocketCloseStatus&gt; InputCloseStatus" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.IWebSocketCloseDetails.InputCloseStatus" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Net.WebSockets.WebSocketCloseStatus&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the status of the input close details.</summary>
+        <value>The status of the input close details.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InputCloseStatusDescription">
+      <MemberSignature Language="C#" Value="public string InputCloseStatusDescription { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string InputCloseStatusDescription" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.IWebSocketCloseDetails.InputCloseStatusDescription" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the status description of the close details.</summary>
+        <value>The status description of the close details.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetOutputCloseStatus">
+      <MemberSignature Language="C#" Value="public void SetOutputCloseStatus (System.Net.WebSockets.WebSocketCloseStatus closeStatus, string closeStatusDescription);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetOutputCloseStatus(valuetype System.Net.WebSockets.WebSocketCloseStatus closeStatus, string closeStatusDescription) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IWebSocketCloseDetails.SetOutputCloseStatus(System.Net.WebSockets.WebSocketCloseStatus,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="closeStatus" Type="System.Net.WebSockets.WebSocketCloseStatus" />
+        <Parameter Name="closeStatusDescription" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="closeStatus">The status of the output close details.</param>
+        <param name="closeStatusDescription">The status description of the output close details.</param>
+        <summary>Sets the output status and description of the close details of the web socket.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

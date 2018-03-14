@@ -1,0 +1,217 @@
+<Type Name="ParseRecorder" FullName="System.Web.UI.ParseRecorder">
+  <TypeSignature Language="C#" Value="public abstract class ParseRecorder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ParseRecorder extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.ParseRecorder" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Abstract base class for objects that need to be notified of parse events during page parsing.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ParseRecorder ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ParseRecorder.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Iinitializes a new instance of the <see cref="T:System.Web.UI.ParseRecorder" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public virtual void Initialize (System.Web.UI.TemplateParser parser);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Initialize(class System.Web.UI.TemplateParser parser) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ParseRecorder.Initialize(System.Web.UI.TemplateParser)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parser" Type="System.Web.UI.TemplateParser" />
+      </Parameters>
+      <Docs>
+        <param name="parser">The template parser.</param>
+        <summary>When implemented in a derived class, initializes the listener.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseComplete">
+      <MemberSignature Language="C#" Value="public virtual void ParseComplete (System.Web.UI.ControlBuilder root);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ParseComplete(class System.Web.UI.ControlBuilder root) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ParseRecorder.ParseComplete(System.Web.UI.ControlBuilder)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="root" Type="System.Web.UI.ControlBuilder" />
+      </Parameters>
+      <Docs>
+        <param name="root">The control builder root.</param>
+        <summary>Called when the template parser is finished parsing the file.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessGeneratedCode">
+      <MemberSignature Language="C#" Value="public virtual void ProcessGeneratedCode (System.Web.UI.ControlBuilder builder, System.CodeDom.CodeCompileUnit codeCompileUnit, System.CodeDom.CodeTypeDeclaration baseType, System.CodeDom.CodeTypeDeclaration derivedType, System.CodeDom.CodeMemberMethod buildMethod, System.CodeDom.CodeMemberMethod dataBindingMethod);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ProcessGeneratedCode(class System.Web.UI.ControlBuilder builder, class System.CodeDom.CodeCompileUnit codeCompileUnit, class System.CodeDom.CodeTypeDeclaration baseType, class System.CodeDom.CodeTypeDeclaration derivedType, class System.CodeDom.CodeMemberMethod buildMethod, class System.CodeDom.CodeMemberMethod dataBindingMethod) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ParseRecorder.ProcessGeneratedCode(System.Web.UI.ControlBuilder,System.CodeDom.CodeCompileUnit,System.CodeDom.CodeTypeDeclaration,System.CodeDom.CodeTypeDeclaration,System.CodeDom.CodeMemberMethod,System.CodeDom.CodeMemberMethod)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="builder" Type="System.Web.UI.ControlBuilder" />
+        <Parameter Name="codeCompileUnit" Type="System.CodeDom.CodeCompileUnit" />
+        <Parameter Name="baseType" Type="System.CodeDom.CodeTypeDeclaration" />
+        <Parameter Name="derivedType" Type="System.CodeDom.CodeTypeDeclaration" />
+        <Parameter Name="buildMethod" Type="System.CodeDom.CodeMemberMethod" />
+        <Parameter Name="dataBindingMethod" Type="System.CodeDom.CodeMemberMethod" />
+      </Parameters>
+      <Docs>
+        <param name="builder">The control builder.</param>
+        <param name="codeCompileUnit">The code compile unit.</param>
+        <param name="baseType">The code type declaration base type.</param>
+        <param name="derivedType">The code type declaration derived type.</param>
+        <param name="buildMethod">The build method.</param>
+        <param name="dataBindingMethod">The data binding method.</param>
+        <summary>When implemented in a derived class, enables the parse recorder to access the generated CodeDom and insert and modify code.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecordBeginTag">
+      <MemberSignature Language="C#" Value="public virtual void RecordBeginTag (System.Web.UI.ControlBuilder builder, System.Text.RegularExpressions.Match tag);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RecordBeginTag(class System.Web.UI.ControlBuilder builder, class System.Text.RegularExpressions.Match tag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ParseRecorder.RecordBeginTag(System.Web.UI.ControlBuilder,System.Text.RegularExpressions.Match)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="builder" Type="System.Web.UI.ControlBuilder" />
+        <Parameter Name="tag" Type="System.Text.RegularExpressions.Match" />
+      </Parameters>
+      <Docs>
+        <param name="builder">The control builder.</param>
+        <param name="tag">The tag.</param>
+        <summary>Called when the template parser encounters a web control start tag.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecordCodeBlock">
+      <MemberSignature Language="C#" Value="public virtual void RecordCodeBlock (System.Web.UI.ControlBuilder builder, System.Text.RegularExpressions.Match codeBlock);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RecordCodeBlock(class System.Web.UI.ControlBuilder builder, class System.Text.RegularExpressions.Match codeBlock) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ParseRecorder.RecordCodeBlock(System.Web.UI.ControlBuilder,System.Text.RegularExpressions.Match)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="builder" Type="System.Web.UI.ControlBuilder" />
+        <Parameter Name="codeBlock" Type="System.Text.RegularExpressions.Match" />
+      </Parameters>
+      <Docs>
+        <param name="builder">The control builder.</param>
+        <param name="codeBlock">The code block.</param>
+        <summary>Called when the template parser encounters a code block.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecordEmptyTag">
+      <MemberSignature Language="C#" Value="public virtual void RecordEmptyTag (System.Web.UI.ControlBuilder builder, System.Text.RegularExpressions.Match tag);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RecordEmptyTag(class System.Web.UI.ControlBuilder builder, class System.Text.RegularExpressions.Match tag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ParseRecorder.RecordEmptyTag(System.Web.UI.ControlBuilder,System.Text.RegularExpressions.Match)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="builder" Type="System.Web.UI.ControlBuilder" />
+        <Parameter Name="tag" Type="System.Text.RegularExpressions.Match" />
+      </Parameters>
+      <Docs>
+        <param name="builder">The control builder.</param>
+        <param name="tag">The tag.</param>
+        <summary>Called when the template parser encounters a web control empty tag.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecordEndTag">
+      <MemberSignature Language="C#" Value="public virtual void RecordEndTag (System.Web.UI.ControlBuilder builder, System.Text.RegularExpressions.Match tag);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RecordEndTag(class System.Web.UI.ControlBuilder builder, class System.Text.RegularExpressions.Match tag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ParseRecorder.RecordEndTag(System.Web.UI.ControlBuilder,System.Text.RegularExpressions.Match)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="builder" Type="System.Web.UI.ControlBuilder" />
+        <Parameter Name="tag" Type="System.Text.RegularExpressions.Match" />
+      </Parameters>
+      <Docs>
+        <param name="builder">The control builder.</param>
+        <param name="tag">The tag.</param>
+        <summary>Called when the template parser encounters a web control end tag.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecorderFactories">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IList&lt;Func&lt;System.Web.UI.ParseRecorder&gt;&gt; RecorderFactories { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Collections.Generic.IList`1&lt;class System.Func`1&lt;class System.Web.UI.ParseRecorder&gt;&gt; RecorderFactories" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ParseRecorder.RecorderFactories" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Func&lt;System.Web.UI.ParseRecorder&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of parse recorder factories.</summary>
+        <value>The parse recorder factories. If the property is <see langword="null" />, an empty collection is created and returned.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,94 @@
+<Type Name="TextMetricsPitchAndFamilyValues" FullName="System.Windows.Forms.VisualStyles.TextMetricsPitchAndFamilyValues">
+  <TypeSignature Language="C#" Value="public enum TextMetricsPitchAndFamilyValues" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TextMetricsPitchAndFamilyValues extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.TextMetricsPitchAndFamilyValues" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies information about the pitch, technology, and family of the font specified by a visual style for a particular element.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VisualStyles.TextMetricsPitchAndFamilyValues> enumeration specifies the possible values of the <xref:System.Windows.Forms.VisualStyles.TextMetrics.PitchAndFamily%2A> property of the <xref:System.Windows.Forms.VisualStyles.TextMetrics> structure.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Device">
+      <MemberSignature Language="C#" Value="Device" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.TextMetricsPitchAndFamilyValues Device = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.TextMetricsPitchAndFamilyValues.Device" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.TextMetricsPitchAndFamilyValues</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The font is a device font.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FixedPitch">
+      <MemberSignature Language="C#" Value="FixedPitch" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.TextMetricsPitchAndFamilyValues FixedPitch = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.TextMetricsPitchAndFamilyValues.FixedPitch" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.TextMetricsPitchAndFamilyValues</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>If this value is set, the font is a variable pitch font. Otherwise, the font is a fixed-pitch font.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TrueType">
+      <MemberSignature Language="C#" Value="TrueType" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.TextMetricsPitchAndFamilyValues TrueType = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.TextMetricsPitchAndFamilyValues.TrueType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.TextMetricsPitchAndFamilyValues</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The font is a TrueType font.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Vector">
+      <MemberSignature Language="C#" Value="Vector" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.TextMetricsPitchAndFamilyValues Vector = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.TextMetricsPitchAndFamilyValues.Vector" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.TextMetricsPitchAndFamilyValues</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The font is a vector font.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

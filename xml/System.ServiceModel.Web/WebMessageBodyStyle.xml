@@ -1,0 +1,96 @@
+<Type Name="WebMessageBodyStyle" FullName="System.ServiceModel.Web.WebMessageBodyStyle">
+  <TypeSignature Language="C#" Value="public enum WebMessageBodyStyle" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WebMessageBodyStyle extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Web.WebMessageBodyStyle" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Web</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>An enumeration that specifies whether to wrap parameter and return values.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the service or client serializes parameters and return values to a message, it writes them within infrastructure-provided XML elements and are *wrapped*. Sometimes developers do not want the service to write these extra XML elements. The <xref:System.ServiceModel.Web.WebMessageBodyStyle> enumeration specifies whether to wrap parameters and return values.  
+  
+ This enumeration is used with the <xref:System.ServiceModel.Web.WebGetAttribute> and the <xref:System.ServiceModel.Web.WebInvokeAttribute> to control how the data passed to and from a service operation appears on the wire. Both attributes default to Bare.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Bare">
+      <MemberSignature Language="C#" Value="Bare" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Web.WebMessageBodyStyle Bare = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.Web.WebMessageBodyStyle.Bare" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Web.WebMessageBodyStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Both requests and responses are not wrapped.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Wrapped">
+      <MemberSignature Language="C#" Value="Wrapped" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Web.WebMessageBodyStyle Wrapped = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.Web.WebMessageBodyStyle.Wrapped" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Web.WebMessageBodyStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Both requests and responses are wrapped.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WrappedRequest">
+      <MemberSignature Language="C#" Value="WrappedRequest" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Web.WebMessageBodyStyle WrappedRequest = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.Web.WebMessageBodyStyle.WrappedRequest" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Web.WebMessageBodyStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Requests are wrapped, responses are not wrapped.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WrappedResponse">
+      <MemberSignature Language="C#" Value="WrappedResponse" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Web.WebMessageBodyStyle WrappedResponse = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.Web.WebMessageBodyStyle.WrappedResponse" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Web.WebMessageBodyStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Responses are wrapped, requests are not wrapped.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

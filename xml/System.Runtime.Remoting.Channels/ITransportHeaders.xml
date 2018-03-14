@@ -1,0 +1,101 @@
+<Type Name="ITransportHeaders" FullName="System.Runtime.Remoting.Channels.ITransportHeaders">
+  <TypeSignature Language="C#" Value="public interface ITransportHeaders" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITransportHeaders" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.ITransportHeaders" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Stores a collection of headers used in the channel sinks.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[ITransportHeaders_Item#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ITransportHeaders_Item/CPP/itransportheaders_3_server.cpp#1)]
+ [!code-csharp[ITransportHeaders_Item#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ITransportHeaders_Item/CS/itransportheaders_3_server.cs#1)]
+ [!code-vb[ITransportHeaders_Item#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ITransportHeaders_Item/VB/itransportheaders_3_server.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.ITransportHeaders.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a <see cref="T:System.Collections.IEnumerator" /> that iterates over all entries in the <see cref="T:System.Runtime.Remoting.Channels.ITransportHeaders" /> object.</summary>
+        <returns>A <see cref="T:System.Collections.IEnumerator" /> that iterates over all entries in the <see cref="T:System.Runtime.Remoting.Channels.ITransportHeaders" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[ITransportHeaders_Item#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ITransportHeaders_Item/CPP/itransportheaders_3_server.cpp#1)]
+ [!code-csharp[ITransportHeaders_Item#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ITransportHeaders_Item/CS/itransportheaders_3_server.cs#1)]
+ [!code-vb[ITransportHeaders_Item#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ITransportHeaders_Item/VB/itransportheaders_3_server.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public object this[object key] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Item(object)" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.ITransportHeaders.Item(System.Object)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key the requested transport header is associated with.</param>
+        <summary>Gets or sets a transport header associated with the given key.</summary>
+        <value>A transport header associated with the given key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a stored header is set to `null`, the key-value pair is removed.  
+  
+   
+  
+## Examples  
+ [!code-cpp[ITransportHeaders_Item#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ITransportHeaders_Item/CPP/itransportheaders_3_server.cpp#1)]
+ [!code-csharp[ITransportHeaders_Item#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ITransportHeaders_Item/CS/itransportheaders_3_server.cs#1)]
+ [!code-vb[ITransportHeaders_Item#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ITransportHeaders_Item/VB/itransportheaders_3_server.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

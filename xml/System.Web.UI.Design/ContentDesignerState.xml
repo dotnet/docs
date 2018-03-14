@@ -1,0 +1,50 @@
+<Type Name="ContentDesignerState" FullName="System.Web.UI.Design.ContentDesignerState">
+  <TypeSignature Language="C#" Value="public enum ContentDesignerState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ContentDesignerState extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.ContentDesignerState" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Enumerates the possible settings for the state of a <see cref="T:System.Web.UI.Design.WebControls.ContentDesigner" /> control at design time.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ShowDefaultContent">
+      <MemberSignature Language="C#" Value="ShowDefaultContent" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.Design.ContentDesignerState ShowDefaultContent = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.Design.ContentDesignerState.ShowDefaultContent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Design.ContentDesignerState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The associated control displays the default content.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowUserContent">
+      <MemberSignature Language="C#" Value="ShowUserContent" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.Design.ContentDesignerState ShowUserContent = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.Design.ContentDesignerState.ShowUserContent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Design.ContentDesignerState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The associated control displays the user content.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

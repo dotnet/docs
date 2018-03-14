@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebApplication.SiteMaster" %>
+<!DOCTYPE html>
+<html lang="en">
+    <head runat="server">
+        <meta charset="utf-8" />
+        <title><%: Page.Title %></title>
+        <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+        <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+    </head>
+    <body>
+        <form runat="server">
+            <header>
+                <div class="content-wrapper">
+                    <div class="float-left">
+                        <p class="site-title"><a runat="server" href="~/">Windows Identity Foundation .NET 4.5 Sample</a></p>
+                    </div>
+                    <div class="float-right">
+                        <section id="login">
+                            <asp:LoginView runat="server" ViewStateMode="Disabled">
+                                <AnonymousTemplate>
+                                    You are anonymous!
+                                </AnonymousTemplate>
+                                <LoggedInTemplate>
+                                    <p>
+                                        Hello, <asp:LoginName ID="LoginName1" runat="server" CssClass="username" />!
+                                    </p>
+                                </LoggedInTemplate>
+                            </asp:LoginView>
+                        </section>
+                        <nav>
+                            <ul id="menu">
+                                <li><a runat="server" href="~/">Home</a></li>
+                                <li><a runat="server" href="~/Claims.aspx">Claims</a></li>
+                                <li><a runat="server" href="~/Developers.aspx">Developers</a></li>
+                                <li><a runat="server" href="~/Administrators.aspx">Administrators</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <div id="body">
+                <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
+                <section class="content-wrapper main-content clear-fix">
+                    <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+                </section>
+            </div>
+            <footer>
+                <div class="content-wrapper">
+                    <div class="float-left">
+                        
+                    </div>
+                    <div class="float-right">
+                        
+                    </div>
+                </div>
+            </footer>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<Type Name="ITransactedBindingElement" FullName="System.ServiceModel.Channels.ITransactedBindingElement">
+  <TypeSignature Language="C#" Value="public interface ITransactedBindingElement" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITransactedBindingElement" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.ITransactedBindingElement" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Represents an interface that should be implemented by binding elements that require the dispatcher to create a transaction before dispatching to the service method.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="TransactedReceiveEnabled">
+      <MemberSignature Language="C#" Value="public bool TransactedReceiveEnabled { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool TransactedReceiveEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ITransactedBindingElement.TransactedReceiveEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a boolean value that specifies whether the transaction is enabled for a receive operation.</summary>
+        <value>
+          <see langword="true" /> if transaction is enabled for a receive operation; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

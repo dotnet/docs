@@ -1,0 +1,57 @@
+<Type Name="SubstitutionResponseElement" FullName="System.Web.Caching.SubstitutionResponseElement">
+  <TypeSignature Language="C#" Value="public class SubstitutionResponseElement : System.Web.Caching.ResponseElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit SubstitutionResponseElement extends System.Web.Caching.ResponseElement" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Caching.SubstitutionResponseElement" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.Caching.ResponseElement</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a managed delegate that can be called to insert dynamically generated output into an output-cache response.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SubstitutionResponseElement (System.Web.HttpResponseSubstitutionCallback callback);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.HttpResponseSubstitutionCallback callback) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Caching.SubstitutionResponseElement.#ctor(System.Web.HttpResponseSubstitutionCallback)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="callback" Type="System.Web.HttpResponseSubstitutionCallback" />
+      </Parameters>
+      <Docs>
+        <param name="callback">The static substitution callback that was set as part of the response for an output-cached page.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Caching.SubstitutionResponseElement" /> class.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="callback" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Callback">
+      <MemberSignature Language="C#" Value="public System.Web.HttpResponseSubstitutionCallback Callback { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.HttpResponseSubstitutionCallback Callback" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Caching.SubstitutionResponseElement.Callback" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.HttpResponseSubstitutionCallback</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a reference to the substitution callback method.</summary>
+        <value>A callback method reference.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

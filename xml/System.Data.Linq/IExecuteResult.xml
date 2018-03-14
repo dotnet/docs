@@ -1,0 +1,74 @@
+<Type Name="IExecuteResult" FullName="System.Data.Linq.IExecuteResult">
+  <TypeSignature Language="C#" Value="public interface IExecuteResult : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IExecuteResult implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Linq.IExecuteResult" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Linq</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Provides access to the return value or results of executing a query.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetParameterValue">
+      <MemberSignature Language="C#" Value="public object GetParameterValue (int parameterIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetParameterValue(int32 parameterIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Linq.IExecuteResult.GetParameterValue(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parameterIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="parameterIndex">The index of the parameter to be retrieved.</param>
+        <summary>Provides access to the *n*th output parameter.</summary>
+        <returns>An object that contains the value of the specified parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is typically used when the query is a mapped function that has output parameters.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReturnValue">
+      <MemberSignature Language="C#" Value="public object ReturnValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ReturnValue" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Linq.IExecuteResult.ReturnValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the return value or result of the executed query.</summary>
+        <value>The value or result of the executed query.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This object has the same underlying type as the `Type` property of the query expression.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,27 @@
+<Type Name="FaultCallback" FullName="System.Activities.FaultCallback">
+  <TypeSignature Language="C#" Value="public delegate void FaultCallback(NativeActivityFaultContext faultContext, Exception propagatedException, ActivityInstance propagatedFrom);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FaultCallback extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.FaultCallback" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="faultContext" Type="System.Activities.NativeActivityFaultContext" />
+    <Parameter Name="propagatedException" Type="System.Exception" />
+    <Parameter Name="propagatedFrom" Type="System.Activities.ActivityInstance" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="faultContext">The <see cref="T:System.Activities.ActivityFaultContext" /> provided for inspecting the workflow fault.</param>
+    <param name="propagatedException">The exception that caused the fault.</param>
+    <param name="propagatedFrom">The activity that threw the exception and generated the fault.</param>
+    <summary>Represents the method that is called when a scheduled activity or one of its children enters the <see cref="F:System.Activities.ActivityInstanceState.Faulted" /> state.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

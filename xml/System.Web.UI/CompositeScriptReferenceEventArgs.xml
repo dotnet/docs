@@ -1,0 +1,55 @@
+<Type Name="CompositeScriptReferenceEventArgs" FullName="System.Web.UI.CompositeScriptReferenceEventArgs">
+  <TypeSignature Language="C#" Value="public class CompositeScriptReferenceEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CompositeScriptReferenceEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.CompositeScriptReferenceEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Web.UI.ScriptManager.ResolveCompositeScriptReference" /> event.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CompositeScriptReferenceEventArgs (System.Web.UI.CompositeScriptReference compositeScript);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.CompositeScriptReference compositeScript) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.CompositeScriptReferenceEventArgs.#ctor(System.Web.UI.CompositeScriptReference)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="compositeScript" Type="System.Web.UI.CompositeScriptReference" />
+      </Parameters>
+      <Docs>
+        <param name="compositeScript">The composite script reference.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.CompositeScriptReferenceEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompositeScript">
+      <MemberSignature Language="C#" Value="public System.Web.UI.CompositeScriptReference CompositeScript { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.CompositeScriptReference CompositeScript" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.CompositeScriptReferenceEventArgs.CompositeScript" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.CompositeScriptReference</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the composite script reference for the event.</summary>
+        <value>The composite script reference.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

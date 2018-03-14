@@ -1,0 +1,30 @@
+<Type Name="ManifestSignatureInformationCollection" FullName="System.Security.Cryptography.ManifestSignatureInformationCollection">
+  <TypeSignature Language="C#" Value="public sealed class ManifestSignatureInformationCollection : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Security.Cryptography.ManifestSignatureInformation&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ManifestSignatureInformationCollection extends System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Security.Cryptography.ManifestSignatureInformation&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.ManifestSignatureInformationCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Security.Cryptography.ManifestSignatureInformation&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">System.Security.Cryptography.ManifestSignatureInformation</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a read-only collection of <see cref="T:System.Security.Cryptography.ManifestSignatureInformation" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To get a <xref:System.Security.Cryptography.ManifestSignatureInformationCollection> collection, call one of the <xref:System.Security.Cryptography.ManifestSignatureInformation.VerifySignature%2A> method overloads.  
+  
+ Each collection contains a <xref:System.Security.Cryptography.ManifestSignatureInformation> object for each manifest that was verified by the <xref:System.Security.Cryptography.ManifestSignatureInformation.VerifySignature%2A> method.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

@@ -1,0 +1,9 @@
+﻿<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="SDKSample.UserControlWindow"
+    xmlns:local="clr-namespace:SDKSample" 
+    Title="User Control Window">
+  <!-- Numeric Up/Down user control -->
+  <local:NumericUpDown />
+</Window>

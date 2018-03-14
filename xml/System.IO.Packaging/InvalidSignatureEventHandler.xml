@@ -1,0 +1,25 @@
+<Type Name="InvalidSignatureEventHandler" FullName="System.IO.Packaging.InvalidSignatureEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void InvalidSignatureEventHandler(object sender, SignatureVerificationEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed InvalidSignatureEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.IO.Packaging.InvalidSignatureEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.IO.Packaging.SignatureVerificationEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The invalid <see cref="T:System.IO.Packaging.PackageDigitalSignature" /> source of the event.</param>
+    <param name="e">The event data.</param>
+    <summary>Represents the method that handles the <see cref="E:System.IO.Packaging.PackageDigitalSignatureManager.InvalidSignatureEvent" /> that is raised when <see cref="M:System.IO.Packaging.PackageDigitalSignatureManager.VerifySignatures(System.Boolean)" /> detects an invalid signature.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

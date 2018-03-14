@@ -1,0 +1,93 @@
+<Type Name="IAssemblyPostProcessor" FullName="System.Web.Compilation.IAssemblyPostProcessor">
+  <TypeSignature Language="C#" Value="public interface IAssemblyPostProcessor : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAssemblyPostProcessor implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Compilation.IAssemblyPostProcessor" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Defines the method a class implements to process an assembly after the assembly has been built.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A class implementing this interface can access an assembly after it has been compiled. The <xref:System.Web.Compilation.AssemblyBuilder> class compiles assemblies and then checks to see whether an <xref:System.Web.Compilation.IAssemblyPostProcessor> interface has been registered in the Web configuration file. If so, the <xref:System.Web.Compilation.AssemblyBuilder> instance calls the <xref:System.Web.Compilation.IAssemblyPostProcessor.PostProcessAssembly%2A> method for the <xref:System.Web.Compilation.IAssemblyPostProcessor> interface to perform any action after the compilation and before loading the assembly. For example, a profiler tool could implement this interface to establish probes in the assembly.  
+  
+ When an <xref:System.Web.Compilation.IAssemblyPostProcessor> interface is registered, the ASP.NET application and its assemblies will always be compiled in debug mode.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create an implementation of the <xref:System.Web.Compilation.IAssemblyPostProcessor> interface, and register it in the Web.config file of a Web application.  
+  
+ The first part of the code example creates a class named `Samples.Process.postProcessTest` that implements the <xref:System.Web.Compilation.IAssemblyPostProcessor> interface. This class performs the simple action of writing a file when the <xref:System.Web.Compilation.IAssemblyPostProcessor.PostProcessAssembly%2A> method is called.  
+  
+ [!code-csharp[System.Web.Compilation.IAssemblyPostProcessor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Compilation.IAssemblyPostProcessor/CS/postProcessTest.cs#1)]
+ [!code-vb[System.Web.Compilation.IAssemblyPostProcessor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Compilation.IAssemblyPostProcessor/VB/postProcessTest.vb#1)]  
+  
+ Compile the class into a .dll file with the command `csc /target:library postProcessTest.cs`. Add the resulting .dll file to the Bin folder of an ASP.NET application and register the .dll in the Web.config file, as shown in the following code.  
+  
+```  
+<compilation debug="true" assemblyPostProcessorType="Samples.Process.postProcessTest" />  
+```  
+  
+ When a user visits the Web site, the Web application is dynamically compiled and the file MyTest.txt will be written to C:\compile.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="PostProcessAssembly">
+      <MemberSignature Language="C#" Value="public void PostProcessAssembly (string path);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PostProcessAssembly(string path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.IAssemblyPostProcessor.PostProcessAssembly(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="path">The path to the assembly.</param>
+        <summary>Called before the assembly is loaded to allow the implementing class to modify the assembly.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Compilation.AssemblyBuilder> class calls this method after the assembly has been compiled. Any actions to be taken before loading the assembly should be included in this method.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create an implementation of the <xref:System.Web.Compilation.IAssemblyPostProcessor> interface, and register it in the Web.config file of a Web application.  
+  
+ The first part of the code example creates a class named `Samples.Process.postProcessTest` that implements the <xref:System.Web.Compilation.IAssemblyPostProcessor> interface. This class performs the simple action of writing a file when the <xref:System.Web.Compilation.IAssemblyPostProcessor.PostProcessAssembly%2A> method is called.  
+  
+ [!code-csharp[System.Web.Compilation.IAssemblyPostProcessor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Compilation.IAssemblyPostProcessor/CS/postProcessTest.cs#1)]
+ [!code-vb[System.Web.Compilation.IAssemblyPostProcessor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Compilation.IAssemblyPostProcessor/VB/postProcessTest.vb#1)]  
+  
+ Compile the class into a .dll file with the command `csc /target:library postProcessTest.cs`. Add the resulting .dll file to the Bin folder of an ASP.NET application and register the .dll in the Web.config file, as shown in the following code.  
+  
+```  
+<compilation debug="true" assemblyPostProcessorType="Samples.Process.postProcessTest" />  
+```  
+  
+ When a user visits the Web site, the Web application is dynamically compiled and the file MyTest.txt will be written to C:\compile.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

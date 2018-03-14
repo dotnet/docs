@@ -1,0 +1,82 @@
+<Type Name="WindowStyle" FullName="System.Windows.WindowStyle">
+  <TypeSignature Language="C#" Value="public enum WindowStyle" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WindowStyle extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.WindowStyle" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the type of border that a <see cref="T:System.Windows.Window" /> has. Used by the <see cref="P:System.Windows.Window.WindowStyle" /> property.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.WindowStyle None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.WindowStyle.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.WindowStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Only the client area is visible - the title bar and border are not shown. A <see cref="T:System.Windows.Navigation.NavigationWindow" /> with a <see cref="P:System.Windows.Window.WindowStyle" /> of <see cref="F:System.Windows.WindowStyle.None" /> will still display the navigation [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)].</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SingleBorderWindow">
+      <MemberSignature Language="C#" Value="SingleBorderWindow" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.WindowStyle SingleBorderWindow = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.WindowStyle.SingleBorderWindow" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.WindowStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A window with a single border. This is the default value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ThreeDBorderWindow">
+      <MemberSignature Language="C#" Value="ThreeDBorderWindow" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.WindowStyle ThreeDBorderWindow = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.WindowStyle.ThreeDBorderWindow" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.WindowStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A window with a [!INCLUDE[TLA#tla_3d](~/includes/tlasharptla-3d-md.md)] border.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolWindow">
+      <MemberSignature Language="C#" Value="ToolWindow" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.WindowStyle ToolWindow = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.WindowStyle.ToolWindow" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.WindowStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A fixed tool window.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

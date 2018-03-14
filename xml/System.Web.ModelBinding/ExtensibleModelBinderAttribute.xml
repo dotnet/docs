@@ -1,0 +1,79 @@
+<Type Name="ExtensibleModelBinderAttribute" FullName="System.Web.ModelBinding.ExtensibleModelBinderAttribute">
+  <TypeSignature Language="C#" Value="public sealed class ExtensibleModelBinderAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ExtensibleModelBinderAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.ExtensibleModelBinderAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Interface, AllowMultiple=false, Inherited=true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the binder type for a model type.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ExtensibleModelBinderAttribute (Type binderType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type binderType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ExtensibleModelBinderAttribute.#ctor(System.Type)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="binderType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="binderType">The model binder type.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.ExtensibleModelBinderAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BinderType">
+      <MemberSignature Language="C#" Value="public Type BinderType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type BinderType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ExtensibleModelBinderAttribute.BinderType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the model binder type.</summary>
+        <value>The model binder type.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuppressPrefixCheck">
+      <MemberSignature Language="C#" Value="public bool SuppressPrefixCheck { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SuppressPrefixCheck" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ExtensibleModelBinderAttribute.SuppressPrefixCheck" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies whether the prefix check should be suppressed.</summary>
+        <value>
+          <see langword="true" /> if the prefix check should be suppressed; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

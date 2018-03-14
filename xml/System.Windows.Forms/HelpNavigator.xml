@@ -1,0 +1,150 @@
+<Type Name="HelpNavigator" FullName="System.Windows.Forms.HelpNavigator">
+  <TypeSignature Language="C#" Value="public enum HelpNavigator" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HelpNavigator extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.HelpNavigator" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies constants indicating which elements of the Help file to display.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by the <xref:System.Windows.Forms.Help> and <xref:System.Windows.Forms.HelpProvider> classes to provide access to specific elements of a Help file. For example, when used with the <xref:System.Windows.Forms.HelpProvider> component that provides F1 Help, the TopicId or Topic value could be specified to open Help to a context-specific topic.  
+  
+   
+  
+## Examples  
+ The following code example displays a form with three buttons that can be used to interact with the mspaint.chm Help file. The **Show Help Index** button displays the **Index** tab for the Help file. The **Show Help** button displays content in the Help file based on the value selected in the **Help Navigator** list. The **Show Keyword** button displays content in the Help file based on the keyword specified in the **Keyword** text box.  
+  
+ For example, to show the Ovals Help page by the index value, select the KeywordIndex value in the **Help Navigator** drop-down list, type **ovals** in the **Parameter** text box, and then click the **Show Help** button. To show the "To paint with a brush" Help topic by the keyword, type **mspaint.chm::/paint_brush.htm** in the **Keyword** text box, and then click the **Show Keyword** button.  
+  
+ The example uses the <xref:System.Windows.Forms.Help.ShowHelp%2A> method to display the different Help tabs and Help topics, and the <xref:System.Windows.Forms.Help.ShowHelpIndex%2A> method to display the Help index.  
+  
+ [!code-cpp[System.Windows.Forms.Help#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Help/CPP/helpsnippet.cpp#1)]
+ [!code-csharp[System.Windows.Forms.Help#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Help/CS/helpsnippet.cs#1)]
+ [!code-vb[System.Windows.Forms.Help#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Help/VB/helpsnippet.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AssociateIndex">
+      <MemberSignature Language="C#" Value="AssociateIndex" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.HelpNavigator AssociateIndex = int32(-2147483643)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.HelpNavigator.AssociateIndex" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.HelpNavigator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Help file opens to the index entry for the first letter of a specified topic.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Find">
+      <MemberSignature Language="C#" Value="Find" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.HelpNavigator Find = int32(-2147483644)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.HelpNavigator.Find" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.HelpNavigator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Help file opens to the search page.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Index">
+      <MemberSignature Language="C#" Value="Index" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.HelpNavigator Index = int32(-2147483645)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.HelpNavigator.Index" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.HelpNavigator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Help file opens to the index.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="KeywordIndex">
+      <MemberSignature Language="C#" Value="KeywordIndex" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.HelpNavigator KeywordIndex = int32(-2147483642)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.HelpNavigator.KeywordIndex" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.HelpNavigator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Help file opens to the topic with the specified index entry, if one exists; otherwise, the index entry closest to the specified keyword is displayed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TableOfContents">
+      <MemberSignature Language="C#" Value="TableOfContents" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.HelpNavigator TableOfContents = int32(-2147483646)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.HelpNavigator.TableOfContents" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.HelpNavigator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Help file opens to the table of contents.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Topic">
+      <MemberSignature Language="C#" Value="Topic" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.HelpNavigator Topic = int32(-2147483647)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.HelpNavigator.Topic" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.HelpNavigator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Help file opens to a specified topic, if the topic exists.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TopicId">
+      <MemberSignature Language="C#" Value="TopicId" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.HelpNavigator TopicId = int32(-2147483641)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.HelpNavigator.TopicId" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.HelpNavigator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Help file opens to a topic indicated by a numeric topic identifier.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

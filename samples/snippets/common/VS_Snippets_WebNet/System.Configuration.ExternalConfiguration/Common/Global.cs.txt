@@ -1,0 +1,23 @@
+<%@ Application Language="C#" %>
+
+<script runat="server">
+
+    // Code that runs on application startup.
+    void Application_Start(object sender, EventArgs e) 
+    {
+       
+        // Set the post back counter to 0.
+        // This counter is set to 0 the first time 
+        // the application starts and, thereafter, every 
+        // time it restarts.
+        int postBackCount = 0;
+        
+        HttpApplicationState appState = Application.Contents;
+        appState.Add("postBackKey", postBackCount);
+        
+            
+    }
+    
+    
+       
+</script>

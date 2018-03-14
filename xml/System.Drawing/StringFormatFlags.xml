@@ -1,0 +1,202 @@
+<Type Name="StringFormatFlags" FullName="System.Drawing.StringFormatFlags">
+  <TypeSignature Language="C#" Value="public enum StringFormatFlags" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StringFormatFlags extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.StringFormatFlags" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the display and layout information for text strings.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Drawing.StringFormatFlags> is used by the <xref:System.Drawing.StringFormat> class.  
+  
+> [!NOTE]
+>  The FitBlackBox field was misnamed and its behavior is similar to the `NoFitBlackBox` field in the original GDI+ implementation.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the following members:  
+  
+-   <xref:System.Drawing.Rectangle.%23ctor%2A>  
+  
+-   <xref:System.Drawing.StringFormat.%23ctor%2A>  
+  
+-   <xref:System.Drawing.StringFormat.%23ctor%2A>  
+  
+-   <xref:System.Drawing.StringFormat.Alignment%2A>  
+  
+-   <xref:System.Drawing.StringFormat.LineAlignment%2A>  
+  
+-   <xref:System.Drawing.StringAlignment>  
+  
+-   <xref:System.Drawing.StringFormatFlags>  
+  
+ This example is designed to be used with Windows Forms. Paste the code into a form and call the `ShowLineAndAlignment` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-cpp[System.Drawing.Misc2#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.Misc2/CPP/form1.cpp#1)]
+ [!code-csharp[System.Drawing.Misc2#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Misc2/CS/form1.cs#1)]
+ [!code-vb[System.Drawing.Misc2#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Misc2/VB/form1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DirectionRightToLeft">
+      <MemberSignature Language="C#" Value="DirectionRightToLeft" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.StringFormatFlags DirectionRightToLeft = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.StringFormatFlags.DirectionRightToLeft" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.StringFormatFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Text is displayed from right to left.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DirectionVertical">
+      <MemberSignature Language="C#" Value="DirectionVertical" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.StringFormatFlags DirectionVertical = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.StringFormatFlags.DirectionVertical" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.StringFormatFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Text is vertically aligned.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayFormatControl">
+      <MemberSignature Language="C#" Value="DisplayFormatControl" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.StringFormatFlags DisplayFormatControl = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.StringFormatFlags.DisplayFormatControl" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.StringFormatFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Control characters such as the left-to-right mark are shown in the output with a representative glyph.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FitBlackBox">
+      <MemberSignature Language="C#" Value="FitBlackBox" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.StringFormatFlags FitBlackBox = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.StringFormatFlags.FitBlackBox" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.StringFormatFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Parts of characters are allowed to overhang the string's layout rectangle. By default, characters are repositioned to avoid any overhang.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LineLimit">
+      <MemberSignature Language="C#" Value="LineLimit" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.StringFormatFlags LineLimit = int32(8192)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.StringFormatFlags.LineLimit" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.StringFormatFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Only entire lines are laid out in the formatting rectangle. By default layout continues until the end of the text, or until no more lines are visible as a result of clipping, whichever comes first. Note that the default settings allow the last line to be partially obscured by a formatting rectangle that is not a whole multiple of the line height. To ensure that only whole lines are seen, specify this value and be careful to provide a formatting rectangle at least as tall as the height of one line.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MeasureTrailingSpaces">
+      <MemberSignature Language="C#" Value="MeasureTrailingSpaces" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.StringFormatFlags MeasureTrailingSpaces = int32(2048)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.StringFormatFlags.MeasureTrailingSpaces" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.StringFormatFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Includes the trailing space at the end of each line. By default the boundary rectangle returned by the <see cref="Overload:System.Drawing.Graphics.MeasureString" /> method excludes the space at the end of each line. Set this flag to include that space in measurement.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoClip">
+      <MemberSignature Language="C#" Value="NoClip" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.StringFormatFlags NoClip = int32(16384)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.StringFormatFlags.NoClip" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.StringFormatFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Overhanging parts of glyphs, and unwrapped text reaching outside the formatting rectangle are allowed to show. By default all text and glyph parts reaching outside the formatting rectangle are clipped.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoFontFallback">
+      <MemberSignature Language="C#" Value="NoFontFallback" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.StringFormatFlags NoFontFallback = int32(1024)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.StringFormatFlags.NoFontFallback" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.StringFormatFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Fallback to alternate fonts for characters not supported in the requested font is disabled. Any missing characters are displayed with the fonts missing glyph, usually an open square.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoWrap">
+      <MemberSignature Language="C#" Value="NoWrap" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.StringFormatFlags NoWrap = int32(4096)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.StringFormatFlags.NoWrap" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.StringFormatFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Text wrapping between lines when formatting within a rectangle is disabled. This flag is implied when a point is passed instead of a rectangle, or when the specified rectangle has a zero line length.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

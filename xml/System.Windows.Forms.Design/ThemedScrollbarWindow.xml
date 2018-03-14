@@ -1,0 +1,53 @@
+<Type Name="ThemedScrollbarWindow" FullName="System.Windows.Forms.Design.ThemedScrollbarWindow">
+  <TypeSignature Language="C#" Value="public struct ThemedScrollbarWindow" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ThemedScrollbarWindow extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.ThemedScrollbarWindow" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a window and a value that indicates how its scrollbars should be themed when displayed in the Visual Studio designer.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Handle">
+      <MemberSignature Language="C#" Value="public IntPtr Handle;" />
+      <MemberSignature Language="ILAsm" Value=".field public native int Handle" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.ThemedScrollbarWindow.Handle" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The window handle.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Mode">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.Design.ThemedScrollbarMode Mode;" />
+      <MemberSignature Language="ILAsm" Value=".field public valuetype System.Windows.Forms.Design.ThemedScrollbarMode Mode" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.ThemedScrollbarWindow.Mode" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Design.ThemedScrollbarMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A value that indicates how the window scrollbars should be themed when displayed in the Visual Studio designer.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

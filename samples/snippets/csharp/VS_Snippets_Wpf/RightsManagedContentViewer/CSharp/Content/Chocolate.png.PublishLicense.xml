@@ -1,0 +1,165 @@
+<?xml version="1.0"?>
+<XrML version="1.2" xmlns="">
+  <BODY type="Microsoft Rights Label" version="3.0">
+    <ISSUEDTIME>2006-04-23T18:10</ISSUEDTIME>
+    <ISSUER>
+      <OBJECT type="Group-Identity">
+        <ID type="Windows">S-1-5-21-2127521184-1604012920-1887927527-1723404</ID>
+        <NAME>jack.davis@microsoft.com</NAME>
+      </OBJECT>
+      <PUBLICKEY>
+        <ALGORITHM>RSA</ALGORITHM>
+        <PARAMETER name="public-exponent">
+          <VALUE encoding="integer32">65537</VALUE>
+        </PARAMETER>
+        <PARAMETER name="modulus">
+          <VALUE encoding="base64" size="1024">r1rbEmgQhskJ29p8xpX00ZlROS13kHMzv0DrOQOn+4mijO3Eanelw1F+mYdSdrByU9MbamWHalUqku6wESZY2DCpRU2C3xw2lCvPtrYqtJkxSt835Ez4quDYVNQq+15DzA6qyl5gc07XuoQi1AC0Nfb5tMy0R85SocFE195VUq4=</VALUE>
+        </PARAMETER>
+      </PUBLICKEY>
+      <SECURITYLEVEL name="SDK" value="5.2.3790.134" />
+    </ISSUER>
+    <DISTRIBUTIONPOINT>
+      <OBJECT type="License-Acquisition-URL">
+        <ID type="MS-GUID">{0F45FD50-383B-43EE-90A4-ED013CD0CFE5}</ID>
+        <NAME>DRM Server Cluster</NAME>
+        <ADDRESS type="URL">http://ed-drm-red3/_wmcs/licensing</ADDRESS>
+      </OBJECT>
+    </DISTRIBUTIONPOINT>
+    <ISSUEDPRINCIPALS>
+      <PRINCIPAL internal-id="1">
+        <OBJECT type="MS-DRM-Server">
+          <ID type="MS-GUID">{1d59a4ae-e6ae-4151-b458-afc5251fe0c3}</ID>
+          <ADDRESS type="URL">http://ed-drm-red3/_wmcs</ADDRESS>
+        </OBJECT>
+        <PUBLICKEY>
+          <ALGORITHM>RSA</ALGORITHM>
+          <PARAMETER name="public-exponent">
+            <VALUE encoding="integer32">65537</VALUE>
+          </PARAMETER>
+          <PARAMETER name="modulus">
+            <VALUE encoding="base64" size="1024">43b8U8yG5ifu38tkAa8K/2DnMOZqgVdj8OZCY+V0332efhaocT7EGV8JE3Htolc2mqTDdLlHQQoJ9jrG36efYYqo4aivo7ddx5w9NlMo9O4mXb+s70LD1VPaM6TywWYYfho+6vTGI1SwPJVgmwS2Qgha/AXOJrK0t5gEX8CZPMo=</VALUE>
+          </PARAMETER>
+        </PUBLICKEY>
+        <SECURITYLEVEL name="Server-Version" value="5.2.3790.134" />
+        <SECURITYLEVEL name="Server-SKU" value="RMS 1.0" />
+        <ENABLINGBITS type="sealed-key">
+          <VALUE encoding="base64" size="1536">Pqr5YuOcKaWGjo5a9zV0UCqoJOZOllr5mz2PCaGIz8+ia6+J8QkwM5dLk5Nv04ONGWEne3Jw7h3qDh1uUt7opQ/J8YMZ20z1GPvRWn8egh2Bh/G7x67+XKZxlSi8nejVsWf2kJsPsGlrWR9uI0+j/Tfusstz5lxbw1vKybYoxW03I2pjt4KXJWPwJTUbY9sjHR+UVcMqee5VRiZV5HVxrnKEg9TyXzjK2sDGsAyVT6aAn79bCSOZGpa5doU5kpWY</VALUE>
+        </ENABLINGBITS>
+      </PRINCIPAL>
+    </ISSUEDPRINCIPALS>
+    <WORK>
+      <OBJECT>
+        <ID type="MS-GUID">{cfb19655-1640-4927-8c0a-37bac70392e4}</ID>
+      </OBJECT>
+      <METADATA>
+        <OWNER>
+          <OBJECT>
+            <ID type="Windows" />
+            <NAME>jack.davis@microsoft.com</NAME>
+          </OBJECT>
+        </OWNER>
+      </METADATA>
+    </WORK>
+    <AUTHENTICATEDDATA id="Encrypted-Rights-Data">Dsn6j7cM713H/WEjtxlN3XUwKi5dNjtDqJOlcmvForE9OGZ66O32SFkGGb7dh+4T7sjDLcsAeyDTVjq/Osa8tjUm941aBYka6UB1h6I3JxoNxGGYwptP4lM1AArT8tcO7UO3yD2EMa0clZ1MMrjFNeR9doO/FFwo7fAaodIaVyB0uukbewSH58+7WR/QJwHx620wDYNQaVQLLx5GdIjXC3V+8g3KS/cniubMRiP+ZDA6ICQdfqSBMccPqnq/3UWFjORB1p9VaYt5cRtdOMM0+dbR/zKBG4TIF40Lv3QfeJ3daWSxN4tDYpf5n8rY7AI/pzXa26gHKAb3EEYcPY+zYsUKXGWihrEIxAie0Nf9z55pFA7TRkEuvgrhcrGZuq2jB4yUC52KEc45V4tIH0iJYXFISFGqpaupWvhRBRn4MwmTj79S/JvjXMUg0xAO03I5Py+YoABEBTZMgLh44ZT4EH1sF3vpEbIcfgV7rHM9qaTxFEOnMUuU2OGg6KGhH/tsGASj5PxItBtVK8EVre9X43KBxpQ9Z4bxGgVMEF3fXn/oIuW7YBGbPyelMo78tTLOlRALxm6/H3/s+6Cyspi9qMUKXGWihrEIxAie0Nf9z55pFA7TRkEuvgrhcrGZuq2jHqQr0wqleY0ZjbjyjNcp9aKCt/eQpZ1XL4mF7Yx9JQydcdAWU14TyUup4dctNqSgiZhJ+TIGFSach8FkPz1VX/AVNO8an/GEpHfKawjALeAgczfeBGUrHaQP40y3XGvs3EHV3NWaNDLz9TSSrQO/pRO6vTN0ZNumM2W5cV4kCr0D9jUr1EOlFJRzp8Gn7fFnbWJGN3qlcjixvqAGV2YmF0uFwRWsVz42FC5dSnYexCIxC1kEsQhnJThELvSwARg0kYd2mYAksXNK0k5uJI1VJLf75bvqxnMzmI3MOTRmaYe5yV7PLQonpcyjFxNS4Ei/Mlo/+V7G1CMG4myHRrZWyQPVZwGLXxV10Kv9Hg+SGxME61bJ7X1Glt7JCX1O9wp+PAljW+V8RqVwdmJh4BHrSvJNsAsiz097JJiuZVKQ3+AXxUQfdWv0cqo0BvEtH0HDJvivpLv0Ttba+4Yk29TVlgChyrI+ir4qQ7jIZXRizsG2z1qUNDEl7Q5+k0QRZfYZdFKiOtCZkPQDW8MLN26H5xKjJ6mKjxZBxhGWK8zYqAizxhrjYC0kh3HpaanQVNhbbiGvMtGse7E0bF4W3rEEln7BjwSVO/sfB6JY6byzoQxCpy2F8bBb77AwZStQBIHTBOtWye19RpbeyQl9TvcKfrJNtc5/n6BgkWUeLkmz2md5q3CmIAT9h7ox0OWzlX+UYAW0qOS4lvnTUluKe28XFLsQh6++zO4/CyReGGcJ5rfZAXrTAX/p5ttfRzWpVEoVbiGvMtGse7E0bF4W3rEElrCKYwzuBJiqiytBEj2VtqYt6Iuebm1rhCdPFPAO6UfcgqkxX4DduUZn7k1kp+jHv0Rb711ZfcxTz4qCHoQLpV0UfYZ/wlaH3PhcrlQuccFsWSXgyp+r9uVSNcOXg1sIkS+FZik4hXhCEmU5lV/NMdvpbWkHNmRQPDcMAugafD0RcoHGlD1nhvEaBUwQXd9ef0KRobsDV3FoOajSPLP50f/K/3JKlQzGKlre1xyoY9NS/0Ww/be5YhZffA1PEwozEEsJarVoEYKuFPHFmiZY8+kuakWbak68Zi5YxlE8eZFiTtKc/8jTmnpP+2jFVXkhDRkkIjVA+UmM/nvoq6b9EhoWTbDWwLruTcqZ1liMqFj4lj1MV7sReZ8lq8KJcutCvxi8naS3FVR7JWayuArAtbXPdmY1Zb419uZ1vzHjVu8OLPfW/IlY/zZGvYY2Jbsz9g==</AUTHENTICATEDDATA>
+  </BODY>
+  <SIGNATURE>
+    <ALGORITHM>RSA PKCS#1-V1.5</ALGORITHM>
+    <DIGEST>
+      <ALGORITHM>SHA1</ALGORITHM>
+      <PARAMETER name="codingtype">
+        <VALUE encoding="string">surface-coding</VALUE>
+      </PARAMETER>
+      <VALUE encoding="base64" size="160">TYySlYs77skoDS4Q/sZ56a4dTGc=</VALUE>
+    </DIGEST>
+    <VALUE encoding="base64" size="1024">VbmCSPUugM7yB0T9lpvnvw1U1y+bUt/nH6sqN2nAnBdUNXRJMijEl0GyJpHmTi6F00IU2Z7Fsbarw/SzFTO13Bc9v9tTW2d4A5bmBu7JK++qy0eTZbxunZItxJ2lpOFx0HVEN5qTBU3RuBRQi78p6/1JfE2alA6PIUqh0ZrNBZE=</VALUE>
+  </SIGNATURE>
+</XrML>
+
+<XrML xmlns="" version="1.2">
+  <BODY type="LICENSE" version="3.0">
+    <ISSUEDTIME>2006-03-03T22:29</ISSUEDTIME>
+    <DESCRIPTOR>
+      <OBJECT type="Client-Licensor-Certificate">
+        <ID type="MS-GUID">{a09523c9-68ce-456a-a5e0-c2a35f3e303e}</ID>
+      </OBJECT>
+    </DESCRIPTOR>
+    <ISSUER>
+      <OBJECT type="MS-DRM-Server">
+        <ID type="MS-GUID">{1d59a4ae-e6ae-4151-b458-afc5251fe0c3}</ID>
+        <ADDRESS type="URL">http://ed-drm-red3/_wmcs</ADDRESS>
+      </OBJECT>
+      <PUBLICKEY>
+        <ALGORITHM>RSA</ALGORITHM>
+        <PARAMETER name="public-exponent">
+          <VALUE encoding="integer32">65537</VALUE>
+        </PARAMETER>
+        <PARAMETER name="modulus">
+          <VALUE encoding="base64" size="1024">43b8U8yG5ifu38tkAa8K/2DnMOZqgVdj8OZCY+V0332efhaocT7EGV8JE3Htolc2mqTDdLlHQQoJ9jrG36efYYqo4aivo7ddx5w9NlMo9O4mXb+s70LD1VPaM6TywWYYfho+6vTGI1SwPJVgmwS2Qgha/AXOJrK0t5gEX8CZPMo=</VALUE>
+        </PARAMETER>
+      </PUBLICKEY>
+      <SECURITYLEVEL name="Server-Version" value="5.2.3790.134" />
+      <SECURITYLEVEL name="Server-SKU" value="RMS 1.0" />
+    </ISSUER>
+    <DISTRIBUTIONPOINT>
+      <OBJECT type="License-Acquisition-URL">
+        <ID type="MS-GUID">{0F45FD50-383B-43EE-90A4-ED013CD0CFE5}</ID>
+        <NAME>DRM Server Cluster</NAME>
+        <ADDRESS type="URL">http://ed-drm-red3/_wmcs/licensing</ADDRESS>
+      </OBJECT>
+    </DISTRIBUTIONPOINT>
+    <ISSUEDPRINCIPALS>
+      <PRINCIPAL internal-id="1">
+        <OBJECT type="Group-Identity">
+          <ID type="Windows">S-1-5-21-2127521184-1604012920-1887927527-1723404</ID>
+          <NAME>jack.davis@microsoft.com</NAME>
+        </OBJECT>
+        <PUBLICKEY>
+          <ALGORITHM>RSA</ALGORITHM>
+          <PARAMETER name="public-exponent">
+            <VALUE encoding="integer32">65537</VALUE>
+          </PARAMETER>
+          <PARAMETER name="modulus">
+            <VALUE encoding="base64" size="1024">r1rbEmgQhskJ29p8xpX00ZlROS13kHMzv0DrOQOn+4mijO3Eanelw1F+mYdSdrByU9MbamWHalUqku6wESZY2DCpRU2C3xw2lCvPtrYqtJkxSt835Ez4quDYVNQq+15DzA6qyl5gc07XuoQi1AC0Nfb5tMy0R85SocFE195VUq4=</VALUE>
+          </PARAMETER>
+        </PUBLICKEY>
+      </PRINCIPAL>
+    </ISSUEDPRINCIPALS>
+    <WORK>
+      <OBJECT type="Client-Licensor-Certificate">
+        <ID type="MS-GUID">{a09523c9-68ce-456a-a5e0-c2a35f3e303e}</ID>
+      </OBJECT>
+      <RIGHTSGROUP name="Main-Rights">
+        <RIGHTSLIST>
+          <RIGHT name="ISSUE">
+            <CONDITIONLIST>
+              <TIME>
+                <RANGETIME>
+                  <FROM>2006-03-02T22:29</FROM>
+                  <UNTIL>2007-03-03T22:29</UNTIL>
+                </RANGETIME>
+              </TIME>
+              <ACCESS>
+                <PRINCIPAL internal-id="1">
+                  <ENABLINGBITS type="sealed-key">
+                    <VALUE encoding="base64" size="6144">QFPYZsTR7RHRB9eIipt90W+KsxeUolRgmrDyd0yrElIZ/DQOFVf+XQ8BKRo9lixtFzt3XzLj6Klhv4N98C7MJFtUSmzE8Zg1GskBRXWV8cIo8s16JRygbbPorYB+R1tZ2c/xkNNDvpgMJEL4bJIKCpnby7WMbUJC7kq/Tn17C/DPbIcLcNjDqLfOd7pc3zEnpXvo9TN/xXTfM9Xkt8TvplBoFfFk0nPnQ4uhq3naVwfrx2uJC4w/i9wsL/XmIcVgmxEguoKa8GmvNIgJxah3M+otd6E4wRTt05M6XU4hnMZxFvEFgiYzkcFufkg2KfvsFykEj6f6epHgr4rNfhM19Zx+mIlkTb77AIl5bOG2ZkjtW0o5z7e24ZZ2dwObkUpIVTl4Gbl0oYz3FawTs8XwuxzwPCG76QosJFYA2Hgs3o62UcCVhzZDBWoFLUmHcn0mTsmdp6h6oL7xhYD6SkLn28tbgOIk/H12b2AQwiiNPUavY6FgLfXDVXx1dnFMbkDacvU4kioo1pIxEzak2ohdCeKTrojJ5KXk13h9mzCLNVHn35T4u7OMME4BrbpeDaVxI45ClTjkqb9LBGd3GsAjv7P3cDtSGD49jruIGbywZkPPKutBWDBkR+UR0wtrZm+cNd6gVMbIg77wfDdDUlNClujmA5UikwqGTGRuAnyM4Zxa12llYAcyhCGNbcvk8ZVo/DchadQZMUFArE9XrgZnWGLLZaHzOW93/nTThGJ5EV+wx1i2dZZtrSFqtfiWn2AqiEnD9TaoPFBUhUZ/J/4cPse9pUnrSaLfymqragvv70XXOsYlv/Ekyu16/PBdLlRYgetrF4dBsxX1DhrLSOll0EmxbmVh4rM2b5bbxdFrRQJ4GGVgJCamFh8karGzZoiO6gikumZ2BRi+ByzmIoPhrLZVzSvbpC3OutMnrZmma9v91mmN5s16YcEYbRQga0nWaxcIupcV+HAq37apsx7Dy+XlMsCelLoOF0CUeLZE4lk8rkqLiDDnfVqveoQZ5Wss</VALUE>
+                  </ENABLINGBITS>
+                </PRINCIPAL>
+              </ACCESS>
+            </CONDITIONLIST>
+          </RIGHT>
+        </RIGHTSLIST>
+      </RIGHTSGROUP>
+    </WORK>
+  </BODY>
+  <SIGNATURE>
+    <DIGEST>
+      <ALGORITHM>SHA1</ALGORITHM>
+      <PARAMETER name="codingtype">
+        <VALUE encoding="string">surface-coding</VALUE>
+      </PARAMETER>
+      <VALUE encoding="base64" size="160">5/2JDGoaf/K7U/QXPsUHibd7ySg=</VALUE>
+    </DIGEST>
+    <ALGORITHM>RSA PKCS#1-V1.5</ALGORITHM>
+    <VALUE encoding="base64" size="1024">izgCCi9WPO9FcS911bFPhpfoOBXH8/4tQ5Vxnt1FtYKOIFAh/50riTx+yJe9vx4jhvJxF2dR795dXUVA3DmbSgdmMtvPLba1VXCUG9NJlJXx8OqSkRV7d+P2DDgzPX7Q3hlPJWrwn0ee430BUw+mElRWw/GxIPHUTmKCQRhPj74=</VALUE>
+  </SIGNATURE>
+</XrML>

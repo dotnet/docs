@@ -1,0 +1,35 @@
+<Type Name="CompletedEventHandler" FullName="System.Management.CompletedEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void CompletedEventHandler(object sender, CompletedEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CompletedEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Management.CompletedEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Management</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Management.CompletedEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The instance of the object for which to invoke this method.</param>
+    <param name="e">The <see cref="T:System.Management.CompletedEventArgs" /> that specifies the reason the event was invoked.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Management.ManagementOperationObserver.Completed" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example calls a method asynchronously. The **Win32_Process.Create** method is called to create a new process for Calc.exe.  
+  
+ [!code-csharp[wminet_CompletedEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_CompletedEventHandler/cs/CompletedEventHandler.cs#1)]
+ [!code-vb[wminet_CompletedEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_CompletedEventHandler/vb/CompletedEventHandler.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

@@ -1,0 +1,202 @@
+<Type Name="HostServices" FullName="Microsoft.Build.Execution.HostServices">
+  <TypeSignature Language="C#" Value="public class HostServices" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HostServices extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Execution.HostServices" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerDisplay("#Entries={hostObjectMap.Count}")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Implementation of a host service that mediates access from the build to the host.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See also <xref:Microsoft.Build.Utilities.Task.HostObject%2A>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HostServices ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.HostServices.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a host service.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHostObject">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskHost GetHostObject (string projectFile, string targetName, string taskName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Build.Framework.ITaskHost GetHostObject(string projectFile, string targetName, string taskName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.HostServices.GetHostObject(System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.ITaskHost</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="projectFile" Type="System.String" />
+        <Parameter Name="targetName" Type="System.String" />
+        <Parameter Name="taskName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="projectFile">The name of the project file.</param>
+        <param name="targetName">The name of the target.</param>
+        <param name="taskName">The task name associated with the host service.</param>
+        <summary>Gets the host service for the given task where the task appears within a target and project with the given names.</summary>
+        <returns>Returns the host service for the given task where the task appears within a target and project with the given names. If no host service exists, returns null.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNodeAffinity">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Execution.NodeAffinity GetNodeAffinity (string projectFile);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype Microsoft.Build.Execution.NodeAffinity GetNodeAffinity(string projectFile) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.HostServices.GetNodeAffinity(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Execution.NodeAffinity</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="projectFile" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="projectFile">The project file associated with the node.</param>
+        <summary>Gets the node affinity for the given project file.</summary>
+        <returns>Returns the node affinity for the given project file.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnRenameProject">
+      <MemberSignature Language="C#" Value="public void OnRenameProject (string oldFullPath, string newFullPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void OnRenameProject(string oldFullPath, string newFullPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.HostServices.OnRenameProject(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oldFullPath" Type="System.String" />
+        <Parameter Name="newFullPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="oldFullPath">The current path to the project file.</param>
+        <param name="newFullPath">The new path to the project file.</param>
+        <summary>Updates the host services table when a project is named or renamed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A project is named when it is given a new full path and the old path is null.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterHostObject">
+      <MemberSignature Language="C#" Value="public void RegisterHostObject (string projectFile, string targetName, string taskName, Microsoft.Build.Framework.ITaskHost hostObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterHostObject(string projectFile, string targetName, string taskName, class Microsoft.Build.Framework.ITaskHost hostObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.HostServices.RegisterHostObject(System.String,System.String,System.String,Microsoft.Build.Framework.ITaskHost)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="projectFile" Type="System.String" />
+        <Parameter Name="targetName" Type="System.String" />
+        <Parameter Name="taskName" Type="System.String" />
+        <Parameter Name="hostObject" Type="Microsoft.Build.Framework.ITaskHost" />
+      </Parameters>
+      <Docs>
+        <param name="projectFile">The project file containing the task/target pair.</param>
+        <param name="targetName">The name of the target.</param>
+        <param name="taskName">The name of the task.</param>
+        <param name="hostObject">The host service.</param>
+        <summary>Register a host service for the given task/target pair.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Overwrites any existing host service.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetNodeAffinity">
+      <MemberSignature Language="C#" Value="public void SetNodeAffinity (string projectFile, Microsoft.Build.Execution.NodeAffinity nodeAffinity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetNodeAffinity(string projectFile, valuetype Microsoft.Build.Execution.NodeAffinity nodeAffinity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.HostServices.SetNodeAffinity(System.String,Microsoft.Build.Execution.NodeAffinity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="projectFile" Type="System.String" />
+        <Parameter Name="nodeAffinity" Type="Microsoft.Build.Execution.NodeAffinity" />
+      </Parameters>
+      <Docs>
+        <param name="projectFile">The project file. If set to String.Empty, all projects will use the given node affinity. If set to null, all node affinities will be cleared.</param>
+        <param name="nodeAffinity">The node affinity.</param>
+        <summary>Sets the node affinity for the given project file.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnregisterProject">
+      <MemberSignature Language="C#" Value="public void UnregisterProject (string projectFullPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UnregisterProject(string projectFullPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.HostServices.UnregisterProject(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="projectFullPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="projectFullPath">The path to the project to unregister.</param>
+        <summary>Unregister the project's host objects, if any and remove any node affinities associated with it.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

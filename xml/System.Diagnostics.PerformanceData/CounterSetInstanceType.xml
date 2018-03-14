@@ -1,0 +1,122 @@
+<Type Name="CounterSetInstanceType" FullName="System.Diagnostics.PerformanceData.CounterSetInstanceType">
+  <TypeSignature Language="C#" Value="public enum CounterSetInstanceType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CounterSetInstanceType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.PerformanceData.CounterSetInstanceType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies whether the counter set allows multiple instances such as processes and physical disks, or a single instance such as memory.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GlobalAggregate">
+      <MemberSignature Language="C#" Value="GlobalAggregate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PerformanceData.CounterSetInstanceType GlobalAggregate = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceData.CounterSetInstanceType.GlobalAggregate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceData.CounterSetInstanceType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The counter set contains single instance counters whose aggregate value is obtained from one or more sources. For example, a counter in this type of counter set might obtain the number of reads from each of the three hard disks on the computer and sum their values.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GlobalAggregateWithHistory">
+      <MemberSignature Language="C#" Value="GlobalAggregateWithHistory" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PerformanceData.CounterSetInstanceType GlobalAggregateWithHistory = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceData.CounterSetInstanceType.GlobalAggregateWithHistory" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceData.CounterSetInstanceType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This type is similar to <see cref="F:System.Diagnostics.PerformanceData.CounterSetInstanceType.GlobalAggregate" /> except that this counter set type stores all counter values for the lifetime of the consumer application (the counter value is cached beyond the lifetime of the counter). For example, if one of the hard disks in the global aggregate example were to become unavailable, the total bytes read by that disk would still be available and used to calculate the aggregate value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InstanceAggregate">
+      <MemberSignature Language="C#" Value="InstanceAggregate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PerformanceData.CounterSetInstanceType InstanceAggregate = int32(22)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceData.CounterSetInstanceType.InstanceAggregate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceData.CounterSetInstanceType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This type is similar to <see cref="F:System.Diagnostics.PerformanceData.CounterSetInstanceType.MultipleAggregate" />, except that instead of aggregating all instance data to one aggregated (_Total) instance, it will aggregate counter data from instances of the same name. For example, if multiple provider processes contained instances named IExplore, <see cref="F:System.Diagnostics.PerformanceData.CounterSetInstanceType.Multiple" /> and <see cref="F:System.Diagnostics.PerformanceData.CounterSetInstanceType.MultipleAggregate" /> CounterSet will show multiple IExplore instances (IExplore, IExplore#1, IExplore#2, and so on); however, a <see cref="F:System.Diagnostics.PerformanceData.CounterSetInstanceType.InstanceAggregate" /> instance type will publish only one IExplore instance with aggregated counter data from all instances named IExplore.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This type is not supported in Windows Vista.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Multiple">
+      <MemberSignature Language="C#" Value="Multiple" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PerformanceData.CounterSetInstanceType Multiple = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceData.CounterSetInstanceType.Multiple" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceData.CounterSetInstanceType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The counter set contains multiple instance counters, for example, a counter that measures the average disk I/O for a process.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MultipleAggregate">
+      <MemberSignature Language="C#" Value="MultipleAggregate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PerformanceData.CounterSetInstanceType MultipleAggregate = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceData.CounterSetInstanceType.MultipleAggregate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceData.CounterSetInstanceType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The counter set contains multiple instance counters whose aggregate value is obtained from all instances of the counter. For example, a counter in this type of counter set might obtain the total thread execution time for all threads in a multithreaded application and sum their values.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Single">
+      <MemberSignature Language="C#" Value="Single" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PerformanceData.CounterSetInstanceType Single = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceData.CounterSetInstanceType.Single" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceData.CounterSetInstanceType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The counter set contains single instance counters, for example, a counter that measures physical memory.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

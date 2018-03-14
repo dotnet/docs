@@ -1,0 +1,6 @@
+# [Resources in Desktop Apps](index.md)
+## [Creating Resource Files](creating-resource-files-for-desktop-apps.md)
+### [Working with .resx Files Programmatically](working-with-resx-files-programmatically.md)
+## [Creating Satellite Assemblies](creating-satellite-assemblies-for-desktop-apps.md)
+## [Packaging and Deploying Resources](packaging-and-deploying-resources-in-desktop-apps.md)
+## [Retrieving Resources](retrieving-resources-in-desktop-apps.md)

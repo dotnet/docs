@@ -1,0 +1,8 @@
+<!-- <Snippet1> -->
+<Page WindowTitle="Canvas Sample" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+  <Canvas Background="LightSteelBlue">
+    <TextBlock FontSize="14" Canvas.Top="100" Canvas.Left="10">Hello World!</TextBlock>
+    <TextBlock FontSize="22" Canvas.Top="200" Canvas.Left="75">Isn't absolute positioning handy?</TextBlock>
+  </Canvas>
+</Page>
+<!-- </Snippet1> -->

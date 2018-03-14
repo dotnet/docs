@@ -1,0 +1,811 @@
+<Type Name="StatisticFormula" FullName="System.Web.UI.DataVisualization.Charting.StatisticFormula">
+  <TypeSignature Language="C#" Value="public class StatisticFormula" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StatisticFormula extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.StatisticFormula" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.DataVisualization</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Calculates statistical formulas.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Formulas can be loosely grouped into the following categories: distributions, including inverse distributions; tests; and basic statistical formulas. Each group has common characteristics with respect to their input and return values.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Anova">
+      <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.AnovaResult Anova (double probability, string inputSeriesNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.DataVisualization.Charting.AnovaResult Anova(float64 probability, string inputSeriesNames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.StatisticFormula.Anova(System.Double,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.AnovaResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="probability" Type="System.Double" />
+        <Parameter Name="inputSeriesNames" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="probability">Alpha value. The acceptable input range is between 0 and 1.</param>
+        <param name="inputSeriesNames">Names of two or more input series. Each series must exist in the series collection at the time of the method call, and have the same number of data points.</param>
+        <summary>The Anova formula determines the existence or absence of a statistically significant difference between the mean values of two or more groups of data.</summary>
+        <returns>An <see cref="T:System.Web.UI.DataVisualization.Charting.AnovaResult" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code demonstrates how to use this formula.  
+  
+```vb  
+Dim result As AnovaResult = Chart1.DataManipulator.Statistics.Anova(.05, "Series1,Series2,Series3")  
+```  
+  
+```csharp  
+AnovaResult result = Chart1.DataManipulator.Statistics.Anova(.05, "Series1,Series2,Series3");  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BetaFunction">
+      <MemberSignature Language="C#" Value="public double BetaFunction (double m, double n);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float64 BetaFunction(float64 m, float64 n) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.StatisticFormula.BetaFunction(System.Double,System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="m" Type="System.Double" />
+        <Parameter Name="n" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="m">First value for the beta function.</param>
+        <param name="n">Second value for the beta function.</param>
+        <summary>The beta function calculates the beta function value.</summary>
+        <returns>Beta value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code demonstrates how to use this formula.  
+  
+```vb  
+Dim result As Double = Chart1.DataManipulator.Statistics.BetaFunction(2.3, 6.2)  
+```  
+  
+```csharp  
+double result = Chart1.DataManipulator.Statistics.BetaFunction(2.3, 6.2);  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Correlation">
+      <MemberSignature Language="C#" Value="public double Correlation (string firstInputSeriesName, string secondInputSeriesName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float64 Correlation(string firstInputSeriesName, string secondInputSeriesName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.StatisticFormula.Correlation(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="firstInputSeriesName" Type="System.String" />
+        <Parameter Name="secondInputSeriesName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="firstInputSeriesName">Name of the <see cref="P:System.Web.UI.DataVisualization.Charting.Chart.Series" /> object that stores the first group's data.</param>
+        <param name="secondInputSeriesName">Name of the <see cref="P:System.Web.UI.DataVisualization.Charting.Chart.Series" /> object that stores the second group's data.</param>
+        <summary>The correlation formula shows the strength of the relationship that exists between two random variables.</summary>
+        <returns>Correlation value between the two groups of data.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The method throws an exception if the input series do not have the same number of data points.  
+  
+   
+  
+## Examples  
+ The following code demonstrates how to use this formula.  
+  
+```vb  
+Dim result As Double = Chart1.DataManipulator.Statistics.Correlation("Series1", "Series2")  
+```  
+  
+```csharp  
+double result = Chart1.DataManipulator.Statistics.Correlation("Series1", "Series2");  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Covariance">
+      <MemberSignature Language="C#" Value="public double Covariance (string firstInputSeriesName, string secondInputSeriesName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float64 Covariance(string firstInputSeriesName, string secondInputSeriesName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.StatisticFormula.Covariance(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="firstInputSeriesName" Type="System.String" />
+        <Parameter Name="secondInputSeriesName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="firstInputSeriesName">Name of the <see cref="P:System.Web.UI.DataVisualization.Charting.Chart.Series" /> object that stores the first group's data.</param>
+        <param name="secondInputSeriesName">Name of the <see cref="P:System.Web.UI.DataVisualization.Charting.Chart.Series" /> object that stores the second group's data.</param>
+        <summary>The covariance formula measures the degree of dependence that may exist between two random variables.</summary>
+        <returns>Covariance value between the two groups of data.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The method throws an exception if the input series do not have the same number of data points.  
+  
+   
+  
+## Examples  
+ The following code demonstrates how to use this formula.  
+  
+```vb  
+Dim result As double = Chart1.DataManipulator.Statistics.Covariance("Series1", "Series2")  
+```  
+  
+```csharp  
+double result = Chart1.DataManipulator.Statistics.Covariance("Series1", "Series2");  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FDistribution">
+      <MemberSignature Language="C#" Value="public double FDistribution (double value, int firstDegreeOfFreedom, int secondDegreeOfFreedom);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float64 FDistribution(float64 value, int32 firstDegreeOfFreedom, int32 secondDegreeOfFreedom) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.StatisticFormula.FDistribution(System.Double,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" />
+        <Parameter Name="firstDegreeOfFreedom" Type="System.Int32" />
+        <Parameter Name="secondDegreeOfFreedom" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="value">The F value for which you want the distribution.</param>
+        <param name="firstDegreeOfFreedom">First degree of freedom.</param>
+        <param name="secondDegreeOfFreedom">Second degree of freedom.</param>
+        <summary>The F distribution formula calculates the probability for the F-distribution.</summary>
+        <returns>Probability for the F distribution.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code demonstrates how to use this formula.  
+  
+```vb  
+Dim result As double = Chart1.DataManipulator.Statistics.FDistribution(6.31, 15, 7)  
+```  
+  
+```csharp  
+double result = Chart1.DataManipulator.Statistics.FDistribution(6.31, 15, 7);  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FTest">
+      <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.FTestResult FTest (double probability, string firstInputSeriesName, string secondInputSeriesName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.DataVisualization.Charting.FTestResult FTest(float64 probability, string firstInputSeriesName, string secondInputSeriesName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.StatisticFormula.FTest(System.Double,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.FTestResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="probability" Type="System.Double" />
+        <Parameter Name="firstInputSeriesName" Type="System.String" />
+        <Parameter Name="secondInputSeriesName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="probability">The alpha value. The acceptable range is between 0 and 1.</param>
+        <param name="firstInputSeriesName">Name of the <see cref="P:System.Web.UI.DataVisualization.Charting.Chart.Series" /> object that stores the first group's data.</param>
+        <param name="secondInputSeriesName">Name of the <see cref="P:System.Web.UI.DataVisualization.Charting.Chart.Series" /> object that stores the second group's data.</param>
+        <summary>The F-test formula performs a two-sample F-test using F distribution, and is used to see if the samples have different variances.</summary>
+        <returns>An <see cref="T:System.Web.UI.DataVisualization.Charting.FTestResult" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The method throws an exception if the input series do not have the same number of data points.  
+  
+   
+  
+## Examples  
+ The following code demonstrates how to use this formula.  
+  
+```vb  
+Dim result As FTestResult = Chart1.DataManipulator.Statistics.FTest(0.05, "Series1", "Series2")  
+```  
+  
+```csharp  
+FTestResult result = Chart1.DataManipulator.Statistics.FTest(0.05, "Series1", "Series2");  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GammaFunction">
+      <MemberSignature Language="C#" Value="public double GammaFunction (double value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float64 GammaFunction(float64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.StatisticFormula.GammaFunction(System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="value">Value for which the gamma value is required.</param>
+        <summary>The gamma function calculates the gamma value.</summary>
+        <returns>Gamma value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code demonstrates how to use this formula.  
+  
+```vb  
+Dim result As Double = Chart1.DataManipulator.Statistics.GammaFunction(6.2)  
+```  
+  
+```csharp  
+double result = Chart1.DataManipulator.Statistics.GammaFunction(6.2);  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InverseFDistribution">
+      <MemberSignature Language="C#" Value="public double InverseFDistribution (double probability, int firstDegreeOfFreedom, int secondDegreeOfFreedom);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float64 InverseFDistribution(float64 probability, int32 firstDegreeOfFreedom, int32 secondDegreeOfFreedom) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.StatisticFormula.InverseFDistribution(System.Double,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="probability" Type="System.Double" />
+        <Parameter Name="firstDegreeOfFreedom" Type="System.Int32" />
+        <Parameter Name="secondDegreeOfFreedom" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="probability">Probability for the F distribution. The acceptable range is between 0 and 1.</param>
+        <param name="firstDegreeOfFreedom">First degree of freedom.</param>
+        <param name="secondDegreeOfFreedom">Second degree of freedom.</param>
+        <summary>The inverse F distribution formula calculates the inverse of the F cumulative distribution.</summary>
+        <returns>F value for the F distribution.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code demonstrates how to use this formula.  
+  
+```vb  
+Dim result As Double = Chart1.DataManipulator.Statistics.InverseFDistribution(.05, 15, 30)  
+```  
+  
+```csharp  
+double result = Chart1.DataManipulator.Statistics.InverseFDistribution(.05, 15, 30);  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InverseNormalDistribution">
+      <MemberSignature Language="C#" Value="public double InverseNormalDistribution (double probability);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float64 InverseNormalDistribution(float64 probability) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.StatisticFormula.InverseNormalDistribution(System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="probability" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="probability">Alpha value. The acceptable input range is between 0 and 1.</param>
+        <summary>The inverse normal distribution formula calculates the inverse of the standard normal cumulative distribution. The distribution has a mean of 0 and a standard deviation of one.</summary>
+        <returns>Inverse of the normal distribution function.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code demonstrates how to use this formula.  
+  
+```vb  
+Dim result As double = Chart1.DataManipulator.Statistics.InverseNormalDistribution(.05)  
+```  
+  
+```csharp  
+double result = Chart1.DataManipulator.Statistics.InverseNormalDistribution(.05);  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InverseTDistribution">
+      <MemberSignature Language="C#" Value="public double InverseTDistribution (double probability, int degreeOfFreedom);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float64 InverseTDistribution(float64 probability, int32 degreeOfFreedom) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.StatisticFormula.InverseTDistribution(System.Double,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="probability" Type="System.Double" />
+        <Parameter Name="degreeOfFreedom" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="probability">Probability for the F distribution. The acceptable range is between 0 and 1.</param>
+        <param name="degreeOfFreedom">Degree of freedom.</param>
+        <summary>The inverse *t*-distribution formula calculates the *t*-value of the Student's *t*-distribution as a function of probability and degrees of freedom.</summary>
+        <returns>Inverse of the *t*-distribution.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code demonstrates how to use this formula.  
+  
+```vb  
+double result = Chart1.DataManipulator.Statistics.InverseTDistribution(.05, 15)  
+```  
+  
+```csharp  
+double result = Chart1.DataManipulator.Statistics.InverseTDistribution(.05, 15);  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Mean">
+      <MemberSignature Language="C#" Value="public double Mean (string inputSeriesName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float64 Mean(string inputSeriesName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.StatisticFormula.Mean(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inputSeriesName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="inputSeriesName">Name of the <see cref="P:System.Web.UI.DataVisualization.Charting.Chart.Series" /> object that stores the data for which the mean value is required.</param>
+        <summary>The mean formula calculates the average, or mean, of data stored in a data series.</summary>
+        <returns>Mean value of all the data points in the given series.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If named input series does not exist in the <xref:System.Web.UI.DataVisualization.Charting.SeriesCollection> at the time of the method call, an exception is thrown.  
+  
+   
+  
+## Examples  
+ The following code demonstrates how to use this formula.  
+  
+```vb  
+Dim result As Double = Chart1.DataManipulator.Statistics.Mean("Series1")  
+```  
+  
+```csharp  
+double result = Chart1.DataManipulator.Statistics.Mean("Series1");  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Median">
+      <MemberSignature Language="C#" Value="public double Median (string inputSeriesName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float64 Median(string inputSeriesName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.StatisticFormula.Median(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inputSeriesName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="inputSeriesName">Name of the <see cref="P:System.Web.UI.DataVisualization.Charting.Chart.Series" /> object that stores the data for which the median value is required.</param>
+        <summary>The median formula calculates the median of the data stored in a data series.</summary>
+        <returns>Median of all the data points in the given series.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the named input series does not exist in the <xref:System.Web.UI.DataVisualization.Charting.SeriesCollection> at the time of the method call, an exception is thrown.  
+  
+   
+  
+## Examples  
+ The following code demonstrates how to use this formula.  
+  
+```vb  
+Dim result As Double = Chart1.DataManipulator.Statistics.Median("Series1")  
+```  
+  
+```csharp  
+double result = Chart1.DataManipulator.Statistics.Median("Series1");  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NormalDistribution">
+      <MemberSignature Language="C#" Value="public double NormalDistribution (double zValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float64 NormalDistribution(float64 zValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.StatisticFormula.NormalDistribution(System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="zValue" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="zValue">Value for which the normal distribution is required.</param>
+        <summary>The normal distribution formula calculates the value of the standard normal cumulative distribution. The distribution has a mean of 0 and a standard deviation of 1.</summary>
+        <returns>Value of the standard normal cumulative distribution.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code demonstrates how to use this formula.  
+  
+```vb  
+Dim result As Double = Chart1.DataManipulator.Statistics.NormalDistribution(1.96)  
+```  
+  
+```csharp  
+double result = Chart1.DataManipulator.Statistics.NormalDistribution(1.96);  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TDistribution">
+      <MemberSignature Language="C#" Value="public double TDistribution (double value, int degreeOfFreedom, bool oneTail);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float64 TDistribution(float64 value, int32 degreeOfFreedom, bool oneTail) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.StatisticFormula.TDistribution(System.Double,System.Int32,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" />
+        <Parameter Name="degreeOfFreedom" Type="System.Int32" />
+        <Parameter Name="oneTail" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="value">
+          <c>t</c>-value for which you want the distribution.</param>
+        <param name="degreeOfFreedom">Degree of freedom</param>
+        <param name="oneTail">If set to <see langword="true" />, one-tailed distribution is used. Otherwise, two-tailed distribution is used.</param>
+        <summary>The *t*-distribution formula calculates the probability for the Student's *t*-distribution.</summary>
+        <returns>*t*-distribution function probability.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code demonstrates how to use this formula.  
+  
+```vb  
+Dim result As Double = Chart1.DataManipulator.Statistics.TDistribution(1.96, 30, true)  
+```  
+  
+```csharp  
+double result = Chart1.DataManipulator.Statistics.TDistribution(1.96, 30, true);  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TTestEqualVariances">
+      <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.TTestResult TTestEqualVariances (double hypothesizedMeanDifference, double probability, string firstInputSeriesName, string secondInputSeriesName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.DataVisualization.Charting.TTestResult TTestEqualVariances(float64 hypothesizedMeanDifference, float64 probability, string firstInputSeriesName, string secondInputSeriesName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.StatisticFormula.TTestEqualVariances(System.Double,System.Double,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.TTestResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hypothesizedMeanDifference" Type="System.Double" />
+        <Parameter Name="probability" Type="System.Double" />
+        <Parameter Name="firstInputSeriesName" Type="System.String" />
+        <Parameter Name="secondInputSeriesName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="hypothesizedMeanDifference">Hypothesized difference between the means of the data groups.</param>
+        <param name="probability">Alpha value. The acceptable range is between 0 and 1.</param>
+        <param name="firstInputSeriesName">Name of the <see cref="P:System.Web.UI.DataVisualization.Charting.Chart.Series" /> object that stores the first group's data.</param>
+        <param name="secondInputSeriesName">Name of the <see cref="P:System.Web.UI.DataVisualization.Charting.Chart.Series" /> object that stores the second group's data.</param>
+        <summary>The *t*-test with equal variances formula performs a *t*-test using Student's *t*-distribution with equal variances.</summary>
+        <returns>A <see cref="T:System.Web.UI.DataVisualization.Charting.TTestResult" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code demonstrates how to use this formula.  
+  
+```vb  
+Dim result As TTestResult = Chart1.DataManipulator.Statistics.TTestPaired(0.2, 0.05, "Series1", "Series2")  
+```  
+  
+```csharp  
+TTestResult result = Chart1.DataManipulator.Statistics.TTestPaired(0.2, 0.05, "Series1", "Series2");  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TTestPaired">
+      <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.TTestResult TTestPaired (double hypothesizedMeanDifference, double probability, string firstInputSeriesName, string secondInputSeriesName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.DataVisualization.Charting.TTestResult TTestPaired(float64 hypothesizedMeanDifference, float64 probability, string firstInputSeriesName, string secondInputSeriesName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.StatisticFormula.TTestPaired(System.Double,System.Double,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.TTestResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hypothesizedMeanDifference" Type="System.Double" />
+        <Parameter Name="probability" Type="System.Double" />
+        <Parameter Name="firstInputSeriesName" Type="System.String" />
+        <Parameter Name="secondInputSeriesName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="hypothesizedMeanDifference">Hypothesized difference between the means of the data groups.</param>
+        <param name="probability">Alpha value. The acceptable range is between 0 and 1.</param>
+        <param name="firstInputSeriesName">Name of the <see cref="P:System.Web.UI.DataVisualization.Charting.Chart.Series" /> object that stores the first group's data.</param>
+        <param name="secondInputSeriesName">Name of the <see cref="P:System.Web.UI.DataVisualization.Charting.Chart.Series" /> object that stores the second group's data.</param>
+        <summary>The *t*-test paired formula performs a *t*-test using Student's *t*-distribution with paired samples. This is useful when there is an observed natural pairing in samples (for example, when a sample group is tested twice).</summary>
+        <returns>A <see cref="T:System.Web.UI.DataVisualization.Charting.TTestResult" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code demonstrates how to use this formula.  
+  
+```vb  
+Dim result As TTestResult = Chart1.DataManipulator.Statistics.TTestPaired(0.2, 0.05, "Series1", "Series2")  
+```  
+  
+```csharp  
+TTestResult result = Chart1.DataManipulator.Statistics.TTestPaired(0.2, 0.05, "Series1", "Series2");  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TTestUnequalVariances">
+      <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.TTestResult TTestUnequalVariances (double hypothesizedMeanDifference, double probability, string firstInputSeriesName, string secondInputSeriesName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.DataVisualization.Charting.TTestResult TTestUnequalVariances(float64 hypothesizedMeanDifference, float64 probability, string firstInputSeriesName, string secondInputSeriesName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.StatisticFormula.TTestUnequalVariances(System.Double,System.Double,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.TTestResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hypothesizedMeanDifference" Type="System.Double" />
+        <Parameter Name="probability" Type="System.Double" />
+        <Parameter Name="firstInputSeriesName" Type="System.String" />
+        <Parameter Name="secondInputSeriesName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="hypothesizedMeanDifference">Hypothesized difference between the means of the data groups.</param>
+        <param name="probability">Alpha value. The acceptable range is between 0 and 1.</param>
+        <param name="firstInputSeriesName">Name of the <see cref="P:System.Web.UI.DataVisualization.Charting.Chart.Series" /> object that stores the first group's data.</param>
+        <param name="secondInputSeriesName">Name of the <see cref="P:System.Web.UI.DataVisualization.Charting.Chart.Series" /> object that stores the second group's data.</param>
+        <summary>The *t*-test with unequal variances formula performs a *t*-test using Student's *t*-distribution with unequal variances.</summary>
+        <returns>A <see cref="T:System.Web.UI.DataVisualization.Charting.TTestResult" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code demonstrates how to use this formula.  
+  
+```vb  
+Dim result As TTestResult = Chart1.DataManipulator.Statistics.TTestUnEqualVariances(0.2, 0.05, "Series1", "Series2")  
+```  
+  
+```csharp  
+TTestResult result = Chart1.DataManipulator.Statistics.TTestUnEqualVariances(0.2, 0.05, "Series1", "Series2");  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Variance">
+      <MemberSignature Language="C#" Value="public double Variance (string inputSeriesName, bool sampleVariance);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float64 Variance(string inputSeriesName, bool sampleVariance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.StatisticFormula.Variance(System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inputSeriesName" Type="System.String" />
+        <Parameter Name="sampleVariance" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="inputSeriesName">Name of the <see cref="P:System.Web.UI.DataVisualization.Charting.Chart.Series" /> object that stores the data for which the mean value is required.</param>
+        <param name="sampleVariance">Specify <see langword="true" /> if the data is a sample of a population; and <see langword="false" /> if the data is the entire population.</param>
+        <summary>The variance formula calculates the variance within a group of data.</summary>
+        <returns>Variance within the group of data.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code demonstrates how to use this formula.  
+  
+```vb  
+Dim result As Double = Chart1.DataManipulator.Statistics.Variance("Series1", false)  
+```  
+  
+```csharp  
+TTestResult result = double result = Chart1.DataManipulator.Statistics.Variance("Series1", false);  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ZTest">
+      <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.ZTestResult ZTest (double hypothesizedMeanDifference, double varianceFirstGroup, double varianceSecondGroup, double probability, string firstInputSeriesName, string secondInputSeriesName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.DataVisualization.Charting.ZTestResult ZTest(float64 hypothesizedMeanDifference, float64 varianceFirstGroup, float64 varianceSecondGroup, float64 probability, string firstInputSeriesName, string secondInputSeriesName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.StatisticFormula.ZTest(System.Double,System.Double,System.Double,System.Double,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.ZTestResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hypothesizedMeanDifference" Type="System.Double" />
+        <Parameter Name="varianceFirstGroup" Type="System.Double" />
+        <Parameter Name="varianceSecondGroup" Type="System.Double" />
+        <Parameter Name="probability" Type="System.Double" />
+        <Parameter Name="firstInputSeriesName" Type="System.String" />
+        <Parameter Name="secondInputSeriesName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="hypothesizedMeanDifference">Hypothesized difference between the means of the data groups.</param>
+        <param name="varianceFirstGroup">Variance within the first group of data.</param>
+        <param name="varianceSecondGroup">Variance within the second group of data.</param>
+        <param name="probability">Alpha value. The acceptable range is between 0 and 1.</param>
+        <param name="firstInputSeriesName">Name of the <see cref="P:System.Web.UI.DataVisualization.Charting.Chart.Series" /> object that stores the first group's data.</param>
+        <param name="secondInputSeriesName">Name of the <see cref="P:System.Web.UI.DataVisualization.Charting.Chart.Series" /> object that stores the second group's data.</param>
+        <summary>The Z-test formula performs a Z-test using normal distribution.</summary>
+        <returns>A <see cref="T:System.Web.UI.DataVisualization.Charting.ZTestResult" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code demonstrates how to use this formula.  
+  
+```vb  
+Dim result As ZTestResult = Chart1.DataManipulator.Statistics.ZTest(0.2, 2.5, 4.5, 0.05, "Series1", "Series2")  
+```  
+  
+```csharp  
+ZTestResult result = Chart1.DataManipulator.Statistics.ZTest(0.2, 2.5, 4.5, 0.05, "Series1", "Series2");  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

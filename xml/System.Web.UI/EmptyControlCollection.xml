@@ -1,0 +1,139 @@
+<Type Name="EmptyControlCollection" FullName="System.Web.UI.EmptyControlCollection">
+  <TypeSignature Language="C#" Value="public class EmptyControlCollection : System.Web.UI.ControlCollection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EmptyControlCollection extends System.Web.UI.ControlCollection" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.EmptyControlCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.ControlCollection</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides standard support for a <see cref="T:System.Web.UI.ControlCollection" /> collection that is always empty.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is used when you want to define a custom control that does not allow child controls.  
+  
+   
+  
+## Examples  
+ [!code-csharp[SystemWebUI_EmptyControlCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SystemWebUI_EmptyControlCollection/CS/emptycontrolcollection.cs#1)]
+ [!code-vb[SystemWebUI_EmptyControlCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SystemWebUI_EmptyControlCollection/VB/emptycontrolcollection.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EmptyControlCollection (System.Web.UI.Control owner);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.Control owner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.EmptyControlCollection.#ctor(System.Web.UI.Control)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Web.UI.Control" />
+      </Parameters>
+      <Docs>
+        <param name="owner">The <see cref="T:System.Web.UI.Control" /> that owns this collection as its collection of child controls.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.EmptyControlCollection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example attempts to populate a control with child controls, causing an exception. This is because the container control does not allow child controls. The following is the command line used to build the executable.  
+  
+```vb  
+vbc /r:System.dll /r:System.Web.dll /t:library  
+       /out:myWebAppPath/bin/vb_myEmptyControlCollection.dll  
+       myEmptyControlCollection.vb  
+```  
+  
+```csharp  
+csc /t:library /out:myWebAppPath/bin/cs_myEmptyControlCollection.dll  
+    myEmptyControlCollection.cs  
+```  
+  
+ [!code-csharp[SystemWebUI_EmptyControlCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SystemWebUI_EmptyControlCollection/CS/emptycontrolcollection.cs#1)]
+ [!code-vb[SystemWebUI_EmptyControlCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SystemWebUI_EmptyControlCollection/VB/emptycontrolcollection.vb#1)]  
+  
+ The following code example uses the empty custom control defined above. When running this example, you will get an exception. Notice that the values shown in the `Register` directive reflect the previous command line.  
+  
+```vb  
+<%@ Register TagPrefix="custom" Assembly="vb_myEmptyControlCollection" Namespace="CustomControls" %>  
+ <html>  
+  <body>  
+  <h1>Using an Empty Control</h1>  
+  <custom:MyVB_EmptyControl id="vbEmptyControlId" runat="server"/>  
+  </body>  
+ </html>  
+```  
+  
+```csharp  
+<%@ Register TagPrefix="custom" Assembly="cs_myEmptyControlCollection" Namespace="CustomControls" %>  
+ <html>  
+  <body>  
+  <h1>Using an Empty Control </h1>  
+  <custom:MyCS_EmptyControl id="csEmptyControlId" runat="server"/>  
+  </body>  
+ </html>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public override void Add (System.Web.UI.Control child);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Add(class System.Web.UI.Control child) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.EmptyControlCollection.Add(System.Web.UI.Control)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="child" Type="System.Web.UI.Control" />
+      </Parameters>
+      <Docs>
+        <param name="child">The <see cref="T:System.Web.UI.Control" /> to be added. This parameter is always ignored.</param>
+        <summary>Denies the addition of the specified <see cref="T:System.Web.UI.Control" /> object to the collection.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Web.HttpException">Always issued, because the control does not allow child controls.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddAt">
+      <MemberSignature Language="C#" Value="public override void AddAt (int index, System.Web.UI.Control child);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AddAt(int32 index, class System.Web.UI.Control child) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.EmptyControlCollection.AddAt(System.Int32,System.Web.UI.Control)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="child" Type="System.Web.UI.Control" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index at which to add the <see cref="T:System.Web.UI.Control" />. This parameter is always ignored.</param>
+        <param name="child">The <see cref="T:System.Web.UI.Control" /> to be added. This parameter is always ignored.</param>
+        <summary>Denies the addition of the specified <see cref="T:System.Web.UI.Control" /> object to the collection, at the specified index position.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Web.HttpException">Always issued, because the control does not allow child controls.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

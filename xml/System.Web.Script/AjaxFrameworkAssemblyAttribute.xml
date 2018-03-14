@@ -1,0 +1,61 @@
+<Type Name="AjaxFrameworkAssemblyAttribute" FullName="System.Web.Script.AjaxFrameworkAssemblyAttribute">
+  <TypeSignature Language="C#" Value="public class AjaxFrameworkAssemblyAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AjaxFrameworkAssemblyAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Script.AjaxFrameworkAssemblyAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly, AllowMultiple=false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the assembly that contains ASP.NET AJAX resources.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AjaxFrameworkAssemblyAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Script.AjaxFrameworkAssemblyAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Script.AjaxFrameworkAssemblyAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDefaultAjaxFrameworkAssembly">
+      <MemberSignature Language="C#" Value="protected virtual System.Reflection.Assembly GetDefaultAjaxFrameworkAssembly (System.Reflection.Assembly currentAssembly);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Reflection.Assembly GetDefaultAjaxFrameworkAssembly(class System.Reflection.Assembly currentAssembly) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Script.AjaxFrameworkAssemblyAttribute.GetDefaultAjaxFrameworkAssembly(System.Reflection.Assembly)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Assembly</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="currentAssembly" Type="System.Reflection.Assembly" />
+      </Parameters>
+      <Docs>
+        <param name="currentAssembly">The assembly that the <see cref="T:System.Web.Script.AjaxFrameworkAssemblyAttribute" /> attribute was declared in.</param>
+        <summary>Returns the default ASP.NET AJAX framework assembly that contains ASP.NET AJAX resources.</summary>
+        <returns>The default ASP.NET AJAX framework assembly.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

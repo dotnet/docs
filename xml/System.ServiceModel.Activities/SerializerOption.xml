@@ -1,0 +1,50 @@
+<Type Name="SerializerOption" FullName="System.ServiceModel.Activities.SerializerOption">
+  <TypeSignature Language="C#" Value="public enum SerializerOption" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SerializerOption extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.SerializerOption" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>A class that represents the types of serializers available.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DataContractSerializer">
+      <MemberSignature Language="C#" Value="DataContractSerializer" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Activities.SerializerOption DataContractSerializer = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.Activities.SerializerOption.DataContractSerializer" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Activities.SerializerOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the <see cref="T:System.Runtime.Serialization.DataContractSerializer" /> should be used when serializing.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="XmlSerializer">
+      <MemberSignature Language="C#" Value="XmlSerializer" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Activities.SerializerOption XmlSerializer = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.Activities.SerializerOption.XmlSerializer" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Activities.SerializerOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the <see cref="T:System.Xml.Serialization.XmlSerializer" /> should be used when serializing.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

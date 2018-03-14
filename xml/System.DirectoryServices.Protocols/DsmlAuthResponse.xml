@@ -1,0 +1,18 @@
+<Type Name="DsmlAuthResponse" FullName="System.DirectoryServices.Protocols.DsmlAuthResponse">
+  <TypeSignature Language="C#" Value="public class DsmlAuthResponse : System.DirectoryServices.Protocols.DirectoryResponse" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DsmlAuthResponse extends System.DirectoryServices.Protocols.DirectoryResponse" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.DsmlAuthResponse" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.DirectoryServices.Protocols.DirectoryResponse</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.DsmlAuthResponse" /> class is returned by <see cref="M:System.DirectoryServices.Protocols.DirectoryConnection.SendRequest(System.DirectoryServices.Protocols.DirectoryRequest)" /> as a response to <see cref="T:System.DirectoryServices.Protocols.DsmlAuthRequest" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

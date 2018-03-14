@@ -1,0 +1,25 @@
+<Type Name="ViewStateChangedEventHandler" FullName="System.Activities.Presentation.View.ViewStateChangedEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void ViewStateChangedEventHandler(object sender, ViewStateChangedEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ViewStateChangedEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.View.ViewStateChangedEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Activities.Presentation.View.ViewStateChangedEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">An <see cref="T:System.Activities.Presentation.View.ViewStateChangedEventArgs" /> object that contains no event data.</param>
+    <summary>Declares a delegate type that handles changes to the view state.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

@@ -1,0 +1,110 @@
+<Type Name="EntityStoreSchemaFilterObjectTypes" FullName="System.Data.Entity.Design.EntityStoreSchemaFilterObjectTypes">
+  <TypeSignature Language="C#" Value="public enum EntityStoreSchemaFilterObjectTypes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EntityStoreSchemaFilterObjectTypes extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Entity.Design.EntityStoreSchemaFilterObjectTypes" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the store object type to apply the schema filter to.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.Entity.Design.EntityStoreSchemaFilterObjectTypes> enumeration is used with the <xref:System.Data.Entity.Design.EntityStoreSchemaFilterEntry> class to allow or exclude particular database objects during generation.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="All">
+      <MemberSignature Language="C#" Value="All" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Entity.Design.EntityStoreSchemaFilterObjectTypes All = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Entity.Design.EntityStoreSchemaFilterObjectTypes.All" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Entity.Design.EntityStoreSchemaFilterObjectTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Apply the filter to all object types.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Function">
+      <MemberSignature Language="C#" Value="Function" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Entity.Design.EntityStoreSchemaFilterObjectTypes Function = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Entity.Design.EntityStoreSchemaFilterObjectTypes.Function" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Entity.Design.EntityStoreSchemaFilterObjectTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Apply this filter to function object types.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Entity.Design.EntityStoreSchemaFilterObjectTypes None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Entity.Design.EntityStoreSchemaFilterObjectTypes.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Entity.Design.EntityStoreSchemaFilterObjectTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Initial value. This is not a valid value to apply.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Table">
+      <MemberSignature Language="C#" Value="Table" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Entity.Design.EntityStoreSchemaFilterObjectTypes Table = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Entity.Design.EntityStoreSchemaFilterObjectTypes.Table" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Entity.Design.EntityStoreSchemaFilterObjectTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Apply the filter to table object types.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="View">
+      <MemberSignature Language="C#" Value="View" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Entity.Design.EntityStoreSchemaFilterObjectTypes View = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Entity.Design.EntityStoreSchemaFilterObjectTypes.View" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Entity.Design.EntityStoreSchemaFilterObjectTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Apply the filter to view object types.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

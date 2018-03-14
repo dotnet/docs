@@ -1,0 +1,57 @@
+<Type Name="ImageStorageMode" FullName="System.Web.UI.DataVisualization.Charting.ImageStorageMode">
+  <TypeSignature Language="C#" Value="public enum ImageStorageMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ImageStorageMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.ImageStorageMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.DataVisualization</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the mode of storing chart images.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.DataVisualization.Charting.ImageStorageMode> enumeration is used with the <xref:System.Web.UI.DataVisualization.Charting.Chart.ImageStorageMode%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.Chart> control. It defines the type of storage that will be used when the chart is rendered as an image.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="UseHttpHandler">
+      <MemberSignature Language="C#" Value="UseHttpHandler" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ImageStorageMode UseHttpHandler = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ImageStorageMode.UseHttpHandler" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.ImageStorageMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Web.UI.DataVisualization.Charting.Chart" /> uses an HTTP handler to store images to memory or a file.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UseImageLocation">
+      <MemberSignature Language="C#" Value="UseImageLocation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ImageStorageMode UseImageLocation = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ImageStorageMode.UseImageLocation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.ImageStorageMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Web.UI.DataVisualization.Charting.Chart" /> stores the image in a temporary file at the specified location.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

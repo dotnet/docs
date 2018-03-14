@@ -1,0 +1,8 @@
+CMFCRibbonPanel* pPanel1 = pCategory->AddPanel(_T("Standard"));
+
+pPanel1->Add(new CMFCRibbonGallery(ID_RIBBON_PBTN_1, _T("Embedded"), 0, 0, IDB_RIBBON_PALETTE_1, 64));
+
+CMFCRibbonGallery* pBtn2 = new CMFCRibbonGallery(ID_RIBBON_PBTN_2, _T("Button"), 1, 1, IDB_RIBBON_PALETTE_1, 64);
+pBtn2->SetButtonMode();
+pBtn2->SetAlwaysLargeImage();
+pPanel1->Add(pBtn2);

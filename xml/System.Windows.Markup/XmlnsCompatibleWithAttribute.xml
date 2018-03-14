@@ -1,0 +1,99 @@
+<Type Name="XmlnsCompatibleWithAttribute" FullName="System.Windows.Markup.XmlnsCompatibleWithAttribute">
+  <TypeSignature Language="C#" Value="public sealed class XmlnsCompatibleWithAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XmlnsCompatibleWithAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Markup.XmlnsCompatibleWithAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xaml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly, AllowMultiple=true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("WindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies that a XAML namespace can be subsumed by another XAML namespace. Typically, the subsuming XAML namespace is indicated in a previously defined <see cref="T:System.Windows.Markup.XmlnsDefinitionAttribute" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Applying the <xref:System.Windows.Markup.XmlnsCompatibleWithAttribute> enables an assembly to provide a new and compatible namespace for another XAML namespace, as previously indicated by <xref:System.Windows.Markup.XmlnsDefinitionAttribute>.  For example, `"http://www.adatum.com/2003/controls"` could be marked compatible with a defined XAML namespace identified as `"http://www.adatum.com/2005/controls"` through the following assembly-level attributes:  
+  
+```  
+[assembly:System.Windows.Markup.XmlnsDefinition("http://www.adatum.com/2005/controls", "Adatum.Controls")]  
+[assembly: System.Windows.Markup.XmlnsCompatibleWith("http://www.adatum.com/2003/controls", "http://www.adatum.com/2005/controls")]  
+```  
+  
+ In previous versions of the .NET Framework, this class existed in the WPF-specific assembly WindowsBase. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.Windows.Markup.XmlnsCompatibleWithAttribute> is in the System.Xaml assembly. For more information, see [Types Migrated from WPF to System.Xaml](~/docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlnsCompatibleWithAttribute (string oldNamespace, string newNamespace);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string oldNamespace, string newNamespace) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XmlnsCompatibleWithAttribute.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="oldNamespace" Type="System.String" />
+        <Parameter Name="newNamespace" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="oldNamespace">The reference XAML namespace identifier.</param>
+        <param name="newNamespace">The subsuming XAML namespace identifier.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.XmlnsCompatibleWithAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="oldNamespace" /> or <paramref name="newNamespace" /> are <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="NewNamespace">
+      <MemberSignature Language="C#" Value="public string NewNamespace { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NewNamespace" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XmlnsCompatibleWithAttribute.NewNamespace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the subsuming namespace identifier reported by this attribute.</summary>
+        <value>The subsuming namespace identifier reported in the attribute.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OldNamespace">
+      <MemberSignature Language="C#" Value="public string OldNamespace { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OldNamespace" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XmlnsCompatibleWithAttribute.OldNamespace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the reference namespace identifier reported by this attribute.</summary>
+        <value>The reference namespace identifier.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

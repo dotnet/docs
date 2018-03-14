@@ -1,0 +1,123 @@
+<Type Name="QueueAccessMode" FullName="System.Messaging.QueueAccessMode">
+  <TypeSignature Language="C#" Value="public enum QueueAccessMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed QueueAccessMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Messaging.QueueAccessMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Messaging</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the access mode for a <see cref="T:System.Messaging.MessageQueue" /> at creation time.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When creating a <xref:System.Messaging.MessageQueue>, if no access mode is specified, the access mode defaults to `QueueAccessMode.SendAndReceive`.  
+  
+ Once the <xref:System.Messaging.MessageQueue> is created, the access mode cannot be changed.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Peek">
+      <MemberSignature Language="C#" Value="Peek" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.QueueAccessMode Peek = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.QueueAccessMode.Peek" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.QueueAccessMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The queue can only peek at messages.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PeekAndAdmin">
+      <MemberSignature Language="C#" Value="PeekAndAdmin" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.QueueAccessMode PeekAndAdmin = int32(160)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.QueueAccessMode.PeekAndAdmin" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.QueueAccessMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The queue can peek at messages. It can also be purged.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Receive">
+      <MemberSignature Language="C#" Value="Receive" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.QueueAccessMode Receive = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.QueueAccessMode.Receive" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.QueueAccessMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The queue can peek at or receive messages.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ReceiveAndAdmin">
+      <MemberSignature Language="C#" Value="ReceiveAndAdmin" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.QueueAccessMode ReceiveAndAdmin = int32(129)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.QueueAccessMode.ReceiveAndAdmin" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.QueueAccessMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The queue can receive messages. It can also be purged.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Send">
+      <MemberSignature Language="C#" Value="Send" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.QueueAccessMode Send = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.QueueAccessMode.Send" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.QueueAccessMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The queue can only send messages.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SendAndReceive">
+      <MemberSignature Language="C#" Value="SendAndReceive" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.QueueAccessMode SendAndReceive = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.QueueAccessMode.SendAndReceive" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.QueueAccessMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The queue can peek at, receive, or send messages.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

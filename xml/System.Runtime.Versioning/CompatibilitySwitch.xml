@@ -1,0 +1,66 @@
+<Type Name="CompatibilitySwitch" FullName="System.Runtime.Versioning.CompatibilitySwitch">
+  <TypeSignature Language="C#" Value="public static class CompatibilitySwitch" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit CompatibilitySwitch extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Versioning.CompatibilitySwitch" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetValue">
+      <MemberSignature Language="C#" Value="public static string GetValue (string compatibilitySwitchName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetValue(string compatibilitySwitchName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Versioning.CompatibilitySwitch.GetValue(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="compatibilitySwitchName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="compatibilitySwitchName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEnabled">
+      <MemberSignature Language="C#" Value="public static bool IsEnabled (string compatibilitySwitchName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsEnabled(string compatibilitySwitchName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Versioning.CompatibilitySwitch.IsEnabled(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="compatibilitySwitchName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="compatibilitySwitchName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

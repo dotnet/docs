@@ -1,0 +1,153 @@
+<Type Name="FilterType" FullName="System.ServiceModel.Routing.Configuration.FilterType">
+  <TypeSignature Language="C#" Value="public enum FilterType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FilterType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Routing.Configuration.FilterType" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Routing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the type of filter to use when routing messages.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[crabout](~/includes/crabout-md.md)] using <xref:System.ServiceModel.Routing.Configuration.FilterType>, see <xref:System.ServiceModel.Routing.Configuration.FilterElement.FilterData%2A>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Action">
+      <MemberSignature Language="C#" Value="Action" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Routing.Configuration.FilterType Action = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.Routing.Configuration.FilterType.Action" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Routing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Routing.Configuration.FilterType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Use <see cref="T:System.ServiceModel.Dispatcher.ActionMessageFilter" /> to filter on an action.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="And">
+      <MemberSignature Language="C#" Value="And" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Routing.Configuration.FilterType And = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.Routing.Configuration.FilterType.And" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Routing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Routing.Configuration.FilterType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Use <see cref="T:System.ServiceModel.Dispatcher.StrictAndMessageFilter" /> to filter on two message filters, ANDed together.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Custom">
+      <MemberSignature Language="C#" Value="Custom" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Routing.Configuration.FilterType Custom = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.Routing.Configuration.FilterType.Custom" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Routing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Routing.Configuration.FilterType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Use a user-defined filter.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EndpointAddress">
+      <MemberSignature Language="C#" Value="EndpointAddress" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Routing.Configuration.FilterType EndpointAddress = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.Routing.Configuration.FilterType.EndpointAddress" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Routing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Routing.Configuration.FilterType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Use <see cref="T:System.ServiceModel.Dispatcher.EndpointAddressMessageFilter" /> with <see cref="P:System.ServiceModel.Dispatcher.EndpointAddressMessageFilter.IncludeHostNameInComparison" /> set to **false** to filter on the address.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EndpointName">
+      <MemberSignature Language="C#" Value="EndpointName" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Routing.Configuration.FilterType EndpointName = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.Routing.Configuration.FilterType.EndpointName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Routing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Routing.Configuration.FilterType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Use the <see cref="T:System.ServiceModel.Dispatcher.EndpointNameMessageFilter" /> to filter on the name of the service endpoint.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MatchAll">
+      <MemberSignature Language="C#" Value="MatchAll" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Routing.Configuration.FilterType MatchAll = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.Routing.Configuration.FilterType.MatchAll" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Routing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Routing.Configuration.FilterType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Use the <see cref="T:System.ServiceModel.Dispatcher.MatchAllMessageFilter" /> to match all messages.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PrefixEndpointAddress">
+      <MemberSignature Language="C#" Value="PrefixEndpointAddress" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Routing.Configuration.FilterType PrefixEndpointAddress = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.Routing.Configuration.FilterType.PrefixEndpointAddress" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Routing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Routing.Configuration.FilterType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Use <see cref="T:System.ServiceModel.Dispatcher.PrefixEndpointAddressMessageFilter" /> with <see cref="P:System.ServiceModel.Dispatcher.PrefixEndpointAddressMessageFilter.IncludeHostNameInComparison" /> set to **false** to filter on the address using longest prefix matching.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="XPath">
+      <MemberSignature Language="C#" Value="XPath" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Routing.Configuration.FilterType XPath = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.Routing.Configuration.FilterType.XPath" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Routing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Routing.Configuration.FilterType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Use the <see cref="T:System.ServiceModel.Dispatcher.XPathMessageFilter" /> to filter on an XPath expression.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,25 @@
+<Namespace Name="System.ComponentModel.Design.Serialization">
+  <Docs>
+    <summary>The <see cref="N:System.ComponentModel.Design.Serialization" /> namespace provides types that support customization and control of serialization at design time.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The classes in this namespace can be divided into the following categories:  
+  
+-   Serialization attributes that can be used to indicate the serializer to use for a specific type: <xref:System.ComponentModel.Design.Serialization.DesignerSerializerAttribute>, to indicate the serializer to use for a particular type; and <xref:System.ComponentModel.Design.Serialization.RootDesignerSerializerAttribute>, to indicate the base serializer to use for the root designer.  
+  
+-   Classes that a designer can implement to customize serialization: <xref:System.ComponentModel.Design.Serialization.IDesignerLoaderHost>, for loading a designer document from a serialized state; and <xref:System.ComponentModel.Design.Serialization.IDesignerLoaderService>, for loading a designer document when external components and asynchronous loading are involved.  
+  
+-   Interfaces that a designer can use to manage the serialization process: <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationManager>, to register or retrieve custom serializers; <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationProvider>, to make a serializer available to an <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationManager>; and <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>, which provides methods to invoke serialization and deserialization.  
+  
+-   An interface that can be implemented to customize the loading process of a designer: <xref:System.ComponentModel.Design.Serialization.DesignerLoader>.  
+  
+-   An interface that can be used to optimize the reloading of a designer: <xref:System.ComponentModel.Design.Serialization.ICodeDomDesignerReload>.  
+  
+-   Other helper classes: <xref:System.ComponentModel.Design.Serialization.INameCreationService>, an interface for generating unique names for objects; <xref:System.ComponentModel.Design.Serialization.ContextStack>, a data structure useful for sharing serialization context information with serializers; and <xref:System.ComponentModel.Design.Serialization.InstanceDescriptor>, an object that can describe a serializable object.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Namespace>

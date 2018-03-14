@@ -1,0 +1,36 @@
+<Window x:Class="HyperlinkSnippets.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="HyperlinkSnippets" Loaded="WindowLoaded"
+    >
+    <Grid>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="0"/>
+        <RowDefinition/>
+        <RowDefinition/>
+      </Grid.RowDefinitions>
+
+      <Border Grid.Row="0">
+        <FlowDocumentReader>
+          <FlowDocument Name="flowDoc"/>
+        </FlowDocumentReader>
+      </Border>
+
+      <Border Grid.Row="1">
+        <FlowDocumentReader>
+          <FlowDocument>
+            <Paragraph>
+              <Run>Text preceding the hyperlink.</Run>
+              <Hyperlink
+                NavigateUri="http://search.msn.com"
+              >
+                Link text.
+              </Hyperlink>
+              <Run Name="test">Text following the hyperlink.</Run>
+            </Paragraph>
+          </FlowDocument>
+        </FlowDocumentReader>
+      </Border>
+
+    </Grid>
+</Window>

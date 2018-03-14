@@ -1,0 +1,78 @@
+<Type Name="BookmarkInfo" FullName="System.Activities.Hosting.BookmarkInfo">
+  <TypeSignature Language="C#" Value="public sealed class BookmarkInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BookmarkInfo extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Hosting.BookmarkInfo" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents information about a named <see cref="T:System.Activities.Bookmark" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BookmarkName">
+      <MemberSignature Language="C#" Value="public string BookmarkName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BookmarkName" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Hosting.BookmarkInfo.BookmarkName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name associated with the <see cref="T:System.Activities.Bookmark" />.</summary>
+        <value>The name associated with the <see cref="T:System.Activities.Bookmark" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OwnerDisplayName">
+      <MemberSignature Language="C#" Value="public string OwnerDisplayName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OwnerDisplayName" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Hosting.BookmarkInfo.OwnerDisplayName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an optional friendly name that is used for debugging, validation, exception handling, and tracking.</summary>
+        <value>A friendly name that is used for debugging, validation, exception handling, and tracking.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScopeInfo">
+      <MemberSignature Language="C#" Value="public System.Activities.Hosting.BookmarkScopeInfo ScopeInfo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Hosting.BookmarkScopeInfo ScopeInfo" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Hosting.BookmarkInfo.ScopeInfo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Hosting.BookmarkScopeInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Activities.Hosting.BookmarkScopeInfo" /> of the <see cref="T:System.Activities.BookmarkScope" /> associated with the <see cref="T:System.Activities.Bookmark" />.</summary>
+        <value>The bookmark scope information of the <see cref="T:System.Activities.BookmarkScope" /> associated with the <see cref="T:System.Activities.Bookmark" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

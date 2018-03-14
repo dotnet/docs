@@ -1,0 +1,99 @@
+<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:src="clr-namespace:TabControl"  
+    x:Class="TabControl.Page1"
+>
+
+  <Window.Resources>
+
+
+    <!--<Snippet1>-->
+    <DataTemplate x:Key="contentTemplate">
+      <Grid>
+        <Rectangle Fill="White"/>
+        <ContentPresenter Content="{Binding}"/>
+      </Grid>
+    </DataTemplate>
+
+    <DataTemplate x:Key="tabItemTemplate">
+      <Grid>
+        <Rectangle Fill="Gray"/>
+        <ContentPresenter Content="{Binding}"/>
+      </Grid>
+    </DataTemplate>
+    <!--</Snippet1>-->
+
+    
+    <DataTemplate x:Key="earlyDate">
+      <Grid>
+        <Rectangle Fill="White"/>
+        <TextBlock Text="{Binding}" FontSize="12" FontWeight="Bold" TextWrapping="Wrap"></TextBlock>
+      </Grid>
+    </DataTemplate>
+
+    <DataTemplate x:Key="lateDate">
+      <Grid>
+        <Rectangle Fill="Gray"/>
+        <TextBlock Text="{Binding}" Foreground="Red"
+                   FontSize="12" FontWeight="Bold" 
+                   TextWrapping="Wrap"/>
+      </Grid>
+    </DataTemplate>
+
+    <src:DateTimeDataTemplateSelector x:Key="dateSelector"/>
+
+    
+  </Window.Resources>
+
+  <StackPanel Background="Ivory">
+    <!--<Snippet2>-->
+    <TabControl Width="250" Height="300" 
+                ContentTemplate="{StaticResource contentTemplate}">
+      <TabItem Header="One">
+        <Ellipse Width="200" Height="200" Fill="#CABCAB"/>
+      </TabItem>
+      <TabItem Header="Two"
+               ContentTemplate="{StaticResource tabItemTemplate}">
+        <Ellipse Width="200" Height="200" Fill="#BADDF00D"/>
+      </TabItem>
+      <TabItem Header="Three">
+        <Ellipse Width="200" Height="200" Fill="#654321"/>
+      </TabItem>
+      <TabItem Header="Four">
+        <Ellipse Width="200" Height="200" Fill="#123456"/>
+      </TabItem>
+      <TabItem Header="Five">
+        <Ellipse Width="200" Height="200" Fill="#F11001"/>
+      </TabItem>
+    </TabControl>
+    <!--</Snippet2>-->
+
+
+    <StackPanel Name="sp1"
+          xmlns:sys="clr-namespace:System;assembly=Mscorlib">
+      <TabControl Width="250" 
+                  ContentTemplateSelector="{StaticResource dateSelector}">
+        <TabItem Header="Time" Content="{x:Static sys:DateTime.Now}"/>
+        <TabItem Header="One" >
+          <sys:DateTime>4/20/1998</sys:DateTime>
+        </TabItem>
+        <TabItem Header="Two">
+          <sys:DateTime>5/10/2004</sys:DateTime>
+        </TabItem>
+        <TabItem Header="Three">
+          <sys:DateTime>3/23/1984</sys:DateTime>
+        </TabItem>
+        <TabItem Header="Four">
+          <sys:DateTime>8/9/2000</sys:DateTime>
+        </TabItem>
+        <TabItem Header="Five">
+          <sys:DateTime>10/31/2003</sys:DateTime>
+        </TabItem>
+      </TabControl>
+    </StackPanel>
+  </StackPanel>
+
+
+</Window>
+

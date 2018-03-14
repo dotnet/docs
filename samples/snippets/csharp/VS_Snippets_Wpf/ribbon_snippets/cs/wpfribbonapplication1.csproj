@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{482A37CF-FB5E-4EFC-B8A7-0FEB2B22A97F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WpfRibbonApplication1</RootNamespace>
+    <AssemblyName>WpfRibbonApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="RibbonControlsLibrary" />
+    <Reference Include="Microsoft.Windows.Shell, Version=3.0.0.0, Culture=neutral, PublicKeyToken=852377973184046a, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="RibbonWindow1.xaml.cs">
+      <DependentUpon>RibbonWindow1.xaml</DependentUpon>
+    </Compile>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="RibbonWindow1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\LargeIcon.png" />
+    <Resource Include="Images\SmallIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\AlignCenter16.png" />
+    <Resource Include="Images\AlignJustify16.png" />
+    <Resource Include="Images\AlignLeft16.PNG" />
+    <Resource Include="Images\AlignRight16.png" />
+    <Resource Include="Images\ApplicationMenuIcon.png" />
+    <Resource Include="Images\ArrowRedo16.png" />
+    <Resource Include="Images\ArrowUndo16.png" />
+    <Resource Include="Images\Bold16.png" />
+    <Resource Include="Images\Calendar16.png" />
+    <Resource Include="Images\Calendar32.png" />
+    <Resource Include="Images\Copy16.png" />
+    <Resource Include="Images\Copy32.png" />
+    <Resource Include="Images\Cut16.png" />
+    <Resource Include="Images\Cut32.png" />
+    <Resource Include="Images\Document16.png" />
+    <Resource Include="Images\Exit16.png" />
+    <Resource Include="Images\Exit32.png" />
+    <Resource Include="Images\Find16.png" />
+    <Resource Include="Images\FontColor16.png" />
+    <Resource Include="Images\FontGrow16.png" />
+    <Resource Include="Images\FontShrink16.png" />
+    <Resource Include="Images\Help16.png" />
+    <Resource Include="Images\Highlight16.png" />
+    <Resource Include="Images\Hyperlink16.png" />
+    <Resource Include="Images\Hyperlink32.png" />
+    <Resource Include="Images\Indent16.png" />
+    <Resource Include="Images\InsertPicture16.png" />
+    <Resource Include="Images\InsertPicture32.png" />
+    <Resource Include="Images\InsertShape16.png" />
+    <Resource Include="Images\InsertShape32.png" />
+    <Resource Include="Images\Italic16.png" />
+    <Resource Include="Images\LineSpacing16.png" />
+    <Resource Include="Images\ListBullets16.png" />
+    <Resource Include="Images\ListBullets32.png" />
+    <Resource Include="Images\ListNumbered16.png" />
+    <Resource Include="Images\Open32.png" />
+    <Resource Include="Images\Outdent16.png" />
+    <Resource Include="Images\Paste16.png" />
+    <Resource Include="Images\Paste32.png" />
+    <Resource Include="Images\PasteLg.png" />
+    <Resource Include="Images\Print32.png" />
+    <Resource Include="Images\PrintPreview32.png" />
+    <Resource Include="Images\PrintSetup32.png" />
+    <Resource Include="Images\QuickPrint32.png" />
+    <Resource Include="Images\Replace16.png" />
+    <Resource Include="Images\ReplaceSm0.png" />
+    <Resource Include="Images\Ruler16.png" />
+    <Resource Include="Images\Save16.png" />
+    <Resource Include="Images\Save32.png" />
+    <Resource Include="Images\SaveAs32.png" />
+    <Resource Include="Images\SaveAsRtf32.png" />
+    <Resource Include="Images\SaveAsTxt32.png" />
+    <Resource Include="Images\SelectAll16.png" />
+    <Resource Include="Images\Strikethrough16.png" />
+    <Resource Include="Images\Subscript16.png" />
+    <Resource Include="Images\Superscript16.png" />
+    <Resource Include="Images\Underline16.png" />
+    <Resource Include="Images\WordWrap16.png" />
+    <Resource Include="Images\ZoomActualSize16.png" />
+    <Resource Include="Images\ZoomActualSize32.png" />
+    <Resource Include="Images\ZoomIn16.png" />
+    <Resource Include="Images\ZoomIn32.png" />
+    <Resource Include="Images\ZoomOut16.png" />
+    <Resource Include="Images\ZoomOut32.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

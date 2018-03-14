@@ -1,0 +1,33 @@
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+  <DockPanel>
+    <Menu DockPanel.Dock="Top">
+      <MenuItem Header="_Navigation">
+        <!-- NavigationCommands.DecreaseZoom -->
+        <MenuItem
+          Command="NavigationCommands.DecreaseZoom"
+          CommandTarget="{Binding ElementName=flowDocumentPageViewer}" />
+      </MenuItem>
+    </Menu>
+    <!-- The following FlowDocumentPageViewer is used to process NavigationCommands.DecreaseZoom commands -->
+    <FlowDocumentPageViewer Name="flowDocumentPageViewer">
+      <FlowDocument>
+        <!-- Document Content-->
+        <Paragraph>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed vulputate, lacus non sagittis pharetra, diam dolor dictum tellus, et hendrerit odio risus nec erat. Nam sollicitudin imperdiet mi. Sed rutrum. Morbi vel nunc. Donec imperdiet. Morbi hendrerit leo. Maecenas imperdiet. Curabitur viverra tempor nisi. Phasellus vitae augue sit amet neque venenatis elementum. Proin posuere lobortis quam. Curabitur et neque. Donec ac sem vitae libero pharetra luctus. Fusce purus. Nulla vehicula, leo commodo dictum lobortis, odio augue accumsan ante, id dictum nisi libero quis diam. Nam augue erat, malesuada eu, tincidunt eu, dictum ut, ante. In vel magna vel ligula faucibus lobortis. Praesent a felis non mi fringilla vulputate. Integer quis tellus cursus elit tincidunt vehicula. Morbi commodo sem eu eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+        </Paragraph>
+        <Paragraph>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed vulputate, lacus non sagittis pharetra, diam dolor dictum tellus, et hendrerit odio risus nec erat. Nam sollicitudin imperdiet mi. Sed rutrum. Morbi vel nunc. Donec imperdiet. Morbi hendrerit leo. Maecenas imperdiet. Curabitur viverra tempor nisi. Phasellus vitae augue sit amet neque venenatis elementum. Proin posuere lobortis quam. Curabitur et neque. Donec ac sem vitae libero pharetra luctus. Fusce purus. Nulla vehicula, leo commodo dictum lobortis, odio augue accumsan ante, id dictum nisi libero quis diam. Nam augue erat, malesuada eu, tincidunt eu, dictum ut, ante. In vel magna vel ligula faucibus lobortis. Praesent a felis non mi fringilla vulputate. Integer quis tellus cursus elit tincidunt vehicula. Morbi commodo sem eu eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+        </Paragraph>
+        <Paragraph>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed vulputate, lacus non sagittis pharetra, diam dolor dictum tellus, et hendrerit odio risus nec erat. Nam sollicitudin imperdiet mi. Sed rutrum. Morbi vel nunc. Donec imperdiet. Morbi hendrerit leo. Maecenas imperdiet. Curabitur viverra tempor nisi. Phasellus vitae augue sit amet neque venenatis elementum. Proin posuere lobortis quam. Curabitur et neque. Donec ac sem vitae libero pharetra luctus. Fusce purus. Nulla vehicula, leo commodo dictum lobortis, odio augue accumsan ante, id dictum nisi libero quis diam. Nam augue erat, malesuada eu, tincidunt eu, dictum ut, ante. In vel magna vel ligula faucibus lobortis. Praesent a felis non mi fringilla vulputate. Integer quis tellus cursus elit tincidunt vehicula. Morbi commodo sem eu eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+        </Paragraph>
+        <Paragraph>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed vulputate, lacus non sagittis pharetra, diam dolor dictum tellus, et hendrerit odio risus nec erat. Nam sollicitudin imperdiet mi. Sed rutrum. Morbi vel nunc. Donec imperdiet. Morbi hendrerit leo. Maecenas imperdiet. Curabitur viverra tempor nisi. Phasellus vitae augue sit amet neque venenatis elementum. Proin posuere lobortis quam. Curabitur et neque. Donec ac sem vitae libero pharetra luctus. Fusce purus. Nulla vehicula, leo commodo dictum lobortis, odio augue accumsan ante, id dictum nisi libero quis diam. Nam augue erat, malesuada eu, tincidunt eu, dictum ut, ante. In vel magna vel ligula faucibus lobortis. Praesent a felis non mi fringilla vulputate. Integer quis tellus cursus elit tincidunt vehicula. Morbi commodo sem eu eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+        </Paragraph>
+        <Paragraph>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed vulputate, lacus non sagittis pharetra, diam dolor dictum tellus, et hendrerit odio risus nec erat. Nam sollicitudin imperdiet mi. Sed rutrum. Morbi vel nunc. Donec imperdiet. Morbi hendrerit leo. Maecenas imperdiet. Curabitur viverra tempor nisi. Phasellus vitae augue sit amet neque venenatis elementum. Proin posuere lobortis quam. Curabitur et neque. Donec ac sem vitae libero pharetra luctus. Fusce purus. Nulla vehicula, leo commodo dictum lobortis, odio augue accumsan ante, id dictum nisi libero quis diam. Nam augue erat, malesuada eu, tincidunt eu, dictum ut, ante. In vel magna vel ligula faucibus lobortis. Praesent a felis non mi fringilla vulputate. Integer quis tellus cursus elit tincidunt vehicula. Morbi commodo sem eu eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+        </Paragraph>
+      </FlowDocument>
+    </FlowDocumentPageViewer>
+  </DockPanel>
+</Window>

@@ -1,0 +1,51 @@
+//<Snippet1>
+#using <mscorlib.dll>
+#using <System.Xml.dll>
+using namespace System;
+using namespace System::Xml;
+using namespace System::Xml::Serialization;
+using namespace System::IO;
+
+public __gc class Forest{
+   /* Set the NestingLevel for each array. The first 
+   attribute (NestingLevel = 0) is optional. */
+public:
+   [XmlArrayItem(ElementName = S"tree", NestingLevel = 0)]
+   [XmlArrayItem(ElementName = S"branch", NestingLevel = 1)]
+   [XmlArrayItem(ElementName = S"leaf",NestingLevel = 2)]
+   String* TreeArray[][][];
+};
+
+public __gc class Test{
+public:
+   static void main(){
+      Test* t = new Test();
+      t->SerializeObject(S"Tree.xml");
+   }
+private:
+   void SerializeObject(String* /*filename*/){
+      XmlSerializer* serializer = 
+      new XmlSerializer(__typeof(Forest));
+
+      Forest* f = new Forest();
+      String* myTreeArray[][][] = new String*[][][2];
+
+      String* myBranchArray1[][] = new String*[][1];
+      myBranchArray1[0]=new String*[1]{S"One"};
+      myTreeArray[0]=myBranchArray1;
+
+      String* myBranchArray2[][] = new String*[][2];
+      myBranchArray2[0]=new String*[2]{S"One",S"Two"};
+      myBranchArray2[1]=new String*[3]{S"One",S"Two",S"Three"};
+      myTreeArray[1]=myBranchArray2;
+   
+      f->TreeArray=myTreeArray;
+
+      serializer->Serialize(Console::Out, f);
+   }
+};
+
+int main(){
+   Test::main();
+}
+//</Snippet1>

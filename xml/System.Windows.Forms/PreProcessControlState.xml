@@ -1,0 +1,66 @@
+<Type Name="PreProcessControlState" FullName="System.Windows.Forms.PreProcessControlState">
+  <TypeSignature Language="C#" Value="public enum PreProcessControlState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PreProcessControlState extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PreProcessControlState" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Provides options that specify the relationship between the control and preprocessing messages.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="MessageNeeded">
+      <MemberSignature Language="C#" Value="MessageNeeded" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.PreProcessControlState MessageNeeded = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.PreProcessControlState.MessageNeeded" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.PreProcessControlState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the control requires the message and that processing should continue.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MessageNotNeeded">
+      <MemberSignature Language="C#" Value="MessageNotNeeded" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.PreProcessControlState MessageNotNeeded = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.PreProcessControlState.MessageNotNeeded" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.PreProcessControlState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the control does not require the message.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MessageProcessed">
+      <MemberSignature Language="C#" Value="MessageProcessed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.PreProcessControlState MessageProcessed = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.PreProcessControlState.MessageProcessed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.PreProcessControlState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the message has been processed and no further processing is required.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

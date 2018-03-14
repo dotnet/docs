@@ -1,0 +1,105 @@
+<Window x:Class="SDKSample.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="TextBox Custom Context Menu"
+    Width="640" Height="480"
+    >
+    <Grid Name="myGrid">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="40"/>
+        <RowDefinition/>
+      </Grid.RowDefinitions>
+      
+      <StackPanel 
+        Grid.Row="0"
+        HorizontalAlignment="Center"
+        VerticalAlignment="Center"
+        Orientation="Horizontal"
+      >
+        <RadioButton
+          Name="rbCustom" 
+          Padding="5,0,5,0"
+          IsChecked="True"
+          Checked="MenuChange"
+        >
+          Custom Context Menu
+        </RadioButton>
+        <RadioButton
+          Name="rbDefault" 
+          Padding="5,0,5,0"  
+          Checked="MenuChange"
+        >
+          Default Context Menu
+        </RadioButton>
+        <RadioButton
+          Name="rbDisabled" 
+          Padding="5,0,5,0"
+          Checked="MenuChange"
+        >
+          Disable Context Menu
+        </RadioButton>
+      </StackPanel>
+
+      <TextBox
+        Name="cxmTextBox" 
+        Grid.Row="1"
+        AcceptsReturn="True"
+        AcceptsTab="True"
+        VerticalScrollBarVisibility="Visible"
+        TextWrapping="Wrap"
+      >
+        <TextBox.ContextMenu>
+          <ContextMenu 
+            Name="cxm"
+            Opened="CxmOpened"
+          >
+            <MenuItem 
+              Header="Cut"
+              Name="cxmItemCut" 
+              Click="ClickCut" 
+            />
+            <MenuItem 
+              Header="Copy" 
+              Name="cxmItemCopy"
+              Click="ClickCopy" 
+            />
+            <MenuItem 
+              Header="Paste"
+              Name="cxmItemPaste"
+              Click="ClickPaste" 
+            />
+            <Separator/>
+            <MenuItem 
+              Header="Select All"
+              Name="cxmItemSelectAll"
+              Click="ClickSelectAll" 
+            />
+            <MenuItem 
+              Header="Select Current Line"
+              Name="cxmItemSelectLine"
+              Click="ClickSelectLine" 
+            />
+            <Separator/>
+            <MenuItem 
+              Header="Undo Last Action"
+              Name="cxmItemUndo"
+              Click="ClickUndo" 
+            />
+            <MenuItem 
+              Header="Redo Last Action"
+              Name="cxmItemRedo"
+              Click="ClickRedo" 
+            />
+            <Separator/>
+            <MenuItem 
+              Header="Clear All Text"
+              Name="cxmItemClear"
+              Click="ClickClear" 
+            />
+          </ContextMenu>
+        </TextBox.ContextMenu>
+        This TextBox uses a simple custom context menu.  The context menu can be disabled by checking
+        the CheckBox above, which simply sets the TextBox.ContextMenu property to null.
+      </TextBox>
+    </Grid>
+</Window>

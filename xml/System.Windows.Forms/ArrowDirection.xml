@@ -1,0 +1,89 @@
+<Type Name="ArrowDirection" FullName="System.Windows.Forms.ArrowDirection">
+  <TypeSignature Language="C#" Value="public enum ArrowDirection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ArrowDirection extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ArrowDirection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the direction to move when getting items with the <see cref="M:System.Windows.Forms.ToolStrip.GetNextItem(System.Windows.Forms.ToolStripItem,System.Windows.Forms.ArrowDirection)" /> method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Forms.ArrowDirection> works with <xref:System.Windows.Forms.Orientation> so you can quickly determine an orientation from a direction.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Down">
+      <MemberSignature Language="C#" Value="Down" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ArrowDirection Down = int32(17)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ArrowDirection.Down" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ArrowDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The direction is down (<see cref="F:System.Windows.Forms.Orientation.Vertical" />).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Left">
+      <MemberSignature Language="C#" Value="Left" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ArrowDirection Left = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ArrowDirection.Left" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ArrowDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The direction is left (<see cref="F:System.Windows.Forms.Orientation.Horizontal" />).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Right">
+      <MemberSignature Language="C#" Value="Right" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ArrowDirection Right = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ArrowDirection.Right" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ArrowDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The direction is right (<see cref="F:System.Windows.Forms.Orientation.Horizontal" />).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Up">
+      <MemberSignature Language="C#" Value="Up" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ArrowDirection Up = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ArrowDirection.Up" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ArrowDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The direction is up (<see cref="F:System.Windows.Forms.Orientation.Vertical" />).</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

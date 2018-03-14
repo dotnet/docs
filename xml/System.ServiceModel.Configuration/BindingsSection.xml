@@ -1,0 +1,488 @@
+<Type Name="BindingsSection" FullName="System.ServiceModel.Configuration.BindingsSection">
+  <TypeSignature Language="C#" Value="public sealed class BindingsSection : System.Configuration.ConfigurationSection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BindingsSection extends System.Configuration.ConfigurationSection" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.BindingsSection" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationSection</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a collection of binding elements. This class cannot be inherited.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BindingsSection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.BindingsSection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.BindingsSection" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BasicHttpBinding">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.BasicHttpBindingCollectionElement BasicHttpBinding { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.BasicHttpBindingCollectionElement BasicHttpBinding" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.BindingsSection.BasicHttpBinding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("basicHttpBinding", Options=System.Configuration.ConfigurationPropertyOptions.None)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Configuration.BasicHttpBindingCollectionElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the configuration element that contains a collection of <see cref="T:System.ServiceModel.Configuration.BasicHttpBindingElement" /> objects.</summary>
+        <value>A <see cref="T:System.ServiceModel.Configuration.BasicHttpBindingCollectionElement" /> object that defines the configuration section that contains a collection of <see cref="T:System.ServiceModel.Configuration.BasicHttpBindingElement" /> objects.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BasicHttpsBinding">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.BasicHttpsBindingCollectionElement BasicHttpsBinding { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.BasicHttpsBindingCollectionElement BasicHttpsBinding" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.BindingsSection.BasicHttpsBinding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("basicHttpsBinding", Options=System.Configuration.ConfigurationPropertyOptions.None)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Configuration.BasicHttpsBindingCollectionElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the configuration element that contains a collection of <see cref="T:System.ServiceModel.Configuration.BasicHttpsBindingElement" /> objects.</summary>
+        <value>A <see cref="T:System.ServiceModel.Configuration.BasicHttpsBindingCollectionElement" /> object that defines the configuration section that contains a collection of <see cref="T:System.ServiceModel.Configuration.BasicHttpsBindingElement" /> objects.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BindingCollections">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;System.ServiceModel.Configuration.BindingCollectionElement&gt; BindingCollections { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class System.ServiceModel.Configuration.BindingCollectionElement&gt; BindingCollections" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.BindingsSection.BindingCollections" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.ServiceModel.Configuration.BindingCollectionElement&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of <see cref="T:System.ServiceModel.Configuration.BindingCollectionElement" /> instances.</summary>
+        <value>A collection of <see cref="T:System.ServiceModel.Configuration.BindingCollectionElement" /> instances.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomBinding">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.CustomBindingCollectionElement CustomBinding { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.CustomBindingCollectionElement CustomBinding" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.BindingsSection.CustomBinding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("customBinding", Options=System.Configuration.ConfigurationPropertyOptions.None)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Configuration.CustomBindingCollectionElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the configuration section that provides full control over the messaging stack for the user.</summary>
+        <value>A <see cref="T:System.ServiceModel.Configuration.CustomBindingCollectionElement" /> object that contains a collection of custom binding elements.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSection">
+      <MemberSignature Language="C#" Value="public static System.ServiceModel.Configuration.BindingsSection GetSection (System.Configuration.Configuration config);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Configuration.BindingsSection GetSection(class System.Configuration.Configuration config) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.BindingsSection.GetSection(System.Configuration.Configuration)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Configuration.BindingsSection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="config" Type="System.Configuration.Configuration" />
+      </Parameters>
+      <Docs>
+        <param name="config">A configuration file.</param>
+        <summary>Gets the configuration setting of a section from the specified configuration file.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Configuration.BindingsSection" /> with the settings retrieved from the specified file.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="config" /> is <see langword="null" /> or empty.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.BindingCollectionElement this[string binding] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.BindingCollectionElement Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.BindingsSection.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Configuration.BindingCollectionElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="binding" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="binding">The binding to access.</param>
+        <summary>Gets the specified binding in this configuration section.</summary>
+        <value>A <see cref="T:System.ServiceModel.Configuration.BindingCollectionElement" /> that defines the specified binding in this configuration section.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MsmqIntegrationBinding">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.MsmqIntegrationBindingCollectionElement MsmqIntegrationBinding { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.MsmqIntegrationBindingCollectionElement MsmqIntegrationBinding" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.BindingsSection.MsmqIntegrationBinding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("msmqIntegrationBinding", Options=System.Configuration.ConfigurationPropertyOptions.None)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Configuration.MsmqIntegrationBindingCollectionElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the configuration element that contains a collection of MsmqIntegration binding elements.</summary>
+        <value>A <see cref="T:System.ServiceModel.Configuration.MsmqIntegrationBindingCollectionElement" /> object that contains a collection of MsmqIntegration binding elements.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NetHttpBinding">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.NetHttpBindingCollectionElement NetHttpBinding { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.NetHttpBindingCollectionElement NetHttpBinding" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.BindingsSection.NetHttpBinding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("netHttpBinding", Options=System.Configuration.ConfigurationPropertyOptions.None)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Configuration.NetHttpBindingCollectionElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the configuration element that contains a collection of <see cref="T:System.ServiceModel.Configuration.NetHttpBindingElement" /> objects.</summary>
+        <value>A <see cref="T:System.ServiceModel.Configuration.NetHttpBindingCollectionElement" /> object that defines the configuration section that contains a collection of <see cref="T:System.ServiceModel.Configuration.NetHttpBindingElement" /> objects.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NetHttpsBinding">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.NetHttpsBindingCollectionElement NetHttpsBinding { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.NetHttpsBindingCollectionElement NetHttpsBinding" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.BindingsSection.NetHttpsBinding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("netHttpsBinding", Options=System.Configuration.ConfigurationPropertyOptions.None)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Configuration.NetHttpsBindingCollectionElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the net HTTPS binding used.</summary>
+        <value>A <see cref="T:System.ServiceModel.Configuration.NetHttpsBindingCollectionElement" /> object that defines the configuration section that contains a collection of <see cref="T:System.ServiceModel.Configuration.NetHttpsBindingElement" /> objects.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NetMsmqBinding">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.NetMsmqBindingCollectionElement NetMsmqBinding { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.NetMsmqBindingCollectionElement NetMsmqBinding" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.BindingsSection.NetMsmqBinding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("netMsmqBinding", Options=System.Configuration.ConfigurationPropertyOptions.None)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Configuration.NetMsmqBindingCollectionElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the configuration element that contains a collection of netMsmqBinding binding elements.</summary>
+        <value>A <see cref="T:System.ServiceModel.Configuration.NetMsmqBindingCollectionElement" /> object that contains a collection of netMsmqBinding binding elements.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NetNamedPipeBinding">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.NetNamedPipeBindingCollectionElement NetNamedPipeBinding { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.NetNamedPipeBindingCollectionElement NetNamedPipeBinding" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.BindingsSection.NetNamedPipeBinding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("netNamedPipeBinding", Options=System.Configuration.ConfigurationPropertyOptions.None)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Configuration.NetNamedPipeBindingCollectionElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the configuration element that contains a collection of <see cref="T:System.ServiceModel.Configuration.NetNamedPipeBindingElement" />.objects.</summary>
+        <value>A <see cref="T:System.ServiceModel.Configuration.NetNamedPipeBindingCollectionElement" /> that contains a collection of <see cref="T:System.ServiceModel.Configuration.NetNamedPipeBindingElement" />.objects.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NetPeerTcpBinding">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.NetPeerTcpBindingCollectionElement NetPeerTcpBinding { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.NetPeerTcpBindingCollectionElement NetPeerTcpBinding" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.BindingsSection.NetPeerTcpBinding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("netPeerTcpBinding", Options=System.Configuration.ConfigurationPropertyOptions.None)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("PeerChannel feature is obsolete and will be removed in the future.", false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Configuration.NetPeerTcpBindingCollectionElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the configuration element that contains a collection of netPeerTcpBinding elements.</summary>
+        <value>A <see cref="T:System.ServiceModel.Configuration.NetPeerTcpBindingCollectionElement" /> that contains a collection of <see cref="T:System.ServiceModel.Configuration.NetPeerTcpBindingElement" /> elements.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NetTcpBinding">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.NetTcpBindingCollectionElement NetTcpBinding { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.NetTcpBindingCollectionElement NetTcpBinding" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.BindingsSection.NetTcpBinding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("netTcpBinding", Options=System.Configuration.ConfigurationPropertyOptions.None)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Configuration.NetTcpBindingCollectionElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the configuration element that contains a collection of <see cref="T:System.ServiceModel.Configuration.NetTcpBindingElement" /> objects.</summary>
+        <value>A <see cref="T:System.ServiceModel.Configuration.NetTcpBindingCollectionElement" /> that contains a collection of <see cref="T:System.ServiceModel.Configuration.NetTcpBindingElement" /> objects.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDeserializeUnrecognizedElement">
+      <MemberSignature Language="C#" Value="protected override bool OnDeserializeUnrecognizedElement (string elementName, System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool OnDeserializeUnrecognizedElement(string elementName, class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.BindingsSection.OnDeserializeUnrecognizedElement(System.String,System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="elementName" Type="System.String" />
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="elementName">To be added.</param>
+        <param name="reader">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.BindingsSection.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WS2007FederationHttpBinding">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.WS2007FederationHttpBindingCollectionElement WS2007FederationHttpBinding { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.WS2007FederationHttpBindingCollectionElement WS2007FederationHttpBinding" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.BindingsSection.WS2007FederationHttpBinding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("ws2007FederationHttpBinding", Options=System.Configuration.ConfigurationPropertyOptions.None)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Configuration.WS2007FederationHttpBindingCollectionElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the configuration element that contains a collection of <see cref="T:System.ServiceModel.Configuration.WS2007FederationHttpBindingElement" /> objects.</summary>
+        <value>The configuration element that contains a collection of <see cref="T:System.ServiceModel.Configuration.WS2007FederationHttpBindingElement" /> objects.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WS2007HttpBinding">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.WS2007HttpBindingCollectionElement WS2007HttpBinding { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.WS2007HttpBindingCollectionElement WS2007HttpBinding" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.BindingsSection.WS2007HttpBinding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("ws2007HttpBinding", Options=System.Configuration.ConfigurationPropertyOptions.None)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Configuration.WS2007HttpBindingCollectionElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the configuration element that contains a collection of <see cref="T:System.ServiceModel.Configuration.WS2007HttpBindingElement" /> objects.</summary>
+        <value>The configuration element that contains a collection of <see cref="T:System.ServiceModel.Configuration.WS2007HttpBindingElement" /> objects.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WSDualHttpBinding">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.WSDualHttpBindingCollectionElement WSDualHttpBinding { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.WSDualHttpBindingCollectionElement WSDualHttpBinding" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.BindingsSection.WSDualHttpBinding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("wsDualHttpBinding", Options=System.Configuration.ConfigurationPropertyOptions.None)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Configuration.WSDualHttpBindingCollectionElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the configuration element that contains a collection of <see cref="T:System.ServiceModel.Configuration.WSDualHttpBindingElement" /> objects.</summary>
+        <value>A <see cref="T:System.ServiceModel.Configuration.WSDualHttpBindingCollectionElement" /> that contains a collection of <see cref="T:System.ServiceModel.Configuration.WSDualHttpBindingElement" /> objects.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WSFederationHttpBinding">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.WSFederationHttpBindingCollectionElement WSFederationHttpBinding { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.WSFederationHttpBindingCollectionElement WSFederationHttpBinding" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.BindingsSection.WSFederationHttpBinding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("wsFederationHttpBinding", Options=System.Configuration.ConfigurationPropertyOptions.None)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Configuration.WSFederationHttpBindingCollectionElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the configuration element that contains a collection of <see cref="T:System.ServiceModel.Configuration.WSFederationHttpBindingElement" /> objects.</summary>
+        <value>A <see cref="T:System.ServiceModel.Configuration.WSFederationHttpBindingCollectionElement" /> that contains a collection of <see cref="T:System.ServiceModel.Configuration.WSFederationHttpBindingElement" /> objects.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WSHttpBinding">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.WSHttpBindingCollectionElement WSHttpBinding { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.WSHttpBindingCollectionElement WSHttpBinding" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.BindingsSection.WSHttpBinding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("wsHttpBinding", Options=System.Configuration.ConfigurationPropertyOptions.None)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Configuration.WSHttpBindingCollectionElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the configuration element that contains a collection of <see cref="T:System.ServiceModel.Configuration.WSHttpBindingElement" /> objects.</summary>
+        <value>A <see cref="T:System.ServiceModel.Configuration.WSHttpBindingCollectionElement" /> that contains a collection of <see cref="T:System.ServiceModel.Configuration.WSHttpBindingElement" /> objects.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

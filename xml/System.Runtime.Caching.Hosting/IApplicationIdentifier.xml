@@ -1,0 +1,53 @@
+<Type Name="IApplicationIdentifier" FullName="System.Runtime.Caching.Hosting.IApplicationIdentifier">
+  <TypeSignature Language="C#" Value="public interface IApplicationIdentifier" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IApplicationIdentifier" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Caching.Hosting.IApplicationIdentifier" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Caching</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines an identifier for application domains that a cache implementation can use to interact with a host environment.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] host environment such as ASP.NET can use the <xref:System.Runtime.Caching.Hosting.IApplicationIdentifier> interface to define strings that identify individual application domains. The host environment implements the <xref:System.Runtime.Caching.Hosting.IApplicationIdentifier> interface. This interface is then available to <xref:System.Runtime.Caching.ObjectCache> implementations through the <xref:System.Runtime.Caching.ObjectCache.Host%2A> property.  
+  
+ A cache implementation uses this reference to obtain an identifier for the application domain. In ASP.NET, cache implementations use the application identifier to construct identifiers for cache performance counters. This provides names for performance counter instances that can be distinguished between application domains when multiple application domains are running.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetApplicationId">
+      <MemberSignature Language="C#" Value="public string GetApplicationId ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetApplicationId() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.Hosting.IApplicationIdentifier.GetApplicationId" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Caching</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets an identifier for an application domain.</summary>
+        <returns>A unique identifier for the current application domain.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Caching.Hosting.IApplicationIdentifier.GetApplicationId%2A> method is typically implemented by a [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] host environment in order to construct an application identifier for an <xref:System.Runtime.Caching.ObjectCache> implementation. A <xref:System.Runtime.Caching.ObjectCache> implementation uses this information to identify the application domain that is currently running.  
+  
+ For example, in ASP.NET, the cache uses an application identifier to construct identifiers for cache performance counters. The cache calls the <xref:System.Runtime.Caching.Hosting.IApplicationIdentifier.GetApplicationId%2A> method that is implemented by the host environment and the host returns the identifier. This provides names for performance counter instances that can be distinguished between application domains when multiple application domains are running.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

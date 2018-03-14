@@ -1,0 +1,98 @@
+<Type Name="CipherAlgorithmType" FullName="Mono.Security.Interface.CipherAlgorithmType">
+  <TypeSignature Language="C#" Value="public enum CipherAlgorithmType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CipherAlgorithmType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Mono.Security.Interface.CipherAlgorithmType" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Aes128">
+      <MemberSignature Language="C#" Value="Aes128" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.CipherAlgorithmType Aes128 = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherAlgorithmType.Aes128" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.CipherAlgorithmType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Aes256">
+      <MemberSignature Language="C#" Value="Aes256" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.CipherAlgorithmType Aes256 = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherAlgorithmType.Aes256" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.CipherAlgorithmType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AesGcm128">
+      <MemberSignature Language="C#" Value="AesGcm128" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.CipherAlgorithmType AesGcm128 = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherAlgorithmType.AesGcm128" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.CipherAlgorithmType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AesGcm256">
+      <MemberSignature Language="C#" Value="AesGcm256" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.CipherAlgorithmType AesGcm256 = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherAlgorithmType.AesGcm256" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.CipherAlgorithmType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.CipherAlgorithmType None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.CipherAlgorithmType.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.CipherAlgorithmType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

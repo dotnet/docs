@@ -1,0 +1,82 @@
+<Type Name="TransactionState" FullName="System.EnterpriseServices.CompensatingResourceManager.TransactionState">
+  <TypeSignature Language="C#" Value="public enum TransactionState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed TransactionState extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.CompensatingResourceManager.TransactionState" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the state of the current Compensating Resource Manager (CRM) transaction.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Aborted">
+      <MemberSignature Language="C#" Value="Aborted" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.CompensatingResourceManager.TransactionState Aborted = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.CompensatingResourceManager.TransactionState.Aborted" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.CompensatingResourceManager.TransactionState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The transaction is aborted.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Active">
+      <MemberSignature Language="C#" Value="Active" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.CompensatingResourceManager.TransactionState Active = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.CompensatingResourceManager.TransactionState.Active" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.CompensatingResourceManager.TransactionState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The transaction is active.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Committed">
+      <MemberSignature Language="C#" Value="Committed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.CompensatingResourceManager.TransactionState Committed = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.CompensatingResourceManager.TransactionState.Committed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.CompensatingResourceManager.TransactionState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The transaction is commited.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Indoubt">
+      <MemberSignature Language="C#" Value="Indoubt" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.CompensatingResourceManager.TransactionState Indoubt = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.CompensatingResourceManager.TransactionState.Indoubt" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.CompensatingResourceManager.TransactionState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The transaction is in-doubt.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

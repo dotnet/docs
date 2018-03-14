@@ -1,0 +1,144 @@
+<Type Name="JustInTimeActivationAttribute" FullName="System.EnterpriseServices.JustInTimeActivationAttribute">
+  <TypeSignature Language="C#" Value="public sealed class JustInTimeActivationAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit JustInTimeActivationAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.JustInTimeActivationAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class, Inherited=true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Turns just-in-time (JIT) activation on or off. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If JIT activation is specified, then it must not be disabled in the COM+ catalog, and vice versa. If enabled in the COM+ catalog, it must be specified on the component.  
+  
+ JIT activation defaults to off for components which are configured in COM+, but is enabled automatically if automatic transactions are requested.  
+  
+ For more information about using attributes, see [Attributes](~/docs/standard/attributes/index.md).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this attribute.  
+  
+ [!code-cpp[EnterpriseServices_Pooling#0](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServices_Pooling/CPP/inspector.cpp#0)]
+ [!code-csharp[EnterpriseServices_Pooling#0](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServices_Pooling/CS/inspector.cs#0)]
+ [!code-vb[EnterpriseServices_Pooling#0](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServices_Pooling/VB/inspector.vb#0)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.EnterpriseServices.JustInTimeActivationAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public JustInTimeActivationAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.JustInTimeActivationAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.EnterpriseServices.JustInTimeActivationAttribute" /> class. The default constructor enables just-in-time (JIT) activation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example creates a new <xref:System.EnterpriseServices.JustInTimeActivationAttribute>.  
+  
+ [!code-csharp[EnterpriseServicesJustInTimeActivationAttribute#1](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServicesJustInTimeActivationAttribute/CS/class1.cs#1)]
+ [!code-vb[EnterpriseServicesJustInTimeActivationAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServicesJustInTimeActivationAttribute/VB/class1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public JustInTimeActivationAttribute (bool val);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool val) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.JustInTimeActivationAttribute.#ctor(System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="val" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="val">
+          <see langword="true" /> to enable JIT activation; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.EnterpriseServices.JustInTimeActivationAttribute" /> class, optionally allowing the disabling of just-in-time (JIT) activation by passing <see langword="false" /> as the parameter.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ JIT activation is required and `val` cannot be set to `false` if the <xref:System.EnterpriseServices.TransactionOption> value for the transaction is `Supported`, `Required`, or `RequiresNew`.  
+  
+   
+  
+## Examples  
+ The following code example creates a new <xref:System.EnterpriseServices.JustInTimeActivationAttribute>.  
+  
+ [!code-csharp[EnterpriseServicesJustInTimeActivationAttribute#2](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServicesJustInTimeActivationAttribute/CS/class1.cs#2)]
+ [!code-vb[EnterpriseServicesJustInTimeActivationAttribute#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServicesJustInTimeActivationAttribute/VB/class1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public bool Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Value" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.JustInTimeActivationAttribute.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of the <see cref="T:System.EnterpriseServices.JustInTimeActivationAttribute" /> setting.</summary>
+        <value>
+          <see langword="true" /> if JIT activation is enabled; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example gets the value of a `JustInTimeActivation` attribute's <xref:System.EnterpriseServices.JustInTimeActivationAttribute.Value%2A> property.  
+  
+ [!code-csharp[EnterpriseServicesJustInTimeActivationAttribute#3](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServicesJustInTimeActivationAttribute/CS/class1.cs#3)]
+ [!code-vb[EnterpriseServicesJustInTimeActivationAttribute#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServicesJustInTimeActivationAttribute/VB/class1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

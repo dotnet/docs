@@ -1,0 +1,44 @@
+<Type Name="IWebAdministrationService" FullName="System.Web.UI.Design.IWebAdministrationService">
+  <TypeSignature Language="C#" Value="public interface IWebAdministrationService" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWebAdministrationService" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.IWebAdministrationService" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Provides an interface for creating services for administering a Web site at design time.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The specified arguments can be used to specify how the Web administration user interface (UI) should be launched. The arguments are optional and the design host can choose to ignore them.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Start">
+      <MemberSignature Language="C#" Value="public void Start (System.Collections.IDictionary arguments);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Start(class System.Collections.IDictionary arguments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IWebAdministrationService.Start(System.Collections.IDictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="arguments" Type="System.Collections.IDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="arguments">An <see cref="T:System.Collections.IDictionary" />.</param>
+        <summary>Starts the Web administration facility in the design host.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

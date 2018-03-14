@@ -1,0 +1,78 @@
+<Type Name="DbSpatialDataReader" FullName="System.Data.Spatial.DbSpatialDataReader">
+  <TypeSignature Language="C#" Value="public abstract class DbSpatialDataReader" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DbSpatialDataReader extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Spatial.DbSpatialDataReader" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>A provider-independent service API for geospatial (Geometry/Geography) type support.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DbSpatialDataReader ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialDataReader.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Spatial.DbSpatialDataReader" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGeography">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeography GetGeography (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeography GetGeography(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialDataReader.GetGeography(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeography</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">The ordinal of the column that contains the geography value</param>
+        <summary>When implemented in derived types, reads an instance of <see cref="T:System.Data.Spatial.DbGeography" /> from the column at the specified column ordinal.</summary>
+        <returns>The instance of DbGeography at the specified column value</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGeometry">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Spatial.DbGeometry GetGeometry (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Spatial.DbGeometry GetGeometry(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbSpatialDataReader.GetGeometry(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">The ordinal of the data record column that contains the provider-specific geometry data</param>
+        <summary>When implemented in derived types, reads an instance of <see cref="T:System.Data.Spatial.DbGeometry" /> from the column at the specified column ordinal.</summary>
+        <returns>The instance of DbGeometry at the specified column value</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

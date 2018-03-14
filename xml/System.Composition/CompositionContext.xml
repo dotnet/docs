@@ -1,0 +1,418 @@
+<Type Name="CompositionContext" FullName="System.Composition.CompositionContext">
+  <TypeSignature Language="C#" Value="public abstract class CompositionContext" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit CompositionContext extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Composition.CompositionContext" />
+  <AssemblyInfo>
+    <AssemblyName>System.Composition.Runtime</AssemblyName>
+    <AssemblyVersion>1.0.31.0</AssemblyVersion>
+    <AssemblyVersion>1.0.32.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides methods to retrieve exports from the composition.</summary>
+    <remarks>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected CompositionContext ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContext.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Runtime</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+        <AssemblyVersion>1.0.32.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Composition.CompositionContext" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+Note that this constructor is protected; it can only be called by classes derived from the <see cref="T:System.Composition.CompositionContext"/> class. 
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExport">
+      <MemberSignature Language="C#" Value="public object GetExport (System.Composition.Hosting.Core.CompositionContract contract);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetExport(class System.Composition.Hosting.Core.CompositionContract contract) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContext.GetExport(System.Composition.Hosting.Core.CompositionContract)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Runtime</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+        <AssemblyVersion>1.0.32.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="contract" Type="System.Composition.Hosting.Core.CompositionContract" />
+      </Parameters>
+      <Docs>
+        <param name="contract">The contract to match.</param>
+        <summary>Retrieves the export that matches the specified contract.</summary>
+        <returns>The exported value.</returns>
+        <remarks>
+        </remarks>
+        <exception cref="T:System.Composition.Hosting.CompositionFailedException">No export found for <paramref name="contract" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExport">
+      <MemberSignature Language="C#" Value="public object GetExport (Type exportType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetExport(class System.Type exportType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContext.GetExport(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Runtime</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+        <AssemblyVersion>1.0.32.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exportType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="exportType">The type to match.</param>
+        <summary>Retrieves the export that matches the specified type.</summary>
+        <returns>The exported value.</returns>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExport">
+      <MemberSignature Language="C#" Value="public object GetExport (Type exportType, string contractName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetExport(class System.Type exportType, string contractName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContext.GetExport(System.Type,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Runtime</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+        <AssemblyVersion>1.0.32.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exportType" Type="System.Type" />
+        <Parameter Name="contractName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="exportType">The type to match.</param>
+        <param name="contractName">The name to match.</param>
+        <summary>Retrieves the export that matches the specified name and type.</summary>
+        <returns>The exported value.</returns>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExport&lt;TExport&gt;">
+      <MemberSignature Language="C#" Value="public TExport GetExport&lt;TExport&gt; ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!TExport GetExport&lt;TExport&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContext.GetExport``1" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Runtime</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+        <AssemblyVersion>1.0.32.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TExport</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TExport" />
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="TExport">The type to match.</typeparam>
+        <summary>Retrieves the export that matches the specified generic type parameter.</summary>
+        <returns>The exported value.</returns>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExport&lt;TExport&gt;">
+      <MemberSignature Language="C#" Value="public TExport GetExport&lt;TExport&gt; (string contractName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!TExport GetExport&lt;TExport&gt;(string contractName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContext.GetExport``1(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Runtime</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+        <AssemblyVersion>1.0.32.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TExport</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TExport" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="contractName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TExport">The type to match.</typeparam>
+        <param name="contractName">The name to match.</param>
+        <summary>Retrieves the export that matches the specified generic type parameter and contract name.</summary>
+        <returns>The exported value.</returns>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExports">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;object&gt; GetExports (Type exportType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;object&gt; GetExports(class System.Type exportType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContext.GetExports(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Runtime</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+        <AssemblyVersion>1.0.32.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exportType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="exportType">The type to match.</param>
+        <summary>Retrieves a collection of all exports that match the specified type.</summary>
+        <returns>A collection of exported values.</returns>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExports">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;object&gt; GetExports (Type exportType, string contractName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;object&gt; GetExports(class System.Type exportType, string contractName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContext.GetExports(System.Type,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Runtime</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+        <AssemblyVersion>1.0.32.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exportType" Type="System.Type" />
+        <Parameter Name="contractName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="exportType">The type to match.</param>
+        <param name="contractName">The name to match.</param>
+        <summary>Retrieves all exports that match the specified contract name and type.</summary>
+        <returns>A collection of exported values.</returns>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExports&lt;TExport&gt;">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;TExport&gt; GetExports&lt;TExport&gt; ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;!!TExport&gt; GetExports&lt;TExport&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContext.GetExports``1" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Runtime</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+        <AssemblyVersion>1.0.32.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;TExport&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TExport" />
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="TExport">The type to match.</typeparam>
+        <summary>Retrieves all exports that match the specified generic type parameter.</summary>
+        <returns>A collection of exported values.</returns>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExports&lt;TExport&gt;">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;TExport&gt; GetExports&lt;TExport&gt; (string contractName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;!!TExport&gt; GetExports&lt;TExport&gt;(string contractName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContext.GetExports``1(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Runtime</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+        <AssemblyVersion>1.0.32.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;TExport&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TExport" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="contractName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TExport">The type to match.</typeparam>
+        <param name="contractName">The name to match.</param>
+        <summary>Retrieves all exports that match the specified generic type parameter and contract name.</summary>
+        <returns>A collection of exported values.</returns>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetExport">
+      <MemberSignature Language="C#" Value="public abstract bool TryGetExport (System.Composition.Hosting.Core.CompositionContract contract, out object export);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetExport(class System.Composition.Hosting.Core.CompositionContract contract, [out] object&amp; export) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContext.TryGetExport(System.Composition.Hosting.Core.CompositionContract,System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Runtime</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+        <AssemblyVersion>1.0.32.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="contract" Type="System.Composition.Hosting.Core.CompositionContract" />
+        <Parameter Name="export" Type="System.Object&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="contract">The contract to match.</param>
+        <param name="export">When this method returns, contains the matched export or <see langword="null" />.</param>
+        <summary>Returns the export that matches the specified contract, or returns <see langword="null" /> if no match is found.</summary>
+        <returns>
+          <see langword="true" /> if an export was found; otherwise, <see langword="false" />.</returns>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetExport">
+      <MemberSignature Language="C#" Value="public bool TryGetExport (Type exportType, out object export);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetExport(class System.Type exportType, [out] object&amp; export) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContext.TryGetExport(System.Type,System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Runtime</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+        <AssemblyVersion>1.0.32.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exportType" Type="System.Type" />
+        <Parameter Name="export" Type="System.Object&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="exportType">The type to match.</param>
+        <param name="export">When this method returns, contains the matched export or <see langword="null" />.</param>
+        <summary>Returns the export that matches the specified type, or returns <see langword="null" /> if no match is found.</summary>
+        <returns>
+          <see langword="true" /> if an export was found; otherwise, <see langword="false" />.</returns>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetExport">
+      <MemberSignature Language="C#" Value="public bool TryGetExport (Type exportType, string contractName, out object export);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetExport(class System.Type exportType, string contractName, [out] object&amp; export) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContext.TryGetExport(System.Type,System.String,System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Runtime</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+        <AssemblyVersion>1.0.32.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exportType" Type="System.Type" />
+        <Parameter Name="contractName" Type="System.String" />
+        <Parameter Name="export" Type="System.Object&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="exportType">The type to match.</param>
+        <param name="contractName">The name to match.</param>
+        <param name="export">When this method returns, contains the matched export or <see langword="null" />.</param>
+        <summary>Returns the export that matches the specified contract name and type, or returns <see langword="null" /> if no match is found.</summary>
+        <returns>
+          <see langword="true" /> if an export was found; otherwise, <see langword="false" />.</returns>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetExport&lt;TExport&gt;">
+      <MemberSignature Language="C#" Value="public bool TryGetExport&lt;TExport&gt; (out TExport export);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetExport&lt;TExport&gt;([out] !!TExport&amp; export) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContext.TryGetExport``1(``0@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Runtime</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+        <AssemblyVersion>1.0.32.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TExport" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="export" Type="TExport&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TExport">The type to match.</typeparam>
+        <param name="export">When this method returns, contains the matched export or <see langword="null" />.</param>
+        <summary>Returns the export that matches the specified generic type parameter, or returns <see langword="null" /> if no match is found.</summary>
+        <returns>
+          <see langword="true" /> if an export was found; otherwise, <see langword="false" />.</returns>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetExport&lt;TExport&gt;">
+      <MemberSignature Language="C#" Value="public bool TryGetExport&lt;TExport&gt; (string contractName, out TExport export);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetExport&lt;TExport&gt;(string contractName, [out] !!TExport&amp; export) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.CompositionContext.TryGetExport``1(System.String,``0@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Runtime</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+        <AssemblyVersion>1.0.32.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TExport" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="contractName" Type="System.String" />
+        <Parameter Name="export" Type="TExport&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TExport">The type to match.</typeparam>
+        <param name="contractName">The name to match.</param>
+        <param name="export">When this method returns, contains the matched export or <see langword="null" />.</param>
+        <summary>Returns the export that matches the specified generic type parameter and contract name, or returns <see langword="null" /> if no match is found.</summary>
+        <returns>
+          <see langword="true" /> if an export was found; otherwise, <see langword="false" />.</returns>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,1 @@
+You indirectly access each public property and event of this type by the resolution of a corresponding dependency property. This dependency property is the public static field named **XProperty** or **XEvent**, where X is the corresponding property.

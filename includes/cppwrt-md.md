@@ -1,0 +1,1 @@
+Visual C++ component extensions

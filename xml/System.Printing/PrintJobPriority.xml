@@ -1,0 +1,82 @@
+<Type Name="PrintJobPriority" FullName="System.Printing.PrintJobPriority">
+  <TypeSignature Language="C#" Value="public enum PrintJobPriority" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PrintJobPriority extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Printing.PrintJobPriority" />
+  <AssemblyInfo>
+    <AssemblyName>System.Printing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies a non-numerical priority for a print job relative to other print jobs in the print queue.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintJobPriority Default = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobPriority.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintJobPriority</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A job that has the <see cref="P:System.Printing.PrintQueue.DefaultPriority" /> for the <see cref="T:System.Printing.PrintQueueStream" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Maximum">
+      <MemberSignature Language="C#" Value="Maximum" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintJobPriority Maximum = int32(99)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobPriority.Maximum" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintJobPriority</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A job that has the highest priority.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Minimum">
+      <MemberSignature Language="C#" Value="Minimum" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintJobPriority Minimum = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobPriority.Minimum" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintJobPriority</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A job that has the lowest priority.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintJobPriority None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobPriority.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintJobPriority</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A job that has no non-numerical priority.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

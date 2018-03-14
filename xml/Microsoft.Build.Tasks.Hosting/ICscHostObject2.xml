@@ -1,0 +1,64 @@
+<Type Name="ICscHostObject2" FullName="Microsoft.Build.Tasks.Hosting.ICscHostObject2">
+  <TypeSignature Language="C#" Value="public interface ICscHostObject2 : Microsoft.Build.Framework.ITaskHost, Microsoft.Build.Tasks.Hosting.ICscHostObject" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICscHostObject2 implements class Microsoft.Build.Framework.ITaskHost, class Microsoft.Build.Tasks.Hosting.ICscHostObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Hosting.ICscHostObject2" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Build.Framework.ITaskHost</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Build.Tasks.Hosting.ICscHostObject</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("D6D4E228-259A-4076-B5D0-0627338BCC10")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines an interface that allows the [Csc](http://msdn.microsoft.com/library/d8c19b36-f5ca-484b-afa6-8ff3b90e103a) task to communicate with the host integrated development environment (IDE).</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This interface allows the `Csc` task to delegate project compilation to the IDE rather than using command line compilers.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="SetWin32Manifest">
+      <MemberSignature Language="C#" Value="public bool SetWin32Manifest (string win32Manifest);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetWin32Manifest(string win32Manifest) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject2.SetWin32Manifest(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="win32Manifest" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="win32Manifest">The name of the manifest to insert into the assembly.</param>
+        <summary>Specifies a manifest file to insert into the assembly.</summary>
+        <returns>
+          <see langword="true" /> if the method was successful; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

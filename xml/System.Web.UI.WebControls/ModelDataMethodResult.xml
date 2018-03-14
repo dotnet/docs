@@ -1,0 +1,75 @@
+<Type Name="ModelDataMethodResult" FullName="System.Web.UI.WebControls.ModelDataMethodResult">
+  <TypeSignature Language="C#" Value="public class ModelDataMethodResult" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ModelDataMethodResult extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ModelDataMethodResult" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Encapsulates the result of a data method operation.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ModelDataMethodResult (object returnValue, System.Collections.Specialized.OrderedDictionary outputParameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object returnValue, class System.Collections.Specialized.OrderedDictionary outputParameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ModelDataMethodResult.#ctor(System.Object,System.Collections.Specialized.OrderedDictionary)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="returnValue" Type="System.Object" />
+        <Parameter Name="outputParameters" Type="System.Collections.Specialized.OrderedDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="returnValue">The return value of the data method.</param>
+        <param name="outputParameters">A dictionary that contains the values of <see langword="out" /> and <see langword="ref" /> parameters.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.ModelDataMethodResult" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OutputParameters">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.OrderedDictionary OutputParameters { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.OrderedDictionary OutputParameters" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ModelDataMethodResult.OutputParameters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.OrderedDictionary</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a read-only dictionary that contains the values of <see langword="out" /> and <see langword="ref" /> parameters.</summary>
+        <value>A dictionary that contains the values of <see langword="out" /> and <see langword="ref" /> parameters.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReturnValue">
+      <MemberSignature Language="C#" Value="public object ReturnValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ReturnValue" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ModelDataMethodResult.ReturnValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the return value of the data method.</summary>
+        <value>The return value of the data method: an <see cref="T:System.Collections.IEnumerable" /> collection for a select operation, or an integer indicating the number of affected rows for update, delete, and insert operations.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

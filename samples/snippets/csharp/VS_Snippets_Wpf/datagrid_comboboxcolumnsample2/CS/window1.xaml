@@ -1,0 +1,23 @@
+﻿<Window x:Class="ComboBoxColumnSample2.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Customers" Height="300" Width="300">
+    <Window.Resources>
+        <!--Dummy template for DisplayMemberPath property-->
+        <!--<Snippet1>-->
+        <DataTemplate x:Key="displaymemberpath">
+            <TextBlock Text="{Binding Path=LastName}"/>
+        </DataTemplate>
+        <!--</Snippet1>-->
+    </Window.Resources>
+    
+    <StackPanel>
+        <ComboBox Name="CB" ItemsSource="{Binding}" DisplayMemberPath="LastName" />
+        <DataGrid Name="DG1" AutoGenerateColumns="False" ItemsSource="{Binding}" >
+            <DataGrid.Columns>
+                <DataGridComboBoxColumn x:Name="cbc1" Header="Last Name" DisplayMemberPath="LastName"  />
+                
+            </DataGrid.Columns>
+        </DataGrid>
+    </StackPanel>
+</Window>

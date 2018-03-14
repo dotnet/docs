@@ -1,0 +1,43 @@
+<Type Name="DoubleIListConverter" FullName="System.Windows.Media.Converters.DoubleIListConverter">
+  <TypeSignature Language="C#" Value="public sealed class DoubleIListConverter : System.Windows.Media.Converters.BaseIListConverter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DoubleIListConverter extends System.Windows.Media.Converters.BaseIListConverter" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.Converters.DoubleIListConverter" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Media.Converters.BaseIListConverter</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Converts members of an <see cref="T:System.Collections.IList" /> collection containing <see cref="T:System.Double" /> numbers to and from instances of <see cref="T:System.String" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The converted <xref:System.String> is a sequence of delimited numbers.  
+  
+ This class is only intended to be used by the <xref:System.Windows.Markup.Primitives.MarkupWriter> for serialization of [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)].  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DoubleIListConverter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Converters.DoubleIListConverter.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Converters.DoubleIListConverter" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

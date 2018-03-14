@@ -1,0 +1,82 @@
+<Type Name="AssociationDirection" FullName="System.Web.DynamicData.ModelProviders.AssociationDirection">
+  <TypeSignature Language="C#" Value="public enum AssociationDirection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AssociationDirection extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.ModelProviders.AssociationDirection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.DynamicData</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Indicates the relationship between two entities.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ManyToMany">
+      <MemberSignature Language="C#" Value="ManyToMany" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.DynamicData.ModelProviders.AssociationDirection ManyToMany = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.DynamicData.ModelProviders.AssociationDirection.ManyToMany" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.DynamicData.ModelProviders.AssociationDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates a many-to-many relationship.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ManyToOne">
+      <MemberSignature Language="C#" Value="ManyToOne" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.DynamicData.ModelProviders.AssociationDirection ManyToOne = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.DynamicData.ModelProviders.AssociationDirection.ManyToOne" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.DynamicData.ModelProviders.AssociationDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates a many-to-one relationship.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OneToMany">
+      <MemberSignature Language="C#" Value="OneToMany" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.DynamicData.ModelProviders.AssociationDirection OneToMany = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.DynamicData.ModelProviders.AssociationDirection.OneToMany" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.DynamicData.ModelProviders.AssociationDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates a one-to-many relationship.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OneToOne">
+      <MemberSignature Language="C#" Value="OneToOne" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.DynamicData.ModelProviders.AssociationDirection OneToOne = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.DynamicData.ModelProviders.AssociationDirection.OneToOne" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.DynamicData.ModelProviders.AssociationDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates a one-to-one relationship.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

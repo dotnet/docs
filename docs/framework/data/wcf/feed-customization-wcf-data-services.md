@@ -1,0 +1,105 @@
+---
+title: "Feed Customization (WCF Data Services)"
+ms.custom: ""
+ms.date: "03/30/2017"
+ms.prod: ".net-framework-oob"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "dotnet-clr"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+dev_langs: 
+  - "csharp"
+  - "vb"
+helpviewer_keywords: 
+  - "WCF Data Services, feeds"
+  - "WCF Data Services, Atom protocol"
+  - "Atom Publishing Protocol [WCF Data Services]"
+  - "WCF Data Services, customizing feeds"
+ms.assetid: 0d1a39bc-6462-4683-bd7d-e74e0fd28a85
+caps.latest.revision: 11
+author: "dotnet-bot"
+ms.author: "dotnetcontent"
+manager: "wpickett"
+ms.workload: 
+  - "dotnet"
+---
+# Feed Customization (WCF Data Services)
+[!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] uses the [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] to expose data as a feed. [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] supports both Atom and JavaScript Object Notation (JSON) formats for data feeds. When you use an Atom feed, [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] provides a standard method to serialize data, such as entities and relationships, into an XML format that can be included in the body of HTTP message. [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] defines a default entity-property mapping between the data that is contained in entities and Atom elements. For more information, see [OData: Atom Format](http://go.microsoft.com/fwlink/?LinkID=185794).  
+  
+ You may have an application scenario that requires that the property data returned by the data service be serialized in a customized manner rather than in the standard feed format. With [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)], you can customize the serialization in a data feed so that properties of an entity may be mapped to unused elements and attributes of an entry or to custom elements of an entry in the feed.  
+  
+> [!NOTE]
+>  Feed customization is only supported for Atom feeds. Custom feeds are not returned when the JSON format is requested for the returned feed.  
+  
+ With [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)], you can define an alternate entity-property mapping for an Atom payload by manually applying attributes to entity types in the data model. The data source provider of the data service determines how you should apply these attributes.  
+  
+> [!IMPORTANT]
+>  When you define custom feeds, you must guarantee that all entity properties that have custom mappings defined are included in the projection. When a mapped entity property is not included in the projection, data loss might occur. For more information, see [Query Projections](../../../../docs/framework/data/wcf/query-projections-wcf-data-services.md).  
+  
+## Customizing Feeds with the Entity Framework Provider  
+ The data model used with the [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] provider is represented as XML in the .edmx file. In this case, the attributes that define custom feeds are added to the `EntityType` and `Property` elements that represent entity types and properties in the data model. These feed customization attributes are not defined in [\[MC-CSDL\]: Conceptual Schema Definition File Format](http://go.microsoft.com/fwlink/?LinkId=159072), which is the format that the [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] provider uses to define the data model. Therefore, you must declare feed customization attributes in a specific schema namespace, which is defined as `m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"`. The following XML fragment shows feed customization attributes applied to `Property` elements of the `Products` entity type that define the `ProductName`, `ReorderLevel`, and `UnitsInStock` properties.  
+  
+ [!code-xml[Astoria Custom Feeds#EdmFeedAttributes](../../../../samples/snippets/xml/VS_Snippets_Misc/astoria custom feeds/xml/northwind.csdl#edmfeedattributes)]  
+  
+ These attributes produce the following customized data feed for the `Products` entity set. In the customized data feed, the `ProductName` property value is displayed in both in the `author` element and as the `ProductName` property element, and the `UnitsInStock` property is displayed in a custom element that has its own unique namespace and with the `ReorderLevel` property as an attribute:  
+  
+ [!code-xml[Astoria Custom Feeds#EdmFeedResultProduct](../../../../samples/snippets/xml/VS_Snippets_Misc/astoria custom feeds/xml/edmfeedresult.xml#edmfeedresultproduct)]  
+  
+ For more information, see [How to: Customize Feeds with the Entity Framework Provider](../../../../docs/framework/data/wcf/how-to-customize-feeds-with-ef-provider-wcf-data-services.md).  
+  
+> [!NOTE]
+>  Because extensions to the data model are not supported by the Entity Designer, you must manually modify the XML file that contains the data model. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] the .edmx file that is generated by the [!INCLUDE[adonet_edm](../../../../includes/adonet-edm-md.md)] tools, see [.edmx File Overview](http://msdn.microsoft.com/library/f4c8e7ce-1db6-417e-9759-15f8b55155d4).  
+  
+### Custom Feed Attributes  
+ The following table shows the XML attributes that customize feeds that you can add to the conceptual schema definition language (CSDL) that defines the data model. These attributes are equivalent to the properties of the <xref:System.Data.Services.Common.EntityPropertyMappingAttribute> used with the reflection provider.  
+  
+|Attribute name|Description|  
+|--------------------|-----------------|  
+|`FC_ContentKind`|Indicates the type of the content. The following keywords define syndication content types.<br /><br /> `text:` The property value is displayed in the feed as text.<br /><br /> `html:` The property value is displayed in the feed as HTML.<br /><br /> `xhtml:` The property value is displayed in the feed as XML-formatted HTML.<br /><br /> These keywords are equivalent to the values of the <xref:System.Data.Services.Common.SyndicationTextContentKind> enumeration used with the reflection provider.<br /><br /> This attribute is not supported when the `FC_NsPrefix` and `FC_NsUri` attributes are used.<br /><br /> When you specify a value of `xhtml` for the `FC_ContentKind` attribute, you must ensure that the property value contains properly formatted XML. The data service returns the value without performing any transformations. You must also ensure that any XML element prefixes in the returned XML have a namespace URI and prefix defined in the mapped feed.|  
+|`FC_KeepInContent`|Indicates that the referenced property value should be included both in the content section of the feed and in the mapped location. Valid values are `true` and `false`. To make the resulting feed backward-compatible with earlier versions of [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)], specify a value of `true` to make sure that the value is included in the content section of the feed.|  
+|`FC_NsPrefix`|The namespace prefix of the XML element in a non-syndication mapping. This attribute must be used with the `FC_NsUri` attribute and cannot be used with the `FC_ContentKind` attribute.|  
+|`FC_NsUri`|The namespace URI of the XML element in a non-syndication mapping. This attribute must be used with the `FC_NsPrefix` attribute and cannot be used with the `FC_ContentKind` attribute.|  
+|`FC_SourcePath`|The path of the property of the entity to which this feed mapping rule applies. This attribute is only supported when it is used in an `EntityType` element.<br /><br /> The <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.SourcePath%2A> property cannot directly reference a complex type. For complex types, you must use a path expression where property names are separated by a backslash (`/`) character. For example, the following values are allowed for an entity type `Person` with an integer property `Age` and a complex property<br /><br /> `Address`:<br /><br /> `Age`<br /><br /> `Address/Street`<br /><br /> The <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.SourcePath%2A> property cannot be set to a value that contains a space or any other character that is not valid in a property name.|  
+|`FC_TargetPath`|The name of the target element of the resulting feed to map the property. This element can be an element defined by the Atom specification or a custom element.<br /><br /> The following keywords are predefined syndication target-path values that point to specific location in an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feed.<br /><br /> `SyndicationAuthorEmail:` The `atom:email` child element of the `atom:author` element.<br /><br /> `SyndicationAuthorName:` The `atom:name` child element of the `atom:author` element.<br /><br /> `SyndicationAuthorUri:` The `atom:uri` child element of the `atom:author` element.<br /><br /> `SyndicationContributorEmail:` The `atom:email` child element of the `atom:contributor` element.<br /><br /> `SyndicationContributorName:` The `atom:name` child element of the `atom:contributor` element.<br /><br /> `SyndicationContributorUri:` The `atom:uri` child element of the `atom:contributor` element.<br /><br /> `SyndicationCustomProperty:` A custom property element. When mapping to a custom element, the target must be a path expression in which nested elements are separated by a backslash (`/`) and attributes are specified by an ampersand (`@`). In the following example, the string `UnitsInStock/@ReorderLevel` maps a property value to an attribute named `ReorderLevel` on a child element named `UnitsInStock` of the root entry element.<br /><br /> `<Property Name="ReorderLevel" Type="Int16"               m:FC_TargetPath="UnitsInStock/@ReorderLevel"               m:FC_NsPrefix="Northwind"               m:FC_NsUri="http://schemas.examples.microsoft.com/dataservices"               m:FC_KeepInContent="false"               />`<br /><br /> When the target is a custom element name, the `FC_NsPrefix` and `FC_NsUri` attributes must also be specified.<br /><br /> `SyndicationPublished:` The `atom:published` element.<br /><br /> `SyndicationRights:` The `atom:rights` element.<br /><br /> `SyndicationSummary:` The `atom:summary` element.<br /><br /> `SyndicationTitle:` The `atom:title` element.<br /><br /> `SyndicationUpdated:` The `atom:updated` element.<br /><br /> These keywords are equivalent to the values of the <xref:System.Data.Services.Common.SyndicationItemProperty> enumeration used with the reflection provider.|  
+  
+> [!NOTE]
+>  Attribute names and values are case-sensitive. Attributes can be applied either to the `EntityType` element or to one or more `Property` elements, but not to both.  
+  
+## Customizing Feeds with the Reflection Provider  
+ To customize feeds for a data model that was implemented by using the reflection provider, add one or more instances of the <xref:System.Data.Services.Common.EntityPropertyMappingAttribute> attribute to the classes that represent entity types in the data model. The properties of the <xref:System.Data.Services.Common.EntityPropertyMappingAttribute> class correspond to the feed customization attributes that are described in the previous section. The following is an example of the declaration of the `Order` type, with custom feed mapping defined for both properties.  
+  
+> [!NOTE]
+>  The data model for this example is defined in the topic [How to: Create a Data Service Using the Reflection Provider](../../../../docs/framework/data/wcf/create-a-data-service-using-rp-wcf-data-services.md).  
+  
+ [!code-csharp[Astoria Custom Feeds#CustomOrderFeed](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria custom feeds/cs/orderitems.svc.cs#customorderfeed)]
+ [!code-vb[Astoria Custom Feeds#CustomOrderFeed](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria custom feeds/vb/orderitems.svc.vb#customorderfeed)]  
+  
+ These attributes produce the following customized data feed for the `Orders` entity set. In this customized feed, the `OrderId` property value displays only in the `title` element of the `entry` and the `Customer` property value displays both in the `author` element and as the `Customer` property element:  
+  
+ [!code-xml[Astoria Custom Feeds#IQueryableFeedResult](../../../../samples/snippets/xml/VS_Snippets_Misc/astoria custom feeds/xml/iqueryablefeedresult.xml#iqueryablefeedresult)]  
+  
+ For more information, see [How to: Customize Feeds with the Reflection Provider](../../../../docs/framework/data/wcf/how-to-customize-feeds-with-the-reflection-provider-wcf-data-services.md).  
+  
+## Customizing Feeds with a Custom Data Service Provider  
+ Feed customization for a data model defined by using a custom data service provider is defined for a resource type by calling the <xref:System.Data.Services.Providers.ResourceType.AddEntityPropertyMappingAttribute%2A> on the <xref:System.Data.Services.Providers.ResourceType> that represents an entity type in the data model. For more information, see [Custom Data Service Providers](../../../../docs/framework/data/wcf/custom-data-service-providers-wcf-data-services.md).  
+  
+## Consuming Custom Feeds  
+ When your application directly consumes an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feed, it must be able to process any customized elements and attributes in the returned feed. When you have implemented custom feeds in your data model, regardless of the data service provider, the `$metadata` endpoint returns custom feed information as custom feed attributes in the CSDL returned by the data service. When you use the **Add Service Reference** dialog or the [datasvcutil.exe](../../../../docs/framework/data/wcf/wcf-data-service-client-utility-datasvcutil-exe.md) tool to generate client data service classes, the customized feed attributes are used to guarantee that requests and responses to the data service are handled correctly.  
+  
+## Feed Customization Considerations  
+ You should consider the following when defining custom feed mappings.  
+  
+-   The [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client treats mapped elements in a feed as empty when they contain only whitespace. Because of this, mapped elements that contain only whitespace are not materialized on the client with the same whitespace. To preserve this whitespace on the client, you must set the value of `KeepInContext` to `true` in the feed mapping attribute.  
+  
+## Versioning Requirements  
+ Feed customization has the following [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] protocol versioning requirements:  
+  
+-   Feed customization requires that both the client and data service support version 2.0 of the [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] protocol and later versions.  
+  
+ For more information, see [Data Service Versioning](../../../../docs/framework/data/wcf/data-service-versioning-wcf-data-services.md).  
+  
+## See Also  
+ [Reflection Provider](../../../../docs/framework/data/wcf/reflection-provider-wcf-data-services.md)  
+ [Entity Framework Provider](../../../../docs/framework/data/wcf/entity-framework-provider-wcf-data-services.md)

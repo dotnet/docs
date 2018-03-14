@@ -1,0 +1,481 @@
+<Type Name="OracleType" FullName="System.Data.OracleClient.OracleType">
+  <TypeSignature Language="C#" Value="public enum OracleType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OracleType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Data.OracleClient.OracleType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.OracleClient</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the data type of a field or property for use in an <see cref="T:System.Data.OracleClient.OracleParameter" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows mappings between <xref:System.Data.OracleClient.OracleType> data types, Oracle data types, and .NET Framework types.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BFile">
+      <MemberSignature Language="C#" Value="BFile" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OracleClient.OracleType BFile = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleType.BFile" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An Oracle <see langword="BFILE" /> data type that contains a reference to binary data with a maximum size of 4 gigabytes that is stored in an external file. Use the OracleClient <see cref="T:System.Data.OracleClient.OracleBFile" /> data type with the <see cref="P:System.Data.OracleClient.OracleParameter.Value" /> property.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Blob">
+      <MemberSignature Language="C#" Value="Blob" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OracleClient.OracleType Blob = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleType.Blob" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An Oracle <see langword="BLOB" /> data type that contains binary data with a maximum size of 4 gigabytes. Use the OracleClient <see cref="T:System.Data.OracleClient.OracleLob" /> data type in <see cref="P:System.Data.OracleClient.OracleParameter.Value" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Byte">
+      <MemberSignature Language="C#" Value="Byte" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OracleClient.OracleType Byte = int32(23)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleType.Byte" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An integral type representing unsigned 8-bit integers with values between 0 and 255. This is not a native Oracle data type, but is provided to improve performance when binding input parameters. Use the .NET Framework <see cref="T:System.Byte" /> data type in <see cref="P:System.Data.OracleClient.OracleParameter.Value" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Char">
+      <MemberSignature Language="C#" Value="Char" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OracleClient.OracleType Char = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleType.Char" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An Oracle <see langword="CHAR" /> data type that contains a fixed-length character string with a maximum size of 2,000 bytes. Use the .NET Framework <see cref="T:System.String" /> or OracleClient <see cref="T:System.Data.OracleClient.OracleString" /> data type in <see cref="P:System.Data.OracleClient.OracleParameter.Value" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Clob">
+      <MemberSignature Language="C#" Value="Clob" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OracleClient.OracleType Clob = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleType.Clob" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An Oracle <see langword="CLOB" /> data type that contains character data, based on the default character set on the server, with a maximum size of 4 gigabytes. Use the OracleClient <see cref="T:System.Data.OracleClient.OracleLob" /> data type in <see cref="P:System.Data.OracleClient.OracleParameter.Value" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Cursor">
+      <MemberSignature Language="C#" Value="Cursor" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OracleClient.OracleType Cursor = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleType.Cursor" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An Oracle <see langword="REF CURSOR" />. The <see cref="T:System.Data.OracleClient.OracleDataReader" /> object is not available.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DateTime">
+      <MemberSignature Language="C#" Value="DateTime" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OracleClient.OracleType DateTime = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleType.DateTime" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An Oracle <see langword="DATE" /> data type that contains a fixed-length representation of a date and time, ranging from January 1, 4712 B.C. to December 31, A.D. 4712, with the default format *dd-mmm-yy*. For A.D. dates, <see langword="DATE" /> maps to <see cref="T:System.DateTime" />. To bind B.C. dates, use a <see langword="String" /> parameter and the Oracle TO_DATE or TO_CHAR conversion functions for input and output parameters respectively. Use the .NET Framework <see cref="T:System.DateTime" /> or OracleClient <see cref="T:System.Data.OracleClient.OracleDateTime" /> data type in <see cref="P:System.Data.OracleClient.OracleParameter.Value" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Double">
+      <MemberSignature Language="C#" Value="Double" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OracleClient.OracleType Double = int32(30)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleType.Double" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A double-precision floating-point value. This is not a native Oracle data type, but is provided to improve performance when binding input parameters. For information about conversion of Oracle numeric values to common language runtime (CLR) data types, see <see cref="T:System.Data.OracleClient.OracleNumber" />. Use the .NET Framework <see cref="T:System.Double" /> or OracleClient <see cref="T:System.Data.OracleClient.OracleNumber" /> data type in <see cref="P:System.Data.OracleClient.OracleParameter.Value" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Float">
+      <MemberSignature Language="C#" Value="Float" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OracleClient.OracleType Float = int32(29)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleType.Float" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A single-precision floating-point value. This is not a native Oracle data type, but is provided to improve performance when binding input parameters. For information about conversion of Oracle numeric values to common language runtime data types, see <see cref="T:System.Data.OracleClient.OracleNumber" />. Use the .NET Framework <see cref="T:System.Single" /> or OracleClient <see cref="T:System.Data.OracleClient.OracleNumber" /> data type in <see cref="P:System.Data.OracleClient.OracleParameter.Value" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Int16">
+      <MemberSignature Language="C#" Value="Int16" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OracleClient.OracleType Int16 = int32(27)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleType.Int16" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An integral type representing signed 16-bit integers with values between -32768 and 32767. This is not a native Oracle data type, but is provided to improve performance when binding input parameters. For information about conversion of Oracle numeric values to common language runtime (CLR) data types, see <see cref="T:System.Data.OracleClient.OracleNumber" />. Use the .NET Framework <see cref="T:System.Int16" /> or OracleClient <see cref="T:System.Data.OracleClient.OracleNumber" /> data type in <see cref="P:System.Data.OracleClient.OracleParameter.Value" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Int32">
+      <MemberSignature Language="C#" Value="Int32" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OracleClient.OracleType Int32 = int32(28)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleType.Int32" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An integral type representing signed 32-bit integers with values between -2147483648 and 2147483647. This is not a native Oracle data type, but is provided for performance when binding input parameters. For information about conversion of Oracle numeric values to common language runtime data types, see <see cref="T:System.Data.OracleClient.OracleNumber" />. Use the .NET Framework <see cref="T:System.Int32" /> or OracleClient <see cref="T:System.Data.OracleClient.OracleNumber" /> data type in <see cref="P:System.Data.OracleClient.OracleParameter.Value" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IntervalDayToSecond">
+      <MemberSignature Language="C#" Value="IntervalDayToSecond" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OracleClient.OracleType IntervalDayToSecond = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleType.IntervalDayToSecond" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An Oracle <see langword="INTERVAL DAY TO SECOND" /> data type (Oracle 9i or later) that contains an interval of time in days, hours, minutes, and seconds, and has a fixed size of 11 bytes. Use the .NET Framework <see cref="T:System.TimeSpan" /> or OracleClient <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> data type in <see cref="P:System.Data.OracleClient.OracleParameter.Value" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IntervalYearToMonth">
+      <MemberSignature Language="C#" Value="IntervalYearToMonth" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OracleClient.OracleType IntervalYearToMonth = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleType.IntervalYearToMonth" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An Oracle <see langword="INTERVAL YEAR TO MONTH" /> data type (Oracle 9i or later) that contains an interval of time in years and months, and has a fixed size of 5 bytes. Use the .NET Framework <see cref="T:System.Int32" /> or OracleClient <see cref="T:System.Data.OracleClient.OracleMonthSpan" /> data type in <see cref="P:System.Data.OracleClient.OracleParameter.Value" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LongRaw">
+      <MemberSignature Language="C#" Value="LongRaw" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OracleClient.OracleType LongRaw = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleType.LongRaw" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An Oracle <see langword="LONGRAW" /> data type that contains variable-length binary data with a maximum size of 2 gigabytes. Use the .NET Framework <see langword="Byte[]" /> or OracleClient <see cref="T:System.Data.OracleClient.OracleBinary" /> data type in <see cref="P:System.Data.OracleClient.OracleParameter.Value" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you update a column with the `LONG RAW` data type, an exception is thrown when you enter a value of `NULL` in the column. The Oracle `LONG RAW` data type is a deprecated type in Oracle version 8.0. To avoid this error, use the `BLOB` data type instead of `LONG RAW`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LongVarChar">
+      <MemberSignature Language="C#" Value="LongVarChar" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OracleClient.OracleType LongVarChar = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleType.LongVarChar" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An Oracle <see langword="LONG" /> data type that contains a variable-length character string with a maximum size of 2 gigabytes. Use the .NET Framework <see cref="T:System.String" /> or OracleClient <see cref="T:System.Data.OracleClient.OracleString" /> data type in <see cref="P:System.Data.OracleClient.OracleParameter.Value" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NChar">
+      <MemberSignature Language="C#" Value="NChar" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OracleClient.OracleType NChar = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleType.NChar" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An Oracle <see langword="NCHAR" /> data type that contains fixed-length character string to be stored in the national character set of the database, with a maximum size of 2,000 bytes (not characters) when stored in the database. The size of the value depends on the national character set of the database. See your Oracle documentation for more information. Use the .NET Framework <see cref="T:System.String" /> or OracleClient <see cref="T:System.Data.OracleClient.OracleString" /> data type in <see cref="P:System.Data.OracleClient.OracleParameter.Value" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NClob">
+      <MemberSignature Language="C#" Value="NClob" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OracleClient.OracleType NClob = int32(12)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleType.NClob" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An Oracle <see langword="NCLOB" /> data type that contains character data to be stored in the national character set of the database, with a maximum size of 4 gigabytes (not characters) when stored in the database. The size of the value depends on the national character set of the database. See your Oracle documentation for more information. Use the .NET Framework <see cref="T:System.String" /> or OracleClient <see cref="T:System.Data.OracleClient.OracleString" /> data type in <see cref="P:System.Data.OracleClient.OracleParameter.Value" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Number">
+      <MemberSignature Language="C#" Value="Number" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OracleClient.OracleType Number = int32(13)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleType.Number" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An Oracle <see langword="NUMBER" /> data type that contains variable-length numeric data with a maximum precision and scale of 38. This maps to <see cref="T:System.Decimal" />. To bind an Oracle <see langword="NUMBER" /> that exceeds what <see cref="F:System.Decimal.MaxValue" /> can contain, either use an <see cref="T:System.Data.OracleClient.OracleNumber" /> data type, or use a <see langword="String" /> parameter and the Oracle TO_NUMBER or TO_CHAR conversion functions for input and output parameters respectively. Use the .NET Framework <see cref="T:System.Decimal" /> or OracleClient <see cref="T:System.Data.OracleClient.OracleNumber" /> data type in <see cref="P:System.Data.OracleClient.OracleParameter.Value" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NVarChar">
+      <MemberSignature Language="C#" Value="NVarChar" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OracleClient.OracleType NVarChar = int32(14)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleType.NVarChar" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An Oracle <see langword="NVARCHAR2" /> data type that contains a variable-length character string stored in the national character set of the database, with a maximum size of 4,000 bytes (not characters) when stored in the database. The size of the value depends on the national character set of the database. See your Oracle documentation for more information. Use the .NET Framework <see cref="T:System.String" /> or OracleClient <see cref="T:System.Data.OracleClient.OracleString" /> data type in <see cref="P:System.Data.OracleClient.OracleParameter.Value" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Raw">
+      <MemberSignature Language="C#" Value="Raw" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OracleClient.OracleType Raw = int32(15)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleType.Raw" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An Oracle <see langword="RAW" /> data type that contains variable-length binary data with a maximum size of 2,000 bytes. Use the .NET Framework <see langword="Byte[]" /> or OracleClient <see cref="T:System.Data.OracleClient.OracleBinary" /> data type in <see cref="P:System.Data.OracleClient.OracleParameter.Value" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RowId">
+      <MemberSignature Language="C#" Value="RowId" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OracleClient.OracleType RowId = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleType.RowId" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The base64 string representation of an Oracle <see langword="ROWID" /> data type. Use the .NET Framework <see cref="T:System.String" /> or OracleClient <see cref="T:System.Data.OracleClient.OracleString" /> data type in <see cref="P:System.Data.OracleClient.OracleParameter.Value" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SByte">
+      <MemberSignature Language="C#" Value="SByte" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OracleClient.OracleType SByte = int32(26)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleType.SByte" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An integral type representing signed 8 bit integers with values between -128 and 127. This is not a native Oracle data type, but is provided to improve performance when binding input parameters. Use the .NET Framework <see cref="T:System.SByte" /> data type in <see cref="P:System.Data.OracleClient.OracleParameter.Value" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Timestamp">
+      <MemberSignature Language="C#" Value="Timestamp" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OracleClient.OracleType Timestamp = int32(18)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleType.Timestamp" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An Oracle <see langword="TIMESTAMP" /> (Oracle 9i or later) that contains date and time (including seconds), and ranges in size from 7 to 11 bytes. Use the .NET Framework <see cref="T:System.DateTime" /> or OracleClient <see cref="T:System.Data.OracleClient.OracleDateTime" /> data type in <see cref="P:System.Data.OracleClient.OracleParameter.Value" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TimestampLocal">
+      <MemberSignature Language="C#" Value="TimestampLocal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OracleClient.OracleType TimestampLocal = int32(19)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleType.TimestampLocal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An Oracle <see langword="TIMESTAMP WITH LOCAL TIMEZONE" /> (Oracle 9i or later) that contains date, time, and a reference to the original time zone, and ranges in size from 7 to 11 bytes. Use the .NET Framework <see cref="T:System.DateTime" /> or OracleClient <see cref="T:System.Data.OracleClient.OracleDateTime" /> data type in <see cref="P:System.Data.OracleClient.OracleParameter.Value" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TimestampWithTZ">
+      <MemberSignature Language="C#" Value="TimestampWithTZ" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OracleClient.OracleType TimestampWithTZ = int32(20)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleType.TimestampWithTZ" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An Oracle <see langword="TIMESTAMP WITH TIMEZONE" /> (Oracle 9i or later) that contains date, time, and a specified time zone, and has a fixed size of 13 bytes. Use the .NET Framework <see cref="T:System.DateTime" /> or OracleClient <see cref="T:System.Data.OracleClient.OracleDateTime" /> data type in <see cref="P:System.Data.OracleClient.OracleParameter.Value" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UInt16">
+      <MemberSignature Language="C#" Value="UInt16" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OracleClient.OracleType UInt16 = int32(24)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleType.UInt16" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An integral type representing unsigned 16-bit integers with values between 0 and 65535. This is not a native Oracle data type, but is provided to improve performance when binding input parameters. For information about conversion of Oracle numeric values to common language runtime (CLR) data types, see <see cref="T:System.Data.OracleClient.OracleNumber" />. Use the .NET Framework <see cref="T:System.UInt16" /> or OracleClient <see cref="T:System.Data.OracleClient.OracleNumber" /> data type in <see cref="P:System.Data.OracleClient.OracleParameter.Value" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UInt32">
+      <MemberSignature Language="C#" Value="UInt32" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OracleClient.OracleType UInt32 = int32(25)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleType.UInt32" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An integral type representing unsigned 32-bit integers with values between 0 and 4294967295. This is not a native Oracle data type, but is provided to improve performance when binding input parameters. For information about conversion of Oracle numeric values to common language runtime (CLR) data types, see <see cref="T:System.Data.OracleClient.OracleNumber" />. Use the .NET Framework <see cref="T:System.UInt32" /> or OracleClient <see cref="T:System.Data.OracleClient.OracleNumber" /> data type in <see cref="P:System.Data.OracleClient.OracleParameter.Value" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="VarChar">
+      <MemberSignature Language="C#" Value="VarChar" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.OracleClient.OracleType VarChar = int32(22)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleType.VarChar" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An Oracle <see langword="VARCHAR2" /> data type that contains a variable-length character string with a maximum size of 4,000 bytes. Use the .NET Framework <see cref="T:System.String" /> or OracleClient <see cref="T:System.Data.OracleClient.OracleString" /> data type in <see cref="P:System.Data.OracleClient.OracleParameter.Value" />.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,121 @@
+ 
+<Canvas  
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="MenusVB.Pane1"
+    Name="cv1"
+    >
+    <!--  The namespace + class name in the codebehind file and the x:Class attribute in the root of this document, must stay identical.  You can change them, but you must keep them in sync. -->
+<Grid Name="grid" ShowGridLines ="false" Background ="White" >
+<Grid.ColumnDefinitions>
+<ColumnDefinition Width="300"/>
+<ColumnDefinition Width="250"/>
+</Grid.ColumnDefinitions>
+<Grid.RowDefinitions>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+</Grid.RowDefinitions>
+
+<TextBlock Margin="10, 10, 5, 5" Grid.Column="0" Grid.Row="0" FontSize="24">Menus</TextBlock>
+<TextBlock Margin="10, 10, 5, 5" Grid.Column="0" Grid.Row="1" FontSize="14" Grid.ColumnSpan="2">The following menu examples demonstrate:</TextBlock>  
+<DockPanel Grid.Column="0" Grid.Row="2">
+<Menu Width="30"  Margin="10, 10, 5, 5" HorizontalAlignment="Left" Background="White">
+   <MenuItem Header="_File">
+          <MenuItem Header="_New" IsCheckable="true"/>
+          <MenuItem Header="_Open" IsCheckable="true"/>
+          <MenuItem Header="_Close" IsCheckable="true"/>
+	  <Separator/>
+          <MenuItem Header="_Menu with Submenu">
+                <MenuItem Header="_submenuitem1" IsCheckable="true"/>
+                <MenuItem Header="_submenuitem2" IsCheckable="true">          
+                      <MenuItem Header="_submenuitem2.1" IsCheckable="true"/>
+                </MenuItem>
+         </MenuItem>
+         <Separator/>
+         <MenuItem Header="_Menu item with ToolTip">
+          <MenuItem.ToolTip>
+            <ToolTip>
+            ToolTip Information.
+            </ToolTip>
+          </MenuItem.ToolTip>
+      </MenuItem>
+   </MenuItem>
+</Menu>
+</DockPanel>
+<TextBlock Margin="5, 10, 5, 5" Grid.Column="1" Grid.Row="2" FontSize="12" 
+     VerticalAlignment="Center" TextWrapping="WrapWithOverflow">Simple menu with 
+     submenu items and one menu item with a tooltip. Some items can be checked.
+     To see the Access Keys press Ctrl+Alt.
+</TextBlock>  
+
+<DockPanel Grid.Column="0" Grid.Row="3">
+<Menu Width="30" Margin="10, 10, 5, 5" HorizontalAlignment="Left" Background="White">
+      <MenuItem Header="_Edit">
+          <MenuItem Header="_Cut" InputGestureText="Ctrl+X"/>
+          <MenuItem Header="_Find" InputGestureText="Ctrl+F"/>       
+      </MenuItem>
+</Menu></DockPanel>
+<TextBlock Margin="10, 10, 5, 5" Grid.Column="1" Grid.Row="3" FontSize="12" 
+     VerticalAlignment="Center" TextWrapping="WrapWithOverflow">Menu that displays
+     menu items using the InputGestureText property.
+</TextBlock>
+
+<DockPanel Grid.Column="0" Grid.Row="4">
+<Menu Width="30" Margin="10, 10, 5, 5" HorizontalAlignment="Left" Background="White">
+      <MenuItem Header="_File">
+          <MenuItem Command="ApplicationCommands.Open">
+          <MenuItem.Header>_Open</MenuItem.Header>
+          </MenuItem>
+          <MenuItem Command="ApplicationCommands.Close">
+          <MenuItem.Header>_Close</MenuItem.Header>
+          </MenuItem>
+      </MenuItem>
+</Menu></DockPanel>
+<TextBlock Margin="10, 10, 5, 5" Grid.Column="1" Grid.Row="4" FontSize="12" 
+     VerticalAlignment="Center" TextWrapping="WrapWithOverflow">Menu that displays
+     menu items using the Command property.</TextBlock>
+
+<DockPanel Grid.Column="0" Grid.Row="5">
+<Menu Width="50"  Margin="10, 10, 5, 5" HorizontalAlignment="Left" Background="White">
+  <MenuItem Header="_Animals">
+  <MenuItem IsCheckable="true">
+  <MenuItem.Header>
+  <Image Source="data/cat.png"/>
+  </MenuItem.Header>
+  </MenuItem>
+  <MenuItem IsCheckable="true">
+  <MenuItem.Header>
+  <Image Source="data/dog.png"/>
+  </MenuItem.Header>
+  </MenuItem>
+  <MenuItem IsCheckable="true">
+  <MenuItem.Header>
+  <Image Source="data/fish.png"/>
+  </MenuItem.Header>
+  </MenuItem>
+  </MenuItem>
+ </Menu></DockPanel>
+ <TextBlock Margin="10, 10, 5, 5" Grid.Column="1" Grid.Row="5" FontSize="12" 
+     VerticalAlignment="Center" TextWrapping="WrapWithOverflow">Images used as 
+     menu items. Notice the items can be checked.
+</TextBlock>
+ 
+<Button Margin="5, 10, 5, 5" Grid.Column="0" Grid.Row="6" Click="OnClick">Click me to create a menu with Visual Basic.NET code.</Button>
+<TextBlock Margin="10, 10, 5, 5" Grid.Column="1" Grid.Row="6" FontSize="12" 
+    VerticalAlignment="Center" TextWrapping="WrapWithOverflow">Creating 
+    a menu with Visual Basic.NET.
+</TextBlock>
+</Grid>
+<Canvas Name="cv2" Width="550" Height="50" Canvas.Top="300" Canvas.Left="10"></Canvas>
+</Canvas>

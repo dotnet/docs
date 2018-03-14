@@ -1,0 +1,57 @@
+<Type Name="XamlWriterState" FullName="System.Windows.Markup.XamlWriterState">
+  <TypeSignature Language="C#" Value="public enum XamlWriterState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XamlWriterState extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Markup.XamlWriterState" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Describes possible writing states for a custom XAML writer.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No existing [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] API uses this enumeration for its values. It could be used for a custom XAML writer.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Finished">
+      <MemberSignature Language="C#" Value="Finished" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Markup.XamlWriterState Finished = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Markup.XamlWriterState.Finished" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Markup.XamlWriterState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Windows.Markup.XamlWriter" /> has completed its operation.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Starting">
+      <MemberSignature Language="C#" Value="Starting" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Markup.XamlWriterState Starting = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Markup.XamlWriterState.Starting" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Markup.XamlWriterState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Windows.Markup.XamlWriter" /> has started its operation.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

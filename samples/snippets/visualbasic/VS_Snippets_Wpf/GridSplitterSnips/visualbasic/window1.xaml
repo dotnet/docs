@@ -1,0 +1,80 @@
+<Page x:Class="GridSplitterSnips.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="GridSplitterSnips"
+    Loaded="InitializeGridSplitterSnip"
+    >
+  <StackPanel>
+    <Grid>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition/>
+        <ColumnDefinition/>
+        <ColumnDefinition/>
+        <ColumnDefinition/>
+        <ColumnDefinition/>
+        <ColumnDefinition/>
+      </Grid.ColumnDefinitions>
+      <Grid.RowDefinitions>
+        <RowDefinition/>
+        <RowDefinition/>
+        <RowDefinition/>
+        <RowDefinition/>
+        <RowDefinition/>
+        <RowDefinition/>
+      </Grid.RowDefinitions>
+      <GridSplitter DragIncrement="10"  Width="5"
+                    Grid.Column="0" Grid.RowSpan="2"/>
+
+      <GridSplitter KeyboardIncrement="25" Width="5"
+                    Grid.Column="1" Grid.RowSpan="2"/>
+
+      <GridSplitter ResizeDirection="Columns" Width="5"
+                    Grid.Column="2"  Grid.RowSpan="2"/>
+
+      <GridSplitter ResizeBehavior="CurrentAndNext" Width="5"
+                    Grid.Column="3"  Grid.RowSpan="2"/>
+
+      <GridSplitter ShowsPreview="True" Width="5"
+                    Grid.Column="4" Grid.RowSpan="2"/>
+
+  </Grid>
+
+    <Grid>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition/>
+        <ColumnDefinition/>
+      </Grid.ColumnDefinitions>
+      <GridSplitter Grid.Column ="0" Background="Blue" Width="5"
+                    HorizontalAlignment="Right" VerticalAlignment="Stretch"/>
+    </Grid>
+
+    <Grid>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition/>
+        <ColumnDefinition/>
+      </Grid.ColumnDefinitions>
+      <Button Grid.Column="0"/>
+      <GridSplitter Grid.Column ="0" Background="Blue"/>
+    </Grid>
+
+    <Grid>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition/>
+        <ColumnDefinition/>
+      </Grid.ColumnDefinitions>
+      <GridSplitter Grid.Column="0" Background="Blue"
+                    Panel.ZIndex="1"/>
+      <Button Grid.Column="0"/>
+    </Grid>
+
+    <Grid>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition/>
+        <ColumnDefinition/>
+      </Grid.ColumnDefinitions>
+      <GridSplitter Grid.Column ="0" Background="Blue"/>
+      <Button Grid.Column="0" Margin="0,0,5,0"/>
+    </Grid>
+
+  </StackPanel>
+  </Page>

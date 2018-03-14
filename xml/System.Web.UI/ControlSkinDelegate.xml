@@ -1,0 +1,38 @@
+<Type Name="ControlSkinDelegate" FullName="System.Web.UI.ControlSkinDelegate">
+  <TypeSignature Language="C#" Value="public delegate System.Web.UI.Control ControlSkinDelegate(Control control);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ControlSkinDelegate extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.ControlSkinDelegate" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Parameters>
+    <Parameter Name="control" Type="System.Web.UI.Control" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Web.UI.Control</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="control">The <see cref="T:System.Web.UI.Control" /> to which to apply the theme skin.</param>
+    <summary>Represents the method that applies the correct control skin to the specified control.</summary>
+    <returns>The <see cref="T:System.Web.UI.Control" /> that was passed to the method, with a control skin applied.</returns>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Page and control developers do not use the <xref:System.Web.UI.ControlSkinDelegate>, <xref:System.Web.UI.ControlSkin>, or <xref:System.Web.UI.PageTheme> classes directly. These classes are used internally by the ASP.NET page framework to apply server- side properties and cascading style sheet definitions that are defined in ASP.NET themes and control skin files to specific types of controls.  
+  
+ The <xref:System.Web.UI.ControlSkinDelegate> delegate is associated with the <xref:System.Web.UI.ControlSkin.ApplySkin%2A> method of the <xref:System.Web.UI.ControlSkin> class. The <xref:System.Web.UI.ControlSkin> class represents an ASP.NET control skin, which is a component of an ASP.NET theme represented by a <xref:System.Web.UI.PageTheme> object. For more information about ASP.NET themes, see [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

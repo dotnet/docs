@@ -1,0 +1,115 @@
+<Type Name="X509KeyIdentifierClauseType" FullName="System.ServiceModel.Security.Tokens.X509KeyIdentifierClauseType">
+  <TypeSignature Language="C#" Value="public enum X509KeyIdentifierClauseType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed X509KeyIdentifierClauseType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.Tokens.X509KeyIdentifierClauseType" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>An enumeration listing the possible types of X.509 key identifier clauses.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code shows how to set the <xref:System.ServiceModel.Security.Tokens.X509SecurityTokenParameters.X509ReferenceStyle%2A> property to a member of this enumeration.  
+  
+ [!code-csharp[S_UEAssymetricSecurityBindingElement#4](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueassymetricsecuritybindingelement/cs/source.cs#4)]
+ [!code-vb[S_UEAssymetricSecurityBindingElement#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueassymetricsecuritybindingelement/vb/source.vb#4)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Any">
+      <MemberSignature Language="C#" Value="Any" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Security.Tokens.X509KeyIdentifierClauseType Any = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.Tokens.X509KeyIdentifierClauseType.Any" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Security.Tokens.X509KeyIdentifierClauseType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="F:System.ServiceModel.Security.Tokens.X509KeyIdentifierClauseType.SubjectKeyIdentifier" /> is used if present in the X.509 certificate, otherwise <see cref="F:System.ServiceModel.Security.Tokens.X509KeyIdentifierClauseType.IssuerSerial" /> is used.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IssuerSerial">
+      <MemberSignature Language="C#" Value="IssuerSerial" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Security.Tokens.X509KeyIdentifierClauseType IssuerSerial = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.Tokens.X509KeyIdentifierClauseType.IssuerSerial" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Security.Tokens.X509KeyIdentifierClauseType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see langword="IssuerSerial" /> reference is used: the issuer identifier plus a serial number that is unique for an issuer.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RawDataKeyIdentifier">
+      <MemberSignature Language="C#" Value="RawDataKeyIdentifier" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Security.Tokens.X509KeyIdentifierClauseType RawDataKeyIdentifier = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.Tokens.X509KeyIdentifierClauseType.RawDataKeyIdentifier" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Security.Tokens.X509KeyIdentifierClauseType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The reference contains the raw data for the entire X.509 certificate.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SubjectKeyIdentifier">
+      <MemberSignature Language="C#" Value="SubjectKeyIdentifier" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Security.Tokens.X509KeyIdentifierClauseType SubjectKeyIdentifier = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.Tokens.X509KeyIdentifierClauseType.SubjectKeyIdentifier" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Security.Tokens.X509KeyIdentifierClauseType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Reference is based on the subject key identifier extension of an X.509 certificate (not all certificates have one, it is an optional property).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Thumbprint">
+      <MemberSignature Language="C#" Value="Thumbprint" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Security.Tokens.X509KeyIdentifierClauseType Thumbprint = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.Tokens.X509KeyIdentifierClauseType.Thumbprint" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Security.Tokens.X509KeyIdentifierClauseType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The X.509 Thumbprint is used.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

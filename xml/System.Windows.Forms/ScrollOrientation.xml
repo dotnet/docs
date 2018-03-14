@@ -1,0 +1,57 @@
+<Type Name="ScrollOrientation" FullName="System.Windows.Forms.ScrollOrientation">
+  <TypeSignature Language="C#" Value="public enum ScrollOrientation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ScrollOrientation extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ScrollOrientation" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the scroll bar orientation for the <see cref="E:System.Windows.Forms.ScrollBar.Scroll" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by the <xref:System.Windows.Forms.ScrollEventArgs.ScrollOrientation%2A> property.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="HorizontalScroll">
+      <MemberSignature Language="C#" Value="HorizontalScroll" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ScrollOrientation HorizontalScroll = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScrollOrientation.HorizontalScroll" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ScrollOrientation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The horizontal scroll bar.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="VerticalScroll">
+      <MemberSignature Language="C#" Value="VerticalScroll" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ScrollOrientation VerticalScroll = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScrollOrientation.VerticalScroll" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ScrollOrientation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The vertical scroll bar.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

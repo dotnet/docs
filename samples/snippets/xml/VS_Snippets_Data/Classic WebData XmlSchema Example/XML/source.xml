@@ -1,0 +1,20 @@
+<!--<Snippet2>-->
+
+<?xml version="1.0" encoding="IBM437"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="cat" type="xs:string"/>
+    <xs:element name="dog" type="xs:string"/>
+    <xs:element name="redDog" type="xs:string" substitutionGroup="dog"/>
+    <xs:element name="brownDog" type="xs:string" substitutionGroup ="dog" />
+
+    <xs:element name="pets">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="cat"/>
+          <xs:element ref="dog"/>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+</xs:schema>
+   <!--</Snippet2>-->
+

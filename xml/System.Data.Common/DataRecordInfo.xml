@@ -1,0 +1,75 @@
+<Type Name="DataRecordInfo" FullName="System.Data.Common.DataRecordInfo">
+  <TypeSignature Language="C#" Value="public class DataRecordInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataRecordInfo extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Common.DataRecordInfo" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides access to information about the structural type and column information for a <see cref="T:System.Data.Common.DbDataRecord" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataRecordInfo (System.Data.Metadata.Edm.TypeUsage metadata, System.Collections.Generic.IEnumerable&lt;System.Data.Metadata.Edm.EdmMember&gt; memberInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Data.Metadata.Edm.TypeUsage metadata, class System.Collections.Generic.IEnumerable`1&lt;class System.Data.Metadata.Edm.EdmMember&gt; memberInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DataRecordInfo.#ctor(System.Data.Metadata.Edm.TypeUsage,System.Collections.Generic.IEnumerable{System.Data.Metadata.Edm.EdmMember})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="metadata" Type="System.Data.Metadata.Edm.TypeUsage" />
+        <Parameter Name="memberInfo" Type="System.Collections.Generic.IEnumerable&lt;System.Data.Metadata.Edm.EdmMember&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="metadata">The metadata for the type represented by this object, supplied by <see cref="T:System.Data.Metadata.Edm.TypeUsage" />.</param>
+        <param name="memberInfo">An enumerable collection of <see cref="T:System.Data.Metadata.Edm.EdmMember" /> objects that represent column information.</param>
+        <summary>Initializes a new <see cref="T:System.Data.Common.DbDataRecord" /> object for a specific type with an enumerable collection of data fields.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FieldMetadata">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Common.FieldMetadata&gt; FieldMetadata { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;valuetype System.Data.Common.FieldMetadata&gt; FieldMetadata" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Common.DataRecordInfo.FieldMetadata" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Common.FieldMetadata&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets <see cref="T:System.Data.Common.FieldMetadata" /> for this <see cref="P:System.Data.IExtendedDataRecord.DataRecordInfo" /> object.</summary>
+        <value>A <see cref="T:System.Data.Common.FieldMetadata" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecordType">
+      <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.TypeUsage RecordType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.TypeUsage RecordType" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Common.DataRecordInfo.RecordType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.TypeUsage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets type info for this object as a <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> object.</summary>
+        <value>A <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

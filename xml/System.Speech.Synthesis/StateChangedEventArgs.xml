@@ -1,0 +1,136 @@
+<Type Name="StateChangedEventArgs" FullName="System.Speech.Synthesis.StateChangedEventArgs">
+  <TypeSignature Language="C#" Value="public class StateChangedEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StateChangedEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.StateChangedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Speech</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Returns data from the <see cref="E:System.Speech.Synthesis.SpeechSynthesizer.StateChanged" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An instance of <xref:System.Speech.Synthesis.StateChangedEventArgs> is created when the <xref:System.Speech.Synthesis.SpeechSynthesizer> object raises the <xref:System.Speech.Synthesis.SpeechSynthesizer.StateChanged> event. To obtain the values for the new and the previous <xref:System.Speech.Synthesis.SynthesizerState>, access the <xref:System.Speech.Synthesis.StateChangedEventArgs.State%2A> and <xref:System.Speech.Synthesis.StateChangedEventArgs.PreviousState> properties  in the handler for the event.  
+  
+   
+  
+## Examples  
+ The following example demonstrates the information that is available about the <xref:System.Speech.Synthesis.SpeechSynthesizer.StateChanged> event.  
+  
+```csharp  
+using System;  
+using System.Speech.Synthesis;  
+  
+namespace SampleSynthesis  
+{  
+  class Program  
+  {  
+  
+    static void Main(string[] args)  
+    {  
+  
+      // Initialize a new instance of the SpeechSynthesizer.  
+      using (SpeechSynthesizer synth = new SpeechSynthesizer())  
+      {  
+  
+        // Configure the audio output.   
+        synth.SetOutputToDefaultAudioDevice();  
+  
+        // Subscribe to StateChanged event.  
+        synth.StateChanged += new EventHandler<StateChangedEventArgs>(synth_StateChanged);  
+  
+        // Subscribe to the SpeakProgress event.  
+        synth.SpeakProgress += new EventHandler<SpeakProgressEventArgs>(synth_SpeakProgress);  
+  
+        // Speak the prompt.  
+        synth.Speak("What is your favorite color?");  
+  
+        // Pause the SpeechSynthesizer object.  
+        synth.Pause();  
+  
+        // Resume the SpeechSynthesizer object.  
+        synth.Resume();  
+      }  
+  
+      Console.WriteLine("\nPress any key to exit...");  
+      Console.ReadKey();  
+    }  
+  
+    // Write the state of the SpeechSynthesizer to the console.  
+    static void synth_StateChanged(object sender, StateChangedEventArgs e)  
+    {  
+      Console.WriteLine("State: {0}    Previous State: {1}\n", e.State, e.PreviousState);  
+    }  
+  
+    // Write the speak progress of the SpeechSynthesizer to the console.  
+    static void synth_SpeakProgress(object sender, SpeakProgressEventArgs e)  
+    {  
+      Console.WriteLine(e.Text);  
+    }  
+  }  
+}  
+  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="PreviousState">
+      <MemberSignature Language="C#" Value="public System.Speech.Synthesis.SynthesizerState PreviousState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Speech.Synthesis.SynthesizerState PreviousState" />
+      <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.StateChangedEventArgs.PreviousState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Synthesis.SynthesizerState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the state of the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> before the <see cref="E:System.Speech.Synthesis.SpeechSynthesizer.StateChanged" /> event.</summary>
+        <value>Returns the state of the synthesizer before the state changed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Speech.Synthesis.StateChangedEventArgs.PreviousState%2A> property represents the synthesizer state with a member of the <xref:System.Speech.Synthesis.SynthesizerState> enumeration.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="State">
+      <MemberSignature Language="C#" Value="public System.Speech.Synthesis.SynthesizerState State { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Speech.Synthesis.SynthesizerState State" />
+      <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.StateChangedEventArgs.State" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Synthesis.SynthesizerState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the state of the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> before the <see cref="E:System.Speech.Synthesis.SpeechSynthesizer.StateChanged" /> event.</summary>
+        <value>The state of the synthesizer after the state changed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Speech.Synthesis.StateChangedEventArgs.State%2A> property represents the synthesizer state with a member of the <xref:System.Speech.Synthesis.SynthesizerState> enumeration.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

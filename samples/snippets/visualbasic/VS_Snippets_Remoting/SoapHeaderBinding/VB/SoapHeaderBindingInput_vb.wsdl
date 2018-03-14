@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/"
+xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/"
+xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" 
+xmlns:s0="http://tempuri.org/" targetNamespace="http://tempuri.org/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <s:schema attributeFormDefault="qualified" elementFormDefault="qualified"
+    targetNamespace="http://tempuri.org/">
+      <s:element name="Hello">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="HelloResult" 
+            nillable="true" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MyHeader" type="s0:MyHeader" />
+      <s:complexType name="MyHeader">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1"
+               name="MyValue" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </types>
+  <message name="HelloSoapIn">
+    <part name="parameters" element="s0:Hello" />
+  </message>
+  <message name="HelloSoapOut">
+    <part name="parameters" element="s0:HelloResponse" />
+  </message>
+  <message name="HelloMyHeader">
+    <part name="MyHeader" element="s0:MyHeader" />
+  </message>
+  <portType name="MyWebServiceSoap">
+    <operation name="Hello">
+      <documentation>
+      This Web Service method requires a client to send the MyHeader SOAP header.
+      </documentation>
+      <input message="s0:HelloSoapIn" />
+      <output message="s0:HelloSoapOut" />
+    </operation>
+  </portType>
+  <portType name="MyWebServiceHttpGet" />
+  <portType name="MyWebServiceHttpPost" />
+  
+  <binding name="MyWebServiceHttpGet" type="s0:MyWebServiceHttpGet">
+    <http:binding verb="GET" />
+  </binding>
+  <binding name="MyWebServiceHttpPost" type="s0:MyWebServiceHttpPost">
+    <http:binding verb="POST" />
+  </binding>
+  <service name="MyWebService">
+    <port name="MyWebServiceSoap" binding="s0:MyWebServiceSoap">
+      <soap:address location="http://localhost/test/hello.asmx" />
+    </port>
+    <port name="MyWebServiceHttpGet" binding="s0:MyWebServiceHttpGet">
+      <http:address location="http://localhost/test/hello.asmx" />
+    </port>
+    <port name="MyWebServiceHttpPost" binding="s0:MyWebServiceHttpPost">
+      <http:address location="http://localhost/test/hello.asmx" />
+    </port>
+  </service>
+</definitions>

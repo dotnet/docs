@@ -1,0 +1,50 @@
+<Type Name="InputMode" FullName="System.Windows.Input.InputMode">
+  <TypeSignature Language="C#" Value="public enum InputMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed InputMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.InputMode" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the possible values for the input mode.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Foreground">
+      <MemberSignature Language="C#" Value="Foreground" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.InputMode Foreground = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputMode.Foreground" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.InputMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The input was provided when the application was in the foreground.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Sink">
+      <MemberSignature Language="C#" Value="Sink" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.InputMode Sink = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputMode.Sink" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.InputMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The input was provided when the application was not in the foreground.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,94 @@
+<Type Name="PropertySort" FullName="System.Windows.Forms.PropertySort">
+  <TypeSignature Language="C#" Value="public enum PropertySort" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PropertySort extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PropertySort" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies how properties are sorted in the <see cref="T:System.Windows.Forms.PropertyGrid" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the members of this enumeration to set the value of the <xref:System.Windows.Forms.PropertyGrid.PropertySort%2A> property of the <xref:System.Windows.Forms.PropertyGrid>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Alphabetical">
+      <MemberSignature Language="C#" Value="Alphabetical" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.PropertySort Alphabetical = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.PropertySort.Alphabetical" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.PropertySort</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Properties are sorted in an alphabetical list.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Categorized">
+      <MemberSignature Language="C#" Value="Categorized" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.PropertySort Categorized = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.PropertySort.Categorized" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.PropertySort</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Properties are displayed according to their category in a group. The categories are defined by the properties themselves.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CategorizedAlphabetical">
+      <MemberSignature Language="C#" Value="CategorizedAlphabetical" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.PropertySort CategorizedAlphabetical = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.PropertySort.CategorizedAlphabetical" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.PropertySort</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Properties are displayed according to their category in a group. The properties are further sorted alphabetically within the group. The categories are defined by the properties themselves.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoSort">
+      <MemberSignature Language="C#" Value="NoSort" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.PropertySort NoSort = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.PropertySort.NoSort" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.PropertySort</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Properties are displayed in the order in which they are retrieved from the <see cref="T:System.ComponentModel.TypeDescriptor" />.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

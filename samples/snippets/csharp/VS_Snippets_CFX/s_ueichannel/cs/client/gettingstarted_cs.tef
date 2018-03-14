@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestSpec xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://indigo/Management/TestSpec">
+    <Locations>
+      <Location>
+         <ID>Client</ID>
+         <Description>The client location.</Description>
+      </Location>
+      <Location>
+         <ID>Server</ID>
+         <Description>The server location.</Description>
+      </Location>
+   </Locations>
+   <ConfigurationInfo>
+      <TestDriver />
+      <Shares>
+         <Share CopyRecursive="true">..\IndigoSamplesBin\Basic\GettingStarted\CS</Share>
+         <Share CopyRecursive="true">Suite\SdkSamples</Share>
+      </Shares>
+      <Locations>
+         <LocationConfiguration>
+            <ID>Client</ID>
+            <Type>Client</Type>
+         </LocationConfiguration>
+         <LocationConfiguration>
+            <ID>Server</ID>
+            <Type>Server</Type>
+         </LocationConfiguration>
+     </Locations>
+        <!-- force to run as administrator -->
+        <Adapters>
+            <UserPrivilege OldUserPrivilege="NetworkService" NewUserPrivilege="LocalSystem" />
+            <UserPrivilege OldUserPrivilege="LocalService" NewUserPrivilege="LocalSystem" />
+            <UserPrivilege OldUserPrivilege="NonAdministrativeUser" NewUserPrivilege="AdministrativeUser" />
+        </Adapters>
+   </ConfigurationInfo>
+   <DefaultClassLocation>
+      <Assembly>Microsoft.Xws.Test.Suite.Util.ExeRunner</Assembly>
+      <Namespace>Microsoft.Xws.Test.Suite.Util.ExeRunner</Namespace>
+   </DefaultClassLocation>
+   <Sets>
+      <Set>
+         <ID>GettingStarted</ID>
+         <Variations>
+            <Variation>
+               <ID>CS</ID>
+               <Description>Runs the GettingStarted SDK samples in the lab using ExeRunner framework.</Description>
+               <Locations>
+                  <Location>
+                     <ID>Server</ID>
+                     <Code>
+                        <Class>ExeRunnerLocation</Class>
+                     </Code>
+                     <Parameters>
+                        <Parameter>
+                           <Key>Param.ExeId</Key>
+                           <Value>Id.service</Value>
+                        </Parameter>
+                        <Parameter>
+                           <Key>Param.ExeName</Key>
+                           <Value>WebhostRunner.exe</Value>
+                        </Parameter>
+                        <Parameter>
+                           <Key>Param.Arguments</Key>
+                           <Type>string[]</Type>
+                           <Value>/vdir:servicemodelsamples</Value>
+                           <Value>/assembly:service.dll</Value>
+                           <Value>/svc:service.svc</Value>
+                           <Value>/config:Web.config</Value>
+                        </Parameter>
+                        <Parameter>
+                           <Key>Param.ReadyLine</Key>
+                           <Value>The webhosted application is ready. Press enter to exit ..</Value>
+                        </Parameter>
+                        <Parameter>
+                           <Key>Param.EndAfter</Key>
+                           <Value>Id.client</Value>
+                        </Parameter>
+                        <Parameter>
+                           <Key>Param.EndCommand</Key>
+                           <Value>\n</Value>
+                        </Parameter>
+                        <Parameter>
+                           <Key>Param.BaselineLogfile</Key>
+                           <Value>service.bsl</Value>
+                        </Parameter>
+                     </Parameters>
+                     <Results>
+                        <Result>Pass</Result>
+                     </Results>
+                  </Location>
+                  <Location>
+                     <ID>Client</ID>
+                     <Code>
+                        <Class>ExeRunnerLocation</Class>
+                     </Code>
+                     <Parameters>
+                        <Parameter>
+                           <Key>Param.ExeId</Key>
+                           <Value>Id.client</Value>
+                        </Parameter>
+                        <Parameter>
+                           <Key>Param.ExeName</Key>
+                           <Value>client.exe</Value>
+                        </Parameter>
+                        <Parameter>
+                           <Key>Param.SetupScripts</Key>
+                           <Type>string[]</Type>
+                           <Value>ConfigFixer.exe client.exe.config client.exe.config \"///localhost=//{{ParamLookup:TefLocation_Server}}\"</Value>
+                        </Parameter>
+                        <Parameter>
+                           <Key>Param.StartAfter</Key>
+                           <Value>Id.service</Value>
+                        </Parameter>
+                        <Parameter>
+                           <Key>Param.EndCommand</Key>
+                           <Value>\n</Value>
+                        </Parameter>
+                        <Parameter>
+                           <Key>Param.BaselineLogfile</Key>
+                           <Value>client.bsl</Value>
+                        </Parameter>
+                     </Parameters>
+                     <Results>
+                        <Result>Pass</Result>
+                     </Results>
+                  </Location>
+               </Locations>
+            </Variation>
+         </Variations>
+      </Set>
+   </Sets>
+</TestSpec>

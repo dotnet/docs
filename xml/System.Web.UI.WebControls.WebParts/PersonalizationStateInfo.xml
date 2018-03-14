@@ -1,0 +1,104 @@
+<Type Name="PersonalizationStateInfo" FullName="System.Web.UI.WebControls.WebParts.PersonalizationStateInfo">
+  <TypeSignature Language="C#" Value="public abstract class PersonalizationStateInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit PersonalizationStateInfo extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.PersonalizationStateInfo" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>When overridden in a derived class, implements a representation of information about a set of Web Parts data for a page.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Classes that derive from <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateInfo> represent information about either a set of shared state data for a page or a set of per-user personalization state data for the page and a user. This class is intended for use in queries and management methods where the serialized Web Parts data is not necessary.  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>When you inherit from <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationStateInfo" />, there are no abstract members that you must override. Note that the class is abstract but none of the class members are abstract. This class is currently used internally by the .NET Framework and the constructor for this class is internal, so derived versions of this class have no way to initialize the <paramref name="path" />, <paramref name="lastUpdatedDate" /> and <paramref name="size" /> parameters required for the constructor.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName="LastUpdatedDate">
+      <MemberSignature Language="C#" Value="public DateTime LastUpdatedDate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime LastUpdatedDate" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.PersonalizationStateInfo.LastUpdatedDate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the date and time that the personalization state was last updated.</summary>
+        <value>A <see cref="T:System.DateTime" /> indicating when the personalization state was last updated.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property provides the date and time that the shared or per-user personalization state information was last updated.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Path">
+      <MemberSignature Language="C#" Value="public string Path { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Path" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.PersonalizationStateInfo.Path" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the path to the page associated with the personalization state information.</summary>
+        <value>The path of the page associated with the personalization state information.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The path is an application-relative path, such as ~/application/page/page.aspx.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Size">
+      <MemberSignature Language="C#" Value="public int Size { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Size" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.PersonalizationStateInfo.Size" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the size of the personalization state information stored in the underlying data store.</summary>
+        <value>The size, in bytes, of the personalization state information.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For shared state information, size represents the size of the shared state in the data store. For per-user information, size represents the size of the per-user state for a specific user and page combination (determined by the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateInfo.Path%2A> property) as stored in the data store.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

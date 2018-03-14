@@ -1,0 +1,90 @@
+<Type Name="LikeOperator" FullName="Microsoft.VisualBasic.CompilerServices.LikeOperator">
+  <TypeSignature Language="C#" Value="public sealed class LikeOperator" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LikeOperator extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.CompilerServices.LikeOperator" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>This class provides helpers that the Visual Basic compiler uses to do the work for the [Like Operator](~/docs/visual-basic/language-reference/operators/like-operator.md). It is not meant to be called directly from your code.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="LikeObject">
+      <MemberSignature Language="C#" Value="public static object LikeObject (object Source, object Pattern, Microsoft.VisualBasic.CompareMethod CompareOption);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object LikeObject(object Source, object Pattern, valuetype Microsoft.VisualBasic.CompareMethod CompareOption) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.LikeOperator.LikeObject(System.Object,System.Object,Microsoft.VisualBasic.CompareMethod)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Source" Type="System.Object" />
+        <Parameter Name="Pattern" Type="System.Object" />
+        <Parameter Name="CompareOption" Type="Microsoft.VisualBasic.CompareMethod" />
+      </Parameters>
+      <Docs>
+        <param name="Source">The string to compare.</param>
+        <param name="Pattern">The string against which <c>Source</c> is being compared.</param>
+        <param name="CompareOption">A <see cref="T:Microsoft.VisualBasic.CompareMethod" /> enumeration specifying whether or not to use text comparison. If <see cref="F:Microsoft.VisualBasic.CompareMethod.Text" />, this method uses text comparison; if <see cref="F:Microsoft.VisualBasic.CompareMethod.Binary" />, this method uses binary comparison.</param>
+        <summary>Performs binary or text string comparison given two objects. This helper method is not meant to be called directly from your code.</summary>
+        <returns>A <see langword="Boolean" /> value indicating whether the strings match. Returns <see langword="True" /> if the strings match; otherwise <see langword="False" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [Option Compare Statement](~/docs/visual-basic/language-reference/statements/option-compare-statement.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LikeString">
+      <MemberSignature Language="C#" Value="public static bool LikeString (string Source, string Pattern, Microsoft.VisualBasic.CompareMethod CompareOption);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool LikeString(string Source, string Pattern, valuetype Microsoft.VisualBasic.CompareMethod CompareOption) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.LikeOperator.LikeString(System.String,System.String,Microsoft.VisualBasic.CompareMethod)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Source" Type="System.String" />
+        <Parameter Name="Pattern" Type="System.String" />
+        <Parameter Name="CompareOption" Type="Microsoft.VisualBasic.CompareMethod" />
+      </Parameters>
+      <Docs>
+        <param name="Source">The string to compare.</param>
+        <param name="Pattern">The string against which <c>Source</c> is being compared.</param>
+        <param name="CompareOption">A <see cref="T:Microsoft.VisualBasic.CompareMethod" /> enumeration specifying whether or not to use text comparison. If <see cref="F:Microsoft.VisualBasic.CompareMethod.Text" />, this method uses text comparison; if <see cref="F:Microsoft.VisualBasic.CompareMethod.Binary" />, this method uses binary comparison.</param>
+        <summary>Performs binary or text string comparison given two strings. This helper method is not meant to be called directly from your code.</summary>
+        <returns>A <see langword="Boolean" /> value indicating whether the strings match. Returns <see langword="True" /> if the strings match; otherwise <see langword="False" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [Option Compare Statement](~/docs/visual-basic/language-reference/statements/option-compare-statement.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

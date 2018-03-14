@@ -1,0 +1,270 @@
+<Type Name="AnnotationPositionChangingEventArgs" FullName="System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs">
+  <TypeSignature Language="C#" Value="public class AnnotationPositionChangingEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AnnotationPositionChangingEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the events in the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Chart" /> control that change the position of the annotation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs> class is used for the two annotation-positioning events, <xref:System.Windows.Forms.DataVisualization.Charting.Chart.AnnotationPositionChanging> and <xref:System.Windows.Forms.DataVisualization.Charting.Chart.AnnotationPositionChanged>, in the <xref:System.Windows.Forms.DataVisualization.Charting.Chart> control.  
+  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs.Annotation%2A> property gets the annotation object that is being positioned. This class also contains properties that retrieve the new location, width, height and anchor location of the annotation that is repositioned.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AnnotationPositionChangingEventArgs ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.AnnotationPositionChangingEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Annotation">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.Annotation Annotation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataVisualization.Charting.Annotation Annotation" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs.Annotation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.Annotation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Annotation" /> object.</summary>
+        <value>The <see cref="T:System.Windows.Forms.DataVisualization.Charting.Annotation" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs.Annotation%2A> property allows the developer to set <xref:System.Windows.Forms.DataVisualization.Charting.Annotation> properties during the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.AnnotationPositionChanging> and <xref:System.Windows.Forms.DataVisualization.Charting.Chart.AnnotationPositionChanged> events of the <xref:System.Windows.Forms.DataVisualization.Charting.Chart> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewAnchorLocation">
+      <MemberSignature Language="C#" Value="public System.Drawing.PointF NewAnchorLocation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.PointF NewAnchorLocation" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs.NewAnchorLocation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.PointF</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the new anchor location of the annotation.</summary>
+        <value>A <see cref="T:System.Drawing.PointF" /> object that represents the new anchor position.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewAnchorLocationX">
+      <MemberSignature Language="C#" Value="public double NewAnchorLocationX { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 NewAnchorLocationX" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs.NewAnchorLocationX" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the new annotation anchor point X location.</summary>
+        <value>A <see langword="double" /> value that represents the new annotation anchor point X location.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.AnnotationPositionChanging> and <xref:System.Windows.Forms.DataVisualization.Charting.Chart.AnnotationPositionChanging> events are raised, the <xref:System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs.NewAnchorLocationX%2A> property determines the new X coordinate of the annotation. This information is useful when the annotation is newly anchored to a data point.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewAnchorLocationY">
+      <MemberSignature Language="C#" Value="public double NewAnchorLocationY { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 NewAnchorLocationY" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs.NewAnchorLocationY" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the new annotation anchor point Y location.</summary>
+        <value>A <see langword="double" /> value representing the new annotation anchor point Y location.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.AnnotationPositionChanging> and <xref:System.Windows.Forms.DataVisualization.Charting.Chart.AnnotationPositionChanged> events are raised, the <xref:System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs.NewAnchorLocationY%2A> property determines the new Y coordinate of the annotation. This information is useful when the annotation is newly anchored to a data point.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewLocationX">
+      <MemberSignature Language="C#" Value="public double NewLocationX { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 NewLocationX" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs.NewLocationX" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the new X coordinate location of the annotation.</summary>
+        <value>A <see langword="double" /> value that represents the new X coordinate location of the annotation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.AnnotationPositionChanging> and <xref:System.Windows.Forms.DataVisualization.Charting.Chart.AnnotationPositionChanged> events are raised, the <xref:System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs.NewLocationX%2A> property defines the X-coordinate location of the annotation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewLocationY">
+      <MemberSignature Language="C#" Value="public double NewLocationY { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 NewLocationY" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs.NewLocationY" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the new Y coordinate of the annotation location.</summary>
+        <value>A <see langword="double" /> value that represents the new Y coordinate of the annotation location.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.AnnotationPositionChanging> and <xref:System.Windows.Forms.DataVisualization.Charting.Chart.AnnotationPositionChanged> events are raised, the <xref:System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs.NewLocationY%2A> property defines the Y-coordinate location of the annotation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewPosition">
+      <MemberSignature Language="C#" Value="public System.Drawing.RectangleF NewPosition { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.RectangleF NewPosition" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs.NewPosition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.RectangleF</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the new location and size of the annotation.</summary>
+        <value>A <see cref="T:System.Drawing.RectangleF" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewSizeHeight">
+      <MemberSignature Language="C#" Value="public double NewSizeHeight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 NewSizeHeight" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs.NewSizeHeight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the new height of the annotation.</summary>
+        <value>A <see langword="double" /> value that represents the new height of the annotation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.AnnotationPositionChanging> and <xref:System.Windows.Forms.DataVisualization.Charting.Chart.AnnotationPositionChanged> events are raised, use the <xref:System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs.NewSizeHeight%2A> property to determine the new height of the annotation. This information can be used when you resize the annotation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewSizeWidth">
+      <MemberSignature Language="C#" Value="public double NewSizeWidth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 NewSizeWidth" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs.NewSizeWidth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the new width of the annotation.</summary>
+        <value>A <see langword="double" /> value that represents the new width of the annotation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.AnnotationPositionChanging> and <xref:System.Windows.Forms.DataVisualization.Charting.Chart.AnnotationPositionChanged> events are raised, use the <xref:System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs.NewSizeWidth%2A> property to determine the new width of the annotation. This information can be used when you resize the annotation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

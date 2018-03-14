@@ -1,0 +1,25 @@
+<Type Name="StylusPointsReplacedEventHandler" FullName="System.Windows.Ink.StylusPointsReplacedEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void StylusPointsReplacedEventHandler(object sender, StylusPointsReplacedEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StylusPointsReplacedEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Ink.StylusPointsReplacedEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.Ink.StylusPointsReplacedEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">A <see cref="T:System.Windows.Ink.StylusPointsReplacedEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Windows.Ink.Stroke.StylusPointsReplaced" /> event of a <see cref="T:System.Windows.Ink.Stroke" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

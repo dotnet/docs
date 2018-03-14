@@ -1,0 +1,385 @@
+<Type Name="DependencyPropertyValueSource" FullName="System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource">
+  <TypeSignature Language="C#" Value="public class DependencyPropertyValueSource : System.Activities.Presentation.PropertyEditing.PropertyValueSource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DependencyPropertyValueSource extends System.Activities.Presentation.PropertyEditing.PropertyValueSource" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Activities.Presentation.PropertyEditing.PropertyValueSource</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Identifies and reports value sources for properties that are dependent upon a parent property.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CustomMarkupExtension">
+      <MemberSignature Language="C#" Value="public static System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource CustomMarkupExtension { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource CustomMarkupExtension" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.CustomMarkupExtension" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a property element in XAML code that contains a markup extension.</summary>
+        <value>A value source that is a XAML element that contains a markup extension.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataBound">
+      <MemberSignature Language="C#" Value="public static System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource DataBound { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource DataBound" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.DataBound" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of a property that represents a binding between a property and a data source.</summary>
+        <value>A value source that designates a data binding.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultValue">
+      <MemberSignature Language="C#" Value="public static System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource DefaultValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource DefaultValue" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.DefaultValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of a property that does not have its value set in XAML and does not inherit any value from its parent property.</summary>
+        <value>A default value source.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Inherited">
+      <MemberSignature Language="C#" Value="public static System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource Inherited { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource Inherited" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.Inherited" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of a property that is inherited from a parent property.</summary>
+        <value>A value source that indicates the property is inherited.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCustomMarkupExtension">
+      <MemberSignature Language="C#" Value="public bool IsCustomMarkupExtension { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsCustomMarkupExtension" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.IsCustomMarkupExtension" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the property is set to a custom markup extension.</summary>
+        <value>
+          <see langword="true" /> if the property is a custom markup extension; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDataBound">
+      <MemberSignature Language="C#" Value="public bool IsDataBound { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsDataBound" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.IsDataBound" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the property is set to a data binding expression.</summary>
+        <value>
+          <see langword="true" /> if the property is set to a data binding expression; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDefaultValue">
+      <MemberSignature Language="C#" Value="public bool IsDefaultValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsDefaultValue" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.IsDefaultValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the property is set to its default value.</summary>
+        <value>
+          <see langword="true" /> if the property is set to its default value; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsExpression">
+      <MemberSignature Language="C#" Value="public bool IsExpression { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsExpression" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.IsExpression" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the property is set to an expression.</summary>
+        <value>
+          <see langword="true" /> if the property is set to an expression; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsInherited">
+      <MemberSignature Language="C#" Value="public bool IsInherited { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsInherited" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.IsInherited" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the property is inherited from a parent property.</summary>
+        <value>
+          <see langword="true" /> if the property is inherited; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsLocal">
+      <MemberSignature Language="C#" Value="public bool IsLocal { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsLocal" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.IsLocal" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the property is set to a local value.</summary>
+        <value>
+          <see langword="true" /> if the property is set to a local value; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsLocalResource">
+      <MemberSignature Language="C#" Value="public bool IsLocalResource { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsLocalResource" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.IsLocalResource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the property is set to a resource value that appears inside a block of code, in blocks nested in that block, or within the list of formal parameter declarations in a function definition.</summary>
+        <value>
+          <see langword="true" /> if the property is set to a local resource value; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsResource">
+      <MemberSignature Language="C#" Value="public bool IsResource { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsResource" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.IsResource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Read-only property that returns true if the property is set to a system or local resource.</summary>
+        <value>
+          <see langword="true" /> if the property is set to a system or local resource; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSystemResource">
+      <MemberSignature Language="C#" Value="public bool IsSystemResource { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSystemResource" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.IsSystemResource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the property is set to a system resource.</summary>
+        <value>
+          <see langword="true" /> if the property is set to a system resource; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsTemplateBinding">
+      <MemberSignature Language="C#" Value="public bool IsTemplateBinding { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsTemplateBinding" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.IsTemplateBinding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the property is set to a <see cref="P:System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.TemplateBinding" /> markup extension.</summary>
+        <value>
+          <see langword="true" /> if the property is set to a template binding markup extension; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Local">
+      <MemberSignature Language="C#" Value="public static System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource Local { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource Local" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.Local" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of a property set to a local value.</summary>
+        <value>A value source that contains a local value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LocalDynamicResource">
+      <MemberSignature Language="C#" Value="public static System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource LocalDynamicResource { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource LocalDynamicResource" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.LocalDynamicResource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of a property that represents a <see cref="P:System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.LocalDynamicResource" /> reference.</summary>
+        <value>A value source that contains a dynamic resource reference.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Dynamic resource provides a value for a XAML property by deferring that value to be a runtime reference to a resource. A dynamic resource reference forces a new lookup each time that such a resource is accessed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LocalStaticResource">
+      <MemberSignature Language="C#" Value="public static System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource LocalStaticResource { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource LocalStaticResource" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.LocalStaticResource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of a property that represents a <see cref="P:System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.LocalStaticResource" /> reference.</summary>
+        <value>A value source that contains a static resource reference.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A static resource provides a value for a XAML property by substituting the value of an already defined resource.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SystemResource">
+      <MemberSignature Language="C#" Value="public static System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource SystemResource { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource SystemResource" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.SystemResource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of a property set to a <see cref="P:System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.SystemResource" />.</summary>
+        <value>A value source that contains a value that designates a system resource.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateBinding">
+      <MemberSignature Language="C#" Value="public static System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource TemplateBinding { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource TemplateBinding" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.TemplateBinding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of a property that represents a <see cref="P:System.Activities.Presentation.PropertyEditing.DependencyPropertyValueSource.TemplateBinding" /> markup extension.</summary>
+        <value>A value source that represents a template binding markup extension.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,110 @@
+<Type Name="CustomProviderDataAttribute" FullName="System.Web.Profile.CustomProviderDataAttribute">
+  <TypeSignature Language="C#" Value="public sealed class CustomProviderDataAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CustomProviderDataAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Profile.CustomProviderDataAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides a string of custom data to the provider for a profile property.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Profile.CustomProviderDataAttribute> class is used to supply a string of data with a profile property to a custom profile provider. The custom data string can be set to any string value and is set using the `customProviderData` attribute of the  configuration element for adding profile properties. If the `customProviderData` attribute is set, then the value is placed in the <xref:System.Configuration.SettingsProperty.Attributes%2A> collection for the property and is indexed by the name "CustomProviderData."  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CustomProviderDataAttribute (string customProviderData);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string customProviderData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Profile.CustomProviderDataAttribute.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="customProviderData" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="customProviderData">The string of custom data to supply to the provider.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Web.Profile.CustomProviderDataAttribute" /> class and specifies a string of custom data.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Profile.CustomProviderDataAttribute> class is used to supply a string of data with a profile property to a custom profile provider. The custom data string can be set to any string value and is set using the `customProviderData` attribute of the  configuration element for adding profile properties. If the `customProviderData` attribute is set, then the value is placed in the <xref:System.Configuration.SettingsProperty.Attributes%2A> collection for the property and is indexed by the name "CustomProviderData."  
+  
+ This constructor is used the .NET Framework and is not intended to be called from application code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomProviderData">
+      <MemberSignature Language="C#" Value="public string CustomProviderData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CustomProviderData" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Profile.CustomProviderDataAttribute.CustomProviderData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a string of custom data for the profile property provider.</summary>
+        <value>A string of custom data for the profile property provider. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Profile.CustomProviderDataAttribute.CustomProviderData%2A> property value is set using the `customProviderData` attribute of the  configuration element for adding profile properties. The <xref:System.Web.Profile.CustomProviderDataAttribute.CustomProviderData%2A> property can be set to any string value to be used by the profile provider for the property. If the `customProviderData` attribute is set, then the value is placed in the <xref:System.Configuration.SettingsProperty.Attributes%2A> collection for the property and is indexed by the name "CustomProviderData."  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDefaultAttribute">
+      <MemberSignature Language="C#" Value="public override bool IsDefaultAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsDefaultAttribute() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Profile.CustomProviderDataAttribute.IsDefaultAttribute" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a value indicating whether the <see cref="P:System.Web.Profile.CustomProviderDataAttribute.CustomProviderData" /> property is set to the default value.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="P:System.Web.Profile.CustomProviderDataAttribute.CustomProviderData" /> property is set to the default value; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value for the <xref:System.Web.Profile.CustomProviderDataAttribute.CustomProviderData%2A> property is `null`, or an empty string for profile properties of type `String`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

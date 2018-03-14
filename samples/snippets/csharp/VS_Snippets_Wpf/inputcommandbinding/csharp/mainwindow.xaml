@@ -1,0 +1,42 @@
+﻿<Window x:Class="InputCommandBinding.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:custom="clr-namespace:InputCommandBinding"
+        xmlns:diag="clr-namespace:System.Diagnostics;assembly=WindowsBase"
+        Title="MainWindow" Height="240" Width="500">
+  <Window.InputBindings>
+  </Window.InputBindings>
+  <!--<SnippetUI>-->
+  <StackPanel Background="Transparent">
+    <StackPanel.InputBindings>
+      
+      <KeyBinding Command="{Binding ChangeColorCommand}"
+                  CommandParameter="{Binding ElementName=colorPicker, Path=SelectedItem}"
+                  Key="{Binding ChangeColorCommand.GestureKey}"
+                  Modifiers="{Binding ChangeColorCommand.GestureModifier}"/>
+
+      <MouseBinding Command="{Binding ChangeColorCommand}"
+                    CommandParameter="{Binding ElementName=colorPicker, Path=SelectedItem}"
+                    MouseAction="{Binding ChangeColorCommand.MouseGesture}"/>
+    
+    </StackPanel.InputBindings>
+    
+    <Button Content="Change Color" 
+            Command="{Binding ChangeColorCommand}" 
+            CommandParameter="{Binding ElementName=colorPicker, Path=SelectedItem}">
+    </Button>
+
+    <ListBox Name="colorPicker"
+             Background="Transparent"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib">
+      <sys:String>Red</sys:String>
+      <sys:String>Green</sys:String>
+      <sys:String>Blue</sys:String>
+      <sys:String>Yellow</sys:String>
+      <sys:String>Orange</sys:String>
+      <sys:String>Purple</sys:String>
+    </ListBox>
+  </StackPanel>
+  <!--</SnippetUI>-->
+
+</Window>

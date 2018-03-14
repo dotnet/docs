@@ -1,0 +1,18 @@
+<Type Name="FlowNode" FullName="System.Activities.Statements.FlowNode">
+  <TypeSignature Language="C#" Value="public abstract class FlowNode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit FlowNode extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Statements.FlowNode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>The abstract base class for all the different node types that can be contained within a <see cref="T:System.Activities.Statements.Flowchart" /> activity.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

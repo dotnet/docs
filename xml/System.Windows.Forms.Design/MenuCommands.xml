@@ -1,0 +1,636 @@
+<Type Name="MenuCommands" FullName="System.Windows.Forms.Design.MenuCommands">
+  <TypeSignature Language="C#" Value="public sealed class MenuCommands : System.ComponentModel.Design.StandardCommands" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MenuCommands extends System.ComponentModel.Design.StandardCommands" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.MenuCommands" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.Design.StandardCommands</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines a set of <see cref="T:System.ComponentModel.Design.CommandID" /> fields that each correspond to a command function provided by the host environment.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Forms.Design.MenuCommands> contains a set of <xref:System.ComponentModel.Design.CommandID> fields that can be used to specify a command to link when adding a command using the <xref:System.ComponentModel.Design.IMenuCommandService.AddCommand%2A> method of the <xref:System.ComponentModel.Design.IMenuCommandService>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MenuCommands ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.MenuCommands.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.MenuCommands" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ComponentTrayMenu">
+      <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID ComponentTrayMenu;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID ComponentTrayMenu" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.MenuCommands.ComponentTrayMenu" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the component tray menu.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainerMenu">
+      <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID ContainerMenu;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID ContainerMenu" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.MenuCommands.ContainerMenu" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the container menu.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DesignerProperties">
+      <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID DesignerProperties;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID DesignerProperties" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.MenuCommands.DesignerProperties" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the properties page for the designer.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EditLabel">
+      <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID EditLabel;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID EditLabel" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.MenuCommands.EditLabel" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the edit label handler.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyCancel">
+      <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID KeyCancel;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID KeyCancel" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.MenuCommands.KeyCancel" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the cancel key handler.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyDefaultAction">
+      <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID KeyDefaultAction;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID KeyDefaultAction" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.MenuCommands.KeyDefaultAction" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the default key handler.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyEnd">
+      <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID KeyEnd;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID KeyEnd" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.MenuCommands.KeyEnd" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the end key handler.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyHome">
+      <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID KeyHome;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID KeyHome" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.MenuCommands.KeyHome" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the home key handler.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyInvokeSmartTag">
+      <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID KeyInvokeSmartTag;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID KeyInvokeSmartTag" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.MenuCommands.KeyInvokeSmartTag" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the smart tag invocation handler.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyMoveDown">
+      <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID KeyMoveDown;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID KeyMoveDown" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.MenuCommands.KeyMoveDown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the move down key handler.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyMoveLeft">
+      <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID KeyMoveLeft;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID KeyMoveLeft" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.MenuCommands.KeyMoveLeft" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the move left key handler.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyMoveRight">
+      <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID KeyMoveRight;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID KeyMoveRight" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.MenuCommands.KeyMoveRight" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the move right key handler.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyMoveUp">
+      <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID KeyMoveUp;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID KeyMoveUp" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.MenuCommands.KeyMoveUp" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the move up key handler.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyNudgeDown">
+      <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID KeyNudgeDown;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID KeyNudgeDown" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.MenuCommands.KeyNudgeDown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the nudge down key handler.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyNudgeHeightDecrease">
+      <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID KeyNudgeHeightDecrease;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID KeyNudgeHeightDecrease" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.MenuCommands.KeyNudgeHeightDecrease" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the nudge height decrease key handler.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyNudgeHeightIncrease">
+      <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID KeyNudgeHeightIncrease;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID KeyNudgeHeightIncrease" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.MenuCommands.KeyNudgeHeightIncrease" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the nudge height increase key handler.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyNudgeLeft">
+      <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID KeyNudgeLeft;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID KeyNudgeLeft" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.MenuCommands.KeyNudgeLeft" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the nudge left key handler.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyNudgeRight">
+      <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID KeyNudgeRight;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID KeyNudgeRight" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.MenuCommands.KeyNudgeRight" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the nudge right key handler.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyNudgeUp">
+      <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID KeyNudgeUp;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID KeyNudgeUp" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.MenuCommands.KeyNudgeUp" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the nudge up key handler.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyNudgeWidthDecrease">
+      <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID KeyNudgeWidthDecrease;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID KeyNudgeWidthDecrease" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.MenuCommands.KeyNudgeWidthDecrease" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the nudge width decrease key handler.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyNudgeWidthIncrease">
+      <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID KeyNudgeWidthIncrease;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID KeyNudgeWidthIncrease" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.MenuCommands.KeyNudgeWidthIncrease" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the nudge width increase key handler.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyReverseCancel">
+      <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID KeyReverseCancel;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID KeyReverseCancel" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.MenuCommands.KeyReverseCancel" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the reverse cancel key handler.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeySelectNext">
+      <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID KeySelectNext;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID KeySelectNext" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.MenuCommands.KeySelectNext" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the select next key handler.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeySelectPrevious">
+      <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID KeySelectPrevious;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID KeySelectPrevious" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.MenuCommands.KeySelectPrevious" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the select previous key handler.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyShiftEnd">
+      <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID KeyShiftEnd;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID KeyShiftEnd" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.MenuCommands.KeyShiftEnd" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the SHIFT-END key handler.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyShiftHome">
+      <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID KeyShiftHome;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID KeyShiftHome" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.MenuCommands.KeyShiftHome" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the SHIFT-HOME key handler.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeySizeHeightDecrease">
+      <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID KeySizeHeightDecrease;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID KeySizeHeightDecrease" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.MenuCommands.KeySizeHeightDecrease" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the size height decrease key handler.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeySizeHeightIncrease">
+      <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID KeySizeHeightIncrease;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID KeySizeHeightIncrease" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.MenuCommands.KeySizeHeightIncrease" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the size height increase key handler.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeySizeWidthDecrease">
+      <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID KeySizeWidthDecrease;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID KeySizeWidthDecrease" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.MenuCommands.KeySizeWidthDecrease" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the size width decrease key handler.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeySizeWidthIncrease">
+      <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID KeySizeWidthIncrease;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID KeySizeWidthIncrease" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.MenuCommands.KeySizeWidthIncrease" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the size width increase key handler.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyTabOrderSelect">
+      <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID KeyTabOrderSelect;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID KeyTabOrderSelect" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.MenuCommands.KeyTabOrderSelect" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the tab order select key handler.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectionMenu">
+      <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID SelectionMenu;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID SelectionMenu" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.MenuCommands.SelectionMenu" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the selection menu.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetStatusRectangle">
+      <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID SetStatusRectangle;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID SetStatusRectangle" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.MenuCommands.SetStatusRectangle" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to set the status rectangle.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetStatusText">
+      <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID SetStatusText;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID SetStatusText" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.MenuCommands.SetStatusText" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to set the status rectangle text.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TraySelectionMenu">
+      <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID TraySelectionMenu;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID TraySelectionMenu" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.MenuCommands.TraySelectionMenu" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.CommandID</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.ComponentModel.Design.CommandID" /> that can be used to access the tray selection menu.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

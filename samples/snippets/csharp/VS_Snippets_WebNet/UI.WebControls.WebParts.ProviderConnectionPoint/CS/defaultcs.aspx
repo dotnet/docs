@@ -1,0 +1,33 @@
+<!--<SNIPPET3>-->
+<%@ page language="C#" %>
+<%@ register tagprefix="aspSample" 
+    namespace="Samples.AspNet.CS.Controls" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>IField Test Page</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:webpartmanager id="WebPartManager1" runat="server">
+            <StaticConnections>
+                <asp:WebPartConnection id="wp1" ProviderID="provider1" ConsumerID="consumer1">
+                </asp:WebPartConnection>
+            </StaticConnections>
+        </asp:webpartmanager>
+        <asp:webpartzone id="WebPartZone1" runat="server">
+          <zoneTemplate>
+            <aspSample:TableProviderWebPart ID="provider1" runat="server" 
+              ToolTip="Web Parts Table Provider Control" />
+            <aspSample:TableConsumer ID="consumer1" runat="server" 
+              ToolTip="Web Parts Table Consumer Control"/>
+          </zoneTemplate>
+        </asp:webpartzone>
+    </div>
+    </form>
+</body>
+</html>
+<!--</SNIPPET3>-->

@@ -1,0 +1,85 @@
+<Type Name="ProvidersHelper" FullName="System.Web.Configuration.ProvidersHelper">
+  <TypeSignature Language="C#" Value="public static class ProvidersHelper" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ProvidersHelper extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Configuration.ProvidersHelper" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides methods for creating provider instances, either singly or in a batch.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="InstantiateProvider">
+      <MemberSignature Language="C#" Value="public static System.Configuration.Provider.ProviderBase InstantiateProvider (System.Configuration.ProviderSettings providerSettings, Type providerType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Configuration.Provider.ProviderBase InstantiateProvider(class System.Configuration.ProviderSettings providerSettings, class System.Type providerType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProvidersHelper.InstantiateProvider(System.Configuration.ProviderSettings,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.Provider.ProviderBase</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="providerSettings" Type="System.Configuration.ProviderSettings" />
+        <Parameter Name="providerType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="providerSettings">The settings to be passed to the provider upon initialization.</param>
+        <param name="providerType">The <see cref="T:System.Type" /> of the provider to be initialized.</param>
+        <summary>Initializes and returns a single provider of the given type using the supplied settings.</summary>
+        <returns>A new provider of the given type using the supplied settings.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The provider type defined in configuration was <see langword="null" /> or an empty string ("").  
+  
+ \- or -  
+  
+ The provider type defined in configuration is not compatible with the type used by the feature that is attempting to create a new instance of the provider.</exception>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">The provider threw an exception while it was being initialized.  
+  
+ \- or -  
+  
+ An error occurred while attempting to resolve a <see cref="T:System.Type" /> instance for the provider specified in <paramref name="providerSettings" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="InstantiateProviders">
+      <MemberSignature Language="C#" Value="public static void InstantiateProviders (System.Configuration.ProviderSettingsCollection configProviders, System.Configuration.Provider.ProviderCollection providers, Type providerType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void InstantiateProviders(class System.Configuration.ProviderSettingsCollection configProviders, class System.Configuration.Provider.ProviderCollection providers, class System.Type providerType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProvidersHelper.InstantiateProviders(System.Configuration.ProviderSettingsCollection,System.Configuration.Provider.ProviderCollection,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="configProviders" Type="System.Configuration.ProviderSettingsCollection" />
+        <Parameter Name="providers" Type="System.Configuration.Provider.ProviderCollection" />
+        <Parameter Name="providerType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="configProviders">A collection of settings to be passed to the provider upon initialization.</param>
+        <param name="providers">The collection used to contain the initialized providers after the method returns.</param>
+        <param name="providerType">The <see cref="T:System.Type" /> of the providers to be initialized.</param>
+        <summary>Initializes a collection of providers of the given type using the supplied settings.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method calls the <xref:System.Web.Configuration.ProvidersHelper.InstantiateProvider%2A> method, and any exceptions thrown by that method will bubble up through the <xref:System.Web.Configuration.ProvidersHelper.InstantiateProviders%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

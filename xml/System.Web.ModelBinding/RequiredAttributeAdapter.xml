@@ -1,0 +1,44 @@
+<Type Name="RequiredAttributeAdapter" FullName="System.Web.ModelBinding.RequiredAttributeAdapter">
+  <TypeSignature Language="C#" Value="public sealed class RequiredAttributeAdapter : System.Web.ModelBinding.DataAnnotationsModelValidator&lt;System.ComponentModel.DataAnnotations.RequiredAttribute&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RequiredAttributeAdapter extends System.Web.ModelBinding.DataAnnotationsModelValidator`1&lt;class System.ComponentModel.DataAnnotations.RequiredAttribute&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.RequiredAttributeAdapter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.ModelBinding.DataAnnotationsModelValidator&lt;System.ComponentModel.DataAnnotations.RequiredAttribute&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="TAttribute">System.ComponentModel.DataAnnotations.RequiredAttribute</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides an adapter for the <see cref="T:System.ComponentModel.DataAnnotations.RequiredAttribute" /> attribute.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RequiredAttributeAdapter (System.Web.ModelBinding.ModelMetadata metadata, System.Web.ModelBinding.ModelBindingExecutionContext context, System.ComponentModel.DataAnnotations.RequiredAttribute attribute);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.ModelBinding.ModelMetadata metadata, class System.Web.ModelBinding.ModelBindingExecutionContext context, class System.ComponentModel.DataAnnotations.RequiredAttribute attribute) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.RequiredAttributeAdapter.#ctor(System.Web.ModelBinding.ModelMetadata,System.Web.ModelBinding.ModelBindingExecutionContext,System.ComponentModel.DataAnnotations.RequiredAttribute)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="metadata" Type="System.Web.ModelBinding.ModelMetadata" />
+        <Parameter Name="context" Type="System.Web.ModelBinding.ModelBindingExecutionContext" />
+        <Parameter Name="attribute" Type="System.ComponentModel.DataAnnotations.RequiredAttribute" />
+      </Parameters>
+      <Docs>
+        <param name="metadata">The metadata.</param>
+        <param name="context">The execution context.</param>
+        <param name="attribute">The attribute.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.RequiredAttributeAdapter" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

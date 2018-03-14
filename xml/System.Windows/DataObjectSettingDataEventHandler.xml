@@ -1,0 +1,34 @@
+<Type Name="DataObjectSettingDataEventHandler" FullName="System.Windows.DataObjectSettingDataEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void DataObjectSettingDataEventHandler(object sender, DataObjectSettingDataEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataObjectSettingDataEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.DataObjectSettingDataEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.DataObjectSettingDataEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The object where the event handler is attached.</param>
+    <param name="e">The event data.</param>
+    <summary>Represents a method that will handle the <see cref="E:System.Windows.DataObject.SettingData" /> attached event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.DataObject.SettingData> event occurs when an attempt is made to add a data format to the data object during a copy operation.  
+  
+ A <xref:System.Windows.DataObject.SettingData> event handler method is typically used to apply copy command optimization by filtering unwanted or unneeded data formats from being applied to a <xref:System.Windows.DataObject>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

@@ -1,0 +1,117 @@
+<Type Name="UnescapedXmlDiagnosticData" FullName="System.Diagnostics.UnescapedXmlDiagnosticData">
+  <TypeSignature Language="C#" Value="public class UnescapedXmlDiagnosticData" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UnescapedXmlDiagnosticData extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.UnescapedXmlDiagnosticData" />
+  <AssemblyInfo>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides unescaped XML data for the logging of user-provided trace data.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is used by the <xref:System.Diagnostics.EventSchemaTraceListener.TraceData%2A> methods. It can also be used to pass XML data to the <xref:System.Diagnostics.EventSchemaTraceListener.TraceData%2A> methods.  
+  
+> [!NOTE]
+>  The user-provided data is not checked for schema validity.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use <xref:System.Diagnostics.UnescapedXmlDiagnosticData> class. This code example is part of a larger example that is provided for the <xref:System.Diagnostics.EventSchemaTraceListener> class.  
+  
+ [!code-csharp[System.Diagnostics.EventSchemaTraceListener#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.EventSchemaTraceListener/cs/program.cs#11)]
+ [!code-vb[System.Diagnostics.EventSchemaTraceListener#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.EventSchemaTraceListener/vb/program.vb#11)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public UnescapedXmlDiagnosticData (string xmlPayload);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string xmlPayload) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.UnescapedXmlDiagnosticData.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="xmlPayload" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="xmlPayload">The XML data to be logged in the <see langword="UserData" /> node of the event schema.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.UnescapedXmlDiagnosticData" /> class by using the specified XML data string.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you want your code to be end-to-end schema-compliant, the `xmlPayload` parameter must be an XML fragment that can be validated against the end-to-end event schema. If `xmlPayload` is `null`, the <xref:System.Diagnostics.UnescapedXmlDiagnosticData.UnescapedXml%2A> property is an empty string.  
+  
+> [!NOTE]
+>  `xmlPayload` is not checked for XML validity.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Diagnostics.UnescapedXmlDiagnosticData.%23ctor%2A> constructor. This code example is part of a larger example that is provided for the <xref:System.Diagnostics.EventSchemaTraceListener> class.  
+  
+ [!code-csharp[System.Diagnostics.EventSchemaTraceListener#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.EventSchemaTraceListener/cs/program.cs#11)]
+ [!code-vb[System.Diagnostics.EventSchemaTraceListener#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.EventSchemaTraceListener/vb/program.vb#11)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.UnescapedXmlDiagnosticData.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a string representation of the <see cref="T:System.Diagnostics.UnescapedXmlDiagnosticData" /> object.</summary>
+        <returns>A string representation of the <see cref="T:System.Diagnostics.UnescapedXmlDiagnosticData" /> object. If the object is <see langword="null" />, this method returns an empty string.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnescapedXml">
+      <MemberSignature Language="C#" Value="public string UnescapedXml { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string UnescapedXml" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.UnescapedXmlDiagnosticData.UnescapedXml" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the unescaped XML data string.</summary>
+        <value>An unescaped XML string.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you want your code to be end-to-end schema-compliant, the <xref:System.Diagnostics.UnescapedXmlDiagnosticData.UnescapedXml%2A> property value must be an XML fragment that can be validated against the end-to-end event schema.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

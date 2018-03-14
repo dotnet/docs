@@ -1,0 +1,167 @@
+<Type Name="TablePattern+TablePatternInformation" FullName="System.Windows.Automation.TablePattern+TablePatternInformation">
+  <TypeSignature Language="C#" Value="public struct TablePattern.TablePatternInformation" />
+  <TypeSignature Language="ILAsm" Value=".class nested public sequential ansi sealed beforefieldinit TablePattern/TablePatternInformation extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.TablePattern.TablePatternInformation" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationClient</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides access to the property values of a <see cref="T:System.Windows.Automation.TablePattern" /> object using its <see cref="P:System.Windows.Automation.TablePattern.Current" /> or <see cref="P:System.Windows.Automation.TablePattern.Cached" /> accessors.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ColumnCount">
+      <MemberSignature Language="C#" Value="public int ColumnCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ColumnCount" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.TablePattern.TablePatternInformation.ColumnCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the total number of columns in a table.</summary>
+        <value>The total number of columns in a table. The default value is zero.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ In the following example, a <xref:System.Windows.Automation.TablePattern> object obtained from a target control is passed into a function that retrieves the current <xref:System.Windows.Automation.TablePattern> property values.  
+  
+ [!code-csharp[UIATablePattern_snip#103](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATablePattern_snip/CSharp/UIATablePattern_snippets.cs#103)]
+ [!code-vb[UIATablePattern_snip#103](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATablePattern_snip/VisualBasic/UIATablePattern_snippets.vb#103)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetColumnHeaders">
+      <MemberSignature Language="C#" Value="public System.Windows.Automation.AutomationElement[] GetColumnHeaders ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Automation.AutomationElement[] GetColumnHeaders() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.TablePattern.TablePatternInformation.GetColumnHeaders" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationElement[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves a collection of <see cref="T:System.Windows.Automation.AutomationElement" />s representing all the column headers in a table.</summary>
+        <returns>A collection of <see cref="T:System.Windows.Automation.AutomationElement" />s. The default is an empty array.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ In the following example, the row or column header is retrieved for a specific table item.  
+  
+ For the purposes of this example, a relationship between the <xref:System.Windows.Automation.TablePattern.TablePatternInformation.RowOrColumnMajor%2A> property and the row and column header items is demonstrated. However, a table can have row and column headers regardless of the <xref:System.Windows.Automation.TablePattern.TablePatternInformation.RowOrColumnMajor%2A> property of the table.  
+  
+ [!code-csharp[UIATablePattern_snip#102](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATablePattern_snip/CSharp/UIATablePattern_snippets.cs#102)]
+ [!code-vb[UIATablePattern_snip#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATablePattern_snip/VisualBasic/UIATablePattern_snippets.vb#102)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRowHeaders">
+      <MemberSignature Language="C#" Value="public System.Windows.Automation.AutomationElement[] GetRowHeaders ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Automation.AutomationElement[] GetRowHeaders() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.TablePattern.TablePatternInformation.GetRowHeaders" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationElement[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves a collection of <see cref="T:System.Windows.Automation.AutomationElement" />s representing all the row headers in a table.</summary>
+        <returns>A collection of <see cref="T:System.Windows.Automation.AutomationElement" />s. The default is an empty array.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ In the following example, the row or column header is retrieved for a specific table item.  
+  
+ For the purposes of this example, a relationship between the <xref:System.Windows.Automation.TablePattern.TablePatternInformation.RowOrColumnMajor%2A> property and the row and column header items is demonstrated. However, a table can have row and column headers regardless of the <xref:System.Windows.Automation.TablePattern.TablePatternInformation.RowOrColumnMajor%2A> property of the table.  
+  
+ [!code-csharp[UIATablePattern_snip#102](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATablePattern_snip/CSharp/UIATablePattern_snippets.cs#102)]
+ [!code-vb[UIATablePattern_snip#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATablePattern_snip/VisualBasic/UIATablePattern_snippets.vb#102)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowCount">
+      <MemberSignature Language="C#" Value="public int RowCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RowCount" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.TablePattern.TablePatternInformation.RowCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the total number of rows in a table.</summary>
+        <value>The total number of rows in a table. The default value is zero.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ In the following example, a <xref:System.Windows.Automation.TablePattern> object obtained from a target control is passed into a function that retrieves the current <xref:System.Windows.Automation.TablePattern> property values.  
+  
+ [!code-csharp[UIATablePattern_snip#103](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATablePattern_snip/CSharp/UIATablePattern_snippets.cs#103)]
+ [!code-vb[UIATablePattern_snip#103](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATablePattern_snip/VisualBasic/UIATablePattern_snippets.vb#103)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowOrColumnMajor">
+      <MemberSignature Language="C#" Value="public System.Windows.Automation.RowOrColumnMajor RowOrColumnMajor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Automation.RowOrColumnMajor RowOrColumnMajor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.TablePattern.TablePatternInformation.RowOrColumnMajor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.RowOrColumnMajor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retrieves the primary direction of traversal (<see cref="F:System.Windows.Automation.RowOrColumnMajor.ColumnMajor" />, <see cref="F:System.Windows.Automation.RowOrColumnMajor.RowMajor" />, <see cref="F:System.Windows.Automation.RowOrColumnMajor.Indeterminate" />) for the table.</summary>
+        <value>The primary direction of traversal. The default is <see cref="F:System.Windows.Automation.RowOrColumnMajor.Indeterminate" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ In the following example, the row or column header is retrieved for a specific table item.  
+  
+ For the purposes of this example, a relationship between the <xref:System.Windows.Automation.TablePattern.TablePatternInformation.RowOrColumnMajor%2A> property and the row and column header items is demonstrated. However, a table can have row and column headers regardless of the <xref:System.Windows.Automation.TablePattern.TablePatternInformation.RowOrColumnMajor%2A> property of the table.  
+  
+ [!code-csharp[UIATablePattern_snip#102](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATablePattern_snip/CSharp/UIATablePattern_snippets.cs#102)]
+ [!code-vb[UIATablePattern_snip#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATablePattern_snip/VisualBasic/UIATablePattern_snippets.vb#102)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

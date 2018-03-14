@@ -1,0 +1,50 @@
+<Type Name="LanguageOption" FullName="System.Data.Entity.Design.LanguageOption">
+  <TypeSignature Language="C#" Value="public enum LanguageOption" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LanguageOption extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Entity.Design.LanguageOption" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the language for the generated code.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GenerateCSharpCode">
+      <MemberSignature Language="C#" Value="GenerateCSharpCode" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Entity.Design.LanguageOption GenerateCSharpCode = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Entity.Design.LanguageOption.GenerateCSharpCode" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Entity.Design.LanguageOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>C# code. This is the default.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateVBCode">
+      <MemberSignature Language="C#" Value="GenerateVBCode" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Entity.Design.LanguageOption GenerateVBCode = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Entity.Design.LanguageOption.GenerateVBCode" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Entity.Design.LanguageOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Visual Basic code.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

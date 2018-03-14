@@ -1,0 +1,15 @@
+<Namespace Name="System.Runtime.Serialization">
+  <Docs>
+    <summary>The <see cref="N:System.Runtime.Serialization" /> namespace contains classes that can be used for serializing and deserializing objects. Serialization is the process of converting an object or a graph of objects into a linear sequence of bytes for either storage or transmission to another location. Deserialization is the process of taking in stored information and recreating objects from it.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Serialization.ISerializable> interface provides a way for classes to control their own serialization behavior. Classes in the <xref:System.Runtime.Serialization.Formatters> namespace control the actual formatting of various data types encapsulated in the serialized objects.  
+  
+ Formatters that serialize and deserialize objects to and from a particular format can be found in the <xref:System.Runtime.Serialization.Formatters> namespace.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Namespace>

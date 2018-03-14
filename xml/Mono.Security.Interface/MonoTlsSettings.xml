@@ -1,0 +1,343 @@
+<Type Name="MonoTlsSettings" FullName="Mono.Security.Interface.MonoTlsSettings">
+  <TypeSignature Language="C#" Value="public sealed class MonoTlsSettings" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MonoTlsSettings extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Mono.Security.Interface.MonoTlsSettings" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MonoTlsSettings ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.MonoTlsSettings.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CallbackNeedsCertificateChain">
+      <MemberSignature Language="C#" Value="public bool CallbackNeedsCertificateChain { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CallbackNeedsCertificateChain" />
+      <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.MonoTlsSettings.CallbackNeedsCertificateChain" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CertificateValidator">
+      <MemberSignature Language="C#" Value="public Mono.Security.Interface.ICertificateValidator CertificateValidator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Mono.Security.Interface.ICertificateValidator CertificateValidator" />
+      <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.MonoTlsSettings.CertificateValidator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Do not use outside System.dll!")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.ICertificateValidator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckCertificateName">
+      <MemberSignature Language="C#" Value="public bool CheckCertificateName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CheckCertificateName" />
+      <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.MonoTlsSettings.CheckCertificateName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckCertificateRevocationStatus">
+      <MemberSignature Language="C#" Value="public bool CheckCertificateRevocationStatus { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CheckCertificateRevocationStatus" />
+      <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.MonoTlsSettings.CheckCertificateRevocationStatus" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClientCertificateSelectionCallback">
+      <MemberSignature Language="C#" Value="public Mono.Security.Interface.MonoLocalCertificateSelectionCallback ClientCertificateSelectionCallback { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Mono.Security.Interface.MonoLocalCertificateSelectionCallback ClientCertificateSelectionCallback" />
+      <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.MonoTlsSettings.ClientCertificateSelectionCallback" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.MonoLocalCertificateSelectionCallback</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public Mono.Security.Interface.MonoTlsSettings Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Mono.Security.Interface.MonoTlsSettings Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.MonoTlsSettings.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.MonoTlsSettings</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloneWithValidator">
+      <MemberSignature Language="C#" Value="public Mono.Security.Interface.MonoTlsSettings CloneWithValidator (Mono.Security.Interface.ICertificateValidator validator);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Mono.Security.Interface.MonoTlsSettings CloneWithValidator(class Mono.Security.Interface.ICertificateValidator validator) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.MonoTlsSettings.CloneWithValidator(Mono.Security.Interface.ICertificateValidator)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Do not use outside System.dll!")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.MonoTlsSettings</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="validator" Type="Mono.Security.Interface.ICertificateValidator" />
+      </Parameters>
+      <Docs>
+        <param name="validator">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyDefaultSettings">
+      <MemberSignature Language="C#" Value="public static Mono.Security.Interface.MonoTlsSettings CopyDefaultSettings ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Mono.Security.Interface.MonoTlsSettings CopyDefaultSettings() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.MonoTlsSettings.CopyDefaultSettings" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.MonoTlsSettings</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultSettings">
+      <MemberSignature Language="C#" Value="public static Mono.Security.Interface.MonoTlsSettings DefaultSettings { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Mono.Security.Interface.MonoTlsSettings DefaultSettings" />
+      <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.MonoTlsSettings.DefaultSettings" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.MonoTlsSettings</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnabledCiphers">
+      <MemberSignature Language="C#" Value="public Mono.Security.Interface.CipherSuiteCode[] EnabledCiphers { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Mono.Security.Interface.CipherSuiteCode[] EnabledCiphers" />
+      <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.MonoTlsSettings.EnabledCiphers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.CipherSuiteCode[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnabledProtocols">
+      <MemberSignature Language="C#" Value="public Nullable&lt;Mono.Security.Interface.TlsProtocols&gt; EnabledProtocols { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Mono.Security.Interface.TlsProtocols&gt; EnabledProtocols" />
+      <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.MonoTlsSettings.EnabledProtocols" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Mono.Security.Interface.TlsProtocols&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoteCertificateValidationCallback">
+      <MemberSignature Language="C#" Value="public Mono.Security.Interface.MonoRemoteCertificateValidationCallback RemoteCertificateValidationCallback { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Mono.Security.Interface.MonoRemoteCertificateValidationCallback RemoteCertificateValidationCallback" />
+      <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.MonoTlsSettings.RemoteCertificateValidationCallback" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.MonoRemoteCertificateValidationCallback</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SkipSystemValidators">
+      <MemberSignature Language="C#" Value="public bool SkipSystemValidators { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SkipSystemValidators" />
+      <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.MonoTlsSettings.SkipSystemValidators" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrustAnchors">
+      <MemberSignature Language="C#" Value="public System.Security.Cryptography.X509Certificates.X509CertificateCollection TrustAnchors { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.X509Certificates.X509CertificateCollection TrustAnchors" />
+      <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.MonoTlsSettings.TrustAnchors" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.X509Certificates.X509CertificateCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserSettings">
+      <MemberSignature Language="C#" Value="public object UserSettings { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object UserSettings" />
+      <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.MonoTlsSettings.UserSettings" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseServicePointManagerCallback">
+      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; UseServicePointManagerCallback { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; UseServicePointManagerCallback" />
+      <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.MonoTlsSettings.UseServicePointManagerCallback" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,89 @@
+<Type Name="QualityMode" FullName="System.Drawing.Drawing2D.QualityMode">
+  <TypeSignature Language="C#" Value="public enum QualityMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed QualityMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.QualityMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the overall quality when rendering GDI+ objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The quality level is inversely proportional to the amount of time spent rendering. This mode does not affect text. To set the text rendering quality, use the <xref:System.Drawing.Text.TextRenderingHint> enumeration.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.QualityMode Default = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.QualityMode.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.QualityMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the default mode.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="High">
+      <MemberSignature Language="C#" Value="High" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.QualityMode High = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.QualityMode.High" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.QualityMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies high quality, low speed rendering.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Invalid">
+      <MemberSignature Language="C#" Value="Invalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.QualityMode Invalid = int32(-1)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.QualityMode.Invalid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.QualityMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies an invalid mode.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Low">
+      <MemberSignature Language="C#" Value="Low" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.QualityMode Low = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.QualityMode.Low" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.QualityMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies low quality, high speed rendering.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

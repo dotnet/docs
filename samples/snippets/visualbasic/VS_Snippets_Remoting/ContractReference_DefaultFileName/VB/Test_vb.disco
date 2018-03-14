@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://localhost/ContractReference/service1_vb.asmx?wsdl" 
+  docRef="http://localhost/ContractReference/service1_vb.asmx" 
+  xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://localhost/ContractReference/service1_vb.asmx" 
+  xmlns:q1="http://tempuri.org/" binding="q1:Service1Soap" 
+  xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

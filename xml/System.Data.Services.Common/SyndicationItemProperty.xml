@@ -1,0 +1,230 @@
+<Type Name="SyndicationItemProperty" FullName="System.Data.Services.Common.SyndicationItemProperty">
+  <TypeSignature Language="C#" Value="public enum SyndicationItemProperty" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SyndicationItemProperty extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Services.Common.SyndicationItemProperty" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Services.Client</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Enumeration type used to identify the syndication item element.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The values of this enumeration are used when defining custom feeds for [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)].  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AuthorEmail">
+      <MemberSignature Language="C#" Value="AuthorEmail" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.Common.SyndicationItemProperty AuthorEmail = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.Common.SyndicationItemProperty.AuthorEmail" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Common.SyndicationItemProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Author email element.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AuthorName">
+      <MemberSignature Language="C#" Value="AuthorName" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.Common.SyndicationItemProperty AuthorName = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.Common.SyndicationItemProperty.AuthorName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Common.SyndicationItemProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Author name element.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AuthorUri">
+      <MemberSignature Language="C#" Value="AuthorUri" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.Common.SyndicationItemProperty AuthorUri = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.Common.SyndicationItemProperty.AuthorUri" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Common.SyndicationItemProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Author URI element.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ContributorEmail">
+      <MemberSignature Language="C#" Value="ContributorEmail" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.Common.SyndicationItemProperty ContributorEmail = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.Common.SyndicationItemProperty.ContributorEmail" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Common.SyndicationItemProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Contributor email element.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ContributorName">
+      <MemberSignature Language="C#" Value="ContributorName" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.Common.SyndicationItemProperty ContributorName = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.Common.SyndicationItemProperty.ContributorName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Common.SyndicationItemProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Contributor name element.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ContributorUri">
+      <MemberSignature Language="C#" Value="ContributorUri" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.Common.SyndicationItemProperty ContributorUri = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.Common.SyndicationItemProperty.ContributorUri" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Common.SyndicationItemProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Contributor URI element.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomProperty">
+      <MemberSignature Language="C#" Value="CustomProperty" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.Common.SyndicationItemProperty CustomProperty = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.Common.SyndicationItemProperty.CustomProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Common.SyndicationItemProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Custom property element.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Published">
+      <MemberSignature Language="C#" Value="Published" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.Common.SyndicationItemProperty Published = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.Common.SyndicationItemProperty.Published" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Common.SyndicationItemProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Published resource element.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Rights">
+      <MemberSignature Language="C#" Value="Rights" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.Common.SyndicationItemProperty Rights = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.Common.SyndicationItemProperty.Rights" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Common.SyndicationItemProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Rights protected resource element.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Summary">
+      <MemberSignature Language="C#" Value="Summary" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.Common.SyndicationItemProperty Summary = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.Common.SyndicationItemProperty.Summary" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Common.SyndicationItemProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Summary element.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Title">
+      <MemberSignature Language="C#" Value="Title" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.Common.SyndicationItemProperty Title = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.Common.SyndicationItemProperty.Title" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Common.SyndicationItemProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Title element.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Updated">
+      <MemberSignature Language="C#" Value="Updated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.Common.SyndicationItemProperty Updated = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.Common.SyndicationItemProperty.Updated" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Common.SyndicationItemProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Updated element.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

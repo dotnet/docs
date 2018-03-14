@@ -1,0 +1,96 @@
+<Type Name="MsmqSecureHashAlgorithm" FullName="System.ServiceModel.MsmqSecureHashAlgorithm">
+  <TypeSignature Language="C#" Value="public enum MsmqSecureHashAlgorithm" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MsmqSecureHashAlgorithm extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.MsmqSecureHashAlgorithm" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Contains the hashing algorithms that Message Queuing (MSMQ) can use to sign messages.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing can secure messages by signing them. The <xref:System.ServiceModel.MsmqSecureHashAlgorithm> class is an enumeration that contains the hashing algorithms that Message Queuing can use to sign messages.  
+  
+ Sha256 and Sha512 are supported only on [!INCLUDE[wv](~/includes/wv-md.md)].  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="MD5">
+      <MemberSignature Language="C#" Value="MD5" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.MsmqSecureHashAlgorithm MD5 = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.MsmqSecureHashAlgorithm.MD5" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.MsmqSecureHashAlgorithm</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The [Message Digest Algorithm 5 (MD5)](http://go.microsoft.com/fwlink/?LinkId=95939).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Sha1">
+      <MemberSignature Language="C#" Value="Sha1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.MsmqSecureHashAlgorithm Sha1 = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.MsmqSecureHashAlgorithm.Sha1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.MsmqSecureHashAlgorithm</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The [Secure Hash Algorithm (SHA-1)](http://go.microsoft.com/fwlink/?LinkId=95940).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Sha256">
+      <MemberSignature Language="C#" Value="Sha256" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.MsmqSecureHashAlgorithm Sha256 = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.MsmqSecureHashAlgorithm.Sha256" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.MsmqSecureHashAlgorithm</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The [SHA-256](http://go.microsoft.com/fwlink/?LinkId=95940) algorithm.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Sha512">
+      <MemberSignature Language="C#" Value="Sha512" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.MsmqSecureHashAlgorithm Sha512 = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.MsmqSecureHashAlgorithm.Sha512" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.MsmqSecureHashAlgorithm</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The [SHA 512](http://go.microsoft.com/fwlink/?LinkId=95940) algorithm.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

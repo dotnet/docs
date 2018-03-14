@@ -1,0 +1,45 @@
+﻿<Activity mc:Ignorable="sad"
+          x:Class="Microsoft.Samples.DynamicActivityCreation.FindAverage"
+          xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
+          xmlns:__FindAverage="clr-namespace:Microsoft.Samples.DynamicActivityCreation;"
+          xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+          xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities"
+          xmlns:s="clr-namespace:System;assembly=mscorlib"
+          xmlns:sad="http://schemas.microsoft.com/netfx/2009/xaml/activities/design"
+          xmlns:sad1="clr-namespace:System.Activities.Debugger;assembly=System.Activities"
+          xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
+          xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="Numbers" Type="InArgument(scg:List(x:Int32))" />
+    <x:Property Name="Average" Type="OutArgument(x:Double)" />
+  </x:Members>
+  <Sequence>
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Double" Name="result" />
+      <Variable x:TypeArguments="x:Int32" Default="0" Name="accumulator" />
+    </Sequence.Variables>
+    <ForEach x:TypeArguments="x:Int32" Values="[Numbers]">
+      <ActivityAction x:TypeArguments="x:Int32">
+        <ActivityAction.Argument>
+          <DelegateInArgument x:TypeArguments="x:Int32" Name="iterationVariable" />
+        </ActivityAction.Argument>
+        <Assign>
+          <Assign.To>
+            <OutArgument x:TypeArguments="x:Int32">[accumulator]</OutArgument>
+          </Assign.To>
+          <Assign.Value>
+            <InArgument x:TypeArguments="x:Int32">[iterationVariable + accumulator]</InArgument>
+          </Assign.Value>
+        </Assign>
+      </ActivityAction>
+    </ForEach>
+    <Assign>
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:Double">[Average]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:Double">[accumulator / Numbers.Count]</InArgument>
+      </Assign.Value>
+    </Assign>
+  </Sequence>
+</Activity>

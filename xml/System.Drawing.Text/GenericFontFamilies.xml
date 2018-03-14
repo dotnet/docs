@@ -1,0 +1,66 @@
+<Type Name="GenericFontFamilies" FullName="System.Drawing.Text.GenericFontFamilies">
+  <TypeSignature Language="C#" Value="public enum GenericFontFamilies" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GenericFontFamilies extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Text.GenericFontFamilies" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies a generic <see cref="T:System.Drawing.FontFamily" /> object.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Monospace">
+      <MemberSignature Language="C#" Value="Monospace" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Text.GenericFontFamilies Monospace = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Text.GenericFontFamilies.Monospace" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Text.GenericFontFamilies</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A generic Monospace <see cref="T:System.Drawing.FontFamily" /> object.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SansSerif">
+      <MemberSignature Language="C#" Value="SansSerif" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Text.GenericFontFamilies SansSerif = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Text.GenericFontFamilies.SansSerif" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Text.GenericFontFamilies</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A generic Sans Serif <see cref="T:System.Drawing.FontFamily" /> object.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Serif">
+      <MemberSignature Language="C#" Value="Serif" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Text.GenericFontFamilies Serif = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Text.GenericFontFamilies.Serif" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Text.GenericFontFamilies</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A generic Serif <see cref="T:System.Drawing.FontFamily" /> object.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

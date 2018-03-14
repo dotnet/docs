@@ -1,0 +1,68 @@
+<Type Name="PartDesigner" FullName="System.Web.UI.Design.WebControls.WebParts.PartDesigner">
+  <TypeSignature Language="C#" Value="public abstract class PartDesigner : System.Web.UI.Design.WebControls.CompositeControlDesigner" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit PartDesigner extends System.Web.UI.Design.WebControls.CompositeControlDesigner" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.WebParts.PartDesigner" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.Design.WebControls.CompositeControlDesigner</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Extends design-time behavior for controls that implement the <see cref="T:System.Web.UI.WebControls.WebParts.Part" /> abstract class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.WebParts.PartDesigner> class is the base class for many of the various designers in the <xref:System.Web.UI.Design.WebControls.WebParts> namespace, which provide visual representations of Web Parts controls at design time. The <xref:System.Web.UI.Design.WebControls.WebParts.PartDesigner.UsePreviewControl%2A> property is overridden to always return `true`, so <xref:System.Web.UI.Design.WebControls.WebParts.PartDesigner> will always render a copy of the associated control rather than the control itself.  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>The <see cref="T:System.Web.UI.Design.WebControls.WebParts.PartDesigner" /> class does not have a public constructor, so you cannot inherit from it directly outside the <see cref="N:System.Web.UI.Design.WebControls.WebParts" /> namespace. Instead, use <see cref="T:System.Web.UI.Design.WebControls.WebParts.WebPartDesigner" />, <see cref="T:System.Web.UI.Design.WebControls.WebParts.EditorPartDesigner" />, or <see cref="T:System.Web.UI.Design.WebControls.WebParts.CatalogPartDesigner" />, which derive from <see cref="T:System.Web.UI.Design.WebControls.WebParts.PartDesigner" /> and provide the same functionality with a public constructor.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public override void Initialize (System.ComponentModel.IComponent component);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize(class System.ComponentModel.IComponent component) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.WebParts.PartDesigner.Initialize(System.ComponentModel.IComponent)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="component" Type="System.ComponentModel.IComponent" />
+      </Parameters>
+      <Docs>
+        <param name="component">The <see cref="T:System.Web.UI.WebControls.WebParts.Part" /> control associated with this designer.</param>
+        <summary>Creates an instance of the designer bound to the associated <see cref="T:System.Web.UI.WebControls.WebParts.Part" /> control.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UsePreviewControl">
+      <MemberSignature Language="C#" Value="protected override bool UsePreviewControl { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UsePreviewControl" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.WebParts.PartDesigner.UsePreviewControl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the designer should use a temporary copy rather than the actual control associated with the designer to generate the design-time markup.</summary>
+        <value>Always <see langword="true" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

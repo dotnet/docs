@@ -1,0 +1,30 @@
+﻿<Window x:Class="QuarticEase.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Window1" Height="300" Width="300">
+    <StackPanel Margin="10">
+        <!-- <SnippetQuarticEase> -->
+        <Rectangle Name="myRectangle" Width="200" Height="30" Fill="Blue">
+            <Rectangle.Triggers>
+                <EventTrigger RoutedEvent="Rectangle.MouseDown">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation From="30" To="200" Duration="00:00:3" 
+                             Storyboard.TargetName="myRectangle" 
+                             Storyboard.TargetProperty="Height">
+                                <DoubleAnimation.EasingFunction>
+                                    <QuarticEase EasingMode="EaseOut"/>
+                                </DoubleAnimation.EasingFunction>
+                            </DoubleAnimation>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Rectangle.Triggers>
+
+        </Rectangle>
+        <!-- </SnippetQuarticEase> -->
+    </StackPanel>
+
+
+
+</Window>

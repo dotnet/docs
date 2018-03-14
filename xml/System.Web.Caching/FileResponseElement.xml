@@ -1,0 +1,127 @@
+<Type Name="FileResponseElement" FullName="System.Web.Caching.FileResponseElement">
+  <TypeSignature Language="C#" Value="public class FileResponseElement : System.Web.Caching.ResponseElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit FileResponseElement extends System.Web.Caching.ResponseElement" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Caching.FileResponseElement" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.Caching.ResponseElement</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents part of an output-cache entry, stored as a file.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Caching.FileResponseElement> class represents the body portion (instead of the header) of an output-cache entry. The data from a <xref:System.Web.Caching.FileResponseElement> object can be stored as either part or all of a file. Both ASP.NET and custom output-cache providers can return a response in multiple parts, using any combination of <xref:System.Web.Caching.FileResponseElement> objects. For example, a provider can return a response that is segmented into three different <xref:System.Web.Caching.FileResponseElement> objects, and each object can be retrieved from an offset into a different physical file.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FileResponseElement (string path, long offset, long length);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, int64 offset, int64 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Caching.FileResponseElement.#ctor(System.String,System.Int64,System.Int64)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="offset" Type="System.Int64" />
+        <Parameter Name="length" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="path">The fully qualified path for the file.</param>
+        <param name="offset">The position in the file where the string starts.</param>
+        <param name="length">The length of the data, starting at the offset that represents the output-cache data in the file defined by <c>path</c>.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Caching.FileResponseElement" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the complete output-cache response is contained in a single file, a provider initializes the <xref:System.Web.Caching.FileResponseElement> class by using an offset of zero, and a length equal to the size of the whole file. If the complete output cache response is contained in only part of a file, a provider initializes the <xref:System.Web.Caching.FileResponseElement> class by using the offset in the file where the output cache response starts, and a length equal to the size of the output-cache response that is stored in that file.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="path" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="length" /> is less than zero.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Length">
+      <MemberSignature Language="C#" Value="public long Length { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 Length" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Caching.FileResponseElement.Length" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the size of the data, starting at the offset that contains the data for a <see cref="T:System.Web.Caching.FileResponseElement" /> instance.</summary>
+        <value>The size of the data.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the complete output-cache response is contained in a single file, an output cache provider initializes the <xref:System.Web.Caching.FileResponseElement> class by using a length equal to the size of the whole file. If the complete output cache response is contained in only part of a file, a provider initializes the <xref:System.Web.Caching.FileResponseElement> class by using a length equal to the size of the output-cache response that is stored in that file.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Offset">
+      <MemberSignature Language="C#" Value="public long Offset { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 Offset" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Caching.FileResponseElement.Offset" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the position in the file where the data from a <see cref="T:System.Web.Caching.FileResponseElement" /> instance starts.</summary>
+        <value>The starting point of the data in the file.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the complete output-cache response is contained in a single file, a provider initializes the <xref:System.Web.Caching.FileResponseElement> class by using an offset of zero, If the complete output cache response is contained in only part of a file, a provider initializes the <xref:System.Web.Caching.FileResponseElement> class by using the offset in the file where the output cache response starts.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Path">
+      <MemberSignature Language="C#" Value="public string Path { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Path" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Caching.FileResponseElement.Path" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the location of the file that contains data from a <see cref="T:System.Web.Caching.FileResponseElement" /> instance.</summary>
+        <value>The fully qualified path of the file.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

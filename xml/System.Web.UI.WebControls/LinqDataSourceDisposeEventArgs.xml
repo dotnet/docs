@@ -1,0 +1,75 @@
+<Type Name="LinqDataSourceDisposeEventArgs" FullName="System.Web.UI.WebControls.LinqDataSourceDisposeEventArgs">
+  <TypeSignature Language="C#" Value="public class LinqDataSourceDisposeEventArgs : System.ComponentModel.CancelEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LinqDataSourceDisposeEventArgs extends System.ComponentModel.CancelEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.LinqDataSourceDisposeEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.CancelEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.LinqDataSource.ContextDisposing" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You create a handler for the <xref:System.Web.UI.WebControls.LinqDataSource.ContextDisposing> event to perform clean-up that is specific to the data context object before the object is destroyed. The <xref:System.Web.UI.WebControls.LinqDataSourceDisposeEventArgs> object contains the data context object that is used when you are selecting, updating, inserting, or deleting data. The <xref:System.Web.UI.WebControls.LinqDataSource.ContextDisposing> event is raised during the <xref:System.Web.UI.Control.Unload> event before the <xref:System.Web.UI.WebControls.LinqDataSource> control disposes the context object.  
+  
+ The data context object is the type specified in the <xref:System.Web.UI.WebControls.LinqDataSource.ContextTypeName%2A> property or the type set to the <xref:System.Web.UI.WebControls.LinqDataSourceContextEventArgs.ObjectInstance%2A> of the <xref:System.Web.UI.WebControls.LinqDataSourceContextEventArgs> class.  
+  
+ When the <xref:System.Web.UI.WebControls.LinqDataSource> control interacts with a database, the <xref:System.Web.UI.WebControls.LinqDataSource.ContextTypeName%2A> property is set to the <xref:System.Data.Linq.DataContext> object that represents the database. When the <xref:System.Web.UI.WebControls.LinqDataSource> control interacts with an in-memory data collection, the <xref:System.Web.UI.WebControls.LinqDataSource.ContextTypeName%2A> property is set to the object that contains the data collection.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LinqDataSourceDisposeEventArgs (object instance);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object instance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LinqDataSourceDisposeEventArgs.#ctor(System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instance">The data context object to dispose.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.LinqDataSourceDisposeEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObjectInstance">
+      <MemberSignature Language="C#" Value="public object ObjectInstance { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ObjectInstance" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSourceDisposeEventArgs.ObjectInstance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the data context object to dispose.</summary>
+        <value>An object that represents the data context.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.LinqDataSourceDisposeEventArgs.ObjectInstance%2A> property contains the data context object that the <xref:System.Web.UI.WebControls.LinqDataSource> control uses for data operations. You can use the <xref:System.Web.UI.WebControls.LinqDataSourceDisposeEventArgs.ObjectInstance%2A> property to retrieve the data context object if you want to examine the object before it is disposed.  
+  
+ When the <xref:System.Web.UI.WebControls.LinqDataSource> control interacts with a database, the <xref:System.Web.UI.WebControls.LinqDataSourceDisposeEventArgs.ObjectInstance%2A> property is set to the <xref:System.Data.Linq.DataContext> object that represents the database. When the <xref:System.Web.UI.WebControls.LinqDataSource> control interacts with an in-memory data collection, the <xref:System.Web.UI.WebControls.LinqDataSourceDisposeEventArgs.ObjectInstance%2A> property is set to the object that contains the data collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

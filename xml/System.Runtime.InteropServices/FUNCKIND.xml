@@ -1,0 +1,116 @@
+<Type Name="FUNCKIND" FullName="System.Runtime.InteropServices.FUNCKIND">
+  <TypeSignature Language="C#" Value="public enum FUNCKIND" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed FUNCKIND extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.FUNCKIND" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Use <see cref="T:System.Runtime.InteropServices.ComTypes.FUNCKIND" /> instead.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For additional information about `FUNCKIND`, see the MSDN Library.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FUNC_DISPATCH">
+      <MemberSignature Language="C#" Value="FUNC_DISPATCH" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.FUNCKIND FUNC_DISPATCH = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.FUNCKIND.FUNC_DISPATCH" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.FUNCKIND</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The function can be accessed only through <see langword="IDispatch" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FUNC_NONVIRTUAL">
+      <MemberSignature Language="C#" Value="FUNC_NONVIRTUAL" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.FUNCKIND FUNC_NONVIRTUAL = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.FUNCKIND.FUNC_NONVIRTUAL" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.FUNCKIND</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The function is accessed by <see langword="static" /> address and takes an implicit <see langword="this" /> pointer.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FUNC_PUREVIRTUAL">
+      <MemberSignature Language="C#" Value="FUNC_PUREVIRTUAL" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.FUNCKIND FUNC_PUREVIRTUAL = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.FUNCKIND.FUNC_PUREVIRTUAL" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.FUNCKIND</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The function is accessed through the virtual function table (VTBL), and takes an implicit <see langword="this" /> pointer.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FUNC_STATIC">
+      <MemberSignature Language="C#" Value="FUNC_STATIC" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.FUNCKIND FUNC_STATIC = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.FUNCKIND.FUNC_STATIC" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.FUNCKIND</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The function is accessed by <see langword="static" /> address and does not take an implicit <see langword="this" /> pointer.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FUNC_VIRTUAL">
+      <MemberSignature Language="C#" Value="FUNC_VIRTUAL" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.FUNCKIND FUNC_VIRTUAL = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.FUNCKIND.FUNC_VIRTUAL" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.FUNCKIND</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The function is accessed the same as <see cref="F:System.Runtime.InteropServices.FUNCKIND.FUNC_PUREVIRTUAL" />, except the function has an implementation.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

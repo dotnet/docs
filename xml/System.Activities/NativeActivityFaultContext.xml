@@ -1,0 +1,44 @@
+<Type Name="NativeActivityFaultContext" FullName="System.Activities.NativeActivityFaultContext">
+  <TypeSignature Language="C#" Value="public sealed class NativeActivityFaultContext : System.Activities.NativeActivityContext" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit NativeActivityFaultContext extends System.Activities.NativeActivityContext" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.NativeActivityFaultContext" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Activities.NativeActivityContext</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the execution environment of a <see cref="T:System.Activities.NativeActivity" /> when it is handling an exception thrown by a child activity.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is sealed.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="HandleFault">
+      <MemberSignature Language="C#" Value="public void HandleFault ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void HandleFault() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityFaultContext.HandleFault" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>OBSOLETE.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

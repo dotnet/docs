@@ -1,0 +1,357 @@
+<Type Name="InvokeMethod" FullName="System.Activities.Statements.InvokeMethod">
+  <TypeSignature Language="C#" Value="public sealed class InvokeMethod : System.Activities.AsyncCodeActivity" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit InvokeMethod extends System.Activities.AsyncCodeActivity" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Statements.InvokeMethod" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Activities.AsyncCodeActivity</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.ContentProperty("Parameters")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Calls a public method of a specified object or type.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample demonstrates creating an <xref:System.Activities.Statements.InvokeMethod> activity. This example is from the [Using the InvokeMethod Activity](~/docs/framework/windows-workflow-foundation/samples/using-the-invokemethod-activity.md) sample.  
+  
+ [!code-csharp[wfs_InvokeMethod#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_invokemethod/cs/program.cs#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InvokeMethod ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Statements.InvokeMethod.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Statements.InvokeMethod" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample demonstrates creating an <xref:System.Activities.Statements.InvokeMethod> activity. This example is from the [Using the InvokeMethod Activity](~/docs/framework/windows-workflow-foundation/samples/using-the-invokemethod-activity.md) sample.  
+  
+ [!code-csharp[wfs_InvokeMethod#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_invokemethod/cs/program.cs#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginExecute">
+      <MemberSignature Language="C#" Value="protected override IAsyncResult BeginExecute (System.Activities.AsyncCodeActivityContext context, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.IAsyncResult BeginExecute(class System.Activities.AsyncCodeActivityContext context, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Statements.InvokeMethod.BeginExecute(System.Activities.AsyncCodeActivityContext,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Activities.AsyncCodeActivityContext" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <param name="callback">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CacheMetadata">
+      <MemberSignature Language="C#" Value="protected override void CacheMetadata (System.Activities.CodeActivityMetadata metadata);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CacheMetadata(valuetype System.Activities.CodeActivityMetadata metadata) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Statements.InvokeMethod.CacheMetadata(System.Activities.CodeActivityMetadata)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="metadata" Type="System.Activities.CodeActivityMetadata" />
+      </Parameters>
+      <Docs>
+        <param name="metadata">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndExecute">
+      <MemberSignature Language="C#" Value="protected override void EndExecute (System.Activities.AsyncCodeActivityContext context, IAsyncResult result);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void EndExecute(class System.Activities.AsyncCodeActivityContext context, class System.IAsyncResult result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Statements.InvokeMethod.EndExecute(System.Activities.AsyncCodeActivityContext,System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Activities.AsyncCodeActivityContext" />
+        <Parameter Name="result" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenericTypeArguments">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;Type&gt; GenericTypeArguments { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.Type&gt; GenericTypeArguments" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Statements.InvokeMethod.GenericTypeArguments" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Type&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The generic type arguments of the contained method.</summary>
+        <value>The arguments.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The generic type arguments must only be set if the called method is generic.  
+  
+   
+  
+## Examples  
+ The following code sample demonstrates setting the GenericTypeArguments of an <xref:System.Activities.Statements.InvokeMethod> activity. This example is from the [Using the InvokeMethod Activity](~/docs/framework/windows-workflow-foundation/samples/using-the-invokemethod-activity.md) sample.  
+  
+ [!code-csharp[wfs_InvokeMethod#5](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_invokemethod/cs/program.cs#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MethodName">
+      <MemberSignature Language="C#" Value="public string MethodName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MethodName" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Statements.InvokeMethod.MethodName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The name of the method to be invoked when the activity executes.</summary>
+        <value>The method name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The invoked method must be declared as public.  
+  
+   
+  
+## Examples  
+ The following code sample demonstrates setting the MethodName property of an <xref:System.Activities.Statements.InvokeMethod> activity. This example is from the [Using the InvokeMethod Activity](~/docs/framework/windows-workflow-foundation/samples/using-the-invokemethod-activity.md) sample.  
+  
+ [!code-csharp[wfs_InvokeMethod#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_invokemethod/cs/program.cs#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parameters">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.Activities.Argument&gt; Parameters { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.Activities.Argument&gt; Parameters" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Statements.InvokeMethod.Parameters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Activities.Argument&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The parameter collection of the method to be invoked.</summary>
+        <value>The parameter collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The parameters must be added to the collection in the same order that they appear in the method signature. Parameters cannot be named `TargetObject` or `Result`.  
+  
+   
+  
+## Examples  
+ The following code sample demonstrates setting the Parameters of an <xref:System.Activities.Statements.InvokeMethod> activity. This example is from the [Using the InvokeMethod Activity](~/docs/framework/windows-workflow-foundation/samples/using-the-invokemethod-activity.md) sample.  
+  
+ [!code-csharp[wfs_InvokeMethod#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_invokemethod/cs/program.cs#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Result">
+      <MemberSignature Language="C#" Value="public System.Activities.OutArgument Result { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.OutArgument Result" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Statements.InvokeMethod.Result" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Activities.OutArgument</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The return value of the method operation.</summary>
+        <value>The operation’s return value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample demonstrates setting the Result property of an <xref:System.Activities.Statements.InvokeMethod> activity. This example is from the [Using the InvokeMethod Activity](~/docs/framework/windows-workflow-foundation/samples/using-the-invokemethod-activity.md) sample.  
+  
+ [!code-csharp[wfs_InvokeMethod#2](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_invokemethod/cs/program.cs#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RunAsynchronously">
+      <MemberSignature Language="C#" Value="public bool RunAsynchronously { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RunAsynchronously" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Statements.InvokeMethod.RunAsynchronously" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the activity’s method is invoked asynchronously.</summary>
+        <value>
+          <see langword="true" /> if the method executes asynchronously.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample demonstrates setting the RunAsynchronously property of an <xref:System.Activities.Statements.InvokeMethod> activity. This example is from the [Using the InvokeMethod Activity](~/docs/framework/windows-workflow-foundation/samples/using-the-invokemethod-activity.md) sample.  
+  
+ [!code-csharp[wfs_InvokeMethod#3](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_invokemethod/cs/program.cs#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetObject">
+      <MemberSignature Language="C#" Value="public System.Activities.InArgument TargetObject { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.InArgument TargetObject" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Statements.InvokeMethod.TargetObject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Activities.InArgument</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The object that contains the method to execute.</summary>
+        <value>The object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample demonstrates setting the TargetObject property of an <xref:System.Activities.Statements.InvokeMethod> activity. This example is from the [Using the InvokeMethod Activity](~/docs/framework/windows-workflow-foundation/samples/using-the-invokemethod-activity.md) sample.  
+  
+ [!code-csharp[wfs_InvokeMethod#3](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_invokemethod/cs/program.cs#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetType">
+      <MemberSignature Language="C#" Value="public Type TargetType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type TargetType" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Statements.InvokeMethod.TargetType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The type of the <see cref="P:System.Activities.Statements.InvokeMethod.TargetObject" />.</summary>
+        <value>The target object type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This parameter must only be set if the invoked method is static.  
+  
+   
+  
+## Examples  
+ The following code sample demonstrates setting the TargetType property of an <xref:System.Activities.Statements.InvokeMethod> activity. This example is from the [Using the InvokeMethod Activity](~/docs/framework/windows-workflow-foundation/samples/using-the-invokemethod-activity.md) sample.  
+  
+ [!code-csharp[wfs_InvokeMethod#4](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_invokemethod/cs/program.cs#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

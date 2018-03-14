@@ -1,0 +1,56 @@
+<Type Name="ObjectSelectorEditor+SelectorNode" FullName="System.ComponentModel.Design.ObjectSelectorEditor+SelectorNode">
+  <TypeSignature Language="C#" Value="public class ObjectSelectorEditor.SelectorNode : System.Windows.Forms.TreeNode" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit ObjectSelectorEditor/SelectorNode extends System.Windows.Forms.TreeNode" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ObjectSelectorEditor.SelectorNode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.TreeNode</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a node of a <see cref="T:System.Windows.Forms.TreeView" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SelectorNode (string label, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string label, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ObjectSelectorEditor.SelectorNode.#ctor(System.String,System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="label" Type="System.String" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="label">The label for the node.</param>
+        <param name="value">The <see cref="T:System.Object" /> that represents the value for the node.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.ObjectSelectorEditor.SelectorNode" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="value">
+      <MemberSignature Language="C#" Value="public object value;" />
+      <MemberSignature Language="ILAsm" Value=".field public object value" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.ObjectSelectorEditor.SelectorNode.value" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the value for the node.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

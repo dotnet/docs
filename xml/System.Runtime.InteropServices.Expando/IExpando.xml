@@ -1,0 +1,126 @@
+<Type Name="IExpando" FullName="System.Runtime.InteropServices.Expando.IExpando">
+  <TypeSignature Language="C#" Value="public interface IExpando : System.Reflection.IReflect" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IExpando implements class System.Reflection.IReflect" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.Expando.IExpando" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Reflection.IReflect</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("AFBF15E6-C37C-11d2-B88E-00A0C9B471B8")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Enables modification of objects by adding and removing members, represented by <see cref="T:System.Reflection.MemberInfo" /> objects.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddField">
+      <MemberSignature Language="C#" Value="public System.Reflection.FieldInfo AddField (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.FieldInfo AddField(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Expando.IExpando.AddField(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.FieldInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the field.</param>
+        <summary>Adds the named field to the Reflection object.</summary>
+        <returns>A <see cref="T:System.Reflection.FieldInfo" /> object representing the added field.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">The <see langword="IExpando" /> object does not support this method.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddMethod">
+      <MemberSignature Language="C#" Value="public System.Reflection.MethodInfo AddMethod (string name, Delegate method);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.MethodInfo AddMethod(string name, class System.Delegate method) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Expando.IExpando.AddMethod(System.String,System.Delegate)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.MethodInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="method" Type="System.Delegate" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the method.</param>
+        <param name="method">The delegate to the method.</param>
+        <summary>Adds the named method to the Reflection object.</summary>
+        <returns>A <see langword="MethodInfo" /> object representing the added method.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">The <see langword="IExpando" /> object does not support this method.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddProperty">
+      <MemberSignature Language="C#" Value="public System.Reflection.PropertyInfo AddProperty (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.PropertyInfo AddProperty(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Expando.IExpando.AddProperty(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PropertyInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the property.</param>
+        <summary>Adds the named property to the Reflection object.</summary>
+        <returns>A <see langword="PropertyInfo" /> object representing the added property.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">The <see langword="IExpando" /> object does not support this method.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveMember">
+      <MemberSignature Language="C#" Value="public void RemoveMember (System.Reflection.MemberInfo m);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveMember(class System.Reflection.MemberInfo m) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.Expando.IExpando.RemoveMember(System.Reflection.MemberInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="m" Type="System.Reflection.MemberInfo" />
+      </Parameters>
+      <Docs>
+        <param name="m">The member to remove.</param>
+        <summary>Removes the specified member.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">The <see langword="IExpando" /> object does not support this method.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

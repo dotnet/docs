@@ -1,0 +1,55 @@
+<Type Name="InitializingNewItemEventArgs" FullName="System.Windows.Controls.InitializingNewItemEventArgs">
+  <TypeSignature Language="C#" Value="public class InitializingNewItemEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InitializingNewItemEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.InitializingNewItemEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.Controls.DataGrid.InitializingNewItem" /> event.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InitializingNewItemEventArgs (object newItem);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object newItem) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InitializingNewItemEventArgs.#ctor(System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="newItem" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="newItem">The new item added to the <see cref="T:System.Windows.Controls.DataGrid" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.InitializingNewItemEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewItem">
+      <MemberSignature Language="C#" Value="public object NewItem { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object NewItem" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.InitializingNewItemEventArgs.NewItem" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the new item added to the <see cref="T:System.Windows.Controls.DataGrid" />.</summary>
+        <value>The new item added to the grid.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

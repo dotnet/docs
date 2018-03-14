@@ -1,0 +1,76 @@
+<Type Name="PageExecutionListener" FullName="System.Web.Instrumentation.PageExecutionListener">
+  <TypeSignature Language="C#" Value="public abstract class PageExecutionListener" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit PageExecutionListener extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Instrumentation.PageExecutionListener" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides methods that are called before and after a view engine renders output.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected PageExecutionListener ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Instrumentation.PageExecutionListener.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Instrumentation.PageExecutionListener" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginContext">
+      <MemberSignature Language="C#" Value="public abstract void BeginContext (System.Web.Instrumentation.PageExecutionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BeginContext(class System.Web.Instrumentation.PageExecutionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Instrumentation.PageExecutionListener.BeginContext(System.Web.Instrumentation.PageExecutionContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Web.Instrumentation.PageExecutionContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">The page execution context.</param>
+        <summary>Called by a view engine before it renders the output for the specified context.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndContext">
+      <MemberSignature Language="C#" Value="public abstract void EndContext (System.Web.Instrumentation.PageExecutionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndContext(class System.Web.Instrumentation.PageExecutionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Instrumentation.PageExecutionListener.EndContext(System.Web.Instrumentation.PageExecutionContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Web.Instrumentation.PageExecutionContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">The page execution context.</param>
+        <summary>Called by a view engine after it renders the output for the specified context.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,32 @@
+<siteMap>
+  <siteMapNode url="~\Home.aspx" 
+    title="Home"
+    description="Home">
+    <siteMapNode url="~\Music.aspx"
+      title="Music"
+      description="Music">
+      <siteMapNode url="~\Classical.aspx" 
+        title="Classical"
+        description="Classical"/>
+      <siteMapNode url="~\Rock.aspx"
+        title="Rock"
+        description="Rock"/>
+      <siteMapNode url="~\Jazz.aspx"
+        title="Jazz"
+        description="Jazz"/>
+    </siteMapNode>
+    <siteMapNode url="~\Movies.aspx"
+      title="Movies"
+      description="Movies">
+      <siteMapNode url="~\Action.aspx"
+        title="Action"
+        description="Action"/>
+      <siteMapNode url="~\Drama.aspx"
+        title="Drama"
+        description="Drama"/>
+      <siteMapNode url="~\Musical.aspx"
+        title="Musical"
+        description="Musical"/>
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

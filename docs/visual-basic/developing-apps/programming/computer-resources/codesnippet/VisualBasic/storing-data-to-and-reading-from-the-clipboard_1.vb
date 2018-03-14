@@ -1,0 +1,1 @@
+        MsgBox(My.Computer.Clipboard.GetText())

@@ -1,0 +1,34 @@
+<Type Name="IReadOnlySessionState" FullName="System.Web.SessionState.IReadOnlySessionState">
+  <TypeSignature Language="C#" Value="public interface IReadOnlySessionState : System.Web.SessionState.IRequiresSessionState" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IReadOnlySessionState implements class System.Web.SessionState.IRequiresSessionState" />
+  <TypeSignature Language="DocId" Value="T:System.Web.SessionState.IReadOnlySessionState" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Web.SessionState.IRequiresSessionState</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Specifies that the target HTTP handler requires only read access to session-state values. This is a marker interface and has no methods.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implement the <xref:System.Web.SessionState.IReadOnlySessionState> interface in your custom handler to identify that your handler requires only read access to session-state values.  
+  
+   
+  
+## Examples  
+ The following code example examines the current HTTP <xref:System.Web.HttpContext.Handler%2A> property to determine whether it requires only read access to session-state values.  
+  
+ [!code-csharp[HttpSessionState#31](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpSessionState/CS/snippetscs.aspx#31)]
+ [!code-vb[HttpSessionState#31](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpSessionState/VB/snippetsvb.aspx#31)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

@@ -1,0 +1,143 @@
+<Type Name="WorkflowViewState" FullName="System.Activities.Presentation.ViewState.WorkflowViewState">
+  <TypeSignature Language="C#" Value="public static class WorkflowViewState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit WorkflowViewState extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.ViewState.WorkflowViewState" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Class defining ViewStateManager and ViewStateId attached properties.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetIdRef">
+      <MemberSignature Language="C#" Value="public static string GetIdRef (object instance);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetIdRef(object instance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ViewState.WorkflowViewState.GetIdRef(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instance">Instance object to retrieve RefId attached property from an object if set.</param>
+        <summary>Specifies a Get RefId attached property value from an object if set.</summary>
+        <returns>RefId value if set; null otherwise.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetViewStateManager">
+      <MemberSignature Language="C#" Value="public static System.Activities.Presentation.ViewState.ViewStateManager GetViewStateManager (object instance);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.Presentation.ViewState.ViewStateManager GetViewStateManager(object instance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ViewState.WorkflowViewState.GetViewStateManager(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.ViewState.ViewStateManager</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instance">Instance object to retrieve ViewStateManager attached property from an object if set.</param>
+        <summary>Specifies a Get ViewStateManager attached property value from an object if set.</summary>
+        <returns>ViewStateManager object if set; null otherwise.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IdRefProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Xaml.AttachableMemberIdentifier IdRefProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Xaml.AttachableMemberIdentifier IdRefProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.ViewState.WorkflowViewState.IdRefProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.AttachableMemberIdentifier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Attachable property for IdRef.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetIdRef">
+      <MemberSignature Language="C#" Value="public static void SetIdRef (object instance, string idRef);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetIdRef(object instance, string idRef) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ViewState.WorkflowViewState.SetIdRef(System.Object,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+        <Parameter Name="idRef" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="instance">Instance object to attach IdRef property of an object.</param>
+        <param name="idRef">RefId value to attach.</param>
+        <summary>Specifies a Set IdRef as an attached property of an object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetViewStateManager">
+      <MemberSignature Language="C#" Value="public static void SetViewStateManager (object instance, System.Activities.Presentation.ViewState.ViewStateManager viewStateManager);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetViewStateManager(object instance, class System.Activities.Presentation.ViewState.ViewStateManager viewStateManager) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ViewState.WorkflowViewState.SetViewStateManager(System.Object,System.Activities.Presentation.ViewState.ViewStateManager)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+        <Parameter Name="viewStateManager" Type="System.Activities.Presentation.ViewState.ViewStateManager" />
+      </Parameters>
+      <Docs>
+        <param name="instance">Instance object to attach ViewStateManager property on.</param>
+        <param name="viewStateManager">ViewStateManager object to attach.</param>
+        <summary>Specifies a Set ViewStateManager as an attached property on an object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ViewStateManagerProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Xaml.AttachableMemberIdentifier ViewStateManagerProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Xaml.AttachableMemberIdentifier ViewStateManagerProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.ViewState.WorkflowViewState.ViewStateManagerProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.AttachableMemberIdentifier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Attachable property for ViewStateManager.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

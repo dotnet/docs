@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resource type="dir" 
+          path="/vrDir" 
+          parentPath="" 
+          content="">
+  <resource type="file" 
+            path="/vrDir/Level1FileA.vrf"
+            parentPath="/vrDir" 
+            content="This is the content of file Level1FileA." >
+  </resource>
+  <resource type="file" 
+            path="/vrDir/Level1FileB.vrf"
+            parentPath="/vrDir" 
+            content="This is the content of file Level1FileB.">
+  </resource>
+  <resource type="dir" 
+            path="/vrDir/Level2DirA" 
+            parentPath="/vrDir" 
+            content="">
+    <resource type="file" 
+              path="/vrDir/Level2DirA/Level2FileA.vrf" 
+              parentPath="/vrDir/Level2DirA" 
+              content="This is the content of file Level2FileA." >
+    </resource>
+    <resource type="file" 
+              path="/vrDir/Level2DirA/Level2FileB.vrf"
+              parentPath="/vrDir/Level2DirA" 
+              content="This is the content of file Level2FileB.">
+    </resource>
+  </resource>
+  <resource type="dir" 
+            path="/vrDir/Level2DirB" 
+            parentPath="/vrDir" 
+            content="">
+    <resource type="file" 
+              path="/vrDir/Level2DirB/Level2FileA.vrf" 
+              parentPath="/vrDir/Level2DirB" 
+              content="This is the content of file Level2FileA." >
+    </resource>
+    <resource type="file" 
+              path="/vrDir/Level2DirB/Level2FileB.vrf"
+              parentPath="/vrDir/Level2DirB" 
+              content="This is the content of file Level2FileB.">
+    </resource>
+  </resource>
+</resource>

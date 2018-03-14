@@ -1,0 +1,55 @@
+<Type Name="DpiChangedEventArgs" FullName="System.Windows.DpiChangedEventArgs">
+  <TypeSignature Language="C#" Value="public sealed class DpiChangedEventArgs : System.Windows.RoutedEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DpiChangedEventArgs extends System.Windows.RoutedEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.DpiChangedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.RoutedEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>This class passes necessary information to any listener of the <see cref="F:System.Windows.Window.DpiChangedEvent" /> event, such as when a window is moved to a monitor with different DPI, or the DPI of the current monitor changes.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="NewDpi">
+      <MemberSignature Language="C#" Value="public System.Windows.DpiScale NewDpi { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.DpiScale NewDpi" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.DpiChangedEventArgs.NewDpi" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DpiScale</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the scale information after a DPI change.</summary>
+        <value>The new DPI scale information.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OldDpi">
+      <MemberSignature Language="C#" Value="public System.Windows.DpiScale OldDpi { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.DpiScale OldDpi" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.DpiChangedEventArgs.OldDpi" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DpiScale</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the DPI scale information before a DPI change.</summary>
+        <value>Information about the previous DPI scale.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

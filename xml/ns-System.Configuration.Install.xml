@@ -1,0 +1,17 @@
+<Namespace Name="System.Configuration.Install">
+  <Docs>
+    <summary>The <see cref="N:System.Configuration.Install" /> namespace provides classes that allow you to write custom installers for your own components. The <see cref="T:System.Configuration.Install.Installer" /> class is the base class for all custom installers in the.NET Framework.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Through the <xref:System.Configuration.Install.Installer.Installers%2A> property, an installer contains a collection of other installers as children. As the installer is executed, it cycles through its children and calls <xref:System.Configuration.Install.Installer.Install%2A>, <xref:System.Configuration.Install.Installer.Commit%2A>, <xref:System.Configuration.Install.Installer.Rollback%2A>, or <xref:System.Configuration.Install.Installer.Uninstall%2A>. For an example of an object in the <xref:System.Configuration.Install.Installer.Installers%2A> collection, see <xref:System.Diagnostics.EventLogInstaller>.  
+  
+ The <xref:System.Configuration.Install.Installer.Context%2A> property contains information about the installation. For example, information about the location of the log file for the installation, the location of the file that saves information required by the <xref:System.Configuration.Install.Installer.Uninstall%2A> method, and the command line that was entered when the installation executable was run. For an example of an installation executable, see [Installutil.exe (Installer Tool)](~/docs/framework/tools/installutil-exe-installer-tool.md).  
+  
+ The <xref:System.Configuration.Install.Installer.Install%2A>, <xref:System.Configuration.Install.Installer.Commit%2A>, <xref:System.Configuration.Install.Installer.Rollback%2A>, and <xref:System.Configuration.Install.Installer.Uninstall%2A> methods are not always called on the same instance of <xref:System.Configuration.Install.Installer>. For example, you might use an <xref:System.Configuration.Install.Installer> to install and commit an application, and then release the reference to that <xref:System.Configuration.Install.Installer>. Later, uninstalling the application creates a new reference to an <xref:System.Configuration.Install.Installer>, which means that the <xref:System.Configuration.Install.Installer.Uninstall%2A> method is called on a different instance of <xref:System.Configuration.Install.Installer>. For this reason, do not save the state of a computer in an installer. Instead, use an <xref:System.Collections.IDictionary> that is preserved across calls and passed into the <xref:System.Configuration.Install.Installer.Install%2A>, <xref:System.Configuration.Install.Installer.Commit%2A>, <xref:System.Configuration.Install.Installer.Rollback%2A>, and <xref:System.Configuration.Install.Installer.Uninstall%2A> methods.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Namespace>

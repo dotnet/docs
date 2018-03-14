@@ -1,0 +1,268 @@
+<Type Name="WorkflowViewStateService" FullName="System.Activities.Presentation.View.WorkflowViewStateService">
+  <TypeSignature Language="C#" Value="public class WorkflowViewStateService : System.Activities.Presentation.View.ViewStateService" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WorkflowViewStateService extends System.Activities.Presentation.View.ViewStateService" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.View.WorkflowViewStateService" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Activities.Presentation.View.ViewStateService</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Manages the view state of the activity designer and its underlying model items.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implements <xref:System.Activities.Presentation.View.ViewStateService> and generates a text property that stores and retrieves its value from an associated control’s view state.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WorkflowViewStateService (System.Activities.Presentation.EditingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Activities.Presentation.EditingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.WorkflowViewStateService.#ctor(System.Activities.Presentation.EditingContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="context" Type="System.Activities.Presentation.EditingContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">The <see cref="T:System.Activities.Presentation.EditingContext" /> for the state service.</param>
+        <summary>Creates an instance of the <see cref="T:System.Activities.Presentation.View.WorkflowViewStateService" /> with a specified editing context.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetViewState">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.Dictionary&lt;string,object&gt; GetViewState (object instance);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.Dictionary`2&lt;string, object&gt; GetViewState(object instance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.WorkflowViewStateService.GetViewState(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instance">The object whose view state is retrieved.</param>
+        <summary>Retrieves the view state for a specified object.</summary>
+        <returns>The  <see cref="T:System.Collections.Generic.Dictionary`2" /> that contains the view state.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="instance" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveViewState">
+      <MemberSignature Language="C#" Value="public override bool RemoveViewState (System.Activities.Presentation.Model.ModelItem modelItem, string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool RemoveViewState(class System.Activities.Presentation.Model.ModelItem modelItem, string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.WorkflowViewStateService.RemoveViewState(System.Activities.Presentation.Model.ModelItem,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="modelItem" Type="System.Activities.Presentation.Model.ModelItem" />
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="modelItem">The workflow activity <see cref="T:System.Activities.Presentation.Model.ModelItem" /> associated with the current view state.</param>
+        <param name="key">The <see cref="T:System.String" /> that identifies the view state item that is stored.</param>
+        <summary>Removes the view state represented by the specified key and associated with the specified model item.</summary>
+        <returns>
+          <see langword="true" /> if the view state associated with the specified model item is found and removed; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="modelItem" /> or the <paramref name="key" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RetrieveAllViewState">
+      <MemberSignature Language="C#" Value="public override System.Collections.Generic.Dictionary&lt;string,object&gt; RetrieveAllViewState (System.Activities.Presentation.Model.ModelItem modelItem);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.Generic.Dictionary`2&lt;string, object&gt; RetrieveAllViewState(class System.Activities.Presentation.Model.ModelItem modelItem) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.WorkflowViewStateService.RetrieveAllViewState(System.Activities.Presentation.Model.ModelItem)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="modelItem" Type="System.Activities.Presentation.Model.ModelItem" />
+      </Parameters>
+      <Docs>
+        <param name="modelItem">The workflow activity <see cref="T:System.Activities.Presentation.Model.ModelItem" /> associated with the current view state.</param>
+        <summary>Retrieves the complete view state associated with a specified model item.</summary>
+        <returns>The <see cref="T:System.Collections.Generic.Dictionary`2" /> that represents the view state.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="modelItem" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RetrieveViewState">
+      <MemberSignature Language="C#" Value="public override object RetrieveViewState (System.Activities.Presentation.Model.ModelItem modelItem, string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object RetrieveViewState(class System.Activities.Presentation.Model.ModelItem modelItem, string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.WorkflowViewStateService.RetrieveViewState(System.Activities.Presentation.Model.ModelItem,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="modelItem" Type="System.Activities.Presentation.Model.ModelItem" />
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="modelItem">The workflow activity <see cref="T:System.Activities.Presentation.Model.ModelItem" /> associated with the current view state.</param>
+        <param name="key">The key that identifies the view state item that is retrieved.</param>
+        <summary>Retrieves the item that matches the specified key in the view state associated with a specified model item.</summary>
+        <returns>The item that matches the specified key in the view state associated with a specified model item.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="modelItem" /> or the <paramref name="key" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetViewState">
+      <MemberSignature Language="C#" Value="public static void SetViewState (object instance, System.Collections.Generic.Dictionary&lt;string,object&gt; value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetViewState(object instance, class System.Collections.Generic.Dictionary`2&lt;string, object&gt; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.WorkflowViewStateService.SetViewState(System.Object,System.Collections.Generic.Dictionary{System.String,System.Object})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+        <Parameter Name="value" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Object&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="instance">An object that represents the view state.</param>
+        <param name="value">The dictionary value to set.</param>
+        <summary>Sets the view state on the parameter instance specified to the dictionary value that is specified.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="instance" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StoreViewState">
+      <MemberSignature Language="C#" Value="public override void StoreViewState (System.Activities.Presentation.Model.ModelItem modelItem, string key, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void StoreViewState(class System.Activities.Presentation.Model.ModelItem modelItem, string key, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.WorkflowViewStateService.StoreViewState(System.Activities.Presentation.Model.ModelItem,System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="modelItem" Type="System.Activities.Presentation.Model.ModelItem" />
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="modelItem">The workflow activity <see cref="T:System.Activities.Presentation.Model.ModelItem" /> associated with the current view state.</param>
+        <param name="key">The <see cref="T:System.String" /> that identifies the view state item that is stored.</param>
+        <param name="value">An <see cref="T:System.Object" /> to be stored.</param>
+        <summary>Stores the item represented by a specified key in the view state associated with a specified model item.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="modelItem" /> or the <paramref name="key" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StoreViewStateWithUndo">
+      <MemberSignature Language="C#" Value="public override void StoreViewStateWithUndo (System.Activities.Presentation.Model.ModelItem modelItem, string key, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void StoreViewStateWithUndo(class System.Activities.Presentation.Model.ModelItem modelItem, string key, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.WorkflowViewStateService.StoreViewStateWithUndo(System.Activities.Presentation.Model.ModelItem,System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="modelItem" Type="System.Activities.Presentation.Model.ModelItem" />
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="modelItem">The workflow activity <see cref="T:System.Activities.Presentation.Model.ModelItem" /> associated with the current view state.</param>
+        <param name="key">The <see cref="T:System.String" /> that identifies the view state item that is stored.</param>
+        <param name="value">An <see cref="T:System.Object" /> to be stored.</param>
+        <summary>Records the current setting of the item represented by the specified key so that it is available for an undo operation and then stores the item represented by the specified key in the view state of the specified model item.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="modelItem" /> or the <paramref name="key" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="UndoableViewStateChanged">
+      <MemberSignature Language="C#" Value="public override event System.Activities.Presentation.View.ViewStateChangedEventHandler UndoableViewStateChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Activities.Presentation.View.ViewStateChangedEventHandler UndoableViewStateChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Activities.Presentation.View.WorkflowViewStateService.UndoableViewStateChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.View.ViewStateChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An event that signals that a change has been made to the undoable view state of the control.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ViewStateChanged">
+      <MemberSignature Language="C#" Value="public override event System.Activities.Presentation.View.ViewStateChangedEventHandler ViewStateChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Activities.Presentation.View.ViewStateChangedEventHandler ViewStateChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Activities.Presentation.View.WorkflowViewStateService.ViewStateChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.View.ViewStateChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An event that signals that a change has been made to the view state of the control.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ViewStateName">
+      <MemberSignature Language="C#" Value="public static readonly System.Xaml.AttachableMemberIdentifier ViewStateName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Xaml.AttachableMemberIdentifier ViewStateName" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.WorkflowViewStateService.ViewStateName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.AttachableMemberIdentifier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the name of the state.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

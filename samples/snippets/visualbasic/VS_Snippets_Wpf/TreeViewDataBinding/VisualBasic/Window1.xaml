@@ -1,0 +1,76 @@
+<Window x:Class="TreeViewDataBinding.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="TreeViewDataBinding"
+    xmlns:EngNews="clr-namespace:TreeViewDataBinding"
+    >
+
+  <Window.Resources>
+    <ObjectDataProvider x:Key="EasternHemisphereDataSource"
+           ObjectType="{x:Type EngNews:EasternHemisphereNewspapers}"/>
+
+    <ObjectDataProvider x:Key="WesternHemisphereDataSource"
+           ObjectType="{x:Type EngNews:WesternHemisphereNewspapers}"/>
+    <DataTemplate x:Key="NewspaperTVItem">
+      <DockPanel>
+        <Image Source="images\icon.jpg"/>
+        <TextBlock VerticalAlignment="center" Text ="{Binding Path=Name}"/>
+      </DockPanel>
+    </DataTemplate>
+    <DataTemplate x:Key="WesternHemisphereHeaderTemplate">
+      <DockPanel>
+        <Ellipse Width="7" Height="7"  Fill="Blue" DockPanel.Dock="Left"/>
+        <TextBlock Margin="2,0,0,0" VerticalAlignment="Center" 
+                   DockPanel.Dock="Right">
+          Western Hemisphere
+        </TextBlock>
+      </DockPanel>
+    </DataTemplate>
+    <DataTemplate x:Key="EasternHemisphereHeaderTemplate">
+      <DockPanel>
+        <Ellipse Width="7" Height="7"  Fill="Blue" DockPanel.Dock="Left"/>
+        <TextBlock Margin="2,0,0,0" VerticalAlignment="Center" 
+                   DockPanel.Dock="Right">
+          Eastern Hemisphere
+        </TextBlock>
+      </DockPanel>
+    </DataTemplate>
+  </Window.Resources>
+
+  <Grid>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="225"/>
+      <ColumnDefinition/>
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition/>
+    </Grid.RowDefinitions>
+
+    <StackPanel Grid.Row="0" Grid.Column="0">
+
+      <TextBlock>English Newspapers</TextBlock>
+
+      <TreeView Name="EnglishNewspapers" 
+          SelectedItemChanged="SelectedNewspaperChanged">
+        <TreeViewItem HeaderTemplate="{StaticResource 
+                             WesternHemisphereHeaderTemplate}" 
+                      ItemsSource="{Binding Source=
+                             {StaticResource WesternHemisphereDataSource}}"
+                      ItemTemplate="{StaticResource NewspaperTVItem}"/>
+        <TreeViewItem HeaderTemplate="{StaticResource 
+                              EasternHemisphereHeaderTemplate}"
+                      ItemsSource="{Binding Source=
+                             {StaticResource EasternHemisphereDataSource}}"
+                      ItemTemplate="{StaticResource NewspaperTVItem}"/>
+      </TreeView>
+
+    </StackPanel>
+
+    <Frame Name = "NewspaperFrame" Grid.Row="0" Grid.Column="1" 
+           Background="LightBlue" 
+           Content="Expand the Treeview control in the left pane and then click a newspaper to load it into this frame."/>
+
+    <GridSplitter Grid.Row="0" Grid.Column="0"/>
+  </Grid>
+
+</Window>

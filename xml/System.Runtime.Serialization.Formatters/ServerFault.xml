@@ -1,0 +1,115 @@
+<Type Name="ServerFault" FullName="System.Runtime.Serialization.Formatters.ServerFault">
+  <TypeSignature Language="C#" Value="public sealed class ServerFault" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit ServerFault extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.Formatters.ServerFault" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.Remoting.Metadata.SoapType(Embedded=true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Contains information for a server fault. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Serialization.Formatters.ServerFault> object is used to hold information about an exception that was thrown on the server to the client. The <xref:System.Runtime.Serialization.Formatters.ServerFault> is transmitted in SOAP format.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServerFault (string exceptionType, string message, string stackTrace);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string exceptionType, string message, string stackTrace) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatters.ServerFault.#ctor(System.String,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="exceptionType" Type="System.String" />
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="stackTrace" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="exceptionType">The type of the exception that occurred on the server.</param>
+        <param name="message">The message that accompanied the exception.</param>
+        <param name="stackTrace">The stack trace of the thread that threw the exception on the server.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.Formatters.ServerFault" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExceptionMessage">
+      <MemberSignature Language="C#" Value="public string ExceptionMessage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ExceptionMessage" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.ServerFault.ExceptionMessage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the exception message that accompanied the exception thrown on the server.</summary>
+        <value>The exception message that accompanied the exception thrown on the server.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExceptionType">
+      <MemberSignature Language="C#" Value="public string ExceptionType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ExceptionType" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.ServerFault.ExceptionType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the type of exception that was thrown by the server.</summary>
+        <value>The type of exception that was thrown by the server.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StackTrace">
+      <MemberSignature Language="C#" Value="public string StackTrace { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string StackTrace" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.ServerFault.StackTrace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the stack trace of the thread that threw the exception on the server.</summary>
+        <value>The stack trace of the thread that threw the exception on the server.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,82 @@
+<Type Name="PointHitTestParameters" FullName="System.Windows.Media.PointHitTestParameters">
+  <TypeSignature Language="C#" Value="public class PointHitTestParameters : System.Windows.Media.HitTestParameters" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PointHitTestParameters extends System.Windows.Media.HitTestParameters" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.PointHitTestParameters" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Media.HitTestParameters</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Specifies a <see cref="T:System.Windows.Point" /> as the parameter to be used for hit testing of a visual object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.PointHitTestParameters> class is for discrete coordinate hit testing, such as might be returned by a device. You can also hit test with a <xref:System.Windows.Media.Geometry> by creating a <xref:System.Windows.Media.GeometryHitTestParameters> object.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PointHitTestParameters (System.Windows.Point point);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Point point) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.PointHitTestParameters.#ctor(System.Windows.Point)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="point" Type="System.Windows.Point" />
+      </Parameters>
+      <Docs>
+        <param name="point">The parameter that is specified as the <see cref="T:System.Windows.Point" /> value.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.PointHitTestParameters" /> class, using a <see cref="T:System.Windows.Point" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to invoke <xref:System.Windows.Media.VisualTreeHelper.HitTest%2A> by using a <xref:System.Windows.Media.PointHitTestParameters> value.  
+  
+ [!code-csharp[HitTestingOverview#101](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTestingOverview/CSharp/Window1.xaml.cs#101)]
+ [!code-vb[HitTestingOverview#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTestingOverview/visualbasic/window1.xaml.vb#101)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HitPoint">
+      <MemberSignature Language="C#" Value="public System.Windows.Point HitPoint { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Point HitPoint" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.PointHitTestParameters.HitPoint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Point</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Point" /> against which to hit test.</summary>
+        <value>The <see cref="T:System.Windows.Point" /> against which to hit test.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to override default hit test support in a user-defined visual object. In this case, the <xref:System.Windows.Media.PointHitTestParameters.HitPoint%2A> value is simply returned as part of <xref:System.Windows.Media.PointHitTestResult>.  
+  
+ [!code-csharp[HitTestingOverview#107](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTestingOverview/CSharp/Window1.xaml.cs#107)]
+ [!code-vb[HitTestingOverview#107](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTestingOverview/visualbasic/window1.xaml.vb#107)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

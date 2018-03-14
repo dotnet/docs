@@ -1,0 +1,98 @@
+<Type Name="MediaState" FullName="System.Windows.Controls.MediaState">
+  <TypeSignature Language="C#" Value="public enum MediaState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MediaState extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.MediaState" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the states that can be applied to a <see cref="T:System.Windows.Controls.MediaElement" /> for the <see cref="P:System.Windows.Controls.MediaElement.LoadedBehavior" /> and <see cref="P:System.Windows.Controls.MediaElement.UnloadedBehavior" /> properties.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="Close" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.MediaState Close = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MediaState.Close" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.MediaState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The state used to close the media. All media resources are released (including video memory).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Manual">
+      <MemberSignature Language="C#" Value="Manual" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.MediaState Manual = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MediaState.Manual" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.MediaState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The state used to control a <see cref="T:System.Windows.Controls.MediaElement" /> manually. Interactive methods like <see cref="M:System.Windows.Controls.MediaElement.Play" /> and <see cref="M:System.Windows.Controls.MediaElement.Pause" /> can be used. Media will preroll but not play when the <see cref="T:System.Windows.Controls.MediaElement" /> is assigned valid media source.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Pause">
+      <MemberSignature Language="C#" Value="Pause" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.MediaState Pause = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MediaState.Pause" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.MediaState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The state used to pause the media. Media will preroll but remains paused when the <see cref="T:System.Windows.Controls.MediaElement" /> is assigned valid media source.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Play">
+      <MemberSignature Language="C#" Value="Play" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.MediaState Play = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MediaState.Play" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.MediaState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The state used to play the media. . Media will preroll automatically being playback when the <see cref="T:System.Windows.Controls.MediaElement" /> is assigned valid media source.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Stop">
+      <MemberSignature Language="C#" Value="Stop" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.MediaState Stop = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MediaState.Stop" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.MediaState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The state used to stop the media. Media will preroll but not play when the <see cref="T:System.Windows.Controls.MediaElement" /> is assigned valid media source. Media resources are not released.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

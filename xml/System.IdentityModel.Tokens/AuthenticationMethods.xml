@@ -1,0 +1,281 @@
+<Type Name="AuthenticationMethods" FullName="System.IdentityModel.Tokens.AuthenticationMethods">
+  <TypeSignature Language="C#" Value="public static class AuthenticationMethods" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit AuthenticationMethods extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.AuthenticationMethods" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines constants for supported well-known authentication methods. Defines constants for SAML authentication methods.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ These constants define URIs for well-known authentication methods. These authentication methods map to well-known SAML authentication methods.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="HardwareToken">
+      <MemberSignature Language="C#" Value="public const string HardwareToken;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string HardwareToken" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.AuthenticationMethods.HardwareToken" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Authentication by using a hardware token, http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/hardwaretoken.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Kerberos">
+      <MemberSignature Language="C#" Value="public const string Kerberos;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Kerberos" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.AuthenticationMethods.Kerberos" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Authentication by using the Kerberos protocol, http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/kerberos.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Namespace">
+      <MemberSignature Language="C#" Value="public const string Namespace;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Namespace" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.AuthenticationMethods.Namespace" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The namespace for the well-known authentication methods, http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Password">
+      <MemberSignature Language="C#" Value="public const string Password;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Password" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.AuthenticationMethods.Password" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Authentication by using a password, http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/password.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pgp">
+      <MemberSignature Language="C#" Value="public const string Pgp;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Pgp" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.AuthenticationMethods.Pgp" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Authentication by using a key authenticated by a PGP web of trust, http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/pgp.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecureRemotePassword">
+      <MemberSignature Language="C#" Value="public const string SecureRemotePassword;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string SecureRemotePassword" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.AuthenticationMethods.SecureRemotePassword" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Authentication by using the Secure Remote Password protocol, http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/secureremotepassword.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Signature">
+      <MemberSignature Language="C#" Value="public const string Signature;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Signature" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.AuthenticationMethods.Signature" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Authentication by using an XML digital signature, http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/signature.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Smartcard">
+      <MemberSignature Language="C#" Value="public const string Smartcard;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Smartcard" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.AuthenticationMethods.Smartcard" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Authentication by using a smartcard, http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/smartcard.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SmartcardPki">
+      <MemberSignature Language="C#" Value="public const string SmartcardPki;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string SmartcardPki" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.AuthenticationMethods.SmartcardPki" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Authentication by using a smartcard PKI, http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/smartcardpki.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Spki">
+      <MemberSignature Language="C#" Value="public const string Spki;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Spki" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.AuthenticationMethods.Spki" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Authentication on a key authenticated using an SPKI PKI, http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/spki.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TlsClient">
+      <MemberSignature Language="C#" Value="public const string TlsClient;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string TlsClient" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.AuthenticationMethods.TlsClient" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Authentication by using either the SSL or TLS protocol with certificate-based client authentication, http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/tlsclient.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unspecified">
+      <MemberSignature Language="C#" Value="public const string Unspecified;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Unspecified" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.AuthenticationMethods.Unspecified" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Authentication by using an unspecified method, http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/unspecified.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Windows">
+      <MemberSignature Language="C#" Value="public const string Windows;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Windows" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.AuthenticationMethods.Windows" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Windows authentication, http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/windows.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="X509">
+      <MemberSignature Language="C#" Value="public const string X509;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string X509" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.AuthenticationMethods.X509" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Authentication on a key authenticated using an X.509 PKI, http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/x509.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xkms">
+      <MemberSignature Language="C#" Value="public const string Xkms;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Xkms" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.AuthenticationMethods.Xkms" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Authentication on a key authenticated using an XKMS trust service, http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/xkms.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,97 @@
+<Type Name="MediaPermissionVideo" FullName="System.Security.Permissions.MediaPermissionVideo">
+  <TypeSignature Language="C#" Value="public enum MediaPermissionVideo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MediaPermissionVideo extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Permissions.MediaPermissionVideo" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the permission level for video.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this enumeration to set the <xref:System.Security.Permissions.MediaPermission.Video%2A> property of the <xref:System.Security.Permissions.MediaPermission> class. The default is SafeVideo.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Security.Permissions.MediaPermissionAttribute.Video%2A> property.  
+  
+ [!code-csharp[SecurityPermissionsSnippets#MediaPermissionAttribute10](~/samples/snippets/csharp/VS_Snippets_Wpf/SecurityPermissionsSnippets/CSharp/Window1.xaml.cs#mediapermissionattribute10)]
+ [!code-vb[SecurityPermissionsSnippets#MediaPermissionAttribute10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SecurityPermissionsSnippets/visualbasic/window1.xaml.vb#mediapermissionattribute10)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AllVideo">
+      <MemberSignature Language="C#" Value="AllVideo" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.MediaPermissionVideo AllVideo = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.MediaPermissionVideo.AllVideo" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.MediaPermissionVideo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Permission that allows unrestricted video playback.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoVideo">
+      <MemberSignature Language="C#" Value="NoVideo" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.MediaPermissionVideo NoVideo = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.MediaPermissionVideo.NoVideo" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.MediaPermissionVideo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Permission that denies all video playback.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SafeVideo">
+      <MemberSignature Language="C#" Value="SafeVideo" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.MediaPermissionVideo SafeVideo = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.MediaPermissionVideo.SafeVideo" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.MediaPermissionVideo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Permission that allows safe, limited video playback, which includes denying stream access to the image file.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SiteOfOriginVideo">
+      <MemberSignature Language="C#" Value="SiteOfOriginVideo" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.MediaPermissionVideo SiteOfOriginVideo = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.MediaPermissionVideo.SiteOfOriginVideo" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.MediaPermissionVideo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Permission that only allows video playback of files that are located at the application's site of origin.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

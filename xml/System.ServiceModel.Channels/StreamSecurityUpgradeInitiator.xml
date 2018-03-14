@@ -1,0 +1,69 @@
+<Type Name="StreamSecurityUpgradeInitiator" FullName="System.ServiceModel.Channels.StreamSecurityUpgradeInitiator">
+  <TypeSignature Language="C#" Value="public abstract class StreamSecurityUpgradeInitiator : System.ServiceModel.Channels.StreamUpgradeInitiator" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit StreamSecurityUpgradeInitiator extends System.ServiceModel.Channels.StreamUpgradeInitiator" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.StreamSecurityUpgradeInitiator" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ServiceModel.Channels.StreamUpgradeInitiator</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To implement a security upgrade initiator, inherit from this <see langword="abstract" /> base class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is used with <xref:System.ServiceModel.Channels.StreamSecurityUpgradeAcceptor> and <xref:System.ServiceModel.Channels.StreamSecurityUpgradeProvider> to implement a custom stream upgrade.  
+  
+ For a detailed description of the upgrade process, see <xref:System.ServiceModel.Channels.StreamUpgradeProvider>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected StreamSecurityUpgradeInitiator ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.StreamSecurityUpgradeInitiator.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.StreamSecurityUpgradeInitiator" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRemoteSecurity">
+      <MemberSignature Language="C#" Value="public abstract System.ServiceModel.Security.SecurityMessageProperty GetRemoteSecurity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Security.SecurityMessageProperty GetRemoteSecurity() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.StreamSecurityUpgradeInitiator.GetRemoteSecurity" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Security.SecurityMessageProperty</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the security message property provided on the stream for performing custom security negotiation based on the information provided in the security context.</summary>
+        <returns>Returns the <see cref="T:System.ServiceModel.Security.SecurityMessageProperty" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This information is useful for implementing a stream-level authentication mechanism based on the identities provided in the security context.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

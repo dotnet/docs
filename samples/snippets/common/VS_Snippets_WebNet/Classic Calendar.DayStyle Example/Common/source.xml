@@ -1,0 +1,26 @@
+<!--<Snippet1>-->
+
+<html>
+<head>
+
+</head>
+<body>
+
+   <form runat="server">
+
+      <h3><font face="Verdana">Calendar Example</font></h3>
+
+      <asp:Calendar id="calendar1" runat="server"
+
+         <DayStyle BackColor="gray">
+         </DayStyle>
+
+      </asp:Calendar>
+            
+   </form>
+        
+
+</body>
+</html>
+
+<!--</Snippet1>-->

@@ -1,0 +1,38 @@
+﻿@model IEnumerable<MVCRandomAnswerGenerator.Models.QuestionAndAnswer>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>ASP.NET MVC Magic 8 ball</h1>
+    <p class="lead">Ask your question, and get the answer.</p>
+</div>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+        <div class="form-group">
+            <div class="control-label col-md-2">
+                Ask your question:
+            </div>
+            @Html.TextBox("NextQuestion", "", new { @class = "form-control col-md-8" })
+            <div class="col-md-1">
+                <input type="submit" value="Ask" class="btn btn-default" />
+            </div>
+        </div>
+
+    </div>
+}
+
+<h2>Previous Questions and Answers</h2>
+@foreach (var item in Model)
+{
+<div class="row">
+    <div class="col-md-6 text-center text-muted">
+        @item.Question
+    </div>
+    <div class="col-md-6 text-center text-primary">
+        @item.Answer
+    </div>
+</div>
+}

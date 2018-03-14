@@ -1,0 +1,17 @@
+﻿
+<Window x:Class="StrokeCollectionShadow.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:my="clr-namespace:StrokeCollectionShadow"
+    Title="StrokeCollectionShadow"
+    xmlns:cc="controls"
+    >
+    <DockPanel Name="root">
+
+        <StackPanel  Background="DarkSlateBlue">
+            <Button Name="toggle3d" MinHeight="20" MaxHeight="50" MinWidth="40"
+              Click="Toggle3d_Click">Toggle 3d</Button>
+        </StackPanel>
+        <!--<cc:Ink3d ID="myInkSelector" Background="Green" />-->
+    </DockPanel>
+</Window>

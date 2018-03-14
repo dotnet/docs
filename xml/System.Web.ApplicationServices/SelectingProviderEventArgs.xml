@@ -1,0 +1,104 @@
+<Type Name="SelectingProviderEventArgs" FullName="System.Web.ApplicationServices.SelectingProviderEventArgs">
+  <TypeSignature Language="C#" Value="public class SelectingProviderEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SelectingProviderEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.ApplicationServices.SelectingProviderEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Web.ApplicationServices.RoleService.SelectingProvider" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.ApplicationServices.SelectingProviderEventArgs> class supplies values to the <xref:System.Web.ApplicationServices.RoleService.SelectingProvider> event handler. You create a <xref:System.Web.ApplicationServices.RoleService.SelectingProvider> event handler to select the role provider at run time.  
+  
+ The <xref:System.Web.ApplicationServices.RoleService> class raises the <xref:System.Web.ApplicationServices.RoleService.SelectingProvider> event when either the <xref:System.Web.ApplicationServices.RoleService.IsCurrentUserInRole%2A> method or the <xref:System.Web.ApplicationServices.RoleService.GetRolesForCurrentUser%2A> method of the <xref:System.Web.ApplicationServices.RoleService> class is called.  
+  
+ You use the <xref:System.Web.ApplicationServices.SelectingProviderEventArgs.User%2A> property to retrieve information about the logged-in user. To retrieve role information through a non-default role provider, set the <xref:System.Web.ApplicationServices.SelectingProviderEventArgs.ProviderName%2A> property to the name of the role provider that you want the <xref:System.Web.ApplicationServices.RoleService> object to use.  
+  
+   
+  
+## Examples  
+ The following example shows an event handler for the <xref:System.Web.ApplicationServices.RoleService.SelectingProvider> event. The event handler uses the <xref:System.Web.ApplicationServices.SelectingProviderEventArgs> object to check the user name and to set the role provider to use. The event handler is bound to the <xref:System.Web.ApplicationServices.RoleService.SelectingProvider> event in the `Application_Start` method of the Global.asax file.  
+  
+ [!code-csharp[System.Web.Security.SelectingProviderEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SelectingProviderEventHandler/cs/Global.asax#1)]
+ [!code-vb[System.Web.Security.SelectingProviderEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SelectingProviderEventHandler/vb/Global.asax#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ProviderName">
+      <MemberSignature Language="C#" Value="public string ProviderName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ProviderName" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ApplicationServices.SelectingProviderEventArgs.ProviderName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the role provider to use for retrieving the user's roles.</summary>
+        <value>The name of the role provider that is used to get the user's roles.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You use the <xref:System.Web.ApplicationServices.SelectingProviderEventArgs.ProviderName%2A> property to set the role provider during the <xref:System.Web.ApplicationServices.RoleService.SelectingProvider> event.  
+  
+   
+  
+## Examples  
+ The following example shows an event handler for the <xref:System.Web.ApplicationServices.RoleService.SelectingProvider> event. The event handler uses the <xref:System.Web.ApplicationServices.SelectingProviderEventArgs> object to check the user name and to set the role provider to use. The event handler is bound to the <xref:System.Web.ApplicationServices.RoleService.SelectingProvider> event in the `Application_Start` method of the Global.asax file.  
+  
+ [!code-csharp[System.Web.Security.SelectingProviderEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SelectingProviderEventHandler/cs/Global.asax#1)]
+ [!code-vb[System.Web.Security.SelectingProviderEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SelectingProviderEventHandler/vb/Global.asax#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="User">
+      <MemberSignature Language="C#" Value="public System.Security.Principal.IPrincipal User { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Principal.IPrincipal User" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ApplicationServices.SelectingProviderEventArgs.User" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Principal.IPrincipal</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the authenticated user.</summary>
+        <value>An object that contains the authenticated user.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You use the <xref:System.Web.ApplicationServices.SelectingProviderEventArgs.User%2A> property to retrieve information about the user during the <xref:System.Web.ApplicationServices.RoleService.SelectingProvider> event.  
+  
+   
+  
+## Examples  
+ The following example shows an event handler for the <xref:System.Web.ApplicationServices.RoleService.SelectingProvider> event. The event handler uses the <xref:System.Web.ApplicationServices.SelectingProviderEventArgs> object to check the user name and set the role provider to use. The event handler is bound to the <xref:System.Web.ApplicationServices.RoleService.SelectingProvider> event in the `Application_Start` method of the Global.asax file.  
+  
+ [!code-csharp[System.Web.Security.SelectingProviderEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SelectingProviderEventHandler/cs/Global.asax#1)]
+ [!code-vb[System.Web.Security.SelectingProviderEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SelectingProviderEventHandler/vb/Global.asax#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

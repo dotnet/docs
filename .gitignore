@@ -23,6 +23,7 @@ rebuild.cmd
 x64/
 x86/
 build/
+!/docs/core/build/
 bld/
 [Bb]in/
 [Oo]bj/
@@ -205,9 +206,23 @@ samples/AngularSample/src/AngularSample/wwwroot/lib
 project.lock.json
 samples/WebApplication1/src/WebApplication1/wwwroot/lib/
 
-/samples/linq/csharp/aggregate/*.xproj
-/samples/linq/csharp/aggregate/*.sln
+/samples/core/linq/csharp/aggregate/*.xproj
+/samples/core/linq/csharp/aggregate/*.sln
 
 _site/
-api/*.yml
-api/.manifest
+api_src/
+api/
+_themes/
+_themes.pdf/
+_csharplang/
+_vblang/
+log/
+.optemp/
+.openpublishing.buildcore.ps1
+# Spelling add-on file for Visual Studio Code.
+spell.json
+samples/framework/docker/MVCRandomAnswerGenerator/containerImage
+.DS_Store
+_dependentPackages/
+!/xml/System.IO.Log/
+!/xml/System.Net.Cache/

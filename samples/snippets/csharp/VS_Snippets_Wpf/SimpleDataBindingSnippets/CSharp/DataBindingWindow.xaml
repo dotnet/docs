@@ -1,0 +1,15 @@
+﻿<!--<SnippetDataBindingMARKUP1>-->
+<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="SDKSample.DataBindingWindow">
+  <!--</SnippetDataBindingMARKUP1>-->
+  <!--To Avoid repeated snippets-->
+  <!--<SnippetDataBindingMARKUP2>-->
+  <!-- Bind the TextBox to the data source (TextBox.Text to Person.Name) -->
+  <TextBox Name="personNameTextBox" Text="{Binding Path=Name}" />
+  <!--</SnippetDataBindingMARKUP2>-->
+  <!--To Avoid repeated snippets-->
+  <!--<SnippetDataBindingMARKUP3>-->
+</Window>
+<!--</SnippetDataBindingMARKUP3>-->

@@ -1,0 +1,263 @@
+<Type Name="IEventSource" FullName="Microsoft.Build.Framework.IEventSource">
+  <TypeSignature Language="C#" Value="public interface IEventSource" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IEventSource" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.IEventSource" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines the events raised by the build engine. Loggers receive an object implementing this interface in their <see cref="M:Microsoft.Build.Framework.ILogger.Initialize(Microsoft.Build.Framework.IEventSource)" /> method and use it to subscribe to the events they are interested in receiving.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to write a basic logger that responds to build events.  
+  
+ [!code-csharp[msbuild_BasicLogger#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_BasicLogger/CS/msbuild_BasicLogger.cs#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AnyEventRaised">
+      <MemberSignature Language="C#" Value="public event Microsoft.Build.Framework.AnyEventHandler AnyEventRaised;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Build.Framework.AnyEventHandler AnyEventRaised" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Build.Framework.IEventSource.AnyEventRaised" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.AnyEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a build raises any other type of build event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BuildFinished">
+      <MemberSignature Language="C#" Value="public event Microsoft.Build.Framework.BuildFinishedEventHandler BuildFinished;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Build.Framework.BuildFinishedEventHandler BuildFinished" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Build.Framework.IEventSource.BuildFinished" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.BuildFinishedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a build finishes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BuildStarted">
+      <MemberSignature Language="C#" Value="public event Microsoft.Build.Framework.BuildStartedEventHandler BuildStarted;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Build.Framework.BuildStartedEventHandler BuildStarted" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Build.Framework.IEventSource.BuildStarted" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.BuildStartedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a build starts.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomEventRaised">
+      <MemberSignature Language="C#" Value="public event Microsoft.Build.Framework.CustomBuildEventHandler CustomEventRaised;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Build.Framework.CustomBuildEventHandler CustomEventRaised" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Build.Framework.IEventSource.CustomEventRaised" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.CustomBuildEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a build raises a custom event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ErrorRaised">
+      <MemberSignature Language="C#" Value="public event Microsoft.Build.Framework.BuildErrorEventHandler ErrorRaised;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Build.Framework.BuildErrorEventHandler ErrorRaised" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Build.Framework.IEventSource.ErrorRaised" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.BuildErrorEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a build raises an error.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MessageRaised">
+      <MemberSignature Language="C#" Value="public event Microsoft.Build.Framework.BuildMessageEventHandler MessageRaised;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Build.Framework.BuildMessageEventHandler MessageRaised" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Build.Framework.IEventSource.MessageRaised" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.BuildMessageEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a build raises a message.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProjectFinished">
+      <MemberSignature Language="C#" Value="public event Microsoft.Build.Framework.ProjectFinishedEventHandler ProjectFinished;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Build.Framework.ProjectFinishedEventHandler ProjectFinished" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Build.Framework.IEventSource.ProjectFinished" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.ProjectFinishedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a project finishes building.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProjectStarted">
+      <MemberSignature Language="C#" Value="public event Microsoft.Build.Framework.ProjectStartedEventHandler ProjectStarted;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Build.Framework.ProjectStartedEventHandler ProjectStarted" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Build.Framework.IEventSource.ProjectStarted" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.ProjectStartedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a project starts building.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StatusEventRaised">
+      <MemberSignature Language="C#" Value="public event Microsoft.Build.Framework.BuildStatusEventHandler StatusEventRaised;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Build.Framework.BuildStatusEventHandler StatusEventRaised" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Build.Framework.IEventSource.StatusEventRaised" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.BuildStatusEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a build raises a status event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetFinished">
+      <MemberSignature Language="C#" Value="public event Microsoft.Build.Framework.TargetFinishedEventHandler TargetFinished;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Build.Framework.TargetFinishedEventHandler TargetFinished" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Build.Framework.IEventSource.TargetFinished" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.TargetFinishedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a target finishes building.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetStarted">
+      <MemberSignature Language="C#" Value="public event Microsoft.Build.Framework.TargetStartedEventHandler TargetStarted;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Build.Framework.TargetStartedEventHandler TargetStarted" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Build.Framework.IEventSource.TargetStarted" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.TargetStartedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a target starts building.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TaskFinished">
+      <MemberSignature Language="C#" Value="public event Microsoft.Build.Framework.TaskFinishedEventHandler TaskFinished;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Build.Framework.TaskFinishedEventHandler TaskFinished" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Build.Framework.IEventSource.TaskFinished" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.TaskFinishedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a task completes execution.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TaskStarted">
+      <MemberSignature Language="C#" Value="public event Microsoft.Build.Framework.TaskStartedEventHandler TaskStarted;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Build.Framework.TaskStartedEventHandler TaskStarted" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Build.Framework.IEventSource.TaskStarted" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.TaskStartedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a task begins execution.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WarningRaised">
+      <MemberSignature Language="C#" Value="public event Microsoft.Build.Framework.BuildWarningEventHandler WarningRaised;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Build.Framework.BuildWarningEventHandler WarningRaised" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Build.Framework.IEventSource.WarningRaised" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.BuildWarningEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a build raises a warning.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

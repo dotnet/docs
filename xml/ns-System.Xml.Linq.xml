@@ -1,0 +1,27 @@
+<Namespace Name="System.Xml.Linq">
+  <Docs>
+    <summary>Contains the classes for LINQ to XML. LINQ to XML is an in-memory XML programming interface that enables you to modify XML documents efficiently and easily.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Using LINQ to XML, you can:  
+  
+-   Load XML from files or streams.  
+  
+-   Serialize XML to files or streams.  
+  
+-   Create XML trees from scratch using functional construction.  
+  
+-   Query XML trees using LINQ queries.  
+  
+-   Manipulate in-memory XML trees.  
+  
+-   Validate XML trees using XSD.  
+  
+-   Use a combination of these features to transform XML trees from one shape into another.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Namespace>

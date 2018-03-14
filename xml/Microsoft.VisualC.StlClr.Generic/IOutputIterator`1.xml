@@ -1,0 +1,23 @@
+<Type Name="IOutputIterator&lt;TValue&gt;" FullName="Microsoft.VisualC.StlClr.Generic.IOutputIterator&lt;TValue&gt;">
+  <TypeSignature Language="C#" Value="public interface IOutputIterator&lt;TValue&gt; : Microsoft.VisualC.StlClr.Generic.IBaseIterator&lt;TValue&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IOutputIterator`1&lt;TValue&gt; implements class Microsoft.VisualC.StlClr.Generic.IBaseIterator`1&lt;!TValue&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.Generic.IOutputIterator`1" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TValue" />
+  </TypeParameters>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.VisualC.StlClr.Generic.IBaseIterator&lt;TValue&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="TValue">[!INCLUDE[cpp_iter_arg](~/includes/cpp-iter-arg-md.md)]</typeparam>
+    <summary>Interface for an iterator that is used to write a sequence to a container only in the forward direction. The element that the iterator points to can be written to only one time.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

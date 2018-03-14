@@ -1,0 +1,42 @@
+<Type Name="ActivityArgumentHelper" FullName="System.Activities.Presentation.Metadata.ActivityArgumentHelper">
+  <TypeSignature Language="C#" Value="public static class ActivityArgumentHelper" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ActivityArgumentHelper extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Metadata.ActivityArgumentHelper" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides additional functionalities regarding activity arguments.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="RegisterAccessorsGenerator">
+      <MemberSignature Language="C#" Value="public static void RegisterAccessorsGenerator (Type activityType, Func&lt;System.Activities.Activity,System.Collections.Generic.IEnumerable&lt;System.Activities.Presentation.ArgumentAccessor&gt;&gt; argumentAccessorsGenerator);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterAccessorsGenerator(class System.Type activityType, class System.Func`2&lt;class System.Activities.Activity, class System.Collections.Generic.IEnumerable`1&lt;class System.Activities.Presentation.ArgumentAccessor&gt;&gt; argumentAccessorsGenerator) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Metadata.ActivityArgumentHelper.RegisterAccessorsGenerator(System.Type,System.Func{System.Activities.Activity,System.Collections.Generic.IEnumerable{System.Activities.Presentation.ArgumentAccessor}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activityType" Type="System.Type" />
+        <Parameter Name="argumentAccessorsGenerator" Type="System.Func&lt;System.Activities.Activity,System.Collections.Generic.IEnumerable&lt;System.Activities.Presentation.ArgumentAccessor&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="activityType">The activity type.</param>
+        <param name="argumentAccessorsGenerator">A function which takes in an activity instance (of type activityType) and returns a list of ArgumentAccessors.</param>
+        <summary>Registers with an activity type a function to generate a list of ArgumentAccessors.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

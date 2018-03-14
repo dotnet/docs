@@ -1,0 +1,97 @@
+<Type Name="HttpRequestMessageExtensionMethods" FullName="System.ServiceModel.Channels.HttpRequestMessageExtensionMethods">
+  <TypeSignature Language="C#" Value="public static class HttpRequestMessageExtensionMethods" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit HttpRequestMessageExtensionMethods extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.HttpRequestMessageExtensionMethods" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Channels</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides extension methods for accessing user principal associated with the HTTP request message.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetUserPrincipal">
+      <MemberSignature Language="C#" Value="public static System.Security.Principal.IPrincipal GetUserPrincipal (this System.Net.Http.HttpRequestMessage httpRequestMessage);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Principal.IPrincipal GetUserPrincipal(class System.Net.Http.HttpRequestMessage httpRequestMessage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.HttpRequestMessageExtensionMethods.GetUserPrincipal(System.Net.Http.HttpRequestMessage)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Principal.IPrincipal</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="httpRequestMessage" Type="System.Net.Http.HttpRequestMessage" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="httpRequestMessage">The HTTP request message from which to get the user principal.</param>
+        <summary>Gets the user principal associated with the specified HTTP request message.</summary>
+        <returns>The user principal associated with the specified HTTP request message.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetUserPrincipal">
+      <MemberSignature Language="C#" Value="public static void SetUserPrincipal (this System.Net.Http.HttpRequestMessage httpRequestMessage, System.Security.Principal.IPrincipal user);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetUserPrincipal(class System.Net.Http.HttpRequestMessage httpRequestMessage, class System.Security.Principal.IPrincipal user) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.HttpRequestMessageExtensionMethods.SetUserPrincipal(System.Net.Http.HttpRequestMessage,System.Security.Principal.IPrincipal)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="httpRequestMessage" Type="System.Net.Http.HttpRequestMessage" RefType="this" />
+        <Parameter Name="user" Type="System.Security.Principal.IPrincipal" />
+      </Parameters>
+      <Docs>
+        <param name="httpRequestMessage">The HTTP request message from which to set the user principal.</param>
+        <param name="user">The user principal to set.</param>
+        <summary>Replaces the user principal associated with the specified HTTP request message.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToMessage">
+      <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.Message ToMessage (this System.Net.Http.HttpRequestMessage httpRequestMessage);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.Message ToMessage(class System.Net.Http.HttpRequestMessage httpRequestMessage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.HttpRequestMessageExtensionMethods.ToMessage(System.Net.Http.HttpRequestMessage)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Channels</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="httpRequestMessage" Type="System.Net.Http.HttpRequestMessage" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="httpRequestMessage">The <see cref="T:System.Net.Http.HttpRequestMessage" /> from which to create the <see cref="T:System.ServiceModel.Channels.Message" /> instance.</param>
+        <summary>Creates a <see cref="T:System.ServiceModel.Channels.Message" /> instance from an <see cref="T:System.Net.Http.HttpRequestMessage" /> instance.</summary>
+        <returns>The new <see cref="T:System.ServiceModel.Channels.Message" /> instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Channels.Message> instance can be read, written and copied  just as a traditional <xref:System.ServiceModel.Channels.ByteStreamMessage> instance. The <xref:System.ServiceModel.Channels.Message> instance can also "read" to retrieve the original <xref:System.Net.Http.HttpRequestMessage> instance by calling the <xref:System.ServiceModel.Channels.MessageExtensionMethods.ToHttpRequestMessage%2A> extension method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

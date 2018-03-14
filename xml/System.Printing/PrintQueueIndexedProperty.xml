@@ -1,0 +1,338 @@
+<Type Name="PrintQueueIndexedProperty" FullName="System.Printing.PrintQueueIndexedProperty">
+  <TypeSignature Language="C#" Value="public enum PrintQueueIndexedProperty" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PrintQueueIndexedProperty extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Printing.PrintQueueIndexedProperty" />
+  <AssemblyInfo>
+    <AssemblyName>System.Printing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the properties that are initialized when a <see cref="T:System.Printing.PrintQueue" /> object is constructed.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AveragePagesPerMinute">
+      <MemberSignature Language="C#" Value="AveragePagesPerMinute" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueIndexedProperty AveragePagesPerMinute = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueIndexedProperty.AveragePagesPerMinute" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueIndexedProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The speed of the print queue.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Comment">
+      <MemberSignature Language="C#" Value="Comment" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueIndexedProperty Comment = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueIndexedProperty.Comment" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueIndexedProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A comment specific to the print queue.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultPrintTicket">
+      <MemberSignature Language="C#" Value="DefaultPrintTicket" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueIndexedProperty DefaultPrintTicket = int32(19)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueIndexedProperty.DefaultPrintTicket" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueIndexedProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The default print ticket object.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultPriority">
+      <MemberSignature Language="C#" Value="DefaultPriority" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueIndexedProperty DefaultPriority = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueIndexedProperty.DefaultPriority" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueIndexedProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The default priority.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="Description" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueIndexedProperty Description = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueIndexedProperty.Description" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueIndexedProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The description of the queue.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HostingPrintServer">
+      <MemberSignature Language="C#" Value="HostingPrintServer" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueIndexedProperty HostingPrintServer = int32(15)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueIndexedProperty.HostingPrintServer" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueIndexedProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The host print server.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Location">
+      <MemberSignature Language="C#" Value="Location" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueIndexedProperty Location = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueIndexedProperty.Location" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueIndexedProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The location of the physical printer.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="Name" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueIndexedProperty Name = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueIndexedProperty.Name" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueIndexedProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The name of the print queue.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberOfJobs">
+      <MemberSignature Language="C#" Value="NumberOfJobs" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueIndexedProperty NumberOfJobs = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueIndexedProperty.NumberOfJobs" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueIndexedProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The number of jobs in the print queue.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Priority">
+      <MemberSignature Language="C#" Value="Priority" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueIndexedProperty Priority = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueIndexedProperty.Priority" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueIndexedProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The priority of the print queue relative to other print queues serving the same printer.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="QueueAttributes">
+      <MemberSignature Language="C#" Value="QueueAttributes" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueIndexedProperty QueueAttributes = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueIndexedProperty.QueueAttributes" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueIndexedProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The attributes of the print queue.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="QueueDriver">
+      <MemberSignature Language="C#" Value="QueueDriver" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueIndexedProperty QueueDriver = int32(12)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueIndexedProperty.QueueDriver" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueIndexedProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The printer driver for the queue.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="QueuePort">
+      <MemberSignature Language="C#" Value="QueuePort" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueIndexedProperty QueuePort = int32(13)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueIndexedProperty.QueuePort" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueIndexedProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The printer port used by the print queue.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="QueuePrintProcessor">
+      <MemberSignature Language="C#" Value="QueuePrintProcessor" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueIndexedProperty QueuePrintProcessor = int32(14)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueIndexedProperty.QueuePrintProcessor" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueIndexedProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The print processor for the print queue.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="QueueStatus">
+      <MemberSignature Language="C#" Value="QueueStatus" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueIndexedProperty QueueStatus = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueIndexedProperty.QueueStatus" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueIndexedProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The current status of the queue.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SeparatorFile">
+      <MemberSignature Language="C#" Value="SeparatorFile" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueIndexedProperty SeparatorFile = int32(17)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueIndexedProperty.SeparatorFile" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueIndexedProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The path to the separator file.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ShareName">
+      <MemberSignature Language="C#" Value="ShareName" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueIndexedProperty ShareName = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueIndexedProperty.ShareName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueIndexedProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The share name of the queue.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StartTimeOfDay">
+      <MemberSignature Language="C#" Value="StartTimeOfDay" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueIndexedProperty StartTimeOfDay = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueIndexedProperty.StartTimeOfDay" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueIndexedProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The time of day that the queue begins printing its jobs.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UntilTimeOfDay">
+      <MemberSignature Language="C#" Value="UntilTimeOfDay" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueIndexedProperty UntilTimeOfDay = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueIndexedProperty.UntilTimeOfDay" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueIndexedProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The time of day that the queue stops printing jobs.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UserPrintTicket">
+      <MemberSignature Language="C#" Value="UserPrintTicket" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueIndexedProperty UserPrintTicket = int32(18)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueIndexedProperty.UserPrintTicket" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueIndexedProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The print ticket for the user.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

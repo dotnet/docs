@@ -1,0 +1,87 @@
+<Type Name="ReadingWritingEntityEventArgs" FullName="System.Data.Services.Client.ReadingWritingEntityEventArgs">
+  <TypeSignature Language="C#" Value="public sealed class ReadingWritingEntityEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ReadingWritingEntityEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Services.Client.ReadingWritingEntityEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Services.Client</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Gives access to the entity and an <see langword="XLinq" /> object that represents an Atom entry. <see cref="T:System.Data.Services.Client.ReadingWritingEntityEventArgs" /> is used with the <see cref="E:System.Data.Services.Client.DataServiceContext.ReadingEntity" /> and <see cref="E:System.Data.Services.Client.DataServiceContext.WritingEntity" /> events.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.Services.Client.ReadingWritingEntityEventArgs> are used with the <xref:System.Data.Services.Client.DataServiceContext.ReadingEntity> and <xref:System.Data.Services.Client.DataServiceContext.WritingEntity> events.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Data">
+      <MemberSignature Language="C#" Value="public System.Xml.Linq.XElement Data { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Linq.XElement Data" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.ReadingWritingEntityEventArgs.Data" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Xml.Linq.XElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an XML Atom entry or feed data represented as <see cref="T:System.Xml.Linq.XElement" />.</summary>
+        <value>
+          <see cref="T:System.Xml.Linq.XElement" />
+        </value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Atom entry or feed data is read from a GET request or a POST request about to be sent to the data service.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Entity">
+      <MemberSignature Language="C#" Value="public object Entity { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Entity" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.ReadingWritingEntityEventArgs.Entity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the object representation of data returned from the <see cref="P:System.Data.Services.Client.ReadingWritingEntityEventArgs.Data" /> property.</summary>
+        <value>
+          <see cref="T:System.Object" /> representation of the <see cref="P:System.Data.Services.Client.ReadingWritingEntityEventArgs.Data" /> property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This object is populated for both incoming and outgoing entities.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

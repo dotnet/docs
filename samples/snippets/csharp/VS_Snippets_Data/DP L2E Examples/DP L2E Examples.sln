@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 10
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VB", "VB\L2E_ExamplesVB.vbproj", "{F932B439-2918-4F46-B9EA-7F5C9453FB15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CS", "CS\L2E_ExamplesCS.csproj", "{868437ED-2195-40B5-BC0A-18B8F6D80ACA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F932B439-2918-4F46-B9EA-7F5C9453FB15}.Debug|x86.ActiveCfg = Debug|x86
+		{F932B439-2918-4F46-B9EA-7F5C9453FB15}.Debug|x86.Build.0 = Debug|x86
+		{F932B439-2918-4F46-B9EA-7F5C9453FB15}.Release|x86.ActiveCfg = Release|x86
+		{F932B439-2918-4F46-B9EA-7F5C9453FB15}.Release|x86.Build.0 = Release|x86
+		{868437ED-2195-40B5-BC0A-18B8F6D80ACA}.Debug|x86.ActiveCfg = Debug|x86
+		{868437ED-2195-40B5-BC0A-18B8F6D80ACA}.Debug|x86.Build.0 = Debug|x86
+		{868437ED-2195-40B5-BC0A-18B8F6D80ACA}.Release|x86.ActiveCfg = Release|x86
+		{868437ED-2195-40B5-BC0A-18B8F6D80ACA}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,91 @@
+<Type Name="RouteTable" FullName="System.Web.Routing.RouteTable">
+  <TypeSignature Language="C#" Value="public class RouteTable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RouteTable extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Routing.RouteTable" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.Web.Routing, Version=3.5.0.0, Culture=Neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Stores the URL routes for an application.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Routes are URL patterns that are used for processing requests and that can be used to construct URLs dynamically. The <xref:System.Web.Routing.RouteTable.Routes%2A> property is a `static` property (`Shared` in Visual Basic) that contains all the routes in an application that are used to specify how a URL request is matched to a class that handles the request. To specify a route, you add the route definition to the <xref:System.Web.Routing.RouteTable.Routes%2A> property. Typically, you add routes to the <xref:System.Web.Routing.RouteTable.Routes%2A> property from an event handler for the `Application_Start` event in the Global.asax file.  
+  
+ When an ASP.NET application handles a request, the application iterates through the collection of routes in the <xref:System.Web.Routing.RouteTable.Routes%2A> property to find the route that matches the format of the URL request. The order of the routes that you add to the <xref:System.Web.Routing.RouteTable.Routes%2A> property is significant, because the application uses the first route that it finds in the collection that matches the URL.  
+  
+   
+  
+## Examples  
+ The following example shows how to add a <xref:System.Web.Routing.Route> object to the <xref:System.Web.Routing.RouteTable.Routes%2A> property.  
+  
+ [!code-csharp[System.Web.Routing.RouteTable.Routes#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Routing.RouteTable.Routes/cs/Global.asax#1)]
+ [!code-vb[System.Web.Routing.RouteTable.Routes#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Routing.RouteTable.Routes/vb/Global.asax#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RouteTable ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteTable.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Routing.RouteTable" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Routes">
+      <MemberSignature Language="C#" Value="public static System.Web.Routing.RouteCollection Routes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Web.Routing.RouteCollection Routes" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Routing.RouteTable.Routes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Routing.RouteCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of objects that derive from the <see cref="T:System.Web.Routing.RouteBase" /> class.</summary>
+        <value>An object that contains all the routes in the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Routes are URL patterns that are used for processing requests and that can be used to construct URLs dynamically. The <xref:System.Web.Routing.RouteTable.Routes%2A> property is a `static` property (`Shared` in Visual Basic) that represents all the objects that are used to specify how a URL request is matched to a class that handles the request. To specify a route, you add the route definition to the <xref:System.Web.Routing.RouteTable.Routes%2A> property. Typically, you add routes to the <xref:System.Web.Routing.RouteTable.Routes%2A> property from an event handler for the `Application_Start` event in the Global.asax file.  
+  
+ When an ASP.NET application handles a request, the application iterates through the collection of routes in the <xref:System.Web.Routing.RouteTable.Routes%2A> property to find the route that matches the format of the URL request. The order of the routes that you add to the <xref:System.Web.Routing.RouteTable.Routes%2A> property is significant, because the application uses the first route in the collection that matches the URL.  
+  
+   
+  
+## Examples  
+ The following example shows how to add a <xref:System.Web.Routing.Route> object to the <xref:System.Web.Routing.RouteTable.Routes%2A> property.  
+  
+ [!code-csharp[System.Web.Routing.RouteTable.Routes#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Routing.RouteTable.Routes/cs/Global.asax#1)]
+ [!code-vb[System.Web.Routing.RouteTable.Routes#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Routing.RouteTable.Routes/vb/Global.asax#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

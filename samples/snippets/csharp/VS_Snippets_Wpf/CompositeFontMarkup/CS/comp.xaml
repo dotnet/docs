@@ -1,0 +1,79 @@
+<!--<SnippetCF>-->
+<FontFamily
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/composite-font"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:System="clr-namespace:System;assembly=mscorlib"
+    Baseline="0.9"
+    LineSpacing="1.2">
+
+    <!-- Name mapping -->
+    <FontFamily.FamilyNames>
+        <System:String x:Key="en-US">Global User Interface</System:String>
+    </FontFamily.FamilyNames>
+
+    <!-- Faces to report in font chooser UI -->
+    <FontFamily.FamilyTypefaces>
+        <FamilyTypeface
+            Weight="Normal" Stretch="Normal" Style="Normal"
+            UnderlinePosition="-0.1" UnderlineThickness="0.05"
+            StrikethroughPosition="0.3" StrikethroughThickness="0.05"
+            CapsHeight="0.5" XHeight="0.3" />
+
+        <FamilyTypeface
+            Weight="Bold" Stretch="Normal" Style="Normal"
+            UnderlinePosition="-0.1" UnderlineThickness="0.05"
+            StrikethroughPosition="0.3" StrikethroughThickness="0.05"
+            CapsHeight="0.5" XHeight="0.3" />
+    </FontFamily.FamilyTypefaces>
+
+    <!-- Character to family lookups (in lookup order) -->
+    <FontFamily.FamilyMaps>
+
+        <!--
+            Basic Latin                 0000-007F
+            Latin-1 Supplement          0080-00FF
+            Latin Extended-A            0100-017F
+            Latin Extended-B            0180-024F
+            IPA Extensions              0250-02AF
+            Spacing Modifier Letters    02B0-02FF 
+            Combining Diacritics Marks  0300-036F 
+            Greek and Coptic            0370-03FF
+            Cyrillic                    0400-04FF 
+            Cyrillic Supplement         0500-052F 
+            Phonetic Extensions         1D00-1D7F
+            Latin Extended Additional   1E00-1EFF
+            Greek Extended              1F00-1FFF
+            Alpha Pres Forms Latin      FB00-FB0F -->
+        <!-- CHS -->    
+        <FontFamilyMap
+            Unicode="0000-052F, 1D00-1FFF, FB00-FB0F"
+            Language="zh-Hans"
+            Target="Times New Roman"
+            Scale="1.0" />
+        <!-- CHT -->    
+        <FontFamilyMap
+            Unicode="0000-052F, 1D00-1FFF, FB00-FB0F"
+            Language="zh-Hant"
+            Target="Times New Roman"
+            Scale="1.0" />
+        <!-- Other (include JA and KO) -->    
+        <FontFamilyMap
+            Unicode="0000-052F, 1D00-1FFF, FB00-FB0F"
+            Target="Comic Sans MS, Verdana"
+            Scale="4.0" />
+
+        <!--
+            Armenian                    0530-058F    
+            Georgian                    10D0-10FF
+            Alpha Pres Forms Armenian   FB10-FB1C -->
+        <FontFamilyMap
+            Unicode="0530-058F, 10D0-10FF, FB10-FB1C"
+            Target="Sylfaen"
+            Scale="1.0" />
+
+        <!-- Other FontFamilyMap elements defined ... --> 
+
+    </FontFamily.FamilyMaps>
+
+</FontFamily>
+<!--</SnippetCF>-->

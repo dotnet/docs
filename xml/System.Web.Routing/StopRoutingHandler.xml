@@ -1,0 +1,119 @@
+<Type Name="StopRoutingHandler" FullName="System.Web.Routing.StopRoutingHandler">
+  <TypeSignature Language="C#" Value="public class StopRoutingHandler : System.Web.Routing.IRouteHandler" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StopRoutingHandler extends System.Object implements class System.Web.Routing.IRouteHandler" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Routing.StopRoutingHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Web.Routing.IRouteHandler</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.Web.Routing, Version=3.5.0.0, Culture=Neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides a way to specify that ASP.NET routing should not handle requests for a URL pattern.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Routing.StopRoutingHandler> class enables you to specify that ASP.NET routing should not handle certain URL requests. You prevent routing from handling certain requests by defining a route and specifying that the <xref:System.Web.Routing.StopRoutingHandler> class should be used to handle that route's pattern. When a request is handled by a <xref:System.Web.Routing.StopRoutingHandler> object, the <xref:System.Web.Routing.StopRoutingHandler> object blocks any additional processing of the request as a route. Instead, the request is processed as an ASP.NET page, Web service, or other ASP.NET endpoint.  
+  
+   
+  
+## Examples  
+ The following example shows how to prevent routing from handling requests for .axd requests.  
+  
+ [!code-csharp[System.Web.Routing.StopRoutingHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Routing.StopRoutingHandler/cs/Global.asax#1)]
+ [!code-vb[System.Web.Routing.StopRoutingHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Routing.StopRoutingHandler/vb/Global.asax#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StopRoutingHandler ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Routing.StopRoutingHandler.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Routing.StopRoutingHandler" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to prevent routing from handling requests for .axd files.  
+  
+ [!code-csharp[System.Web.Routing.StopRoutingHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Routing.StopRoutingHandler/cs/Global.asax#1)]
+ [!code-vb[System.Web.Routing.StopRoutingHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Routing.StopRoutingHandler/vb/Global.asax#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHttpHandler">
+      <MemberSignature Language="C#" Value="protected virtual System.Web.IHttpHandler GetHttpHandler (System.Web.Routing.RequestContext requestContext);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.IHttpHandler GetHttpHandler(class System.Web.Routing.RequestContext requestContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Routing.StopRoutingHandler.GetHttpHandler(System.Web.Routing.RequestContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.IHttpHandler</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="requestContext" Type="System.Web.Routing.RequestContext" />
+      </Parameters>
+      <Docs>
+        <param name="requestContext">An object that encapsulates information about the request.</param>
+        <summary>Returns the object that processes the request.</summary>
+        <returns>An object that processes the request.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.Routing.IRouteHandler.GetHttpHandler">
+      <MemberSignature Language="C#" Value="System.Web.IHttpHandler IRouteHandler.GetHttpHandler (System.Web.Routing.RequestContext requestContext);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Web.IHttpHandler System.Web.Routing.IRouteHandler.GetHttpHandler(class System.Web.Routing.RequestContext requestContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Routing.StopRoutingHandler.System#Web#Routing#IRouteHandler#GetHttpHandler(System.Web.Routing.RequestContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.IHttpHandler</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="requestContext" Type="System.Web.Routing.RequestContext" />
+      </Parameters>
+      <Docs>
+        <param name="requestContext">An object that encapsulates information about the request.</param>
+        <summary>Returns the object that processes the request.</summary>
+        <returns>An object that processes the request.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.Routing.StopRoutingHandler> instance is cast to an <xref:System.Web.Routing.IRouteHandler> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

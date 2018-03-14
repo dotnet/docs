@@ -1,0 +1,47 @@
+<Type Name="IInputIterator&lt;TValue&gt;" FullName="Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt;">
+  <TypeSignature Language="C#" Value="public interface IInputIterator&lt;TValue&gt; : Microsoft.VisualC.StlClr.Generic.IBaseIterator&lt;TValue&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IInputIterator`1&lt;TValue&gt; implements class Microsoft.VisualC.StlClr.Generic.IBaseIterator`1&lt;!TValue&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.Generic.IInputIterator`1" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TValue" />
+  </TypeParameters>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.VisualC.StlClr.Generic.IBaseIterator&lt;TValue&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="TValue">[!INCLUDE[cpp_iter_arg](~/includes/cpp-iter-arg-md.md)]</typeparam>
+    <summary>Interface for an iterator that is used to read a sequence from a container only in the forward direction. The element that the iterator points to can be read only one time, and it cannot be modified.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="equal_to">
+      <MemberSignature Language="C#" Value="public bool equal_to (Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt; A_0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool equal_to(class Microsoft.VisualC.StlClr.Generic.IInputIterator`1&lt;!TValue&gt; A_0) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.IInputIterator`1.equal_to(Microsoft.VisualC.StlClr.Generic.IInputIterator{`0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="A_0" Type="Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="A_0">The <see cref="T:Microsoft.VisualC.StlClr.Generic.IInputIterator`1" /> object to compare with the current <see cref="T:Microsoft.VisualC.StlClr.Generic.IInputIterator`1" /> object.</param>
+        <summary>Determines whether two <see cref="T:Microsoft.VisualC.StlClr.Generic.IInputIterator`1" /> objects are equal.</summary>
+        <returns>
+          <see langword="true" /> if the current iterator and the specified iterator are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

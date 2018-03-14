@@ -1,0 +1,66 @@
+<Type Name="InstanceKeyState" FullName="System.Runtime.DurableInstancing.InstanceKeyState">
+  <TypeSignature Language="C#" Value="public enum InstanceKeyState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed InstanceKeyState extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.DurableInstancing.InstanceKeyState" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Contains a list of valid states for instance keys.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Associated">
+      <MemberSignature Language="C#" Value="Associated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.DurableInstancing.InstanceKeyState Associated = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.DurableInstancing.InstanceKeyState.Associated" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.DurableInstancing.InstanceKeyState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The instance key is associated with a non-completed instance.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Completed">
+      <MemberSignature Language="C#" Value="Completed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.DurableInstancing.InstanceKeyState Completed = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.DurableInstancing.InstanceKeyState.Completed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.DurableInstancing.InstanceKeyState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The instance key was associated with an instance, which is no longer active.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="Unknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.DurableInstancing.InstanceKeyState Unknown = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.DurableInstancing.InstanceKeyState.Unknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.DurableInstancing.InstanceKeyState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The instance key is not associated with any instance.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

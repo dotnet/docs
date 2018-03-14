@@ -1,0 +1,126 @@
+<Type Name="PrintServerEventLoggingTypes" FullName="System.Printing.PrintServerEventLoggingTypes">
+  <TypeSignature Language="C#" Value="public enum PrintServerEventLoggingTypes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PrintServerEventLoggingTypes extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Printing.PrintServerEventLoggingTypes" />
+  <AssemblyInfo>
+    <AssemblyName>System.Printing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the types of events that can be logged by a <see cref="T:System.Printing.PrintServer" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this enumeration to provide the values for the <xref:System.Printing.PrintServer.EventLog%2A> property of the <xref:System.Printing.PrintServer>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="LogAllPrintingEvents">
+      <MemberSignature Language="C#" Value="LogAllPrintingEvents" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintServerEventLoggingTypes LogAllPrintingEvents = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintServerEventLoggingTypes.LogAllPrintingEvents" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintServerEventLoggingTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>All printing events.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LogPrintingErrorEvents">
+      <MemberSignature Language="C#" Value="LogPrintingErrorEvents" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintServerEventLoggingTypes LogPrintingErrorEvents = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintServerEventLoggingTypes.LogPrintingErrorEvents" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintServerEventLoggingTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Error events for printing.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LogPrintingInformationEvents">
+      <MemberSignature Language="C#" Value="LogPrintingInformationEvents" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintServerEventLoggingTypes LogPrintingInformationEvents = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintServerEventLoggingTypes.LogPrintingInformationEvents" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintServerEventLoggingTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Information events for printing.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LogPrintingSuccessEvents">
+      <MemberSignature Language="C#" Value="LogPrintingSuccessEvents" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintServerEventLoggingTypes LogPrintingSuccessEvents = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintServerEventLoggingTypes.LogPrintingSuccessEvents" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintServerEventLoggingTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Successful printing events.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LogPrintingWarningEvents">
+      <MemberSignature Language="C#" Value="LogPrintingWarningEvents" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintServerEventLoggingTypes LogPrintingWarningEvents = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintServerEventLoggingTypes.LogPrintingWarningEvents" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintServerEventLoggingTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Warning events.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintServerEventLoggingTypes None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintServerEventLoggingTypes.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintServerEventLoggingTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No events.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

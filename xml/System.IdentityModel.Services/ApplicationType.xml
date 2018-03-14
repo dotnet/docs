@@ -1,0 +1,50 @@
+<Type Name="ApplicationType" FullName="System.IdentityModel.Services.ApplicationType">
+  <TypeSignature Language="C#" Value="public enum ApplicationType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ApplicationType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.ApplicationType" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the kind of application.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AspNetWebApplication">
+      <MemberSignature Language="C#" Value="AspNetWebApplication" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IdentityModel.Services.ApplicationType AspNetWebApplication = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Services.ApplicationType.AspNetWebApplication" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Services.ApplicationType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An ASP.NET Web application.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WcfServiceApplication">
+      <MemberSignature Language="C#" Value="WcfServiceApplication" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IdentityModel.Services.ApplicationType WcfServiceApplication = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Services.ApplicationType.WcfServiceApplication" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Services.ApplicationType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A [!INCLUDE[vsindigo](~/includes/vsindigo-md.md)] application.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

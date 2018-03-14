@@ -1,0 +1,82 @@
+<Type Name="ParameterMode" FullName="System.Data.Metadata.Edm.ParameterMode">
+  <TypeSignature Language="C#" Value="public enum ParameterMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ParameterMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.ParameterMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the direction of a parameter.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="In">
+      <MemberSignature Language="C#" Value="In" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.ParameterMode In = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.ParameterMode.In" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.ParameterMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An input parameter.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InOut">
+      <MemberSignature Language="C#" Value="InOut" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.ParameterMode InOut = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.ParameterMode.InOut" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.ParameterMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Both an input and an output parameter.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Out">
+      <MemberSignature Language="C#" Value="Out" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.ParameterMode Out = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.ParameterMode.Out" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.ParameterMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An output parameter.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ReturnValue">
+      <MemberSignature Language="C#" Value="ReturnValue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.ParameterMode ReturnValue = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.ParameterMode.ReturnValue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.ParameterMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A return value of the method.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

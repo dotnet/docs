@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<definitions name="SOAPSvrMgrDefs" 
+         
+targetNamespace="http://tempuri.org/SOAPSvr/soapsvcmgr.wsdl"
+            xmlns:tns="http://tempuri.org/SOAPSvr/soapsvcmgr.wsdl"
+            xmlns:xsd1="http://tempuri.org/SOAPSvr/soapsvcmgr/headers.xsd"
+            xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+            xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+      xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+            xmlns="http://schemas.xmlsoap.org/wsdl/">
+    <types>
+         <schema targetNamespace="http://tempuri.org/SOAPSvr/soapsvcmgr/headers.xsd"
+                 xmlns="http://www.w3.org/2001/XMLSchema">
+             <complexType name="AuthCS_Struct" base="SOAP-ENC:Struct">
+                <sequence>
+              <element name="CN" type="xsd:hexBinary"/>
+                <element name="Auth" type="xsd:hexBinary"/>
+                <element name="UID" type="xsd:string"/>
+                </sequence>
+             </complexType>
+             <complexType name="AuthSC_Struct" base="SOAP-ENC:Struct">
+                <sequence>
+              <element name="AuthStatus" type="xsd:string"/>
+              <element name="CN" type="xsd:hexBinary"/>
+                <element name="SN" type="xsd:hexBinary"/>
+              <element name="RAuth" type="xsd:hexBinary"/>
+                </sequence>
+             </complexType>
+         </schema>
+    </types>
+    <message name="Soapsvcmgr_Headers_Request">
+        <part name="AuthCS" type="xsd1:AuthCS_Struct"/>
+    </message>
+    <message name="Soapsvcmgr_Headers_Response">
+        <part name="AuthSC" type="xsd1:AuthSC_Struct"/>
+    </message>
+    <message name="GetServerStats_Request">
+    </message> 
+    <message name="GetServerStats_Response">
+        <part name="return" type="xsd:boolean"/>
+        <part name="NumConnects" type="xsd:long"/>
+        <part name="NumBytesSent" type="xsd:long"/>
+        <part name="NumHTTPErrors" type="xsd:long"/>
+        <part name="NumNetErrors" type="xsd:long"/>
+        <part name="NumIntErrors" type="xsd:long"/>
+    </message>
+    <portType name="SOAPSvrMgr_portType">
+        <operation name="GetServerStats" parameterOrder="NumConnects NumBytesSent NumHTTPErrors NumNetErrors NumIntErrors">
+           <input message="tns:GetServerStats_Request"/>
+           <output message="tns:GetServerStats_Response"/>
+        </operation>       
+    </portType>    
+    <service name="MySOAPSrvMgrService"> 
+        <port name="SOAPSvrMgrPort" binding="tns:SOAPSvrMgr_SOAPBinding">
+           <soap:address location="http://localhost/SOAPSvrCP"/>
+        </port>
+    </service>
+</definitions>

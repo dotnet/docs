@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  
+  <PropertyGroup>
+    <TargetFramework>netstandard1.2</TargetFramework>
+    <AssemblyName>Library</AssemblyName>
+    <PackageId>Library</PackageId>
+  </PropertyGroup>
+
+  
+  <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard1.2' ">
+  </ItemGroup>
+
+</Project>

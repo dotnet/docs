@@ -1,0 +1,57 @@
+<Type Name="AnnoScope" FullName="Accessibility.AnnoScope">
+  <TypeSignature Language="C#" Value="public enum AnnoScope" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AnnoScope extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Accessibility.AnnoScope" />
+  <AssemblyInfo>
+    <AssemblyName>Accessibility</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>The <see cref="T:Accessibility.AnnoScope" /> and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) accessibility interface.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about <xref:Accessibility.AnnoScope>, see the documentation on `Dynamic Properties` in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ANNO_CONTAINER">
+      <MemberSignature Language="C#" Value="ANNO_CONTAINER" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Accessibility.AnnoScope ANNO_CONTAINER = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Accessibility.AnnoScope.ANNO_CONTAINER" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Accessibility</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Accessibility.AnnoScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Annotation is scoped to the container object.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ANNO_THIS">
+      <MemberSignature Language="C#" Value="ANNO_THIS" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Accessibility.AnnoScope ANNO_THIS = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Accessibility.AnnoScope.ANNO_THIS" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Accessibility</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Accessibility.AnnoScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Annotation is scoped to the immediate object.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

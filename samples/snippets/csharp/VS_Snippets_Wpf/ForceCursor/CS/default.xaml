@@ -1,0 +1,15 @@
+<!--<SnippetForceCursor>-->
+<StackPanel
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+>
+  <StackPanel Name="CursorForced" ForceCursor="true" Cursor="Hand">
+    <Label>Cursors Forced</Label>
+    <TextBox>Fill me in!</TextBox>
+  </StackPanel>
+  <StackPanel Name="CursorNotForced">
+    <Label>Cursors Not Forced</Label>
+    <TextBox>Fill me in!</TextBox>
+  </StackPanel>
+</StackPanel>
+<!--</SnippetForceCursor>-->

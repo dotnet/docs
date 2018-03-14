@@ -1,0 +1,178 @@
+<Type Name="DiagnosticSection" FullName="System.ServiceModel.Configuration.DiagnosticSection">
+  <TypeSignature Language="C#" Value="public sealed class DiagnosticSection : System.Configuration.ConfigurationSection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DiagnosticSection extends System.Configuration.ConfigurationSection" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.DiagnosticSection" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationSection</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the configuration section that defines settings that can be used by an administrator for run-time inspection and control.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DiagnosticSection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.DiagnosticSection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.DiagnosticSection" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndToEndTracing">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.EndToEndTracingElement EndToEndTracing { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.EndToEndTracingElement EndToEndTracing" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.DiagnosticSection.EndToEndTracing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("endToEndTracing", Options=System.Configuration.ConfigurationPropertyOptions.None)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Configuration.EndToEndTracingElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the End-to-End tracing configuration settings specified in a <see cref="T:System.ServiceModel.Configuration.EndToEndTracingElement" /> instance.</summary>
+        <value>Returns <see cref="T:System.ServiceModel.Configuration.EndToEndTracingElement" />, which contains End-to-End tracing configuration settings.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EtwProviderId">
+      <MemberSignature Language="C#" Value="public string EtwProviderId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string EtwProviderId" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.DiagnosticSection.EtwProviderId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("etwProviderId", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.StringValidator(MinLength=32)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the identifier for the Event-Tracing provider, which writes events to ETW sessions.</summary>
+        <value>Returns <see cref="T:System.String" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MessageLogging">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.MessageLoggingElement MessageLogging { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.MessageLoggingElement MessageLogging" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.DiagnosticSection.MessageLogging" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("messageLogging", Options=System.Configuration.ConfigurationPropertyOptions.None)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Configuration.MessageLoggingElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Describes the settings for [!INCLUDE[indigo1](~/includes/indigo1-md.md)] message logging.</summary>
+        <value>A <see cref="T:System.ServiceModel.Configuration.MessageLoggingElement" /> that describes the settings for [!INCLUDE[indigo2](~/includes/indigo2-md.md)] message logging.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PerformanceCounters">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Diagnostics.PerformanceCounterScope PerformanceCounters { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.Diagnostics.PerformanceCounterScope PerformanceCounters" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.DiagnosticSection.PerformanceCounters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("performanceCounters", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Diagnostics.PerformanceCounterScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies whether performance counters for the assembly are enabled.</summary>
+        <value>A valid <see cref="T:System.ServiceModel.Diagnostics.PerformanceCounterScope" /> value that specifies what kind of performance counters for the assembly are enabled.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.DiagnosticSection.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WmiProviderEnabled">
+      <MemberSignature Language="C#" Value="public bool WmiProviderEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool WmiProviderEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.DiagnosticSection.WmiProviderEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("wmiProviderEnabled", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies whether the WMI provider for the assembly is enabled.</summary>
+        <value>
+          <see langword="true" /> if the WMI provider for the assembly is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The WMI provider is required for users to gain runtime access to the inspection and control features of [!INCLUDE[indigo2](~/includes/indigo2-md.md)].  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

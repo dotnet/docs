@@ -1,0 +1,71 @@
+<Type Name="ISecureConversationSession" FullName="System.ServiceModel.Security.ISecureConversationSession">
+  <TypeSignature Language="C#" Value="public interface ISecureConversationSession : System.ServiceModel.Security.ISecuritySession" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISecureConversationSession implements class System.ServiceModel.Channels.ISession, class System.ServiceModel.Security.ISecuritySession" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.ISecureConversationSession" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ServiceModel.Security.ISecuritySession</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents a secure conversation security session. The communicating parties secure all messages on the session using a <see langword="SecurityContextToken" /> that is issued by the server as part of session establishment.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="TryReadSessionTokenIdentifier">
+      <MemberSignature Language="C#" Value="public bool TryReadSessionTokenIdentifier (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryReadSessionTokenIdentifier(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.ISecureConversationSession.TryReadSessionTokenIdentifier(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> with which to try to read the token.</param>
+        <summary>Tries to read the session token identifier pointed to by the XML reader.</summary>
+        <returns>
+          <see langword="true" /> if the XML pointed to by the XML reader corresponds to a <see langword="SecurityKeyIdentifierClause" /> that matches the security session's token; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is useful for sessions like WS-RM sessions that build on top of the security session and refer to the security session token's identifier as part of their session establishment protocol.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteSessionTokenIdentifier">
+      <MemberSignature Language="C#" Value="public void WriteSessionTokenIdentifier (System.Xml.XmlDictionaryWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteSessionTokenIdentifier(class System.Xml.XmlDictionaryWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.ISecureConversationSession.WriteSessionTokenIdentifier(System.Xml.XmlDictionaryWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlDictionaryWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlDictionaryWriter" /> with which to try to write the token.</param>
+        <summary>Tries to write the <see langword="SecurityKeyIdentifierClause" /> corresponding to the security session's token. This method is useful for sessions like WS-RM sessions that build on top of the security session and refer to the security session token's identifier as part of their session establishment protocol.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

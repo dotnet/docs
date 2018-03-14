@@ -1,0 +1,36 @@
+<Application
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="TabControlGrid.app"
+    StartupUri="Pane1.xaml"
+    >
+  <!-- Resources & Styles defined in this section will impact the entire application.  -->
+  <Application.Resources>
+
+    <!--<Snippet1>-->
+    <Style x:Key="SimpleTabControl" TargetType="{x:Type TabControl}">
+      <Setter Property = "TabStripPlacement" Value = "Top"/>
+      <Setter Property = "Foreground" Value= "Blue"/>
+    </Style>
+    <!--</Snippet1>-->
+
+    <!--<Snippet3>-->
+    <Style x:Key="Triggers" TargetType="{x:Type TabItem}">
+      <Style.Triggers>
+        <Trigger Property="TabItem.IsMouseOver" Value="true">
+          <Setter Property = "Foreground" Value="Green"/>
+          <Setter Property = "Background" Value="Red"/>
+        </Trigger>
+      </Style.Triggers>
+    </Style>
+    <!--</Snippet3>-->
+
+    <!--<Snippet2>-->
+    <Style x:Key="SimpleTabItem" TargetType="{x:Type TabItem}">
+      <Setter Property = "Background" Value = "Pink"/>
+      <Setter Property = "FontWeight" Value = "Bold"/>
+    </Style>
+    <!--</Snippet2>-->
+
+  </Application.Resources>
+</Application>

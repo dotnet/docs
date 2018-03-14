@@ -1,0 +1,119 @@
+<Type Name="ToolStripItemDesignerAvailability" FullName="System.Windows.Forms.Design.ToolStripItemDesignerAvailability">
+  <TypeSignature Language="C#" Value="public enum ToolStripItemDesignerAvailability" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ToolStripItemDesignerAvailability extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.ToolStripItemDesignerAvailability" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies controls that are visible in the designer.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="All">
+      <MemberSignature Language="C#" Value="All" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.ToolStripItemDesignerAvailability All = int32(15)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.ToolStripItemDesignerAvailability.All" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Design.ToolStripItemDesignerAvailability</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that all controls are visible.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ContextMenuStrip">
+      <MemberSignature Language="C#" Value="ContextMenuStrip" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.ToolStripItemDesignerAvailability ContextMenuStrip = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.ToolStripItemDesignerAvailability.ContextMenuStrip" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Design.ToolStripItemDesignerAvailability</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that <see cref="T:System.Windows.Forms.ContextMenuStrip" /> is visible.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MenuStrip">
+      <MemberSignature Language="C#" Value="MenuStrip" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.ToolStripItemDesignerAvailability MenuStrip = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.ToolStripItemDesignerAvailability.MenuStrip" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Design.ToolStripItemDesignerAvailability</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that <see cref="T:System.Windows.Forms.MenuStrip" /> is visible.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.ToolStripItemDesignerAvailability None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.ToolStripItemDesignerAvailability.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Design.ToolStripItemDesignerAvailability</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that no controls are visible.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StatusStrip">
+      <MemberSignature Language="C#" Value="StatusStrip" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.ToolStripItemDesignerAvailability StatusStrip = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.ToolStripItemDesignerAvailability.StatusStrip" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Design.ToolStripItemDesignerAvailability</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that <see cref="T:System.Windows.Forms.StatusStrip" /> is visible.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolStrip">
+      <MemberSignature Language="C#" Value="ToolStrip" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.ToolStripItemDesignerAvailability ToolStrip = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.ToolStripItemDesignerAvailability.ToolStrip" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Design.ToolStripItemDesignerAvailability</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that <see cref="T:System.Windows.Forms.ToolStrip" /> is visible.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

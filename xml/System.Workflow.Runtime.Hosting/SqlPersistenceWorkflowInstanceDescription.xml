@@ -1,0 +1,131 @@
+<Type Name="SqlPersistenceWorkflowInstanceDescription" FullName="System.Workflow.Runtime.Hosting.SqlPersistenceWorkflowInstanceDescription">
+  <TypeSignature Language="C#" Value="public class SqlPersistenceWorkflowInstanceDescription" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SqlPersistenceWorkflowInstanceDescription extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Hosting.SqlPersistenceWorkflowInstanceDescription" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Describes the workflow instances that are stored in the <see cref="T:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="IsBlocked">
+      <MemberSignature Language="C#" Value="public bool IsBlocked { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsBlocked" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Hosting.SqlPersistenceWorkflowInstanceDescription.IsBlocked" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that shows whether the workflow instance is blocked.</summary>
+        <value>
+          <see langword="true" /> if the workflow instance is blocked; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NextTimerExpiration">
+      <MemberSignature Language="C#" Value="public System.Data.SqlTypes.SqlDateTime NextTimerExpiration { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.SqlTypes.SqlDateTime NextTimerExpiration" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Hosting.SqlPersistenceWorkflowInstanceDescription.NextTimerExpiration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlTypes.SqlDateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the time in UTC format at which the next timer will expire.</summary>
+        <value>The time in UTC format at which the next timer will expire.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Status">
+      <MemberSignature Language="C#" Value="public System.Workflow.Runtime.WorkflowStatus Status { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Workflow.Runtime.WorkflowStatus Status" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Hosting.SqlPersistenceWorkflowInstanceDescription.Status" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Runtime.WorkflowStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the status of the workflow instance.</summary>
+        <value>The status of the workflow instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Possible values are: Completed, Created, Running, Suspended, Terminated. For more information, see <xref:System.Workflow.Runtime.WorkflowStatus>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuspendOrTerminateDescription">
+      <MemberSignature Language="C#" Value="public string SuspendOrTerminateDescription { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SuspendOrTerminateDescription" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Hosting.SqlPersistenceWorkflowInstanceDescription.SuspendOrTerminateDescription" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the description for the suspension or termination of the <see cref="T:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService" />.</summary>
+        <value>The description for the suspension or termination of the <see cref="T:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkflowInstanceId">
+      <MemberSignature Language="C#" Value="public Guid WorkflowInstanceId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid WorkflowInstanceId" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Hosting.SqlPersistenceWorkflowInstanceDescription.WorkflowInstanceId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the workflow instance identifier.</summary>
+        <value>The workflow instance identifier.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

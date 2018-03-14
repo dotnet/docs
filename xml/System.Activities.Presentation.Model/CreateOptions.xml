@@ -1,0 +1,55 @@
+<Type Name="CreateOptions" FullName="System.Activities.Presentation.Model.CreateOptions">
+  <TypeSignature Language="C#" Value="public enum CreateOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CreateOptions extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Model.CreateOptions" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Used by a <see cref="T:System.Activities.Presentation.Model.ModelFactory" /> instance to specify how to create a new item.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="InitializeDefaults">
+      <MemberSignature Language="C#" Value="InitializeDefaults" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Presentation.Model.CreateOptions InitializeDefaults = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Model.CreateOptions.InitializeDefaults" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.Model.CreateOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Creates the item and asks the object to perform any default initialization. This flag is generally passed in when a new control or object is being created by a user.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Presentation.Model.CreateOptions None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Model.CreateOptions.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.Model.CreateOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Creates the object and does not perform any operation on it. This is the default option when creating an item with the <see cref="T:System.Activities.Presentation.Model.ModelFactory" /> class.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

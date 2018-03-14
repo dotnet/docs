@@ -1,0 +1,2 @@
+> [!NOTE]
+>  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to Visual Basic 2008. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the .NET Framework. They are necessary only when the Visual Basic 6.0 code model differs significantly from the .NET Framework implementation.

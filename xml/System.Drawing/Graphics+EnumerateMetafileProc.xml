@@ -1,0 +1,46 @@
+<Type Name="Graphics+EnumerateMetafileProc" FullName="System.Drawing.Graphics+EnumerateMetafileProc">
+  <TypeSignature Language="C#" Value="public delegate bool Graphics.EnumerateMetafileProc(EmfPlusRecordType recordType, int flags, int dataSize, IntPtr data, PlayRecordCallback callbackData);" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed Graphics/EnumerateMetafileProc extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Graphics.EnumerateMetafileProc" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="recordType" Type="System.Drawing.Imaging.EmfPlusRecordType" />
+    <Parameter Name="flags" Type="System.Int32" />
+    <Parameter Name="dataSize" Type="System.Int32" />
+    <Parameter Name="data" Type="System.IntPtr" />
+    <Parameter Name="callbackData" Type="System.Drawing.Imaging.PlayRecordCallback" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Boolean</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="recordType">Member of the <see cref="T:System.Drawing.Imaging.EmfPlusRecordType" /> enumeration that specifies the type of metafile record.</param>
+    <param name="flags">Set of flags that specify attributes of the record.</param>
+    <param name="dataSize">Number of bytes in the record data.</param>
+    <param name="data">Pointer to a buffer that contains the record data.</param>
+    <param name="callbackData">Not used.</param>
+    <summary>Provides a callback method for the <see cref="Overload:System.Drawing.Graphics.EnumerateMetafile" /> method.</summary>
+    <returns>Return <see langword="true" /> if you want to continue enumerating records; otherwise, <see langword="false" />.</returns>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used in conjunction with the <xref:System.Drawing.Graphics.EnumerateMetafile%2A> method of the <xref:System.Drawing.Graphics> class. Certain overloads of the <xref:System.Drawing.Graphics.EnumerateMetafile%2A> method call an application-defined callback method of this type for each record in a specified metafile. The callback function can display each record (or selected records) by calling the <xref:System.Drawing.Imaging.Metafile.PlayRecord%2A> method of the <xref:System.Drawing.Imaging.Metafile> that is being enumerated.  
+  
+ A user declaration of this callback method must have the same parameters as the <xref:System.Drawing.Graphics.EnumerateMetafileProc> delegate declaration.  
+  
+   
+  
+## Examples  
+ For an example see <xref:System.Drawing.Graphics.EnumerateMetafile%2A>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

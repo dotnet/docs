@@ -1,0 +1,57 @@
+<Type Name="DataServicesSectionGroup" FullName="System.Data.Services.Configuration.DataServicesSectionGroup">
+  <TypeSignature Language="C#" Value="public sealed class DataServicesSectionGroup : System.Configuration.ConfigurationSectionGroup" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DataServicesSectionGroup extends System.Configuration.ConfigurationSectionGroup" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Services.Configuration.DataServicesSectionGroup" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationSectionGroup</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the DataServicesSectionGroup configuration section group.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataServicesSectionGroup ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.Configuration.DataServicesSectionGroup.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Services.Configuration.DataServicesSectionGroup" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Features">
+      <MemberSignature Language="C#" Value="public System.Data.Services.Configuration.DataServicesFeaturesSection Features { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Services.Configuration.DataServicesFeaturesSection Features" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Configuration.DataServicesSectionGroup.Features" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("features")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Configuration.DataServicesFeaturesSection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the DataServicesFeaturesSection instance associated with the DataServicesSectionGroup.</summary>
+        <value>A DataServicesFeaturesSection instance.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

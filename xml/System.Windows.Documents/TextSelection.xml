@@ -1,0 +1,25 @@
+<Type Name="TextSelection" FullName="System.Windows.Documents.TextSelection">
+  <TypeSignature Language="C#" Value="public sealed class TextSelection : System.Windows.Documents.TextRange" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TextSelection extends System.Windows.Documents.TextRange" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Documents.TextSelection" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Documents.TextRange</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Encapsulates the selection state for the <see cref="T:System.Windows.Controls.RichTextBox" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This type has no public constructor, but is exposed via a public property defined by <xref:System.Windows.Controls.RichTextBox>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

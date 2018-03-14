@@ -1,0 +1,74 @@
+﻿<Window Background="cornsilk"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="ComboBox_Index.Window1"
+    xmlns:src="clr-namespace:ComboBox_Index"
+>
+  <Window.Resources>
+    <src:Cities x:Key="myCities"/>
+  </Window.Resources>
+  <Grid ShowGridLines="false">
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition/>
+      <ColumnDefinition/>
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+    </Grid.RowDefinitions>
+
+    <TextBlock Margin="10,10,0,5" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" TextWrapping="WrapWithOverflow" FontSize="20">
+      Retrieve the Content of a Combo Box Item By Using Its Index
+    </TextBlock>
+
+    <TextBlock Margin="10,0,0,5" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" TextWrapping="WrapWithOverflow" FontSize="12">
+      This example gets the combo box item at a specified index. The combo box is open to show the contents of the combo box items. Choose the corresponding index number. When the item at the specified index is retrieved a message is printed below.
+    </TextBlock>
+
+    <!--<Snippet1>-->
+    <ComboBox Name="cb" Margin="10,10,3,3" Width="200" Height="30" Grid.Column="0" Grid.Row="2"         
+              ItemsSource="{StaticResource myCities}" Text="My Cities"
+              IsEditable="true"  IsReadOnly="true" 
+              IsDropDownOpen="True" StaysOpenOnEdit="True">
+    </ComboBox>
+    <!--</Snippet1>-->
+
+    <HeaderedContentControl Margin="10,10,3,3" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Grid.Row="2" Width="150" Header="Choose an Index Number">
+      <StackPanel>
+        <RadioButton Content="0" Click="GetCity"/>
+        <RadioButton Content="1" Click="GetCity"/>
+        <RadioButton Content="2" Click="GetCity"/>
+        <RadioButton Content="3" Click="GetCity"/>
+      </StackPanel>
+    </HeaderedContentControl>
+
+
+
+    <Button Margin="10,0,0,5" Height="50" Grid.Column="0" Grid.Row="5" Name="GetThirdCity" Click="GetThirdCity_Click">
+      Get third city.
+    </Button>
+    <Label Margin="10,0,0,5" Height="50" Grid.Column="0" Grid.Row="4" Name="Info">hello</Label>
+
+    <!--<SnippetComboBoxClass>-->
+    <StackPanel  Grid.Column="0"
+                 Grid.Row="6">
+      <StackPanel.Resources>
+        <src:VacationSpots x:Key="myVacations"/>
+      </StackPanel.Resources>
+      <ComboBox Name="comboBox1"
+                ItemsSource="{StaticResource myVacations}"
+                Text="My Cities"
+                IsEditable="true"
+                IsReadOnly="true"/>
+
+      <TextBlock Text="{Binding ElementName=comboBox1, Path=SelectedItem}"/>
+    </StackPanel>
+    <!--</SnippetComboBoxClass>-->
+
+  </Grid>
+</Window>

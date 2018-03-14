@@ -1,0 +1,168 @@
+<Type Name="X509RecipientCertificateClientElement" FullName="System.ServiceModel.Configuration.X509RecipientCertificateClientElement">
+  <TypeSignature Language="C#" Value="public sealed class X509RecipientCertificateClientElement : System.Configuration.ConfigurationElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit X509RecipientCertificateClientElement extends System.Configuration.ConfigurationElement" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.X509RecipientCertificateClientElement" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationElement</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a configuration element that specifies a recipient's requirements for an X.509 certificate to be used by the sender. This class cannot be inherited.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public X509RecipientCertificateClientElement ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.X509RecipientCertificateClientElement.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.X509RecipientCertificateClientElement" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Authentication">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.X509ServiceCertificateAuthenticationElement Authentication { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.X509ServiceCertificateAuthenticationElement Authentication" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.X509RecipientCertificateClientElement.Authentication" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("authentication")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Configuration.X509ServiceCertificateAuthenticationElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the certificate used for authentication.</summary>
+        <value>The certificate used for authentication.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Copy">
+      <MemberSignature Language="C#" Value="public void Copy (System.ServiceModel.Configuration.X509RecipientCertificateClientElement from);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Copy(class System.ServiceModel.Configuration.X509RecipientCertificateClientElement from) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.X509RecipientCertificateClientElement.Copy(System.ServiceModel.Configuration.X509RecipientCertificateClientElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="from" Type="System.ServiceModel.Configuration.X509RecipientCertificateClientElement" />
+      </Parameters>
+      <Docs>
+        <param name="from">The configuration element to be copied.</param>
+        <summary>Copies the content of the specified configuration element to this configuration element.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="from" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">The configuration file is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultCertificate">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.X509DefaultServiceCertificateElement DefaultCertificate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.X509DefaultServiceCertificateElement DefaultCertificate" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.X509RecipientCertificateClientElement.DefaultCertificate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("defaultCertificate")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Configuration.X509DefaultServiceCertificateElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the default certificate to be used to represent the service when communicating back to the client.</summary>
+        <value>A <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" /> to be used to represent the service when communicating back to the client.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.X509RecipientCertificateClientElement.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScopedCertificates">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.X509ScopedServiceCertificateElementCollection ScopedCertificates { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.X509ScopedServiceCertificateElementCollection ScopedCertificates" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.X509RecipientCertificateClientElement.ScopedCertificates" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("scopedCertificates")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Configuration.X509ScopedServiceCertificateElementCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a scoped certificate to be used for representing the service when communicating back to the client.</summary>
+        <value>A <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" /> to be used for representing the service when communicating back to the client.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SslCertificateAuthentication">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.X509ServiceCertificateAuthenticationElement SslCertificateAuthentication { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.X509ServiceCertificateAuthenticationElement SslCertificateAuthentication" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.X509RecipientCertificateClientElement.SslCertificateAuthentication" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("sslCertificateAuthentication")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Configuration.X509ServiceCertificateAuthenticationElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the authentication settings for a Secure Sockets Layer (SSL) certificate.</summary>
+        <value>The authentication settings for an SSL certificate.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

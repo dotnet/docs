@@ -1,0 +1,57 @@
+<Type Name="IWorkflowChangeDiff" FullName="System.Workflow.ComponentModel.IWorkflowChangeDiff">
+  <TypeSignature Language="C#" Value="public interface IWorkflowChangeDiff" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWorkflowChangeDiff" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.IWorkflowChangeDiff" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Supports mining of workflow changes.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Diff">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Workflow.ComponentModel.WorkflowChangeAction&gt; Diff (object originalDefinition, object changedDefinition);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IList`1&lt;class System.Workflow.ComponentModel.WorkflowChangeAction&gt; Diff(object originalDefinition, object changedDefinition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.IWorkflowChangeDiff.Diff(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Workflow.ComponentModel.WorkflowChangeAction&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="originalDefinition" Type="System.Object" />
+        <Parameter Name="changedDefinition" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="originalDefinition">The original workflow definition.</param>
+        <param name="changedDefinition">The new workflow definition.</param>
+        <summary>Determines the changes that occurred between two workflow definitions.</summary>
+        <returns>A list of <see cref="T:System.Workflow.ComponentModel.WorkflowChangeAction" /> objects that indicates the differences between the two workflow definitions.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

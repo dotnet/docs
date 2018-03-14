@@ -1,0 +1,21 @@
+﻿<!--<snippet2>-->
+<?xml version='1.0'?>
+<bookstore xmlns="urn:bookstore-schema">
+  <book genre="autobiography">
+    <title>The Autobiography of Benjamin Franklin</title>
+    <author>
+      <first-name>Benjamin</first-name>
+      <last-name>Franklin</last-name>
+    </author>
+    <price>8.99</price>
+  </book>
+  <book genre="novel">
+    <title>The Confidence Man</title>
+    <author>
+      <first-name>Herman</first-name>
+      <last-name>Melville</last-name>
+    </author>
+    <price>11.99</price>
+  </book>
+</bookstore>
+<!--</snippet2>-->

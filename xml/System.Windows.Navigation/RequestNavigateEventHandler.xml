@@ -1,0 +1,25 @@
+<Type Name="RequestNavigateEventHandler" FullName="System.Windows.Navigation.RequestNavigateEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void RequestNavigateEventHandler(object sender, RequestNavigateEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RequestNavigateEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.RequestNavigateEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.Navigation.RequestNavigateEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The object where the event handler is attached.</param>
+    <param name="e">The event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Windows.Documents.Hyperlink.RequestNavigate" /> routed event of the <see cref="T:System.Windows.Documents.Hyperlink" /> class.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

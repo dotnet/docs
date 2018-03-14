@@ -1,0 +1,418 @@
+<Type Name="KeyTipService" FullName="System.Windows.Controls.KeyTipService">
+  <TypeSignature Language="C#" Value="public class KeyTipService" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit KeyTipService extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.KeyTipService" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a service that provides properties, methods, and events to enable and manage KeyTips in WPF <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> controls.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ActivatingKeyTipEvent">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.RoutedEvent ActivatingKeyTipEvent;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.RoutedEvent ActivatingKeyTipEvent" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.KeyTipService.ActivatingKeyTipEvent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.RoutedEvent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="E:System.Windows.Controls.KeyTipService.ActivatingKeyTip" /> routed event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddActivatingKeyTipHandler">
+      <MemberSignature Language="C#" Value="public static void AddActivatingKeyTipHandler (System.Windows.DependencyObject element, System.Windows.Controls.ActivatingKeyTipEventHandler handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddActivatingKeyTipHandler(class System.Windows.DependencyObject element, class System.Windows.Controls.ActivatingKeyTipEventHandler handler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.KeyTipService.AddActivatingKeyTipHandler(System.Windows.DependencyObject,System.Windows.Controls.ActivatingKeyTipEventHandler)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="handler" Type="System.Windows.Controls.ActivatingKeyTipEventHandler" />
+      </Parameters>
+      <Docs>
+        <param name="element">The identifier of the routed event for which the handler is attached.</param>
+        <param name="handler">The specific handler implementation to add to the event handler collection on this element.</param>
+        <summary>Adds the routed event handler for the <see cref="E:System.Windows.Controls.KeyTipService.ActivatingKeyTip" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddKeyTipAccessedHandler">
+      <MemberSignature Language="C#" Value="public static void AddKeyTipAccessedHandler (System.Windows.DependencyObject element, System.Windows.Controls.KeyTipAccessedEventHandler handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddKeyTipAccessedHandler(class System.Windows.DependencyObject element, class System.Windows.Controls.KeyTipAccessedEventHandler handler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.KeyTipService.AddKeyTipAccessedHandler(System.Windows.DependencyObject,System.Windows.Controls.KeyTipAccessedEventHandler)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="handler" Type="System.Windows.Controls.KeyTipAccessedEventHandler" />
+      </Parameters>
+      <Docs>
+        <param name="element">The identifier of the routed event for which the handler is attached.</param>
+        <param name="handler">The specific handler implementation to add to the event handler collection on this element.</param>
+        <summary>Adds the routed event handler for the <see cref="E:System.Windows.Controls.KeyTipService.KeyTipAccessed" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddPreviewKeyTipAccessedHandler">
+      <MemberSignature Language="C#" Value="public static void AddPreviewKeyTipAccessedHandler (System.Windows.DependencyObject element, System.Windows.Controls.KeyTipAccessedEventHandler handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddPreviewKeyTipAccessedHandler(class System.Windows.DependencyObject element, class System.Windows.Controls.KeyTipAccessedEventHandler handler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.KeyTipService.AddPreviewKeyTipAccessedHandler(System.Windows.DependencyObject,System.Windows.Controls.KeyTipAccessedEventHandler)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="handler" Type="System.Windows.Controls.KeyTipAccessedEventHandler" />
+      </Parameters>
+      <Docs>
+        <param name="element">The identifier of the routed event for which the handler is attached.</param>
+        <param name="handler">The specific handler implementation to add to the event handler collection on this element.</param>
+        <summary>Adds the routed event handler for the <see cref="E:System.Windows.Controls.KeyTipService.PreviewKeyTipAccessed" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DismissKeyTips">
+      <MemberSignature Language="C#" Value="public static void DismissKeyTips ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DismissKeyTips() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.KeyTipService.DismissKeyTips" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Hides the KeyTips that are currently displayed.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIsKeyTipScope">
+      <MemberSignature Language="C#" Value="public static bool GetIsKeyTipScope (System.Windows.DependencyObject element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetIsKeyTipScope(class System.Windows.DependencyObject element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.KeyTipService.GetIsKeyTipScope(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="element">The object from which the property value is read.</param>
+        <summary>Returns the value of the <see cref="P:System.Windows.Controls.KeyTipService.IsKeyTipScope" /> attached property for the specified element.</summary>
+        <returns>The object’s <see cref="P:System.Windows.Controls.KeyTipService.IsKeyTipScope" /> property value.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The specified <paramref name="element" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetKeyTip">
+      <MemberSignature Language="C#" Value="public static string GetKeyTip (System.Windows.DependencyObject element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetKeyTip(class System.Windows.DependencyObject element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.KeyTipService.GetKeyTip(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="element">The object from which the property value is read.</param>
+        <summary>Returns the value of the <see cref="P:System.Windows.Controls.KeyTipService.KeyTip" /> attached property for the specified element.</summary>
+        <returns>The object’s <see cref="P:System.Windows.Controls.KeyTipService.KeyTip" /> property value.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The specified <paramref name="element" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetKeyTipStyle">
+      <MemberSignature Language="C#" Value="public static System.Windows.Style GetKeyTipStyle (System.Windows.DependencyObject element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Style GetKeyTipStyle(class System.Windows.DependencyObject element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.KeyTipService.GetKeyTipStyle(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Style</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="element">The object from which the property value is read.</param>
+        <summary>Returns the value of the <see cref="P:System.Windows.Controls.KeyTipService.KeyTipStyle" /> attached property for the specified element.</summary>
+        <returns>The object’s <see cref="P:System.Windows.Controls.KeyTipService.KeyTipStyle" /> property value.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The specified <paramref name="element" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsKeyTipScopeProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsKeyTipScopeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsKeyTipScopeProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.KeyTipService.IsKeyTipScopeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.KeyTipService.IsKeyTipScope" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyTipAccessedEvent">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.RoutedEvent KeyTipAccessedEvent;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.RoutedEvent KeyTipAccessedEvent" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.KeyTipService.KeyTipAccessedEvent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.RoutedEvent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="E:System.Windows.Controls.KeyTipService.KeyTipAccessed" /> routed event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyTipProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty KeyTipProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty KeyTipProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.KeyTipService.KeyTipProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.KeyTipService.KeyTip" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyTipStyleProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty KeyTipStyleProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty KeyTipStyleProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.KeyTipService.KeyTipStyleProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.KeyTipService.KeyTipStyle" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreviewKeyTipAccessedEvent">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.RoutedEvent PreviewKeyTipAccessedEvent;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.RoutedEvent PreviewKeyTipAccessedEvent" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.KeyTipService.PreviewKeyTipAccessedEvent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.RoutedEvent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="E:System.Windows.Controls.KeyTipService.PreviewKeyTipAccessed" /> routed event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveActivatingKeyTipHandler">
+      <MemberSignature Language="C#" Value="public static void RemoveActivatingKeyTipHandler (System.Windows.DependencyObject element, System.Windows.Controls.ActivatingKeyTipEventHandler handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemoveActivatingKeyTipHandler(class System.Windows.DependencyObject element, class System.Windows.Controls.ActivatingKeyTipEventHandler handler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.KeyTipService.RemoveActivatingKeyTipHandler(System.Windows.DependencyObject,System.Windows.Controls.ActivatingKeyTipEventHandler)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="handler" Type="System.Windows.Controls.ActivatingKeyTipEventHandler" />
+      </Parameters>
+      <Docs>
+        <param name="element">The identifier of the routed event for which the handler is attached.</param>
+        <param name="handler">The specific handler implementation to remove from the event handler collection on this element.</param>
+        <summary>Removes the routed event handler for the <see cref="E:System.Windows.Controls.KeyTipService.ActivatingKeyTip" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveKeyTipAccessedHandler">
+      <MemberSignature Language="C#" Value="public static void RemoveKeyTipAccessedHandler (System.Windows.DependencyObject element, System.Windows.Controls.KeyTipAccessedEventHandler handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemoveKeyTipAccessedHandler(class System.Windows.DependencyObject element, class System.Windows.Controls.KeyTipAccessedEventHandler handler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.KeyTipService.RemoveKeyTipAccessedHandler(System.Windows.DependencyObject,System.Windows.Controls.KeyTipAccessedEventHandler)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="handler" Type="System.Windows.Controls.KeyTipAccessedEventHandler" />
+      </Parameters>
+      <Docs>
+        <param name="element">The identifier of the routed event for which the handler is attached.</param>
+        <param name="handler">The specific handler implementation to remove from the event handler collection on this element.</param>
+        <summary>Removes the routed event handler for the <see cref="E:System.Windows.Controls.KeyTipService.KeyTipAccessed" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemovePreviewKeyTipAccessedHandler">
+      <MemberSignature Language="C#" Value="public static void RemovePreviewKeyTipAccessedHandler (System.Windows.DependencyObject element, System.Windows.Controls.KeyTipAccessedEventHandler handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemovePreviewKeyTipAccessedHandler(class System.Windows.DependencyObject element, class System.Windows.Controls.KeyTipAccessedEventHandler handler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.KeyTipService.RemovePreviewKeyTipAccessedHandler(System.Windows.DependencyObject,System.Windows.Controls.KeyTipAccessedEventHandler)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="handler" Type="System.Windows.Controls.KeyTipAccessedEventHandler" />
+      </Parameters>
+      <Docs>
+        <param name="element">The identifier of the routed event for which the handler is attached.</param>
+        <param name="handler">The specific handler implementation to remove from the event handler collection on this element.</param>
+        <summary>Removes the routed event handler for the <see cref="E:System.Windows.Controls.KeyTipService.PreviewKeyTipAccessed" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetIsKeyTipScope">
+      <MemberSignature Language="C#" Value="public static void SetIsKeyTipScope (System.Windows.DependencyObject element, bool value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetIsKeyTipScope(class System.Windows.DependencyObject element, bool value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.KeyTipService.SetIsKeyTipScope(System.Windows.DependencyObject,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="element">The object to which the attached property is written.</param>
+        <param name="value">The value to set.</param>
+        <summary>Sets the value of the <see cref="P:System.Windows.Controls.KeyTipService.IsKeyTipScope" /> attached property for the specified element.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The specified <paramref name="element" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetKeyTip">
+      <MemberSignature Language="C#" Value="public static void SetKeyTip (System.Windows.DependencyObject element, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetKeyTip(class System.Windows.DependencyObject element, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.KeyTipService.SetKeyTip(System.Windows.DependencyObject,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="element">The object to which the attached property is written.</param>
+        <param name="value">The value to set.</param>
+        <summary>Sets the value of the <see cref="P:System.Windows.Controls.KeyTipService.KeyTip" /> attached property for the specified element.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The specified <paramref name="element" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetKeyTipStyle">
+      <MemberSignature Language="C#" Value="public static void SetKeyTipStyle (System.Windows.DependencyObject element, System.Windows.Style value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetKeyTipStyle(class System.Windows.DependencyObject element, class System.Windows.Style value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.KeyTipService.SetKeyTipStyle(System.Windows.DependencyObject,System.Windows.Style)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="value" Type="System.Windows.Style" />
+      </Parameters>
+      <Docs>
+        <param name="element">The object to which the attached property is written.</param>
+        <param name="value">The value to set.</param>
+        <summary>Sets the value of the <see cref="P:System.Windows.Controls.KeyTipService.KeyTipStyle" /> attached property for the specified element.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The specified <paramref name="element" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,62 @@
+<Type Name="TrackingMode" FullName="System.Data.Services.Client.TrackingMode">
+  <TypeSignature Language="C#" Value="public enum TrackingMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TrackingMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Services.Client.TrackingMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Services.Client</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Determines whether changes that are made to a <see cref="T:System.Data.Services.Client.DataServiceCollection`1" /> are tracked.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.Services.Client.TrackingMode> enumeration specifies whether or not changes that are made to items in the collection are tracked automatically.  
+  
+ Values from the <xref:System.Data.Services.Client.TrackingMode> enumeration are used when you create a new instance of the <xref:System.Data.Services.Client.DataServiceCollection%601> class.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AutoChangeTracking">
+      <MemberSignature Language="C#" Value="AutoChangeTracking" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.Client.TrackingMode AutoChangeTracking = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.Client.TrackingMode.AutoChangeTracking" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Client.TrackingMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Changes to items in the <see cref="T:System.Data.Services.Client.DataServiceCollection`1" /> are automatically tracked by the client.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.Client.TrackingMode None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.Client.TrackingMode.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Client.TrackingMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Changes made to items in the <see cref="T:System.Data.Services.Client.DataServiceCollection`1" /> are not tracked automatically by the client.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

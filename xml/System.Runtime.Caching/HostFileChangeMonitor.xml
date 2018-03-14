@@ -1,0 +1,200 @@
+<Type Name="HostFileChangeMonitor" FullName="System.Runtime.Caching.HostFileChangeMonitor">
+  <TypeSignature Language="C#" Value="public sealed class HostFileChangeMonitor : System.Runtime.Caching.FileChangeMonitor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HostFileChangeMonitor extends System.Runtime.Caching.FileChangeMonitor" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Caching.HostFileChangeMonitor" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Caching</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Runtime.Caching.FileChangeMonitor</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Monitors directories and file paths and notifies the cache of changes to the monitored items. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Caching.HostFileChangeMonitor> class is a concrete implementation of the <xref:System.Runtime.Caching.FileChangeMonitor> type. This class is sealed, therefore it cannot be extended. This class is useful if you want to use an existing cache implementation and to monitor files and directories for changes.  
+  
+ For each specified file or directory path, the <xref:System.Runtime.Caching.HostFileChangeMonitor> class triggers a change notification if any of the following changes occur:  
+  
+-   The name of the monitored file or directory changes.  
+  
+-   The specified file or directory did not exist at the time the monitor was created, but was created later. In other words, a file or directory was created in the scope of the monitored items.  
+  
+-   The size of a monitored file changed.  
+  
+-   The contents of a monitored file changed, or the contents of a monitored directory changed.  
+  
+-   The access control list (ACL) of the file or directory was changed.  
+  
+-   The monitored file or directory was deleted.  
+  
+ If too many changes occur for the monitored file or directory at the same time, the <xref:System.Runtime.Caching.HostFileChangeMonitor> instance can lose track of specific changes. In this scenario, the <xref:System.Runtime.Caching.HostFileChangeMonitor> class triggers a change notification. This scenario is more likely to occur when the <xref:System.Runtime.Caching.HostFileChangeMonitor> instance monitors a directory, and many changes occur in the scope of the directory structure in a short period of time.  
+  
+ Because the purpose of the <xref:System.Runtime.Caching.HostFileChangeMonitor> class is only to signal that something has changed among the set of monitored files and directories, it is not considered important that details about a specific change are not captured. The purpose of the <xref:System.Runtime.Caching.HostFileChangeMonitor> class is to provide notification that state changed so that a cache entry (or entries) can be evicted. Because the <xref:System.Runtime.Caching.HostFileChangeMonitor> class does not indicate exactly what changed, internal-change tracking overflow is irrelevant.  
+  
+ When you supply paths to a <xref:System.Runtime.Caching.HostFileChangeMonitor> instance, the directory and file paths must be full paths to the directory or file. Relative paths and wildcard characters in paths are not allowed.  
+  
+ When the <xref:System.Runtime.Caching.HostFileChangeMonitor> class is used in an ASP.NET application, the Windows identity that is used for access to monitored items is the application identity for the ASP.NET application. In other words, the application identity will be one of the following:  
+  
+-   The process identity.  
+  
+-   The configured application identity.  
+  
+-   The UNC credential if the application is running from a UNC share.  
+  
+ When the <xref:System.Runtime.Caching.HostFileChangeMonitor> class is used in a non-ASP.NET application, the <xref:System.IO.FileSystemWatcher> class is used internally to monitor files. As a result, whatever access control list (ACL) applies to a monitored file or directory is applied to the Windows identity of the current thread.  
+  
+> [!NOTE]
+>  Callers must have the appropriate level of code access security (CAS) permissions and must have NTFS permissions to all monitored directories and paths.  
+  
+   
+  
+## Examples  
+ The following example creates a cache item that uses a <xref:System.Runtime.Caching.HostFileChangeMonitor> object to monitor the state of the source data (which is a file) on the file system. The cache entry is defined using a <xref:System.Runtime.Caching.CacheItemPolicy> object to provide eviction and expiration details for the cache entry.  
+  
+ [!code-csharp[CachingASPNetApplications#1](~/samples/snippets/csharp/VS_Snippets_WebNet/cachingaspnetapplications/cs/default.aspx.cs#1)]
+ [!code-vb[CachingASPNetApplications#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/cachingaspnetapplications/vb/default.aspx.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HostFileChangeMonitor (System.Collections.Generic.IList&lt;string&gt; filePaths);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IList`1&lt;string&gt; filePaths) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.HostFileChangeMonitor.#ctor(System.Collections.Generic.IList{System.String})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Caching</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="filePaths" Type="System.Collections.Generic.IList&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="filePaths">A list that contains one or more directory paths or file paths to monitor.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Caching.HostFileChangeMonitor" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calls to the <xref:System.Runtime.Caching.HostFileChangeMonitor.%23ctor%2A> constructor must provide a non-null value for the `filePaths` parameter. At a minimum, the constructor validates the collection of paths that is passed into it and then initializes monitoring for those paths.  
+  
+> [!NOTE]
+>  The constructor performs only string validation of the path name. It does not canonicalize paths or validate that the paths exist.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="filePaths" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="filePaths" /> contains zero items.  
+  
+ -or-  
+  
+ A path in the <paramref name="filePaths" /> list is <see langword="null" /> or an empty string.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.HostFileChangeMonitor.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Caching</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilePaths">
+      <MemberSignature Language="C#" Value="public override System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; FilePaths { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;string&gt; FilePaths" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.HostFileChangeMonitor.FilePaths" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Caching</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of directories and file paths that was passed to the <see cref="M:System.Runtime.Caching.HostFileChangeMonitor.#ctor(System.Collections.Generic.IList{System.String})" /> constructor.</summary>
+        <value>A collection of directories and file paths.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastModified">
+      <MemberSignature Language="C#" Value="public override DateTimeOffset LastModified { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTimeOffset LastModified" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.HostFileChangeMonitor.LastModified" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Caching</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTimeOffset</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a read-only value that indicates the last write time of a monitored file or path.</summary>
+        <value>The last write time of a monitored file or path.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a file-change monitor is monitoring multiple files or paths, this property returns the most recent write time in the set of all files and paths.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UniqueId">
+      <MemberSignature Language="C#" Value="public override string UniqueId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string UniqueId" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.HostFileChangeMonitor.UniqueId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Caching</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an identifier for the <see cref="T:System.Runtime.Caching.HostFileChangeMonitor" /> instance that is based on the set of monitored directories and file paths.</summary>
+        <value>An identifier for the change monitor.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string that makes up the <xref:System.Runtime.Caching.HostFileChangeMonitor.UniqueId%2A> property value is constructed from the following parts:  
+  
+-   A file or directory path.  
+  
+-   The most recent write time in UTC time, measured as ticks but represented as a hexadecimal string.  
+  
+-   The file size, represented as a hexadecimal string.  
+  
+ If a file change monitor is monitoring multiple paths, the information returned by this property is concatenated into a single string for all the monitored directories and file paths.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

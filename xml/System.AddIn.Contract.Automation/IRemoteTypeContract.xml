@@ -1,0 +1,416 @@
+<Type Name="IRemoteTypeContract" FullName="System.AddIn.Contract.Automation.IRemoteTypeContract">
+  <TypeSignature Language="C#" Value="public interface IRemoteTypeContract : System.AddIn.Contract.IContract" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRemoteTypeContract implements class System.AddIn.Contract.IContract" />
+  <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.Automation.IRemoteTypeContract" />
+  <AssemblyInfo>
+    <AssemblyName>System.AddIn.Contract</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.AddIn.Contract.IContract</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Defines a contract that components can use to access type information and invoke members across application domain and process boundaries.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To get an <xref:System.AddIn.Contract.Automation.IRemoteTypeContract>, components can call the <xref:System.AddIn.Contract.Automation.IRemoteObjectContract.GetRemoteType%2A> method of an object that implements the <xref:System.AddIn.Contract.Automation.IRemoteObjectContract> interface.  
+  
+ To get information about the type of an object, components call the <xref:System.AddIn.Contract.Automation.IRemoteTypeContract.GetTypeData%2A> method.  
+  
+ To get information about the members of an object, components call one of the methods that returns information about a particular kind of member. For example, to get information about the events of an object, components can use the <xref:System.AddIn.Contract.Automation.IRemoteTypeContract.GetEvent%2A> or <xref:System.AddIn.Contract.Automation.IRemoteTypeContract.GetEvents%2A> method.  
+  
+ To invoke a member of an object, components use the <xref:System.AddIn.Contract.Automation.IRemoteTypeContract.InvokeMember%2A> method.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetCanonicalName">
+      <MemberSignature Language="C#" Value="public string GetCanonicalName ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetCanonicalName() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Automation.IRemoteTypeContract.GetCanonicalName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the canonical name of the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" />.</summary>
+        <returns>The canonical name of the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The canonical name is a globally unique name, such as a fully qualified type name. Strings in the format \<*assembly name*>, \<*fully qualified type name*> are recommended for managed types. Strings in the format \<*type library name*>, \<*type name*> are recommended for COM types.  
+  
+ Do not change the canonical name for a type after the type is published. Changing the canonical name for a type in a future version of a component breaks compatibility between the component and clients that are already using the type.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEvent">
+      <MemberSignature Language="C#" Value="public System.AddIn.Contract.Automation.IRemoteEventInfoContract GetEvent (string name, System.Reflection.BindingFlags bindingFlags);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.AddIn.Contract.Automation.IRemoteEventInfoContract GetEvent(string name, valuetype System.Reflection.BindingFlags bindingFlags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Automation.IRemoteTypeContract.GetEvent(System.String,System.Reflection.BindingFlags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AddIn.Contract.Automation.IRemoteEventInfoContract</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="bindingFlags" Type="System.Reflection.BindingFlags" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of an event of the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" />.</param>
+        <param name="bindingFlags">A bitwise combination of the <see cref="T:System.Reflection.BindingFlags" /> values that specifies how to search for the event.</param>
+        <summary>Returns an <see cref="T:System.AddIn.Contract.Automation.IRemoteEventInfoContract" /> that provides access to a specified event of the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" />.</summary>
+        <returns>An <see cref="T:System.AddIn.Contract.Automation.IRemoteEventInfoContract" /> that provides access to the specified event, if found; otherwise, <see langword="null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEvents">
+      <MemberSignature Language="C#" Value="public System.AddIn.Contract.Collections.IArrayContract&lt;System.AddIn.Contract.Automation.IRemoteEventInfoContract&gt; GetEvents (System.Reflection.BindingFlags bindingFlags);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.AddIn.Contract.Collections.IArrayContract`1&lt;class System.AddIn.Contract.Automation.IRemoteEventInfoContract&gt; GetEvents(valuetype System.Reflection.BindingFlags bindingFlags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Automation.IRemoteTypeContract.GetEvents(System.Reflection.BindingFlags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AddIn.Contract.Collections.IArrayContract&lt;System.AddIn.Contract.Automation.IRemoteEventInfoContract&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bindingFlags" Type="System.Reflection.BindingFlags" />
+      </Parameters>
+      <Docs>
+        <param name="bindingFlags">A bitwise combination of the <see cref="T:System.Reflection.BindingFlags" /> values that specifies how to search for the events.</param>
+        <summary>Returns a collection of <see cref="T:System.AddIn.Contract.Automation.IRemoteEventInfoContract" /> objects that provides access to the specified events of the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" />.</summary>
+        <returns>An <see cref="T:System.AddIn.Contract.Collections.IArrayContract`1" /> of <see cref="T:System.AddIn.Contract.Automation.IRemoteEventInfoContract" /> objects that provides access to the events that match the specified binding constraints; otherwise, an empty <see cref="T:System.AddIn.Contract.Collections.IArrayContract`1" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetField">
+      <MemberSignature Language="C#" Value="public System.AddIn.Contract.Automation.IRemoteFieldInfoContract GetField (string name, System.Reflection.BindingFlags bindingFlags);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.AddIn.Contract.Automation.IRemoteFieldInfoContract GetField(string name, valuetype System.Reflection.BindingFlags bindingFlags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Automation.IRemoteTypeContract.GetField(System.String,System.Reflection.BindingFlags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AddIn.Contract.Automation.IRemoteFieldInfoContract</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="bindingFlags" Type="System.Reflection.BindingFlags" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of a field of the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" />.</param>
+        <param name="bindingFlags">A bitwise combination of the <see cref="T:System.Reflection.BindingFlags" /> values that specifies how to search for the field.</param>
+        <summary>Returns an <see cref="T:System.AddIn.Contract.Automation.IRemoteFieldInfoContract" /> that provides access to a specified field of the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" />.</summary>
+        <returns>An <see cref="T:System.AddIn.Contract.Automation.IRemoteFieldInfoContract" /> that provides access to the specified field, if found; otherwise, <see langword="null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFields">
+      <MemberSignature Language="C#" Value="public System.AddIn.Contract.Collections.IArrayContract&lt;System.AddIn.Contract.Automation.IRemoteFieldInfoContract&gt; GetFields (System.Reflection.BindingFlags bindingFlags);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.AddIn.Contract.Collections.IArrayContract`1&lt;class System.AddIn.Contract.Automation.IRemoteFieldInfoContract&gt; GetFields(valuetype System.Reflection.BindingFlags bindingFlags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Automation.IRemoteTypeContract.GetFields(System.Reflection.BindingFlags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AddIn.Contract.Collections.IArrayContract&lt;System.AddIn.Contract.Automation.IRemoteFieldInfoContract&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bindingFlags" Type="System.Reflection.BindingFlags" />
+      </Parameters>
+      <Docs>
+        <param name="bindingFlags">A bitwise combination of the <see cref="T:System.Reflection.BindingFlags" /> values that specifies how to search for the fields.</param>
+        <summary>Returns a collection of <see cref="T:System.AddIn.Contract.Automation.IRemoteFieldInfoContract" /> objects that provides access to the specified fields of the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" />.</summary>
+        <returns>An <see cref="T:System.AddIn.Contract.Collections.IArrayContract`1" /> of <see cref="T:System.AddIn.Contract.Automation.IRemoteFieldInfoContract" /> objects that provides access to the fields that match the specified binding constraints; otherwise, an empty <see cref="T:System.AddIn.Contract.Collections.IArrayContract`1" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetInterface">
+      <MemberSignature Language="C#" Value="public System.AddIn.Contract.Automation.IRemoteTypeContract GetInterface (string canonicalName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.AddIn.Contract.Automation.IRemoteTypeContract GetInterface(string canonicalName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Automation.IRemoteTypeContract.GetInterface(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AddIn.Contract.Automation.IRemoteTypeContract</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="canonicalName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="canonicalName">The canonical name of an interface that is implemented by the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" />.</param>
+        <summary>Returns an interface that is implemented by the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" />.</summary>
+        <returns>An <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" /> that represents the interface with the specified canonical name that this <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" /> implements. <see langword="null" /> if this <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" /> does not implement an interface with the specified canonical name.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A canonical name is a globally unique name, such as a GUID. Strings in the format \<*assembly name*>, \<*fully qualified type name*> are recommended for managed types. Strings in the format \<*type library name*>, \<*type name*> are recommended for COM types.  
+  
+ Do not change the canonical name for a type after the type is published. Changing the canonical name for a type in a future version of a component breaks compatibility between the component and clients that are already using the type.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetInterfaces">
+      <MemberSignature Language="C#" Value="public System.AddIn.Contract.Collections.IArrayContract&lt;System.AddIn.Contract.Automation.IRemoteTypeContract&gt; GetInterfaces ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.AddIn.Contract.Collections.IArrayContract`1&lt;class System.AddIn.Contract.Automation.IRemoteTypeContract&gt; GetInterfaces() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Automation.IRemoteTypeContract.GetInterfaces" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AddIn.Contract.Collections.IArrayContract&lt;System.AddIn.Contract.Automation.IRemoteTypeContract&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the interfaces that are implemented by the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" />.</summary>
+        <returns>An <see cref="T:System.AddIn.Contract.Collections.IArrayContract`1" /> of <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" /> objects that represent all the interfaces that are implemented by the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMember">
+      <MemberSignature Language="C#" Value="public System.AddIn.Contract.Collections.IArrayContract&lt;System.AddIn.Contract.IContract&gt; GetMember (string name, System.Reflection.MemberTypes memberTypes, System.Reflection.BindingFlags bindingFlags);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.AddIn.Contract.Collections.IArrayContract`1&lt;class System.AddIn.Contract.IContract&gt; GetMember(string name, valuetype System.Reflection.MemberTypes memberTypes, valuetype System.Reflection.BindingFlags bindingFlags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Automation.IRemoteTypeContract.GetMember(System.String,System.Reflection.MemberTypes,System.Reflection.BindingFlags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AddIn.Contract.Collections.IArrayContract&lt;System.AddIn.Contract.IContract&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="memberTypes" Type="System.Reflection.MemberTypes" />
+        <Parameter Name="bindingFlags" Type="System.Reflection.BindingFlags" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of a member of the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" />. The name can represent multiple members that have the same name.</param>
+        <param name="memberTypes">A bitwise combination of the <see cref="T:System.Reflection.MemberTypes" /> values that specifies the members to search for.</param>
+        <param name="bindingFlags">A bitwise combination of the <see cref="T:System.Reflection.BindingFlags" /> values that specifies how to search for the members.</param>
+        <summary>Returns a collection of <see cref="T:System.AddIn.Contract.IContract" /> objects that provides access to all the specified members of the specified member type in the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" />, using the specified binding constraints.</summary>
+        <returns>An <see cref="T:System.AddIn.Contract.Collections.IArrayContract`1" /> of <see cref="T:System.AddIn.Contract.IContract" /> objects that represent the members of the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" /> that have the specified name and that meet the criteria specified by the <paramref name="memberTypes" /> and <paramref name="bindingFlags" /> parameters.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be used to get a single member, or to get multiple members that have the same name, such as constructor or method overloads.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMembers">
+      <MemberSignature Language="C#" Value="public System.AddIn.Contract.Collections.IArrayContract&lt;System.AddIn.Contract.IContract&gt; GetMembers (System.Reflection.BindingFlags bindingFlags);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.AddIn.Contract.Collections.IArrayContract`1&lt;class System.AddIn.Contract.IContract&gt; GetMembers(valuetype System.Reflection.BindingFlags bindingFlags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Automation.IRemoteTypeContract.GetMembers(System.Reflection.BindingFlags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AddIn.Contract.Collections.IArrayContract&lt;System.AddIn.Contract.IContract&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bindingFlags" Type="System.Reflection.BindingFlags" />
+      </Parameters>
+      <Docs>
+        <param name="bindingFlags">A bitwise combination of the <see cref="T:System.Reflection.BindingFlags" /> values that specifies how to search for the members.</param>
+        <summary>Returns a collection of <see cref="T:System.AddIn.Contract.IContract" /> objects that provides access to all the members in the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" /> that match the specified binding constraints.</summary>
+        <returns>An <see cref="T:System.AddIn.Contract.Collections.IArrayContract`1" /> of <see cref="T:System.AddIn.Contract.IContract" /> objects that provides access to the members of the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" /> that meet the specified binding constraints.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMethod">
+      <MemberSignature Language="C#" Value="public System.AddIn.Contract.Automation.IRemoteMethodInfoContract GetMethod (string name, System.Reflection.BindingFlags bindingFlags, System.AddIn.Contract.Collections.IArrayContract&lt;System.AddIn.Contract.Automation.IRemoteTypeContract&gt; remoteTypes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.AddIn.Contract.Automation.IRemoteMethodInfoContract GetMethod(string name, valuetype System.Reflection.BindingFlags bindingFlags, class System.AddIn.Contract.Collections.IArrayContract`1&lt;class System.AddIn.Contract.Automation.IRemoteTypeContract&gt; remoteTypes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Automation.IRemoteTypeContract.GetMethod(System.String,System.Reflection.BindingFlags,System.AddIn.Contract.Collections.IArrayContract{System.AddIn.Contract.Automation.IRemoteTypeContract})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AddIn.Contract.Automation.IRemoteMethodInfoContract</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="bindingFlags" Type="System.Reflection.BindingFlags" />
+        <Parameter Name="remoteTypes" Type="System.AddIn.Contract.Collections.IArrayContract&lt;System.AddIn.Contract.Automation.IRemoteTypeContract&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of a method of the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" />.</param>
+        <param name="bindingFlags">A bitwise combination of the <see cref="T:System.Reflection.BindingFlags" /> values that specifies how to search for the method.</param>
+        <param name="remoteTypes">An <see cref="T:System.AddIn.Contract.Collections.IArrayContract`1" /> of <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" /> objects that represent the number, order, and type of the parameters for the method to get.</param>
+        <summary>Returns an <see cref="T:System.AddIn.Contract.Automation.IRemoteMethodInfoContract" /> that provides access to a specified method of the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" />.</summary>
+        <returns>An <see cref="T:System.AddIn.Contract.Automation.IRemoteMethodInfoContract" /> that provides access to the specified method, if found; otherwise, <see langword="null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMethods">
+      <MemberSignature Language="C#" Value="public System.AddIn.Contract.Collections.IArrayContract&lt;System.AddIn.Contract.Automation.IRemoteMethodInfoContract&gt; GetMethods (System.Reflection.BindingFlags bindingFlags);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.AddIn.Contract.Collections.IArrayContract`1&lt;class System.AddIn.Contract.Automation.IRemoteMethodInfoContract&gt; GetMethods(valuetype System.Reflection.BindingFlags bindingFlags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Automation.IRemoteTypeContract.GetMethods(System.Reflection.BindingFlags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AddIn.Contract.Collections.IArrayContract&lt;System.AddIn.Contract.Automation.IRemoteMethodInfoContract&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bindingFlags" Type="System.Reflection.BindingFlags" />
+      </Parameters>
+      <Docs>
+        <param name="bindingFlags">A bitwise combination of the <see cref="T:System.Reflection.BindingFlags" /> values that specifies how to search for the methods.</param>
+        <summary>Returns a collection of <see cref="T:System.AddIn.Contract.Automation.IRemoteMethodInfoContract" /> objects that provides access to the specified methods of the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" />.</summary>
+        <returns>An <see cref="T:System.AddIn.Contract.Collections.IArrayContract`1" /> of <see cref="T:System.AddIn.Contract.Automation.IRemoteMethodInfoContract" /> objects that provides access to the methods that match the specified binding constraints.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProperties">
+      <MemberSignature Language="C#" Value="public System.AddIn.Contract.Collections.IArrayContract&lt;System.AddIn.Contract.Automation.IRemotePropertyInfoContract&gt; GetProperties (System.Reflection.BindingFlags bindingFlags);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.AddIn.Contract.Collections.IArrayContract`1&lt;class System.AddIn.Contract.Automation.IRemotePropertyInfoContract&gt; GetProperties(valuetype System.Reflection.BindingFlags bindingFlags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Automation.IRemoteTypeContract.GetProperties(System.Reflection.BindingFlags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AddIn.Contract.Collections.IArrayContract&lt;System.AddIn.Contract.Automation.IRemotePropertyInfoContract&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bindingFlags" Type="System.Reflection.BindingFlags" />
+      </Parameters>
+      <Docs>
+        <param name="bindingFlags">A bitwise combination of the <see cref="T:System.Reflection.BindingFlags" /> values that specifies how to search for the properties.</param>
+        <summary>Returns a collection of <see cref="T:System.AddIn.Contract.Automation.IRemotePropertyInfoContract" /> objects that provides access to the specified properties of the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" />.</summary>
+        <returns>An <see cref="T:System.AddIn.Contract.Collections.IArrayContract`1" /> of <see cref="T:System.AddIn.Contract.Automation.IRemotePropertyInfoContract" /> objects that provides access to the properties that match the specified binding constraints.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProperty">
+      <MemberSignature Language="C#" Value="public System.AddIn.Contract.Automation.IRemotePropertyInfoContract GetProperty (string name, System.Reflection.BindingFlags bindingFlags, System.AddIn.Contract.Automation.IRemoteTypeContract remoteReturnType, System.AddIn.Contract.Collections.IArrayContract&lt;System.AddIn.Contract.Automation.IRemoteTypeContract&gt; remoteTypes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.AddIn.Contract.Automation.IRemotePropertyInfoContract GetProperty(string name, valuetype System.Reflection.BindingFlags bindingFlags, class System.AddIn.Contract.Automation.IRemoteTypeContract remoteReturnType, class System.AddIn.Contract.Collections.IArrayContract`1&lt;class System.AddIn.Contract.Automation.IRemoteTypeContract&gt; remoteTypes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Automation.IRemoteTypeContract.GetProperty(System.String,System.Reflection.BindingFlags,System.AddIn.Contract.Automation.IRemoteTypeContract,System.AddIn.Contract.Collections.IArrayContract{System.AddIn.Contract.Automation.IRemoteTypeContract})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AddIn.Contract.Automation.IRemotePropertyInfoContract</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="bindingFlags" Type="System.Reflection.BindingFlags" />
+        <Parameter Name="remoteReturnType" Type="System.AddIn.Contract.Automation.IRemoteTypeContract" />
+        <Parameter Name="remoteTypes" Type="System.AddIn.Contract.Collections.IArrayContract&lt;System.AddIn.Contract.Automation.IRemoteTypeContract&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of a property of the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" />.</param>
+        <param name="bindingFlags">A bitwise combination of the <see cref="T:System.Reflection.BindingFlags" /> values that specifies how to search for the method.</param>
+        <param name="remoteReturnType">An <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" /> that specifies the return type of the property.</param>
+        <param name="remoteTypes">An <see cref="T:System.AddIn.Contract.Collections.IArrayContract`1" /> of <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" /> objects that represent the parameters for the specified property.</param>
+        <summary>Returns an <see cref="T:System.AddIn.Contract.Automation.IRemotePropertyInfoContract" /> that provides access to a specified property of the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" />.</summary>
+        <returns>An <see cref="T:System.AddIn.Contract.Automation.IRemotePropertyInfoContract" /> that provides access to the specified property, if found; otherwise, <see langword="null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTypeData">
+      <MemberSignature Language="C#" Value="public System.AddIn.Contract.Automation.RemoteTypeData GetTypeData ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.AddIn.Contract.Automation.RemoteTypeData GetTypeData() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Automation.IRemoteTypeContract.GetTypeData" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AddIn.Contract.Automation.RemoteTypeData</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns type information about the object that the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" /> identifies.</summary>
+        <returns>A <see cref="T:System.AddIn.Contract.Automation.RemoteTypeData" /> that contains information about the object that the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" /> identifies.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvokeMember">
+      <MemberSignature Language="C#" Value="public System.AddIn.Contract.RemoteArgument InvokeMember (string name, System.Reflection.BindingFlags bindingFlags, System.AddIn.Contract.Automation.IRemoteObjectContract target, System.AddIn.Contract.Collections.IRemoteArgumentArrayContract remoteArgs, bool[] remoteArgModifiers, int localeId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.AddIn.Contract.RemoteArgument InvokeMember(string name, valuetype System.Reflection.BindingFlags bindingFlags, class System.AddIn.Contract.Automation.IRemoteObjectContract target, class System.AddIn.Contract.Collections.IRemoteArgumentArrayContract remoteArgs, bool[] remoteArgModifiers, int32 localeId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Automation.IRemoteTypeContract.InvokeMember(System.String,System.Reflection.BindingFlags,System.AddIn.Contract.Automation.IRemoteObjectContract,System.AddIn.Contract.Collections.IRemoteArgumentArrayContract,System.Boolean[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AddIn.Contract.RemoteArgument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="bindingFlags" Type="System.Reflection.BindingFlags" />
+        <Parameter Name="target" Type="System.AddIn.Contract.Automation.IRemoteObjectContract" />
+        <Parameter Name="remoteArgs" Type="System.AddIn.Contract.Collections.IRemoteArgumentArrayContract" />
+        <Parameter Name="remoteArgModifiers" Type="System.Boolean[]" />
+        <Parameter Name="localeId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the member to invoke.</param>
+        <param name="bindingFlags">A bitwise combination of the <see cref="T:System.Reflection.BindingFlags" /> values that specifies how to search for the member.</param>
+        <param name="target">The <see cref="T:System.AddIn.Contract.Automation.IRemoteObjectContract" /> on which to invoke the specified member.</param>
+        <param name="remoteArgs">An <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentArrayContract" /> that contains the arguments to pass to the member to invoke.</param>
+        <param name="remoteArgModifiers">An array of Boolean values that indicate whether each of the <c>remoteArgs</c> values is passed by reference.</param>
+        <param name="localeId">A locale ID to use for locale-specific conversions that might be performed by the member being invoked.</param>
+        <summary>Invokes the specified member of the current <see cref="T:System.AddIn.Contract.Automation.IRemoteTypeContract" />.</summary>
+        <returns>A <see cref="T:System.AddIn.Contract.RemoteArgument" /> that represents the return value of the invoked member.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `remoteArgModifiers` parameter is used only for components that are written using COM. Each value in the `remoteArgModifiers` parameter indicates whether the corresponding value in the `remoteArgs` parameter is passed by reference. The length of `remoteArgModifiers` should be the same as the length of `remoteArgs`.  
+  
+ If you pass `null` for `remoteArgModifiers`, this method uses default logic to determine whether an argument is passed by reference.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,89 @@
+<Type Name="ISynchronizedInputProvider" FullName="System.Windows.Automation.Provider.ISynchronizedInputProvider">
+  <TypeSignature Language="C#" Value="public interface ISynchronizedInputProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISynchronizedInputProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.ISynchronizedInputProvider" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationProvider</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("29db1a06-02ce-4cf7-9b42-565d4fab20ee")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Exposes methods to facilitate UI Automation client access to controls that support synchronized input.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implement this interface on a UI Automation provider that must support the <xref:System.Windows.Automation.SynchronizedInputPattern> control pattern.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Cancel">
+      <MemberSignature Language="C#" Value="public void Cancel ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Cancel() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ISynchronizedInputProvider.Cancel" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Stops listening for input.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the provider is currently listening for input, it reverts to normal operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartListening">
+      <MemberSignature Language="C#" Value="public void StartListening (System.Windows.Automation.SynchronizedInputType inputType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StartListening(valuetype System.Windows.Automation.SynchronizedInputType inputType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ISynchronizedInputProvider.StartListening(System.Windows.Automation.SynchronizedInputType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inputType" Type="System.Windows.Automation.SynchronizedInputType" />
+      </Parameters>
+      <Docs>
+        <param name="inputType">The type of input to listen for.</param>
+        <summary>Designates that the provider start listening for input of the specified type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When WPF finds matching input, it checks the route of the incoming event. If the automation element that is listening for the input is not in the route, the input is discarded and the <xref:System.Windows.Automation.SynchronizedInputPattern.InputDiscardedEvent> event is raised. If the input is received by the automation element listening for that type, the <xref:System.Windows.Automation.SynchronizedInputPattern.InputReachedTargetEvent> event is raised; otherwise, the <xref:System.Windows.Automation.SynchronizedInputPattern.InputReachedOtherElementEvent> event is raised.  
+  
+ After receiving the input, the provider stops listening and continues normally.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

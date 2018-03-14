@@ -1,0 +1,29 @@
+<!--<Snippet2>-->
+
+<?xml version="1.0" encoding="IBM437"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="northwestStates">
+    <xs:annotation>
+        <xs:documentation>States in the Pacific Northwest of US</xs:documentation>
+    </xs:annotation>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value='WA'>
+            <xs:annotation>
+              <xs:documentation>Washington</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value='OR'>
+            <xs:annotation>
+              <xs:documentation>Oregon</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value='ID'>
+            <xs:annotation>
+              <xs:documentation>Idaho</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
+<!--</Snippet2>-->
+

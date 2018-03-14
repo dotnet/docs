@@ -1,0 +1,101 @@
+<Type Name="CorrelationProperty" FullName="System.Workflow.Runtime.CorrelationProperty">
+  <TypeSignature Language="C#" Value="public class CorrelationProperty" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CorrelationProperty extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.CorrelationProperty" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a name and value pair used to correlate messages to specific receiving activities.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ <xref:System.Workflow.Runtime.CorrelationProperty> classes are defined as <xref:System.Workflow.ComponentModel.ActivityBind> properties of Workflow Connection Service activities. By default, these properties are bound to variables declared at the root workflow activity. For dynamic activities such as <xref:System.Workflow.Activities.ReplicatorActivity> and <xref:System.Workflow.Activities.ConditionedActivityGroup> each of its children cannot share a universal <xref:System.Workflow.Runtime.CorrelationProperty> object. Consider the scenario where each task inside a <xref:System.Workflow.Activities.ReplicatorActivity> has to manage its own conversation. The child activities inside the <xref:System.Workflow.Activities.ReplicatorActivity> requires a <xref:System.Workflow.Runtime.CorrelationProperty> instance unique per execution context, or per task. In order to accomplish this, you have to define a custom activity that has a <xref:System.Workflow.Runtime.CorrelationProperty> instance property and the Workflow Connection Services activities have to bind to this property.  
+  
+   
+  
+## Examples  
+ The following example demonstrates creating a correlation property object, and accessing the Name and Value properties.  
+  
+ [!code-csharp[WF_Samples#2](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#2)]
+ [!code-vb[WF_Samples#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CorrelationProperty (string name, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.CorrelationProperty.#ctor(System.String,System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the property used in the correlation set.</param>
+        <param name="value">The value of the correlation set property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.CorrelationProperty" /> class.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.CorrelationProperty.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the property used in the correlation set.</summary>
+        <value>The name of the property used in the correlation set.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public object Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Value" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.CorrelationProperty.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of the correlation set property.</summary>
+        <value>The value of the correlation set property.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

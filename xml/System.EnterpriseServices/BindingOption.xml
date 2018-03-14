@@ -1,0 +1,55 @@
+<Type Name="BindingOption" FullName="System.EnterpriseServices.BindingOption">
+  <TypeSignature Language="C#" Value="public enum BindingOption" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed BindingOption extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.BindingOption" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Indicates whether all work submitted by <see cref="T:System.EnterpriseServices.Activity" /> should be bound to only one single-threaded apartment (STA). This enumeration has no impact on the multithreaded apartment (MTA).</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BindingToPoolThread">
+      <MemberSignature Language="C#" Value="BindingToPoolThread" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.BindingOption BindingToPoolThread = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.BindingOption.BindingToPoolThread" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.BindingOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The work submitted by the activity is bound to a single STA.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoBinding">
+      <MemberSignature Language="C#" Value="NoBinding" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.BindingOption NoBinding = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.BindingOption.NoBinding" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.BindingOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The work submitted by the activity is not bound to a single STA.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

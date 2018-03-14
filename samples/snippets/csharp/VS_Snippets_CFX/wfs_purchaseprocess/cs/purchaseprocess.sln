@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebClient", "WebClient\", "{3A928B5A-B2B0-45D3-BE33-07E876B9965F}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = ""
+		Debug.AspNetCompiler.VirtualPath = "/WebClient"
+		Debug.AspNetCompiler.PhysicalPath = "WebClient\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\WebClient\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/WebClient"
+		Release.AspNetCompiler.PhysicalPath = "WebClient\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\WebClient\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "13410"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WfDefinition", "WfDefinition.csproj", "{6438F566-4534-49EC-9CC4-E2A5C33FBBFC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A928B5A-B2B0-45D3-BE33-07E876B9965F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A928B5A-B2B0-45D3-BE33-07E876B9965F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A928B5A-B2B0-45D3-BE33-07E876B9965F}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A928B5A-B2B0-45D3-BE33-07E876B9965F}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{6438F566-4534-49EC-9CC4-E2A5C33FBBFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6438F566-4534-49EC-9CC4-E2A5C33FBBFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6438F566-4534-49EC-9CC4-E2A5C33FBBFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6438F566-4534-49EC-9CC4-E2A5C33FBBFC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,16 @@
+<!--<snippet2> -->
+<!DOCTYPE bookstore [
+  <!ELEMENT bookstore (book)*> 
+  <!ELEMENT book (title,author,price)>
+  <!ATTLIST book genre CDATA #REQUIRED>
+  <!ELEMENT title (#PCDATA)>
+  <!ELEMENT author (#PCDATA)>
+  <!ELEMENT price (#PCDATA)>]>
+<bookstore>
+  <book genre="fantasy"  ISBN="2-3631-4">
+    <title>Oberon's Legacy</title>
+    <author>Corets, Eva</author>
+    <price>5.95</price>
+  </book>
+</bookstore>
+<!--</snippet2> -->

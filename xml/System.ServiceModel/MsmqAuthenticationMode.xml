@@ -1,0 +1,81 @@
+<Type Name="MsmqAuthenticationMode" FullName="System.ServiceModel.MsmqAuthenticationMode">
+  <TypeSignature Language="C#" Value="public enum MsmqAuthenticationMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MsmqAuthenticationMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.MsmqAuthenticationMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the type of authentication used for the binding.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Values from this enumeration are used by the  
+  
+ <xref:System.ServiceModel.MsmqTransportSecurity.MsmqAuthenticationMode%2A> property to indicate how a message must be authenticated by the MSMQ transport.  
+  
+ If security is turned off by setting the <xref:System.ServiceModel.MsmqTransportSecurity.MsmqAuthenticationMode%2A> to None, then the <xref:System.ServiceModel.MsmqTransportSecurity.MsmqProtectionLevel%2A> property must also be set to <xref:System.Net.Security.ProtectionLevel> for consistency.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Certificate">
+      <MemberSignature Language="C#" Value="Certificate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.MsmqAuthenticationMode Certificate = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.MsmqAuthenticationMode.Certificate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.MsmqAuthenticationMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The client is authenticated using X.509 certificates. The client certificate must be present in the certificate store of the server.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.MsmqAuthenticationMode None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.MsmqAuthenticationMode.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.MsmqAuthenticationMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No security is used with this binding.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowsDomain">
+      <MemberSignature Language="C#" Value="WindowsDomain" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.MsmqAuthenticationMode WindowsDomain = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.MsmqAuthenticationMode.WindowsDomain" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.MsmqAuthenticationMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Kerberos is used for authentication. The client and server must be joined to a trusted domain.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

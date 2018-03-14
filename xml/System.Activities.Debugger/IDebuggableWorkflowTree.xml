@@ -1,0 +1,35 @@
+<Type Name="IDebuggableWorkflowTree" FullName="System.Activities.Debugger.IDebuggableWorkflowTree">
+  <TypeSignature Language="C#" Value="public interface IDebuggableWorkflowTree" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDebuggableWorkflowTree" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Debugger.IDebuggableWorkflowTree" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Provides an interface whose implementation enables the Workflow debugger to debug a serialized Workflow object.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetWorkflowRoot">
+      <MemberSignature Language="C#" Value="public System.Activities.Activity GetWorkflowRoot ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Activities.Activity GetWorkflowRoot() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.IDebuggableWorkflowTree.GetWorkflowRoot" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Activity</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the root of the Workflow tree.</summary>
+        <returns>An activity that represents the root of the workflow tree.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

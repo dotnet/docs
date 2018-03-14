@@ -1,0 +1,89 @@
+<Type Name="PackageInterleavingOrder" FullName="System.Windows.Xps.Packaging.PackageInterleavingOrder">
+  <TypeSignature Language="C#" Value="public enum PackageInterleavingOrder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PackageInterleavingOrder extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Packaging.PackageInterleavingOrder" />
+  <AssemblyInfo>
+    <AssemblyName>ReachFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Provides values that specify the order in which the major parts of a package are streamed.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you specify ResourceFirst, each dependent object is serialized before the object on which it depends. When you specify ResourceLast, information about how a resource will be used is streamed before the resource. To display text first so that users can read while the images are opening, specify the ImagesLast member.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ImagesLast">
+      <MemberSignature Language="C#" Value="ImagesLast" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Xps.Packaging.PackageInterleavingOrder ImagesLast = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Packaging.PackageInterleavingOrder.ImagesLast" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Xps.Packaging.PackageInterleavingOrder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The streaming order is: resource (other than images), page, document, document sequence, and images.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Xps.Packaging.PackageInterleavingOrder None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Packaging.PackageInterleavingOrder.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Xps.Packaging.PackageInterleavingOrder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The streaming order is specified by the packaging system.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ResourceFirst">
+      <MemberSignature Language="C#" Value="ResourceFirst" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Xps.Packaging.PackageInterleavingOrder ResourceFirst = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Packaging.PackageInterleavingOrder.ResourceFirst" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Xps.Packaging.PackageInterleavingOrder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The streaming order is: resource, page, document, and document sequence.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ResourceLast">
+      <MemberSignature Language="C#" Value="ResourceLast" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Xps.Packaging.PackageInterleavingOrder ResourceLast = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Packaging.PackageInterleavingOrder.ResourceLast" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Xps.Packaging.PackageInterleavingOrder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The streaming order is: document sequence, document, page, and resource.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

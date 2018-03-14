@@ -1,0 +1,91 @@
+<Type Name="IPlaybackControl" FullName="System.EnterpriseServices.IPlaybackControl">
+  <TypeSignature Language="C#" Value="public interface IPlaybackControl" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPlaybackControl" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.IPlaybackControl" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("51372AFD-CAE7-11CF-BE81-00AA00A2FA25")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Functions in Queued Components in the abnormal handling of server-side playback errors and client-side failures of the Message Queuing delivery mechanism.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The exception class defined for the component in the COM+ catalog implements both <xref:System.EnterpriseServices.IPlaybackControl> and the interface for the original class. The method implementations of the original class interface are used to perform the exception handling for the failed methods in the class itself. They will be called after <xref:System.EnterpriseServices.IPlaybackControl.FinalClientRetry%2A> or <xref:System.EnterpriseServices.IPlaybackControl.FinalServerRetry%2A> to process exceptions for the method originally called.  
+  
+ The Queued Components Player calls the methods of <xref:System.EnterpriseServices.IPlaybackControl> to inform the exception-handler object that a message is about to be placed on the final resting or dead letter queue. The Queued Components Player then calls the same method in the exception-handler object that had failed in the original method call. The exception-handler object can implement an alternative, for example, by gathering problem diagnosis information or generating an object or message that informs the client of the problem. If the application does not implement <xref:System.EnterpriseServices.IPlaybackControl>, the poison message is placed on the final resting or dead letter queue when the Queued Components Player exhausts all retries.  
+  
+ A poison message is a message that cannot be processed for some reason, perhaps because of a problem with the server or queuing system. The transaction is rolled back, and the poison message goes to the top of the queue. When the message is dequeued again, the same condition occurs. This message can continue looping indefinitely until something is done to correct the problem. The Queued Components service handles the poison message by using a series of retries. After several unsuccessful retries, the message is moved to a final resting queue. Poison messages remain in the resting queue until manually moved by using the Queued Components Message Mover tool.  
+  
+ The poison message situation can also be resolved programmatically, using the <xref:System.EnterpriseServices.IPlaybackControl.FinalServerRetry%2A> method, which informs the server-side component author that all attempts to play back the deferred activation have failed.  
+  
+ If you discover a poison message, you might be able to solve the underlying cause of the problem quickly. For example, if the server was offline for some reason, you can bring the server back online. If you cannot solve the problem quickly, you can automatically generate another transaction that notifies the requestor that the transaction did not occur. The requestor can then make a compensating transaction that reverses the effect of a transaction that has already committed.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FinalClientRetry">
+      <MemberSignature Language="C#" Value="public void FinalClientRetry ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void FinalClientRetry() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.IPlaybackControl.FinalClientRetry" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Informs the client-side exception-handling component that all Message Queuing attempts to deliver the message to the server were rejected, and the message ended up on the client-side Xact Dead Letter queue.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ As messages arrive in the Xact Dead Letter queue, COM+ attempts to invoke a client-side exception handler related to the server class to deliver this notification. It does so by first calling <xref:System.EnterpriseServices.IPlaybackControl.FinalClientRetry%2A>, then calling the exception-handling version of the failed method in the exception-handler object. This exception method can then take an exception action, such as recording the failure, sending a mail message to the administrator, or taking client-side compensating action (reversing the effect of an earlier transaction). If the exception method is not successful, the message is left on the Xact Dead Letter queue.  
+  
+ The Xact Dead Letter queue can be viewed in the Microsoft Message Queue (MSMQ) Explorer.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FinalServerRetry">
+      <MemberSignature Language="C#" Value="public void FinalServerRetry ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void FinalServerRetry() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.IPlaybackControl.FinalServerRetry" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Informs the server-side exception class implementation that all attempts to play back the deferred activation to the server have failed, and the message is about to be moved to its final resting queue.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ As messages arrive on the Xact Dead Letter queue, COM+ attempts to invoke a server-side exception handler related to the server class to deliver this notification. It does so by first calling <xref:System.EnterpriseServices.IPlaybackControl.FinalServerRetry%2A>, then calling the exception handling version of the failed method in the exception handler object. This exception method can then take an exception action, such as recording the failure, sending a mail message to the administrator, or taking client-side compensating action (reversing the effect of an earlier transaction). The server object should make every effort to complete this transaction successfully. Otherwise, manual intervention is required to reprocess the message. If the exception method is not successful, the message is moved to the final resting queue.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

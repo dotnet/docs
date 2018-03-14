@@ -1,0 +1,47 @@
+<Type Name="ExceptionEventArgs" FullName="System.Windows.Media.ExceptionEventArgs">
+  <TypeSignature Language="C#" Value="public sealed class ExceptionEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ExceptionEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.ExceptionEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides error exception data for media events.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ErrorException">
+      <MemberSignature Language="C#" Value="public Exception ErrorException { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Exception ErrorException" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.ExceptionEventArgs.ErrorException" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Exception</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the exception that details the cause of the failure.</summary>
+        <value>The exception that details the error condition.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.SecurityException">The attempt to access the media or image file is denied.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">The media or image file is not found.</exception>
+        <exception cref="T:System.IO.FileFormatException">The media or image format is not supported by any installed codec.  
+  
+ -or-  
+  
+ The file format is not recognized.</exception>
+        <exception cref="T:System.Windows.Media.InvalidWmpVersionException">The detected version of [!INCLUDE[TLA#tla_wmp](~/includes/tlasharptla-wmp-md.md)] is not supported.</exception>
+        <exception cref="T:System.NotSupportedException">The operation is not supported.</exception>
+        <exception cref="T:System.Runtime.InteropServices.COMException">A COM error code appears.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

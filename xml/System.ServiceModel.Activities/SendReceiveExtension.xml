@@ -1,0 +1,171 @@
+<Type Name="SendReceiveExtension" FullName="System.ServiceModel.Activities.SendReceiveExtension">
+  <TypeSignature Language="C#" Value="public abstract class SendReceiveExtension" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SendReceiveExtension extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.SendReceiveExtension" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>An abstract class that defines extension methods for the send/receive activities.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected SendReceiveExtension ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.SendReceiveExtension.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.SendReceiveExtension" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cancel">
+      <MemberSignature Language="C#" Value="public abstract void Cancel (System.Activities.Bookmark bookmark);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Cancel(class System.Activities.Bookmark bookmark) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.SendReceiveExtension.Cancel(System.Activities.Bookmark)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bookmark" Type="System.Activities.Bookmark" />
+      </Parameters>
+      <Docs>
+        <param name="bookmark">A bookmark at which an activity instance is to be cancelled.</param>
+        <summary>Cancels the activity specified by the given bookmark.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HostSettings">
+      <MemberSignature Language="C#" Value="public abstract System.ServiceModel.Activities.HostSettings HostSettings { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Activities.HostSettings HostSettings" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.SendReceiveExtension.HostSettings" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Activities.HostSettings</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the host settings of the send/receive activities.</summary>
+        <value>The host settings of the send/receive activities.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnRegisterReceive">
+      <MemberSignature Language="C#" Value="protected abstract void OnRegisterReceive (System.ServiceModel.Activities.ReceiveSettings settings, System.Runtime.DurableInstancing.InstanceKey correlatesWith, System.Activities.Bookmark receiveBookmark);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnRegisterReceive(class System.ServiceModel.Activities.ReceiveSettings settings, class System.Runtime.DurableInstancing.InstanceKey correlatesWith, class System.Activities.Bookmark receiveBookmark) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.SendReceiveExtension.OnRegisterReceive(System.ServiceModel.Activities.ReceiveSettings,System.Runtime.DurableInstancing.InstanceKey,System.Activities.Bookmark)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="settings" Type="System.ServiceModel.Activities.ReceiveSettings" />
+        <Parameter Name="correlatesWith" Type="System.Runtime.DurableInstancing.InstanceKey" />
+        <Parameter Name="receiveBookmark" Type="System.Activities.Bookmark" />
+      </Parameters>
+      <Docs>
+        <param name="settings">The settings for the receive activity.</param>
+        <param name="correlatesWith">An instance key of the activity used to correlate with the message.</param>
+        <param name="receiveBookmark">A bookmark at which the receive activity waits to receive a message.</param>
+        <summary>Executes upon calling **RegisterReceive** method.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnUninitializeCorrelation">
+      <MemberSignature Language="C#" Value="public abstract void OnUninitializeCorrelation (System.Runtime.DurableInstancing.InstanceKey correlationKey);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnUninitializeCorrelation(class System.Runtime.DurableInstancing.InstanceKey correlationKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.SendReceiveExtension.OnUninitializeCorrelation(System.Runtime.DurableInstancing.InstanceKey)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="correlationKey" Type="System.Runtime.DurableInstancing.InstanceKey" />
+      </Parameters>
+      <Docs>
+        <param name="correlationKey">An instance key of the activity used to correlate with the message.</param>
+        <summary>Executes when correlation handle is marked as disposed.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterReceive">
+      <MemberSignature Language="C#" Value="public void RegisterReceive (System.ServiceModel.Activities.ReceiveSettings settings, System.Runtime.DurableInstancing.InstanceKey correlatesWith, System.Activities.Bookmark receiveBookmark);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterReceive(class System.ServiceModel.Activities.ReceiveSettings settings, class System.Runtime.DurableInstancing.InstanceKey correlatesWith, class System.Activities.Bookmark receiveBookmark) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.SendReceiveExtension.RegisterReceive(System.ServiceModel.Activities.ReceiveSettings,System.Runtime.DurableInstancing.InstanceKey,System.Activities.Bookmark)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="settings" Type="System.ServiceModel.Activities.ReceiveSettings" />
+        <Parameter Name="correlatesWith" Type="System.Runtime.DurableInstancing.InstanceKey" />
+        <Parameter Name="receiveBookmark" Type="System.Activities.Bookmark" />
+      </Parameters>
+      <Docs>
+        <param name="settings">The settings for the receive activity.</param>
+        <param name="correlatesWith">An instance key of the activity used to correlate with the message.</param>
+        <param name="receiveBookmark">A bookmark at which the receive activity waits to receive a message.</param>
+        <summary>Registers the received message activity.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Send">
+      <MemberSignature Language="C#" Value="public abstract void Send (System.ServiceModel.Activities.MessageContext message, System.ServiceModel.Activities.SendSettings settings, System.Runtime.DurableInstancing.InstanceKey correlatesWith, System.Activities.Bookmark sendCompleteBookmark);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Send(class System.ServiceModel.Activities.MessageContext message, class System.ServiceModel.Activities.SendSettings settings, class System.Runtime.DurableInstancing.InstanceKey correlatesWith, class System.Activities.Bookmark sendCompleteBookmark) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.SendReceiveExtension.Send(System.ServiceModel.Activities.MessageContext,System.ServiceModel.Activities.SendSettings,System.Runtime.DurableInstancing.InstanceKey,System.Activities.Bookmark)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.ServiceModel.Activities.MessageContext" />
+        <Parameter Name="settings" Type="System.ServiceModel.Activities.SendSettings" />
+        <Parameter Name="correlatesWith" Type="System.Runtime.DurableInstancing.InstanceKey" />
+        <Parameter Name="sendCompleteBookmark" Type="System.Activities.Bookmark" />
+      </Parameters>
+      <Docs>
+        <param name="message">The message to send.</param>
+        <param name="settings">The settings for send activity.</param>
+        <param name="correlatesWith">An instance key of the activity used to correlate with the message.</param>
+        <param name="sendCompleteBookmark">A bookmark at which the send activity waits for the sending completion.</param>
+        <summary>Sends the given message.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

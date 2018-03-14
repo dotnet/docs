@@ -1,0 +1,63 @@
+<Type Name="IProvideStarLayoutInfo" FullName="System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfo">
+  <TypeSignature Language="C#" Value="public interface IProvideStarLayoutInfo : System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfoBase" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IProvideStarLayoutInfo implements class System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfoBase" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfo" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfoBase</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Provides the data needed for the star layout.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, the panels that lay out the ribbon use *star sizing* to show the largest possible control variation that can fit in the available space. Star sizing is a convention where the available space is divided evenly between the elements that need to occupy the space. The name derives from the fact that you specify star sizing by using an asterisk (*) in XAML.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="OnStarSizeAllocationCompleted">
+      <MemberSignature Language="C#" Value="public void OnStarSizeAllocationCompleted ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnStarSizeAllocationCompleted() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfo.OnStarSizeAllocationCompleted" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Called when space allocation is complete.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StarLayoutCombinations">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Windows.Controls.Ribbon.Primitives.StarLayoutInfo&gt; StarLayoutCombinations { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class System.Windows.Controls.Ribbon.Primitives.StarLayoutInfo&gt; StarLayoutCombinations" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfo.StarLayoutCombinations" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Windows.Controls.Ribbon.Primitives.StarLayoutInfo&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection that contains the non-overlapping star combinations.</summary>
+        <value>A collection that contains the non-overlapping star combinations.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

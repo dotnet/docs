@@ -1,0 +1,42 @@
+<Type Name="IPrimitiveTypeProvider&lt;TType&gt;" FullName="System.Reflection.Metadata.IPrimitiveTypeProvider&lt;TType&gt;">
+  <TypeSignature Language="C#" Value="public interface IPrimitiveTypeProvider&lt;TType&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPrimitiveTypeProvider`1&lt;TType&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.IPrimitiveTypeProvider`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.Metadata</AssemblyName>
+    <AssemblyVersion>1.4.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TType" />
+  </TypeParameters>
+  <Interfaces />
+  <Docs>
+    <typeparam name="TType">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetPrimitiveType">
+      <MemberSignature Language="C#" Value="public TType GetPrimitiveType (System.Reflection.Metadata.PrimitiveTypeCode typeCode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TType GetPrimitiveType(valuetype System.Reflection.Metadata.PrimitiveTypeCode typeCode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.IPrimitiveTypeProvider`1.GetPrimitiveType(System.Reflection.Metadata.PrimitiveTypeCode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TType</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="typeCode" Type="System.Reflection.Metadata.PrimitiveTypeCode" />
+      </Parameters>
+      <Docs>
+        <param name="typeCode">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

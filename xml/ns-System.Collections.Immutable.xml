@@ -1,0 +1,36 @@
+<Namespace Name="System.Collections.Immutable">
+  <Docs>
+    <summary>The <see cref="N:System.Collections.Immutable" /> namespace contains interfaces and classes that define immutable collections. These classes are supported starting with [!INCLUDE[net_v45](~/includes/net-v45-md.md)]. Use them to build apps that target the desktop, [!INCLUDE[win8_appstore_long](~/includes/win8-appstore-long-md.md)], [!INCLUDE[net_portable](~/includes/net-portable-md.md)] and Windows Phone 8.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[
+## Remarks  
+With immutable collections, you can:
+
+- Share a collection in a way that its consumer can be assured that the collection never changes.
+
+- Provide implicit thread safety in multi-threaded applications (no locks required to access collections).
+
+- Follow functional programming practices.
+
+- Modify a collection during enumeration, while ensuring that the original collection does not change.
+
+The immutable collection classes are available with .NET Core, however they're not part of the core class library distributed with the .NET Framework. 
+They're available starting with the .NET Framework 4.5 via NuGet.
+
+To install the immutable collections via NuGet:
+
+1. Open your project in Visual Studio and choose **Manage NuGet Packages** from the **Project** menu.
+
+2. Optionally, select the **Include prerelease** checkbox. 
+This option will give you access to new prerelease versions of the immutable classes, as they become available.
+
+3. Use the **Search** box to locate the **System.Collections.Immutable** package.
+
+4. In the left pane, select the **System.Collections.Immutable** package. In the right pane, select the desired version and then choose Install.
+
+The installation steps described above are for Visual Studio 2015. For other versions of Visual Studio, the steps might be slightly different because of differences in the user interface (UI).
+  
+ ]]></format>      
+    </remarks>
+  </Docs>
+</Namespace>

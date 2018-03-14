@@ -1,0 +1,222 @@
+<Type Name="WebEventBufferFlushInfo" FullName="System.Web.Management.WebEventBufferFlushInfo">
+  <TypeSignature Language="C#" Value="public sealed class WebEventBufferFlushInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WebEventBufferFlushInfo extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Management.WebEventBufferFlushInfo" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains the parameters defining the flush buffer characteristics.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ ASP.NET health monitoring allows production and operations staff to manage deployed Web applications. The <xref:System.Web.Management> namespace contains the health-event types responsible for packaging application health-status data and the provider types responsible for processing this data. It also contains supporting types that help during the management of health events.  
+  
+ The <xref:System.Web.Management.WebEventBufferFlushInfo> class defines values that identify the buffer's current status. An instance of the class is passed as a parameter to the <xref:System.Web.Management.BufferedWebEventProvider.ProcessEventFlush%2A> method that processes the messages that have been buffered. ASP.NET health monitoring calls this method when the flushing of the buffer is required. This is determined by the parameters defined by the `bufferModes` element in the `healthMonitoring` configuration section.  
+  
+> [!NOTE]
+>  By design, the buffering mechanism might drop some events in order to keep pace with the incoming events. It is up to the user to adjust this mechanism by properly modifying the `bufferModes` element in the `healthMonitoring` configuration section.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Management.WebEventBufferFlushInfo> class. This code example is part of a larger example provided for the <xref:System.Web.Management.BufferedWebEventProvider> class.  
+  
+ [!code-csharp[System.Web.Management.BufferedWebEventProvider#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.BufferedWebEventProvider/CS/bufferedwebeventprovider.cs#6)]
+ [!code-vb[System.Web.Management.BufferedWebEventProvider#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.BufferedWebEventProvider/VB/bufferedwebeventprovider.vb#6)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Events">
+      <MemberSignature Language="C#" Value="public System.Web.Management.WebBaseEventCollection Events { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Management.WebBaseEventCollection Events" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Management.WebEventBufferFlushInfo.Events" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Management.WebBaseEventCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the events collection in the current message.</summary>
+        <value>The <see cref="T:System.Web.Management.WebBaseEventCollection" /> events contained in the current message.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Due to buffering, several events are usually sent in a single message.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Management.WebEventBufferFlushInfo.Events%2A> property. This code example is part of a larger example provided for the <xref:System.Web.Management.BufferedWebEventProvider> class.  
+  
+ [!code-csharp[System.Web.Management.BufferedWebEventProvider#11](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.BufferedWebEventProvider/CS/bufferedwebeventprovider.cs#11)]
+ [!code-vb[System.Web.Management.BufferedWebEventProvider#11](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.BufferedWebEventProvider/VB/bufferedwebeventprovider.vb#11)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EventsDiscardedSinceLastNotification">
+      <MemberSignature Language="C#" Value="public int EventsDiscardedSinceLastNotification { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 EventsDiscardedSinceLastNotification" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Management.WebEventBufferFlushInfo.EventsDiscardedSinceLastNotification" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of events dropped since the last notification.</summary>
+        <value>The number of events dropped by the buffering mechanism since the last notification.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By design, the buffering mechanism might drop some events in order to keep pace with the incoming events. It is up to the user to adjust this mechanism by properly modifying the `bufferModes` element in the `healthMonitoring` configuration section.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Management.WebEventBufferFlushInfo.EventsDiscardedSinceLastNotification%2A> property. This code example is part of a larger example provided for the <xref:System.Web.Management.BufferedWebEventProvider> class.  
+  
+ [!code-csharp[System.Web.Management.BufferedWebEventProvider#12](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.BufferedWebEventProvider/CS/bufferedwebeventprovider.cs#12)]
+ [!code-vb[System.Web.Management.BufferedWebEventProvider#12](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.BufferedWebEventProvider/VB/bufferedwebeventprovider.vb#12)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EventsInBuffer">
+      <MemberSignature Language="C#" Value="public int EventsInBuffer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 EventsInBuffer" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Management.WebEventBufferFlushInfo.EventsInBuffer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of events in the buffer.</summary>
+        <value>The number of events in the buffer.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This number is captured at the beginning of the notification.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Management.WebEventBufferFlushInfo.EventsInBuffer%2A> property. This code example is part of a larger example provided for the <xref:System.Web.Management.BufferedWebEventProvider> class.  
+  
+ [!code-csharp[System.Web.Management.BufferedWebEventProvider#13](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.BufferedWebEventProvider/CS/bufferedwebeventprovider.cs#13)]
+ [!code-vb[System.Web.Management.BufferedWebEventProvider#13](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.BufferedWebEventProvider/VB/bufferedwebeventprovider.vb#13)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastNotificationUtc">
+      <MemberSignature Language="C#" Value="public DateTime LastNotificationUtc { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime LastNotificationUtc" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Management.WebEventBufferFlushInfo.LastNotificationUtc" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the date and the time of the last notification.</summary>
+        <value>The date and the time of the last notification.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Management.WebEventBufferFlushInfo.LastNotificationUtc%2A> property. This code example is part of a larger example provided for the <xref:System.Web.Management.BufferedWebEventProvider> class.  
+  
+ [!code-csharp[System.Web.Management.BufferedWebEventProvider#14](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.BufferedWebEventProvider/CS/bufferedwebeventprovider.cs#14)]
+ [!code-vb[System.Web.Management.BufferedWebEventProvider#14](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.BufferedWebEventProvider/VB/bufferedwebeventprovider.vb#14)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NotificationSequence">
+      <MemberSignature Language="C#" Value="public int NotificationSequence { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NotificationSequence" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Management.WebEventBufferFlushInfo.NotificationSequence" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the message sequence in the current notification.</summary>
+        <value>The number indicating the message sequence order in the current notification, beginning with an index of zero.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Management.WebEventBufferFlushInfo.NotificationSequence%2A> property. This code example is part of a larger example provided for the <xref:System.Web.Management.BufferedWebEventProvider> class.  
+  
+ [!code-csharp[System.Web.Management.BufferedWebEventProvider#15](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.BufferedWebEventProvider/CS/bufferedwebeventprovider.cs#15)]
+ [!code-vb[System.Web.Management.BufferedWebEventProvider#15](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.BufferedWebEventProvider/VB/bufferedwebeventprovider.vb#15)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NotificationType">
+      <MemberSignature Language="C#" Value="public System.Web.Management.EventNotificationType NotificationType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Management.EventNotificationType NotificationType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Management.WebEventBufferFlushInfo.NotificationType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Management.EventNotificationType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the current notification type.</summary>
+        <value>One of the <see cref="T:System.Web.Management.EventNotificationType" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Management.WebEventBufferFlushInfo.NotificationType%2A> property. This code example is part of a larger example provided for the <xref:System.Web.Management.BufferedWebEventProvider> class.  
+  
+ [!code-csharp[System.Web.Management.BufferedWebEventProvider#16](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.BufferedWebEventProvider/CS/bufferedwebeventprovider.cs#16)]
+ [!code-vb[System.Web.Management.BufferedWebEventProvider#16](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.BufferedWebEventProvider/VB/bufferedwebeventprovider.vb#16)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,135 @@
+<Type Name="AssemblyFoldersExInfo" FullName="Microsoft.Build.Utilities.AssemblyFoldersExInfo">
+  <TypeSignature Language="C#" Value="public class AssemblyFoldersExInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AssemblyFoldersExInfo extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Utilities.AssemblyFoldersExInfo" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains information about entries in the AssemblyFoldersEx registry keys.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AssemblyFoldersExInfo (Microsoft.Win32.RegistryHive hive, Microsoft.Win32.RegistryView view, string registryKey, string directoryPath, Version targetFrameworkVersion);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Win32.RegistryHive hive, valuetype Microsoft.Win32.RegistryView view, string registryKey, string directoryPath, class System.Version targetFrameworkVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.AssemblyFoldersExInfo.#ctor(Microsoft.Win32.RegistryHive,Microsoft.Win32.RegistryView,System.String,System.String,System.Version)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="hive" Type="Microsoft.Win32.RegistryHive" />
+        <Parameter Name="view" Type="Microsoft.Win32.RegistryView" />
+        <Parameter Name="registryKey" Type="System.String" />
+        <Parameter Name="directoryPath" Type="System.String" />
+        <Parameter Name="targetFrameworkVersion" Type="System.Version" />
+      </Parameters>
+      <Docs>
+        <param name="hive">Registry hive to use.</param>
+        <param name="view">Registry view to use.</param>
+        <param name="registryKey">Registry key for the component.</param>
+        <param name="directoryPath">Registry keys default folder path.</param>
+        <param name="targetFrameworkVersion">Target framework version for the registry key.</param>
+        <summary>Creates a new instance of the <see langword="AssemblyFoldersExInfo" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DirectoryPath">
+      <MemberSignature Language="C#" Value="public string DirectoryPath { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DirectoryPath" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.AssemblyFoldersExInfo.DirectoryPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the folder found at the registry keys default value.</summary>
+        <value>Returns path to the registry keys default folder.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Hive">
+      <MemberSignature Language="C#" Value="public Microsoft.Win32.RegistryHive Hive { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Win32.RegistryHive Hive" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.AssemblyFoldersExInfo.Hive" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.RegistryHive</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the registry hive.</summary>
+        <value>Returns the registry hive.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Key">
+      <MemberSignature Language="C#" Value="public string Key { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Key" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.AssemblyFoldersExInfo.Key" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the registry key for the component.</summary>
+        <value>Returns the registry key.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetFrameworkVersion">
+      <MemberSignature Language="C#" Value="public Version TargetFrameworkVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Version TargetFrameworkVersion" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.AssemblyFoldersExInfo.TargetFrameworkVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Version</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the target framework version for the registry key.</summary>
+        <value>Returns the target framework version.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="View">
+      <MemberSignature Language="C#" Value="public Microsoft.Win32.RegistryView View { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Win32.RegistryView View" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.AssemblyFoldersExInfo.View" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.RegistryView</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the registry view.</summary>
+        <value>Returns the registry view.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

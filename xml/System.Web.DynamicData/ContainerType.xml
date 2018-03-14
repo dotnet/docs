@@ -1,0 +1,57 @@
+<Type Name="ContainerType" FullName="System.Web.DynamicData.ContainerType">
+  <TypeSignature Language="C#" Value="public enum ContainerType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ContainerType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.ContainerType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.DynamicData</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the data-control container type.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Item containers holds item containers that implement the <xref:System.Web.UI.WebControls.IDataBoundItemControl> interface, such as <xref:System.Web.UI.WebControls.DetailsView> or <xref:System.Web.UI.WebControls.FormView> controls. List containers hold list containers that implement the <xref:System.Web.UI.WebControls.IDataBoundListControl> interface, such as <xref:System.Web.UI.WebControls.ListView>, <xref:System.Web.UI.WebControls.GridView>, or <xref:System.Web.UI.WebControls.Repeater> controls.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="Item" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.DynamicData.ContainerType Item = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.DynamicData.ContainerType.Item" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.DynamicData.ContainerType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates an item container that implements the <see cref="T:System.Web.UI.WebControls.IDataBoundItemControl" /> interface, such as a <see cref="T:System.Web.UI.WebControls.DetailsView" /> control or a <see cref="T:System.Web.UI.WebControls.FormView" /> control.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="List">
+      <MemberSignature Language="C#" Value="List" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.DynamicData.ContainerType List = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.DynamicData.ContainerType.List" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.DynamicData.ContainerType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates a list container that implements the <see cref="T:System.Web.UI.WebControls.IDataBoundListControl" /> interface, such as a <see cref="T:System.Web.UI.WebControls.ListView" /> control, a <see cref="T:System.Web.UI.WebControls.GridView" /> control, or a <see cref="T:System.Web.UI.WebControls.Repeater" /> control.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

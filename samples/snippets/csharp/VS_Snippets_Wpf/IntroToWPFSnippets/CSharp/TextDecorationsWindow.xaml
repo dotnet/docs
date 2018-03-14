@@ -1,0 +1,263 @@
+﻿<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="SDKSample.TextDecorationsWindow"
+    Title="SDKSample" Height="300" Width="300">
+
+  <Window.Resources>
+    <LinearGradientBrush x:Key="headerBackground"
+      StartPoint="0,0.5"  EndPoint="1,0.5">
+      <LinearGradientBrush.GradientStops>
+        <GradientStop Color="SteelBlue" Offset="0.00" />
+        <GradientStop Color="SteelBlue" Offset="0.25" />
+        <GradientStop Color="LightBlue" Offset="0.75" />
+        <GradientStop Color="White"     Offset="1.00" />
+      </LinearGradientBrush.GradientStops>
+    </LinearGradientBrush>
+
+    <Style TargetType="{x:Type TextBlock}">
+      <Setter Property="FontFamily" Value="Verdana" />
+      <Setter Property="FontSize" Value="14" />
+    </Style>
+  </Window.Resources>
+  
+  <StackPanel Margin="10">
+
+    <StackPanel
+      Background="{StaticResource headerBackground}"
+      Margin="0,0,0,0">
+      <TextBlock Margin="6" Foreground="White">
+        Basic Text Decorations with XAML
+      </TextBlock>
+    </StackPanel>
+
+    <StackPanel
+      Height="50" 
+      Background="White"
+      Orientation="Horizontal"
+      >
+      <!-- Default underline decoration. -->
+      <TextBlock
+        FontSize="18" 
+        Width="130"
+        VerticalAlignment="Center"
+        TextDecorations="Underline">The lazy dog</TextBlock>
+
+      <!-- Default strikethrough decoration. -->
+      <TextBlock 
+        FontSize="18" 
+        Width="130" 
+        VerticalAlignment="Center" 
+        TextDecorations="Strikethrough">The lazy dog</TextBlock>
+
+      <!-- Default overline decoration. -->
+      <TextBlock 
+        FontSize="18" 
+        Width="130" 
+        VerticalAlignment="Center" 
+        TextDecorations="OverLine">The lazy dog</TextBlock>
+
+      <!-- Default baseline decoration. -->
+      <TextBlock 
+        FontSize="18" 
+        Width="130" 
+        VerticalAlignment="Center" 
+        TextDecorations="Baseline">The lazy dog</TextBlock>
+    </StackPanel>
+
+    <StackPanel
+      Background="{StaticResource headerBackground}"
+      Margin="0,0,0,0">
+      <TextBlock Margin="6" Foreground="White">
+        Changing the Color of a Text Decoration with XAML
+      </TextBlock>
+    </StackPanel>
+    <StackPanel
+      Height="50" 
+      Background="White"
+      Orientation="Horizontal">
+
+      <!-- <Snippet1> -->
+      <!-- Fill the underline decoration with a solid color brush. -->
+      <TextBlock FontSize="18" Width="130" VerticalAlignment="Center">
+        The lazy dog
+        <TextBlock.TextDecorations>
+          <TextDecoration Location="Underline" 
+            PenThicknessUnit="FontRecommended">
+            <TextDecoration.Pen>
+              <Pen Brush="Red" Thickness="1" />
+            </TextDecoration.Pen>
+          </TextDecoration>
+        </TextBlock.TextDecorations>
+      </TextBlock>
+      <!-- </Snippet1> -->
+
+      <!-- <Snippet2> -->
+      <!-- Fill the strikethrough decoration with a solid color brush. -->
+      <TextBlock FontSize="18" Width="130" VerticalAlignment="Center">
+        The lazy dog
+        <TextBlock.TextDecorations>
+          <TextDecoration Location="Strikethrough" 
+            PenThicknessUnit="FontRecommended">
+            <TextDecoration.Pen>
+              <Pen Brush="Blue" Thickness="1" />
+            </TextDecoration.Pen>
+          </TextDecoration>
+        </TextBlock.TextDecorations>
+      </TextBlock>
+      <!-- </Snippet2> -->
+
+      <!-- <Snippet3> -->
+      <!-- Fill the overline decoration with a linear gradient brush. -->
+      <TextBlock FontSize="18" Width="130" VerticalAlignment="Center">
+        The lazy dog
+        <TextBlock.TextDecorations>
+          <TextDecoration Location="OverLine" 
+            PenThicknessUnit="FontRecommended">
+            <TextDecoration.Pen>
+              <Pen Thickness="3">
+                <Pen.Brush>
+                  <LinearGradientBrush 
+                    StartPoint="0,0.5"  EndPoint="1,0.5">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStop Color="LimeGreen" Offset="0" />
+                      <GradientStop Color="Yellow" Offset="1" />
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Pen.Brush>
+              </Pen>
+            </TextDecoration.Pen>
+          </TextDecoration>
+        </TextBlock.TextDecorations>
+      </TextBlock>
+      <!-- </Snippet3> -->
+
+      <!-- <Snippet4> -->
+      <!-- Fill the baseline decoration with a linear gradient brush. -->
+      <TextBlock FontSize="18" Width="130" VerticalAlignment="Center">
+        The lazy dog
+        <TextBlock.TextDecorations>
+          <TextDecoration Location="Baseline" 
+            PenThicknessUnit="FontRecommended">
+            <TextDecoration.Pen>
+              <Pen Thickness="3">
+                <Pen.Brush>
+                  <LinearGradientBrush Opacity="0.5"
+                    StartPoint="0,0.5"  EndPoint="1,0.5">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStop Color="Orange" Offset="0" />
+                      <GradientStop Color="Red" Offset="1" />
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Pen.Brush>
+              </Pen>
+            </TextDecoration.Pen>
+          </TextDecoration>
+        </TextBlock.TextDecorations>
+      </TextBlock>
+      <!-- </Snippet4> -->
+    </StackPanel>
+
+    <StackPanel
+  Background="{StaticResource headerBackground}"
+  Margin="0,0,0,0">
+      <TextBlock Margin="6" Foreground="White">
+        Creating Dash Text Decorations with XAML
+      </TextBlock>
+    </StackPanel>
+
+    <StackPanel
+      Height="50" 
+      Background="White"
+      Orientation="Horizontal">
+
+      <!-- Underline decoration with dashes. -->
+      <TextBlock FontSize="18" Width="130" VerticalAlignment="Center">
+        The lazy dog
+        <TextBlock.TextDecorations>
+          <TextDecoration Location="Underline" 
+            PenThicknessUnit="FontRecommended">
+            <TextDecoration.Pen>
+              <Pen Brush="Red" Thickness="1">
+                <Pen.DashStyle>
+                  <DashStyle Dashes="5"/>
+                </Pen.DashStyle>
+              </Pen>
+            </TextDecoration.Pen>
+          </TextDecoration>
+        </TextBlock.TextDecorations>
+      </TextBlock>
+
+      <!-- Strikethrough decoration with dashes. -->
+      <TextBlock FontSize="18" Width="130" VerticalAlignment="Center">
+        The lazy dog
+        <TextBlock.TextDecorations>
+          <TextDecoration Location="Strikethrough" 
+            PenThicknessUnit="FontRecommended">
+            <TextDecoration.Pen>
+              <Pen Brush="Blue" Thickness="1">
+                <Pen.DashStyle>
+                  <DashStyle Dashes="1 2" />
+                </Pen.DashStyle>
+              </Pen>
+            </TextDecoration.Pen>
+          </TextDecoration>
+        </TextBlock.TextDecorations>
+      </TextBlock>
+
+      <!-- Overline decoration with dashes. -->
+      <TextBlock FontSize="18" Width="130" VerticalAlignment="Center">
+        The lazy dog
+        <TextBlock.TextDecorations>
+          <TextDecoration Location="OverLine" 
+            PenThicknessUnit="FontRecommended">
+            <TextDecoration.Pen>
+              <Pen Thickness="3">
+                <Pen.Brush>
+                  <LinearGradientBrush 
+                    StartPoint="0,0.5"  EndPoint="1,0.5">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStop Color="LimeGreen" Offset="0" />
+                      <GradientStop Color="Yellow" Offset="1" />
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Pen.Brush>
+                <Pen.DashStyle>
+                  <DashStyle  Dashes="0.5, 3, 1, 2" />
+                </Pen.DashStyle>
+              </Pen>
+            </TextDecoration.Pen>
+          </TextDecoration>
+        </TextBlock.TextDecorations>
+      </TextBlock>
+
+      <!-- Baseline decoration with dashes. -->
+      <TextBlock FontSize="18" Width="130" VerticalAlignment="Center">
+        The lazy dog
+        <TextBlock.TextDecorations>
+          <TextDecoration Location="Baseline" 
+            PenThicknessUnit="FontRecommended">
+            <TextDecoration.Pen>
+              <Pen Thickness="3">
+                <Pen.DashStyle>
+                  <DashStyle Dashes="0.5, 3, 1, 2" />
+                </Pen.DashStyle>
+                <Pen.Brush>
+                  <LinearGradientBrush Opacity="0.5"
+                    StartPoint="0,0.5"  EndPoint="1,0.5">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStop Color="Orange" Offset="0" />
+                      <GradientStop Color="Red" Offset="1" />
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Pen.Brush>
+              </Pen>
+            </TextDecoration.Pen>
+          </TextDecoration>
+        </TextBlock.TextDecorations>
+      </TextBlock>
+    </StackPanel>
+
+  </StackPanel>
+  
+</Window>

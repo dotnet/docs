@@ -1,0 +1,41 @@
+<Type Name="RegistrationContext" FullName="System.Activities.RegistrationContext">
+  <TypeSignature Language="C#" Value="public sealed class RegistrationContext" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RegistrationContext extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.RegistrationContext" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides access to the current collection of workflow execution properties.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FindProperty">
+      <MemberSignature Language="C#" Value="public object FindProperty (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object FindProperty(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.RegistrationContext.FindProperty(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the workflow execution property.</param>
+        <summary>Returns a workflow execution property with the specified name.</summary>
+        <returns>The workflow execution property.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

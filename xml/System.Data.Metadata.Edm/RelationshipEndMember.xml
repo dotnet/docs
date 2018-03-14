@@ -1,0 +1,74 @@
+<Type Name="RelationshipEndMember" FullName="System.Data.Metadata.Edm.RelationshipEndMember">
+  <TypeSignature Language="C#" Value="public abstract class RelationshipEndMember : System.Data.Metadata.Edm.EdmMember" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit RelationshipEndMember extends System.Data.Metadata.Edm.EdmMember" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.RelationshipEndMember" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Data.Metadata.Edm.EdmMember</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines the <see langword="End" /> member for the <see cref="T:System.Data.Metadata.Edm.RelationshipType" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DeleteBehavior">
+      <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.OperationAction DeleteBehavior { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.Metadata.Edm.OperationAction DeleteBehavior" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.RelationshipEndMember.DeleteBehavior" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.OperationAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the operational behavior of this relationship end member.</summary>
+        <value>One of the <see cref="T:System.Data.Metadata.Edm.OperationAction" /> values. The default is <see cref="P:System.Data.Metadata.Edm.OperationAction.None" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEntityType">
+      <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.EntityType GetEntityType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Metadata.Edm.EntityType GetEntityType() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.RelationshipEndMember.GetEntityType" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.EntityType</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Access the EntityType of the EndMember in an association.</summary>
+        <returns>The EntityType of the EndMember in an association.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RelationshipMultiplicity">
+      <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.RelationshipMultiplicity RelationshipMultiplicity { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.Metadata.Edm.RelationshipMultiplicity RelationshipMultiplicity" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.RelationshipEndMember.RelationshipMultiplicity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.RelationshipMultiplicity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the multiplicity of this relationship end member.</summary>
+        <value>One of the <see cref="T:System.Data.Metadata.Edm.RelationshipMultiplicity" /> values.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

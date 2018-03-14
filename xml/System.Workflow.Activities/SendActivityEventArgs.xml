@@ -1,0 +1,69 @@
+<Type Name="SendActivityEventArgs" FullName="System.Workflow.Activities.SendActivityEventArgs">
+  <TypeSignature Language="C#" Value="public sealed class SendActivityEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SendActivityEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.SendActivityEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.WorkflowServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides information for the <see cref="E:System.Workflow.Activities.SendActivity.BeforeSend" /> and <see cref="E:System.Workflow.Activities.SendActivity.AfterResponse" /> events.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SendActivityEventArgs (System.Workflow.Activities.SendActivity sendActivity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Workflow.Activities.SendActivity sendActivity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.SendActivityEventArgs.#ctor(System.Workflow.Activities.SendActivity)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="sendActivity" Type="System.Workflow.Activities.SendActivity" />
+      </Parameters>
+      <Docs>
+        <param name="sendActivity">The T:System.Workflow.Activities.SendActivity that threw the event associated with this <see cref="T:System.Workflow.Activities.SendActivityEventArgs" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.SendActivityEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendActivity">
+      <MemberSignature Language="C#" Value="public System.Workflow.Activities.SendActivity SendActivity { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.Activities.SendActivity SendActivity" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.SendActivityEventArgs.SendActivity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Activities.SendActivity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Workflow.Activities.SendActivity" /> that threw the event associated with this <see cref="T:System.Workflow.Activities.SendActivityEventArgs" />.</summary>
+        <value>The <see cref="T:System.Workflow.Activities.SendActivity" /> that threw the event associated with this <see cref="T:System.Workflow.Activities.SendActivityEventArgs" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

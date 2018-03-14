@@ -1,0 +1,161 @@
+<Type Name="AnimationStyle" FullName="System.Windows.Automation.Text.AnimationStyle">
+  <TypeSignature Language="C#" Value="public enum AnimationStyle" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AnimationStyle extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Text.AnimationStyle" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationTypes</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("B6C08F15-AA5E-4754-9E4C-AA279D3F36D4")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents values for <see cref="F:System.Windows.Automation.TextPattern.AnimationStyleAttribute" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Animations appear on the screen only; the animated text prints, but the animation effect does not.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BlinkingBackground">
+      <MemberSignature Language="C#" Value="BlinkingBackground" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.AnimationStyle BlinkingBackground = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.AnimationStyle.BlinkingBackground" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Text.AnimationStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the font and background alternate between assigned colors and contrasting colors.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LasVegasLights">
+      <MemberSignature Language="C#" Value="LasVegasLights" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.AnimationStyle LasVegasLights = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.AnimationStyle.LasVegasLights" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Text.AnimationStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the bounding rectangle displays a border of alternating icons of different colors.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MarchingBlackAnts">
+      <MemberSignature Language="C#" Value="MarchingBlackAnts" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.AnimationStyle MarchingBlackAnts = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.AnimationStyle.MarchingBlackAnts" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Text.AnimationStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the bounding rectangle displays moving black dashes.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MarchingRedAnts">
+      <MemberSignature Language="C#" Value="MarchingRedAnts" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.AnimationStyle MarchingRedAnts = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.AnimationStyle.MarchingRedAnts" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Text.AnimationStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the bounding rectangle displays moving red dashes.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.AnimationStyle None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.AnimationStyle.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Text.AnimationStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that there is no animation style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Other">
+      <MemberSignature Language="C#" Value="Other" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.AnimationStyle Other = int32(-1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.AnimationStyle.Other" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Text.AnimationStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the animation style is one not explicitly itemized in the <see cref="T:System.Windows.Automation.Text.AnimationStyle" /> enumeration.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Shimmer">
+      <MemberSignature Language="C#" Value="Shimmer" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.AnimationStyle Shimmer = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.AnimationStyle.Shimmer" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Text.AnimationStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the font alternates between solid and blurred.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SparkleText">
+      <MemberSignature Language="C#" Value="SparkleText" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.AnimationStyle SparkleText = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.AnimationStyle.SparkleText" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Text.AnimationStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the background displays flashing, multi-colored icons.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

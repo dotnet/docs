@@ -1,0 +1,3513 @@
+<Type Name="KnownColor" FullName="System.Drawing.KnownColor">
+  <TypeSignature Language="C#" Value="public enum KnownColor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed KnownColor extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.KnownColor" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the known system colors.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Drawing.KnownColor> enumeration to print out the names and colors of all its values. This example is designed to be used with Windows Forms. Create a form and paste the following code into it. Call the `DisplayKnownColors` method in the form's `Paint` event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-cpp[System.Drawing.MiscExamples#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CPP/form1.cpp#6)]
+ [!code-csharp[System.Drawing.MiscExamples#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CS/form1.cs#6)]
+ [!code-vb[System.Drawing.MiscExamples#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscExamples/VB/form1.vb#6)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ActiveBorder">
+      <MemberSignature Language="C#" Value="ActiveBorder" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor ActiveBorder = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.ActiveBorder" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The system-defined color of the active window's border.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ActiveCaption">
+      <MemberSignature Language="C#" Value="ActiveCaption" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor ActiveCaption = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.ActiveCaption" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The system-defined color of the background of the active window's title bar.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ActiveCaptionText">
+      <MemberSignature Language="C#" Value="ActiveCaptionText" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor ActiveCaptionText = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.ActiveCaptionText" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The system-defined color of the text in the active window's title bar.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AliceBlue">
+      <MemberSignature Language="C#" Value="AliceBlue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor AliceBlue = int32(28)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.AliceBlue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AntiqueWhite">
+      <MemberSignature Language="C#" Value="AntiqueWhite" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor AntiqueWhite = int32(29)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.AntiqueWhite" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AppWorkspace">
+      <MemberSignature Language="C#" Value="AppWorkspace" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor AppWorkspace = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.AppWorkspace" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The system-defined color of the application workspace. The application workspace is the area in a multiple-document view that is not being occupied by documents.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Aqua">
+      <MemberSignature Language="C#" Value="Aqua" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Aqua = int32(30)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Aqua" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Aquamarine">
+      <MemberSignature Language="C#" Value="Aquamarine" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Aquamarine = int32(31)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Aquamarine" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Azure">
+      <MemberSignature Language="C#" Value="Azure" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Azure = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Azure" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Beige">
+      <MemberSignature Language="C#" Value="Beige" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Beige = int32(33)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Beige" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Bisque">
+      <MemberSignature Language="C#" Value="Bisque" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Bisque = int32(34)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Bisque" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Black">
+      <MemberSignature Language="C#" Value="Black" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Black = int32(35)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Black" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BlanchedAlmond">
+      <MemberSignature Language="C#" Value="BlanchedAlmond" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor BlanchedAlmond = int32(36)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.BlanchedAlmond" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Blue">
+      <MemberSignature Language="C#" Value="Blue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Blue = int32(37)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Blue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BlueViolet">
+      <MemberSignature Language="C#" Value="BlueViolet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor BlueViolet = int32(38)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.BlueViolet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Brown">
+      <MemberSignature Language="C#" Value="Brown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Brown = int32(39)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Brown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BurlyWood">
+      <MemberSignature Language="C#" Value="BurlyWood" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor BurlyWood = int32(40)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.BurlyWood" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ButtonFace">
+      <MemberSignature Language="C#" Value="ButtonFace" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor ButtonFace = int32(168)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.ButtonFace" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The system-defined face color of a 3-D element.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ButtonHighlight">
+      <MemberSignature Language="C#" Value="ButtonHighlight" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor ButtonHighlight = int32(169)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.ButtonHighlight" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The system-defined color that is the highlight color of a 3-D element. This color is applied to parts of a 3-D element that face the light source.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ButtonShadow">
+      <MemberSignature Language="C#" Value="ButtonShadow" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor ButtonShadow = int32(170)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.ButtonShadow" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The system-defined color that is the shadow color of a 3-D element. This color is applied to parts of a 3-D element that face away from the light source.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CadetBlue">
+      <MemberSignature Language="C#" Value="CadetBlue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor CadetBlue = int32(41)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.CadetBlue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Chartreuse">
+      <MemberSignature Language="C#" Value="Chartreuse" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Chartreuse = int32(42)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Chartreuse" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Chocolate">
+      <MemberSignature Language="C#" Value="Chocolate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Chocolate = int32(43)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Chocolate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Control">
+      <MemberSignature Language="C#" Value="Control" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Control = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Control" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The system-defined face color of a 3-D element.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ControlDark">
+      <MemberSignature Language="C#" Value="ControlDark" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor ControlDark = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.ControlDark" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The system-defined shadow color of a 3-D element. The shadow color is applied to parts of a 3-D element that face away from the light source.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ControlDarkDark">
+      <MemberSignature Language="C#" Value="ControlDarkDark" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor ControlDarkDark = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.ControlDarkDark" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The system-defined color that is the dark shadow color of a 3-D element. The dark shadow color is applied to the parts of a 3-D element that are the darkest color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ControlLight">
+      <MemberSignature Language="C#" Value="ControlLight" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor ControlLight = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.ControlLight" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The system-defined color that is the light color of a 3-D element. The light color is applied to parts of a 3-D element that face the light source.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ControlLightLight">
+      <MemberSignature Language="C#" Value="ControlLightLight" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor ControlLightLight = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.ControlLightLight" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The system-defined highlight color of a 3-D element. The highlight color is applied to the parts of a 3-D element that are the lightest color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ControlText">
+      <MemberSignature Language="C#" Value="ControlText" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor ControlText = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.ControlText" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The system-defined color of text in a 3-D element.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Coral">
+      <MemberSignature Language="C#" Value="Coral" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Coral = int32(44)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Coral" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CornflowerBlue">
+      <MemberSignature Language="C#" Value="CornflowerBlue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor CornflowerBlue = int32(45)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.CornflowerBlue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Cornsilk">
+      <MemberSignature Language="C#" Value="Cornsilk" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Cornsilk = int32(46)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Cornsilk" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Crimson">
+      <MemberSignature Language="C#" Value="Crimson" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Crimson = int32(47)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Crimson" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Cyan">
+      <MemberSignature Language="C#" Value="Cyan" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Cyan = int32(48)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Cyan" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkBlue">
+      <MemberSignature Language="C#" Value="DarkBlue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor DarkBlue = int32(49)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.DarkBlue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkCyan">
+      <MemberSignature Language="C#" Value="DarkCyan" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor DarkCyan = int32(50)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.DarkCyan" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkGoldenrod">
+      <MemberSignature Language="C#" Value="DarkGoldenrod" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor DarkGoldenrod = int32(51)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.DarkGoldenrod" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkGray">
+      <MemberSignature Language="C#" Value="DarkGray" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor DarkGray = int32(52)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.DarkGray" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkGreen">
+      <MemberSignature Language="C#" Value="DarkGreen" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor DarkGreen = int32(53)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.DarkGreen" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkKhaki">
+      <MemberSignature Language="C#" Value="DarkKhaki" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor DarkKhaki = int32(54)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.DarkKhaki" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkMagenta">
+      <MemberSignature Language="C#" Value="DarkMagenta" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor DarkMagenta = int32(55)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.DarkMagenta" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkOliveGreen">
+      <MemberSignature Language="C#" Value="DarkOliveGreen" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor DarkOliveGreen = int32(56)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.DarkOliveGreen" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkOrange">
+      <MemberSignature Language="C#" Value="DarkOrange" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor DarkOrange = int32(57)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.DarkOrange" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkOrchid">
+      <MemberSignature Language="C#" Value="DarkOrchid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor DarkOrchid = int32(58)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.DarkOrchid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkRed">
+      <MemberSignature Language="C#" Value="DarkRed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor DarkRed = int32(59)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.DarkRed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkSalmon">
+      <MemberSignature Language="C#" Value="DarkSalmon" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor DarkSalmon = int32(60)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.DarkSalmon" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkSeaGreen">
+      <MemberSignature Language="C#" Value="DarkSeaGreen" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor DarkSeaGreen = int32(61)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.DarkSeaGreen" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkSlateBlue">
+      <MemberSignature Language="C#" Value="DarkSlateBlue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor DarkSlateBlue = int32(62)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.DarkSlateBlue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkSlateGray">
+      <MemberSignature Language="C#" Value="DarkSlateGray" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor DarkSlateGray = int32(63)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.DarkSlateGray" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkTurquoise">
+      <MemberSignature Language="C#" Value="DarkTurquoise" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor DarkTurquoise = int32(64)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.DarkTurquoise" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkViolet">
+      <MemberSignature Language="C#" Value="DarkViolet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor DarkViolet = int32(65)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.DarkViolet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DeepPink">
+      <MemberSignature Language="C#" Value="DeepPink" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor DeepPink = int32(66)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.DeepPink" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DeepSkyBlue">
+      <MemberSignature Language="C#" Value="DeepSkyBlue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor DeepSkyBlue = int32(67)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.DeepSkyBlue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Desktop">
+      <MemberSignature Language="C#" Value="Desktop" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Desktop = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Desktop" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The system-defined color of the desktop.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DimGray">
+      <MemberSignature Language="C#" Value="DimGray" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor DimGray = int32(68)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.DimGray" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DodgerBlue">
+      <MemberSignature Language="C#" Value="DodgerBlue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor DodgerBlue = int32(69)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.DodgerBlue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Firebrick">
+      <MemberSignature Language="C#" Value="Firebrick" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Firebrick = int32(70)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Firebrick" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FloralWhite">
+      <MemberSignature Language="C#" Value="FloralWhite" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor FloralWhite = int32(71)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.FloralWhite" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ForestGreen">
+      <MemberSignature Language="C#" Value="ForestGreen" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor ForestGreen = int32(72)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.ForestGreen" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Fuchsia">
+      <MemberSignature Language="C#" Value="Fuchsia" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Fuchsia = int32(73)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Fuchsia" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Gainsboro">
+      <MemberSignature Language="C#" Value="Gainsboro" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Gainsboro = int32(74)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Gainsboro" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GhostWhite">
+      <MemberSignature Language="C#" Value="GhostWhite" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor GhostWhite = int32(75)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.GhostWhite" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Gold">
+      <MemberSignature Language="C#" Value="Gold" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Gold = int32(76)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Gold" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Goldenrod">
+      <MemberSignature Language="C#" Value="Goldenrod" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Goldenrod = int32(77)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Goldenrod" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GradientActiveCaption">
+      <MemberSignature Language="C#" Value="GradientActiveCaption" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor GradientActiveCaption = int32(171)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.GradientActiveCaption" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The system-defined color of the lightest color in the color gradient of an active window's title bar.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GradientInactiveCaption">
+      <MemberSignature Language="C#" Value="GradientInactiveCaption" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor GradientInactiveCaption = int32(172)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.GradientInactiveCaption" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The system-defined color of the lightest color in the color gradient of an inactive window's title bar.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Gray">
+      <MemberSignature Language="C#" Value="Gray" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Gray = int32(78)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Gray" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GrayText">
+      <MemberSignature Language="C#" Value="GrayText" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor GrayText = int32(12)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.GrayText" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The system-defined color of dimmed text. Items in a list that are disabled are displayed in dimmed text.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Green">
+      <MemberSignature Language="C#" Value="Green" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Green = int32(79)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Green" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GreenYellow">
+      <MemberSignature Language="C#" Value="GreenYellow" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor GreenYellow = int32(80)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.GreenYellow" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Highlight">
+      <MemberSignature Language="C#" Value="Highlight" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Highlight = int32(13)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Highlight" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The system-defined color of the background of selected items. This includes selected menu items as well as selected text.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HighlightText">
+      <MemberSignature Language="C#" Value="HighlightText" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor HighlightText = int32(14)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.HighlightText" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The system-defined color of the text of selected items.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Honeydew">
+      <MemberSignature Language="C#" Value="Honeydew" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Honeydew = int32(81)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Honeydew" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HotPink">
+      <MemberSignature Language="C#" Value="HotPink" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor HotPink = int32(82)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.HotPink" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HotTrack">
+      <MemberSignature Language="C#" Value="HotTrack" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor HotTrack = int32(15)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.HotTrack" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The system-defined color used to designate a hot-tracked item. Single-clicking a hot-tracked item executes the item.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InactiveBorder">
+      <MemberSignature Language="C#" Value="InactiveBorder" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor InactiveBorder = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.InactiveBorder" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The system-defined color of an inactive window's border.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InactiveCaption">
+      <MemberSignature Language="C#" Value="InactiveCaption" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor InactiveCaption = int32(17)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.InactiveCaption" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The system-defined color of the background of an inactive window's title bar.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InactiveCaptionText">
+      <MemberSignature Language="C#" Value="InactiveCaptionText" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor InactiveCaptionText = int32(18)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.InactiveCaptionText" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The system-defined color of the text in an inactive window's title bar.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IndianRed">
+      <MemberSignature Language="C#" Value="IndianRed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor IndianRed = int32(83)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.IndianRed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Indigo">
+      <MemberSignature Language="C#" Value="Indigo" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Indigo = int32(84)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Indigo" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Info">
+      <MemberSignature Language="C#" Value="Info" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Info = int32(19)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Info" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The system-defined color of the background of a ToolTip.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InfoText">
+      <MemberSignature Language="C#" Value="InfoText" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor InfoText = int32(20)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.InfoText" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The system-defined color of the text of a ToolTip.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ivory">
+      <MemberSignature Language="C#" Value="Ivory" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Ivory = int32(85)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Ivory" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Khaki">
+      <MemberSignature Language="C#" Value="Khaki" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Khaki = int32(86)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Khaki" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Lavender">
+      <MemberSignature Language="C#" Value="Lavender" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Lavender = int32(87)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Lavender" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LavenderBlush">
+      <MemberSignature Language="C#" Value="LavenderBlush" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor LavenderBlush = int32(88)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.LavenderBlush" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LawnGreen">
+      <MemberSignature Language="C#" Value="LawnGreen" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor LawnGreen = int32(89)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.LawnGreen" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LemonChiffon">
+      <MemberSignature Language="C#" Value="LemonChiffon" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor LemonChiffon = int32(90)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.LemonChiffon" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LightBlue">
+      <MemberSignature Language="C#" Value="LightBlue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor LightBlue = int32(91)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.LightBlue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LightCoral">
+      <MemberSignature Language="C#" Value="LightCoral" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor LightCoral = int32(92)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.LightCoral" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LightCyan">
+      <MemberSignature Language="C#" Value="LightCyan" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor LightCyan = int32(93)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.LightCyan" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LightGoldenrodYellow">
+      <MemberSignature Language="C#" Value="LightGoldenrodYellow" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor LightGoldenrodYellow = int32(94)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.LightGoldenrodYellow" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LightGray">
+      <MemberSignature Language="C#" Value="LightGray" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor LightGray = int32(95)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.LightGray" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LightGreen">
+      <MemberSignature Language="C#" Value="LightGreen" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor LightGreen = int32(96)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.LightGreen" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LightPink">
+      <MemberSignature Language="C#" Value="LightPink" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor LightPink = int32(97)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.LightPink" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LightSalmon">
+      <MemberSignature Language="C#" Value="LightSalmon" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor LightSalmon = int32(98)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.LightSalmon" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LightSeaGreen">
+      <MemberSignature Language="C#" Value="LightSeaGreen" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor LightSeaGreen = int32(99)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.LightSeaGreen" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LightSkyBlue">
+      <MemberSignature Language="C#" Value="LightSkyBlue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor LightSkyBlue = int32(100)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.LightSkyBlue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LightSlateGray">
+      <MemberSignature Language="C#" Value="LightSlateGray" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor LightSlateGray = int32(101)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.LightSlateGray" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LightSteelBlue">
+      <MemberSignature Language="C#" Value="LightSteelBlue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor LightSteelBlue = int32(102)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.LightSteelBlue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LightYellow">
+      <MemberSignature Language="C#" Value="LightYellow" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor LightYellow = int32(103)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.LightYellow" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Lime">
+      <MemberSignature Language="C#" Value="Lime" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Lime = int32(104)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Lime" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LimeGreen">
+      <MemberSignature Language="C#" Value="LimeGreen" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor LimeGreen = int32(105)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.LimeGreen" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Linen">
+      <MemberSignature Language="C#" Value="Linen" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Linen = int32(106)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Linen" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Magenta">
+      <MemberSignature Language="C#" Value="Magenta" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Magenta = int32(107)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Magenta" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Maroon">
+      <MemberSignature Language="C#" Value="Maroon" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Maroon = int32(108)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Maroon" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MediumAquamarine">
+      <MemberSignature Language="C#" Value="MediumAquamarine" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor MediumAquamarine = int32(109)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.MediumAquamarine" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MediumBlue">
+      <MemberSignature Language="C#" Value="MediumBlue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor MediumBlue = int32(110)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.MediumBlue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MediumOrchid">
+      <MemberSignature Language="C#" Value="MediumOrchid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor MediumOrchid = int32(111)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.MediumOrchid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MediumPurple">
+      <MemberSignature Language="C#" Value="MediumPurple" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor MediumPurple = int32(112)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.MediumPurple" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MediumSeaGreen">
+      <MemberSignature Language="C#" Value="MediumSeaGreen" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor MediumSeaGreen = int32(113)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.MediumSeaGreen" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MediumSlateBlue">
+      <MemberSignature Language="C#" Value="MediumSlateBlue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor MediumSlateBlue = int32(114)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.MediumSlateBlue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MediumSpringGreen">
+      <MemberSignature Language="C#" Value="MediumSpringGreen" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor MediumSpringGreen = int32(115)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.MediumSpringGreen" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MediumTurquoise">
+      <MemberSignature Language="C#" Value="MediumTurquoise" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor MediumTurquoise = int32(116)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.MediumTurquoise" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MediumVioletRed">
+      <MemberSignature Language="C#" Value="MediumVioletRed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor MediumVioletRed = int32(117)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.MediumVioletRed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Menu">
+      <MemberSignature Language="C#" Value="Menu" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Menu = int32(21)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Menu" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The system-defined color of a menu's background.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MenuBar">
+      <MemberSignature Language="C#" Value="MenuBar" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor MenuBar = int32(173)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.MenuBar" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The system-defined color of the background of a menu bar.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MenuHighlight">
+      <MemberSignature Language="C#" Value="MenuHighlight" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor MenuHighlight = int32(174)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.MenuHighlight" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The system-defined color used to highlight menu items when the menu appears as a flat menu.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MenuText">
+      <MemberSignature Language="C#" Value="MenuText" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor MenuText = int32(22)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.MenuText" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The system-defined color of a menu's text.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MidnightBlue">
+      <MemberSignature Language="C#" Value="MidnightBlue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor MidnightBlue = int32(118)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.MidnightBlue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MintCream">
+      <MemberSignature Language="C#" Value="MintCream" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor MintCream = int32(119)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.MintCream" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MistyRose">
+      <MemberSignature Language="C#" Value="MistyRose" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor MistyRose = int32(120)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.MistyRose" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Moccasin">
+      <MemberSignature Language="C#" Value="Moccasin" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Moccasin = int32(121)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Moccasin" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NavajoWhite">
+      <MemberSignature Language="C#" Value="NavajoWhite" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor NavajoWhite = int32(122)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.NavajoWhite" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Navy">
+      <MemberSignature Language="C#" Value="Navy" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Navy = int32(123)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Navy" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OldLace">
+      <MemberSignature Language="C#" Value="OldLace" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor OldLace = int32(124)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.OldLace" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Olive">
+      <MemberSignature Language="C#" Value="Olive" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Olive = int32(125)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Olive" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OliveDrab">
+      <MemberSignature Language="C#" Value="OliveDrab" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor OliveDrab = int32(126)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.OliveDrab" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Orange">
+      <MemberSignature Language="C#" Value="Orange" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Orange = int32(127)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Orange" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OrangeRed">
+      <MemberSignature Language="C#" Value="OrangeRed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor OrangeRed = int32(128)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.OrangeRed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Orchid">
+      <MemberSignature Language="C#" Value="Orchid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Orchid = int32(129)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Orchid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PaleGoldenrod">
+      <MemberSignature Language="C#" Value="PaleGoldenrod" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor PaleGoldenrod = int32(130)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.PaleGoldenrod" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PaleGreen">
+      <MemberSignature Language="C#" Value="PaleGreen" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor PaleGreen = int32(131)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.PaleGreen" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PaleTurquoise">
+      <MemberSignature Language="C#" Value="PaleTurquoise" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor PaleTurquoise = int32(132)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.PaleTurquoise" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PaleVioletRed">
+      <MemberSignature Language="C#" Value="PaleVioletRed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor PaleVioletRed = int32(133)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.PaleVioletRed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PapayaWhip">
+      <MemberSignature Language="C#" Value="PapayaWhip" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor PapayaWhip = int32(134)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.PapayaWhip" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PeachPuff">
+      <MemberSignature Language="C#" Value="PeachPuff" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor PeachPuff = int32(135)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.PeachPuff" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Peru">
+      <MemberSignature Language="C#" Value="Peru" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Peru = int32(136)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Peru" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Pink">
+      <MemberSignature Language="C#" Value="Pink" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Pink = int32(137)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Pink" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Plum">
+      <MemberSignature Language="C#" Value="Plum" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Plum = int32(138)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Plum" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PowderBlue">
+      <MemberSignature Language="C#" Value="PowderBlue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor PowderBlue = int32(139)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.PowderBlue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Purple">
+      <MemberSignature Language="C#" Value="Purple" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Purple = int32(140)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Purple" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Red">
+      <MemberSignature Language="C#" Value="Red" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Red = int32(141)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Red" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RosyBrown">
+      <MemberSignature Language="C#" Value="RosyBrown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor RosyBrown = int32(142)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.RosyBrown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RoyalBlue">
+      <MemberSignature Language="C#" Value="RoyalBlue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor RoyalBlue = int32(143)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.RoyalBlue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SaddleBrown">
+      <MemberSignature Language="C#" Value="SaddleBrown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor SaddleBrown = int32(144)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.SaddleBrown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Salmon">
+      <MemberSignature Language="C#" Value="Salmon" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Salmon = int32(145)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Salmon" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SandyBrown">
+      <MemberSignature Language="C#" Value="SandyBrown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor SandyBrown = int32(146)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.SandyBrown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ScrollBar">
+      <MemberSignature Language="C#" Value="ScrollBar" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor ScrollBar = int32(23)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.ScrollBar" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The system-defined color of the background of a scroll bar.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SeaGreen">
+      <MemberSignature Language="C#" Value="SeaGreen" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor SeaGreen = int32(147)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.SeaGreen" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SeaShell">
+      <MemberSignature Language="C#" Value="SeaShell" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor SeaShell = int32(148)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.SeaShell" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Sienna">
+      <MemberSignature Language="C#" Value="Sienna" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Sienna = int32(149)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Sienna" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Silver">
+      <MemberSignature Language="C#" Value="Silver" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Silver = int32(150)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Silver" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SkyBlue">
+      <MemberSignature Language="C#" Value="SkyBlue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor SkyBlue = int32(151)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.SkyBlue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SlateBlue">
+      <MemberSignature Language="C#" Value="SlateBlue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor SlateBlue = int32(152)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.SlateBlue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SlateGray">
+      <MemberSignature Language="C#" Value="SlateGray" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor SlateGray = int32(153)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.SlateGray" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Snow">
+      <MemberSignature Language="C#" Value="Snow" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Snow = int32(154)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Snow" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SpringGreen">
+      <MemberSignature Language="C#" Value="SpringGreen" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor SpringGreen = int32(155)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.SpringGreen" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SteelBlue">
+      <MemberSignature Language="C#" Value="SteelBlue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor SteelBlue = int32(156)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.SteelBlue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Tan">
+      <MemberSignature Language="C#" Value="Tan" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Tan = int32(157)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Tan" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Teal">
+      <MemberSignature Language="C#" Value="Teal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Teal = int32(158)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Teal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Thistle">
+      <MemberSignature Language="C#" Value="Thistle" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Thistle = int32(159)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Thistle" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Tomato">
+      <MemberSignature Language="C#" Value="Tomato" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Tomato = int32(160)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Tomato" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Transparent">
+      <MemberSignature Language="C#" Value="Transparent" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Transparent = int32(27)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Transparent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Turquoise">
+      <MemberSignature Language="C#" Value="Turquoise" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Turquoise = int32(161)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Turquoise" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Violet">
+      <MemberSignature Language="C#" Value="Violet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Violet = int32(162)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Violet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Wheat">
+      <MemberSignature Language="C#" Value="Wheat" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Wheat = int32(163)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Wheat" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="White">
+      <MemberSignature Language="C#" Value="White" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor White = int32(164)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.White" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WhiteSmoke">
+      <MemberSignature Language="C#" Value="WhiteSmoke" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor WhiteSmoke = int32(165)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.WhiteSmoke" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Window">
+      <MemberSignature Language="C#" Value="Window" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Window = int32(24)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Window" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The system-defined color of the background in the client area of a window.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowFrame">
+      <MemberSignature Language="C#" Value="WindowFrame" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor WindowFrame = int32(25)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.WindowFrame" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The system-defined color of a window frame.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowText">
+      <MemberSignature Language="C#" Value="WindowText" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor WindowText = int32(26)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.WindowText" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The system-defined color of the text in the client area of a window.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Yellow">
+      <MemberSignature Language="C#" Value="Yellow" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor Yellow = int32(166)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.Yellow" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="YellowGreen">
+      <MemberSignature Language="C#" Value="YellowGreen" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.KnownColor YellowGreen = int32(167)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.KnownColor.YellowGreen" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.KnownColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined color.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

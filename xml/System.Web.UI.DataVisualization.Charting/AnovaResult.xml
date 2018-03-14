@@ -1,0 +1,214 @@
+<Type Name="AnovaResult" FullName="System.Web.UI.DataVisualization.Charting.AnovaResult">
+  <TypeSignature Language="C#" Value="public class AnovaResult" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AnovaResult extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.AnovaResult" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.DataVisualization</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the results of an ANOVA statistical test.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AnovaResult ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.AnovaResult.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataVisualization.Charting.AnovaResult" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DegreeOfFreedomBetweenGroups">
+      <MemberSignature Language="C#" Value="public double DegreeOfFreedomBetweenGroups { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 DegreeOfFreedomBetweenGroups" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.AnovaResult.DegreeOfFreedomBetweenGroups" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the degree of freedom between groups.</summary>
+        <value>A <see langword="double" /> value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DegreeOfFreedomTotal">
+      <MemberSignature Language="C#" Value="public double DegreeOfFreedomTotal { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 DegreeOfFreedomTotal" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.AnovaResult.DegreeOfFreedomTotal" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the total degree of freedom.</summary>
+        <value>A <see langword="double" /> value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DegreeOfFreedomWithinGroups">
+      <MemberSignature Language="C#" Value="public double DegreeOfFreedomWithinGroups { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 DegreeOfFreedomWithinGroups" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.AnovaResult.DegreeOfFreedomWithinGroups" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the degree of freedom within groups.</summary>
+        <value>A <see langword="double" /> value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FCriticalValue">
+      <MemberSignature Language="C#" Value="public double FCriticalValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 FCriticalValue" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.AnovaResult.FCriticalValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the F-critical value.</summary>
+        <value>A <see langword="double" /> value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FRatio">
+      <MemberSignature Language="C#" Value="public double FRatio { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 FRatio" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.AnovaResult.FRatio" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the F ratio.</summary>
+        <value>A <see langword="double" /> value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MeanSquareVarianceBetweenGroups">
+      <MemberSignature Language="C#" Value="public double MeanSquareVarianceBetweenGroups { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 MeanSquareVarianceBetweenGroups" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.AnovaResult.MeanSquareVarianceBetweenGroups" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the mean square variance between groups.</summary>
+        <value>A <see langword="double" /> value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MeanSquareVarianceWithinGroups">
+      <MemberSignature Language="C#" Value="public double MeanSquareVarianceWithinGroups { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 MeanSquareVarianceWithinGroups" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.AnovaResult.MeanSquareVarianceWithinGroups" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the mean square variance within groups.</summary>
+        <value>A <see langword="double" /> value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SumOfSquaresBetweenGroups">
+      <MemberSignature Language="C#" Value="public double SumOfSquaresBetweenGroups { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 SumOfSquaresBetweenGroups" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.AnovaResult.SumOfSquaresBetweenGroups" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the sum of the squares between groups.</summary>
+        <value>A <see langword="double" /> value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SumOfSquaresTotal">
+      <MemberSignature Language="C#" Value="public double SumOfSquaresTotal { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 SumOfSquaresTotal" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.AnovaResult.SumOfSquaresTotal" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the total sum of the squares.</summary>
+        <value>A <see langword="double" /> value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SumOfSquaresWithinGroups">
+      <MemberSignature Language="C#" Value="public double SumOfSquaresWithinGroups { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 SumOfSquaresWithinGroups" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.AnovaResult.SumOfSquaresWithinGroups" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the sum of the squares within groups.</summary>
+        <value>A <see langword="double" /> value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

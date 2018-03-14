@@ -1,0 +1,64 @@
+<Type Name="ItemContainerTemplate" FullName="System.Windows.Controls.ItemContainerTemplate">
+  <TypeSignature Language="C#" Value="public class ItemContainerTemplate : System.Windows.DataTemplate" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ItemContainerTemplate extends System.Windows.DataTemplate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ItemContainerTemplate" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.DataTemplate</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.DictionaryKeyProperty("ItemContainerTemplateKey")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides the template for producing a container for an <see cref="T:System.Windows.Controls.ItemsControl" /> object.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ItemContainerTemplate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemContainerTemplate.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.ItemContainerTemplate" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemContainerTemplateKey">
+      <MemberSignature Language="C#" Value="public object ItemContainerTemplateKey { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ItemContainerTemplateKey" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ItemContainerTemplate.ItemContainerTemplateKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the default key of the <see cref="T:System.Windows.Controls.ItemContainerTemplate" />.</summary>
+        <value>The default key of the <see cref="T:System.Windows.Controls.ItemContainerTemplate" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you do not set the [x:Key Directive](~/docs/framework/xaml-services/x-key-directive.md) on a <xref:System.Windows.Controls.ItemContainerTemplate> that is in a <xref:System.Windows.ResourceDictionary>, the <xref:System.Windows.Controls.ItemContainerTemplate.ItemContainerTemplateKey%2A> is used as the key.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

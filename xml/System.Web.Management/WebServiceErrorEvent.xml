@@ -1,0 +1,66 @@
+<Type Name="WebServiceErrorEvent" FullName="System.Web.Management.WebServiceErrorEvent">
+  <TypeSignature Language="C#" Value="public class WebServiceErrorEvent : System.Web.Management.WebRequestErrorEvent" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebServiceErrorEvent extends System.Web.Management.WebRequestErrorEvent" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Management.WebServiceErrorEvent" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.Management.WebRequestErrorEvent</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines the event that contains information about Web service errors.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Management.WebServiceErrorEvent> event is raised if an error occurs during a Web service request. Your application can use this event to obtain request-related information, which is available by using the <xref:System.Web.Management.WebRequestInformation> and the <xref:System.Web.Management.WebThreadInformation> classes.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected WebServiceErrorEvent (string message, object eventSource, Exception exception);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor(string message, object eventSource, class System.Exception exception) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Management.WebServiceErrorEvent.#ctor(System.String,System.Object,System.Exception)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="eventSource" Type="System.Object" />
+        <Parameter Name="exception" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="message">The event description.</param>
+        <param name="eventSource">The object that is the source of the event.</param>
+        <param name="exception">The exception that is associated with the error.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Management.WebServiceErrorEvent" /> class by using the specified event parameters.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WebServiceErrorEventCode">
+      <MemberSignature Language="C#" Value="public static int WebServiceErrorEventCode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property int32 WebServiceErrorEventCode" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Management.WebServiceErrorEvent.WebServiceErrorEventCode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the code number that is associated with the current error event.</summary>
+        <value>The code number that is associated with this event. For information about event codes, see <see cref="T:System.Web.Management.WebEventCodes" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

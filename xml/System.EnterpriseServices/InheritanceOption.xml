@@ -1,0 +1,62 @@
+<Type Name="InheritanceOption" FullName="System.EnterpriseServices.InheritanceOption">
+  <TypeSignature Language="C#" Value="public enum InheritanceOption" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed InheritanceOption extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.InheritanceOption" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Indicates whether to create a new context based on the current context or on the information in <see cref="T:System.EnterpriseServices.ServiceConfig" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.EnterpriseServices.InheritanceOption> is used for the value of <xref:System.EnterpriseServices.ServiceConfig.Inheritance%2A>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Ignore">
+      <MemberSignature Language="C#" Value="Ignore" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.InheritanceOption Ignore = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.InheritanceOption.Ignore" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.InheritanceOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The new context is created from the default context.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Inherit">
+      <MemberSignature Language="C#" Value="Inherit" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.InheritanceOption Inherit = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.InheritanceOption.Inherit" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.InheritanceOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The new context is created from the existing context. <see cref="F:System.EnterpriseServices.InheritanceOption.Inherit" /> is the default value for <see cref="P:System.EnterpriseServices.ServiceConfig.Inheritance" />.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

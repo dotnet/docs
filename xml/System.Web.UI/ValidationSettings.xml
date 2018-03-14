@@ -1,0 +1,37 @@
+<Type Name="ValidationSettings" FullName="System.Web.UI.ValidationSettings">
+  <TypeSignature Language="C#" Value="public static class ValidationSettings" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ValidationSettings extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.ValidationSettings" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides client validation settings for the application.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="UnobtrusiveValidationMode">
+      <MemberSignature Language="C#" Value="public static System.Web.UI.UnobtrusiveValidationMode UnobtrusiveValidationMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Web.UI.UnobtrusiveValidationMode UnobtrusiveValidationMode" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ValidationSettings.UnobtrusiveValidationMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.UnobtrusiveValidationMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the client validation mode for the application.</summary>
+        <value>The client validation mode for the application.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,10 @@
+﻿<Window x:Class="MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Button x:Name="startButton" Content="Start" HorizontalAlignment="Left" Margin="215,22,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBox x:Name="resultsTextBox" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Bottom" Width="500" Height="250" FontFamily="Lucida Console"/>
+
+    </Grid>
+</Window>

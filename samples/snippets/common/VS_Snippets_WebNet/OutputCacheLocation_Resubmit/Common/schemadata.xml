@@ -1,0 +1,183 @@
+﻿<NewDataSet>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ProductID" type="xs:int" minOccurs="0" />
+                <xs:element name="CategoryID" type="xs:int" minOccurs="0" />
+                <xs:element name="ProductName" type="xs:string" minOccurs="0" />
+                <xs:element name="ProductDescription" type="xs:string" minOccurs="0" />
+                <xs:element name="UnitPrice" type="xs:decimal" minOccurs="0" />
+                <xs:element name="ServingSize" type="xs:string" minOccurs="0" />
+                <xs:element name="Servings" type="xs:int" minOccurs="0" />
+                <xs:element name="Quantity" type="xs:int" minOccurs="0" />
+                <xs:element name="MinOnHand" type="xs:int" minOccurs="0" />
+                <xs:element name="MaxOnHand" type="xs:int" minOccurs="0" />
+                <xs:element name="Manufacturer" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Table>
+    <ProductID>1001</ProductID>
+    <CategoryID>1</CategoryID>
+    <ProductName>Chocolate City Milk</ProductName>
+    <ProductDescription>Chocolate City Milk Description</ProductDescription>
+    <UnitPrice>2</UnitPrice>
+    <ServingSize>8 fl oz (240 mL)</ServingSize>
+    <Servings>8</Servings>
+    <Quantity>0</Quantity>
+    <MinOnHand>0</MinOnHand>
+    <MaxOnHand>0</MaxOnHand>
+    <Manufacturer>Chocolate City</Manufacturer>
+  </Table>
+  <Table>
+    <ProductID>1002</ProductID>
+    <CategoryID>1</CategoryID>
+    <ProductName>Bessie Brand 2% Milk</ProductName>
+    <ProductDescription>Bessie Brand 2% Milk Description</ProductDescription>
+    <UnitPrice>1.19</UnitPrice>
+    <ServingSize>8 fl oz (240 mL)</ServingSize>
+    <Servings>8</Servings>
+    <Quantity>0</Quantity>
+    <MinOnHand>0</MinOnHand>
+    <MaxOnHand>0</MaxOnHand>
+    <Manufacturer>Milk Factory</Manufacturer>
+  </Table>
+  <Table>
+    <ProductID>1003</ProductID>
+    <CategoryID>1</CategoryID>
+    <ProductName>Funny Farms  Milk</ProductName>
+    <ProductDescription>Funny Farms Whole Milk Description</ProductDescription>
+    <UnitPrice>1.29</UnitPrice>
+    <ServingSize>8 fl oz (240 mL)</ServingSize>
+    <Servings>10</Servings>
+    <Quantity>0</Quantity>
+    <MinOnHand>0</MinOnHand>
+    <MaxOnHand>0</MaxOnHand>
+    <Manufacturer>Funny Farms</Manufacturer>
+  </Table>
+  <Table>
+    <ProductID>2001</ProductID>
+    <CategoryID>2</CategoryID>
+    <ProductName>Fruity Pops</ProductName>
+    <ProductDescription>Fruity Pops Description</ProductDescription>
+    <UnitPrice>4.07</UnitPrice>
+    <ServingSize>3/4 cup (30 g)</ServingSize>
+    <Servings>17</Servings>
+    <Quantity>0</Quantity>
+    <MinOnHand>0</MinOnHand>
+    <MaxOnHand>0</MaxOnHand>
+    <Manufacturer>River Mills</Manufacturer>
+  </Table>
+  <Table>
+    <ProductID>2002</ProductID>
+    <CategoryID>2</CategoryID>
+    <ProductName>U.F.O.s Cereal</ProductName>
+    <ProductDescription>U.F.O.s Cereal Description</ProductDescription>
+    <UnitPrice>3.34</UnitPrice>
+    <ServingSize>1 cup (30 g)</ServingSize>
+    <Servings>10</Servings>
+    <Quantity>0</Quantity>
+    <MinOnHand>0</MinOnHand>
+    <MaxOnHand>0</MaxOnHand>
+    <Manufacturer>Acme Harvesters</Manufacturer>
+  </Table>
+  <Table>
+    <ProductID>2003</ProductID>
+    <CategoryID>2</CategoryID>
+    <ProductName>Healthy Grains</ProductName>
+    <ProductDescription>Healthy Grains Cereal Description</ProductDescription>
+    <UnitPrice>3.78</UnitPrice>
+    <ServingSize>3/4 cup (30 g)</ServingSize>
+    <Servings>17</Servings>
+    <Quantity>0</Quantity>
+    <MinOnHand>0</MinOnHand>
+    <MaxOnHand>0</MaxOnHand>
+    <Manufacturer>All Natural Co.</Manufacturer>
+  </Table>
+  <Table>
+    <ProductID>2004</ProductID>
+    <CategoryID>2</CategoryID>
+    <ProductName>Super Sugar Strike</ProductName>
+    <ProductDescription>Super Sugar Strike Description</ProductDescription>
+    <UnitPrice>4.17</UnitPrice>
+    <ServingSize>3/4 cup (30 g)</ServingSize>
+    <Servings>17</Servings>
+    <Quantity>0</Quantity>
+    <MinOnHand>0</MinOnHand>
+    <MaxOnHand>0</MaxOnHand>
+    <Manufacturer>Capitol Cereals</Manufacturer>
+  </Table>
+  <Table>
+    <ProductID>3001</ProductID>
+    <CategoryID>3</CategoryID>
+    <ProductName>Purple Rain</ProductName>
+    <ProductDescription>Brown Barrel Root Beer Description</ProductDescription>
+    <UnitPrice>1.1</UnitPrice>
+    <ServingSize>4 fl oz (120 mL)</ServingSize>
+    <Servings>8</Servings>
+    <Quantity>0</Quantity>
+    <MinOnHand>0</MinOnHand>
+    <MaxOnHand>0</MaxOnHand>
+    <Manufacturer>BrainFade, Inc.</Manufacturer>
+  </Table>
+  <Table>
+    <ProductID>3002</ProductID>
+    <CategoryID>3</CategoryID>
+    <ProductName>Extreme Orange</ProductName>
+    <ProductDescription>Bargain Cola Description</ProductDescription>
+    <UnitPrice>0.89</UnitPrice>
+    <ServingSize>6 fl oz (180 mL)</ServingSize>
+    <Servings>6</Servings>
+    <Quantity>0</Quantity>
+    <MinOnHand>0</MinOnHand>
+    <MaxOnHand>0</MaxOnHand>
+    <Manufacturer>SuperX Beverages</Manufacturer>
+  </Table>
+  <Table>
+    <ProductID>3003</ProductID>
+    <CategoryID>3</CategoryID>
+    <ProductName>Kona Diet Cola</ProductName>
+    <ProductDescription>Super Red Pop Soda Description</ProductDescription>
+    <UnitPrice>1.1</UnitPrice>
+    <ServingSize>4 fl oz (120 mL)</ServingSize>
+    <Servings>10</Servings>
+    <Quantity>0</Quantity>
+    <MinOnHand>0</MinOnHand>
+    <MaxOnHand>0</MaxOnHand>
+    <Manufacturer>Kona Kola Co.</Manufacturer>
+  </Table>
+  <Table>
+    <ProductID>3004</ProductID>
+    <CategoryID>3</CategoryID>
+    <ProductName>Fizzy Fizzing Drink</ProductName>
+    <ProductDescription>Lemon Lime Quencher Description</ProductDescription>
+    <UnitPrice>1.05</UnitPrice>
+    <ServingSize>6 fl oz (180 mL)</ServingSize>
+    <Servings>5</Servings>
+    <Quantity>0</Quantity>
+    <MinOnHand>0</MinOnHand>
+    <MaxOnHand>0</MaxOnHand>
+    <Manufacturer>Sparkle Co.</Manufacturer>
+  </Table>
+  <Table>
+    <ProductID>1005</ProductID>
+    <CategoryID>1</CategoryID>
+    <ProductName>Marigold Whole Milk</ProductName>
+    <ProductDescription>Marigold Whole Milk Description</ProductDescription>
+    <UnitPrice>1.39</UnitPrice>
+    <ServingSize>8 fl oz (240 mL)</ServingSize>
+    <Servings>8</Servings>
+    <Quantity>0</Quantity>
+    <MinOnHand>0</MinOnHand>
+    <MaxOnHand>0</MaxOnHand>
+    <Manufacturer>Marigold Meadows</Manufacturer>
+  </Table>
+</NewDataSet>

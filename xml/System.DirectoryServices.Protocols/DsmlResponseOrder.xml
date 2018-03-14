@@ -1,0 +1,50 @@
+<Type Name="DsmlResponseOrder" FullName="System.DirectoryServices.Protocols.DsmlResponseOrder">
+  <TypeSignature Language="C#" Value="public enum DsmlResponseOrder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DsmlResponseOrder extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.DsmlResponseOrder" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.DsmlResponseOrder" /> enumeration specifies the order in which responses are received.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Sequential">
+      <MemberSignature Language="C#" Value="Sequential" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.DsmlResponseOrder Sequential = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.DsmlResponseOrder.Sequential" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.DsmlResponseOrder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Sequential. The value is equal to 0.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unordered">
+      <MemberSignature Language="C#" Value="Unordered" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.DsmlResponseOrder Unordered = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.DsmlResponseOrder.Unordered" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.DsmlResponseOrder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Unordered. The value is equal to 1.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

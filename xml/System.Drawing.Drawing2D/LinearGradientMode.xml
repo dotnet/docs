@@ -1,0 +1,82 @@
+<Type Name="LinearGradientMode" FullName="System.Drawing.Drawing2D.LinearGradientMode">
+  <TypeSignature Language="C#" Value="public enum LinearGradientMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LinearGradientMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.LinearGradientMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the direction of a linear gradient.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BackwardDiagonal">
+      <MemberSignature Language="C#" Value="BackwardDiagonal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.LinearGradientMode BackwardDiagonal = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.LinearGradientMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a gradient from upper right to lower left.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ForwardDiagonal">
+      <MemberSignature Language="C#" Value="ForwardDiagonal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.LinearGradientMode ForwardDiagonal = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.LinearGradientMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a gradient from upper left to lower right.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Horizontal">
+      <MemberSignature Language="C#" Value="Horizontal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.LinearGradientMode Horizontal = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.LinearGradientMode.Horizontal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.LinearGradientMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a gradient from left to right.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Vertical">
+      <MemberSignature Language="C#" Value="Vertical" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.LinearGradientMode Vertical = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.LinearGradientMode.Vertical" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.LinearGradientMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a gradient from top to bottom.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

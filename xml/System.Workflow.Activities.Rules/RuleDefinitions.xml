@@ -1,0 +1,137 @@
+<Type Name="RuleDefinitions" FullName="System.Workflow.Activities.Rules.RuleDefinitions">
+  <TypeSignature Language="C#" Value="public sealed class RuleDefinitions : System.Workflow.ComponentModel.IWorkflowChangeDiff" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RuleDefinitions extends System.Object implements class System.Workflow.ComponentModel.IWorkflowChangeDiff" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RuleDefinitions" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Workflow.ComponentModel.IWorkflowChangeDiff</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents the root of the .rules files and contains all the <see cref="P:System.Workflow.Activities.Rules.RuleDefinitions.RuleSets" /> and <see cref="T:System.Workflow.Activities.Rules.RuleCondition" />s associated with a workflow. This class cannot be inherited.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RuleDefinitions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleDefinitions.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleDefinitions" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Conditions">
+      <MemberSignature Language="C#" Value="public System.Workflow.Activities.Rules.RuleConditionCollection Conditions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.Activities.Rules.RuleConditionCollection Conditions" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RuleDefinitions.Conditions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Activities.Rules.RuleConditionCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of rule conditions in the workflow.</summary>
+        <value>The <see cref="T:System.Workflow.Activities.Rules.RuleConditionCollection" /> that contains all the <see cref="T:System.Workflow.Activities.Rules.RuleCondition" />s in the workflow.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Diff">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Workflow.ComponentModel.WorkflowChangeAction&gt; Diff (object originalDefinition, object changedDefinition);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IList`1&lt;class System.Workflow.ComponentModel.WorkflowChangeAction&gt; Diff(object originalDefinition, object changedDefinition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleDefinitions.Diff(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Workflow.ComponentModel.WorkflowChangeAction&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="originalDefinition" Type="System.Object" />
+        <Parameter Name="changedDefinition" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="originalDefinition">The original rule definition.</param>
+        <param name="changedDefinition">The new rule definition.</param>
+        <summary>Determines the difference between <see cref="P:System.Workflow.Activities.Rules.RuleDefinitions.Conditions" /> and the <see cref="P:System.Workflow.Activities.Rules.RuleDefinitions.RuleSets" /> in the original definition and the changed definition.</summary>
+        <returns>A list of <see cref="T:System.Workflow.ComponentModel.WorkflowChangeAction" /> classes that differentiate the <paramref name="originalDefinition" /> from the <paramref name="changedDefinition" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RuleDefinitionsProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Workflow.ComponentModel.DependencyProperty RuleDefinitionsProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Workflow.ComponentModel.DependencyProperty RuleDefinitionsProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.Rules.RuleDefinitions.RuleDefinitionsProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Security", "CA2104:DoNotDeclareReadOnlyMutableReferenceTypes")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="T:System.Workflow.Activities.Rules.RuleDefinitions" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RuleSets">
+      <MemberSignature Language="C#" Value="public System.Workflow.Activities.Rules.RuleSetCollection RuleSets { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.Activities.Rules.RuleSetCollection RuleSets" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RuleDefinitions.RuleSets" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Activities.Rules.RuleSetCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of <see cref="P:System.Workflow.Activities.Rules.RuleDefinitions.RuleSets" /> in the workflow.</summary>
+        <value>The <see cref="T:System.Workflow.Activities.Rules.RuleSetCollection" /> that contains all the <see cref="P:System.Workflow.Activities.Rules.RuleDefinitions.RuleSets" /> in the workflow.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

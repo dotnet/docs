@@ -1,0 +1,75 @@
+<Type Name="CustomExpressionEventArgs" FullName="System.Web.UI.WebControls.Expressions.CustomExpressionEventArgs">
+  <TypeSignature Language="C#" Value="public class CustomExpressionEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CustomExpressionEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Expressions.CustomExpressionEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the event data for the <see cref="T:System.Web.UI.WebControls.Expressions.CustomExpression" /> class.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CustomExpressionEventArgs (System.Linq.IQueryable source, System.Collections.Generic.IDictionary&lt;string,object&gt; values);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Linq.IQueryable source, class System.Collections.Generic.IDictionary`2&lt;string, object&gt; values) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Expressions.CustomExpressionEventArgs.#ctor(System.Linq.IQueryable,System.Collections.Generic.IDictionary{System.String,System.Object})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="source" Type="System.Linq.IQueryable" />
+        <Parameter Name="values" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="source">The data source object to use.</param>
+        <param name="values">The evaluated values from the parameter collection of the <see cref="T:System.Web.UI.WebControls.Expressions.CustomExpression" /> object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.Expressions.CustomExpressionEventArgs" /> class using the data source object and a dictionary of evaluated parameter values.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Query">
+      <MemberSignature Language="C#" Value="public System.Linq.IQueryable Query { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Linq.IQueryable Query" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Expressions.CustomExpressionEventArgs.Query" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Linq.IQueryable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the data source object.</summary>
+        <value>The data source object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Values">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,object&gt; Values { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, object&gt; Values" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Expressions.CustomExpressionEventArgs.Values" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the evaluated values from the <see cref="T:System.Web.UI.WebControls.ParameterCollection" /> instance of the <see cref="T:System.Web.UI.WebControls.Expressions.CustomExpression" /> object.</summary>
+        <value>The evaluated values from the <see cref="T:System.Web.UI.WebControls.ParameterCollection" /> instance of the <see cref="T:System.Web.UI.WebControls.Expressions.CustomExpression" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

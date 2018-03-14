@@ -1,0 +1,50 @@
+<Type Name="RibbonDismissPopupMode" FullName="System.Windows.Controls.Ribbon.RibbonDismissPopupMode">
+  <TypeSignature Language="C#" Value="public enum RibbonDismissPopupMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RibbonDismissPopupMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonDismissPopupMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Defines constants that specify whether the <see cref="E:System.Windows.Controls.Ribbon.RibbonControlService.DismissPopup" /> attached event closes all drop-downs in a chain of drop-downs or only drop-downs that the mouse pointer is not over.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Always">
+      <MemberSignature Language="C#" Value="Always" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.Ribbon.RibbonDismissPopupMode Always = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonDismissPopupMode.Always" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.Ribbon.RibbonDismissPopupMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>All drop-downs in a chain are closed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MousePhysicallyNotOver">
+      <MemberSignature Language="C#" Value="MousePhysicallyNotOver" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.Ribbon.RibbonDismissPopupMode MousePhysicallyNotOver = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonDismissPopupMode.MousePhysicallyNotOver" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.Ribbon.RibbonDismissPopupMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Drop-downs in a chain are closed up to the one that the mouse pointer is over.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{77E9B407-BC80-4D59-98DE-BDEC68567BA5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RibbonControlsSample</RootNamespace>
+    <AssemblyName>RibbonControlsSample</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Windows.Shell">
+      <HintPath>Ribbon Dlls\Microsoft.Windows.Shell.dll</HintPath>
+    </Reference>
+    <Reference Include="RibbonControlsLibrary">
+      <HintPath>Ribbon Dlls\RibbonControlsLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Copy16.png" />
+    <Resource Include="Images\Copy32.png" />
+    <Resource Include="Images\Cut16.png" />
+    <Resource Include="Images\Cut32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Paste32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Paste16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Task16.png" />
+    <Resource Include="Images\Task32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Reminder32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Favorite16.png" />
+    <Resource Include="Images\Favorite32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Reminder16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Save16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ArrowUndo16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ArrowRedo16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ApplicationMenuIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Open32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Save32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\SaveAs32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\SaveAsTxt32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\SaveAsRtf32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Exit16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\RightArrowShort_Blue16.png" />
+    <Resource Include="Images\RightArrowShort_Blue32.png" />
+    <Resource Include="Images\RightArrowShort_Green16.png" />
+    <Resource Include="Images\RightArrowShort_Green32.png" />
+    <Resource Include="Images\RightArrowShort_Orange16.png" />
+    <Resource Include="Images\RightArrowShort_Orange32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Lightbulb16.png" />
+    <Resource Include="Images\Lightbulb32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Help16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Suggestion32.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

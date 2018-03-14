@@ -1,0 +1,37 @@
+<Type Name="DbModificationCommandTree" FullName="System.Data.Common.CommandTrees.DbModificationCommandTree">
+  <TypeSignature Language="C#" Value="public abstract class DbModificationCommandTree : System.Data.Common.CommandTrees.DbCommandTree" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DbModificationCommandTree extends System.Data.Common.CommandTrees.DbCommandTree" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Common.CommandTrees.DbModificationCommandTree" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Data.Common.CommandTrees.DbCommandTree</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a data manipulation language (DML) operation expressed as a command tree.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Target">
+      <MemberSignature Language="C#" Value="public System.Data.Common.CommandTrees.DbExpressionBinding Target { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Common.CommandTrees.DbExpressionBinding Target" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Common.CommandTrees.DbModificationCommandTree.Target" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionBinding</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Data.Common.CommandTrees.DbExpressionBinding" /> that specifies the target table for the data manipulation language (DML) operation.</summary>
+        <value>The <see cref="T:System.Data.Common.CommandTrees.DbExpressionBinding" /> that specifies the target table for the DML operation.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

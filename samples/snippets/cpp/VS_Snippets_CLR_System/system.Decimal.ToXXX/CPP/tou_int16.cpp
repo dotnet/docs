@@ -1,0 +1,90 @@
+
+//<Snippet3>
+// Example of the Decimal::ToInt16 and Decimal::ToUInt16 methods.
+using namespace System;
+#define formatter "{0,16}{1,19}{2,19}"
+
+// Get the exception type name; remove the namespace prefix.
+String^ GetExceptionType( Exception^ ex )
+{
+   String^ exceptionType = ex->GetType()->ToString();
+   return exceptionType->Substring( exceptionType->LastIndexOf( '.' ) + 1 );
+}
+
+
+// Convert the Decimal argument; catch exceptions that are thrown.
+void DecimalToU_Int16( Decimal argument )
+{
+   Object^ Int16Value;
+   Object^ UInt16Value;
+   
+   // Convert the argument to a short value.
+   try
+   {
+      Int16Value = Decimal::ToInt16( argument );
+   }
+   catch ( Exception^ ex ) 
+   {
+      Int16Value = GetExceptionType( ex );
+   }
+
+   
+   // Convert the argument to an unsigned short value.
+   try
+   {
+      UInt16Value = Decimal::ToUInt16( argument );
+   }
+   catch ( Exception^ ex ) 
+   {
+      UInt16Value = GetExceptionType( ex );
+   }
+
+   Console::WriteLine( formatter, argument, Int16Value, UInt16Value );
+}
+
+int main()
+{
+   Console::WriteLine( "This example of the \n"
+   "  Decimal::ToInt16( Decimal ) and \n"
+   "  Decimal::ToUInt16( Decimal ) \nmethods "
+   "generates the following output. It \ndisplays "
+   "several converted Decimal values.\n" );
+   Console::WriteLine( formatter, "Decimal argument", "short/exception", "unsigned short" );
+   Console::WriteLine( formatter, "----------------", "---------------", "--------------" );
+   
+   // Convert Decimal values and display the results.
+   DecimalToU_Int16( Decimal::Parse(  "123" ) );
+   DecimalToU_Int16( Decimal(123000,0,0,false,3) );
+   DecimalToU_Int16( Decimal::Parse(  "123.999" ) );
+   DecimalToU_Int16( Decimal::Parse(  "65535.999" ) );
+   DecimalToU_Int16( Decimal::Parse(  "65536" ) );
+   DecimalToU_Int16( Decimal::Parse(  "32767.999" ) );
+   DecimalToU_Int16( Decimal::Parse(  "32768" ) );
+   DecimalToU_Int16( Decimal::Parse(  "-0.999" ) );
+   DecimalToU_Int16( Decimal::Parse(  "-1" ) );
+   DecimalToU_Int16( Decimal::Parse(  "-32768.999" ) );
+   DecimalToU_Int16( Decimal::Parse(  "-32769" ) );
+}
+
+/*
+This example of the
+  Decimal::ToInt16( Decimal ) and
+  Decimal::ToUInt16( Decimal )
+methods generates the following output. It
+displays several converted Decimal values.
+
+Decimal argument    short/exception     unsigned short
+----------------    ---------------     --------------
+             123                123                123
+         123.000                123                123
+         123.999                123                123
+       65535.999  OverflowException              65535
+           65536  OverflowException  OverflowException
+       32767.999              32767              32767
+           32768  OverflowException              32768
+          -0.999                  0                  0
+              -1                 -1  OverflowException
+      -32768.999             -32768  OverflowException
+          -32769  OverflowException  OverflowException
+*/
+//</Snippet3>

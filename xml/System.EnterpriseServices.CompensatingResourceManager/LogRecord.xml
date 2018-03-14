@@ -1,0 +1,107 @@
+<Type Name="LogRecord" FullName="System.EnterpriseServices.CompensatingResourceManager.LogRecord">
+  <TypeSignature Language="C#" Value="public sealed class LogRecord" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LogRecord extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.CompensatingResourceManager.LogRecord" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents an unstructured log record delivered as a COM+ <see langword="CrmLogRecordRead" /> structure. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Unstructured log records are delivered as a COM+ `CrmLogRecordRead` structure. In addition to the user data (a single BLOB), this contains additional fields that are useful for debugging or fault finding. The <xref:System.EnterpriseServices.CompensatingResourceManager.LogRecord.Flags%2A> field is a bit field that provides further information about whether this record was forgotten at some point, and when it was written. The <xref:System.EnterpriseServices.CompensatingResourceManager.LogRecord.Sequence%2A> field provides the sequence number of the log record. In most cases, sequence numbers are sequential but are not necessarily contiguous due to internal log records that are not delivered to the Compensating Resource Manager (CRM) Compensator.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this class.  
+  
+ [!code-cpp[EnterpriseServices_Crm#28](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServices_Crm/cpp/crmserver.cpp#28)]
+ [!code-csharp[EnterpriseServices_Crm#28](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServices_Crm/CS/crmserver.cs#28)]
+ [!code-vb[EnterpriseServices_Crm#28](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServices_Crm/VB/crmserver.vb#28)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Flags">
+      <MemberSignature Language="C#" Value="public System.EnterpriseServices.CompensatingResourceManager.LogRecordFlags Flags { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.EnterpriseServices.CompensatingResourceManager.LogRecordFlags Flags" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.CompensatingResourceManager.LogRecord.Flags" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.CompensatingResourceManager.LogRecordFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates when the log record was written.</summary>
+        <value>A bitwise combination of the <see cref="T:System.EnterpriseServices.CompensatingResourceManager.LogRecordFlags" /> values which provides information about when this record was written.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Record">
+      <MemberSignature Language="C#" Value="public object Record { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Record" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.CompensatingResourceManager.LogRecord.Record" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the log record user data.</summary>
+        <value>A single BLOB that contains the user data.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this property.  
+  
+ [!code-cpp[EnterpriseServices_Crm#28](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServices_Crm/cpp/crmserver.cpp#28)]
+ [!code-csharp[EnterpriseServices_Crm#28](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServices_Crm/CS/crmserver.cs#28)]
+ [!code-vb[EnterpriseServices_Crm#28](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServices_Crm/VB/crmserver.vb#28)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sequence">
+      <MemberSignature Language="C#" Value="public int Sequence { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Sequence" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.CompensatingResourceManager.LogRecord.Sequence" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The sequence number of the log record.</summary>
+        <value>An integer value that specifies the sequence number of the log record.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Sequence numbers are not necessarily contiguous due to internal log records or forgotten log records which are not delivered to the Compensating Resource Manager (CRM) Compensator.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,94 @@
+<Type Name="BreakpointTypes" FullName="System.Activities.Presentation.Debug.BreakpointTypes">
+  <TypeSignature Language="C#" Value="public enum BreakpointTypes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BreakpointTypes extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Debug.BreakpointTypes" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents an enumeration that provides settings for breakpoints.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by the <xref:System.Activities.Presentation.Debug.DebuggerService>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Bounded">
+      <MemberSignature Language="C#" Value="Bounded" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Presentation.Debug.BreakpointTypes Bounded = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Debug.BreakpointTypes.Bounded" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.Debug.BreakpointTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents a bounded breakpoint, which implements the where and when of breaking at a desired point in a program.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Conditional">
+      <MemberSignature Language="C#" Value="Conditional" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Presentation.Debug.BreakpointTypes Conditional = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Debug.BreakpointTypes.Conditional" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.Debug.BreakpointTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents a conditional breakpoint, which is an expression that is evaluated to determine whether the breakpoint will occur.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Enabled">
+      <MemberSignature Language="C#" Value="Enabled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Presentation.Debug.BreakpointTypes Enabled = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Debug.BreakpointTypes.Enabled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.Debug.BreakpointTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents that the breakpoint is enabled.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Presentation.Debug.BreakpointTypes None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Debug.BreakpointTypes.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.Debug.BreakpointTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No breakpoint is set.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

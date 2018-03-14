@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap>
+  <siteMapNode title="Home" url="~/Home.aspx" >
+    <siteMapNode title="Warehouses" 
+      url="~/warehouse/warehouses.aspx" />
+    <siteMapNode title="Inventory Levels" 
+      url="~/inventory/inventory.aspx" />
+    <siteMapNode title="Administration"  >
+      <siteMapNode title="Create New User" 
+        url="~/usermanagement/createnewuser.aspx"/>
+      <siteMapNode title="Manage Roles" 
+        url="~/usermanagement/roles.aspx"/>
+      <siteMapNode title="Manage User-to-Role Assignments" 
+        url="~/usermanagement/manageuserroles.aspx"/>
+    </siteMapNode>
+    <siteMapNode title="Help" url="~/help.aspx" />
+    <siteMapNode title="Home" url="~/Home.aspx?" />
+  </siteMapNode>
+</siteMap>

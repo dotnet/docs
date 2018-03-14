@@ -1,0 +1,53 @@
+<!--<Snippet1>-->
+
+ <html>
+ <head>
+ 
+   <style>
+ 
+       .CssStyle1   
+       { 
+           font: 12pt verdana; 
+           font-weight:700;
+           color:orange;
+       }
+ 
+       .CssStyle2
+       { 
+           font: 15pt times; 
+           font-weight:250;
+           color:blue;
+       }
+ 
+   </style>
+ 
+   <script language="C#" runat="server">
+ 
+       void Button1_Click(Object sender, EventArgs e) {
+     HyperLink1.CssClass=((HyperLink1.CssClass=="CssStyle1")?"CssStyle2":"CssStyle1");
+       }
+ 
+   </script>
+ 
+ </head>
+ <body>
+ 
+   <h3><font face="Verdana">CssClass Property of a Web Control</font></h3>
+ 
+ <form runat="server">
+ 
+   <asp:HyperLink id="HyperLink1" NavigateUrl="http://www.microsoft.com" 
+     CssClass="spanstyle" Text="Click here to go to the Microsoft site" 
+     Target="_new" runat="server"/>
+ 
+   <p>
+ 
+   <asp:Button id="Button1" Text="Click to change the Css style of the above link"
+     OnClick="Button1_Click" runat="server"/>
+ 
+ </form>
+ 
+ </body>
+ </html>
+ 
+<!--</Snippet1>-->

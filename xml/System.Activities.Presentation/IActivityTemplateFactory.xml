@@ -1,0 +1,97 @@
+<Type Name="IActivityTemplateFactory" FullName="System.Activities.Presentation.IActivityTemplateFactory">
+  <TypeSignature Language="C#" Value="public interface IActivityTemplateFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IActivityTemplateFactory" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.IActivityTemplateFactory" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines the factory method that a class implements to create a template that encapsulates "placeholder" <see cref="T:System.Activities.Activity" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Custom activity templates must implement the <xref:System.Activities.Presentation.IActivityTemplateFactory>. Custom activity templates are used to customize the configuration of activities, including custom composite activities, so that users do not have to create each of the activities individually and configure all their properties and other settings manually.  
+  
+   
+  
+## Examples  
+  
+```  
+  
+public sealed class MyDelayActivity : IActivityTemplateFactory  
+  
+{  
+     public Activity Create(DependencyObject target)  
+     {  
+         return new System.Activities.Statements.Delay  
+         {  
+             DisplayName = "DelayActivityTemplate",  
+             Duration = new TimeSpan(0,0,10)  
+  
+         };  
+     }  
+ }  
+  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public System.Activities.Activity Create (System.Windows.DependencyObject target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Activities.Activity Create(class System.Windows.DependencyObject target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.IActivityTemplateFactory.Create(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Activity</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="target">The dependency object used by this instance of an <see cref="T:System.Activities.Presentation.IActivityTemplateFactory" />.</param>
+        <summary>Creates an instance of the <see cref="T:System.Activities.Activity" /> class that represents a predefined design pattern for the specified target object.</summary>
+        <returns>A workflow   <see cref="T:System.Activities.Activity" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this to create and configure the activity instances used in a custom activity template.  
+  
+   
+  
+## Examples  
+ Create a template that configures a Delay activity with a duration of ten seconds.  
+  
+```  
+  
+public sealed class MyDelayActivity : IActivityTemplateFactory  
+  
+{  
+     public Activity Create(DependencyObject target)  
+     {  
+         return new System.Activities.Statements.Delay  
+         {  
+             DisplayName = "DelayActivityTemplate",  
+             Duration = new TimeSpan(0,0,10)  
+  
+         };  
+     }  
+ }  
+  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

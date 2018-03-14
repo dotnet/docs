@@ -1,0 +1,38 @@
+<Type Name="UdpAnnouncementEndpointCollectionElement" FullName="System.ServiceModel.Discovery.Configuration.UdpAnnouncementEndpointCollectionElement">
+  <TypeSignature Language="C#" Value="public class UdpAnnouncementEndpointCollectionElement : System.ServiceModel.Configuration.StandardEndpointCollectionElement&lt;System.ServiceModel.Discovery.UdpAnnouncementEndpoint,System.ServiceModel.Discovery.Configuration.UdpAnnouncementEndpointElement&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UdpAnnouncementEndpointCollectionElement extends System.ServiceModel.Configuration.StandardEndpointCollectionElement`2&lt;class System.ServiceModel.Discovery.UdpAnnouncementEndpoint, class System.ServiceModel.Discovery.Configuration.UdpAnnouncementEndpointElement&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.Configuration.UdpAnnouncementEndpointCollectionElement" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ServiceModel.Configuration.StandardEndpointCollectionElement&lt;System.ServiceModel.Discovery.UdpAnnouncementEndpoint,System.ServiceModel.Discovery.Configuration.UdpAnnouncementEndpointElement&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">System.ServiceModel.Discovery.UdpAnnouncementEndpoint</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="!1">System.ServiceModel.Discovery.Configuration.UdpAnnouncementEndpointElement</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a container for <see cref="T:System.ServiceModel.Discovery.Configuration.UdpAnnouncementEndpointElement" /> configuration elements.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public UdpAnnouncementEndpointCollectionElement ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.Configuration.UdpAnnouncementEndpointCollectionElement.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of <see cref="T:System.ServiceModel.Discovery.Configuration.UdpAnnouncementEndpointCollectionElement" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

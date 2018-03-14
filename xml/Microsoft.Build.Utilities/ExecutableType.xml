@@ -1,0 +1,114 @@
+<Type Name="ExecutableType" FullName="Microsoft.Build.Utilities.ExecutableType">
+  <TypeSignature Language="C#" Value="public enum ExecutableType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ExecutableType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Utilities.ExecutableType" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Enumeration to express the type of executable being wrapped by Tracker.exe</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Managed32Bit">
+      <MemberSignature Language="C#" Value="Managed32Bit" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Utilities.ExecutableType Managed32Bit = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.ExecutableType.Managed32Bit" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Utilities.ExecutableType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A managed executable specifically marked as 32-bit</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Managed64Bit">
+      <MemberSignature Language="C#" Value="Managed64Bit" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Utilities.ExecutableType Managed64Bit = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.ExecutableType.Managed64Bit" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Utilities.ExecutableType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A managed executable specifically marked as 64-bit</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedIL">
+      <MemberSignature Language="C#" Value="ManagedIL" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Utilities.ExecutableType ManagedIL = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.ExecutableType.ManagedIL" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Utilities.ExecutableType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A managed executable without a specified bitness</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Native32Bit">
+      <MemberSignature Language="C#" Value="Native32Bit" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Utilities.ExecutableType Native32Bit = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.ExecutableType.Native32Bit" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Utilities.ExecutableType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>32-bit native executable</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Native64Bit">
+      <MemberSignature Language="C#" Value="Native64Bit" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Utilities.ExecutableType Native64Bit = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.ExecutableType.Native64Bit" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Utilities.ExecutableType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>64-bit native executable</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SameAsCurrentProcess">
+      <MemberSignature Language="C#" Value="SameAsCurrentProcess" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Utilities.ExecutableType SameAsCurrentProcess = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.ExecutableType.SameAsCurrentProcess" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Utilities.ExecutableType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Use the same bitness as the currently running executable.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

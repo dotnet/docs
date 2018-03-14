@@ -1,0 +1,137 @@
+<Type Name="HandleExceptionArgs" FullName="System.Data.Services.HandleExceptionArgs">
+  <TypeSignature Language="C#" Value="public class HandleExceptionArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HandleExceptionArgs extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Services.HandleExceptionArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Specifies details of an exception that has occurred and the details of the associated HTTP response.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Exception">
+      <MemberSignature Language="C#" Value="public Exception Exception { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Exception Exception" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.HandleExceptionArgs.Exception" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Exception</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the exception that will be processed and returned in the response.</summary>
+        <value>The exception that will be processed and returned in the response.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the exception is a <xref:System.Data.Services.DataServiceException>, the message of the exception will always be returned to the client, regardless of the <xref:System.Data.Services.HandleExceptionArgs.UseVerboseErrors%2A> value. If <xref:System.Data.Services.HandleExceptionArgs.UseVerboseErrors%2A> is true, the inner exceptions will also be returned to the client; otherwise only the <xref:System.Data.Services.DataServiceException> message will be returned.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResponseContentType">
+      <MemberSignature Language="C#" Value="public string ResponseContentType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ResponseContentType" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.HandleExceptionArgs.ResponseContentType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the response content type.</summary>
+        <value>The string value that indicates the response format.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ All errors result in an error payload sent back from the service. This property informs the service author of the format the error that will be sent back. The value of this property will always be a valid Internet Assigned Numbers Authority (IANA) mime type.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResponseStatusCode">
+      <MemberSignature Language="C#" Value="public int ResponseStatusCode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ResponseStatusCode" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.HandleExceptionArgs.ResponseStatusCode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the status code that will be sent back in the HTTP header section of the response when an error occurs on the data service.</summary>
+        <value>An integer value of the HTTP response status code.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResponseWritten">
+      <MemberSignature Language="C#" Value="public bool ResponseWritten { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ResponseWritten" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.HandleExceptionArgs.ResponseWritten" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the response has been written.</summary>
+        <value>Boolean value that indicates whether response has been written.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the value is true, the HTTP response headers and possibly part of the response body have already been sent to the client and cannot be altered.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseVerboseErrors">
+      <MemberSignature Language="C#" Value="public bool UseVerboseErrors { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseVerboseErrors" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.HandleExceptionArgs.UseVerboseErrors" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a Boolean value that indicates whether verbose errors will be returned.</summary>
+        <value>The Boolean value that indicates whether verbose errors will be returned.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When <xref:System.Data.Services.HandleExceptionArgs.UseVerboseErrors%2A> is set to true, all exception details will be returned in the response. Security Note: Setting this value to true may disclose information that should be private to the service.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

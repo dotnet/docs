@@ -1,0 +1,75 @@
+<Type Name="IJSVsaPersistSite" FullName="Microsoft.JScript.Vsa.IJSVsaPersistSite">
+  <TypeSignature Language="C#" Value="public interface IJSVsaPersistSite" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IJSVsaPersistSite" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Vsa.IJSVsaPersistSite" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("Use of this type is not recommended because it is being deprecated in Visual Studio 2005; there will be no replacement for this feature. Please see the ICodeCompiler documentation for additional help.")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("F901A1FF-8EBA-4C38-B6E0-E7E52606D325")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Manages project persistence and stores and retrieves code and other items using save and load operations implemented by the host.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="LoadElement">
+      <MemberSignature Language="C#" Value="public string LoadElement (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string LoadElement(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.IJSVsaPersistSite.LoadElement(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the code item to be loaded. This can be a null reference when loading the Project file.</param>
+        <summary>Gets the source string previously saved using the <see cref="M:Microsoft.JScript.Vsa.IJSVsaPersistSite.SaveElement(System.String,System.String)" /> method.</summary>
+        <returns>Returns the contents of the source-code element associated with the name parameter.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveElement">
+      <MemberSignature Language="C#" Value="public void SaveElement (string name, string source);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SaveElement(string name, string source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.IJSVsaPersistSite.SaveElement(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="source" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">A name to associate with the specified source item. This can be a null reference when saving the Project file.</param>
+        <param name="source">The source string for the item.</param>
+        <summary>Saves an arbitrary source string with a given name parameter, which can then be used in a call to the <see cref="M:Microsoft.JScript.Vsa.IJSVsaPersistSite.LoadElement(System.String)" /> method to reload the string.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

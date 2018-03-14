@@ -1,0 +1,188 @@
+<Type Name="StandardEventKeywords" FullName="System.Diagnostics.Eventing.Reader.StandardEventKeywords">
+  <TypeSignature Language="C#" Value="public enum StandardEventKeywords" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StandardEventKeywords extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.Reader.StandardEventKeywords" />
+  <AssemblyInfo>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines the standard keywords that are attached to events by the event provider. For more information about keywords, see <see cref="T:System.Diagnostics.Eventing.Reader.EventKeyword" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AuditFailure">
+      <MemberSignature Language="C#" Value="AuditFailure" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Eventing.Reader.StandardEventKeywords AuditFailure = int64(4503599627370496)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.StandardEventKeywords.AuditFailure" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventKeywords</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Attached to all failed security audit events. This keyword should only be used for events in the Security log.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AuditSuccess">
+      <MemberSignature Language="C#" Value="AuditSuccess" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Eventing.Reader.StandardEventKeywords AuditSuccess = int64(9007199254740992)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.StandardEventKeywords.AuditSuccess" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventKeywords</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Attached to all successful security audit events. This keyword should only be used for events in the Security log.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CorrelationHint">
+      <MemberSignature Language="C#" Value="CorrelationHint" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Eventing.Reader.StandardEventKeywords CorrelationHint = int64(4503599627370496)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.StandardEventKeywords.CorrelationHint" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Incorrect value: use CorrelationHint2 instead", false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventKeywords</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Attached to transfer events where the related Activity ID (Correlation ID) is a computed value and is not guaranteed to be unique (not a real GUID).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CorrelationHint2">
+      <MemberSignature Language="C#" Value="CorrelationHint2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Eventing.Reader.StandardEventKeywords CorrelationHint2 = int64(18014398509481984)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.StandardEventKeywords.CorrelationHint2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventKeywords</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Attached to transfer events where the related Activity ID (Correlation ID) is a computed value and is not guaranteed to be unique (not a real GUID).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EventLogClassic">
+      <MemberSignature Language="C#" Value="EventLogClassic" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Eventing.Reader.StandardEventKeywords EventLogClassic = int64(36028797018963968)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.StandardEventKeywords.EventLogClassic" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventKeywords</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Attached to events which are raised using the RaiseEvent function.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Eventing.Reader.StandardEventKeywords None = int64(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.StandardEventKeywords.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventKeywords</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This value indicates that no filtering on keyword is performed when the event is published.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ResponseTime">
+      <MemberSignature Language="C#" Value="ResponseTime" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Eventing.Reader.StandardEventKeywords ResponseTime = int64(281474976710656)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.StandardEventKeywords.ResponseTime" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventKeywords</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Attached to all response time events.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Sqm">
+      <MemberSignature Language="C#" Value="Sqm" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Eventing.Reader.StandardEventKeywords Sqm = int64(2251799813685248)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.StandardEventKeywords.Sqm" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventKeywords</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Attached to all Service Quality Mechanism (SQM) events.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WdiContext">
+      <MemberSignature Language="C#" Value="WdiContext" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Eventing.Reader.StandardEventKeywords WdiContext = int64(562949953421312)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.StandardEventKeywords.WdiContext" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventKeywords</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Attached to all Windows Diagnostic Infrastructure (WDI) context events.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WdiDiagnostic">
+      <MemberSignature Language="C#" Value="WdiDiagnostic" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Eventing.Reader.StandardEventKeywords WdiDiagnostic = int64(1125899906842624)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.StandardEventKeywords.WdiDiagnostic" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventKeywords</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Attached to all Windows Diagnostic Infrastructure (WDI) diagnostic events.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

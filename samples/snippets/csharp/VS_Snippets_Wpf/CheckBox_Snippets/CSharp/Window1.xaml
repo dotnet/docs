@@ -1,0 +1,45 @@
+﻿<Window x:Class="CheckBox_Snippets.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="CheckBox_Snippets" Height="300" Width="300"
+    >
+  <StackPanel>
+    <!--<Snippet1>-->
+    <CheckBox Name="checkBox1" IsThreeState="True" 
+              IsChecked="{x:Null}">
+      A CheckBox in an indeterminate state
+    </CheckBox>
+    <!--</Snippet1>-->
+
+    <!--<Snippet2>-->
+    <CheckBox Name="chkbox" Content="Italicize text"
+              Checked="chkbox_Checked"
+              Unchecked="chkbox_Unchecked"/>
+    
+    <TextBlock Name="textBlock1" FontSize="14">
+      The quick brown fox jumps over the lazy dog.
+    </TextBlock>
+    <!--</Snippet2>-->
+
+    <!--<Snippet4>-->
+    <Grid>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+      </Grid.RowDefinitions>
+
+      <TextBlock Text="CheckBox Demonstration" Margin="0,20,10,20"
+                 FontFamily="Verdana" FontSize="18" FontWeight="Bold"
+                 Foreground="#FF5C9AC9" Grid.Row="0"/>
+
+      <CheckBox x:Name="cb1" Grid.Row="1" Margin="5,0,0,0" 
+                Content="Three-state CheckBox" IsThreeState="True"
+                Checked="HandleCheck" Unchecked="HandleUnchecked" 
+                Indeterminate="HandleThirdState" />
+      <TextBlock x:Name="text1" Grid.Row="2" Margin="5,0,0,0" />
+    </Grid>
+    <!--</Snippet4>-->
+
+  </StackPanel>
+</Window>

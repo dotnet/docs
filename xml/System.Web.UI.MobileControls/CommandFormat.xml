@@ -1,0 +1,64 @@
+<Type Name="CommandFormat" FullName="System.Web.UI.MobileControls.CommandFormat">
+  <TypeSignature Language="C#" Value="public enum CommandFormat" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CommandFormat extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.CommandFormat" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Mobile</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Web.Mobile.dll assembly has been deprecated and should no longer be used. For information about how to develop ASP.NET mobile applications, see http://go.microsoft.com/fwlink/?LinkId=157231.")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Sets the rendering style of the <see cref="T:System.Web.UI.MobileControls.Command" /> control, through the <see cref="P:System.Web.UI.MobileControls.Command.Format" /> property. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ This example demonstrates the usage of the <xref:System.Web.UI.MobileControls.CommandFormat> class.  
+  
+  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Button">
+      <MemberSignature Language="C#" Value="Button" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.MobileControls.CommandFormat Button = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.CommandFormat.Button" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.MobileControls.CommandFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renders the <see cref="T:System.Web.UI.MobileControls.Command" /> control as a button. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Link">
+      <MemberSignature Language="C#" Value="Link" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.MobileControls.CommandFormat Link = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.CommandFormat.Link" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.MobileControls.CommandFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renders the <see cref="T:System.Web.UI.MobileControls.Command" /> control as a hyperlink. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

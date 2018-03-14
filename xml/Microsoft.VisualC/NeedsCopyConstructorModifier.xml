@@ -1,0 +1,44 @@
+<Type Name="NeedsCopyConstructorModifier" FullName="Microsoft.VisualC.NeedsCopyConstructorModifier">
+  <TypeSignature Language="C#" Value="public sealed class NeedsCopyConstructorModifier" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit NeedsCopyConstructorModifier extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.NeedsCopyConstructorModifier" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualC</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("Microsoft.VisualC.dll is an obsolete assembly and exists only for backwards compatibility.")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>A custom modifier applied to parameters that tells the CLR marshaler to call the parameter's copy constructor when marshaling the parameter.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NeedsCopyConstructorModifier ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.NeedsCopyConstructorModifier.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualC.NeedsCopyConstructorModifier" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

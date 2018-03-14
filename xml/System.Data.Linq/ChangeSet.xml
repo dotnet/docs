@@ -1,0 +1,92 @@
+<Type Name="ChangeSet" FullName="System.Data.Linq.ChangeSet">
+  <TypeSignature Language="C#" Value="public sealed class ChangeSet" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ChangeSet extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Linq.ChangeSet" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Linq</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a container to hold changes.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Deletes">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;object&gt; Deletes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;object&gt; Deletes" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Linq.ChangeSet.Deletes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a list of entities that have been deleted from the <see cref="T:System.Data.Linq.ChangeSet" />.</summary>
+        <value>An <see cref="T:System.Collections.IList" /> of deleted entities.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Inserts">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;object&gt; Inserts { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;object&gt; Inserts" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Linq.ChangeSet.Inserts" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a list of entities that have been inserted into the <see cref="T:System.Data.Linq.ChangeSet" />.</summary>
+        <value>An <see cref="T:System.Collections.IList" /> of inserted entities.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Linq.ChangeSet.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a string that represents the current <see cref="T:System.Data.Linq.ChangeSet" />.</summary>
+        <returns>A string that represents the current <see cref="T:System.Data.Linq.ChangeSet" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Updates">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;object&gt; Updates { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;object&gt; Updates" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Linq.ChangeSet.Updates" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a list of entities that have been updated in the <see cref="T:System.Data.Linq.ChangeSet" />.</summary>
+        <value>An <see cref="T:System.Collections.IList" /> of updated entities.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

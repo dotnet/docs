@@ -1,0 +1,12 @@
+<Page  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  x:Class="SDKSample.SampleViewer"
+  WindowTitle="MiscSnippets" >
+  <DockPanel Background="White">
+    <TabControl Name="sampleSelector">
+      <TabItem Header="Color Example">
+        <Frame Source="ColorExample.xaml" Background="White" />
+      </TabItem>
+    </TabControl>
+  </DockPanel>
+</Page>

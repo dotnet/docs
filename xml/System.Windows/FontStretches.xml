@@ -1,0 +1,293 @@
+<Type Name="FontStretches" FullName="System.Windows.FontStretches">
+  <TypeSignature Language="C#" Value="public static class FontStretches" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit FontStretches extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.FontStretches" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a set of static predefined <see cref="T:System.Windows.FontStretch" /> values.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A font stretch describes the degree to which a font form is stretched from its normal aspect ratio, which is the original width to height ratio specified for the glyphs in the font.  
+  
+ The <xref:System.Windows.FontStretches> values correspond to the `usWidthClass` definition in the [!INCLUDE[TLA2#tla_opentype](~/includes/tla2sharptla-opentype-md.md)] specification. The `usWidthClass` represents an integer value between 1 and 9. Lower numeric values indicate narrower widths; higher values indicate wider widths.  
+  
+|Font stretch|usWidthClass|% of normal|  
+|------------------|------------------|-----------------|  
+|<xref:System.Windows.FontStretches.UltraCondensed%2A>|1|50%|  
+|<xref:System.Windows.FontStretches.ExtraCondensed%2A>|2|62.5%|  
+|<xref:System.Windows.FontStretches.Condensed%2A>|3|75%|  
+|<xref:System.Windows.FontStretches.SemiCondensed%2A>|4|87.5%|  
+|<xref:System.Windows.FontStretches.Normal%2A>|5|100%|  
+|<xref:System.Windows.FontStretches.Medium%2A>|5|100%|  
+|<xref:System.Windows.FontStretches.SemiExpanded%2A>|6|112.5%|  
+|<xref:System.Windows.FontStretches.Expanded%2A>|7|125%|  
+|<xref:System.Windows.FontStretches.ExtraExpanded%2A>|8|150%|  
+|<xref:System.Windows.FontStretches.UltraExpanded%2A>|9|200%|  
+  
+ For more information on the [!INCLUDE[TLA#tla_opentype](~/includes/tlasharptla-opentype-md.md)] `usWidthClass` value, see the ["Font File Tables"](http://www.microsoft.com/typography/otspec/otff.htm) section of the [!INCLUDE[TLA2#tla_opentype](~/includes/tla2sharptla-opentype-md.md)] specification.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Condensed">
+      <MemberSignature Language="C#" Value="public static System.Windows.FontStretch Condensed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontStretch Condensed" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FontStretches.Condensed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontStretch</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a condensed <see cref="T:System.Windows.FontStretch" />.</summary>
+        <value>A value that represents a condensed <see cref="T:System.Windows.FontStretch" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.FontStretches.Condensed%2A> represents 75% of the normal aspect ratio of the font form.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Expanded">
+      <MemberSignature Language="C#" Value="public static System.Windows.FontStretch Expanded { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontStretch Expanded" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FontStretches.Expanded" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontStretch</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies an expanded <see cref="T:System.Windows.FontStretch" />.</summary>
+        <value>A value that represents an expanded <see cref="T:System.Windows.FontStretch" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.FontStretches.Expanded%2A> represents 125% of the normal aspect ratio of the font form.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtraCondensed">
+      <MemberSignature Language="C#" Value="public static System.Windows.FontStretch ExtraCondensed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontStretch ExtraCondensed" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FontStretches.ExtraCondensed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontStretch</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies an extra-condensed <see cref="T:System.Windows.FontStretch" />.</summary>
+        <value>A value that represents an extra-condensed <see cref="T:System.Windows.FontStretch" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.FontStretches.ExtraCondensed%2A> represents 62.5% of the normal aspect ratio of the font form.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtraExpanded">
+      <MemberSignature Language="C#" Value="public static System.Windows.FontStretch ExtraExpanded { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontStretch ExtraExpanded" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FontStretches.ExtraExpanded" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontStretch</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies an extra-expanded <see cref="T:System.Windows.FontStretch" />.</summary>
+        <value>A value that represents an extra-expanded <see cref="T:System.Windows.FontStretch" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.FontStretches.ExtraExpanded%2A> represents 150% of the normal aspect ratio of the font form.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Medium">
+      <MemberSignature Language="C#" Value="public static System.Windows.FontStretch Medium { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontStretch Medium" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FontStretches.Medium" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontStretch</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a medium <see cref="T:System.Windows.FontStretch" />.</summary>
+        <value>A value that represents a medium <see cref="T:System.Windows.FontStretch" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.FontStretches.Medium%2A> represents the normal (100%) aspect ratio of the font form. The value of <xref:System.Windows.FontStretches.Medium%2A> is equivalent to the value of <xref:System.Windows.FontStretches.Normal%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Normal">
+      <MemberSignature Language="C#" Value="public static System.Windows.FontStretch Normal { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontStretch Normal" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FontStretches.Normal" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontStretch</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a normal <see cref="T:System.Windows.FontStretch" />.</summary>
+        <value>A value that represents a normal <see cref="T:System.Windows.FontStretch" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.FontStretches.Normal%2A> represents the normal (100%) aspect ratio of the font form. The value of <xref:System.Windows.FontStretches.Normal%2A> is equivalent to the value of <xref:System.Windows.FontStretches.Medium%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SemiCondensed">
+      <MemberSignature Language="C#" Value="public static System.Windows.FontStretch SemiCondensed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontStretch SemiCondensed" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FontStretches.SemiCondensed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontStretch</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a semi-condensed <see cref="T:System.Windows.FontStretch" />.</summary>
+        <value>A value that represents a semi-condensed <see cref="T:System.Windows.FontStretch" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.FontStretches.SemiCondensed%2A> represents 87.5% of the normal aspect ratio of the font form.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SemiExpanded">
+      <MemberSignature Language="C#" Value="public static System.Windows.FontStretch SemiExpanded { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontStretch SemiExpanded" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FontStretches.SemiExpanded" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontStretch</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a semi-expanded <see cref="T:System.Windows.FontStretch" />.</summary>
+        <value>A value that represents a semi-expanded <see cref="T:System.Windows.FontStretch" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.FontStretches.SemiExpanded%2A> represents 112.5% of the normal aspect ratio of the font form.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UltraCondensed">
+      <MemberSignature Language="C#" Value="public static System.Windows.FontStretch UltraCondensed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontStretch UltraCondensed" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FontStretches.UltraCondensed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontStretch</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies an ultra-condensed <see cref="T:System.Windows.FontStretch" />.</summary>
+        <value>A value that represents an ultra-condensed <see cref="T:System.Windows.FontStretch" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.FontStretches.UltraCondensed%2A> represents 50% of the normal aspect ratio of the font form.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UltraExpanded">
+      <MemberSignature Language="C#" Value="public static System.Windows.FontStretch UltraExpanded { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontStretch UltraExpanded" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FontStretches.UltraExpanded" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontStretch</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies an ultra-expanded <see cref="T:System.Windows.FontStretch" />.</summary>
+        <value>A value that represents an ultra-expanded <see cref="T:System.Windows.FontStretch" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.FontStretches.UltraExpanded%2A> represents 200% of the normal aspect ratio of the font form.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

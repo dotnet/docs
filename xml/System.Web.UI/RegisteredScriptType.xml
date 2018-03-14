@@ -1,0 +1,89 @@
+<Type Name="RegisteredScriptType" FullName="System.Web.UI.RegisteredScriptType">
+  <TypeSignature Language="C#" Value="public enum RegisteredScriptType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RegisteredScriptType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.RegisteredScriptType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the type of client script block that is represented by a <see cref="T:System.Web.UI.RegisteredScript" /> object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The script type indicates when the script is intended to be executed. This can be during page initialization, during page postback, during control startup, and so on.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ClientScriptBlock">
+      <MemberSignature Language="C#" Value="ClientScriptBlock" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.RegisteredScriptType ClientScriptBlock = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.RegisteredScriptType.ClientScriptBlock" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.RegisteredScriptType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A block of client code that executes one time during initial page rendering. A client script block of this type does not execute during partial-page updates.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ClientScriptInclude">
+      <MemberSignature Language="C#" Value="ClientScriptInclude" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.RegisteredScriptType ClientScriptInclude = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.RegisteredScriptType.ClientScriptInclude" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.RegisteredScriptType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A client script that executes every time that an asynchronous postback occurs.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ClientStartupScript">
+      <MemberSignature Language="C#" Value="ClientStartupScript" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.RegisteredScriptType ClientStartupScript = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.RegisteredScriptType.ClientStartupScript" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.RegisteredScriptType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A client script that is associated with a control that executes when the control starts.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OnSubmitStatement">
+      <MemberSignature Language="C#" Value="OnSubmitStatement" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.RegisteredScriptType OnSubmitStatement = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.RegisteredScriptType.OnSubmitStatement" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.RegisteredScriptType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A client script that executes when a page is submitted.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

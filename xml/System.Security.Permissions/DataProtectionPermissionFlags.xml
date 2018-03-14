@@ -1,0 +1,129 @@
+<Type Name="DataProtectionPermissionFlags" FullName="System.Security.Permissions.DataProtectionPermissionFlags">
+  <TypeSignature Language="C#" Value="public enum DataProtectionPermissionFlags" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed DataProtectionPermissionFlags extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Permissions.DataProtectionPermissionFlags" />
+  <AssemblyInfo>
+    <AssemblyName>System.Security</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the access permissions for encrypting data and memory.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by the <xref:System.Security.Permissions.DataProtectionPermission> and <xref:System.Security.Permissions.DataProtectionPermissionAttribute> classes to protect access to encrypted data and memory using the <xref:System.Security.Cryptography.ProtectedData> and <xref:System.Security.Cryptography.ProtectedMemory> classes.  
+  
+> [!CAUTION]
+>  Many of these flags can have powerful effects and should be granted only to highly trusted code.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AllFlags">
+      <MemberSignature Language="C#" Value="AllFlags" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.DataProtectionPermissionFlags AllFlags = int32(15)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.DataProtectionPermissionFlags.AllFlags" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.DataProtectionPermissionFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The ability to encrypt data, encrypt memory, unencrypt data, and unencrypt memory.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoFlags">
+      <MemberSignature Language="C#" Value="NoFlags" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.DataProtectionPermissionFlags NoFlags = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.DataProtectionPermissionFlags.NoFlags" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.DataProtectionPermissionFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No protection abilities.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ProtectData">
+      <MemberSignature Language="C#" Value="ProtectData" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.DataProtectionPermissionFlags ProtectData = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.DataProtectionPermissionFlags.ProtectData" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.DataProtectionPermissionFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The ability to encrypt data.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ProtectMemory">
+      <MemberSignature Language="C#" Value="ProtectMemory" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.DataProtectionPermissionFlags ProtectMemory = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.DataProtectionPermissionFlags.ProtectMemory" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.DataProtectionPermissionFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The ability to encrypt memory.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnprotectData">
+      <MemberSignature Language="C#" Value="UnprotectData" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.DataProtectionPermissionFlags UnprotectData = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.DataProtectionPermissionFlags.UnprotectData" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.DataProtectionPermissionFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The ability to unencrypt data.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnprotectMemory">
+      <MemberSignature Language="C#" Value="UnprotectMemory" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.DataProtectionPermissionFlags UnprotectMemory = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.DataProtectionPermissionFlags.UnprotectMemory" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.DataProtectionPermissionFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The ability to unencrypt memory.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

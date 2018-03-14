@@ -1,0 +1,109 @@
+<Type Name="TransactionIsolationLevel" FullName="System.EnterpriseServices.TransactionIsolationLevel">
+  <TypeSignature Language="C#" Value="public enum TransactionIsolationLevel" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed TransactionIsolationLevel extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.TransactionIsolationLevel" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the value of the <see cref="T:System.EnterpriseServices.TransactionAttribute" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.EnterpriseServices.TransactionIsolationLevel> type.  
+  
+ [!code-cpp[EnterpriseServicesTransactionIsolationLevel#0](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServicesTransactionIsolationLevel/cpp/class1.cpp#0)]
+ [!code-csharp[EnterpriseServicesTransactionIsolationLevel#0](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServicesTransactionIsolationLevel/CS/class1.cs#0)]
+ [!code-vb[EnterpriseServicesTransactionIsolationLevel#0](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServicesTransactionIsolationLevel/VB/class1.vb#0)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Any">
+      <MemberSignature Language="C#" Value="Any" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.TransactionIsolationLevel Any = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.TransactionIsolationLevel.Any" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.TransactionIsolationLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The isolation level for the component is obtained from the calling component's isolation level. If this is the root component, the isolation level used is <see cref="F:System.EnterpriseServices.TransactionIsolationLevel.Serializable" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadCommitted">
+      <MemberSignature Language="C#" Value="ReadCommitted" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.TransactionIsolationLevel ReadCommitted = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.TransactionIsolationLevel.ReadCommitted" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.TransactionIsolationLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Shared locks are held while the data is being read to avoid reading modified data, but the data can be changed before the end of the transaction, resulting in non-repeatable reads or phantom data.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadUncommitted">
+      <MemberSignature Language="C#" Value="ReadUncommitted" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.TransactionIsolationLevel ReadUncommitted = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.TransactionIsolationLevel.ReadUncommitted" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.TransactionIsolationLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Shared locks are issued and no exclusive locks are honored.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RepeatableRead">
+      <MemberSignature Language="C#" Value="RepeatableRead" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.TransactionIsolationLevel RepeatableRead = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.TransactionIsolationLevel.RepeatableRead" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.TransactionIsolationLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Locks are placed on all data that is used in a query, preventing other users from updating the data. Prevents non-repeatable reads, but phantom rows are still possible.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Serializable">
+      <MemberSignature Language="C#" Value="Serializable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.TransactionIsolationLevel Serializable = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.TransactionIsolationLevel.Serializable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.TransactionIsolationLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Prevents updating or inserting until the transaction is complete.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

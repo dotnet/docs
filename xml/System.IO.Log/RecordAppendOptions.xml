@@ -1,0 +1,81 @@
+<Type Name="RecordAppendOptions" FullName="System.IO.Log.RecordAppendOptions">
+  <TypeSignature Language="C#" Value="public enum RecordAppendOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RecordAppendOptions extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.IO.Log.RecordAppendOptions" />
+  <AssemblyInfo>
+    <AssemblyName>System.IO.Log</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies how records are appended.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use this enumeration with the <xref:System.IO.Log.LogRecordSequence.Append%2A> method to append a record to a log sequence.  
+  
+ [!code-csharp[S_UELogRecordSequence#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mylogrecordsequence.cs#5)]
+ [!code-vb[S_UELogRecordSequence#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mylogrecordsequence.vb#5)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ForceAppend">
+      <MemberSignature Language="C#" Value="ForceAppend" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Log.RecordAppendOptions ForceAppend = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.IO.Log.RecordAppendOptions.ForceAppend" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Log.RecordAppendOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The record sequence should begin the process of flushing internal buffers after this record is appended. This does not indicate that the record should be durably written before the Append operation completes. To get that behavior, specify the <see cref="F:System.IO.Log.RecordAppendOptions.ForceFlush" /> flag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ForceFlush">
+      <MemberSignature Language="C#" Value="ForceFlush" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Log.RecordAppendOptions ForceFlush = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.IO.Log.RecordAppendOptions.ForceFlush" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Log.RecordAppendOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The record sequence should flush any internal buffers after this record is appended. When the Append operation completes, the specified record has been durably written.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Log.RecordAppendOptions None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.IO.Log.RecordAppendOptions.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Log.RecordAppendOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Data is written lazily.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

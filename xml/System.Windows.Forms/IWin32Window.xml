@@ -1,0 +1,77 @@
+<Type Name="IWin32Window" FullName="System.Windows.Forms.IWin32Window">
+  <TypeSignature Language="C#" Value="public interface IWin32Window" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWin32Window" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.IWin32Window" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("458AB8A2-A1EA-4d7b-8EBE-DEE5D3D9442C")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides an interface to expose Win32 HWND handles.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This interface is implemented on objects that expose Win32 HWND handles. The resultant handle can be used with Win32 API calls.  
+  
+   
+  
+## Examples  
+ The following example sets the <xref:System.Windows.Forms.Control.Text%2A> property of `label1` to the current <xref:System.Windows.Forms.IWin32Window.Handle%2A> of `Form1`. This example assumes that you have a <xref:System.Windows.Forms.Form> called `Form1` with a <xref:System.Windows.Forms.Label> called `label1` on it.  
+  
+ [!code-cpp[Classic IWin32Window Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic IWin32Window Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic IWin32Window Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic IWin32Window Example/CS/source.cs#1)]
+ [!code-vb[Classic IWin32Window Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic IWin32Window Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Handle">
+      <MemberSignature Language="C#" Value="public IntPtr Handle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance native int Handle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.IWin32Window.Handle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the handle to the window represented by the implementer.</summary>
+        <value>A handle to the window represented by the implementer.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Depending on the implementer, the value of the <xref:System.Windows.Forms.IWin32Window.Handle%2A> property could change during the life of the window.  
+  
+   
+  
+## Examples  
+ The following example sets the <xref:System.Windows.Forms.Control.Text%2A> property of `label1` to the current <xref:System.Windows.Forms.IWin32Window.Handle%2A> of `Form1`. This example assumes that you have a <xref:System.Windows.Forms.Form> called `Form1` with a <xref:System.Windows.Forms.Label> called `label1` on it.  
+  
+ [!code-cpp[Classic IWin32Window Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic IWin32Window Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic IWin32Window Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic IWin32Window Example/CS/source.cs#1)]
+ [!code-vb[Classic IWin32Window Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic IWin32Window Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

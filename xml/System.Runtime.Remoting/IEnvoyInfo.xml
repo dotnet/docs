@@ -1,0 +1,51 @@
+<Type Name="IEnvoyInfo" FullName="System.Runtime.Remoting.IEnvoyInfo">
+  <TypeSignature Language="C#" Value="public interface IEnvoyInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IEnvoyInfo" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.IEnvoyInfo" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides envoy information.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this interface to provide custom envoy information that is carried along with the <xref:System.Runtime.Remoting.ObjRef> objects.  
+  
+ Classes that implement the current interface hold a serialized chain of message sinks that is regenerated when a proxy is created to represent the object. Such functionality is used for <xref:System.Runtime.Remoting.Contexts.Context> bound object types only, and represents the groups of objects that provide run-time services such as transactions.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="EnvoySinks">
+      <MemberSignature Language="C#" Value="public System.Runtime.Remoting.Messaging.IMessageSink EnvoySinks { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.Remoting.Messaging.IMessageSink EnvoySinks" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.IEnvoyInfo.EnvoySinks" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.Messaging.IMessageSink</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the list of envoys that were contributed by the server context and object chains when the object was marshaled.</summary>
+        <value>A chain of envoy sinks.</value>
+        <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

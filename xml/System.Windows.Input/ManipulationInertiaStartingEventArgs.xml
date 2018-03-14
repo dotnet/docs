@@ -1,0 +1,329 @@
+<Type Name="ManipulationInertiaStartingEventArgs" FullName="System.Windows.Input.ManipulationInertiaStartingEventArgs">
+  <TypeSignature Language="C#" Value="public sealed class ManipulationInertiaStartingEventArgs : System.Windows.Input.InputEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ManipulationInertiaStartingEventArgs extends System.Windows.Input.InputEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.ManipulationInertiaStartingEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Input.InputEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.UIElement.ManipulationInertiaStarting" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Windows.Input.ManipulationInertiaStartingEventArgs> object to specify the inertial behavior of a manipulation. You can specify the inertial behavior for each type of manipulation separately by using the <xref:System.Windows.Input.ManipulationInertiaStartingEventArgs.TranslationBehavior%2A>, <xref:System.Windows.Input.ManipulationInertiaStartingEventArgs.ExpansionBehavior%2A>, and <xref:System.Windows.Input.ManipulationInertiaStartingEventArgs.RotationBehavior%2A> properties. Each property is a type of object that represents the inertial behavior and in each case, you can specify the following:  
+  
+-   The initial velocity of the inertia when it begins.  
+  
+-   The desired position of the manipulation when inertia ends.  
+  
+-   The desired deceleration of the inertia.  
+  
+ You typically specify either the desired position of the manipulation when inertia ends or the desired deceleration of the inertia, but not both.  
+  
+ For more information about manipulations, see the [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
+  
+   
+  
+## Examples  
+ The following example shows the <xref:System.Windows.UIElement.ManipulationInertiaStarting> event handler and sets the desired deceleration for translation, expansion, and rotation that is used during inertia. This example is part of a larger example in [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
+  
+ [!code-csharp[BasicManipulation#ManipulationInertiaStarting](~/samples/snippets/csharp/VS_Snippets_Wpf/basicmanipulation/csharp/mainwindow.xaml.cs#manipulationinertiastarting)]
+ [!code-vb[BasicManipulation#ManipulationInertiaStarting](~/samples/snippets/visualbasic/VS_Snippets_Wpf/basicmanipulation/visualbasic/mainwindow.xaml.vb#manipulationinertiastarting)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Cancel">
+      <MemberSignature Language="C#" Value="public bool Cancel ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Cancel() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.ManipulationInertiaStartingEventArgs.Cancel" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Cancels the manipulation.</summary>
+        <returns>
+          <see langword="true" /> if the manipulation was successfully canceled; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the method succeeds, the default <xref:System.Windows.Input.TouchDevice> sends previous touch events as mouse down, mouse move, or mouse up events to the element and future manipulation events do not occur.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpansionBehavior">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.InertiaExpansionBehavior ExpansionBehavior { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.InertiaExpansionBehavior ExpansionBehavior" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.ManipulationInertiaStartingEventArgs.ExpansionBehavior" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.InertiaExpansionBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Get or sets the rate of slowdown of expansion inertial movement.</summary>
+        <value>The rate of slowdown of expansion inertial movement</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Input.ManipulationInertiaStartingEventArgs.ExpansionBehavior%2A> property to do the following:  
+  
+-   Specify the initial velocity of the inertia when it begins by setting the <xref:System.Windows.Input.InertiaExpansionBehavior.InitialVelocity%2A> property.  
+  
+-   Specify the desired expansion of the manipulation when inertia ends by setting the <xref:System.Windows.Input.InertiaExpansionBehavior.DesiredExpansion%2A> property.  
+  
+-   Specify the desired deceleration of the inertia by setting the <xref:System.Windows.Input.InertiaExpansionBehavior.DesiredDeceleration%2A> property.  
+  
+ You typically set either the <xref:System.Windows.Input.InertiaExpansionBehavior.DesiredExpansion%2A> or the <xref:System.Windows.Input.InertiaExpansionBehavior.DesiredDeceleration%2A>, but not both.  
+  
+ For more information about manipulations, see the [Input Overview](~/docs/framework/wpf/advanced/input-overview.md). For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitialVelocities">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.ManipulationVelocities InitialVelocities { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.ManipulationVelocities InitialVelocities" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.ManipulationInertiaStartingEventArgs.InitialVelocities" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ManipulationVelocities</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the rates of changes to the manipulation that occur before inertia starts.</summary>
+        <value>The rates of changes to the manipulation that occur before inertia starts.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about manipulations, see the [Input Overview](~/docs/framework/wpf/advanced/input-overview.md). For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvokeEventHandler">
+      <MemberSignature Language="C#" Value="protected override void InvokeEventHandler (Delegate genericHandler, object genericTarget);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InvokeEventHandler(class System.Delegate genericHandler, object genericTarget) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.ManipulationInertiaStartingEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="genericHandler" Type="System.Delegate" />
+        <Parameter Name="genericTarget" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="genericHandler">To be added.</param>
+        <param name="genericTarget">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManipulationContainer">
+      <MemberSignature Language="C#" Value="public System.Windows.IInputElement ManipulationContainer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.IInputElement ManipulationContainer" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.ManipulationInertiaStartingEventArgs.ManipulationContainer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.IInputElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the container that the <see cref="P:System.Windows.Input.ManipulationStartedEventArgs.ManipulationOrigin" /> property is relative to.</summary>
+        <value>The container that the <see cref="P:System.Windows.Input.ManipulationStartedEventArgs.ManipulationOrigin" /> property is relative to.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about manipulations, see the [Input Overview](~/docs/framework/wpf/advanced/input-overview.md). For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManipulationOrigin">
+      <MemberSignature Language="C#" Value="public System.Windows.Point ManipulationOrigin { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Point ManipulationOrigin" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.ManipulationInertiaStartingEventArgs.ManipulationOrigin" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Point</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the point from which the manipulation originated.</summary>
+        <value>The point from which the manipulation originated.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If more than one point of contact initiated the manipulation, the <xref:System.Windows.Input.ManipulationInertiaStartingEventArgs.ManipulationOrigin%2A> property is the point between all of the points of contact.  
+  
+ For more information about manipulations, see the [Input Overview](~/docs/framework/wpf/advanced/input-overview.md). For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Manipulators">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Windows.Input.IManipulator&gt; Manipulators { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class System.Windows.Input.IManipulator&gt; Manipulators" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.ManipulationInertiaStartingEventArgs.Manipulators" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Windows.Input.IManipulator&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of objects that represents the touch contacts for the manipulation.</summary>
+        <value>A collection of objects that represents the touch contacts for the manipulation.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RotationBehavior">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.InertiaRotationBehavior RotationBehavior { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.InertiaRotationBehavior RotationBehavior" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.ManipulationInertiaStartingEventArgs.RotationBehavior" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.InertiaRotationBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the rate of slowdown of rotational inertial movement.</summary>
+        <value>The rate of slowdown of rotational inertial movement.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Input.ManipulationInertiaStartingEventArgs.RotationBehavior%2A> property to do the following:  
+  
+-   Specify the initial velocity of the inertia when it begins by setting the <xref:System.Windows.Input.InertiaRotationBehavior.InitialVelocity%2A> property.  
+  
+-   Specify the desired rotation of the manipulation when inertia ends by setting the <xref:System.Windows.Input.InertiaRotationBehavior.DesiredRotation%2A> property.  
+  
+-   Specify the desired deceleration of the inertia by setting the <xref:System.Windows.Input.InertiaRotationBehavior.DesiredDeceleration%2A> property.  
+  
+ You typically set either the <xref:System.Windows.Input.InertiaRotationBehavior.DesiredRotation%2A> or the <xref:System.Windows.Input.InertiaRotationBehavior.DesiredDeceleration%2A>, but not both.  
+  
+ For more information about manipulations, see the [Input Overview](~/docs/framework/wpf/advanced/input-overview.md). For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetInertiaParameter">
+      <MemberSignature Language="C#" Value="public void SetInertiaParameter (System.Windows.Input.Manipulations.InertiaParameters2D parameter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetInertiaParameter(class System.Windows.Input.Manipulations.InertiaParameters2D parameter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.ManipulationInertiaStartingEventArgs.SetInertiaParameter(System.Windows.Input.Manipulations.InertiaParameters2D)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parameter" Type="System.Windows.Input.Manipulations.InertiaParameters2D" />
+      </Parameters>
+      <Docs>
+        <param name="parameter">The object that specifies the behavior of a manipulation during inertia.</param>
+        <summary>Specifies the behavior of a manipulation during inertia.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You typically do not need to call this method. Use the properties on the <xref:System.Windows.Input.ManipulationInertiaStartingEventArgs> instead.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="parameter" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TranslationBehavior">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.InertiaTranslationBehavior TranslationBehavior { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.InertiaTranslationBehavior TranslationBehavior" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.ManipulationInertiaStartingEventArgs.TranslationBehavior" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.InertiaTranslationBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets and sets the rate of slowdown of linear inertial movement.</summary>
+        <value>The rate of slowdown of linear inertial movement.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Input.ManipulationInertiaStartingEventArgs.TranslationBehavior%2A> property to do the following:  
+  
+-   Specify the initial velocity of the inertia when it begins by setting the <xref:System.Windows.Input.InertiaTranslationBehavior.InitialVelocity%2A> property.  
+  
+-   Specify the desired position of the manipulation when inertia ends by setting the <xref:System.Windows.Input.InertiaTranslationBehavior.DesiredDisplacement%2A> property.  
+  
+-   Specify the desired deceleration of the inertia by setting the <xref:System.Windows.Input.InertiaTranslationBehavior.DesiredDeceleration%2A> property.  
+  
+ You typically set either the <xref:System.Windows.Input.InertiaTranslationBehavior.DesiredDisplacement%2A> or the <xref:System.Windows.Input.InertiaTranslationBehavior.DesiredDeceleration%2A>, but not both.  
+  
+ For more information about manipulations, see the [Input Overview](~/docs/framework/wpf/advanced/input-overview.md). For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

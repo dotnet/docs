@@ -1,0 +1,60 @@
+<Type Name="ExpressionMorphHelperAttribute" FullName="System.Activities.Presentation.Expressions.ExpressionMorphHelperAttribute">
+  <TypeSignature Language="C#" Value="public sealed class ExpressionMorphHelperAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ExpressionMorphHelperAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Expressions.ExpressionMorphHelperAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents an expression morph helper attribute.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ExpressionMorphHelperAttribute (Type expressionMorphHelperType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type expressionMorphHelperType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Expressions.ExpressionMorphHelperAttribute.#ctor(System.Type)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="expressionMorphHelperType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="expressionMorphHelperType">The morph helper type.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Presentation.Expressions.ExpressionMorphHelperAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpressionMorphHelperType">
+      <MemberSignature Language="C#" Value="public Type ExpressionMorphHelperType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type ExpressionMorphHelperType" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Expressions.ExpressionMorphHelperAttribute.ExpressionMorphHelperType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of the helper.</summary>
+        <value>The type of the helper.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

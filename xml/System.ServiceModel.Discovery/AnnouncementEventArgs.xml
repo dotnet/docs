@@ -1,0 +1,55 @@
+<Type Name="AnnouncementEventArgs" FullName="System.ServiceModel.Discovery.AnnouncementEventArgs">
+  <TypeSignature Language="C#" Value="public class AnnouncementEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AnnouncementEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.AnnouncementEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Used to pass announcement event arguments.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="EndpointDiscoveryMetadata">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Discovery.EndpointDiscoveryMetadata EndpointDiscoveryMetadata { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Discovery.EndpointDiscoveryMetadata EndpointDiscoveryMetadata" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.AnnouncementEventArgs.EndpointDiscoveryMetadata" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Discovery.EndpointDiscoveryMetadata</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the service metadata sent by the service as part of its announcement message from this <see cref="T:System.ServiceModel.Discovery.AnnouncementEventArgs" /> instance.</summary>
+        <value>The discoverable service metadata.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MessageSequence">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Discovery.DiscoveryMessageSequence MessageSequence { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Discovery.DiscoveryMessageSequence MessageSequence" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.AnnouncementEventArgs.MessageSequence" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Discovery.DiscoveryMessageSequence</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the discovery message sequence from this <see cref="T:System.ServiceModel.Discovery.AnnouncementEventArgs" /> instance.</summary>
+        <value>The discovery message sequence.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

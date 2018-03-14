@@ -1,0 +1,26 @@
+<Namespace Name="System.Net.PeerToPeer">
+  <Docs>
+    <summary>The <see cref="N:System.Net.PeerToPeer" /> namespace provides access to peer networking functionality.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ How peers discover each other and resolve identifiers is complicated by transient connectivity and the lack of access to address records such as the Domain Name System (DNS).  The Windows Peer-to-Peer Infrastructure solves this problem with a name resolution and peer discovery scheme called PNRP.  
+  
+ Peer Name Resolution Protocol (PNRP) provides a name resolution mechanism for peer-to-peer networks.  PNRP is designed to resolve a name to a network <xref:System.Net.IPEndPoint> in a completely peer-to-peer manner.  
+  
+ Basic PNRP functionality is provided in the <xref:System.Net.PeerToPeer> namespace classes.  They provide the ability to create a peer and register it in a <xref:System.Net.PeerToPeer.Cloud> of peers. They also provide the ability to resolve a <xref:System.Net.PeerToPeer.PeerName> to its network endpoint, TCP port, cloud, or other address identifier(s).  
+  
+ Advanced functionality for peer-to-peer networking is provided in the <xref:System.Net.PeerToPeer.Collaboration> namespace.  
+  
+ In Windows Vista, PNRP ships as a service that is started on demand by applications. In addition, there is a PNRP machine registration service that can be manually enabled by applications or users if they want to publish machine names for remote connections and communications.  
+  
+ PNRP version 1 was included in Windows XP Service Pack 2 (SP2), Windows XP Professional x64 Edition, and Windows XP with Service Pack 1 (SP1) and the Advanced Networking Pack for Windows XP.  
+  
+ In addition, there is a PNRP machine registration service which can be manually enabled by applications/users if there is interest in publishing machine names for remote connection and communication.  
+  
+ ]]></format>
+    </remarks>
+    <altmember cref="N:System.Net.PeerToPeer.Collaboration" />
+  </Docs>
+</Namespace>

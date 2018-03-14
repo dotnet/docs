@@ -1,0 +1,35 @@
+<Type Name="StylusEventHandler" FullName="System.Windows.Input.StylusEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void StylusEventHandler(object sender, StylusEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StylusEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.StylusEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.Input.StylusEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">The event data.</param>
+    <summary>Represents the method that handles a stylus event for a class that the implements the <see cref="T:System.Windows.IInputElement" /> interface.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Windows.Input.StylusEventHandler> delegate to designate a handler for the <xref:System.Windows.Input.Stylus.StylusDown> event.  
+  
+ [!code-csharp[StylusSnippets#18](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSnippets/CSharp/Window1.xaml.cs#18)]
+ [!code-vb[StylusSnippets#18](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSnippets/VisualBasic/Window1.xaml.vb#18)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

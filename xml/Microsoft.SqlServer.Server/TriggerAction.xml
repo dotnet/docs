@@ -1,0 +1,1320 @@
+<Type Name="TriggerAction" FullName="Microsoft.SqlServer.Server.TriggerAction">
+  <TypeSignature Language="C#" Value="public enum TriggerAction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TriggerAction extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Server.TriggerAction" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>The <see cref="T:Microsoft.SqlServer.Server.TriggerAction" /> enumeration is used by the <see cref="T:Microsoft.SqlServer.Server.SqlTriggerContext" /> class to indicate what action fired the trigger.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:Microsoft.SqlServer.Server.TriggerAction> enumeration is used by the <xref:Microsoft.SqlServer.Server.SqlTriggerContext> class to indicate what action fired the trigger.  
+  
+ For more information, see the Transact-SQL Reference of SQL Server Books Online.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AlterAppRole">
+      <MemberSignature Language="C#" Value="AlterAppRole" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction AlterAppRole = int32(138)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterAppRole" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An ALTER APPLICATION ROLE Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AlterAssembly">
+      <MemberSignature Language="C#" Value="AlterAssembly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction AlterAssembly = int32(102)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterAssembly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An ALTER ASSEMBLY Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AlterBinding">
+      <MemberSignature Language="C#" Value="AlterBinding" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction AlterBinding = int32(175)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterBinding" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An ALTER_REMOTE_SERVICE_BINDING event type was specified when an event notification was created on the database or server instance.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AlterFunction">
+      <MemberSignature Language="C#" Value="AlterFunction" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction AlterFunction = int32(62)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterFunction" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An ALTER FUNCTION Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AlterIndex">
+      <MemberSignature Language="C#" Value="AlterIndex" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction AlterIndex = int32(25)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterIndex" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An ALTER INDEX Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AlterLogin">
+      <MemberSignature Language="C#" Value="AlterLogin" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction AlterLogin = int32(145)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterLogin" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An ALTER LOGIN Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AlterPartitionFunction">
+      <MemberSignature Language="C#" Value="AlterPartitionFunction" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction AlterPartitionFunction = int32(192)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterPartitionFunction" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An ALTER PARTITION FUNCTION Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AlterPartitionScheme">
+      <MemberSignature Language="C#" Value="AlterPartitionScheme" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction AlterPartitionScheme = int32(195)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterPartitionScheme" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An ALTER PARTITION SCHEME Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AlterProcedure">
+      <MemberSignature Language="C#" Value="AlterProcedure" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction AlterProcedure = int32(52)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterProcedure" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An ALTER PROCEDURE Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AlterQueue">
+      <MemberSignature Language="C#" Value="AlterQueue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction AlterQueue = int32(158)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterQueue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An ALTER QUEUE Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AlterRole">
+      <MemberSignature Language="C#" Value="AlterRole" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction AlterRole = int32(135)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterRole" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An ALTER ROLE Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AlterRoute">
+      <MemberSignature Language="C#" Value="AlterRoute" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction AlterRoute = int32(165)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterRoute" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An ALTER ROUTE Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AlterSchema">
+      <MemberSignature Language="C#" Value="AlterSchema" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction AlterSchema = int32(142)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterSchema" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An ALTER SCHEMA Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AlterService">
+      <MemberSignature Language="C#" Value="AlterService" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction AlterService = int32(162)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterService" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An ALTER SERVICE Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AlterTable">
+      <MemberSignature Language="C#" Value="AlterTable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction AlterTable = int32(22)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterTable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An ALTER TABLE Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AlterTrigger">
+      <MemberSignature Language="C#" Value="AlterTrigger" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction AlterTrigger = int32(72)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterTrigger" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An ALTER TRIGGER Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AlterUser">
+      <MemberSignature Language="C#" Value="AlterUser" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction AlterUser = int32(132)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterUser" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An ALTER USER Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AlterView">
+      <MemberSignature Language="C#" Value="AlterView" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction AlterView = int32(42)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterView" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An ALTER VIEW Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateAppRole">
+      <MemberSignature Language="C#" Value="CreateAppRole" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction CreateAppRole = int32(137)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateAppRole" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A CREATE APPLICATION ROLE Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateAssembly">
+      <MemberSignature Language="C#" Value="CreateAssembly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction CreateAssembly = int32(101)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateAssembly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A CREATE ASSEMBLY Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateBinding">
+      <MemberSignature Language="C#" Value="CreateBinding" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction CreateBinding = int32(174)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateBinding" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A CREATE_REMOTE_SERVICE_BINDING event type was specified when an event notification was created on the database or server instance.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateContract">
+      <MemberSignature Language="C#" Value="CreateContract" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction CreateContract = int32(154)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateContract" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A CREATE CONTRACT Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateEventNotification">
+      <MemberSignature Language="C#" Value="CreateEventNotification" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction CreateEventNotification = int32(74)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateEventNotification" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A CREATE EVENT NOTIFICATION Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateFunction">
+      <MemberSignature Language="C#" Value="CreateFunction" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction CreateFunction = int32(61)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateFunction" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A CREATE FUNCTION Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateIndex">
+      <MemberSignature Language="C#" Value="CreateIndex" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction CreateIndex = int32(24)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateIndex" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A CREATE INDEX Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateLogin">
+      <MemberSignature Language="C#" Value="CreateLogin" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction CreateLogin = int32(144)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateLogin" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A CREATE LOGIN Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateMsgType">
+      <MemberSignature Language="C#" Value="CreateMsgType" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction CreateMsgType = int32(151)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateMsgType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A CREATE MESSAGE TYPE Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatePartitionFunction">
+      <MemberSignature Language="C#" Value="CreatePartitionFunction" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction CreatePartitionFunction = int32(191)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreatePartitionFunction" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A CREATE PARTITION FUNCTION Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatePartitionScheme">
+      <MemberSignature Language="C#" Value="CreatePartitionScheme" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction CreatePartitionScheme = int32(194)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreatePartitionScheme" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A CREATE PARTITION SCHEME Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateProcedure">
+      <MemberSignature Language="C#" Value="CreateProcedure" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction CreateProcedure = int32(51)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateProcedure" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A CREATE PROCEDURE Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateQueue">
+      <MemberSignature Language="C#" Value="CreateQueue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction CreateQueue = int32(157)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateQueue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A CREATE QUEUE Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateRole">
+      <MemberSignature Language="C#" Value="CreateRole" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction CreateRole = int32(134)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateRole" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A CREATE ROLE Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateRoute">
+      <MemberSignature Language="C#" Value="CreateRoute" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction CreateRoute = int32(164)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateRoute" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A CREATE ROUTE Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateSchema">
+      <MemberSignature Language="C#" Value="CreateSchema" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction CreateSchema = int32(141)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateSchema" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A CREATE SCHEMA Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateSecurityExpression">
+      <MemberSignature Language="C#" Value="CreateSecurityExpression" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction CreateSecurityExpression = int32(31)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateSecurityExpression" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Not available.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateService">
+      <MemberSignature Language="C#" Value="CreateService" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction CreateService = int32(161)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateService" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A CREATE SERVICE Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateSynonym">
+      <MemberSignature Language="C#" Value="CreateSynonym" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction CreateSynonym = int32(34)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateSynonym" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A CREATE SYNONYM Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTable">
+      <MemberSignature Language="C#" Value="CreateTable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction CreateTable = int32(21)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateTable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A CREATE TABLE Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTrigger">
+      <MemberSignature Language="C#" Value="CreateTrigger" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction CreateTrigger = int32(71)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateTrigger" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A CREATE TRIGGER Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateType">
+      <MemberSignature Language="C#" Value="CreateType" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction CreateType = int32(91)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A CREATE TYPE Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateUser">
+      <MemberSignature Language="C#" Value="CreateUser" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction CreateUser = int32(131)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateUser" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A CREATE USER Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateView">
+      <MemberSignature Language="C#" Value="CreateView" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction CreateView = int32(41)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateView" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A CREATE VIEW Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="Delete" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction Delete = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.Delete" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A DELETE Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DenyObject">
+      <MemberSignature Language="C#" Value="DenyObject" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DenyObject = int32(171)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DenyObject" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A DENY Object Permissions Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DenyStatement">
+      <MemberSignature Language="C#" Value="DenyStatement" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DenyStatement = int32(168)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DenyStatement" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A DENY Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DropAppRole">
+      <MemberSignature Language="C#" Value="DropAppRole" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DropAppRole = int32(139)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropAppRole" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A DROP APPLICATION ROLE Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DropAssembly">
+      <MemberSignature Language="C#" Value="DropAssembly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DropAssembly = int32(103)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropAssembly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A DROP ASSEMBLY Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DropBinding">
+      <MemberSignature Language="C#" Value="DropBinding" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DropBinding = int32(176)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropBinding" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A DROP_REMOTE_SERVICE_BINDING event type was specified when an event notification was created on the database or server instance.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DropContract">
+      <MemberSignature Language="C#" Value="DropContract" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DropContract = int32(156)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropContract" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A DROP CONTRACT Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DropEventNotification">
+      <MemberSignature Language="C#" Value="DropEventNotification" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DropEventNotification = int32(76)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropEventNotification" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A DROP EVENT NOTIFICATION Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DropFunction">
+      <MemberSignature Language="C#" Value="DropFunction" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DropFunction = int32(63)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropFunction" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A DROP FUNCTION Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DropIndex">
+      <MemberSignature Language="C#" Value="DropIndex" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DropIndex = int32(26)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropIndex" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A DROP INDEX Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DropLogin">
+      <MemberSignature Language="C#" Value="DropLogin" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DropLogin = int32(146)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropLogin" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A DROP LOGIN Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DropMsgType">
+      <MemberSignature Language="C#" Value="DropMsgType" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DropMsgType = int32(153)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropMsgType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A DROP MESSAGE TYPE Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DropPartitionFunction">
+      <MemberSignature Language="C#" Value="DropPartitionFunction" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DropPartitionFunction = int32(193)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropPartitionFunction" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A DROP PARTITION FUNCTION Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DropPartitionScheme">
+      <MemberSignature Language="C#" Value="DropPartitionScheme" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DropPartitionScheme = int32(196)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropPartitionScheme" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A DROP PARTITION SCHEME Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DropProcedure">
+      <MemberSignature Language="C#" Value="DropProcedure" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DropProcedure = int32(53)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropProcedure" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A DROP PROCEDURE Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DropQueue">
+      <MemberSignature Language="C#" Value="DropQueue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DropQueue = int32(159)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropQueue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A DROP QUEUE Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DropRole">
+      <MemberSignature Language="C#" Value="DropRole" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DropRole = int32(136)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropRole" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A DROP ROLE Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DropRoute">
+      <MemberSignature Language="C#" Value="DropRoute" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DropRoute = int32(166)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropRoute" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A DROP ROUTE Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DropSchema">
+      <MemberSignature Language="C#" Value="DropSchema" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DropSchema = int32(143)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropSchema" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A DROP SCHEMA Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DropSecurityExpression">
+      <MemberSignature Language="C#" Value="DropSecurityExpression" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DropSecurityExpression = int32(33)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropSecurityExpression" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Not available.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DropService">
+      <MemberSignature Language="C#" Value="DropService" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DropService = int32(163)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropService" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A DROP SERVICE Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DropSynonym">
+      <MemberSignature Language="C#" Value="DropSynonym" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DropSynonym = int32(36)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropSynonym" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A DROP SYNONYM Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DropTable">
+      <MemberSignature Language="C#" Value="DropTable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DropTable = int32(23)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropTable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A DROP TABLE Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DropTrigger">
+      <MemberSignature Language="C#" Value="DropTrigger" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DropTrigger = int32(73)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropTrigger" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A DROP TRIGGER Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DropType">
+      <MemberSignature Language="C#" Value="DropType" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DropType = int32(93)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A DROP TYPE Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DropUser">
+      <MemberSignature Language="C#" Value="DropUser" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DropUser = int32(133)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropUser" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A DROP USER Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DropView">
+      <MemberSignature Language="C#" Value="DropView" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DropView = int32(43)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropView" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A DROP VIEW Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GrantObject">
+      <MemberSignature Language="C#" Value="GrantObject" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction GrantObject = int32(170)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.GrantObject" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A GRANT OBJECT Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GrantStatement">
+      <MemberSignature Language="C#" Value="GrantStatement" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction GrantStatement = int32(167)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.GrantStatement" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A GRANT Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="Insert" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction Insert = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.Insert" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An INSERT Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Invalid">
+      <MemberSignature Language="C#" Value="Invalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction Invalid = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.Invalid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An invalid trigger action, one that is not exposed to the user, occurred.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RevokeObject">
+      <MemberSignature Language="C#" Value="RevokeObject" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction RevokeObject = int32(172)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.RevokeObject" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A REVOKE OBJECT Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RevokeStatement">
+      <MemberSignature Language="C#" Value="RevokeStatement" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction RevokeStatement = int32(169)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.RevokeStatement" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A REVOKE Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Update">
+      <MemberSignature Language="C#" Value="Update" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction Update = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.Update" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An UPDATE Transact-SQL statement was executed.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

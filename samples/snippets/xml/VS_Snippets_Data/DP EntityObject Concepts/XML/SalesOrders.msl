@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- <snippetEntityObjectMsl> -->
+<Mapping Space="C-S" xmlns="urn:schemas-microsoft-com:windows:storage:mapping:CS">
+  <EntityContainerMapping StorageEntityContainer="MicrosoftSamplesEntityStoreContainer"
+                          CdmEntityContainer="SalesOrdersEntities">
+    <EntitySetMapping Name="LineItemSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Microsoft.Samples.Entity.LineItem)">
+        <MappingFragment StoreEntitySet="SalesOrderDetail">
+          <ScalarProperty Name="OrderId" ColumnName="SalesOrderID" />
+          <ScalarProperty Name="LineItemId" ColumnName="SalesOrderDetailID" />
+          <ScalarProperty Name="TrackingNumber" ColumnName="CarrierTrackingNumber" />
+          <ScalarProperty Name="Quantity" ColumnName="OrderQty" />
+          <ScalarProperty Name="Product" ColumnName="ProductID" />
+          <ScalarProperty Name="Special" ColumnName="SpecialOfferID" />
+          <ScalarProperty Name="Price" ColumnName="UnitPrice" />
+          <ScalarProperty Name="Discount" ColumnName="UnitPriceDiscount" />
+          <ScalarProperty Name="RowGuid" ColumnName="rowguid" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Microsoft.Samples.Entity.Order)">
+        <MappingFragment StoreEntitySet="SalesOrderHeader">
+          <ScalarProperty Name="OrderId" ColumnName="SalesOrderID" />
+          <ScalarProperty Name="Revision" ColumnName="RevisionNumber" />
+          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+          <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+          <ScalarProperty Name="ShipDate" ColumnName="ShipDate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="OnlineOrder" ColumnName="OnlineOrderFlag" />
+          <ScalarProperty Name="Customer" ColumnName="CustomerID" />
+          <ScalarProperty Name="Contact" ColumnName="ContactID" />
+          <ScalarProperty Name="BillToAddress" ColumnName="BillToAddressID" />
+          <ScalarProperty Name="ShipToAddress" ColumnName="ShipToAddressID" />
+          <ScalarProperty Name="ShipMethod" ColumnName="ShipMethodID" />
+          <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
+          <ScalarProperty Name="Tax" ColumnName="TaxAmt" />
+          <ScalarProperty Name="Freight" ColumnName="Freight" />
+          <ScalarProperty Name="RowGuid" ColumnName="rowguid" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ComplexProperty Name ="ExtendedInfo" TypeName ="Microsoft.Samples.Entity.OrderInfo">
+            <ScalarProperty Name="OrderNumber" ColumnName="SalesOrderNumber" />
+            <ScalarProperty Name="PurchaseOrder" ColumnName="PurchaseOrderNumber" />
+            <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+            <ScalarProperty Name="Comment" ColumnName="Comment" />
+          </ComplexProperty>
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="LineItem_Order_OrderIdSet"
+                           TypeName="Microsoft.Samples.Entity.LineItem_Order_OrderId"
+                           StoreEntitySet="SalesOrderDetail">
+      <EndProperty Name="Order">
+        <ScalarProperty Name="OrderId" ColumnName="SalesOrderID" />
+      </EndProperty>
+      <EndProperty Name="LineItems">
+        <ScalarProperty Name="OrderId" ColumnName="SalesOrderID" />
+        <ScalarProperty Name="LineItemId" ColumnName="SalesOrderDetailID" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>
+<!-- </snippetEntityObjectMsl> -->

@@ -1,0 +1,27 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true"  
+CodeFile="Default.aspx.cs" Inherits="_Default" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Home</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <h2>Configuration Target Site</h2>
+        This site is used as the target for configuration changes 
+        performed by a client application. This can be a console or a 
+        Web application running on this same or on a remote server. 
+    </div>
+    
+    <p>The following counter is reset to zero every time the 
+    application restarts.</p>
+    <asp:Label ID="ResultLabelId" runat="server" 
+    style="background-color:Yellow"  Text="Post BackColor Counter: "/> 
+    <asp:Label ID="ResultId" runat="server" style="font-weight:bold; color:Red;"/>
+    
+    </form>
+</body>
+</html>

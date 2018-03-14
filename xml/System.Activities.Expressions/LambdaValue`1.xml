@@ -1,0 +1,163 @@
+<Type Name="LambdaValue&lt;TResult&gt;" FullName="System.Activities.Expressions.LambdaValue&lt;TResult&gt;">
+  <TypeSignature Language="C#" Value="public sealed class LambdaValue&lt;TResult&gt; : System.Activities.CodeActivity&lt;TResult&gt;, System.Activities.XamlIntegration.IValueSerializableExpression" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LambdaValue`1&lt;TResult&gt; extends System.Activities.CodeActivity`1&lt;!TResult&gt; implements class System.Activities.XamlIntegration.IValueSerializableExpression" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Expressions.LambdaValue`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TResult" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Activities.CodeActivity&lt;TResult&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="TResult">TResult</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Activities.XamlIntegration.IValueSerializableExpression</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="TResult">The type of value returned by the expression.</typeparam>
+    <summary>Represents a lambda expression used as an r-value, which supports binding of <see cref="F:System.Activities.ArgumentDirection.In" /> arguments.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Activities.Expressions.LambdaValue%601> is used for lambda expressions specified in code and cannot be serialized to XAML. If an attempt to serialize a workflow that contains a <xref:System.Activities.Expressions.LambdaValue%601> is made, a <xref:System.Activities.Expressions.LambdaSerializationException> is thrown. If the containing workflow requires XAML serialization, use <xref:Microsoft.VisualBasic.Activities.VisualBasicValue%601> or use <xref:System.Activities.Expressions.ExpressionServices> to convert the <xref:System.Activities.Expressions.LambdaValue%601> to a format that can be serialized.  
+  
+ This activity uses the LINQ to Entity provider to evaluate LINQ expressions. Any LINQ expressions used with this activity must be evaluatable by the ADO.Net Entity Data Model. For example, LINQ expressions cannot be used to reference activities, variables, or arguments of the workflow itself.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LambdaValue (System.Linq.Expressions.Expression&lt;Func&lt;System.Activities.ActivityContext,TResult&gt;&gt; lambdaValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Linq.Expressions.Expression`1&lt;class System.Func`2&lt;class System.Activities.ActivityContext, !TResult&gt;&gt; lambdaValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.LambdaValue`1.#ctor(System.Linq.Expressions.Expression{System.Func{System.Activities.ActivityContext,`0}})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="lambdaValue" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;System.Activities.ActivityContext,TResult&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="lambdaValue">The lambda expression that represents the value of the <see cref="T:System.Activities.Expressions.LambdaValue`1" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Expressions.LambdaValue`1" /> class using the specified expression.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CacheMetadata">
+      <MemberSignature Language="C#" Value="protected override void CacheMetadata (System.Activities.CodeActivityMetadata metadata);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CacheMetadata(valuetype System.Activities.CodeActivityMetadata metadata) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.LambdaValue`1.CacheMetadata(System.Activities.CodeActivityMetadata)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="metadata" Type="System.Activities.CodeActivityMetadata" />
+      </Parameters>
+      <Docs>
+        <param name="metadata">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanConvertToString">
+      <MemberSignature Language="C#" Value="public bool CanConvertToString (System.Windows.Markup.IValueSerializerContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanConvertToString(class System.Windows.Markup.IValueSerializerContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.LambdaValue`1.CanConvertToString(System.Windows.Markup.IValueSerializerContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Windows.Markup.IValueSerializerContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">Context information that is used for conversion.</param>
+        <summary>This method always returns <see langword="true" /> and is used in conjunction with <see cref="M:System.Activities.Expressions.LambdaValue`1.ConvertToString(System.Windows.Markup.IValueSerializerContext)" /> to provide descriptive error messages when an attempt is made to serialize this activity to XAML.</summary>
+        <returns>This method always returns <see langword="true" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Activities.Expressions.LambdaValue%601> is used for lambda expressions specified in code and cannot be serialized to XAML. If an attempt to serialize a workflow that contains a <xref:System.Activities.Expressions.LambdaValue%601> is made, a <xref:System.Activities.Expressions.LambdaSerializationException> is thrown. If the containing workflow requires XAML serialization, use <xref:Microsoft.VisualBasic.Activities.VisualBasicValue%601> or use <xref:System.Activities.Expressions.ExpressionServices> to convert the <xref:System.Activities.Expressions.LambdaValue%601> to a format that can be serialized.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertToString">
+      <MemberSignature Language="C#" Value="public string ConvertToString (System.Windows.Markup.IValueSerializerContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ConvertToString(class System.Windows.Markup.IValueSerializerContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.LambdaValue`1.ConvertToString(System.Windows.Markup.IValueSerializerContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Windows.Markup.IValueSerializerContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">Context information that is used for conversion.</param>
+        <summary>Throws a <see cref="T:System.Activities.Expressions.LambdaSerializationException" />, and is used in conjunction with <see cref="M:System.Activities.Expressions.LambdaValue`1.CanConvertToString(System.Windows.Markup.IValueSerializerContext)" /> to provide descriptive error messages when an attempt is made to serialize this activity to XAML.</summary>
+        <returns>Throws a <see cref="T:System.Activities.Expressions.LambdaSerializationException" /> when called.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Activities.Expressions.LambdaValue%601> is used for lambda expressions specified in code and cannot be serialized to XAML. If an attempt to serialize a workflow that contains a <xref:System.Activities.Expressions.LambdaValue%601> is made, a <xref:System.Activities.Expressions.LambdaSerializationException> is thrown. If the containing workflow requires XAML serialization, use <xref:Microsoft.VisualBasic.Activities.VisualBasicValue%601> or use <xref:System.Activities.Expressions.ExpressionServices> to convert the <xref:System.Activities.Expressions.LambdaValue%601> to a format that can be serialized.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="protected override TResult Execute (System.Activities.CodeActivityContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance !TResult Execute(class System.Activities.CodeActivityContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.LambdaValue`1.Execute(System.Activities.CodeActivityContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Activities.CodeActivityContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

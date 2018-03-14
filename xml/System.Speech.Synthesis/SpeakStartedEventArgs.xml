@@ -1,0 +1,27 @@
+<Type Name="SpeakStartedEventArgs" FullName="System.Speech.Synthesis.SpeakStartedEventArgs">
+  <TypeSignature Language="C#" Value="public class SpeakStartedEventArgs : System.Speech.Synthesis.PromptEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SpeakStartedEventArgs extends System.Speech.Synthesis.PromptEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.SpeakStartedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Speech</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Speech.Synthesis.PromptEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Returns notification from the <see cref="E:System.Speech.Synthesis.SpeechSynthesizer.SpeakStarted" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An instance of <xref:System.Speech.Synthesis.SpeakStartedEventArgs> is created when the <xref:System.Speech.Synthesis.SpeechSynthesizer> object raises the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakStarted> event. The <xref:System.Speech.Synthesis.SpeechSynthesizer> raises the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakStarted> event when it begins speaking a prompt using any of the <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsml%2A>, or <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsmlAsync%2A> methods.  
+  
+ The <xref:System.Speech.Synthesis.SpeakStartedEventArgs> class has no properties, and does not return data from the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakStarted> event. It is provided to enable application authors to write event handlers for the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakStarted> event.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

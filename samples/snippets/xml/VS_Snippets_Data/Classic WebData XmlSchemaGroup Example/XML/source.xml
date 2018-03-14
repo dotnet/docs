@@ -1,0 +1,25 @@
+<!--<Snippet2>-->
+
+<?xml version="1.0" encoding="IBM437"?>
+<xs:schema  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="thing1" type="xs:string"/>
+    <xs:element name="thing2" type="xs:string"/>
+    <xs:element name="thing3" type="xs:string"/>
+
+    <xs:attribute name="myAttribute" type="xs:decimal"/>
+
+    <xs:group name="myGroupOfThings">
+     <xs:sequence>
+      <xs:element ref="thing1"/>
+      <xs:element ref="thing2"/>
+      <xs:element ref="thing3"/>
+     </xs:sequence>
+    </xs:group>
+
+    <xs:complexType name="myComplexType">
+        <xs:group ref="myGroupOfThings"/>
+        <xs:attribute ref="myAttribute"/>
+    </xs:complexType>
+</xs:schema>
+<!--</Snippet2>-->
+

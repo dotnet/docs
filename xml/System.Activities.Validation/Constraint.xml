@@ -1,0 +1,126 @@
+<Type Name="Constraint" FullName="System.Activities.Validation.Constraint">
+  <TypeSignature Language="C#" Value="public abstract class Constraint : System.Activities.NativeActivity" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Constraint extends System.Activities.NativeActivity" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Validation.Constraint" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Activities.NativeActivity</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Handles the validation constraint that is used for validating an activity.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddValidationError">
+      <MemberSignature Language="C#" Value="public static void AddValidationError (System.Activities.NativeActivityContext context, System.Activities.Validation.ValidationError error);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddValidationError(class System.Activities.NativeActivityContext context, class System.Activities.Validation.ValidationError error) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Validation.Constraint.AddValidationError(System.Activities.NativeActivityContext,System.Activities.Validation.ValidationError)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Activities.NativeActivityContext" />
+        <Parameter Name="error" Type="System.Activities.Validation.ValidationError" />
+      </Parameters>
+      <Docs>
+        <param name="context">The workflow activity execution environment.</param>
+        <param name="error">A validation error that occurs during a workflow runtime.</param>
+        <summary>Adds a validation error to a list of run-time validation errors that are attached to the execution context.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CacheMetadata">
+      <MemberSignature Language="C#" Value="protected override void CacheMetadata (System.Activities.NativeActivityMetadata metadata);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CacheMetadata(valuetype System.Activities.NativeActivityMetadata metadata) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Validation.Constraint.CacheMetadata(System.Activities.NativeActivityMetadata)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="metadata" Type="System.Activities.NativeActivityMetadata" />
+      </Parameters>
+      <Docs>
+        <param name="metadata">A <see cref="T:System.Activities.NativeActivityMetadata" /> object that becomes the container for a list of validation runtime arguments.</param>
+        <summary>Creates a <see cref="T:System.Activities.NativeActivityMetadata" /> object that contains runtime arguments for the workflow validation process.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="protected override void Execute (System.Activities.NativeActivityContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Execute(class System.Activities.NativeActivityContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Validation.Constraint.Execute(System.Activities.NativeActivityContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Activities.NativeActivityContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">The workflow activity execution environment.</param>
+        <summary>Invokes the process that validates an activity.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnExecute">
+      <MemberSignature Language="C#" Value="protected abstract void OnExecute (System.Activities.NativeActivityContext context, object objectToValidate, System.Activities.Validation.ValidationContext objectToValidateContext);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnExecute(class System.Activities.NativeActivityContext context, object objectToValidate, class System.Activities.Validation.ValidationContext objectToValidateContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Validation.Constraint.OnExecute(System.Activities.NativeActivityContext,System.Object,System.Activities.Validation.ValidationContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Activities.NativeActivityContext" />
+        <Parameter Name="objectToValidate" Type="System.Object" />
+        <Parameter Name="objectToValidateContext" Type="System.Activities.Validation.ValidationContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">The workflow activity execution.</param>
+        <param name="objectToValidate">The activity to be validated.</param>
+        <param name="objectToValidateContext">The context of the activity to be validated.</param>
+        <summary>When implemented by a derived class, validates the specified object using the specified native activity and validation contexts.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidationErrorListPropertyName">
+      <MemberSignature Language="C#" Value="public const string ValidationErrorListPropertyName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ValidationErrorListPropertyName" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Validation.Constraint.ValidationErrorListPropertyName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The name for an activity constraint property that is a list of workflow run-time validation errors.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

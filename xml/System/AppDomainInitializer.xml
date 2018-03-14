@@ -1,0 +1,36 @@
+<Type Name="AppDomainInitializer" FullName="System.AppDomainInitializer">
+  <TypeSignature Language="C#" Value="public delegate void AppDomainInitializer(string[] args);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed AppDomainInitializer extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.AppDomainInitializer" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Parameters>
+    <Parameter Name="args" Type="System.String[]" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="args">An array of strings to pass as arguments to the callback method.</param>
+    <summary>Represents the callback method to invoke when the application domain is initialized.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use an <xref:System.AppDomainInitializer> delegate to specify the callback method to invoke when an instance of the <xref:System.AppDomain> class is initialized.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

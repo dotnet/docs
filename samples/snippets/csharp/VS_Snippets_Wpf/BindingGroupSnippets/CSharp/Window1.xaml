@@ -1,0 +1,88 @@
+﻿<Window x:Class="BindingGroupSnippets.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:src="clr-namespace:BindingGroupSnippets"
+    Title="Window1" Height="300" Width="300">
+
+  <!--<SnippetWindowLayout>-->
+  <StackPanel Name="stackPanel1"  Margin="10" Width="250"
+              Loaded="stackPanel1_Loaded"
+              Validation.Error="ItemError">
+
+    <StackPanel.Resources>
+      <Style TargetType="HeaderedContentControl">
+        <Setter Property="Margin" Value="2"/>
+        <Setter Property="Focusable" Value="False"/>
+        <Setter Property="Template">
+          <Setter.Value>
+            <ControlTemplate TargetType="HeaderedContentControl">
+              <DockPanel LastChildFill="False">
+                <ContentPresenter ContentSource="Header" DockPanel.Dock="Left" Focusable="False" VerticalAlignment="Center"/>
+                <ContentPresenter ContentSource="Content" Margin="5,0,0,0" DockPanel.Dock="Right" VerticalAlignment="Center"/>
+              </DockPanel>
+
+            </ControlTemplate>
+          </Setter.Value>
+        </Setter>
+      </Style>
+
+      <Style TargetType="Button">
+        <Setter Property="Width" Value="100"/>
+        <Setter Property="Margin" Value="10,15,15,15"/>
+
+      </Style>
+
+    </StackPanel.Resources>
+    
+    <!--<SnippetBindingGroup>-->
+    <StackPanel.BindingGroup>
+      <BindingGroup NotifyOnValidationError="True">
+        <BindingGroup.ValidationRules>
+          <src:ValidateDateAndPrice ValidationStep="ConvertedProposedValue" />
+        </BindingGroup.ValidationRules>
+      </BindingGroup>
+    </StackPanel.BindingGroup>
+    <!--</SnippetBindingGroup>-->
+    
+    <TextBlock FontSize="14" Text="Enter an item for sale"/>
+    <HeaderedContentControl Header="Description">
+      <TextBox Width="150" Text="{Binding Path=Description, Mode=TwoWay}"/>
+    </HeaderedContentControl>
+    <HeaderedContentControl Header="Price">
+      <TextBox Name="priceField"  Width="150">
+        <TextBox.Text>
+          <Binding Path="Price" Mode="TwoWay" >
+            <Binding.ValidationRules>
+              <src:PriceIsAPositiveNumber/>
+            </Binding.ValidationRules>
+          </Binding>
+        </TextBox.Text>
+      </TextBox>
+    </HeaderedContentControl>
+    <HeaderedContentControl Header="Date Offer Ends">
+      <TextBox Name="dateField" Width="150" >
+        <TextBox.Text>
+          <Binding Path="OfferExpires" StringFormat="d" >
+            <Binding.ValidationRules>
+              <src:FutureDateRule/>
+            </Binding.ValidationRules>
+          </Binding>
+        </TextBox.Text>
+      </TextBox>
+    </HeaderedContentControl>
+    <StackPanel Orientation="Horizontal">
+      <Button IsDefault="True" Click="Submit_Click">_Submit</Button>
+      <Button IsCancel="True" Click="Cancel_Click">_Cancel</Button>
+    </StackPanel>
+    <HeaderedContentControl Header="Description">
+      <TextBlock Width="150" Text="{Binding Path=Description}"/>
+    </HeaderedContentControl>
+    <HeaderedContentControl Header="Price">
+      <TextBlock Width="150" Text="{Binding Path=Price, StringFormat=c}"/>
+    </HeaderedContentControl>
+    <HeaderedContentControl Header="Date Offer Ends">
+      <TextBlock Width="150" Text="{Binding Path=OfferExpires, StringFormat=d}"/>
+    </HeaderedContentControl>
+  </StackPanel>
+  <!--</SnippetWindowLayout>-->
+</Window>

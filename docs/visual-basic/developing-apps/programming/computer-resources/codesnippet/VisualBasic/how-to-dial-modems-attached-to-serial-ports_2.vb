@@ -1,0 +1,1 @@
+                com1.DtrEnable = True

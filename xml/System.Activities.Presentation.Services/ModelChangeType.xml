@@ -1,0 +1,130 @@
+<Type Name="ModelChangeType" FullName="System.Activities.Presentation.Services.ModelChangeType">
+  <TypeSignature Language="C#" Value="public enum ModelChangeType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ModelChangeType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Services.ModelChangeType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the model change type.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CollectionItemAdded">
+      <MemberSignature Language="C#" Value="CollectionItemAdded" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Presentation.Services.ModelChangeType CollectionItemAdded = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Services.ModelChangeType.CollectionItemAdded" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.Services.ModelChangeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A collection item is added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CollectionItemRemoved">
+      <MemberSignature Language="C#" Value="CollectionItemRemoved" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Presentation.Services.ModelChangeType CollectionItemRemoved = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Services.ModelChangeType.CollectionItemRemoved" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.Services.ModelChangeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A collection item is removed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DictionaryKeyValueAdded">
+      <MemberSignature Language="C#" Value="DictionaryKeyValueAdded" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Presentation.Services.ModelChangeType DictionaryKeyValueAdded = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Services.ModelChangeType.DictionaryKeyValueAdded" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.Services.ModelChangeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A dictionary key value is added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DictionaryKeyValueRemoved">
+      <MemberSignature Language="C#" Value="DictionaryKeyValueRemoved" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Presentation.Services.ModelChangeType DictionaryKeyValueRemoved = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Services.ModelChangeType.DictionaryKeyValueRemoved" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.Services.ModelChangeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A dictionary key value is removed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DictionaryValueChanged">
+      <MemberSignature Language="C#" Value="DictionaryValueChanged" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Presentation.Services.ModelChangeType DictionaryValueChanged = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Services.ModelChangeType.DictionaryValueChanged" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.Services.ModelChangeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A dictionary value is changed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Presentation.Services.ModelChangeType None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Services.ModelChangeType.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.Services.ModelChangeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>None operation.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyChanged">
+      <MemberSignature Language="C#" Value="PropertyChanged" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Presentation.Services.ModelChangeType PropertyChanged = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Services.ModelChangeType.PropertyChanged" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.Services.ModelChangeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A property is changed.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

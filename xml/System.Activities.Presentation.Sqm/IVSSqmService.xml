@@ -1,0 +1,87 @@
+<Type Name="IVSSqmService" FullName="System.Activities.Presentation.Sqm.IVSSqmService">
+  <TypeSignature Language="C#" Value="public interface IVSSqmService" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IVSSqmService" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Sqm.IVSSqmService" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Specifies information about the IVSSqmService.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddArrayToStream">
+      <MemberSignature Language="C#" Value="public void AddArrayToStream (int dataPointId, uint[] data, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddArrayToStream(int32 dataPointId, unsigned int32[] data, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Sqm.IVSSqmService.AddArrayToStream(System.Int32,System.UInt32[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dataPointId" Type="System.Int32" />
+        <Parameter Name="data" Type="System.UInt32[]" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="dataPointId">The data point identifier.</param>
+        <param name="data">The data.</param>
+        <param name="count">The number of elements in the array.</param>
+        <summary>Adds an array to the stream.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddItemToStream">
+      <MemberSignature Language="C#" Value="public void AddItemToStream (int dataPointId, uint value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddItemToStream(int32 dataPointId, unsigned int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Sqm.IVSSqmService.AddItemToStream(System.Int32,System.UInt32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dataPointId" Type="System.Int32" />
+        <Parameter Name="value" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="dataPointId">The data point identifier.</param>
+        <param name="value">The value of the item.</param>
+        <summary>Adds an item to the stream.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDatapoint">
+      <MemberSignature Language="C#" Value="public void SetDatapoint (int dataPointId, uint value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetDatapoint(int32 dataPointId, unsigned int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Sqm.IVSSqmService.SetDatapoint(System.Int32,System.UInt32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dataPointId" Type="System.Int32" />
+        <Parameter Name="value" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="dataPointId">The data point identifier.</param>
+        <param name="value">The value of the data point.</param>
+        <summary>Sets a data point item to the stream.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

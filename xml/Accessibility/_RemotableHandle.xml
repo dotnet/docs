@@ -1,0 +1,74 @@
+<Type Name="_RemotableHandle" FullName="Accessibility._RemotableHandle">
+  <TypeSignature Language="C#" Value="public struct _RemotableHandle" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit _RemotableHandle extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:Accessibility._RemotableHandle" />
+  <AssemblyInfo>
+    <AssemblyName>Accessibility</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>The <see cref="T:Accessibility.IAccessibleHandler" /> and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) accessibility interface.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about <xref:Accessibility._RemotableHandle>, see the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="fContext">
+      <MemberSignature Language="C#" Value="public int fContext;" />
+      <MemberSignature Language="ILAsm" Value=".field public int32 fContext" />
+      <MemberSignature Language="DocId" Value="F:Accessibility._RemotableHandle.fContext" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Accessibility</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:Accessibility.IAccessibleHandler" /> and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) accessibility interface.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="u">
+      <MemberSignature Language="C#" Value="public Accessibility.__MIDL_IWinTypes_0009 u;" />
+      <MemberSignature Language="ILAsm" Value=".field public valuetype Accessibility.__MIDL_IWinTypes_0009 u" />
+      <MemberSignature Language="DocId" Value="F:Accessibility._RemotableHandle.u" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Accessibility</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Accessibility.__MIDL_IWinTypes_0009</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:Accessibility.IAccessibleHandler" /> and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) accessibility interface.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

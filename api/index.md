@@ -1,17 +1,13 @@
 ---
-_tocPath: api/toc.html
-_tocRel: toc.html
-_navPath: toc.html
-_navRel: ../toc.html
+layout: ApiBrowserPage
+hide_bc: true
+title: .NET API Browser
+quickFilterColumn1: netframework-4.7.1,netcore-2.0,netstandard-2.0
+quickFilterColumn2: xamarinios-10.8,xamarinandroid-7.1,xamarinmac-3.0
+quickFilterColumn3: azure-dotnet,aspnetcore-2.0
+ms.topic: landing-page
 ---
 
-# .NET Core API Reference
+# .NET API Browser
 
-These documents cover the API reference for .NET Core. You can use the search function 
-on the left-hand side to search for an API or use the Table of Contents on the left to navigate.
-
-If you find an issue or an inconsistency, we would love to hear about it! 
-Go ahead to [.NET Core docs repo](https://github.com/dotnet/core-docs/) On Github and leave 
-an issue to let us know.
-
-
+Welcome to the .NET API Browser – your one-stop shop for all .NET-based APIs from Microsoft. Start searching for any managed APIs by typing in the box below. You can learn more about the API Browser [in our blog post](https://aka.ms/apibrowser). If you have any feedback, create a new issue in the [MicrosoftDocs/feedback repo on GitHub](https://github.com/MicrosoftDocs/feedback/issues). 

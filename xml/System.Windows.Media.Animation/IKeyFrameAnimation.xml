@@ -1,0 +1,34 @@
+<Type Name="IKeyFrameAnimation" FullName="System.Windows.Media.Animation.IKeyFrameAnimation">
+  <TypeSignature Language="C#" Value="public interface IKeyFrameAnimation" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IKeyFrameAnimation" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.IKeyFrameAnimation" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>An <see cref="T:System.Windows.Media.Animation.IKeyFrameAnimation" /> interface implementation provides untyped access to key frame collection members.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="KeyFrames">
+      <MemberSignature Language="C#" Value="public System.Collections.IList KeyFrames { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IList KeyFrames" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.IKeyFrameAnimation.KeyFrames" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IList</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an ordered collection <see cref="P:System.Windows.Media.Animation.IKeyFrameAnimation.KeyFrames" /> associated with this animation sequence.</summary>
+        <value>An <see cref="T:System.Collections.IList" /> of <see cref="P:System.Windows.Media.Animation.IKeyFrameAnimation.KeyFrames" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,135 @@
+<Type Name="DataServiceResponse" FullName="System.Data.Services.Client.DataServiceResponse">
+  <TypeSignature Language="C#" Value="public sealed class DataServiceResponse : System.Collections.Generic.IEnumerable&lt;System.Data.Services.Client.OperationResponse&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DataServiceResponse extends System.Object implements class System.Collections.Generic.IEnumerable`1&lt;class System.Data.Services.Client.OperationResponse&gt;, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Services.Client.DataServiceResponse" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Services.Client</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;System.Data.Services.Client.OperationResponse&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents the response to operations sent to the data service as a result of calling <see cref="M:System.Data.Services.Client.DataServiceContext.SaveChanges" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BatchHeaders">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,string&gt; BatchHeaders { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, string&gt; BatchHeaders" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.DataServiceResponse.BatchHeaders" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The headers from an HTTP response associated with a batch request.</summary>
+        <value>An <see cref="T:System.Collections.IDictionary" /> object containing the name-value pairs of an HTTP response.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The headers property on the <xref:System.Data.Services.Client.DataServiceResponse> instance returned will be an empty collection when batching is not used because there is no set of headers that represents the entire save operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BatchStatusCode">
+      <MemberSignature Language="C#" Value="public int BatchStatusCode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 BatchStatusCode" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.DataServiceResponse.BatchStatusCode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The status code from an HTTP response associated with a batch request.</summary>
+        <value>An integer based on status codes defined in [Hypertext Transfer Protocol](http://go.microsoft.com/fwlink/?LinkId=119520).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For batching operations, this is the status code from the HTTP response associated with the entire batch. For non-batching requests, the value is always 200, which means the caller must inspect each operation to determine its result.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerator&lt;System.Data.Services.Client.OperationResponse&gt; GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;class System.Data.Services.Client.OperationResponse&gt; GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceResponse.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerator&lt;System.Data.Services.Client.OperationResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets an enumerator that enables retrieval of responses to operations being tracked by <see cref="T:System.Data.Services.Client.OperationResponse" /> objects within the <see cref="T:System.Data.Services.Client.DataServiceResponse" />.</summary>
+        <returns>An enumerator over the response received from the service.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsBatchResponse">
+      <MemberSignature Language="C#" Value="public bool IsBatchResponse { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsBatchResponse" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.DataServiceResponse.IsBatchResponse" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a Boolean value that indicates whether the response contains multiple results.</summary>
+        <value>A Boolean value that indicates whether the response contains multiple results.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceResponse.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets an enumerator that enables retrieval of responses to operations being tracked by <see cref="T:System.Data.Services.Client.OperationResponse" /> objects within the <see cref="T:System.Data.Services.Client.DataServiceResponse" />.</summary>
+        <returns>An enumerator over the response received from the service.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

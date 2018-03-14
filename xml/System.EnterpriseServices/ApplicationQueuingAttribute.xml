@@ -1,0 +1,178 @@
+<Type Name="ApplicationQueuingAttribute" FullName="System.EnterpriseServices.ApplicationQueuingAttribute">
+  <TypeSignature Language="C#" Value="public sealed class ApplicationQueuingAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ApplicationQueuingAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.ApplicationQueuingAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly, Inherited=true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Enables queuing support for the marked assembly and enables the application to read method calls from Message Queuing queues. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For a list of initial property values for an instance of <xref:System.EnterpriseServices.ApplicationQueuingAttribute>, see the <xref:System.EnterpriseServices.ApplicationQueuingAttribute.%23ctor%2A> constructor.  
+  
+ For more information about using attributes, see [Attributes](~/docs/standard/attributes/index.md).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.EnterpriseServices.ApplicationQueuingAttribute> type.  
+  
+ [!code-csharp[EnterpriseServicesApplicationQueuingAttribute#0](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServicesApplicationQueuingAttribute/CS/class1.cs#0)]
+ [!code-vb[EnterpriseServicesApplicationQueuingAttribute#0](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServicesApplicationQueuingAttribute/VB/class1.vb#0)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ApplicationQueuingAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ApplicationQueuingAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.EnterpriseServices.ApplicationQueuingAttribute" /> class, enabling queuing support for the assembly and initializing <see cref="P:System.EnterpriseServices.ApplicationQueuingAttribute.Enabled" />, <see cref="P:System.EnterpriseServices.ApplicationQueuingAttribute.QueueListenerEnabled" />, and <see cref="P:System.EnterpriseServices.ApplicationQueuingAttribute.MaxListenerThreads" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows initial property values for an instance of <xref:System.EnterpriseServices.ApplicationQueuingAttribute>.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|`Enabled`|`true`|  
+|`QueueListenerEnabled`|`false`|  
+|`MaxListenerThreads`|zero (0)|  
+  
+   
+  
+## Examples  
+ The following code example creates a new <xref:System.EnterpriseServices.ApplicationQueuingAttribute>.  
+  
+ [!code-csharp[EnterpriseServicesApplicationQueuingAttribute#1](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServicesApplicationQueuingAttribute/CS/class1.cs#1)]
+ [!code-vb[EnterpriseServicesApplicationQueuingAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServicesApplicationQueuingAttribute/VB/class1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Enabled">
+      <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ApplicationQueuingAttribute.Enabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether queuing support is enabled.</summary>
+        <value>
+          <see langword="true" /> if queuing support is enabled; otherwise, <see langword="false" />. The default value set by the constructor is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Applications are not able to use queued components by default. Instantiating <xref:System.EnterpriseServices.ApplicationQueuingAttribute> enables an application to use queued components; however, it does not enable the application to listen for queued messages from clients.  
+  
+   
+  
+## Examples  
+ The following code example gets and sets the value of an `ApplicationQueuing` attribute's <xref:System.EnterpriseServices.ApplicationQueuingAttribute.Enabled%2A> property.  
+  
+ [!code-csharp[EnterpriseServicesApplicationQueuingAttribute#2](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServicesApplicationQueuingAttribute/CS/class1.cs#2)]
+ [!code-vb[EnterpriseServicesApplicationQueuingAttribute#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServicesApplicationQueuingAttribute/VB/class1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxListenerThreads">
+      <MemberSignature Language="C#" Value="public int MaxListenerThreads { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxListenerThreads" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ApplicationQueuingAttribute.MaxListenerThreads" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the number of threads used to extract messages from the queue and activate the corresponding component.</summary>
+        <value>The maximum number of threads to use for processing messages arriving in the queue. The default is zero.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The valid range for this property is 0 to 1000. The default is zero. For a newly created application, the setting is derived from the algorithm currently used for determining the default number of listener threads: 16 times the number of CPUs in the server.  
+  
+ For more information, see `QcListenerMaxThreads` in [Applications (COM+)](http://msdn.microsoft.com/library/default.asp?url=/library/cossdk/html/c0c46592-5282-412d-8f54-67637be8218a.asp).  
+  
+   
+  
+## Examples  
+ The following code example gets and sets the value of an `ApplicationQueuing` attribute's <xref:System.EnterpriseServices.ApplicationQueuingAttribute.MaxListenerThreads%2A> property.  
+  
+ [!code-csharp[EnterpriseServicesApplicationQueuingAttribute#4](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServicesApplicationQueuingAttribute/CS/class1.cs#4)]
+ [!code-vb[EnterpriseServicesApplicationQueuingAttribute#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServicesApplicationQueuingAttribute/VB/class1.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueueListenerEnabled">
+      <MemberSignature Language="C#" Value="public bool QueueListenerEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool QueueListenerEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ApplicationQueuingAttribute.QueueListenerEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the application will accept queued component calls from clients.</summary>
+        <value>
+          <see langword="true" /> if the application accepts queued component calls; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example gets and sets the value of an `ApplicationQueuing` attribute's <xref:System.EnterpriseServices.ApplicationQueuingAttribute.QueueListenerEnabled%2A> property.  
+  
+ [!code-csharp[EnterpriseServicesApplicationQueuingAttribute#3](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServicesApplicationQueuingAttribute/CS/class1.cs#3)]
+ [!code-vb[EnterpriseServicesApplicationQueuingAttribute#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServicesApplicationQueuingAttribute/VB/class1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

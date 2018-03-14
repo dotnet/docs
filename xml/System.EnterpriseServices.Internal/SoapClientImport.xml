@@ -1,0 +1,90 @@
+<Type Name="SoapClientImport" FullName="System.EnterpriseServices.Internal.SoapClientImport">
+  <TypeSignature Language="C#" Value="public sealed class SoapClientImport : System.EnterpriseServices.Internal.ISoapClientImport" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SoapClientImport extends System.Object implements class System.EnterpriseServices.Internal.ISoapClientImport" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.Internal.SoapClientImport" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.EnterpriseServices.Internal.ISoapClientImport</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("346D5B9F-45E1-45c0-AADF-1B7D221E9063")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Imports authenticated, encrypted SOAP client proxies. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.EnterpriseServices.Internal.SoapClientImport> is used internally by the .NET Framework. You do not need to use it directly in your code.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SoapClientImport ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.SoapClientImport.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.EnterpriseServices.Internal.SoapClientImport" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessClientTlbEx">
+      <MemberSignature Language="C#" Value="public void ProcessClientTlbEx (string progId, string virtualRoot, string baseUrl, string authentication, string assemblyName, string typeName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ProcessClientTlbEx(string progId, string virtualRoot, string baseUrl, string authentication, string assemblyName, string typeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.SoapClientImport.ProcessClientTlbEx(System.String,System.String,System.String,System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="progId" Type="System.String" />
+        <Parameter Name="virtualRoot" Type="System.String" />
+        <Parameter Name="baseUrl" Type="System.String" />
+        <Parameter Name="authentication" Type="System.String" />
+        <Parameter Name="assemblyName" Type="System.String" />
+        <Parameter Name="typeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="progId">The programmatic identifier of the class. If an empty string (""), this method returns without doing anything.</param>
+        <param name="virtualRoot">The name of the virtual root.</param>
+        <param name="baseUrl">The base URL that contains the virtual root.</param>
+        <param name="authentication">The type of ASP.NET authentication to use.</param>
+        <param name="assemblyName">The name of the assembly.</param>
+        <param name="typeName">The name of the type.</param>
+        <summary>Creates a .NET remoting client configuration file that includes security and authentication options.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Uri.Scheme%2A> for the full URL is HTTPS and authentication is not provided, authentication is set to `Windows`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to access unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

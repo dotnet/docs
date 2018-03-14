@@ -1,0 +1,50 @@
+<Type Name="TemplateKey+TemplateType" FullName="System.Windows.TemplateKey+TemplateType">
+  <TypeSignature Language="C#" Value="protected enum TemplateKey.TemplateType" />
+  <TypeSignature Language="ILAsm" Value=".class nested protected auto ansi sealed TemplateKey/TemplateType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.TemplateKey.TemplateType" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Describes the different types of templates that use <see cref="T:System.Windows.TemplateKey" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DataTemplate">
+      <MemberSignature Language="C#" Value="DataTemplate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.TemplateKey/TemplateType DataTemplate = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.TemplateKey.TemplateType.DataTemplate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.TemplateKey+TemplateType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A type that is a <see cref="T:System.Windows.DataTemplate" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TableTemplate">
+      <MemberSignature Language="C#" Value="TableTemplate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.TemplateKey/TemplateType TableTemplate = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.TemplateKey.TemplateType.TableTemplate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.TemplateKey+TemplateType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A type that is a <see langword="TableTemplate" />. This is obsolete.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

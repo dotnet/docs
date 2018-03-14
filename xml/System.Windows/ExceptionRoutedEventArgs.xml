@@ -1,0 +1,60 @@
+<Type Name="ExceptionRoutedEventArgs" FullName="System.Windows.ExceptionRoutedEventArgs">
+  <TypeSignature Language="C#" Value="public sealed class ExceptionRoutedEventArgs : System.Windows.RoutedEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ExceptionRoutedEventArgs extends System.Windows.RoutedEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.ExceptionRoutedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.RoutedEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the  <see cref="T:System.Windows.Controls.Image" /> and <see cref="T:System.Windows.Controls.MediaElement" /> failed events.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ErrorException">
+      <MemberSignature Language="C#" Value="public Exception ErrorException { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Exception ErrorException" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.ExceptionRoutedEventArgs.ErrorException" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Exception</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the exception that caused the error condition.</summary>
+        <value>The exception that details the specific error condition.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a simple event handler for <xref:System.Windows.ExceptionRoutedEventArgs>.  
+  
+ [!code-csharp[MediaElement_snip#ExceptionRoutedEventArgs](~/samples/snippets/csharp/VS_Snippets_Wpf/MediaElement_snip/CSharp/PlaybackExample.cs#exceptionroutedeventargs)]
+ [!code-vb[MediaElement_snip#ExceptionRoutedEventArgs](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MediaElement_snip/VB/PlaybackExample.vb#exceptionroutedeventargs)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The attempt to access the media file is denied.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">The media file is not found.</exception>
+        <exception cref="T:System.IO.FileFormatException">The media file format is not supported by any installed codec.  
+  
+ -or-  
+  
+ The file format is not recognized.</exception>
+        <exception cref="T:System.NotSupportedException">Windows Media Player version 10 or later is not detected.  
+  
+ -or-  
+  
+ Video resources are insufficient for media playback.</exception>
+        <exception cref="T:System.Runtime.InteropServices.COMException">A COM error code appears.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

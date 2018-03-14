@@ -1,0 +1,89 @@
+<Type Name="HostObjectInitializationStatus" FullName="Microsoft.Build.Utilities.HostObjectInitializationStatus">
+  <TypeSignature Language="C#" Value="public enum HostObjectInitializationStatus" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HostObjectInitializationStatus extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Utilities.HostObjectInitializationStatus" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Defines the next action for <see cref="T:Microsoft.Build.Utilities.ToolTask" /> after an attempt to initialize the host object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:Microsoft.Build.Utilities.HostObjectInitializationStatus> is the return type of the <xref:Microsoft.Build.Utilities.ToolTask.InitializeHostObject%2A> method of the <xref:Microsoft.Build.Utilities.ToolTask> class.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="NoActionReturnFailure">
+      <MemberSignature Language="C#" Value="NoActionReturnFailure" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Utilities.HostObjectInitializationStatus NoActionReturnFailure = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.HostObjectInitializationStatus.NoActionReturnFailure" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Utilities.HostObjectInitializationStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that some of the parameters being passed into the task are invalid, and that the task should fail immediately.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoActionReturnSuccess">
+      <MemberSignature Language="C#" Value="NoActionReturnSuccess" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Utilities.HostObjectInitializationStatus NoActionReturnSuccess = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.HostObjectInitializationStatus.NoActionReturnSuccess" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Utilities.HostObjectInitializationStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the host object is up to date, and that no further action is necessary.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UseAlternateToolToExecute">
+      <MemberSignature Language="C#" Value="UseAlternateToolToExecute" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Utilities.HostObjectInitializationStatus UseAlternateToolToExecute = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.HostObjectInitializationStatus.UseAlternateToolToExecute" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Utilities.HostObjectInitializationStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that either a host object is not available, or that the host object is not capable of supporting all of the features required for this build. Therefore, <see cref="T:Microsoft.Build.Utilities.ToolTask" /> should fallback to an alternate means of doing the build, such as invoking the command-line tool.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UseHostObjectToExecute">
+      <MemberSignature Language="C#" Value="UseHostObjectToExecute" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Utilities.HostObjectInitializationStatus UseHostObjectToExecute = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.HostObjectInitializationStatus.UseHostObjectToExecute" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Utilities.HostObjectInitializationStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that an appropriate host object for this task exists, which can support all of the parameters passed in and should be invoked to do the real work of the task.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,87 @@
+<Type Name="IDocumentPersistenceService" FullName="System.Activities.Presentation.Hosting.IDocumentPersistenceService">
+  <TypeSignature Language="C#" Value="public interface IDocumentPersistenceService" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDocumentPersistenceService" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Hosting.IDocumentPersistenceService" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Provides the functionality to persist a document.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An implementation of this interface allows you to specify a different serialization or storage format.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Flush">
+      <MemberSignature Language="C#" Value="public void Flush (object documentRoot);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Flush(object documentRoot) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Hosting.IDocumentPersistenceService.Flush(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="documentRoot" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="documentRoot">The root directory for a Web site.</param>
+        <summary>When implemented by a derived class, saves the specified document to disk and clears the memory buffer.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Load">
+      <MemberSignature Language="C#" Value="public object Load (string fileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Load(string fileName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Hosting.IDocumentPersistenceService.Load(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="fileName">The document to load.</param>
+        <summary>When implemented by a derived class, places the specified stored document into memory for processing.</summary>
+        <returns>An object that contains the loaded document.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnModelChanged">
+      <MemberSignature Language="C#" Value="public void OnModelChanged (object documentRoot);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnModelChanged(object documentRoot) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Hosting.IDocumentPersistenceService.OnModelChanged(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="documentRoot" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="documentRoot">The root directory for a Web site.</param>
+        <summary>When implemented by a derived class, starts the process of incorporating changes to the workflow model that is being designed.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

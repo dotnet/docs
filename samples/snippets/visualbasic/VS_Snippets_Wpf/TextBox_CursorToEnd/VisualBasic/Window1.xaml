@@ -1,0 +1,17 @@
+﻿<Window  
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"    
+  x:Class="SDKSample.Window1"
+  Title="CursorToEnd">
+  <StackPanel>
+     <TextBox
+        Name="tbPositionCursor"
+        TextWrapping="Wrap"
+        AcceptsReturn="True"
+        VerticalScrollBarVisibility="Visible">
+        Here is some text in my TextBox...
+      </TextBox>
+      <Button	Click="OnClickMoveToStart" Width="150">Cursor To Start</Button>
+      <Button	Click="OnClickMoveToEnd" Width="150">Cursor To End</Button>
+  </StackPanel>
+</Window>

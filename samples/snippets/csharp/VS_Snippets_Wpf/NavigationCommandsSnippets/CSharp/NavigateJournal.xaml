@@ -1,0 +1,57 @@
+﻿<!--<SnippetNavigateJournalMARKUP1>-->
+<Window
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+  <Window.Resources>
+    <!-- For NavigationCommands.NavigateJournal -->
+    <JournalEntryUnifiedViewConverter x:Key="JournalEntryUnifiedViewConverter" />
+      <!--Create a DataTemplate to display the navigation history-->
+    <DataTemplate x:Key="journalMenuItemTemplate">
+      <TextBlock>
+        <TextBlock Text="{Binding (JournalEntryUnifiedViewConverter.JournalEntryPosition)}" />
+        <TextBlock FontWeight="Bold" FontStyle="Italic">
+          <TextBlock Margin="5,0,0,0">(</TextBlock>
+          <TextBlock Text="{Binding JournalEntry.Name}"/>
+          <TextBlock Margin="5,0,0,0">)</TextBlock>
+        </TextBlock>
+      </TextBlock>
+    </DataTemplate>
+      <!--Create a style so that all the MenuItems will use the NavigateJournal command-->
+    <Style x:Key="journalMenuItemContainerStyle">
+      <Setter Property="MenuItem.Command" Value="NavigationCommands.NavigateJournal" />
+      <Setter Property="MenuItem.CommandTarget" Value="{Binding ElementName=frame}" />
+      <Setter Property="MenuItem.CommandParameter" Value="{Binding RelativeSource={RelativeSource Self}}" />
+    </Style>
+  </Window.Resources>
+  <!--</SnippetNavigateJournalMARKUP1>-->
+  <DockPanel>
+    <Menu DockPanel.Dock="Top">
+      <MenuItem Header="_Navigation">
+        <!--<SnippetNavigateJournalMARKUP2>-->
+        <!-- Create the Navigation menu using the template and style defined in Window.Resources-->
+        <MenuItem
+          Header="Navigate Journal"
+          ItemTemplate="{StaticResource journalMenuItemTemplate}"
+          ItemContainerStyle="{StaticResource journalMenuItemContainerStyle}" >
+            <!--Set the ItemsSource to be the IEnumerable returned from the JournalEntryUnifiedViewConverter-->
+          <MenuItem.ItemsSource>
+            <MultiBinding Converter="{StaticResource JournalEntryUnifiedViewConverter}" >
+              <Binding ElementName="frame" Path="BackStack"/>
+              <Binding ElementName="frame" Path="ForwardStack"/>
+            </MultiBinding>
+          </MenuItem.ItemsSource>
+        </MenuItem>
+        <!--</SnippetNavigateJournalMARKUP2>-->
+      </MenuItem>
+    </Menu>
+    <Border Margin="5" Padding="5" BorderBrush="SteelBlue" BorderThickness="2" CornerRadius="5">
+      <!--<SnippetNavigateJournalMARKUP3>-->
+      <!-- The following Frame is used to process NavigationCommands.NavigateJournal commands -->
+      <Frame Name="frame" NavigationUIVisibility="Hidden" Source="Page1.xaml" />
+      <!--</SnippetNavigateJournalMARKUP3>-->
+    </Border>
+  </DockPanel>
+  <!--<SnippetNavigateJournalMARKUP4>-->
+</Window>
+<!--</SnippetNavigateJournalMARKUP4>-->

@@ -1,0 +1,57 @@
+<Type Name="PointSortOrder" FullName="System.Windows.Forms.DataVisualization.Charting.PointSortOrder">
+  <TypeSignature Language="C#" Value="public enum PointSortOrder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PointSortOrder extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.PointSortOrder" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Indicates whether the sort order for data points is ascending or descending.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.PointSortOrder> enumeration represents the order of the sort to be performed on data point values. It is used with the `Sort` method definitions in the <xref:System.Windows.Forms.DataVisualization.Charting.DataManipulator> class that include a `pointSortOrder` parameter.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Ascending">
+      <MemberSignature Language="C#" Value="Ascending" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.PointSortOrder Ascending = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.PointSortOrder.Ascending" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.PointSortOrder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ascending sort order, that is, smallest to largest values.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Descending">
+      <MemberSignature Language="C#" Value="Descending" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.PointSortOrder Descending = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.PointSortOrder.Descending" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.PointSortOrder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Descending sort order, that is, largest to smallest values.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

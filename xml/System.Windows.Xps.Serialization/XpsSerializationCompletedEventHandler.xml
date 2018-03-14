@@ -1,0 +1,25 @@
+<Type Name="XpsSerializationCompletedEventHandler" FullName="System.Windows.Xps.Serialization.XpsSerializationCompletedEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void XpsSerializationCompletedEventHandler(object sender, XpsSerializationCompletedEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XpsSerializationCompletedEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Serialization.XpsSerializationCompletedEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>ReachFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.Xps.Serialization.XpsSerializationCompletedEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">The event data.</param>
+    <summary>Represents the method that handles the <see cref="E:System.Windows.Xps.Serialization.XpsSerializationManagerAsync.XpsSerializationCompleted" /> event of an <see cref="T:System.Windows.Xps.Serialization.XpsSerializationManagerAsync" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

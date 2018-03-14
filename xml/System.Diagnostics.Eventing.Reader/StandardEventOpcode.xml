@@ -1,0 +1,194 @@
+<Type Name="StandardEventOpcode" FullName="System.Diagnostics.Eventing.Reader.StandardEventOpcode">
+  <TypeSignature Language="C#" Value="public enum StandardEventOpcode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StandardEventOpcode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.Reader.StandardEventOpcode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Defines the standard opcodes that are attached to events by the event provider. For more information about opcodes, see <see cref="T:System.Diagnostics.Eventing.Reader.EventOpcode" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DataCollectionStart">
+      <MemberSignature Language="C#" Value="DataCollectionStart" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Eventing.Reader.StandardEventOpcode DataCollectionStart = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.StandardEventOpcode.DataCollectionStart" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventOpcode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An event with this opcode is a trace collection start event.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DataCollectionStop">
+      <MemberSignature Language="C#" Value="DataCollectionStop" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Eventing.Reader.StandardEventOpcode DataCollectionStop = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.StandardEventOpcode.DataCollectionStop" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventOpcode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An event with this opcode is a trace collection stop event.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Extension">
+      <MemberSignature Language="C#" Value="Extension" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Eventing.Reader.StandardEventOpcode Extension = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.StandardEventOpcode.Extension" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventOpcode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An event with this opcode is an extension event.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Info">
+      <MemberSignature Language="C#" Value="Info" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Eventing.Reader.StandardEventOpcode Info = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.StandardEventOpcode.Info" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventOpcode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An event with this opcode is an informational event.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Receive">
+      <MemberSignature Language="C#" Value="Receive" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Eventing.Reader.StandardEventOpcode Receive = int32(240)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.StandardEventOpcode.Receive" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventOpcode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An event with this opcode is published when one activity in an application receives data.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Reply">
+      <MemberSignature Language="C#" Value="Reply" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Eventing.Reader.StandardEventOpcode Reply = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.StandardEventOpcode.Reply" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventOpcode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An event with this opcode is published after an activity in an application replies to an event.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Resume">
+      <MemberSignature Language="C#" Value="Resume" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Eventing.Reader.StandardEventOpcode Resume = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.StandardEventOpcode.Resume" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventOpcode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An event with this opcode is published after an activity in an application resumes from a suspended state. The event should follow an event with the Suspend opcode.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Send">
+      <MemberSignature Language="C#" Value="Send" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Eventing.Reader.StandardEventOpcode Send = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.StandardEventOpcode.Send" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventOpcode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An event with this opcode is published when one activity in an application transfers data or system resources to another activity.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Start">
+      <MemberSignature Language="C#" Value="Start" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Eventing.Reader.StandardEventOpcode Start = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.StandardEventOpcode.Start" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventOpcode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An event with this opcode is published when an application starts a new transaction or activity. This can be embedded into another transaction or activity when multiple events with the Start opcode follow each other without an event with a Stop opcode.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Stop">
+      <MemberSignature Language="C#" Value="Stop" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Eventing.Reader.StandardEventOpcode Stop = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.StandardEventOpcode.Stop" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventOpcode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An event with this opcode is published when an activity or a transaction in an application ends. The event corresponds to the last unpaired event with a Start opcode.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Suspend">
+      <MemberSignature Language="C#" Value="Suspend" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Eventing.Reader.StandardEventOpcode Suspend = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.StandardEventOpcode.Suspend" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventOpcode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An event with this opcode is published when an activity in an application is suspended.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,73 @@
+<Type Name="XhtmlConformanceMode" FullName="System.Web.Configuration.XhtmlConformanceMode">
+  <TypeSignature Language="C#" Value="public enum XhtmlConformanceMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XhtmlConformanceMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Configuration.XhtmlConformanceMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the authentication mode to use in a Web application.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.XhtmlConformanceMode> enumeration applies to the `mode` attribute in the `xhtmlConformance` tag. It specifies the XHTML rendering modalities for an ASP.NET application. The mode can assume one of the values listed next. The default is `Transitional` (XHTML 1.0 Transitional).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Legacy">
+      <MemberSignature Language="C#" Value="Legacy" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.XhtmlConformanceMode Legacy = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Configuration.XhtmlConformanceMode.Legacy" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.XhtmlConformanceMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>XHTML 1.0 Transitional</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Strict">
+      <MemberSignature Language="C#" Value="Strict" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.XhtmlConformanceMode Strict = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Configuration.XhtmlConformanceMode.Strict" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.XhtmlConformanceMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>XHTML 1.0 Strict conformance</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Transitional">
+      <MemberSignature Language="C#" Value="Transitional" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.XhtmlConformanceMode Transitional = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Configuration.XhtmlConformanceMode.Transitional" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.XhtmlConformanceMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Reverts a number of rendering changes made for conformance to the v1.1 rendering behavior.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

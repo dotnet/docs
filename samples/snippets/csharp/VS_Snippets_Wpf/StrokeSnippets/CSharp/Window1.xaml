@@ -1,0 +1,20 @@
+﻿
+<Window x:Class="StrokeSnippets_CS.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="MyBorder"
+    xmlns:cc="clr-namespace:StrokeSnippets_CS"
+    >
+	<DockPanel>
+		<StackPanel Background="DarkSlateBlue">
+			<Button Click="button1Click" Name="button1">Remove Touched Stroke Points</Button>
+			<Button Click="button2Click" Name="button2">Remove Touched Strokes</Button>
+			<Button Click="button3Click" Name="button3">Remove Encircled Strokes</Button>
+			<Button Click="button4Click" Name="button4">Add Strokes (default)</Button>
+			<Button Click="button5Click" Name="button5">Add Shadowed Strokes</Button>
+			<Button Click="button6Click" Name="button6">Fit to curve: </Button>
+			<Button Click="ToggleDrawingMode_Click" Name="toggleDrawingMode">Toggle Drawing Mode</Button>
+		</StackPanel>
+		<cc:MyBorder Background="White" x:Name="border1" />
+	</DockPanel>  
+</Window>

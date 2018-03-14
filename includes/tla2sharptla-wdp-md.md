@@ -1,0 +1,1 @@
+Windows Media Photo

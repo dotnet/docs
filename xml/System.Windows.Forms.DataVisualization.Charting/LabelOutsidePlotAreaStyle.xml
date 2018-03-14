@@ -1,0 +1,75 @@
+<Type Name="LabelOutsidePlotAreaStyle" FullName="System.Windows.Forms.DataVisualization.Charting.LabelOutsidePlotAreaStyle">
+  <TypeSignature Language="C#" Value="public enum LabelOutsidePlotAreaStyle" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LabelOutsidePlotAreaStyle extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.LabelOutsidePlotAreaStyle" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the degree to which a label can be drawn outside a plotting area.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.LabelOutsidePlotAreaStyle> enumeration represents the degree to which a label is allowed to leave a plotting area. It is used in conjunction with the <xref:System.Web.UI.DataVisualization.Charting.SmartLabelStyle.AllowOutsidePlotArea%2A> property of the <xref:System.Web.UI.DataVisualization.Charting.SmartLabelStyle> object.  
+  
+ If you specify the Partial value, no more than 50% of the label can be drawn outside the plotting area.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="No">
+      <MemberSignature Language="C#" Value="No" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.LabelOutsidePlotAreaStyle No = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.LabelOutsidePlotAreaStyle.No" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.LabelOutsidePlotAreaStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Labels cannot de drawn outside the plotting area.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Partial">
+      <MemberSignature Language="C#" Value="Partial" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.LabelOutsidePlotAreaStyle Partial = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.LabelOutsidePlotAreaStyle.Partial" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.LabelOutsidePlotAreaStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Labels can be drawn partially outside the plotting area.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Yes">
+      <MemberSignature Language="C#" Value="Yes" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.LabelOutsidePlotAreaStyle Yes = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.LabelOutsidePlotAreaStyle.Yes" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.LabelOutsidePlotAreaStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Labels can be drawn outside the plotting area.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,65 @@
+<Type Name="DeliveryStatus" FullName="System.ServiceModel.Channels.DeliveryStatus">
+  <TypeSignature Language="C#" Value="public enum DeliveryStatus" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DeliveryStatus extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.DeliveryStatus" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>An enumeration that specifies the delivery status of a message when the delivery of the message is in doubt, or when the message was not delivered.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A message sent to a queue can land in a dead-letter queue because the message was not delivered or the Queue Manager is not sure of the delivery outcome. The `DeliveryStatus` is a way to get the status of message delivery when the message is read from a dead-letter queue.  
+  
+   
+  
+## Examples  
+ The following example shows how to access the `DeliveryStatus` of a message within a service operation.  
+  
+ [!code-csharp[S_DeadLetter#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_deadletter/cs/dlservice.cs#0)]
+ [!code-vb[S_DeadLetter#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_deadletter/vb/dlservice.vb#0)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="InDoubt">
+      <MemberSignature Language="C#" Value="InDoubt" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Channels.DeliveryStatus InDoubt = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.DeliveryStatus.InDoubt" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.DeliveryStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The delivery of the message is in doubt.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotDelivered">
+      <MemberSignature Language="C#" Value="NotDelivered" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Channels.DeliveryStatus NotDelivered = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.DeliveryStatus.NotDelivered" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.DeliveryStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The message was not delivered.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

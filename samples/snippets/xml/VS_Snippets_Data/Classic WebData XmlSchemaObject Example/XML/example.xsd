@@ -1,0 +1,17 @@
+<!--<snippet2>-->
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:group name="testGroup">
+  <xs:choice>
+    <xs:any namespace="##any"/>
+  </xs:choice>
+  </xs:group>
+  <xs:element name="myElement" >
+  <xs:complexType>
+    <xs:choice maxOccurs="unbounded">
+      <xs:group ref="testGroup" />
+    </xs:choice>
+  </xs:complexType>
+  </xs:element>
+</xs:schema>
+<!--</snippet2>-->

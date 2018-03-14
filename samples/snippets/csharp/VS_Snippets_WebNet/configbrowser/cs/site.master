@@ -1,0 +1,78 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" 
+    CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!doctype html public "-//w3c//dtd xhtml 1.0 strict//en" 
+    "http://www.w3.org/tr/xhtml1/dtd/xhtml1-strict.dtd">
+
+<%-- <Snippet3> --%>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<%-- </Snippet3> --%>
+
+<head runat="server">
+    <title>ASP.NET Configuration System Browser</title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body >
+    <form runat="server">
+    <div class="page">
+        <asp:ScriptManager ID="MasterPageScriptManager" runat="server">
+            <Scripts>
+                <asp:ScriptReference Path="~/Scripts/jquery-1.3.2.min.js" />
+            </Scripts>
+        </asp:ScriptManager>
+
+        <div class="header">
+            <%-- <Snippet1> --%>
+            <div class="title-logo">
+                <asp:Image ID="Image1" runat="server" 
+                    ImageUrl="~/Images/ASPdotNET_logo.jpg" 
+                    AlternateText="ASP.NET Logo">
+                </asp:Image>
+            </div>
+            <%-- </Snippet1> --%>
+            <%-- <Snippet2> --%>
+            <div class="title">
+                <h1>Configuration System Browser</h1>
+                &nbsp;&nbsp;
+                <asp:HyperLink ID="HyperLink1" runat="server" 
+                    NavigateUrl="~/About.aspx" BorderStyle="None">
+                    <asp:Image ID="ImageButton2" runat="server" 
+                        ImageUrl="~/Images/HelpIcon_solid.gif" 
+                        AlternateText="Help Button">
+                    </asp:Image>
+                </asp:HyperLink>
+                &nbsp;&nbsp;
+            </div>
+            <%-- </Snippet2> --%>
+        </div>
+
+        <%-- <Snippet11> --%>
+        <div class="leftCol">
+            <asp:Menu id="Menu1" Runat="server" 
+                SkipLinkText="Skip to main content">
+                <Items>
+                  <asp:MenuItem Text="Home" 
+                    NavigateUrl="Default.aspx" />
+                  <asp:MenuItem Text="Preferences" 
+                    NavigateUrl="Preferences.aspx" />
+                  <asp:MenuItem Text="About" 
+                    NavigateUrl="About.aspx" />
+                </Items>
+              </asp:Menu>
+        </div>
+        <%-- </Snippet11> --%>
+        
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+
+        <div class="clear"></div>
+    
+    </div>
+    <div class="footer"></div>
+    </form>
+</body>
+</html>

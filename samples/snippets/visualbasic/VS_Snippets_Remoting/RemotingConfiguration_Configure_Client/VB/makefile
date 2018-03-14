@@ -1,0 +1,11 @@
+all : RemotingConfiguration_Configure_server.exe RemotingConfiguration_Configure_client.exe RemotingConfiguration_Configure_shared.dll
+
+RemotingConfiguration_Configure_shared.dll : RemotingConfiguration_Configure_shared.vb
+	vbc /debug+ /nologo /t:library RemotingConfiguration_Configure_shared.vb
+
+RemotingConfiguration_Configure_server.exe : RemotingConfiguration_Configure_server.vb RemotingConfiguration_Configure_shared.dll
+	vbc /debug+ /nologo /r:RemotingConfiguration_Configure_shared.dll RemotingConfiguration_Configure_server.vb
+
+RemotingConfiguration_Configure_client.exe : RemotingConfiguration_Configure_client.vb RemotingConfiguration_Configure_shared.dll
+	vbc /debug+ /nologo /r:RemotingConfiguration_Configure_shared.dll RemotingConfiguration_Configure_client.vb
+

@@ -1,0 +1,57 @@
+<Type Name="PeekAction" FullName="System.Messaging.PeekAction">
+  <TypeSignature Language="C#" Value="public enum PeekAction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PeekAction extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Messaging.PeekAction" />
+  <AssemblyInfo>
+    <AssemblyName>System.Messaging</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Indicates whether to peek the current message in a queue, or the next message.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Messaging.PeekAction> enumeration with <xref:System.Messaging.MessageQueue.BeginPeek%28System.TimeSpan%2CSystem.Messaging.Cursor%2CSystem.Messaging.PeekAction%2CSystem.Object%2CSystem.AsyncCallback%29> and <xref:System.Messaging.MessageQueue.Peek%28System.TimeSpan%2CSystem.Messaging.Cursor%2CSystem.Messaging.PeekAction%29> to indicate whether you want to peek at the current message in the queue, or the next message.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Current">
+      <MemberSignature Language="C#" Value="Current" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.PeekAction Current = int32(-2147483648)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.PeekAction.Current" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.PeekAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Peek at the current message in the queue.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Next">
+      <MemberSignature Language="C#" Value="Next" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.PeekAction Next = int32(-2147483647)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.PeekAction.Next" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.PeekAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Peek at the next message in the queue.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

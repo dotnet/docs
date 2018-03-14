@@ -1,0 +1,68 @@
+﻿<!--<Snippetxmlns1>-->
+<Window x:Class="ColorPickerApp.Window1"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="ColorPickerApp"
+      xmlns:cp="clr-namespace:ColorPickerLib;assembly=ColorPickerLib">
+  <!--</Snippetxmlns1>-->
+  <Canvas>
+    <Grid>
+      <Grid.RowDefinitions>
+        <RowDefinition/>
+        <RowDefinition/>
+        <RowDefinition/>
+      </Grid.RowDefinitions>
+
+
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition/>
+        <ColumnDefinition/>
+        <ColumnDefinition/>
+      </Grid.ColumnDefinitions>
+
+      <Grid Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" Margin="10">
+        <Grid.RowDefinitions>
+          <RowDefinition/>
+          <RowDefinition/>
+          <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition/>
+          <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Margin="5" Width="200" TextWrapping="Wrap">
+          These buttons are bounds to the CLR properties exposed on the ColorPicker.
+        </TextBlock>
+        <Button Grid.Row="1" Grid.Column="0" Content="Change Color to Blue" Click="changeColor"/>
+        <Button Grid.Row="2" Grid.Column="0" Content="Get Color" Click="getColor" />
+        <TextBox Grid.Row="2" Grid.Column="1" Name="textBlockCurrentColor"/>
+      </Grid>
+
+      <!--
+			The style for this ColorPicker is defined in MyApp.xaml
+			The background brush is bound to colorPicker.Color using the ColorBrushConverter
+			-->
+      <cp:ColorPicker Style="{StaticResource ColorPicker_CoolStyle}"
+				Background="{Binding Path=Color,
+					Converter={StaticResource ColorBrushConverter},
+					ElementName=colorPicker}"  
+				Grid.Row="1" Grid.Column="0" Margin="10" Name="MaincolorPicker"/>
+
+      <TextBlock Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Margin="5" Width="200" TextWrapping="Wrap">
+        The style of this ColorPicker is defined in MyApp.xaml.
+        The background brush is bound to the Color of the first ColorPicker using the ColorBrushConverter.
+      </TextBlock>
+
+
+    </Grid>
+
+    <!--<SnippetColorPicker>-->
+<StackPanel HorizontalAlignment="Left" Margin="20">
+  <cp:ColorPicker Name="colorPicker" ColorChanged="OnColorChanged"/>
+  <TextBlock Name="colorPickerValue"></TextBlock>
+</StackPanel>
+<!--</SnippetColorPicker>-->
+  </Canvas>
+</Window>

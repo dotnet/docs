@@ -1,0 +1,73 @@
+<Type Name="AutomationOrientation" FullName="System.Windows.Automation.Peers.AutomationOrientation">
+  <TypeSignature Language="C#" Value="public enum AutomationOrientation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AutomationOrientation extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.AutomationOrientation" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the direction in which a control can be laid out.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Controls that can be laid out horizontally or vertically include <xref:System.Windows.Controls.Primitives.ScrollBar>, <xref:System.Windows.Controls.Slider>, and <xref:System.Windows.Controls.TabControl>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Horizontal">
+      <MemberSignature Language="C#" Value="Horizontal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationOrientation Horizontal = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationOrientation.Horizontal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationOrientation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The control is laid out horizontally.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationOrientation None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationOrientation.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationOrientation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The control doesn't have an orientation. An example of a control without an orientation is a <see cref="T:System.Windows.Controls.Button" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Vertical">
+      <MemberSignature Language="C#" Value="Vertical" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationOrientation Vertical = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationOrientation.Vertical" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationOrientation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The control is laid out horizontally.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

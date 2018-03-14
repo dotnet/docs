@@ -1,0 +1,44 @@
+<Type Name="DbCommandTree" FullName="System.Data.Common.CommandTrees.DbCommandTree">
+  <TypeSignature Language="C#" Value="public abstract class DbCommandTree" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DbCommandTree extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Common.CommandTrees.DbCommandTree" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>An immutable class that implements the basic functionality for the Query, Insert, Update, Delete, and function invocation command tree types.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Data.Common.CommandTrees.DbCommandTree> is an abstract class that is used to represent queries, Data Manipulation Language (DML) operations and function/procedure invocations.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Parameters">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,System.Data.Metadata.Edm.TypeUsage&gt;&gt; Parameters { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, class System.Data.Metadata.Edm.TypeUsage&gt;&gt; Parameters" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Common.CommandTrees.DbCommandTree.Parameters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Data.Metadata.Edm.TypeUsage&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name and corresponding type of each parameter that can be referenced within this <see cref="T:System.Data.Common.CommandTrees.DbCommandTree" />.</summary>
+        <value>The name and corresponding type of each parameter that can be referenced within this <see cref="T:System.Data.Common.CommandTrees.DbCommandTree" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

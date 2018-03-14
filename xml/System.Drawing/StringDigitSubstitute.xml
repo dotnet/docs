@@ -1,0 +1,82 @@
+<Type Name="StringDigitSubstitute" FullName="System.Drawing.StringDigitSubstitute">
+  <TypeSignature Language="C#" Value="public enum StringDigitSubstitute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StringDigitSubstitute extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.StringDigitSubstitute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>The <see cref="T:System.Drawing.StringDigitSubstitute" /> enumeration specifies how to substitute digits in a string according to a user's locale or language.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="National">
+      <MemberSignature Language="C#" Value="National" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.StringDigitSubstitute National = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.StringDigitSubstitute.National" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.StringDigitSubstitute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies substitution digits that correspond with the official national language of the user's locale.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.StringDigitSubstitute None = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.StringDigitSubstitute.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.StringDigitSubstitute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies to disable substitutions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Traditional">
+      <MemberSignature Language="C#" Value="Traditional" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.StringDigitSubstitute Traditional = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.StringDigitSubstitute.Traditional" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.StringDigitSubstitute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies substitution digits that correspond with the user's native script or language, which may be different from the official national language of the user's locale.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="User">
+      <MemberSignature Language="C#" Value="User" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.StringDigitSubstitute User = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.StringDigitSubstitute.User" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.StringDigitSubstitute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a user-defined substitution scheme.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

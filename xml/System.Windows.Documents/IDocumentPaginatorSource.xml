@@ -1,0 +1,54 @@
+<Type Name="IDocumentPaginatorSource" FullName="System.Windows.Documents.IDocumentPaginatorSource">
+  <TypeSignature Language="C#" Value="public interface IDocumentPaginatorSource" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDocumentPaginatorSource" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Documents.IDocumentPaginatorSource" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines the source object that performs actual content pagination.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows use of the <xref:System.Windows.Documents.IDocumentPaginatorSource> interface.  
+  
+ [!code-csharp[XpsSave#XpsSaveLoadFixedContent](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsSave/CSharp/Window1.xaml.cs#xpssaveloadfixedcontent)]
+ [!code-vb[XpsSave#XpsSaveLoadFixedContent](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsSave/visualbasic/window1.xaml.vb#xpssaveloadfixedcontent)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DocumentPaginator">
+      <MemberSignature Language="C#" Value="public System.Windows.Documents.DocumentPaginator DocumentPaginator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Documents.DocumentPaginator DocumentPaginator" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.IDocumentPaginatorSource.DocumentPaginator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Documents.DocumentPaginator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When implemented in a derived class, gets the object that performs content pagination.</summary>
+        <value>The object that performs the actual content pagination.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows use of the <xref:System.Windows.Documents.IDocumentPaginatorSource.DocumentPaginator%2A> property.  
+  
+ [!code-csharp[XpsSave#CreateFixedDocument](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsSave/CSharp/XpfContent.cs#createfixeddocument)]
+ [!code-vb[XpsSave#CreateFixedDocument](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsSave/visualbasic/xpfcontent.vb#createfixeddocument)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

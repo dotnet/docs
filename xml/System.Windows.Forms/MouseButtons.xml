@@ -1,0 +1,160 @@
+<Type Name="MouseButtons" FullName="System.Windows.Forms.MouseButtons">
+  <TypeSignature Language="C#" Value="public enum MouseButtons" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MouseButtons extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MouseButtons" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies constants that define which mouse button was pressed.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by many classes, including <xref:System.Windows.Forms.AxHost>, <xref:System.Windows.Forms.Control>, <xref:System.Windows.Forms.DataGrid>, <xref:System.Windows.Forms.Form>, <xref:System.Windows.Forms.RadioButton>, <xref:System.Windows.Forms.Splitter>, <xref:System.Windows.Forms.StatusBar>, and <xref:System.Windows.Forms.UpDownBase>.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Windows.Forms.TextBoxBase.GetCharFromPosition%2A> method to obtain a character from the contents of a <xref:System.Windows.Forms.RichTextBox> given its control coordinates. The example code uses coordinates located in the <xref:System.Windows.Forms.MouseEventArgs> object passed as a parameter to the event handler to determine the location in the control to obtain the character. The character is then displayed in a <xref:System.Windows.Forms.MessageBox> if it is not a space character. This example assumes that a <xref:System.Windows.Forms.RichTextBox> control named `richTextBox1` has been created and that the example code is connected to the <xref:System.Windows.Forms.Control.MouseDown> event of the <xref:System.Windows.Forms.RichTextBox>.  
+  
+ [!code-cpp[RichTextBox.GetCharAtIndex#1](~/samples/snippets/cpp/VS_Snippets_Winforms/RichTextBox.GetCharAtIndex/CPP/form1.cpp#1)]
+ [!code-csharp[RichTextBox.GetCharAtIndex#1](~/samples/snippets/csharp/VS_Snippets_Winforms/RichTextBox.GetCharAtIndex/CS/form1.cs#1)]
+ [!code-vb[RichTextBox.GetCharAtIndex#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/RichTextBox.GetCharAtIndex/VB/form1.vb#1)]  
+  
+ The following example demonstrates using different mouse events to draw the path of the mouse on a <xref:System.Windows.Forms.Panel>. A line segment is added to the <xref:System.Drawing.Drawing2D.GraphicsPath> for each <xref:System.Windows.Forms.Control.MouseMove> and <xref:System.Windows.Forms.Control.MouseDown> events that occur. To update the graphics, the <xref:System.Windows.Forms.Control.Invalidate%2A> method is called for the <xref:System.Windows.Forms.Panel> on each `MouseDown` and `MouseUp` event. In addition, the graphic path is scrolled up or down when the <xref:System.Windows.Forms.Control.MouseWheel> event occurs. Additional mouse events, like <xref:System.Windows.Forms.Control.MouseHover>, are identified on screen as well. Also displayed on the screen is additional information about the mouse from the <xref:System.Windows.Forms.SystemInformation> class.  
+  
+ [!code-cpp[System.Windows.Forms.MouseEvent#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.MouseEvent/CPP/mouseeventexample.cpp#1)]
+ [!code-csharp[System.Windows.Forms.MouseEvent#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.MouseEvent/CS/mouseeventexample.cs#1)]
+ [!code-vb[System.Windows.Forms.MouseEvent#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.MouseEvent/VB/mouseeventexample.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Left">
+      <MemberSignature Language="C#" Value="Left" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MouseButtons Left = int32(1048576)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MouseButtons.Left" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.MouseButtons</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The left mouse button was pressed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Middle">
+      <MemberSignature Language="C#" Value="Middle" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MouseButtons Middle = int32(4194304)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MouseButtons.Middle" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.MouseButtons</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The middle mouse button was pressed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MouseButtons None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MouseButtons.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.MouseButtons</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No mouse button was pressed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Right">
+      <MemberSignature Language="C#" Value="Right" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MouseButtons Right = int32(2097152)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MouseButtons.Right" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.MouseButtons</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The right mouse button was pressed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="XButton1">
+      <MemberSignature Language="C#" Value="XButton1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MouseButtons XButton1 = int32(8388608)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MouseButtons.XButton1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.MouseButtons</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The first XButton was pressed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ With Windows 2000, Microsoft is introducing support for the Microsoft IntelliMouse Explorer, which is a mouse with five buttons. The two new mouse buttons (XBUTTON1 and XBUTTON2) provide backward/forward navigation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XButton2">
+      <MemberSignature Language="C#" Value="XButton2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MouseButtons XButton2 = int32(16777216)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MouseButtons.XButton2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.MouseButtons</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The second XButton was pressed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ With Windows 2000, Microsoft is introducing support for the Microsoft IntelliMouse Explorer, which is a mouse with five buttons. The two new mouse buttons (XBUTTON1 and XBUTTON2) provide backward/forward navigation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

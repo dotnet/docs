@@ -1,0 +1,184 @@
+<Type Name="DataServiceRequest&lt;TElement&gt;" FullName="System.Data.Services.Client.DataServiceRequest&lt;TElement&gt;">
+  <TypeSignature Language="C#" Value="public sealed class DataServiceRequest&lt;TElement&gt; : System.Data.Services.Client.DataServiceRequest" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DataServiceRequest`1&lt;TElement&gt; extends System.Data.Services.Client.DataServiceRequest" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Services.Client.DataServiceRequest`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Services.Client</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TElement" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Data.Services.Client.DataServiceRequest</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="TElement">To be added.</typeparam>
+    <summary>Represents request objects submitted as a batch to the data service.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In a group of queries submitted as a batch to the data service, the queries are specified as <xref:System.Data.Services.Client.DataServiceRequest%601> instances. A <xref:System.Data.Services.Client.DataServiceResponse> is returned that represents the response of the batch request as a whole. Individual query responses are represented as <xref:System.Data.Services.Client.QueryOperationResponse> objects, derived from <xref:System.Data.Services.Client.OperationResponse>, that are accessible by enumerating the <xref:System.Data.Services.Client.DataServiceResponse> instance.  
+  
+   
+  
+## Examples  
+ When <xref:System.Data.Services.Client.DataServiceContext.ExecuteBatch%2A> returns, the entire HTTP response for the batch request has been read from the network stream, but the responses have not been processed. Identity resolution and object materialization do not occur for a specified entity in the response until it is iterated as shown in the following example.  
+  
+```  
+DataServiceContext service = new DataServiceContext(new   
+                                                    Uri("http://myserviceroot"));  
+  
+// Create query batches.  
+DataServiceRequest[] reqs = new DataServiceRequest[] {   
+    new DataServiceRequest<Category>(  
+            new Uri("http://myserviceroot/Categories")),  
+            new DataServiceRequest<Customer>(  
+            new Uri("http://myserviceroot/Customers"))  
+};  
+  
+DataServiceResponse dsr;  
+try  
+{  
+    // Client will not throw an exception on ExecuteBatch because the   
+    // entire response has not been processed yet to know  
+    // whether an exception should be thrown.  
+  
+    dsr = service.ExecuteBatch(reqs);     
+  
+    if (dsr.IsBatchResponse)   
+    {  
+        /*inspect HTTP artifacts associated with the entire batch:  
+                      dsr.BatchHeaders, dsr.BatchStatusCode*/ }  
+  
+    foreach (QueryOperationResponse qr in dsr)  
+    {  
+        if (IsErrorStatusCode(qr.StatusCode))     
+        {  
+            //q.Error.Message contains the full contents of the error.  
+            /* process any part of the Error Contract (<error> element)  
+                      sent from the service.  */  
+            }  
+        }  
+        else  
+        {  
+            if (qr.Query.ElementType == typeof(Customer))  
+            {  
+                //process customers  
+                foreach (Customer c in qr){ /*process the customer*/ }  
+  
+                // the DataServiceContext does not materialize, resolve  
+                // identity on Customer until it is enumerated.  
+            }  
+            else if (qr.Query.ElementType == typeof(Category))  
+            {  
+                // Process categories.  
+                foreach (Category cat in qr)  
+                {   
+                    /*process the category*/   
+                 }  
+                // the DataServiceContext does not materialize or  
+                // resolve identity on the Category until  
+                // it is enumerated.  
+                // This means that instream errors will be thrown  
+                // during iteration.  
+            }  
+        }  
+    }  
+}  
+catch (DataServiceRequestException e)  
+{  
+    // This error is thrown if the data service returns with  
+    // a response code < 200 or >299 or the top level element.  
+    // If neither of the above or true, this exception is not   
+    // thrown.  
+  
+    dsr = e.Response;  
+  
+    if (dsr.IsBatchResponse)   
+    {   
+        /*inspect HTTP artifacts associated with the entire batch:  
+                        dsr.BatchHeaders, dsr.BatchStatusCode*/   
+    }  
+  
+    /* There will always only be one of these because if the top level  
+     status code was >=200 and =<299 and the first element was not an  
+     error, the call to start the query will not throw. */  
+  
+    foreach (QueryOperationResponse qr in dsr)  
+    {  
+        if (qr.Error != null)  
+        {  
+            // Process error.  
+        }  
+    }     
+}  
+  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataServiceRequest (Uri requestUri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri requestUri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceRequest`1.#ctor(System.Uri)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="requestUri" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="requestUri">The URI object that contains the request string.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Services.Client.DataServiceRequest`1" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ElementType">
+      <MemberSignature Language="C#" Value="public override Type ElementType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type ElementType" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.DataServiceRequest`1.ElementType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of the object used to create the <see cref="T:System.Data.Services.Client.DataServiceRequest`1" /> instance.</summary>
+        <value>A <see cref="System.Type" /> value that indicates the type of data returned.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestUri">
+      <MemberSignature Language="C#" Value="public override Uri RequestUri { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri RequestUri" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.DataServiceRequest`1.RequestUri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the URI object that contains the request string.</summary>
+        <value>A <see cref="System.Uri" /> object that contains the request string.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

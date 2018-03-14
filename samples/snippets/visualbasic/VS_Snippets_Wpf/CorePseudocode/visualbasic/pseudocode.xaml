@@ -1,0 +1,26 @@
+<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    >
+  <Grid>
+    <Grid.Resources>
+      <Style x:Key="SomeStyle">
+        <Style.Triggers>
+        <EventTrigger RoutedEvent="ContextMenuService.ContextMenuClosing">
+          <!-- storyboard here ... -->
+        </EventTrigger>
+
+        <EventTrigger RoutedEvent="ContextMenuService.ContextMenuOpening">
+          <!-- storyboard here ... -->
+        </EventTrigger>
+        </Style.Triggers>
+      </Style>
+    </Grid.Resources>
+
+
+
+
+
+
+  </Grid>
+</Window>

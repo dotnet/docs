@@ -1,0 +1,212 @@
+<Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      WindowTitle="Styled ScrollViewer Sample">
+  <Grid>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition/>
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition/>
+    </Grid.RowDefinitions>
+    <Grid.Resources>
+    <!--<Snippet1>-->
+      <Style TargetType="{x:Type ScrollViewer}">
+        <Setter Property="OverridesDefaultStyle" Value="True" />
+        <Setter Property="Template">
+          <Setter.Value>
+            <ControlTemplate TargetType="{x:Type ScrollViewer}">
+              <Grid>
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="Auto"/>
+                  <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                  <RowDefinition Height="*"/>
+                  <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Border Grid.Row="0" Grid.Column="1">
+                  <ScrollContentPresenter CanContentScroll="True" Content="{TemplateBinding ScrollViewer.Content}" />
+                </Border>
+                <ScrollBar Orientation="Vertical" Grid.Row="0" Grid.Column="0" Minimum="0" Maximum="{TemplateBinding ScrollViewer.ScrollableHeight}" Value="{TemplateBinding ScrollViewer.VerticalOffset}" ViewportSize="{TemplateBinding ScrollViewer.ViewportHeight}" Name="PART_VerticalScrollBar" Visibility="{TemplateBinding ScrollViewer.ComputedVerticalScrollBarVisibility}" 
+ />
+                <ScrollBar Orientation="Horizontal" Grid.Row="1" Grid.Column="1" Minimum="0" Maximum="{TemplateBinding ScrollViewer.ScrollableWidth}" Value="{TemplateBinding ScrollViewer.HorizontalOffset}" ViewportSize="{TemplateBinding ScrollViewer.ViewportWidth}" Name="PART_HorizontalScrollBar" Visibility="{TemplateBinding ScrollViewer.ComputedHorizontalScrollBarVisibility}"/>
+              </Grid>
+            </ControlTemplate>
+          </Setter.Value>
+        </Setter>
+      </Style>
+      <!--</Snippet1>-->
+
+      <Style x:Key="ScrollBar_LineButton" TargetType="{x:Type RepeatButton}">
+        <Setter Property="OverridesDefaultStyle" Value="true" />
+        <Setter Property="Template">
+          <Setter.Value>
+            <ControlTemplate TargetType="{x:Type RepeatButton}">
+              <Border x:Name="Border" CornerRadius="2" BorderBrush="DarkSlateGray" BorderThickness="1">
+                <Border.Background>
+                  <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStop Offset="0" Color="White"/>
+                      <GradientStop Offset="1" Color="#CDCDCD"/>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Border.Background>
+                <Path HorizontalAlignment="Center" VerticalAlignment="Center" Fill="DarkSlateBlue" Data="{Binding Path=Content,
+                       RelativeSource={RelativeSource TemplatedParent}}"  />
+              </Border>
+              <ControlTemplate.Triggers>
+                <Trigger Property="IsMouseOver" Value="true">
+                  <Setter TargetName="Border" Property="Background">
+                    <Setter.Value>
+                      <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                        <LinearGradientBrush.GradientStops>
+                          <GradientStop Offset="0" Color="White"/>
+                          <GradientStop Offset="1" Color="#E0E0E0"/>
+                        </LinearGradientBrush.GradientStops>
+                      </LinearGradientBrush>
+                    </Setter.Value>
+                  </Setter>
+                  <Setter TargetName="Border" Property="BorderBrush" Value="Gray" />
+                </Trigger>
+                <Trigger Property="IsPressed" Value="true">
+                  <Setter TargetName="Border" Property="Background">
+                    <Setter.Value>
+                      <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                        <LinearGradientBrush.GradientStops>
+                          <GradientStop Offset="0" Color="#EEEEEE"/>
+                          <GradientStop Offset="1" Color="#DFDFDF"/>
+                        </LinearGradientBrush.GradientStops>
+                      </LinearGradientBrush>
+                    </Setter.Value>
+                  </Setter>
+                </Trigger>
+              </ControlTemplate.Triggers>
+            </ControlTemplate>
+          </Setter.Value>
+        </Setter>
+      </Style>
+
+      <Style x:Key="ScrollBar_PageButton" TargetType="{x:Type RepeatButton}">
+        <Setter Property="OverridesDefaultStyle" Value="true" />
+        <Setter Property="IsTabStop" Value="false" />
+        <Setter Property="Focusable" Value="false" />
+        <Setter Property="Template">
+          <Setter.Value>
+            <ControlTemplate TargetType="{x:Type RepeatButton}">
+              <Rectangle Fill="Transparent" />
+            </ControlTemplate>
+          </Setter.Value>
+        </Setter>
+      </Style>
+
+      <Style x:Key="ScrollBar_Thumb" TargetType="{x:Type Thumb}">
+        <Setter Property="Template">
+          <Setter.Value>
+            <ControlTemplate TargetType="{x:Type Thumb}">
+              <Border CornerRadius="3" BorderBrush="Silver" BorderThickness="1">
+                <Border.Background>
+                  <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStop Offset="0" Color="LightSteelBlue"/>
+                      <GradientStop Offset="1" Color="White"/>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Border.Background>
+              </Border>
+            </ControlTemplate>
+          </Setter.Value>
+        </Setter>
+      </Style>
+      <!-- ScrollBar Style -->
+
+      <Style x:Key="{x:Type ScrollBar}" TargetType="{x:Type ScrollBar}">
+        <Setter Property="Stylus.IsFlicksEnabled" Value="false" />
+        <Setter Property="Background" Value="#FBFBFB" />
+        <Setter Property="Width" Value="16" />
+        <Setter Property="MinWidth" Value="16" />
+        <Setter Property="Template">
+          <Setter.Value>
+            <ControlTemplate TargetType="{x:Type ScrollBar}">
+              <Grid>
+                <Grid.RowDefinitions>
+                  <RowDefinition Height="16" />
+                  <RowDefinition Height="*"/>
+                  <RowDefinition Height="16" />
+                </Grid.RowDefinitions>
+                <RepeatButton Grid.Row="0" Style="{DynamicResource ScrollBar_LineButton}" Command="ScrollBar.LineUpCommand" Content="M 0 4 L 7 4 L 3.5 0 Z" />
+                <Border Grid.Row="1" BorderBrush="DarkBlue" BorderThickness="1" Background="{TemplateBinding Background}" CornerRadius="2" />
+                <Track Grid.Row="1" Name="PART_Track" IsDirectionReversed="true">
+                  <Track.DecreaseRepeatButton>
+                    <RepeatButton Style="{StaticResource ScrollBar_PageButton}"/>
+                  </Track.DecreaseRepeatButton>
+                  <Track.Thumb>
+                    <Thumb Style="{StaticResource ScrollBar_Thumb}" MinHeight="4"/>
+                  </Track.Thumb>
+                  <Track.IncreaseRepeatButton>
+                    <RepeatButton Style="{StaticResource ScrollBar_PageButton}"/>
+                  </Track.IncreaseRepeatButton>
+                </Track>
+                <RepeatButton Grid.Row="2" Style="{DynamicResource ScrollBar_LineButton}" Command="ScrollBar.LineDownCommand" Content="M 0 0 L 3.5 4 L 7 0 Z" />
+              </Grid>
+            </ControlTemplate>
+          </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+          <Trigger Property="Orientation" Value="Horizontal">
+            <Setter Property="Width" Value="Auto" />
+            <Setter Property="MinWidth" Value="0" />
+            <Setter Property="Height" Value="16" />
+            <Setter Property="MinHeight" Value="16" />
+            <Setter Property="Template">
+              <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ScrollBar}">
+                  <Grid Background="{TemplateBinding Background}">
+                    <Grid.ColumnDefinitions>
+                      <ColumnDefinition Width="16" />
+                      <ColumnDefinition Width="*"/>
+                      <ColumnDefinition Width="16" />
+                    </Grid.ColumnDefinitions>
+                    <RepeatButton Grid.Column="0" Style="{DynamicResource ScrollBar_LineButton}" Command="ScrollBar.LineLeftCommand" Content="M 0 4 L 4 8 L 4 0 Z" />
+                    <Border Grid.Column="1" BorderBrush="DarkBlue" BorderThickness="1" Background="{TemplateBinding Background}" CornerRadius="2" />
+                    <Track Grid.Column="1" Name="PART_Track" IsDirectionReversed="false">
+                      <Track.DecreaseRepeatButton>
+                        <RepeatButton Style="{StaticResource ScrollBar_PageButton}"/>
+                      </Track.DecreaseRepeatButton>
+                      <Track.Thumb>
+                        <Thumb Style="{StaticResource ScrollBar_Thumb}" MinWidth="4"/>
+                      </Track.Thumb>
+                        <Track.IncreaseRepeatButton>
+                          <RepeatButton Style="{StaticResource ScrollBar_PageButton}"/>
+                        </Track.IncreaseRepeatButton>
+                     </Track>
+                    <RepeatButton Grid.Column="2" Style="{DynamicResource ScrollBar_LineButton}" Command="ScrollBar.LineRightCommand" Content="M 0 0 L 0 8 L 4 4 Z" />
+                  </Grid>
+                </ControlTemplate>
+              </Setter.Value>
+            </Setter>
+          </Trigger>
+        </Style.Triggers>
+      </Style>
+    </Grid.Resources>
+
+    <ScrollViewer Height="400" Width="400" HorizontalScrollBarVisibility="Auto" Grid.Row="0" Grid.Column="0">
+      <StackPanel Background="LightSteelBlue">
+        <TextBlock FontSize="25" Text="This sample demonstrates how to create a styled ScrollViewer." />
+        <TextBlock FontSize="25" Text="Nearly all elements of the default style have been changed." />
+        <TextBlock FontSize="25" Text="Colors have been changed, as have default width and height" />
+        <TextBlock FontSize="25" Text="values of various elements." />
+        <TextBlock FontSize="25"/>
+        <TextBlock FontSize="25" Text="This sample demonstrates how to create a styled ScrollViewer." />
+        <TextBlock FontSize="25" Text="Nearly all elements of the default style ave been changed." />
+        <TextBlock FontSize="25" Text="Colors have been changed, as have default width and height" />
+        <TextBlock FontSize="25" Text="values of various elements." />
+        <TextBlock FontSize="25" />
+        <TextBlock FontSize="25" Text="This sample demonstrates how to create a styled ScrollViewer." />
+        <TextBlock FontSize="25" Text="Nearly all elements of the default style ave been changed." />
+        <TextBlock FontSize="25" Text="Colors have been changed, as have default width and height" />
+        <TextBlock FontSize="25" Text="values of various elements." />
+        <TextBlock FontSize="25" Text="Notice the ScrollBar is now located on the left." Foreground="LightCoral"/>
+      </StackPanel>
+    </ScrollViewer>
+  </Grid>
+</Page>

@@ -1,0 +1,68 @@
+﻿<Window x:Class="Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:src="clr-namespace:BEBValidateWithoutUpdating"
+    Title="Window1" Height="300" Width="300">
+  <StackPanel>
+    <StackPanel.Resources>
+      <Style TargetType="HeaderedContentControl">
+        <Setter Property="Margin" Value="2"/>
+        <Setter Property="Focusable" Value="False"/>
+        <Setter Property="Template">
+          <Setter.Value>
+            <ControlTemplate TargetType="HeaderedContentControl">
+              <DockPanel LastChildFill="False">
+                <ContentPresenter ContentSource="Header" DockPanel.Dock="Left" 
+                                  Focusable="False" VerticalAlignment="Center"/>
+                <ContentPresenter ContentSource="Content" Margin="5,0,0,0" 
+                                  DockPanel.Dock="Right" VerticalAlignment="Center"/>
+              </DockPanel>
+
+            </ControlTemplate>
+          </Setter.Value>
+        </Setter>
+      </Style>
+
+    </StackPanel.Resources>
+    <HeaderedContentControl Header="Title">
+      <TextBox Width="150" Text="{Binding Path=Title, Mode=TwoWay}"/>
+    </HeaderedContentControl>
+    <HeaderedContentControl Header="Due Date">
+      <TextBox Width="150" Text="{Binding Path=DueDate, StringFormat=d, Mode=TwoWay}">
+
+      </TextBox>
+    </HeaderedContentControl>
+
+    <HeaderedContentControl Header="Call Number">
+      <TextBox Name="CallNum" Width="150"
+                     LostFocus="CallNum_LostFocus"
+                     Validation.Error="CallNum_Error">
+        <TextBox.Text>
+          <Binding xmlns:src="clr-namespace:BEBValidateWithoutUpdating"
+                        Path="CallNumber" Mode="TwoWay"
+                        NotifyOnValidationError="True"
+                        UpdateSourceTrigger="Explicit">
+            <Binding.ValidationRules>
+              <src:CallNumberRule ValidationStep="ConvertedProposedValue"/>
+            </Binding.ValidationRules>
+          </Binding>
+        </TextBox.Text>
+      </TextBox>
+    </HeaderedContentControl>
+
+    <Button Click="Button_Click">Submit</Button>
+
+    <HeaderedContentControl Header="Title">
+      <TextBlock Text="{Binding Path=Title, Mode=TwoWay}"/>
+    </HeaderedContentControl>
+
+    <HeaderedContentControl Header="Due Date">
+      <TextBlock Text="{Binding Path=DueDate, StringFormat=d, Mode=TwoWay}"/>
+    </HeaderedContentControl>
+
+    <HeaderedContentControl Header="Call Number">
+      <TextBlock Text="{Binding CallNumber}"/>
+    </HeaderedContentControl>
+
+  </StackPanel>
+</Window>

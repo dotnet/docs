@@ -1,0 +1,162 @@
+<Type Name="ProjectCollectionChangedState" FullName="Microsoft.Build.Evaluation.ProjectCollectionChangedState">
+  <TypeSignature Language="C#" Value="public enum ProjectCollectionChangedState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ProjectCollectionChangedState extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Evaluation.ProjectCollectionChangedState" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Properties or other mutable state associated with a <see cref="T:Microsoft.Build.Evaluation.ProjectCollection" /> project collection.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DefaultToolsVersion">
+      <MemberSignature Language="C#" Value="DefaultToolsVersion" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Evaluation.ProjectCollectionChangedState DefaultToolsVersion = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Evaluation.ProjectCollectionChangedState.DefaultToolsVersion" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Evaluation.ProjectCollectionChangedState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:Microsoft.Build.Evaluation.ProjectCollection.DefaultToolsVersion" /> property changed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DisableMarkDirty">
+      <MemberSignature Language="C#" Value="DisableMarkDirty" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Evaluation.ProjectCollectionChangedState DisableMarkDirty = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Evaluation.ProjectCollectionChangedState.DisableMarkDirty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Evaluation.ProjectCollectionChangedState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:Microsoft.Build.Evaluation.ProjectCollection.DisableMarkDirty" /> property changed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GlobalProperties">
+      <MemberSignature Language="C#" Value="GlobalProperties" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Evaluation.ProjectCollectionChangedState GlobalProperties = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Evaluation.ProjectCollectionChangedState.GlobalProperties" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Evaluation.ProjectCollectionChangedState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The global properties changed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HostServices">
+      <MemberSignature Language="C#" Value="HostServices" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Evaluation.ProjectCollectionChangedState HostServices = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Evaluation.ProjectCollectionChangedState.HostServices" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Evaluation.ProjectCollectionChangedState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:Microsoft.Build.Evaluation.ProjectCollection.HostServices" /> property changed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IsBuildEnabled">
+      <MemberSignature Language="C#" Value="IsBuildEnabled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Evaluation.ProjectCollectionChangedState IsBuildEnabled = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Evaluation.ProjectCollectionChangedState.IsBuildEnabled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Evaluation.ProjectCollectionChangedState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:Microsoft.Build.Evaluation.ProjectCollection.IsBuildEnabled" /> property changed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Loggers">
+      <MemberSignature Language="C#" Value="Loggers" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Evaluation.ProjectCollectionChangedState Loggers = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Evaluation.ProjectCollectionChangedState.Loggers" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Evaluation.ProjectCollectionChangedState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The loggers changed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OnlyLogCriticalEvents">
+      <MemberSignature Language="C#" Value="OnlyLogCriticalEvents" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Evaluation.ProjectCollectionChangedState OnlyLogCriticalEvents = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Evaluation.ProjectCollectionChangedState.OnlyLogCriticalEvents" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Evaluation.ProjectCollectionChangedState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:Microsoft.Build.Evaluation.ProjectCollection.OnlyLogCriticalEvents" /> property changed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SkipEvaluation">
+      <MemberSignature Language="C#" Value="SkipEvaluation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Evaluation.ProjectCollectionChangedState SkipEvaluation = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Evaluation.ProjectCollectionChangedState.SkipEvaluation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Evaluation.ProjectCollectionChangedState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:Microsoft.Build.Evaluation.ProjectCollection.SkipEvaluation" /> property changed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Toolsets">
+      <MemberSignature Language="C#" Value="Toolsets" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Evaluation.ProjectCollectionChangedState Toolsets = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Evaluation.ProjectCollectionChangedState.Toolsets" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Evaluation.ProjectCollectionChangedState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The toolsets changed.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

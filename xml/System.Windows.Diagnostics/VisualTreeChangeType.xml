@@ -1,0 +1,57 @@
+<Type Name="VisualTreeChangeType" FullName="System.Windows.Diagnostics.VisualTreeChangeType">
+  <TypeSignature Language="C#" Value="public enum VisualTreeChangeType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed VisualTreeChangeType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Diagnostics.VisualTreeChangeType" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Defines constants that specify whether the element was added or removed.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[internalonly_netframework_type](~/includes/internalonly-netframework-type-md.md)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="Add" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Diagnostics.VisualTreeChangeType Add = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Diagnostics.VisualTreeChangeType.Add" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Diagnostics.VisualTreeChangeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The child element was added to the visual tree of the parent element.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="Remove" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Diagnostics.VisualTreeChangeType Remove = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Diagnostics.VisualTreeChangeType.Remove" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Diagnostics.VisualTreeChangeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The child element was removed from the visual tree of the parent element.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

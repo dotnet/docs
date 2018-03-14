@@ -1,0 +1,1 @@
+Some methods, especially operators, declare a type for a parameter but do not specify a parameter name. Such a parameter is known as an *unnamed parameter*. In the documentation for these methods, the *__unnamed0* placeholder represents the unnamed parameter.

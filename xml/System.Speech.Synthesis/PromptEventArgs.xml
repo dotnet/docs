@@ -1,0 +1,37 @@
+<Type Name="PromptEventArgs" FullName="System.Speech.Synthesis.PromptEventArgs">
+  <TypeSignature Language="C#" Value="public abstract class PromptEventArgs : System.ComponentModel.AsyncCompletedEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit PromptEventArgs extends System.ComponentModel.AsyncCompletedEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.PromptEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Speech</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.AsyncCompletedEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the base class for <see langword="EventArgs" /> classes in the <see cref="N:System.Speech.Synthesis" /> namespace.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Prompt">
+      <MemberSignature Language="C#" Value="public System.Speech.Synthesis.Prompt Prompt { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Speech.Synthesis.Prompt Prompt" />
+      <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.PromptEventArgs.Prompt" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Synthesis.Prompt</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the prompt associated with the event.</summary>
+        <value>The <see langword="Prompt" /> object associated with the event.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

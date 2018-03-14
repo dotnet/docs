@@ -1,0 +1,37 @@
+<Type Name="ILogicalThreadAffinative" FullName="System.Runtime.Remoting.Messaging.ILogicalThreadAffinative">
+  <TypeSignature Language="C#" Value="public interface ILogicalThreadAffinative" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ILogicalThreadAffinative" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Messaging.ILogicalThreadAffinative" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Marks an object that can propagate outside of an <see cref="T:System.AppDomain" /> in a <see cref="T:System.Runtime.Remoting.Messaging.LogicalCallContext" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a remote method call is made to an object in another <xref:System.AppDomain>, the current <xref:System.Runtime.Remoting.Messaging.CallContext> class generates a <xref:System.Runtime.Remoting.Messaging.LogicalCallContext> that travels along with the call to the remote location. Only objects that expose the <xref:System.Runtime.Remoting.Messaging.ILogicalThreadAffinative> interface and are stored in the <xref:System.Runtime.Remoting.Messaging.CallContext> are propagated outside the <xref:System.AppDomain>. Objects that do not support this interface are not transmitted in <xref:System.Runtime.Remoting.Messaging.LogicalCallContext> instances with remote method calls.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Runtime.Remoting.Messaging.ILogicalThreadAffinative> interface to transmit [Principal and Identity Objects](~/docs/standard/security/principal-and-identity-objects.md) to a remote location for identification. To view the code for the `HelloServiceClass` class used in the sample, see the example for the <xref:System.Runtime.Remoting.Messaging.CallContext.GetData%2A> method. To view the code for the server class used in this sample, see example for the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedServiceType%2A> class. To view the code for the client class used in the sample, see the example for the <xref:System.Runtime.Remoting.Messaging.CallContext> class.  
+  
+ [!code-cpp[CallContext#2](~/samples/snippets/cpp/VS_Snippets_Remoting/CallContext/CPP/service.cpp#2)]
+ [!code-csharp[CallContext#2](~/samples/snippets/csharp/VS_Snippets_Remoting/CallContext/CS/service.cs#2)]
+ [!code-vb[CallContext#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/CallContext/VB/service.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

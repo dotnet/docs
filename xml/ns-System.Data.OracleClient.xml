@@ -1,0 +1,22 @@
+<Namespace Name="System.Data.OracleClient">
+  <Docs>
+    <summary>The <see cref="N:System.Data.OracleClient" /> namespace is the .NET Framework Data Provider for Oracle.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This types in <xref:System.Data.OracleClient> are deprecated and will be removed in a future version of the .NET Framework. For more information, see [Oracle and ADO.NET](~/docs/framework/data/adonet/oracle-and-adonet.md).  
+  
+ The .NET Framework Data Provider for Oracle describes a collection of classes for accessing an Oracle data source in the managed space. Using the <xref:System.Data.OracleClient.OracleDataAdapter> class, you can fill a memory-resident <xref:System.Data.DataSet>, query it, and use it to update the data source.  
+  
+ For additional information about how to use this namespace, see the <xref:System.Data.OracleClient.OracleDataReader>, <xref:System.Data.OracleClient.OracleCommand>, and <xref:System.Data.OracleClient.OracleConnection> classes.  
+  
+> [!NOTE]
+>  For conceptual information about using this namespace when programming with the .NET Framework, see [Oracle and ADO.NET](~/docs/framework/data/adonet/oracle-and-adonet.md).  
+  
+ The .NET Framework Data Provider for Oracle supports a number of Oracle data types, including the `BFILE`, `LOB`, and `REF CURSOR` data types. For information about using Oracle data types in parameters, see <xref:System.Data.OracleClient.OracleType>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Namespace>

@@ -1,0 +1,55 @@
+<Type Name="DbSetClause" FullName="System.Data.Common.CommandTrees.DbSetClause">
+  <TypeSignature Language="C#" Value="public sealed class DbSetClause : System.Data.Common.CommandTrees.DbModificationClause" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DbSetClause extends System.Data.Common.CommandTrees.DbModificationClause" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Common.CommandTrees.DbSetClause" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Data.Common.CommandTrees.DbModificationClause</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Specifies the clause in a modification operation that sets the value of a property. This class cannot be inherited.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Property">
+      <MemberSignature Language="C#" Value="public System.Data.Common.CommandTrees.DbExpression Property { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Common.CommandTrees.DbExpression Property" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Common.CommandTrees.DbSetClause.Property" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that specifies the property that should be updated.</summary>
+        <value>An <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that specifies the property that should be updated.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public System.Data.Common.CommandTrees.DbExpression Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Common.CommandTrees.DbExpression Value" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Common.CommandTrees.DbSetClause.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that specifies the new value with which to update the property.</summary>
+        <value>An <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that specifies the new value with which to update the property.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

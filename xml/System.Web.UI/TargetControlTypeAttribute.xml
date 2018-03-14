@@ -1,0 +1,80 @@
+<Type Name="TargetControlTypeAttribute" FullName="System.Web.UI.TargetControlTypeAttribute">
+  <TypeSignature Language="C#" Value="public sealed class TargetControlTypeAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TargetControlTypeAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.TargetControlTypeAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class, AllowMultiple=true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Extends the <see cref="T:System.Attribute" /> class to indicate the type of server control that an extender control can be applied to.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TargetControlTypeAttribute (Type targetControlType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type targetControlType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.TargetControlTypeAttribute.#ctor(System.Type)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="targetControlType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="targetControlType">The type of the target control.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.TargetControlTypeAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="targetControlType" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetControlType">
+      <MemberSignature Language="C#" Value="public Type TargetControlType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type TargetControlType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.TargetControlTypeAttribute.TargetControlType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of the target control, as specified in the constructor.</summary>
+        <value>The type of the target control.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeId">
+      <MemberSignature Language="C#" Value="public override object TypeId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object TypeId" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.TargetControlTypeAttribute.TypeId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a unique identifier for this <see cref="T:System.Web.UI.TargetControlTypeAttribute" />.</summary>
+        <value>The unique identifier for this attribute.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

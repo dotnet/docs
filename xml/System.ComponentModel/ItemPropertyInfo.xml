@@ -1,0 +1,109 @@
+<Type Name="ItemPropertyInfo" FullName="System.ComponentModel.ItemPropertyInfo">
+  <TypeSignature Language="C#" Value="public class ItemPropertyInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ItemPropertyInfo extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.ItemPropertyInfo" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains information about a property.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ItemPropertyInfo (string name, Type type, object descriptor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Type type, object descriptor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.ItemPropertyInfo.#ctor(System.String,System.Type,System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="descriptor" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the property.</param>
+        <param name="type">The type of the property.</param>
+        <param name="descriptor">An object that contains additional information about the property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.ItemPropertyInfo" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `descriptor` parameter can be any object that contains information about the property, such as a <xref:System.ComponentModel.PropertyDescriptor> or <xref:System.Reflection.PropertyInfo> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Descriptor">
+      <MemberSignature Language="C#" Value="public object Descriptor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Descriptor" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.ItemPropertyInfo.Descriptor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Get an object that contains additional information about the property.</summary>
+        <value>An object that contains additional information about the property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ComponentModel.ItemPropertyInfo.Descriptor%2A> can be any object that contains information about the property, such as a <xref:System.ComponentModel.PropertyDescriptor> or <xref:System.Reflection.PropertyInfo> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.ItemPropertyInfo.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the property.</summary>
+        <value>The name of the property.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyType">
+      <MemberSignature Language="C#" Value="public Type PropertyType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type PropertyType" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.ItemPropertyInfo.PropertyType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of the property.</summary>
+        <value>The type of the property.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

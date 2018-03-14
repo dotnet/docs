@@ -1,0 +1,34 @@
+<Type Name="IDynamicValidatorException" FullName="System.Web.DynamicData.IDynamicValidatorException">
+  <TypeSignature Language="C#" Value="public interface IDynamicValidatorException" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDynamicValidatorException" />
+  <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.IDynamicValidatorException" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Represents an interface implemented by Dynamic Data Exception classes.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="InnerExceptions">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,Exception&gt; InnerExceptions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, class System.Exception&gt; InnerExceptions" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.IDynamicValidatorException.InnerExceptions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.Exception&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the exceptions that occur when a new or edited data field is validated.</summary>
+        <value>A collection that contains all the exceptions that occurred.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,74 @@
+<Type Name="RowOrColumnMajor" FullName="System.Windows.Automation.RowOrColumnMajor">
+  <TypeSignature Language="C#" Value="public enum RowOrColumnMajor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RowOrColumnMajor extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.RowOrColumnMajor" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationTypes</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("15fdf2e2-9847-41cd-95dd-510612a025ea")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Contains values that specify whether data in a table should be read primarily by row or by column.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ColumnMajor">
+      <MemberSignature Language="C#" Value="ColumnMajor" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.RowOrColumnMajor ColumnMajor = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.RowOrColumnMajor.ColumnMajor" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.RowOrColumnMajor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that data in the table should be read column by column</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Indeterminate">
+      <MemberSignature Language="C#" Value="Indeterminate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.RowOrColumnMajor Indeterminate = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.RowOrColumnMajor.Indeterminate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.RowOrColumnMajor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the best way to present the data is indeterminate.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RowMajor">
+      <MemberSignature Language="C#" Value="RowMajor" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.RowOrColumnMajor RowMajor = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.RowOrColumnMajor.RowMajor" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.RowOrColumnMajor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that data in the table should be read row by row.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

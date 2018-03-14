@@ -1,0 +1,135 @@
+<Type Name="Manipulations2D" FullName="System.Windows.Input.Manipulations.Manipulations2D">
+  <TypeSignature Language="C#" Value="public enum Manipulations2D" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Manipulations2D extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.Manipulations.Manipulations2D" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents the possible affine two-dimensional (2-D) manipulations.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="All">
+      <MemberSignature Language="C#" Value="All" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.Manipulations.Manipulations2D All = int32(15)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.Manipulations.Manipulations2D.All" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.Manipulations.Manipulations2D</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>All available manipulations.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.Manipulations.Manipulations2D None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.Manipulations.Manipulations2D.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.Manipulations.Manipulations2D</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No manipulations.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Rotate">
+      <MemberSignature Language="C#" Value="Rotate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.Manipulations.Manipulations2D Rotate = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.Manipulations.Manipulations2D.Rotate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.Manipulations.Manipulations2D</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A rotation.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Scale">
+      <MemberSignature Language="C#" Value="Scale" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.Manipulations.Manipulations2D Scale = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.Manipulations.Manipulations2D.Scale" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.Manipulations.Manipulations2D</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A scale in both directions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Translate">
+      <MemberSignature Language="C#" Value="Translate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.Manipulations.Manipulations2D Translate = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.Manipulations.Manipulations2D.Translate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.Manipulations.Manipulations2D</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A translation in the x and/or y axes.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TranslateX">
+      <MemberSignature Language="C#" Value="TranslateX" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.Manipulations.Manipulations2D TranslateX = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.Manipulations.Manipulations2D.TranslateX" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.Manipulations.Manipulations2D</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A translation in the x-axis.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TranslateY">
+      <MemberSignature Language="C#" Value="TranslateY" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.Manipulations.Manipulations2D TranslateY = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.Manipulations.Manipulations2D.TranslateY" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.Manipulations.Manipulations2D</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A translation in the y-axis.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

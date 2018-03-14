@@ -1,0 +1,235 @@
+<Type Name="ScrollBarEventArgs" FullName="System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs">
+  <TypeSignature Language="C#" Value="public class ScrollBarEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScrollBarEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Used as a parameter object in the <see cref="E:System.Windows.Forms.DataVisualization.Charting.Chart.AxisScrollBarClicked" /> of the root <see cref="T:System.Windows.Forms.DataVisualization.Charting.Chart" /> object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs> class is exposed as the `e` parameter in the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.AxisScrollBarClicked> event.  
+  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs> class contains the following properties:  
+  
+-   The <xref:System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs.ChartArea%2A> property, which is used to get the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea> object that the event was raised for. The <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.Name> property gets the name of the chart area; other chart area properties can also be set.  
+  
+-   The <xref:System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs.Axis%2A> property, which is used to get the <xref:System.Windows.Forms.DataVisualization.Charting.Axis> object that the scrollbar belongs to, using the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.AxisName%2A> property. Other <xref:System.Windows.Forms.DataVisualization.Charting.Axis> properties can also be set.  
+  
+-   The <xref:System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs.ButtonType%2A> property, which is used to get the scrollbar button that the end-user clicked.  
+  
+-   The <xref:System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs.IsHandled%2A> property, which determines if the <xref:System.Windows.Forms.DataVisualization.Charting.Chart> control cancels default behavior of the scrollbar button after the code in the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.AxisScrollBarClicked> event completes execution.  
+  
+-   The <xref:System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs.MousePositionX%2A> property, which represents the X position of the mouse cursor at the time the end-user clicked the scrollbar element.  
+  
+-   The <xref:System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs.MousePositionY%2A> property, which represents the Y-position of the mouse cursor at the time the end-user clicked the scrollbar element.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ScrollBarEventArgs (System.Windows.Forms.DataVisualization.Charting.Axis axis, int x, int y, System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType buttonType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.DataVisualization.Charting.Axis axis, int32 x, int32 y, valuetype System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType buttonType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs.#ctor(System.Windows.Forms.DataVisualization.Charting.Axis,System.Int32,System.Int32,System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="axis" Type="System.Windows.Forms.DataVisualization.Charting.Axis" />
+        <Parameter Name="x" Type="System.Int32" />
+        <Parameter Name="y" Type="System.Int32" />
+        <Parameter Name="buttonType" Type="System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType" />
+      </Parameters>
+      <Docs>
+        <param name="axis">The <see cref="T:System.Windows.Forms.DataVisualization.Charting.Axis" /> that contains the scrollbar.</param>
+        <param name="x">The X position of mouse cursor.</param>
+        <param name="y">The Y position of mouse cursor.</param>
+        <param name="buttonType">The type of button clicked.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs" /> class with the specified axis, X and Y positions of the mouse cursor, and type of button clicked.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Axis">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.Axis Axis { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataVisualization.Charting.Axis Axis" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs.Axis" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.Axis</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Axis" /> object that a scrollbar belongs to.</summary>
+        <value>An <see cref="T:System.Windows.Forms.DataVisualization.Charting.Axis" /> object that represents the axis that the scrollbar belongs to.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is exposed in the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.AxisScrollBarClicked> event of the root <xref:System.Windows.Forms.DataVisualization.Charting.Chart> object.  
+  
+ This property can be used to:  
+  
+-   determine the type of axis—X, X2, Y or Y2—that the event is being raised for, using the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.AxisName%2A> property.  
+  
+-   get and set axis properties, such as <xref:System.Windows.Forms.DataVisualization.Charting.Axis.LineColor%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ButtonType">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType ButtonType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType ButtonType" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs.ButtonType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of scrollbar button that the end-user clicked.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType" /> enumeration value that represents the type of scrollbar button the end-user clicked.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is exposed in the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.AxisScrollBarClicked> event of the root <xref:System.Windows.Forms.DataVisualization.Charting.Chart> object, and can be used to determine the type of scrollbar button the end-user clicked.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChartArea">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.ChartArea ChartArea { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataVisualization.Charting.ChartArea ChartArea" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs.ChartArea" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartArea</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartArea" /> object that the scrollbar belongs to.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartArea" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is exposed in the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.AxisScrollBarClicked> event of the root <xref:System.Windows.Forms.DataVisualization.Charting.Chart> object.  
+  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs.ChartArea%2A> property can be used to determine the chart area that the scrollbar belongs to by accessing the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.Name> property. This property can also be used to get and set chart area properties.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsHandled">
+      <MemberSignature Language="C#" Value="public bool IsHandled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsHandled" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs.IsHandled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a flag that indicates whether to cancel the default behavior of specific scrollbar events.</summary>
+        <value>
+          <see langword="true" /> if the default behavior of the event should be cancelled, otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is exposed in the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.AxisScrollBarClicked> event of the root <xref:System.Windows.Forms.DataVisualization.Charting.Chart> object.  
+  
+ This property can be used to cancel the default behavior on specific scrollbar events.  
+  
+ If you click on a scrollbar button, the default manipulation of the view will occur.  
+  
+ The following list summarizes this default behavior:  
+  
+-   If the user clicks the Reset/Zoom button, the previous view will be displayed.  
+  
+-   If the user clicks in the scrollbar background—that is, not on the scrolling thumb, otherwise known as the tracker— large increments and/or decrements of the scrollbar will occur, with the increment and/or decrement size being determined by the <xref:System.Windows.Forms.DataVisualization.Charting.AxisScaleView.Size%2A> property.  
+  
+ To turn off these default behaviors, set the <xref:System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs.IsHandled%2A> property to `true` after providing custom logic in the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.AxisScrollBarClicked> event.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MousePositionX">
+      <MemberSignature Language="C#" Value="public int MousePositionX { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MousePositionX" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs.MousePositionX" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the X position of the mouse cursor at the time the <see cref="E:System.Windows.Forms.DataVisualization.Charting.Chart.AxisScrollBarClicked" /> event was raised.</summary>
+        <value>An <see langword="integer" /> value that represents the X mouse cursor position. The position is expressed in pixels, with 0,0 being the top-left corner of the chart image.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is used to get the X mouse position, in pixels, when the end-user clicks on a scrollbar element. The 0,0 coordinate represents the top-left corner of the chart.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MousePositionY">
+      <MemberSignature Language="C#" Value="public int MousePositionY { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MousePositionY" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ScrollBarEventArgs.MousePositionY" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the Y position of the mouse cursor at the time the <see cref="E:System.Windows.Forms.DataVisualization.Charting.Chart.AxisScrollBarClicked" /> event was raised.</summary>
+        <value>An <see langword="integer" /> value that represents the Y mouse cursor position. The position is expressed in pixels, with 0,0 being the top-left corner of the chart image.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is used to get the Y mouse position, in pixels, when the end-user clicks on a scrollbar element. The 0,0 coordinate represents the top-left corner of the chart.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

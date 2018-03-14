@@ -1,0 +1,55 @@
+<Type Name="IVersioningPersonalizable" FullName="System.Web.UI.WebControls.WebParts.IVersioningPersonalizable">
+  <TypeSignature Language="C#" Value="public interface IVersioningPersonalizable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IVersioningPersonalizable" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.IVersioningPersonalizable" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Represents an interface that can manage personalization data belonging to a previous version of a Web Parts control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you upgrade a Web Parts control to a newer version, there might be changes to the personalizable properties on the upgraded class. For example, an upgraded version of a Web Parts control might no longer support properties that were available in previous versions. In such a scenario, the Web Parts control set might load personalization data from the underlying data store, but have no properties against which to apply this data. If a control implements the <xref:System.Web.UI.WebControls.WebParts.IVersioningPersonalizable> interface, the Web Parts control is passed the orphaned personalization data. The application can then use this data to update properties in the newer version, or use the data in some other manner. Note that if orphaned properties are detected when importing Web Parts controls, the <xref:System.Web.UI.WebControls.WebParts.IVersioningPersonalizable.Load%2A> method is also called.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Load">
+      <MemberSignature Language="C#" Value="public void Load (System.Collections.IDictionary unknownProperties);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Load(class System.Collections.IDictionary unknownProperties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.IVersioningPersonalizable.Load(System.Collections.IDictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="unknownProperties" Type="System.Collections.IDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="unknownProperties">A dictionary of personalization data that could not be applied to a control.</param>
+        <summary>Loads personalization data to a Web Parts control that does not have a corresponding personalized property for the data due to a version change.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `unknownProperties` parameter contains a merged representation of unknown personalization data, of both "User" and "Shared" scope, that could not be applied to the control. When a page is running in user scope, the unknown user-scope values are supplied (if available) rather than unknown shared-scope values. This information is stored as a series of name/value pairs where each name is the string name of a property that was not found on the control and each value contains the property value. It is the responsibility of the control to cast or convert the value to the appropriate type and carry out further processing (such as mapping data from an old property to a new property).  
+  
+ If a control's state changes, it should call <xref:System.Web.UI.WebControls.WebParts.WebPart.SetPersonalizationDirty%2A> (either the inherited method, or the public static method in the case of a control that does not derive from <xref:System.Web.UI.WebControls.WebParts.WebPart>). If a control marks itself as "dirty", the Web Parts control set will extract personalization data from the control, regardless of the control's "dirty" state, and save it back to the underlying data store later in the personalization life cycle. A control should mark itself as "dirty" if, as a result of processing the values in the `unknownProperties` parameter, the control's state has changed.  
+  
+ Note that if orphaned properties are detected when importing Web Parts controls, this method is automatically called.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

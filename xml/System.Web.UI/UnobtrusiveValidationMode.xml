@@ -1,0 +1,50 @@
+<Type Name="UnobtrusiveValidationMode" FullName="System.Web.UI.UnobtrusiveValidationMode">
+  <TypeSignature Language="C#" Value="public enum UnobtrusiveValidationMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed UnobtrusiveValidationMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.UnobtrusiveValidationMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies behavior of unobtrusive validation.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.UnobtrusiveValidationMode None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.UnobtrusiveValidationMode.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.UnobtrusiveValidationMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Unobtrusive validation is not enabled.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WebForms">
+      <MemberSignature Language="C#" Value="WebForms" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.UnobtrusiveValidationMode WebForms = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.UnobtrusiveValidationMode.WebForms" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.UnobtrusiveValidationMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Unobtrusive validation is enabled and uses Web Forms validation scripts.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

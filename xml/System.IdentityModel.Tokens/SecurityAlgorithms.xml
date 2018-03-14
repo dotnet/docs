@@ -1,0 +1,478 @@
+<Type Name="SecurityAlgorithms" FullName="System.IdentityModel.Tokens.SecurityAlgorithms">
+  <TypeSignature Language="C#" Value="public static class SecurityAlgorithms" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SecurityAlgorithms extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SecurityAlgorithms" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines constants for the URIs that represent the cryptographic algorithms that are used to encrypt XML and compute digital signatures for SOAP messages.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Aes128Encryption">
+      <MemberSignature Language="C#" Value="public const string Aes128Encryption;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Aes128Encryption" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.Aes128Encryption" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a URI that points to the 128-bit AES cryptographic algorithm for encrypting XML. This field is constant.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Aes128KeyWrap">
+      <MemberSignature Language="C#" Value="public const string Aes128KeyWrap;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Aes128KeyWrap" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.Aes128KeyWrap" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a URI that points to the 128-bit AES cryptographic algorithm for encrypting and decrypting symmetric keys (key wrap). This field is constant.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Aes192Encryption">
+      <MemberSignature Language="C#" Value="public const string Aes192Encryption;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Aes192Encryption" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.Aes192Encryption" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a URI that points to the 192-bit AES cryptographic algorithm for encrypting XML. This field is constant.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Aes192KeyWrap">
+      <MemberSignature Language="C#" Value="public const string Aes192KeyWrap;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Aes192KeyWrap" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.Aes192KeyWrap" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a URI that points to the 192-bit AES cryptographic algorithm for encrypting and decrypting symmetric keys (key wrap). This field is constant.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Aes256Encryption">
+      <MemberSignature Language="C#" Value="public const string Aes256Encryption;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Aes256Encryption" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.Aes256Encryption" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a URI that points to the 256-bit AES cryptographic algorithm for encrypting XML. This field is constant.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Aes256KeyWrap">
+      <MemberSignature Language="C#" Value="public const string Aes256KeyWrap;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Aes256KeyWrap" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.Aes256KeyWrap" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a URI that points to the 256-bit AES cryptographic algorithm for encrypting and decrypting symmetric keys (key wrap). This field is constant.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DesEncryption">
+      <MemberSignature Language="C#" Value="public const string DesEncryption;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string DesEncryption" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.DesEncryption" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a URI that points to the DES cryptographic algorithm for encrypting XML. This field is constant.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DsaSha1Signature">
+      <MemberSignature Language="C#" Value="public const string DsaSha1Signature;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string DsaSha1Signature" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.DsaSha1Signature" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a URI that points to the DSA cryptographic algorithm for digitally signing XML. This field is constant.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExclusiveC14n">
+      <MemberSignature Language="C#" Value="public const string ExclusiveC14n;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ExclusiveC14n" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.ExclusiveC14n" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the Exclusive XML Without Comments Canonicalization algorithm. This field is constant.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExclusiveC14nWithComments">
+      <MemberSignature Language="C#" Value="public const string ExclusiveC14nWithComments;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ExclusiveC14nWithComments" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.ExclusiveC14nWithComments" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the Exclusive XML With Comments Canonicalization algorithm. This field is constant.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HmacSha1Signature">
+      <MemberSignature Language="C#" Value="public const string HmacSha1Signature;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string HmacSha1Signature" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.HmacSha1Signature" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a URI that points to the HMAC cryptographic algorithm for digitally signing XML. This field is constant.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HmacSha256Signature">
+      <MemberSignature Language="C#" Value="public const string HmacSha256Signature;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string HmacSha256Signature" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.HmacSha256Signature" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a URI that points to the 256-bit HMAC cryptographic algorithm for digitally signing XML. This field is constant.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Psha1KeyDerivation">
+      <MemberSignature Language="C#" Value="public const string Psha1KeyDerivation;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Psha1KeyDerivation" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.Psha1KeyDerivation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the P-SHA1 key generation algorithm. This field is constant.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Psha1KeyDerivationDec2005">
+      <MemberSignature Language="C#" Value="public const string Psha1KeyDerivationDec2005;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Psha1KeyDerivationDec2005" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.Psha1KeyDerivationDec2005" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the December 2007 version of the P-SHA1 key generation algorithm. This field is constant.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ripemd160Digest">
+      <MemberSignature Language="C#" Value="public const string Ripemd160Digest;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Ripemd160Digest" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.Ripemd160Digest" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a URI that points to the RIPEMD-160 cryptographic digest algorithm. This field is constant.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RsaOaepKeyWrap">
+      <MemberSignature Language="C#" Value="public const string RsaOaepKeyWrap;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string RsaOaepKeyWrap" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.RsaOaepKeyWrap" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a URI that points to the RSAES-OAEP-ENCRYPT cryptographic algorithm for encrypting and decrypting asymmetric keys (key wrap). This field is constant.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RsaSha1Signature">
+      <MemberSignature Language="C#" Value="public const string RsaSha1Signature;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string RsaSha1Signature" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha1Signature" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a URI that points to the RSA-SHA1 cryptographic algorithm for digitally signing XML. This field is constant.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RsaSha256Signature">
+      <MemberSignature Language="C#" Value="public const string RsaSha256Signature;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string RsaSha256Signature" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha256Signature" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a URI that points to the RSA-SHA256 cryptographic algorithm for digitally signing XML. This field is constant.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RsaV15KeyWrap">
+      <MemberSignature Language="C#" Value="public const string RsaV15KeyWrap;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string RsaV15KeyWrap" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.RsaV15KeyWrap" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a URI that points to the RSAES-PKCS1-v1_5 cryptographic algorithm for encrypting and decrypting asymmetric keys (key wrap). This field is constant.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sha1Digest">
+      <MemberSignature Language="C#" Value="public const string Sha1Digest;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Sha1Digest" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.Sha1Digest" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a URI that points to the 160-bit SHA-1 digest algorithm. This field is constant.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sha256Digest">
+      <MemberSignature Language="C#" Value="public const string Sha256Digest;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Sha256Digest" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.Sha256Digest" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a URI that points to the 256-bit SHA-256 digest algorithm. This field is constant.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sha512Digest">
+      <MemberSignature Language="C#" Value="public const string Sha512Digest;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Sha512Digest" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.Sha512Digest" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a URI that points to the 512-bit SHA-512 digest algorithm. This field is constant.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StrTransform">
+      <MemberSignature Language="C#" Value="public const string StrTransform;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string StrTransform" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.StrTransform" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the Security Token Reference-Transform (STR-Transform) algorithm. This field is constant.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TlsSspiKeyWrap">
+      <MemberSignature Language="C#" Value="public const string TlsSspiKeyWrap;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string TlsSspiKeyWrap" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.TlsSspiKeyWrap" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a URI that points to the Transport Layer Security (TLS) algorithm for encrypting and decrypting symmetric keys (key wrap). This field is constant.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TripleDesEncryption">
+      <MemberSignature Language="C#" Value="public const string TripleDesEncryption;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string TripleDesEncryption" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.TripleDesEncryption" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a URI that points to the Triple DES cryptographic algorithm for encrypting XML. This field is constant.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TripleDesKeyWrap">
+      <MemberSignature Language="C#" Value="public const string TripleDesKeyWrap;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string TripleDesKeyWrap" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.TripleDesKeyWrap" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a URI that points to the Triple DES cryptographic algorithm for encrypting and decrypting symmetric keys (key wrap). This field is constant.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowsSspiKeyWrap">
+      <MemberSignature Language="C#" Value="public const string WindowsSspiKeyWrap;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string WindowsSspiKeyWrap" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityAlgorithms.WindowsSspiKeyWrap" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a URI that points to the GSS-API cryptographic algorithm for encrypting and decrypting Kerberos ticket session keys (key wrap). This field is constant.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

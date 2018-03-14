@@ -1,0 +1,77 @@
+<Type Name="DbBinaryExpression" FullName="System.Data.Common.CommandTrees.DbBinaryExpression">
+  <TypeSignature Language="C#" Value="public abstract class DbBinaryExpression : System.Data.Common.CommandTrees.DbExpression" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DbBinaryExpression extends System.Data.Common.CommandTrees.DbExpression" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Common.CommandTrees.DbBinaryExpression" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Data.Common.CommandTrees.DbExpression</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Implements the basic functionality required by expressions that accept two expression operands.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Left">
+      <MemberSignature Language="C#" Value="public System.Data.Common.CommandTrees.DbExpression Left { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Common.CommandTrees.DbExpression Left" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Common.CommandTrees.DbBinaryExpression.Left" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that defines the left argument.</summary>
+        <value>The <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that defines the left argument.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Derived expression types might perform stricter type checks when the <xref:System.Data.Common.CommandTrees.DbBinaryExpression.Left%2A> property is set. For example, <xref:System.Data.Common.CommandTrees.DbUnionAllExpression> requires that its left expression has a collection result type, while <xref:System.Data.Common.CommandTrees.DbAndExpression> requires a Boolean result type. Typically, derived expression types will not allow <xref:System.Data.Common.CommandTrees.DbBinaryExpression.Left%2A> to be set to an expression with a result type that is not equal or promotable to the result type of the current value.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The expression is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The expression is not associated with the command tree of the <see cref="T:System.Data.Common.CommandTrees.DbBinaryExpression" />,  
+  
+ or its result type is not equal or promotable to the required type for the left argument.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Right">
+      <MemberSignature Language="C#" Value="public System.Data.Common.CommandTrees.DbExpression Right { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Common.CommandTrees.DbExpression Right" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Common.CommandTrees.DbBinaryExpression.Right" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that defines the right argument.</summary>
+        <value>The <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that defines the right argument.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Derived expression types might perform stricter type checks when the <xref:System.Data.Common.CommandTrees.DbBinaryExpression.Right%2A> property is set. For example, <xref:System.Data.Common.CommandTrees.DbUnionAllExpression> requires that its right expression has a collection result type, while <xref:System.Data.Common.CommandTrees.DbAndExpression> requires a Boolean result type. Typically, derived expression types will not allow <xref:System.Data.Common.CommandTrees.DbBinaryExpression.Right%2A> to be set to an expression with a result type that is not equal or promotable to the result type of the current value.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The expression is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The expression is not associated with the command tree of the <see cref="T:System.Data.Common.CommandTrees.DbBinaryExpression" />,  
+  
+ or its result type is not equal or promotable to the required type for the right argument.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

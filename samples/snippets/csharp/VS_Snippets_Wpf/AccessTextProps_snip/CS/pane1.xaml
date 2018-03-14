@@ -1,0 +1,29 @@
+<StackPanel
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="AccessTextSimple.Pane1"
+>
+
+<TextBox Name="tb"/>
+
+<Label Target="{Binding ElementName=tb}">_File</Label>
+
+
+
+<Button><AccessText>_Edit</AccessText></Button>
+<Button>_Cut</Button>
+
+
+<Button>
+
+<AccessText>__He_llo__</AccessText>
+
+</Button>
+
+<!--<SnippetAccessTextText>-->
+<DockPanel>
+<AccessText Background="Red" Foreground="LightBlue" FontFamily="Arial Narrow" FontSize="16" FontStyle="Italic" 
+     FontWeight="Bold">_E</AccessText><AccessText Text="dit"/>
+</DockPanel>
+<!--</SnippetAccessTextText>-->
+</StackPanel>

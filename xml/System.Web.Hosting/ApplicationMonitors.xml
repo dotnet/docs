@@ -1,0 +1,37 @@
+<Type Name="ApplicationMonitors" FullName="System.Web.Hosting.ApplicationMonitors">
+  <TypeSignature Language="C#" Value="public sealed class ApplicationMonitors" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ApplicationMonitors extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Hosting.ApplicationMonitors" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>A group of replaceable monitor objects used by ASP.NET subsystems to maintain application health.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="MemoryMonitor">
+      <MemberSignature Language="C#" Value="public System.Web.Hosting.IApplicationMonitor MemoryMonitor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Hosting.IApplicationMonitor MemoryMonitor" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Hosting.ApplicationMonitors.MemoryMonitor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Hosting.IApplicationMonitor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a memory monitor. Setting this property (even null) will stop and dispose any previously assigned monitor. For the default implementation see <see cref="T:System.Web.Hosting.AspNetMemoryMonitor" />.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,277 @@
+<Type Name="TextParagraphProperties" FullName="System.Windows.Media.TextFormatting.TextParagraphProperties">
+  <TypeSignature Language="C#" Value="public abstract class TextParagraphProperties" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TextParagraphProperties extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.TextParagraphProperties" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a set of properties, such as flow direction, alignment, or indentation, that can be applied to a paragraph. This is an abstract class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To create a text layout application that uses the services of the <xref:System.Windows.Media.TextFormatting.TextFormatter> object, you must create a derived class that implements the methods of the <xref:System.Windows.Media.TextFormatting.TextParagraphProperties> abstract class.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected TextParagraphProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextParagraphProperties.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.TextFormatting.TextParagraphProperties" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AlwaysCollapsible">
+      <MemberSignature Language="C#" Value="public virtual bool AlwaysCollapsible { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AlwaysCollapsible" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextParagraphProperties.AlwaysCollapsible" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether a formatted line can always be collapsed.</summary>
+        <value>
+          <see langword="true" /> if the formatted line can always be collapsed; otherwise, <see langword="false" />, which indicates that only formatted lines that overflow the paragraph width are collapsed. The default value is <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultIncrementalTab">
+      <MemberSignature Language="C#" Value="public virtual double DefaultIncrementalTab { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 DefaultIncrementalTab" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextParagraphProperties.DefaultIncrementalTab" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the default incremental tab distance.</summary>
+        <value>A <see cref="T:System.Double" /> value that represents the default incremental tab distance.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultTextRunProperties">
+      <MemberSignature Language="C#" Value="public abstract System.Windows.Media.TextFormatting.TextRunProperties DefaultTextRunProperties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.TextFormatting.TextRunProperties DefaultTextRunProperties" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextParagraphProperties.DefaultTextRunProperties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TextFormatting.TextRunProperties</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the default text run properties, such as typeface or foreground brush.</summary>
+        <value>A <see cref="T:System.Windows.Media.TextFormatting.TextRunProperties" /> value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FirstLineInParagraph">
+      <MemberSignature Language="C#" Value="public abstract bool FirstLineInParagraph { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool FirstLineInParagraph" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextParagraphProperties.FirstLineInParagraph" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the text run is the first line of the paragraph.</summary>
+        <value>
+          <see langword="true" />, if the text run is the first line of the paragraph; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FlowDirection">
+      <MemberSignature Language="C#" Value="public abstract System.Windows.FlowDirection FlowDirection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.FlowDirection FlowDirection" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextParagraphProperties.FlowDirection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FlowDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that specifies whether the primary text advance direction shall be left-to-right, or right-to-left.</summary>
+        <value>An enumerated value of <see cref="T:System.Windows.FlowDirection" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Indent">
+      <MemberSignature Language="C#" Value="public abstract double Indent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Indent" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextParagraphProperties.Indent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the amount of line indentation.</summary>
+        <value>A <see cref="T:System.Double" /> that represents the amount of line indentation.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LineHeight">
+      <MemberSignature Language="C#" Value="public abstract double LineHeight { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 LineHeight" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextParagraphProperties.LineHeight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the height of a line of text.</summary>
+        <value>A <see cref="T:System.Double" /> that represents the height of a line of text.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParagraphIndent">
+      <MemberSignature Language="C#" Value="public virtual double ParagraphIndent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 ParagraphIndent" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextParagraphProperties.ParagraphIndent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the amount of the paragraph indentation.</summary>
+        <value>A <see cref="T:System.Double" /> that represents the amount of the paragraph indentation.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tabs">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IList&lt;System.Windows.Media.TextFormatting.TextTabProperties&gt; Tabs { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class System.Windows.Media.TextFormatting.TextTabProperties&gt; Tabs" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextParagraphProperties.Tabs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Windows.Media.TextFormatting.TextTabProperties&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of tab definitions.</summary>
+        <value>A list of <see cref="T:System.Windows.Media.TextFormatting.TextTabProperties" /> objects.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextAlignment">
+      <MemberSignature Language="C#" Value="public abstract System.Windows.TextAlignment TextAlignment { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.TextAlignment TextAlignment" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextParagraphProperties.TextAlignment" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.TextAlignment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that describes how an inline content of a block is aligned.</summary>
+        <value>An enumerated value of <see cref="T:System.Windows.TextAlignment" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextDecorations">
+      <MemberSignature Language="C#" Value="public virtual System.Windows.TextDecorationCollection TextDecorations { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.TextDecorationCollection TextDecorations" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextParagraphProperties.TextDecorations" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.TextDecorationCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of <see cref="T:System.Windows.TextDecoration" /> objects.</summary>
+        <value>A <see cref="T:System.Windows.TextDecorationCollection" /> value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextMarkerProperties">
+      <MemberSignature Language="C#" Value="public abstract System.Windows.Media.TextFormatting.TextMarkerProperties TextMarkerProperties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.TextFormatting.TextMarkerProperties TextMarkerProperties" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextParagraphProperties.TextMarkerProperties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TextFormatting.TextMarkerProperties</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that specifies marker characteristics of the first line in the paragraph.</summary>
+        <value>A <see cref="T:System.Windows.Media.TextFormatting.TextMarkerProperties" /> value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextWrapping">
+      <MemberSignature Language="C#" Value="public abstract System.Windows.TextWrapping TextWrapping { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.TextWrapping TextWrapping" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextParagraphProperties.TextWrapping" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.TextWrapping</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that controls whether text wraps when it reaches the flow edge of its containing block box.</summary>
+        <value>An enumerated value of <see cref="T:System.Windows.TextWrapping" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

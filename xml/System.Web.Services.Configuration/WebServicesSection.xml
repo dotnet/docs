@@ -1,0 +1,406 @@
+<Type Name="WebServicesSection" FullName="System.Web.Services.Configuration.WebServicesSection">
+  <TypeSignature Language="C#" Value="public sealed class WebServicesSection : System.Configuration.ConfigurationSection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WebServicesSection extends System.Configuration.ConfigurationSection" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Configuration.WebServicesSection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationSection</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the <see langword="webServices" /> element in the configuration file. This element controls the settings of XML Web services.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebServicesSection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.WebServicesSection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Configuration.WebServicesSection" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConformanceWarnings">
+      <MemberSignature Language="C#" Value="public System.Web.Services.Configuration.WsiProfilesElementCollection ConformanceWarnings { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Configuration.WsiProfilesElementCollection ConformanceWarnings" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.WebServicesSection.ConformanceWarnings" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("conformanceWarnings")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Configuration.WsiProfilesElementCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of conformance warnings for the Web Service. This property corresponds to the <see langword="configurationWarnings" /> element in the configuration file.</summary>
+        <value>A <see cref="T:System.Web.Services.Configuration.WsiProfilesElementCollection" /> object that represents the collection of conformance warnings for the Web Service.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Current">
+      <MemberSignature Language="C#" Value="public static System.Web.Services.Configuration.WebServicesSection Current { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Web.Services.Configuration.WebServicesSection Current" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.WebServicesSection.Current" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Configuration.WebServicesSection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Web.Services.Configuration.WebServicesSection" /> object that represents the current section.</summary>
+        <value>A <see cref="T:System.Web.Services.Configuration.WebServicesSection" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Diagnostics">
+      <MemberSignature Language="C#" Value="public System.Web.Services.Configuration.DiagnosticsElement Diagnostics { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Configuration.DiagnosticsElement Diagnostics" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.WebServicesSection.Diagnostics" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Configuration.DiagnosticsElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Web.Services.Configuration.DiagnosticsElement" /> for the <see cref="T:System.Web.Services.Configuration.WebServicesSection" /> object.</summary>
+        <value>A <see cref="T:System.Web.Services.Configuration.DiagnosticsElement" /> for the current configuration file.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnabledProtocols">
+      <MemberSignature Language="C#" Value="public System.Web.Services.Configuration.WebServiceProtocols EnabledProtocols { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Services.Configuration.WebServiceProtocols EnabledProtocols" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.WebServicesSection.EnabledProtocols" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Configuration.WebServiceProtocols</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets one of the <see cref="T:System.Web.Services.Configuration.WebServiceProtocols" /> values that indicates the Web service protocol.</summary>
+        <value>One of the <see cref="T:System.Web.Services.Configuration.WebServiceProtocols" /> values.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSection">
+      <MemberSignature Language="C#" Value="public static System.Web.Services.Configuration.WebServicesSection GetSection (System.Configuration.Configuration config);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Services.Configuration.WebServicesSection GetSection(class System.Configuration.Configuration config) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.WebServicesSection.GetSection(System.Configuration.Configuration)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Configuration.WebServicesSection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="config" Type="System.Configuration.Configuration" />
+      </Parameters>
+      <Docs>
+        <param name="config">A <see cref="T:System.Configuration.Configuration" /> object that represents the section to be retrieved.</param>
+        <summary>Retrieves the specified configuration section.</summary>
+        <returns>A <see cref="T:System.Web.Services.Configuration.WebServicesSection" /> object that represents the section being retrieved.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="config" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="InitializeDefault">
+      <MemberSignature Language="C#" Value="protected override void InitializeDefault ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InitializeDefault() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.WebServicesSection.InitializeDefault" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.WebServicesSection.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Protocols">
+      <MemberSignature Language="C#" Value="public System.Web.Services.Configuration.ProtocolElementCollection Protocols { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Configuration.ProtocolElementCollection Protocols" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.WebServicesSection.Protocols" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("protocols")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Configuration.ProtocolElementCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the transmission protocol that is used to decrypt data sent from a client browser in an HTTP request.</summary>
+        <value>A <see cref="T:System.Web.Services.Configuration.WebServiceProtocols" /> object that represents the transmission protocol that is used to decrypt data sent from a client browser in an HTTP request.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The data sent in an HTTP request to an XML Web service can contain method calls and parameters.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reset">
+      <MemberSignature Language="C#" Value="protected override void Reset (System.Configuration.ConfigurationElement parentElement);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Reset(class System.Configuration.ConfigurationElement parentElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.WebServicesSection.Reset(System.Configuration.ConfigurationElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parentElement" Type="System.Configuration.ConfigurationElement" />
+      </Parameters>
+      <Docs>
+        <param name="parentElement">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceDescriptionFormatExtensionTypes">
+      <MemberSignature Language="C#" Value="public System.Web.Services.Configuration.TypeElementCollection ServiceDescriptionFormatExtensionTypes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Configuration.TypeElementCollection ServiceDescriptionFormatExtensionTypes" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.WebServicesSection.ServiceDescriptionFormatExtensionTypes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("serviceDescriptionFormatExtensionTypes")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Configuration.TypeElementCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Web.Services.Configuration.TypeElementCollection" /> that specifies the service description format extension to run within the scope of the configuration file.</summary>
+        <value>A <see cref="T:System.Web.Services.Configuration.TypeElementCollection" /> that specifies the service description format extension to run within the scope of the configuration file.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SoapEnvelopeProcessing">
+      <MemberSignature Language="C#" Value="public System.Web.Services.Configuration.SoapEnvelopeProcessingElement SoapEnvelopeProcessing { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Configuration.SoapEnvelopeProcessingElement SoapEnvelopeProcessing" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.WebServicesSection.SoapEnvelopeProcessing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("soapEnvelopeProcessing")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Configuration.SoapEnvelopeProcessingElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Web.Services.Configuration.SoapEnvelopeProcessingElement" /> for the <see cref="T:System.Web.Services.Configuration.WebServicesSection" /> object.</summary>
+        <value>A <see cref="T:System.Web.Services.Configuration.SoapEnvelopeProcessingElement" /> for the current configuration file.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SoapExtensionImporterTypes">
+      <MemberSignature Language="C#" Value="public System.Web.Services.Configuration.TypeElementCollection SoapExtensionImporterTypes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Configuration.TypeElementCollection SoapExtensionImporterTypes" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.WebServicesSection.SoapExtensionImporterTypes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("soapExtensionImporterTypes")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Configuration.TypeElementCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Web.Services.Configuration.TypeElementCollection" /> that specifies the SOAP extensions to run when a service description for an XML Web service within the scope of the configuration file is accessed.</summary>
+        <value>A <see cref="T:System.Web.Services.Configuration.TypeElementCollection" /> that specifies the SOAP extensions to run when a service description for an XML Web service within the scope of the configuration file is accessed.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SoapExtensionReflectorTypes">
+      <MemberSignature Language="C#" Value="public System.Web.Services.Configuration.TypeElementCollection SoapExtensionReflectorTypes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Configuration.TypeElementCollection SoapExtensionReflectorTypes" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.WebServicesSection.SoapExtensionReflectorTypes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("soapExtensionReflectorTypes")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Configuration.TypeElementCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Web.Services.Configuration.TypeElementCollection" /> that specifies the SOAP extensions to run when a service description is generated for all XML Web services within the scope of the configuration file.</summary>
+        <value>A <see cref="T:System.Web.Services.Configuration.TypeElementCollection" /> that specifies the SOAP extensions to run when a service description is generated for all XML Web services within the scope of the configuration file.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SoapExtensionTypes">
+      <MemberSignature Language="C#" Value="public System.Web.Services.Configuration.SoapExtensionTypeElementCollection SoapExtensionTypes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Configuration.SoapExtensionTypeElementCollection SoapExtensionTypes" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.WebServicesSection.SoapExtensionTypes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("soapExtensionTypes")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Configuration.SoapExtensionTypeElementCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Web.Services.Configuration.SoapExtensionTypeElementCollection" /> that specifies the SOAP extensions to run with all XML Web services within the scope of the configuration file.</summary>
+        <value>A <see cref="T:System.Web.Services.Configuration.SoapExtensionTypeElementCollection" /> that specifies the SOAP extensions to run with all XML Web services within the scope of the configuration file.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SoapServerProtocolFactoryType">
+      <MemberSignature Language="C#" Value="public System.Web.Services.Configuration.TypeElement SoapServerProtocolFactoryType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Configuration.TypeElement SoapServerProtocolFactoryType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.WebServicesSection.SoapServerProtocolFactoryType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("soapServerProtocolFactory")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Configuration.TypeElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Web.Services.Configuration.TypeElement" /> object that corresponds to the protocol used to call the Web service.</summary>
+        <value>A <see cref="T:System.Web.Services.Configuration.TypeElement" /> object that corresponds to the protocol used to call the Web service.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SoapTransportImporterTypes">
+      <MemberSignature Language="C#" Value="public System.Web.Services.Configuration.TypeElementCollection SoapTransportImporterTypes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Configuration.TypeElementCollection SoapTransportImporterTypes" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.WebServicesSection.SoapTransportImporterTypes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("soapTransportImporterTypes")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Configuration.TypeElementCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Web.Services.Configuration.TypeElementCollection" /> object that represents the SoapTransportImporterTypes configuration element.</summary>
+        <value>A <see cref="T:System.Web.Services.Configuration.TypeElementCollection" /> object that represents the <see langword="SoapTransportImporterTypes" /> configuration element.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WsdlHelpGenerator">
+      <MemberSignature Language="C#" Value="public System.Web.Services.Configuration.WsdlHelpGeneratorElement WsdlHelpGenerator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Configuration.WsdlHelpGeneratorElement WsdlHelpGenerator" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.WebServicesSection.WsdlHelpGenerator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("wsdlHelpGenerator")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Configuration.WsdlHelpGeneratorElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the Web service Help page (an .aspx file) that is displayed to a browser when the browser navigates directly to an ASMX page.</summary>
+        <value>A <see cref="T:System.Web.Services.Configuration.WsdlHelpGeneratorElement" /> object that specifies the XML Web service Help page (an .aspx file) that is displayed to a browser when the browser navigates directly to an ASMX XML Web service page.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,73 @@
+<Type Name="LegendItemOrder" FullName="System.Web.UI.DataVisualization.Charting.LegendItemOrder">
+  <TypeSignature Language="C#" Value="public enum LegendItemOrder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LegendItemOrder extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.LegendItemOrder" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.DataVisualization</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the order in which items are added to the legend.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, the chart determines the order in which items are added to the legend. All chart types except stacked area, stacked bar and stacked column charts will always place items in the legend in the same order as how items are ordered in the <xref:System.Web.UI.DataVisualization.Charting.SeriesCollection>. By default, stacked charts will always show items in the reversed order as how they are ordered in the series collection.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Auto">
+      <MemberSignature Language="C#" Value="Auto" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.LegendItemOrder Auto = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LegendItemOrder.Auto" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.LegendItemOrder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The chart automatically determines the order in which items are added to the legend.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ReversedSeriesOrder">
+      <MemberSignature Language="C#" Value="ReversedSeriesOrder" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.LegendItemOrder ReversedSeriesOrder = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LegendItemOrder.ReversedSeriesOrder" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.LegendItemOrder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Items are added to the legend in the reverse order of items added to the chart series.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SameAsSeriesOrder">
+      <MemberSignature Language="C#" Value="SameAsSeriesOrder" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.LegendItemOrder SameAsSeriesOrder = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LegendItemOrder.SameAsSeriesOrder" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.LegendItemOrder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Items are added to the legend in the same order as items added to the chart series.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

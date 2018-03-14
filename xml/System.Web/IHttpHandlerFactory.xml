@@ -1,0 +1,101 @@
+<Type Name="IHttpHandlerFactory" FullName="System.Web.IHttpHandlerFactory">
+  <TypeSignature Language="C#" Value="public interface IHttpHandlerFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IHttpHandlerFactory" />
+  <TypeSignature Language="DocId" Value="T:System.Web.IHttpHandlerFactory" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines the contract that class factories must implement to create new <see cref="T:System.Web.IHttpHandler" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A class that implements the <xref:System.Web.IHttpHandlerFactory> interface has no behavior except to dynamically manufacture new instances of classes that implement the <xref:System.Web.IHttpHandler> interface.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetHandler">
+      <MemberSignature Language="C#" Value="public System.Web.IHttpHandler GetHandler (System.Web.HttpContext context, string requestType, string url, string pathTranslated);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.IHttpHandler GetHandler(class System.Web.HttpContext context, string requestType, string url, string pathTranslated) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.IHttpHandlerFactory.GetHandler(System.Web.HttpContext,System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.IHttpHandler</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Web.HttpContext" />
+        <Parameter Name="requestType" Type="System.String" />
+        <Parameter Name="url" Type="System.String" />
+        <Parameter Name="pathTranslated" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="context">An instance of the <see cref="T:System.Web.HttpContext" /> class that provides references to intrinsic server objects (for example, <see langword="Request" />, <see langword="Response" />, <see langword="Session" />, and <see langword="Server" />) used to service HTTP requests.</param>
+        <param name="requestType">The HTTP data transfer method (<see langword="GET" /> or <see langword="POST" />) that the client uses.</param>
+        <param name="url">The <see cref="P:System.Web.HttpRequest.RawUrl" /> of the requested resource.</param>
+        <param name="pathTranslated">The <see cref="P:System.Web.HttpRequest.PhysicalApplicationPath" /> to the requested resource.</param>
+        <summary>Returns an instance of a class that implements the <see cref="T:System.Web.IHttpHandler" /> interface.</summary>
+        <returns>A new <see cref="T:System.Web.IHttpHandler" /> object that processes the request.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to create custom handler objects in response to a client request. The example has two parts:  
+  
+-   A handler factory class.  
+  
+-   A Web.config file excerpt.  
+  
+ The first part of the example shows how to create custom handler objects in response to a client request for a page named either abc.aspx or xyz.aspx. The handler factory class named `hwf` creates the appropriate handler object depending on the page requested.  
+  
+ [!code-csharp[Classic IHttpHandlerFactory.GetHandler Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic IHttpHandlerFactory.GetHandler Example/CS/source.cs#1)]
+ [!code-vb[Classic IHttpHandlerFactory.GetHandler Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic IHttpHandlerFactory.GetHandler Example/VB/source.vb#1)]  
+  
+ The second part of the example shows a Web.config file excerpt. To use the above handler factory, add the following lines to the Web.config file.  
+  
+```  
+<configuration>   
+  <system.web>   
+    <httpHandlers>   
+      <add verb="*" path="abc.aspx" type="test.MyFactory,HandlerFactoryTest" />   
+      <add verb="*" path="xyz.aspx" type="test.MyFactory,HandlerFactoryTest" />   
+    </httpHandlers>   
+  </system.web>  
+</configuration>   
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReleaseHandler">
+      <MemberSignature Language="C#" Value="public void ReleaseHandler (System.Web.IHttpHandler handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReleaseHandler(class System.Web.IHttpHandler handler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.IHttpHandlerFactory.ReleaseHandler(System.Web.IHttpHandler)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handler" Type="System.Web.IHttpHandler" />
+      </Parameters>
+      <Docs>
+        <param name="handler">The <see cref="T:System.Web.IHttpHandler" /> object to reuse.</param>
+        <summary>Enables a factory to reuse an existing handler instance.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

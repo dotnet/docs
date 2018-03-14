@@ -1,0 +1,87 @@
+<Type Name="SizeToContent" FullName="System.Windows.SizeToContent">
+  <TypeSignature Language="C#" Value="public enum SizeToContent" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SizeToContent extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.SizeToContent" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Windows.Localizability(System.Windows.LocalizationCategory.None, Readability=System.Windows.Readability.Unreadable)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies how a window will automatically size itself to fit the size of its content. Used by the <see cref="P:System.Windows.Window.SizeToContent" /> property.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Height">
+      <MemberSignature Language="C#" Value="Height" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.SizeToContent Height = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.SizeToContent.Height" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.SizeToContent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that a window will automatically set its height to fit the height of its content, but not the width.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Manual">
+      <MemberSignature Language="C#" Value="Manual" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.SizeToContent Manual = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.SizeToContent.Manual" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.SizeToContent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that a window will not automatically set its size to fit the size of its content. Instead, the size of a window is determined by other properties, including <see cref="P:System.Windows.FrameworkElement.Width" />, <see cref="P:System.Windows.FrameworkElement.Height" />, <see cref="P:System.Windows.FrameworkElement.MaxWidth" />, <see cref="P:System.Windows.FrameworkElement.MaxHeight" />, <see cref="P:System.Windows.FrameworkElement.MinWidth" />, and <see cref="P:System.Windows.FrameworkElement.MinHeight" />. See [WPF Windows Overview](~/docs/framework/wpf/app-development/wpf-windows-overview.md).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Width">
+      <MemberSignature Language="C#" Value="Width" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.SizeToContent Width = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.SizeToContent.Width" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.SizeToContent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that a window will automatically set its width to fit the width of its content, but not the height.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WidthAndHeight">
+      <MemberSignature Language="C#" Value="WidthAndHeight" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.SizeToContent WidthAndHeight = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.SizeToContent.WidthAndHeight" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.SizeToContent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that a window will automatically set both its width and height to fit the width and height of its content.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

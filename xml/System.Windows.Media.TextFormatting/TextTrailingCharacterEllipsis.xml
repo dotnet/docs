@@ -1,0 +1,100 @@
+<Type Name="TextTrailingCharacterEllipsis" FullName="System.Windows.Media.TextFormatting.TextTrailingCharacterEllipsis">
+  <TypeSignature Language="C#" Value="public class TextTrailingCharacterEllipsis : System.Windows.Media.TextFormatting.TextCollapsingProperties" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TextTrailingCharacterEllipsis extends System.Windows.Media.TextFormatting.TextCollapsingProperties" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.TextTrailingCharacterEllipsis" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Media.TextFormatting.TextCollapsingProperties</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines collapsed text properties for collapsing a whole line toward the end at character granularity, and with ellipsis being the collapsed text symbol.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Line collapsing is the ability to reduce displaying space for a line by not showing part of the line's text. Depending on the collapsing style, a collapsing symbol may be shown at the location where the collapsed text occurred.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TextTrailingCharacterEllipsis (double width, System.Windows.Media.TextFormatting.TextRunProperties textRunProperties);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 width, class System.Windows.Media.TextFormatting.TextRunProperties textRunProperties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextTrailingCharacterEllipsis.#ctor(System.Double,System.Windows.Media.TextFormatting.TextRunProperties)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="width" Type="System.Double" />
+        <Parameter Name="textRunProperties" Type="System.Windows.Media.TextFormatting.TextRunProperties" />
+      </Parameters>
+      <Docs>
+        <param name="width">A <see cref="T:System.Double" /> that represents the width for which the specified collapsed text range is constrained to.</param>
+        <param name="textRunProperties">A <see cref="T:System.Windows.Media.TextFormatting.TextRunProperties" /> value that represents the set of shared text properties.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.TextFormatting.TextTrailingCharacterEllipsis" /> class by specifying collapsed text properties.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Style">
+      <MemberSignature Language="C#" Value="public override sealed System.Windows.Media.TextFormatting.TextCollapsingStyle Style { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.TextFormatting.TextCollapsingStyle Style" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextTrailingCharacterEllipsis.Style" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TextFormatting.TextCollapsingStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the style of collapsed text.</summary>
+        <value>An enumerated value of <see cref="T:System.Windows.Media.TextFormatting.TextCollapsingStyle" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Symbol">
+      <MemberSignature Language="C#" Value="public override sealed System.Windows.Media.TextFormatting.TextRun Symbol { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.TextFormatting.TextRun Symbol" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextTrailingCharacterEllipsis.Symbol" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TextFormatting.TextRun</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the text run that is used as the collapsed text symbol.</summary>
+        <value>A <see cref="T:System.Windows.Media.TextFormatting.TextRun" /> value that represents the collapsed text symbol.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Width">
+      <MemberSignature Language="C#" Value="public override sealed double Width { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Width" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextTrailingCharacterEllipsis.Width" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the width for which the specified collapsed text range is constrained to.</summary>
+        <value>A <see cref="T:System.Double" /> that represents the width.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

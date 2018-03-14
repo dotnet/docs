@@ -1,0 +1,92 @@
+<Type Name="MultipleViewPattern+MultipleViewPatternInformation" FullName="System.Windows.Automation.MultipleViewPattern+MultipleViewPatternInformation">
+  <TypeSignature Language="C#" Value="public struct MultipleViewPattern.MultipleViewPatternInformation" />
+  <TypeSignature Language="ILAsm" Value=".class nested public sequential ansi sealed beforefieldinit MultipleViewPattern/MultipleViewPatternInformation extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.MultipleViewPattern.MultipleViewPatternInformation" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationClient</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides access to the property values of a <see cref="T:System.Windows.Automation.MultipleViewPattern" /> object using its <see cref="P:System.Windows.Automation.MultipleViewPattern.Current" /> or <see cref="P:System.Windows.Automation.MultipleViewPattern.Cached" /> accessors.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CurrentView">
+      <MemberSignature Language="C#" Value="public int CurrentView { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 CurrentView" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.MultipleViewPattern.MultipleViewPatternInformation.CurrentView" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retrieves the current control-specific view.</summary>
+        <value>The integer value for the current view of the <see cref="T:System.Windows.Automation.AutomationElement" />. The default value is 0.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The collection of view identifiers is identical across instances.  
+  
+   
+  
+## Examples  
+ In the following example, an integer identifier is obtained, representing the current view for a control that supports <xref:System.Windows.Automation.MultipleViewPattern>.  
+  
+ [!code-csharp[UIAMultipleViewPattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAMultipleViewPattern_snip/CSharp/UIAMultipleViewPattern_snippets.cs#101)]
+ [!code-vb[UIAMultipleViewPattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAMultipleViewPattern_snip/VisualBasic/UIAMultipleViewPattern_snippets.vb#101)]  
+[!code-csharp[UIAMultipleViewPattern_snip#1035](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAMultipleViewPattern_snip/CSharp/UIAMultipleViewPattern_snippets.cs#1035)]
+[!code-vb[UIAMultipleViewPattern_snip#1035](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAMultipleViewPattern_snip/VisualBasic/UIAMultipleViewPattern_snippets.vb#1035)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSupportedViews">
+      <MemberSignature Language="C#" Value="public int[] GetSupportedViews ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32[] GetSupportedViews() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.MultipleViewPattern.MultipleViewPatternInformation.GetSupportedViews" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves a collection of control-specific view identifiers.</summary>
+        <returns>A collection of integer values that identify the views available for an <see cref="T:System.Windows.Automation.AutomationElement" />. The default is an empty integer array.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The collection of view identifiers is identical across instances.  
+  
+ View identifier values can be passed to <xref:System.Windows.Automation.MultipleViewPattern.GetViewName%2A>.  
+  
+   
+  
+## Examples  
+ In the following example, a collection of integer identifiers is obtained, representing the views available for a control that supports <xref:System.Windows.Automation.MultipleViewPattern>.  
+  
+ [!code-csharp[UIAMultipleViewPattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAMultipleViewPattern_snip/CSharp/UIAMultipleViewPattern_snippets.cs#101)]
+ [!code-vb[UIAMultipleViewPattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAMultipleViewPattern_snip/VisualBasic/UIAMultipleViewPattern_snippets.vb#101)]  
+[!code-csharp[UIAMultipleViewPattern_snip#1025](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAMultipleViewPattern_snip/CSharp/UIAMultipleViewPattern_snippets.cs#1025)]
+[!code-vb[UIAMultipleViewPattern_snip#1025](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAMultipleViewPattern_snip/VisualBasic/UIAMultipleViewPattern_snippets.vb#1025)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

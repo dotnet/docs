@@ -1,0 +1,10 @@
+<Page x:Class="CustomContentPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    WindowTitle="CustomContentPage" KeepAlive="True"
+    >
+    <DockPanel>
+      <TextBlock Name="textBlockLabel" DockPanel.Dock="Top"></TextBlock>
+      <Button Name="addBackEntryButton" Click="addBackEntryButton_Click">Add Back Entry</Button>
+    </DockPanel>
+</Page>

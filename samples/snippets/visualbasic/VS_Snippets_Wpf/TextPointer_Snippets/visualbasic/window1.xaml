@@ -1,0 +1,46 @@
+<Window 
+  x:Class="TextPointer_Snippets.Window1"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"    
+  Title="TextPointer_Snippets"  Loaded="WindowLoaded"
+>
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition/>
+      <RowDefinition/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition/>
+    </Grid.ColumnDefinitions>
+
+    <FlowDocumentScrollViewer
+      Name="fdsv"
+      Grid.Row="0"
+    >
+      <FlowDocument>
+        <Paragraph>
+          <Span>
+            <Run Name="bold">
+              Some text.
+            </Run><Bold>Some bold text.</Bold>
+              <InlineUIContainer>
+                <Button Click="GetXAML">GetXAML</Button>
+              </InlineUIContainer>
+          </Span>
+        </Paragraph>
+        <BlockUIContainer Name="buic">
+          <Button Click="BoldMe">BoldMe</Button>
+        </BlockUIContainer>
+      </FlowDocument>
+    </FlowDocumentScrollViewer>
+
+    <TextBox
+      Name="tb"  
+      Grid.Row="1"
+      AcceptsReturn="True"
+    >
+      
+    </TextBox>
+        
+  </Grid>
+</Window>

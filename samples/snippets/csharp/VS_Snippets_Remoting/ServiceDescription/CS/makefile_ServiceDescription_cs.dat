@@ -1,0 +1,17 @@
+cc = csc
+vb = vbc
+IISRoot = C:\InetPub\wwwroot
+
+makefile: MyOutWsdl.wsdl 
+MyOutWsdl.wsdl:ServiceDescription_Bindings.exe
+ServiceDescription_Bindings.exe: ServiceDescription.cs
+	$(cc) ServiceDescription.cs
+	ServiceDescription.exe		
+	wsdl MyOutWsdl.wsdl
+	$(cc) /t:library Service1.cs
+	if not exist $(IISRoot)\ServiceDescription md $(IISRoot)\ServiceDescription
+	if not exist $(IISRoot)\bin mkdir $(IISRoot)\bin
+	copy Service1_CS.asmx $(IISRoot)\ServiceDescription
+	copy ServiceClient.cs.aspx $(IISRoot)\ServiceDescription
+	move Service1.dll $(IISRoot)\bin
+	echo Invoke aspx file at http://localhost/ServiceDescription/ServiceClient.cs.aspx

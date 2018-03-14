@@ -1,0 +1,119 @@
+<Type Name="ICscHostObject4" FullName="Microsoft.Build.Tasks.Hosting.ICscHostObject4">
+  <TypeSignature Language="C#" Value="public interface ICscHostObject4 : Microsoft.Build.Framework.ITaskHost, Microsoft.Build.Tasks.Hosting.ICscHostObject3" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICscHostObject4 implements class Microsoft.Build.Framework.ITaskHost, class Microsoft.Build.Tasks.Hosting.ICscHostObject, class Microsoft.Build.Tasks.Hosting.ICscHostObject2, class Microsoft.Build.Tasks.Hosting.ICscHostObject3" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Hosting.ICscHostObject4" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Build.Framework.ITaskHost</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Build.Tasks.Hosting.ICscHostObject3</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0DDB496F-C93C-492C-87F1-90B6FDBAA833")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents the Csc host compiler.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Defines an interface for the Csc task to communicate with the Visual Studio IDE. In particular, the Csc task delegates the actual compilation to the IDE rather than shelling out to the command-line compilers.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="SetHighEntropyVA">
+      <MemberSignature Language="C#" Value="public bool SetHighEntropyVA (bool highEntropyVA);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetHighEntropyVA(bool highEntropyVA) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject4.SetHighEntropyVA(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="highEntropyVA" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="highEntropyVA">
+          <see langword="True" /> to set the <c>/ highentropyva</c> to indicate support of high entropy Address Space Layout Randomization (ASLR); otherwise, <see langword="False" />.</param>
+        <summary>Sets the <c>/highentropyva</c> value as specified.</summary>
+        <returns>Returns <see langword="True" /> if the method was successful.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetPlatformWith32BitPreference">
+      <MemberSignature Language="C#" Value="public bool SetPlatformWith32BitPreference (string platformWith32BitPreference);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetPlatformWith32BitPreference(string platformWith32BitPreference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject4.SetPlatformWith32BitPreference(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="platformWith32BitPreference" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="platformWith32BitPreference">
+          <see langword="true" /> to set the <c>/platform</c> value to <see langword="AnyCPU32BitPreferred" />; otherwise, <see langword="false" />.</param>
+        <summary>Sets the <c>/platform</c> value to <see langword="AnyCPU32BitPreferred" />.</summary>
+        <returns>
+          <see langword="true" /> if the method was successful.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:Microsoft.Build.Tasks.ManagedCompiler.Prefer32Bit%2A> property is set on the project, <xref:Microsoft.Build.Tasks.Hosting.ICscHostObject4.SetPlatformWith32BitPreference%2A> changes the `/platform` value from `AnyCPU` or the default value (`null` or "") to `AnyCPU32BitPreferred`. For more information, see [/platform (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/platform-compiler-option.md).  
+  
+ If the `/platform` value is set to `AnyCPU` (`/platform:AnyCPU`), your application runs as a 64-bit process whenever possible and falls back to 32-bit for 32-bit-only systems. However, you might prefer an application to run as a 32-bit process because 64-bit applications may consume more memory. The `AnyCPU32BitPreferred` setting is similar to `AnyCPU`, except that its default action is to run applications in 32-bit mode on systems that support either mode.  This setting accommodates future processors that may not fall back to 32-bit mode.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSubsystemVersion">
+      <MemberSignature Language="C#" Value="public bool SetSubsystemVersion (string subsystemVersion);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetSubsystemVersion(string subsystemVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject4.SetSubsystemVersion(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subsystemVersion" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="subsystemVersion">The subsystem version.</param>
+        <summary>Sets the subsystem version flag as specified.</summary>
+        <returns>Returns <see langword="true" /> if the method succeeds.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,10 @@
+<!--<Snippet2>-->
+
+<!-- XML fragment -->
+<!DOCTYPE book [<!ENTITY s SYSTEM "tmp/style.xml">]>
+<book genre="novel">
+  <title>Pride and Prejudice</title>
+  <misc>&s;</misc>
+</book>
+<!--</Snippet2>-->
+

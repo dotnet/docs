@@ -1,0 +1,19 @@
+﻿<Page
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  >
+
+  <!-- <SnippetTypographySnippet2> -->
+  <FlowDocument FontFamily="Palatino Linotype" FontSize="24">
+    <Paragraph Typography.Capitals="SmallCaps">
+      This example shows the use of the Capitals property
+      of the Typography object. The entirety of this paragraph
+      is displayed in small capitals letters,
+      except for the first letter of a sentence,
+      and where an uppercase letter is used. In these cases,
+      a large capital letter is used.
+    </Paragraph>
+  </FlowDocument>
+  <!-- </SnippetTypographySnippet2> -->
+
+</Page>

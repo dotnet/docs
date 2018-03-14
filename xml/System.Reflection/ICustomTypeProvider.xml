@@ -1,0 +1,35 @@
+<Type Name="ICustomTypeProvider" FullName="System.Reflection.ICustomTypeProvider">
+  <TypeSignature Language="C#" Value="public interface ICustomTypeProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICustomTypeProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.ICustomTypeProvider" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Represents an object that provides a custom type.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetCustomType">
+      <MemberSignature Language="C#" Value="public Type GetCustomType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type GetCustomType() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.ICustomTypeProvider.GetCustomType" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the custom type provided by this object.</summary>
+        <returns>The custom type.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

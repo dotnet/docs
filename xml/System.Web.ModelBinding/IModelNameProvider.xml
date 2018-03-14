@@ -1,0 +1,42 @@
+<Type Name="IModelNameProvider" FullName="System.Web.ModelBinding.IModelNameProvider">
+  <TypeSignature Language="C#" Value="public interface IModelNameProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IModelNameProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.IModelNameProvider" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a way to specify an alternate name to use for model binding instead of using the parameter name.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This interface is implemented by custom value-provider attributes that must have the ability to specify a value-provider key that is different from the parameter name.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetModelName">
+      <MemberSignature Language="C#" Value="public string GetModelName ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetModelName() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.IModelNameProvider.GetModelName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When implemented in a class, gets the model name.</summary>
+        <returns>The model name.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

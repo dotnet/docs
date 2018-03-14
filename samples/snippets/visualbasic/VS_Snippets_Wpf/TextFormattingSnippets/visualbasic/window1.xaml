@@ -1,0 +1,29 @@
+<Window x:Class="WindowsApplication1.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="TextFormatting Snippets"
+    Background="Beige"
+    >
+    <StackPanel>
+      <Button Click="OnClick">Test</Button>
+      <TextBox Name="textToFormat"
+        Width="600" Height="150" AcceptsReturn="True" 
+        TextWrapping="WrapWithOverflow">
+        The quick red fox jumped over the lazy brown dog.
+      </TextBox>
+
+      <Border Width="600" Height="400" Margin="5">
+        <Rectangle Name="r">
+          <Rectangle.Fill>
+            <DrawingBrush x:Name="myDrawingBrush" Stretch="None" 
+               AlignmentY="Top" AlignmentX="Left" >
+              <DrawingBrush.Drawing>
+                <DrawingGroup x:Name="myTextDisplay" />
+              </DrawingBrush.Drawing>
+            </DrawingBrush>
+          </Rectangle.Fill>
+        </Rectangle>
+      </Border>
+      
+    </StackPanel>
+</Window>

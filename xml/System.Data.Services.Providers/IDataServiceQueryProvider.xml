@@ -1,0 +1,197 @@
+<Type Name="IDataServiceQueryProvider" FullName="System.Data.Services.Providers.IDataServiceQueryProvider">
+  <TypeSignature Language="C#" Value="public interface IDataServiceQueryProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataServiceQueryProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Services.Providers.IDataServiceQueryProvider" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines a metadata and query source implementation for a custom data service provider.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CurrentDataSource">
+      <MemberSignature Language="C#" Value="public object CurrentDataSource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object CurrentDataSource" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.IDataServiceQueryProvider.CurrentDataSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The data source object from which data is provided.</summary>
+        <value>The data source.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOpenPropertyValue">
+      <MemberSignature Language="C#" Value="public object GetOpenPropertyValue (object target, string propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetOpenPropertyValue(object target, string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.IDataServiceQueryProvider.GetOpenPropertyValue(System.Object,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Object" />
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="target">Instance of the type that declares the open property.</param>
+        <param name="propertyName">Name of the open property.</param>
+        <summary>Gets the value of the open property.</summary>
+        <returns>The value of the open property.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOpenPropertyValues">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt; GetOpenPropertyValues (object target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt;&gt; GetOpenPropertyValues(object target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.IDataServiceQueryProvider.GetOpenPropertyValues(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="target">Instance of the type that declares the open property.</param>
+        <summary>Gets the name and values of all the properties that are defined in the given instance of an open type.</summary>
+        <returns>A collection of name and values of all the open properties.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPropertyValue">
+      <MemberSignature Language="C#" Value="public object GetPropertyValue (object target, System.Data.Services.Providers.ResourceProperty resourceProperty);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetPropertyValue(object target, class System.Data.Services.Providers.ResourceProperty resourceProperty) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.IDataServiceQueryProvider.GetPropertyValue(System.Object,System.Data.Services.Providers.ResourceProperty)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Object" />
+        <Parameter Name="resourceProperty" Type="System.Data.Services.Providers.ResourceProperty" />
+      </Parameters>
+      <Docs>
+        <param name="target">Instance of the type that declares the open property.</param>
+        <param name="resourceProperty">Value for the open property.</param>
+        <summary>Gets the value of the open property.</summary>
+        <returns>Value for the property.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetQueryRootForResourceSet">
+      <MemberSignature Language="C#" Value="public System.Linq.IQueryable GetQueryRootForResourceSet (System.Data.Services.Providers.ResourceSet resourceSet);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Linq.IQueryable GetQueryRootForResourceSet(class System.Data.Services.Providers.ResourceSet resourceSet) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.IDataServiceQueryProvider.GetQueryRootForResourceSet(System.Data.Services.Providers.ResourceSet)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Linq.IQueryable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceSet" Type="System.Data.Services.Providers.ResourceSet" />
+      </Parameters>
+      <Docs>
+        <param name="resourceSet">The resource set.</param>
+        <summary>Gets the <see cref="T:System.Linq.IQueryable`1" /> that represents the container.</summary>
+        <returns>An <see cref="T:System.Linq.IQueryable`1" /> that represents the resource set, or a <see langword="null" /> value if there is no resource set for the specified <paramref name="resourceSet" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetResourceType">
+      <MemberSignature Language="C#" Value="public System.Data.Services.Providers.ResourceType GetResourceType (object target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Services.Providers.ResourceType GetResourceType(object target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.IDataServiceQueryProvider.GetResourceType(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Providers.ResourceType</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="target">Instance to extract a resource type from.</param>
+        <summary>Gets the resource type for the instance that is specified by the parameter.</summary>
+        <returns>The <see cref="T:System.Data.Services.Providers.ResourceType" /> of the supplied object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Returns `true` if the given instance represents a collection; otherwise returns `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvokeServiceOperation">
+      <MemberSignature Language="C#" Value="public object InvokeServiceOperation (System.Data.Services.Providers.ServiceOperation serviceOperation, object[] parameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object InvokeServiceOperation(class System.Data.Services.Providers.ServiceOperation serviceOperation, object[] parameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.IDataServiceQueryProvider.InvokeServiceOperation(System.Data.Services.Providers.ServiceOperation,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceOperation" Type="System.Data.Services.Providers.ServiceOperation" />
+        <Parameter Name="parameters" Type="System.Object[]" />
+      </Parameters>
+      <Docs>
+        <param name="serviceOperation">Service operation to invoke.</param>
+        <param name="parameters">Values of parameters to pass to the service operation.</param>
+        <summary>Invokes the given service operation and returns the results.</summary>
+        <returns>The result of the service operation, or a <see langword="null" /> value for a service operation that returns <see langword="void" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsNullPropagationRequired">
+      <MemberSignature Language="C#" Value="public bool IsNullPropagationRequired { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsNullPropagationRequired" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.IDataServiceQueryProvider.IsNullPropagationRequired" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether null propagation is required in expression trees.</summary>
+        <value>A <see cref="T:System.Boolean" /> value that indicates whether null propagation is required.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

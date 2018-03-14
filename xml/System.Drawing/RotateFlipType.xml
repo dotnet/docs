@@ -1,0 +1,292 @@
+<Type Name="RotateFlipType" FullName="System.Drawing.RotateFlipType">
+  <TypeSignature Language="C#" Value="public enum RotateFlipType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RotateFlipType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.RotateFlipType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies how much an image is rotated and the axis used to flip the image.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The image is rotated in a clockwise direction.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to set the <xref:System.Drawing.Image.RotateFlip%2A> property of an <xref:System.Drawing.Image> and the <xref:System.Drawing.RotateFlipType> enumeration.  
+  
+ This example is designed to be used with a Windows Form that contains a <xref:System.Windows.Forms.PictureBox> named `PictureBox1` and a button named `Button1`. Paste the code into a form, call `InitializeBitmap` from the form's constructor or <xref:System.Windows.Forms.Form.Load> event-handling method and associate `Button1_Click` with the button's <xref:System.Windows.Forms.Control.Click> event. Ensure the file path to the bitmap is valid on your system.  
+  
+ [!code-cpp[System.Drawing.BitmapMembers#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.BitmapMembers/CPP/form1.cpp#3)]
+ [!code-csharp[System.Drawing.BitmapMembers#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.BitmapMembers/CS/form1.cs#3)]
+ [!code-vb[System.Drawing.BitmapMembers#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.BitmapMembers/VB/form1.vb#3)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Rotate180FlipNone">
+      <MemberSignature Language="C#" Value="Rotate180FlipNone" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.RotateFlipType Rotate180FlipNone = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.RotateFlipType.Rotate180FlipNone" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.RotateFlipType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a 180-degree clockwise rotation without flipping.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Rotate180FlipX">
+      <MemberSignature Language="C#" Value="Rotate180FlipX" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.RotateFlipType Rotate180FlipX = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.RotateFlipType.Rotate180FlipX" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.RotateFlipType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a 180-degree clockwise rotation followed by a horizontal flip.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Rotate180FlipXY">
+      <MemberSignature Language="C#" Value="Rotate180FlipXY" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.RotateFlipType Rotate180FlipXY = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.RotateFlipType.Rotate180FlipXY" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.RotateFlipType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a 180-degree clockwise rotation followed by a horizontal and vertical flip.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Rotate180FlipY">
+      <MemberSignature Language="C#" Value="Rotate180FlipY" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.RotateFlipType Rotate180FlipY = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.RotateFlipType.Rotate180FlipY" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.RotateFlipType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a 180-degree clockwise rotation followed by a vertical flip.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Rotate270FlipNone">
+      <MemberSignature Language="C#" Value="Rotate270FlipNone" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.RotateFlipType Rotate270FlipNone = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.RotateFlipType.Rotate270FlipNone" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.RotateFlipType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a 270-degree clockwise rotation without flipping.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Rotate270FlipX">
+      <MemberSignature Language="C#" Value="Rotate270FlipX" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.RotateFlipType Rotate270FlipX = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.RotateFlipType.Rotate270FlipX" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.RotateFlipType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a 270-degree clockwise rotation followed by a horizontal flip.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Rotate270FlipXY">
+      <MemberSignature Language="C#" Value="Rotate270FlipXY" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.RotateFlipType Rotate270FlipXY = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.RotateFlipType.Rotate270FlipXY" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.RotateFlipType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a 270-degree clockwise rotation followed by a horizontal and vertical flip.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Rotate270FlipY">
+      <MemberSignature Language="C#" Value="Rotate270FlipY" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.RotateFlipType Rotate270FlipY = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.RotateFlipType.Rotate270FlipY" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.RotateFlipType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a 270-degree clockwise rotation followed by a vertical flip.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Rotate90FlipNone">
+      <MemberSignature Language="C#" Value="Rotate90FlipNone" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.RotateFlipType Rotate90FlipNone = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.RotateFlipType.Rotate90FlipNone" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.RotateFlipType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a 90-degree clockwise rotation without flipping.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Rotate90FlipX">
+      <MemberSignature Language="C#" Value="Rotate90FlipX" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.RotateFlipType Rotate90FlipX = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.RotateFlipType.Rotate90FlipX" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.RotateFlipType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a 90-degree clockwise rotation followed by a horizontal flip.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Rotate90FlipXY">
+      <MemberSignature Language="C#" Value="Rotate90FlipXY" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.RotateFlipType Rotate90FlipXY = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.RotateFlipType.Rotate90FlipXY" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.RotateFlipType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a 90-degree clockwise rotation followed by a horizontal and vertical flip.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Rotate90FlipY">
+      <MemberSignature Language="C#" Value="Rotate90FlipY" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.RotateFlipType Rotate90FlipY = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.RotateFlipType.Rotate90FlipY" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.RotateFlipType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a 90-degree clockwise rotation followed by a vertical flip.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RotateNoneFlipNone">
+      <MemberSignature Language="C#" Value="RotateNoneFlipNone" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.RotateFlipType RotateNoneFlipNone = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.RotateFlipType.RotateNoneFlipNone" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.RotateFlipType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies no clockwise rotation and no flipping.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RotateNoneFlipX">
+      <MemberSignature Language="C#" Value="RotateNoneFlipX" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.RotateFlipType RotateNoneFlipX = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.RotateFlipType.RotateNoneFlipX" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.RotateFlipType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies no clockwise rotation followed by a horizontal flip.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RotateNoneFlipXY">
+      <MemberSignature Language="C#" Value="RotateNoneFlipXY" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.RotateFlipType RotateNoneFlipXY = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.RotateFlipType.RotateNoneFlipXY" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.RotateFlipType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies no clockwise rotation followed by a horizontal and vertical flip.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RotateNoneFlipY">
+      <MemberSignature Language="C#" Value="RotateNoneFlipY" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.RotateFlipType RotateNoneFlipY = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.RotateFlipType.RotateNoneFlipY" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.RotateFlipType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies no clockwise rotation followed by a vertical flip.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,535 @@
+<Type Name="UpperMidCodeCharts" FullName="System.Web.Security.AntiXss.UpperMidCodeCharts">
+  <TypeSignature Language="C#" Value="public enum UpperMidCodeCharts" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed UpperMidCodeCharts extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Security.AntiXss.UpperMidCodeCharts" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies values for the upper-middle region of the UTF-8 Unicode code charts, from U2DE0 to UA8DF.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Bamum">
+      <MemberSignature Language="C#" Value="Bamum" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperMidCodeCharts Bamum = int64(16777216)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperMidCodeCharts.Bamum" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Bamum code chart.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Bopomofo">
+      <MemberSignature Language="C#" Value="Bopomofo" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperMidCodeCharts Bopomofo = int64(256)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperMidCodeCharts.Bopomofo" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Bopomofo code chart.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BopomofoExtended">
+      <MemberSignature Language="C#" Value="BopomofoExtended" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperMidCodeCharts BopomofoExtended = int64(2048)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperMidCodeCharts.BopomofoExtended" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Bopomofo Extended code chart.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CjkCompatibility">
+      <MemberSignature Language="C#" Value="CjkCompatibility" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperMidCodeCharts CjkCompatibility = int64(32768)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperMidCodeCharts.CjkCompatibility" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The CJK Compatibility code chart.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CjkRadicalsSupplement">
+      <MemberSignature Language="C#" Value="CjkRadicalsSupplement" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperMidCodeCharts CjkRadicalsSupplement = int64(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperMidCodeCharts.CjkRadicalsSupplement" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The CJK Radicals Supplement code chart.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CjkStrokes">
+      <MemberSignature Language="C#" Value="CjkStrokes" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperMidCodeCharts CjkStrokes = int64(4096)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperMidCodeCharts.CjkStrokes" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The CJK Strokes code chart.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CjkSymbolsAndPunctuation">
+      <MemberSignature Language="C#" Value="CjkSymbolsAndPunctuation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperMidCodeCharts CjkSymbolsAndPunctuation = int64(32)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperMidCodeCharts.CjkSymbolsAndPunctuation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The CJK Symbols and Punctuation code chart.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CjkUnifiedIdeographs">
+      <MemberSignature Language="C#" Value="CjkUnifiedIdeographs" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperMidCodeCharts CjkUnifiedIdeographs = int64(262144)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperMidCodeCharts.CjkUnifiedIdeographs" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The CJK Unified Ideographs code chart.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CjkUnifiedIdeographsExtensionA">
+      <MemberSignature Language="C#" Value="CjkUnifiedIdeographsExtensionA" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperMidCodeCharts CjkUnifiedIdeographsExtensionA = int64(65536)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperMidCodeCharts.CjkUnifiedIdeographsExtensionA" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The CJK Unified Ideographs Extension-A code chart.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CommonIndicNumberForms">
+      <MemberSignature Language="C#" Value="CommonIndicNumberForms" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperMidCodeCharts CommonIndicNumberForms = int64(268435456)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperMidCodeCharts.CommonIndicNumberForms" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Common Indic Number Forms code chart.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CyrillicExtendedA">
+      <MemberSignature Language="C#" Value="CyrillicExtendedA" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperMidCodeCharts CyrillicExtendedA = int64(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperMidCodeCharts.CyrillicExtendedA" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Cyrillic Extended-A code chart.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CyrillicExtendedB">
+      <MemberSignature Language="C#" Value="CyrillicExtendedB" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperMidCodeCharts CyrillicExtendedB = int64(8388608)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperMidCodeCharts.CyrillicExtendedB" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Cyrillic Extended-B code chart.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EnclosedCjkLettersAndMonths">
+      <MemberSignature Language="C#" Value="EnclosedCjkLettersAndMonths" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperMidCodeCharts EnclosedCjkLettersAndMonths = int64(16384)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperMidCodeCharts.EnclosedCjkLettersAndMonths" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Enclosed CJK Letters and Months code chart.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HangulCompatibilityJamo">
+      <MemberSignature Language="C#" Value="HangulCompatibilityJamo" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperMidCodeCharts HangulCompatibilityJamo = int64(512)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperMidCodeCharts.HangulCompatibilityJamo" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Hangul Compatibility Jamo code chart.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Hiragana">
+      <MemberSignature Language="C#" Value="Hiragana" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperMidCodeCharts Hiragana = int64(64)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperMidCodeCharts.Hiragana" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Hiragana code chart.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IdeographicDescriptionCharacters">
+      <MemberSignature Language="C#" Value="IdeographicDescriptionCharacters" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperMidCodeCharts IdeographicDescriptionCharacters = int64(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperMidCodeCharts.IdeographicDescriptionCharacters" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Ideographic Description Characters code chart.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Kanbun">
+      <MemberSignature Language="C#" Value="Kanbun" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperMidCodeCharts Kanbun = int64(1024)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperMidCodeCharts.Kanbun" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Kanbun code chart.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="KangxiRadicals">
+      <MemberSignature Language="C#" Value="KangxiRadicals" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperMidCodeCharts KangxiRadicals = int64(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperMidCodeCharts.KangxiRadicals" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Kangxi Radicals code chart.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Katakana">
+      <MemberSignature Language="C#" Value="Katakana" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperMidCodeCharts Katakana = int64(128)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperMidCodeCharts.Katakana" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Katakana code chart.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="KatakanaPhoneticExtensions">
+      <MemberSignature Language="C#" Value="KatakanaPhoneticExtensions" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperMidCodeCharts KatakanaPhoneticExtensions = int64(8192)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperMidCodeCharts.KatakanaPhoneticExtensions" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Katakana Phonetic Extensions code chart.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LatinExtendedD">
+      <MemberSignature Language="C#" Value="LatinExtendedD" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperMidCodeCharts LatinExtendedD = int64(67108864)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperMidCodeCharts.LatinExtendedD" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Latin Extended-D code chart.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Lisu">
+      <MemberSignature Language="C#" Value="Lisu" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperMidCodeCharts Lisu = int64(2097152)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperMidCodeCharts.Lisu" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Lisu code chart.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ModifierToneLetters">
+      <MemberSignature Language="C#" Value="ModifierToneLetters" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperMidCodeCharts ModifierToneLetters = int64(33554432)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperMidCodeCharts.ModifierToneLetters" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Modifier Tone Letters code chart.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperMidCodeCharts None = int64(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperMidCodeCharts.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>None of the UTF-8 Unicode code charts from the upper-middle region are marked as safe.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Phagspa">
+      <MemberSignature Language="C#" Value="Phagspa" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperMidCodeCharts Phagspa = int64(536870912)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperMidCodeCharts.Phagspa" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Phags-Pa code chart.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Saurashtra">
+      <MemberSignature Language="C#" Value="Saurashtra" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperMidCodeCharts Saurashtra = int64(1073741824)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperMidCodeCharts.Saurashtra" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Saurashtra code chart.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SupplementalPunctuation">
+      <MemberSignature Language="C#" Value="SupplementalPunctuation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperMidCodeCharts SupplementalPunctuation = int64(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperMidCodeCharts.SupplementalPunctuation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Supplemental Punctuation code chart.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SylotiNagri">
+      <MemberSignature Language="C#" Value="SylotiNagri" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperMidCodeCharts SylotiNagri = int64(134217728)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperMidCodeCharts.SylotiNagri" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Syloti Nagri code chart.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Vai">
+      <MemberSignature Language="C#" Value="Vai" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperMidCodeCharts Vai = int64(4194304)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperMidCodeCharts.Vai" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Vai code chart.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="YijingHexagramSymbols">
+      <MemberSignature Language="C#" Value="YijingHexagramSymbols" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperMidCodeCharts YijingHexagramSymbols = int64(131072)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperMidCodeCharts.YijingHexagramSymbols" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Yijing Hexagram Symbols code chart.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="YiRadicals">
+      <MemberSignature Language="C#" Value="YiRadicals" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperMidCodeCharts YiRadicals = int64(1048576)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperMidCodeCharts.YiRadicals" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Yi Radicals code chart.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="YiSyllables">
+      <MemberSignature Language="C#" Value="YiSyllables" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperMidCodeCharts YiSyllables = int64(524288)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperMidCodeCharts.YiSyllables" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.AntiXss.UpperMidCodeCharts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Yi Syllables code chart.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

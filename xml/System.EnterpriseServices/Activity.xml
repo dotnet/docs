@@ -1,0 +1,173 @@
+<Type Name="Activity" FullName="System.EnterpriseServices.Activity">
+  <TypeSignature Language="C#" Value="public sealed class Activity" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Activity extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.Activity" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Creates an activity to do synchronous or asynchronous batch work that can use COM+ services without needing to create a COM+ component. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The context associated with the activity is completely determined by a <xref:System.EnterpriseServices.ServiceConfig> object.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.EnterpriseServices.Activity> class and use the synchronization service.  
+  
+ [!code-csharp[EnterpriseServices_Activity#0](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServices_Activity/CS/EnterpriseServices_Activity.cs#0)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Activity (System.EnterpriseServices.ServiceConfig cfg);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.EnterpriseServices.ServiceConfig cfg) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Activity.#ctor(System.EnterpriseServices.ServiceConfig)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="cfg" Type="System.EnterpriseServices.ServiceConfig" />
+      </Parameters>
+      <Docs>
+        <param name="cfg">A <see cref="T:System.EnterpriseServices.ServiceConfig" /> that contains the configuration information for the services to be used.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.EnterpriseServices.Activity" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Creates an <xref:System.EnterpriseServices.Activity> that is used to submit batch work to COM+ services. The context associated with the activity is completely determined by the <xref:System.EnterpriseServices.ServiceConfig> object that is passed through the `cfg` parameter.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to initialize a new instance of the <xref:System.EnterpriseServices.Activity> class.  
+  
+ [!code-csharp[EnterpriseServices_Activity#1](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServices_Activity/CS/EnterpriseServices_Activity.cs#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.PlatformNotSupportedException">
+          <see cref="T:System.EnterpriseServices.Activity" /> is not supported on the current platform.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AsynchronousCall">
+      <MemberSignature Language="C#" Value="public void AsynchronousCall (System.EnterpriseServices.IServiceCall serviceCall);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AsynchronousCall(class System.EnterpriseServices.IServiceCall serviceCall) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Activity.AsynchronousCall(System.EnterpriseServices.IServiceCall)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceCall" Type="System.EnterpriseServices.IServiceCall" />
+      </Parameters>
+      <Docs>
+        <param name="serviceCall">A <see cref="T:System.EnterpriseServices.IServiceCall" /> object that is used to implement the batch work.</param>
+        <summary>Runs the specified user-defined batch work asynchronously.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use this method.  
+  
+ [!code-csharp[EnterpriseServices_Activity#2](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServices_Activity/CS/EnterpriseServices_Activity.cs#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BindToCurrentThread">
+      <MemberSignature Language="C#" Value="public void BindToCurrentThread ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void BindToCurrentThread() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Activity.BindToCurrentThread" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Binds the user-defined work to the current thread.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.EnterpriseServices.Activity.BindToCurrentThread%2A> binds the batch work that is submitted by the <xref:System.EnterpriseServices.Activity.SynchronousCall%2A> or <xref:System.EnterpriseServices.Activity.AsynchronousCall%2A> methods to the current single-threaded apartment (STA). <xref:System.EnterpriseServices.Activity.BindToCurrentThread%2A> has no effect if the current thread is being run in the multithreaded apartment (MTA). The current thread model is determined by the configuration of the <xref:System.EnterpriseServices.ServiceConfig.ThreadPool%2A> property of the <xref:System.EnterpriseServices.ServiceConfig> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SynchronousCall">
+      <MemberSignature Language="C#" Value="public void SynchronousCall (System.EnterpriseServices.IServiceCall serviceCall);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SynchronousCall(class System.EnterpriseServices.IServiceCall serviceCall) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Activity.SynchronousCall(System.EnterpriseServices.IServiceCall)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceCall" Type="System.EnterpriseServices.IServiceCall" />
+      </Parameters>
+      <Docs>
+        <param name="serviceCall">A <see cref="T:System.EnterpriseServices.IServiceCall" /> object that is used to implement the batch work.</param>
+        <summary>Runs the specified user-defined batch work synchronously.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnbindFromThread">
+      <MemberSignature Language="C#" Value="public void UnbindFromThread ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UnbindFromThread() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Activity.UnbindFromThread" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Unbinds the batch work that is submitted by the <see cref="M:System.EnterpriseServices.Activity.SynchronousCall(System.EnterpriseServices.IServiceCall)" /> or <see cref="M:System.EnterpriseServices.Activity.AsynchronousCall(System.EnterpriseServices.IServiceCall)" /> methods from the thread on which the batch work is running.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.EnterpriseServices.Activity.UnbindFromThread%2A> has no effect if the batch work was not previously bound to a thread.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

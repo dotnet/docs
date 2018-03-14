@@ -1,0 +1,260 @@
+<Type Name="DesignerConfigurationService" FullName="System.Activities.Presentation.DesignerConfigurationService">
+  <TypeSignature Language="C#" Value="public sealed class DesignerConfigurationService" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DesignerConfigurationService extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.DesignerConfigurationService" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides configuration options for the workflow designer.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AnnotationEnabled">
+      <MemberSignature Language="C#" Value="public bool AnnotationEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AnnotationEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.DesignerConfigurationService.AnnotationEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the annotation is enabled for the Flowchart designer and the StateMachine designer.</summary>
+        <value>
+          <see langword="true" /> if the annotation is enabled; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoConnectEnabled">
+      <MemberSignature Language="C#" Value="public bool AutoConnectEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AutoConnectEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.DesignerConfigurationService.AutoConnectEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether auto-connect is enabled for the Flowchart designer and the StateMachine designer.</summary>
+        <value>
+          <see langword="true" /> if auto-connect is enabled for the Flowchart designer and the StateMachine designer; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value is `false`. But when the designer is hosted in Visual Studio, the value is set to `true` automatically.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoSplitEnabled">
+      <MemberSignature Language="C#" Value="public bool AutoSplitEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AutoSplitEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.DesignerConfigurationService.AutoSplitEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether auto-split is enabled for the Flowchart designer and the StateMachine designer.</summary>
+        <value>
+          <see langword="true" /> if auto-split is enabled for the Flowchart designer and the StateMachine designer; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value is `false`. But when the designer is hosted in Visual Studio, the value is set to `true` automatically.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoSurroundWithSequenceEnabled">
+      <MemberSignature Language="C#" Value="public bool AutoSurroundWithSequenceEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AutoSurroundWithSequenceEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.DesignerConfigurationService.AutoSurroundWithSequenceEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether auto-surround with sequence is enabled.</summary>
+        <value>
+          <see langword="true" /> if auto-surround with sequence is enabled; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackgroundValidationEnabled">
+      <MemberSignature Language="C#" Value="public bool BackgroundValidationEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool BackgroundValidationEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.DesignerConfigurationService.BackgroundValidationEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether background validation is enabled.</summary>
+        <value>
+          <see langword="true" /> if background validation is enabled; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadingFromUntrustedSourceEnabled">
+      <MemberSignature Language="C#" Value="public bool LoadingFromUntrustedSourceEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool LoadingFromUntrustedSourceEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.DesignerConfigurationService.LoadingFromUntrustedSourceEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether loading from untrusted source is enabled.</summary>
+        <value>
+          <see langword="true" /> if loading from untrusted source is enabled; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultipleItemsContextMenuEnabled">
+      <MemberSignature Language="C#" Value="public bool MultipleItemsContextMenuEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MultipleItemsContextMenuEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.DesignerConfigurationService.MultipleItemsContextMenuEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether multiple items context menu is enabled.</summary>
+        <value>
+          <see langword="true" /> if multiple items context menu is enabled; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultipleItemsDragDropEnabled">
+      <MemberSignature Language="C#" Value="public bool MultipleItemsDragDropEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MultipleItemsDragDropEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.DesignerConfigurationService.MultipleItemsDragDropEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether multiple items drag-and-drop operation is enabled.</summary>
+        <value>
+          <see langword="true" /> if multiple items drag-and-drop operation is enabled; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NamespaceConversionEnabled">
+      <MemberSignature Language="C#" Value="public bool NamespaceConversionEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool NamespaceConversionEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.DesignerConfigurationService.NamespaceConversionEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether namespace conversion is enabled.</summary>
+        <value>
+          <see langword="true" /> if namespace conversion is enabled; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PanModeEnabled">
+      <MemberSignature Language="C#" Value="public bool PanModeEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PanModeEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.DesignerConfigurationService.PanModeEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether pan mode is enabled.</summary>
+        <value>
+          <see langword="true" /> if pan mode is enabled; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RubberBandSelectionEnabled">
+      <MemberSignature Language="C#" Value="public bool RubberBandSelectionEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RubberBandSelectionEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.DesignerConfigurationService.RubberBandSelectionEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether rubber band selection is enabled.</summary>
+        <value>
+          <see langword="true" /> if rubber band selection is enabled; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetFrameworkName">
+      <MemberSignature Language="C#" Value="public System.Runtime.Versioning.FrameworkName TargetFrameworkName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.Versioning.FrameworkName TargetFrameworkName" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.DesignerConfigurationService.TargetFrameworkName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Versioning.FrameworkName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the target .NET Framework.</summary>
+        <value>The name of the target .NET Framework.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,69 @@
+<Type Name="StylusButtonCollection" FullName="System.Windows.Input.StylusButtonCollection">
+  <TypeSignature Language="C#" Value="public class StylusButtonCollection : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Input.StylusButton&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StylusButtonCollection extends System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Windows.Input.StylusButton&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.StylusButtonCollection" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Input.StylusButton&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">System.Windows.Input.StylusButton</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains a collection of <see cref="T:System.Windows.Input.StylusButton" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the <xref:System.Windows.Input.StylusButtonCollection> class.  
+  
+ [!code-csharp[StylusSnippets#14](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSnippets/CSharp/Window1.xaml.cs#14)]
+ [!code-vb[StylusSnippets#14](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSnippets/VisualBasic/Window1.xaml.vb#14)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetStylusButtonByGuid">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.StylusButton GetStylusButtonByGuid (Guid guid);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Input.StylusButton GetStylusButtonByGuid(valuetype System.Guid guid) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusButtonCollection.GetStylusButtonByGuid(System.Guid)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.StylusButton</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="guid" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="guid">The <see cref="T:System.Guid" /> that specifies the desired <see cref="T:System.Windows.Input.StylusButton" />.</param>
+        <summary>Gets the <see cref="T:System.Windows.Input.StylusButton" /> that the specified GUID identifies.</summary>
+        <returns>The <see cref="T:System.Windows.Input.StylusButton" /> of the specified GUID.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Input.StylusPointProperties> class contains a <xref:System.Windows.Input.StylusPointProperty> for the tip and barrel buttons on a tablet pen. Use the <xref:System.Windows.Input.StylusPointProperty.Id%2A> property to get the GUID associated with a button.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to get the <xref:System.Windows.Input.StylusButtonState> of the `barrel button`.  
+  
+ [!code-csharp[StylusSamples#23](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSamples/CSharp/Window1.xaml.cs#23)]
+ [!code-vb[StylusSamples#23](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSamples/VisualBasic/Window1.xaml.vb#23)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

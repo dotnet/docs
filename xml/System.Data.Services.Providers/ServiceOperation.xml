@@ -1,0 +1,243 @@
+<Type Name="ServiceOperation" FullName="System.Data.Services.Providers.ServiceOperation">
+  <TypeSignature Language="C#" Value="public class ServiceOperation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ServiceOperation extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Services.Providers.ServiceOperation" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerVisualizer("ServiceOperation={Name}")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a custom service operation.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServiceOperation (string name, System.Data.Services.Providers.ServiceOperationResultKind resultKind, System.Data.Services.Providers.ResourceType resultType, System.Data.Services.Providers.ResourceSet resultSet, string method, System.Collections.Generic.IEnumerable&lt;System.Data.Services.Providers.ServiceOperationParameter&gt; parameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.Data.Services.Providers.ServiceOperationResultKind resultKind, class System.Data.Services.Providers.ResourceType resultType, class System.Data.Services.Providers.ResourceSet resultSet, string method, class System.Collections.Generic.IEnumerable`1&lt;class System.Data.Services.Providers.ServiceOperationParameter&gt; parameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.ServiceOperation.#ctor(System.String,System.Data.Services.Providers.ServiceOperationResultKind,System.Data.Services.Providers.ResourceType,System.Data.Services.Providers.ResourceSet,System.String,System.Collections.Generic.IEnumerable{System.Data.Services.Providers.ServiceOperationParameter})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="resultKind" Type="System.Data.Services.Providers.ServiceOperationResultKind" />
+        <Parameter Name="resultType" Type="System.Data.Services.Providers.ResourceType" />
+        <Parameter Name="resultSet" Type="System.Data.Services.Providers.ResourceSet" />
+        <Parameter Name="method" Type="System.String" />
+        <Parameter Name="parameters" Type="System.Collections.Generic.IEnumerable&lt;System.Data.Services.Providers.ServiceOperationParameter&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="name">Name of the service operation.</param>
+        <param name="resultKind">
+          <see cref="T:System.Data.Services.Providers.ServiceOperationResultKind" /> that is the kind of result expected from this operation.</param>
+        <param name="resultType">
+          <see cref="T:System.Data.Services.Providers.ResourceType" /> that is the result of the operation.</param>
+        <param name="resultSet">
+          <see cref="T:System.Data.Services.Providers.ResourceSet" /> that is the result of the operation.</param>
+        <param name="method">Protocol method to which the service operation responds.</param>
+        <param name="parameters">Ordered collection of <see cref="T:System.Data.Services.Providers.ServiceOperationParameter" /> objects that are parameters for the operation.</param>
+        <summary>Creates a new instance of the service operation.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomState">
+      <MemberSignature Language="C#" Value="public object CustomState { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object CustomState" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ServiceOperation.CustomState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets custom state information about service operation.</summary>
+        <value>State information.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReadOnly">
+      <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ServiceOperation.IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates whether the service operation is read-only.</summary>
+        <value>Boolean value that indicates whether the service operation is read-only.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Method">
+      <MemberSignature Language="C#" Value="public string Method { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Method" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ServiceOperation.Method" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the method of the HTTP protocol to which the service operation responds.</summary>
+        <value>The HTTP method name.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MimeType">
+      <MemberSignature Language="C#" Value="public string MimeType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MimeType" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ServiceOperation.MimeType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>MIME-type specified on primitive results, possibly null.</summary>
+        <value>MIME-type value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ServiceOperation.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Name of service operation.</summary>
+        <value>String name.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parameters">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Services.Providers.ServiceOperationParameter&gt; Parameters { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Data.Services.Providers.ServiceOperationParameter&gt; Parameters" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ServiceOperation.Parameters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Services.Providers.ServiceOperationParameter&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Collection of in-order parameters for the service operation.</summary>
+        <value>A <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> of <see cref="T:System.Data.Services.Providers.ServiceOperationParameter" /> objects.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResourceSet">
+      <MemberSignature Language="C#" Value="public System.Data.Services.Providers.ResourceSet ResourceSet { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Services.Providers.ResourceSet ResourceSet" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ServiceOperation.ResourceSet" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Providers.ResourceSet</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the entity set from which entities are read.</summary>
+        <value>The entity set as a <see cref="T:System.Data.Services.Providers.ResourceSet" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResultKind">
+      <MemberSignature Language="C#" Value="public System.Data.Services.Providers.ServiceOperationResultKind ResultKind { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.Services.Providers.ServiceOperationResultKind ResultKind" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ServiceOperation.ResultKind" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Providers.ServiceOperationResultKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The kind of result that is expected by this service operation.</summary>
+        <value>
+          <see cref="T:System.Data.Services.Providers.ServiceOperationResultKind" /> that is the kind of result expected from this operation.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResultType">
+      <MemberSignature Language="C#" Value="public System.Data.Services.Providers.ResourceType ResultType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Services.Providers.ResourceType ResultType" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ServiceOperation.ResultType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Providers.ResourceType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Type of results returned by this service operation.</summary>
+        <value>Type of the results as a <see cref="T:System.Data.Services.Providers.ResourceType" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetReadOnly">
+      <MemberSignature Language="C#" Value="public void SetReadOnly ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetReadOnly() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.ServiceOperation.SetReadOnly" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Sets whether the service operation is read-only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the service operation is set to read-only, that is, fully initialized and validated, no more changes can be made.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

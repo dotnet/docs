@@ -1,0 +1,363 @@
+<Type Name="InvokeFunc&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,TResult&gt;" FullName="System.Activities.Expressions.InvokeFunc&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,TResult&gt;">
+  <TypeSignature Language="C#" Value="public sealed class InvokeFunc&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,TResult&gt; : System.Activities.NativeActivity&lt;TResult&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit InvokeFunc`11&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, TResult&gt; extends System.Activities.NativeActivity`1&lt;!TResult&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Expressions.InvokeFunc`11" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T1" />
+    <TypeParameter Name="T2" />
+    <TypeParameter Name="T3" />
+    <TypeParameter Name="T4" />
+    <TypeParameter Name="T5" />
+    <TypeParameter Name="T6" />
+    <TypeParameter Name="T7" />
+    <TypeParameter Name="T8" />
+    <TypeParameter Name="T9" />
+    <TypeParameter Name="T10" />
+    <TypeParameter Name="TResult" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Activities.NativeActivity&lt;TResult&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="TResult">TResult</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.ContentProperty("Func")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="T1">The type of the first <see cref="T:System.Activities.InArgument`1" /> whose value is passed to the <see cref="T:System.Activities.ActivityFunc`11" />.</typeparam>
+    <typeparam name="T2">The type of the second <see cref="T:System.Activities.InArgument`1" /> whose value is passed to the <see cref="T:System.Activities.ActivityFunc`11" />.</typeparam>
+    <typeparam name="T3">The type of the third <see cref="T:System.Activities.InArgument`1" /> whose value is passed to the <see cref="T:System.Activities.ActivityFunc`11" />.</typeparam>
+    <typeparam name="T4">The type of the fourth <see cref="T:System.Activities.InArgument`1" /> whose value is passed to the <see cref="T:System.Activities.ActivityFunc`11" />.</typeparam>
+    <typeparam name="T5">The type of the fifth <see cref="T:System.Activities.InArgument`1" /> whose value is passed to the <see cref="T:System.Activities.ActivityFunc`11" />.</typeparam>
+    <typeparam name="T6">The type of the sixth <see cref="T:System.Activities.InArgument`1" /> whose value is passed to the <see cref="T:System.Activities.ActivityFunc`11" />.</typeparam>
+    <typeparam name="T7">The type of the seventh <see cref="T:System.Activities.InArgument`1" /> whose value is passed to the <see cref="T:System.Activities.ActivityFunc`11" />.</typeparam>
+    <typeparam name="T8">The type of the eighth <see cref="T:System.Activities.InArgument`1" /> whose value is passed to the <see cref="T:System.Activities.ActivityFunc`11" />.</typeparam>
+    <typeparam name="T9">The type of the ninth <see cref="T:System.Activities.InArgument`1" /> whose value is passed to the <see cref="T:System.Activities.ActivityFunc`11" />.</typeparam>
+    <typeparam name="T10">The type of the tenth <see cref="T:System.Activities.InArgument`1" /> whose value is passed to the <see cref="T:System.Activities.ActivityFunc`11" />.</typeparam>
+    <typeparam name="TResult">The type of the return <see cref="T:System.Activities.OutArgument`1" /> whose value is returned from the <see cref="T:System.Activities.ActivityFunc`11" />.</typeparam>
+    <summary>Invokes an <see cref="T:System.Activities.ActivityFunc`11" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InvokeFunc ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.InvokeFunc`11.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Expressions.InvokeFunc`11" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Argument1">
+      <MemberSignature Language="C#" Value="public System.Activities.InArgument&lt;T1&gt; Argument1 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.InArgument`1&lt;!T1&gt; Argument1" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.InvokeFunc`11.Argument1" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Activities.RequiredArgument</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Activities.InArgument&lt;T1&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the first argument passed to the <see cref="T:System.Activities.ActivityFunc`11" />.</summary>
+        <value>The first argument passed to the <see cref="T:System.Activities.ActivityFunc`11" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Argument10">
+      <MemberSignature Language="C#" Value="public System.Activities.InArgument&lt;T10&gt; Argument10 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.InArgument`1&lt;!T10&gt; Argument10" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.InvokeFunc`11.Argument10" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Activities.RequiredArgument</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Activities.InArgument&lt;T10&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the tenth argument passed to the <see cref="T:System.Activities.ActivityFunc`11" />.</summary>
+        <value>The tenth argument passed to the <see cref="T:System.Activities.ActivityFunc`11" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Argument2">
+      <MemberSignature Language="C#" Value="public System.Activities.InArgument&lt;T2&gt; Argument2 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.InArgument`1&lt;!T2&gt; Argument2" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.InvokeFunc`11.Argument2" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Activities.RequiredArgument</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Activities.InArgument&lt;T2&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the second argument passed to the <see cref="T:System.Activities.ActivityFunc`11" />.</summary>
+        <value>The second argument passed to the <see cref="T:System.Activities.ActivityFunc`11" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Argument3">
+      <MemberSignature Language="C#" Value="public System.Activities.InArgument&lt;T3&gt; Argument3 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.InArgument`1&lt;!T3&gt; Argument3" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.InvokeFunc`11.Argument3" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Activities.RequiredArgument</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Activities.InArgument&lt;T3&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the third argument passed to the <see cref="T:System.Activities.ActivityFunc`11" />.</summary>
+        <value>The third argument passed to the <see cref="T:System.Activities.ActivityFunc`11" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Argument4">
+      <MemberSignature Language="C#" Value="public System.Activities.InArgument&lt;T4&gt; Argument4 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.InArgument`1&lt;!T4&gt; Argument4" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.InvokeFunc`11.Argument4" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Activities.RequiredArgument</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Activities.InArgument&lt;T4&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the fourth argument passed to the <see cref="T:System.Activities.ActivityFunc`11" />.</summary>
+        <value>The fourth argument passed to the <see cref="T:System.Activities.ActivityFunc`11" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Argument5">
+      <MemberSignature Language="C#" Value="public System.Activities.InArgument&lt;T5&gt; Argument5 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.InArgument`1&lt;!T5&gt; Argument5" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.InvokeFunc`11.Argument5" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Activities.RequiredArgument</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Activities.InArgument&lt;T5&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the fifth argument passed to the <see cref="T:System.Activities.ActivityFunc`11" />.</summary>
+        <value>The fifth argument passed to the <see cref="T:System.Activities.ActivityFunc`11" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Argument6">
+      <MemberSignature Language="C#" Value="public System.Activities.InArgument&lt;T6&gt; Argument6 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.InArgument`1&lt;!T6&gt; Argument6" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.InvokeFunc`11.Argument6" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Activities.RequiredArgument</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Activities.InArgument&lt;T6&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the sixth argument passed to the <see cref="T:System.Activities.ActivityFunc`11" />.</summary>
+        <value>The sixth argument passed to the <see cref="T:System.Activities.ActivityFunc`11" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Argument7">
+      <MemberSignature Language="C#" Value="public System.Activities.InArgument&lt;T7&gt; Argument7 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.InArgument`1&lt;!T7&gt; Argument7" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.InvokeFunc`11.Argument7" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Activities.RequiredArgument</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Activities.InArgument&lt;T7&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the seventh argument passed to the <see cref="T:System.Activities.ActivityFunc`11" />.</summary>
+        <value>The seventh argument passed to the <see cref="T:System.Activities.ActivityFunc`11" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Argument8">
+      <MemberSignature Language="C#" Value="public System.Activities.InArgument&lt;T8&gt; Argument8 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.InArgument`1&lt;!T8&gt; Argument8" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.InvokeFunc`11.Argument8" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Activities.RequiredArgument</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Activities.InArgument&lt;T8&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the eighth argument passed to the <see cref="T:System.Activities.ActivityFunc`11" />.</summary>
+        <value>The eighth argument passed to the <see cref="T:System.Activities.ActivityFunc`11" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Argument9">
+      <MemberSignature Language="C#" Value="public System.Activities.InArgument&lt;T9&gt; Argument9 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.InArgument`1&lt;!T9&gt; Argument9" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.InvokeFunc`11.Argument9" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Activities.RequiredArgument</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Activities.InArgument&lt;T9&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the ninth argument passed to the <see cref="T:System.Activities.ActivityFunc`11" />.</summary>
+        <value>The ninth argument passed to the <see cref="T:System.Activities.ActivityFunc`11" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="protected override void Execute (System.Activities.NativeActivityContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Execute(class System.Activities.NativeActivityContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.InvokeFunc`11.Execute(System.Activities.NativeActivityContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Activities.NativeActivityContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Func">
+      <MemberSignature Language="C#" Value="public System.Activities.ActivityFunc&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,TResult&gt; Func { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.ActivityFunc`11&lt;!T1, !T2, !T3, !T4, !T5, !T6, !T7, !T8, !T9, !T10, !TResult&gt; Func" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.InvokeFunc`11.Func" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Activities.ActivityFunc&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,TResult&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Activities.ActivityFunc`11" /> to be invoked.</summary>
+        <value>The activity function to be invoked.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCreateDynamicUpdateMap">
+      <MemberSignature Language="C#" Value="protected override void OnCreateDynamicUpdateMap (System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata metadata, System.Activities.Activity originalActivity);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnCreateDynamicUpdateMap(class System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata metadata, class System.Activities.Activity originalActivity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.InvokeFunc`11.OnCreateDynamicUpdateMap(System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata,System.Activities.Activity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="metadata" Type="System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata" />
+        <Parameter Name="originalActivity" Type="System.Activities.Activity" />
+      </Parameters>
+      <Docs>
+        <param name="metadata">To be added.</param>
+        <param name="originalActivity">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

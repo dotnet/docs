@@ -1,0 +1,17 @@
+<Namespace Name="System.Web.ClientServices.Providers">
+  <Docs>
+    <summary>The <see cref="N:System.Web.ClientServices.Providers" /> namespace contains client service providers and other classes that support access in Windows-based applications to the Microsoft Ajax authentication, roles, and profile services.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The classes in the <xref:System.Web.ClientServices.Providers> namespace include client application service providers that enable Windows-based applications to use the [!INCLUDE[ajax_current_short](~/includes/ajax-current-short-md.md)] authentication, roles, and profile services. You can enable these services and specify client service providers in your application configuration file, and then access the services through existing [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)] membership, identity, and application settings infrastructures. The client service providers also support occasional connectivity by storing and retrieving user information in a local data cache when the application is offline. For more information, see [Client Application Services](~/docs/framework/common-client-technologies/client-application-services.md).  
+  
+ To access the login service, you can use either Windows or Forms authentication by specifying the <xref:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider> or <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider> in your application configuration. Windows authentication uses the identity supplied when a user logs in to the operating system. Forms authentication requires that you to retrieve login information from the user and pass it to the service. You can do this by specifying an <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider> implementation with your <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider> configuration. The <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider.GetCredentials%2A?displayProperty=nameWithType> method returns a <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationCredentials> object that contains user login information. You can populate this object, for example, by displaying a login dialog box in the <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider.GetCredentials%2A> method.  
+  
+ To access the roles and profile services, specify the <xref:System.Web.ClientServices.Providers.ClientRoleProvider> and <xref:System.Web.ClientServices.Providers.ClientSettingsProvider> in your application configuration.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Namespace>

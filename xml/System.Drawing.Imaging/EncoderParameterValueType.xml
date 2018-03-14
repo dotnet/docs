@@ -1,0 +1,155 @@
+<Type Name="EncoderParameterValueType" FullName="System.Drawing.Imaging.EncoderParameterValueType">
+  <TypeSignature Language="C#" Value="public enum EncoderParameterValueType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EncoderParameterValueType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.EncoderParameterValueType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Used to specify the data type of the <see cref="T:System.Drawing.Imaging.EncoderParameter" /> used with the <see cref="Overload:System.Drawing.Image.Save" /> or <see cref="Overload:System.Drawing.Image.SaveAdd" /> method of an image.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ GDI+ uses image encoders to convert the images stored in <xref:System.Drawing.Bitmap> objects to various file formats. Image encoders are built into GDI+ for the BMP, JPEG, GIF, TIFF, and PNG formats. An encoder is invoked when you call the <xref:System.Drawing.Image.Save%2A> or <xref:System.Drawing.Image.SaveAdd%2A> method of a <xref:System.Drawing.Bitmap> object.  
+  
+ The <xref:System.Drawing.Imaging.EncoderParameter.NumberOfValues%2A> data member of the <xref:System.Drawing.Imaging.EncoderParameter> object indicates the length of the character string including the `null` terminator.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ValueTypeAscii">
+      <MemberSignature Language="C#" Value="ValueTypeAscii" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.EncoderParameterValueType ValueTypeAscii = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderParameterValueType.ValueTypeAscii" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Imaging.EncoderParameterValueType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the array of values is a null-terminated ASCII character string. Note that the <see langword="NumberOfValues" /> data member of the <see cref="T:System.Drawing.Imaging.EncoderParameter" /> object indicates the length of the character string including the NULL terminator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ValueTypeByte">
+      <MemberSignature Language="C#" Value="ValueTypeByte" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.EncoderParameterValueType ValueTypeByte = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderParameterValueType.ValueTypeByte" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Imaging.EncoderParameterValueType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that each value in the array is an 8-bit unsigned integer.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ValueTypeLong">
+      <MemberSignature Language="C#" Value="ValueTypeLong" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.EncoderParameterValueType ValueTypeLong = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderParameterValueType.ValueTypeLong" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Imaging.EncoderParameterValueType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that each value in the array is a 32-bit unsigned integer.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ValueTypeLongRange">
+      <MemberSignature Language="C#" Value="ValueTypeLongRange" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.EncoderParameterValueType ValueTypeLongRange = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderParameterValueType.ValueTypeLongRange" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Imaging.EncoderParameterValueType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that each value in the array is a pair of 32-bit unsigned integers. Each pair represents a range of numbers.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ValueTypeRational">
+      <MemberSignature Language="C#" Value="ValueTypeRational" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.EncoderParameterValueType ValueTypeRational = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderParameterValueType.ValueTypeRational" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Imaging.EncoderParameterValueType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that each value in the array is a pair of 32-bit unsigned integers. Each pair represents a fraction, the first integer being the numerator and the second integer being the denominator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ValueTypeRationalRange">
+      <MemberSignature Language="C#" Value="ValueTypeRationalRange" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.EncoderParameterValueType ValueTypeRationalRange = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderParameterValueType.ValueTypeRationalRange" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Imaging.EncoderParameterValueType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that each value in the array is a set of four, 32-bit unsigned integers. The first two integers represent one fraction, and the second two integers represent a second fraction. The two fractions represent a range of rational numbers. The first fraction is the smallest rational number in the range, and the second fraction is the largest rational number in the range.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ValueTypeShort">
+      <MemberSignature Language="C#" Value="ValueTypeShort" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.EncoderParameterValueType ValueTypeShort = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderParameterValueType.ValueTypeShort" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Imaging.EncoderParameterValueType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that each value in the array is a 16-bit, unsigned integer.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ValueTypeUndefined">
+      <MemberSignature Language="C#" Value="ValueTypeUndefined" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.EncoderParameterValueType ValueTypeUndefined = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderParameterValueType.ValueTypeUndefined" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Imaging.EncoderParameterValueType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the array of values is an array of bytes that has no data type defined.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,30 @@
+<Type Name="SubscribeContextCallback" FullName="System.Activities.Presentation.SubscribeContextCallback">
+  <TypeSignature Language="C#" Value="public delegate void SubscribeContextCallback(ContextItem item);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SubscribeContextCallback extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.SubscribeContextCallback" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="item" Type="System.Activities.Presentation.ContextItem" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="item">The context item that changed.</param>
+    <summary>Defines a callback method that will be invoked when a context item changes.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This callback provides a mechanism for interested parties in both the host and the workflow designer to subscribe to updates to a <xref:System.Activities.Presentation.ContextItem> published to the editing context of the workflow designer.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

@@ -1,0 +1,25 @@
+<Type Name="GetPageCompletedEventHandler" FullName="System.Windows.Documents.GetPageCompletedEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void GetPageCompletedEventHandler(object sender, GetPageCompletedEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GetPageCompletedEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Documents.GetPageCompletedEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.Documents.GetPageCompletedEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">The event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Windows.Documents.DocumentPaginator.GetPageCompleted" /> event of a <see cref="T:System.Windows.Documents.FixedDocument" /> or other classes implementing <see cref="T:System.Windows.Documents.DocumentPaginator" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

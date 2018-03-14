@@ -1,0 +1,175 @@
+<Type Name="TouchPoint" FullName="System.Windows.Input.TouchPoint">
+  <TypeSignature Language="C#" Value="public class TouchPoint : IEquatable&lt;System.Windows.Input.TouchPoint&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TouchPoint extends System.Object implements class System.IEquatable`1&lt;class System.Windows.Input.TouchPoint&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.TouchPoint" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IEquatable&lt;System.Windows.Input.TouchPoint&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents a single touch point from a multitouch message source.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TouchPoint (System.Windows.Input.TouchDevice device, System.Windows.Point position, System.Windows.Rect bounds, System.Windows.Input.TouchAction action);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Input.TouchDevice device, valuetype System.Windows.Point position, valuetype System.Windows.Rect bounds, valuetype System.Windows.Input.TouchAction action) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.TouchPoint.#ctor(System.Windows.Input.TouchDevice,System.Windows.Point,System.Windows.Rect,System.Windows.Input.TouchAction)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="device" Type="System.Windows.Input.TouchDevice" />
+        <Parameter Name="position" Type="System.Windows.Point" />
+        <Parameter Name="bounds" Type="System.Windows.Rect" />
+        <Parameter Name="action" Type="System.Windows.Input.TouchAction" />
+      </Parameters>
+      <Docs>
+        <param name="device">The touch device that generated this <see cref="T:System.Windows.Input.TouchPoint" />.</param>
+        <param name="position">The location of the touch point.</param>
+        <param name="bounds">The bounds of the area that the finger has in contact with the screen.</param>
+        <param name="action">The last action that occurred by this device at this location.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.TouchPoint" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The coordinate space of this `position` and `bounds` should be consistent.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="device" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Action">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.TouchAction Action { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Input.TouchAction Action" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.TouchPoint.Action" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.TouchAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the last action that occurred at this location.</summary>
+        <value>The last action that occurred at this location.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bounds">
+      <MemberSignature Language="C#" Value="public System.Windows.Rect Bounds { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Rect Bounds" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.TouchPoint.Bounds" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Rect</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the bounds of the area that the finger has in contact with the screen.</summary>
+        <value>The bounds of the area that the finger has in contact with the screen.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The coordinate space is defined by the provider of this object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Position">
+      <MemberSignature Language="C#" Value="public System.Windows.Point Position { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Point Position" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.TouchPoint.Position" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Point</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the location of the touch point.</summary>
+        <value>The location of the touch point.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Size">
+      <MemberSignature Language="C#" Value="public System.Windows.Size Size { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Size Size" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.TouchPoint.Size" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Size</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the size of the <see cref="P:System.Windows.Input.TouchPoint.Bounds" /> property.</summary>
+        <value>The size of the <see cref="P:System.Windows.Input.TouchPoint.Bounds" /> property.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IEquatable&lt;System.Windows.Input.TouchPoint&gt;.Equals">
+      <MemberSignature Language="C#" Value="bool IEquatable&lt;TouchPoint&gt;.Equals (System.Windows.Input.TouchPoint other);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.IEquatable&lt;System.Windows.Input.TouchPoint&gt;.Equals(class System.Windows.Input.TouchPoint other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.TouchPoint.System#IEquatable&lt;System#Windows#Input#TouchPoint&gt;#Equals(System.Windows.Input.TouchPoint)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Windows.Input.TouchPoint" />
+      </Parameters>
+      <Docs>
+        <param name="other">An object to compare with this object.</param>
+        <summary>Indicates whether the current object is equal to another <see cref="T:System.Windows.Input.TouchPoint" />.</summary>
+        <returns>
+          <see langword="true" /> if the current object is equal to the other parameter; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TouchDevice">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.TouchDevice TouchDevice { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.TouchDevice TouchDevice" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.TouchPoint.TouchDevice" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.TouchDevice</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the touch device that generated this <see cref="T:System.Windows.Input.TouchPoint" />.</summary>
+        <value>The touch device that generated this <see cref="T:System.Windows.Input.TouchPoint" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

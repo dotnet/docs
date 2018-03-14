@@ -1,0 +1,154 @@
+<Type Name="CorrelationDataDescription" FullName="System.ServiceModel.Channels.CorrelationDataDescription">
+  <TypeSignature Language="C#" Value="public abstract class CorrelationDataDescription" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit CorrelationDataDescription extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.CorrelationDataDescription" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Allows a particular channel to opt-in to providing correlation data and specify the conditions under which the data is provided, such as whether it is provided by default, optionally, on send, before send, or on receive.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected CorrelationDataDescription ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CorrelationDataDescription.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Called by derived classes to initialize the object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDefault">
+      <MemberSignature Language="C#" Value="public abstract bool IsDefault { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsDefault" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.CorrelationDataDescription.IsDefault" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, indicates whether the correlation data should be included in default generated correlation queries.</summary>
+        <value>
+          <see langword="true" /> if the correlation data should be included in default generated correlation queries; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsOptional">
+      <MemberSignature Language="C#" Value="public abstract bool IsOptional { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsOptional" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.CorrelationDataDescription.IsOptional" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, indicates whether the correlation data is optional as part of a query.</summary>
+        <value>
+          <see langword="true" /> if the correlation data is optional; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If <xref:System.ServiceModel.Channels.CorrelationDataDescription.IsOptional%2A> returns `true`, a query that includes this data is considered to be an optional component in the correlation key calculation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KnownBeforeSend">
+      <MemberSignature Language="C#" Value="public abstract bool KnownBeforeSend { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool KnownBeforeSend" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.CorrelationDataDescription.KnownBeforeSend" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, indicates whether the data is definitely known before any data is transmitted.</summary>
+        <value>
+          <see langword="true" /> if the data is known before transmission; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public abstract string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.CorrelationDataDescription.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets the name of the correlation protocol that provides the correlation data.</summary>
+        <value>The name of the correlation protocol that provides the correlation data.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReceiveValue">
+      <MemberSignature Language="C#" Value="public abstract bool ReceiveValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ReceiveValue" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.CorrelationDataDescription.ReceiveValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, indicates whether the current <see cref="T:System.ServiceModel.Channels.CorrelationDataDescription" /> is available while receiving a message.</summary>
+        <value>
+          <see langword="true" /> if the current <see cref="T:System.ServiceModel.Channels.CorrelationDataDescription" /> is available while receiving a message; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendValue">
+      <MemberSignature Language="C#" Value="public abstract bool SendValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SendValue" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.CorrelationDataDescription.SendValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, indicates whether the current <see cref="T:System.ServiceModel.Channels.CorrelationDataDescription" /> is available while sending a message.</summary>
+        <value>
+          <see langword="true" /> if the current <see cref="T:System.ServiceModel.Channels.CorrelationDataDescription" /> is available while sending a message; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,101 @@
+<Type Name="ComplexModel" FullName="System.Web.ModelBinding.ComplexModel">
+  <TypeSignature Language="C#" Value="public class ComplexModel" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ComplexModel extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.ComplexModel" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Describes a complex model, using a collection rather than individual properties as the data store.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ComplexModel (System.Web.ModelBinding.ModelMetadata modelMetadata, System.Collections.Generic.IEnumerable&lt;System.Web.ModelBinding.ModelMetadata&gt; propertyMetadata);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.ModelBinding.ModelMetadata modelMetadata, class System.Collections.Generic.IEnumerable`1&lt;class System.Web.ModelBinding.ModelMetadata&gt; propertyMetadata) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ComplexModel.#ctor(System.Web.ModelBinding.ModelMetadata,System.Collections.Generic.IEnumerable{System.Web.ModelBinding.ModelMetadata})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="modelMetadata" Type="System.Web.ModelBinding.ModelMetadata" />
+        <Parameter Name="propertyMetadata" Type="System.Collections.Generic.IEnumerable&lt;System.Web.ModelBinding.ModelMetadata&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="modelMetadata">Metadata for the model.</param>
+        <param name="propertyMetadata">Metadata for the properties of the model.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.ComplexModel" /> class.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="modelMetadata" /> or <paramref name="propertyMetadata" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ModelMetadata">
+      <MemberSignature Language="C#" Value="public System.Web.ModelBinding.ModelMetadata ModelMetadata { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.ModelBinding.ModelMetadata ModelMetadata" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ComplexModel.ModelMetadata" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.ModelBinding.ModelMetadata</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the metadata for the model.</summary>
+        <value>The metadata for the model.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyMetadata">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Web.ModelBinding.ModelMetadata&gt; PropertyMetadata { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Web.ModelBinding.ModelMetadata&gt; PropertyMetadata" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ComplexModel.PropertyMetadata" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Web.ModelBinding.ModelMetadata&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the metadata for the properties of the model.</summary>
+        <value>The metadata for the properties of the model.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Results">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;System.Web.ModelBinding.ModelMetadata,System.Web.ModelBinding.ComplexModelResult&gt; Results { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;class System.Web.ModelBinding.ModelMetadata, class System.Web.ModelBinding.ComplexModelResult&gt; Results" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ComplexModel.Results" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.Web.ModelBinding.ModelMetadata,System.Web.ModelBinding.ComplexModelResult&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection that contains entries that correspond to each property for which binding was attempted.</summary>
+        <value>Metadata for model properties for which model binding was attempted.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If binding fails for a property, the entry's value will be `null`. If binding is not attempted for a property, the dictionary will not contain an entry for that property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,58 @@
+<Type Name="TypedDataSetSchemaImporterExtensionFx35" FullName="System.Data.Design.TypedDataSetSchemaImporterExtensionFx35">
+  <TypeSignature Language="C#" Value="public class TypedDataSetSchemaImporterExtensionFx35 : System.Data.Design.TypedDataSetSchemaImporterExtension" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TypedDataSetSchemaImporterExtensionFx35 extends System.Data.Design.TypedDataSetSchemaImporterExtension" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Design.TypedDataSetSchemaImporterExtensionFx35" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Data.Design.TypedDataSetSchemaImporterExtension</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Generates internal mappings to .NET Framework types for XML schema element declarations. Expands upon <see cref="T:System.Data.Design.TypedDataSetSchemaImporterExtension" /> to provide additional functionality for typed datasets created for .NET Framework version 3.5.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `System.Data.Design.TypedDataSetSchemaImporterExtensionFx35` calls the protected constructor of <xref:System.Data.Design.TypedDataSetSchemaImporterExtension> to generate typed datasets for the .NET Framework version 3.5 and enable LINQ to DataSet and hierarchical update.  
+  
+> [!NOTE]
+>  LINQ to DataSet and hierarchical update are features that were added in [!INCLUDE[vs_orcas_long](~/includes/vs-orcas-long-md.md)].  
+>   
+>  Also see [Hierarchical Update Overview](http://msdn.microsoft.com/library/c4f8e8b9-e4a5-4a02-8462-d03d1e8222d6) and [LINQ to DataSet](~/docs/framework/data/adonet/linq-to-dataset.md).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TypedDataSetSchemaImporterExtensionFx35 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Design.TypedDataSetSchemaImporterExtensionFx35.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Design.TypedDataSetSchemaImporterExtensionFx35" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Expands upon <xref:System.Data.Design.TypedDataSetSchemaImporterExtension> to provide additional functionality for typed datasets for .NET Framework version 3.5.  
+  
+ <xref:System.Data.Design.TypedDataSetSchemaImporterExtensionFx35> calls the protected constructor of <xref:System.Data.Design.TypedDataSetSchemaImporterExtension> to generate typed datasets for .NET Framework version 3.5 and enable LINQ to DataSet and hierarchical update.  
+  
+> [!NOTE]
+>  LINQ to Dataset and hierarchical update are features in [!INCLUDE[vs_orcas_long](~/includes/vs-orcas-long-md.md)]. See [LINQ to DataSet](~/docs/framework/data/adonet/linq-to-dataset.md) and [Hierarchical Update Overview](http://msdn.microsoft.com/library/c4f8e8b9-e4a5-4a02-8462-d03d1e8222d6).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

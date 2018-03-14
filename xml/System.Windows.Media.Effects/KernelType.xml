@@ -1,0 +1,59 @@
+<Type Name="KernelType" FullName="System.Windows.Media.Effects.KernelType">
+  <TypeSignature Language="C#" Value="public enum KernelType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed KernelType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.Effects.KernelType" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Describes the kernel used to create the effect.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration specifies the curve that is used to calculate the blur.  
+  
+ **Performance Note:** A Gaussian kernel creates a higher-quality blur but if performance is a concern, use the Box kernel because it uses less calculations.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Box">
+      <MemberSignature Language="C#" Value="Box" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.Effects.KernelType Box = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.KernelType.Box" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Effects.KernelType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A simple blur created with a square distribution curve.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Gaussian">
+      <MemberSignature Language="C#" Value="Gaussian" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.Effects.KernelType Gaussian = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.KernelType.Gaussian" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Effects.KernelType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A distributed curve that creates a smooth distribution for a blur.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

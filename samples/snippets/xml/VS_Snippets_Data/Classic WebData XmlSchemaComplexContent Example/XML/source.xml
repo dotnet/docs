@@ -1,0 +1,25 @@
+<!--<Snippet2>-->
+
+<?xml version="1.0" encoding="IBM437"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:complexType name="address">
+        <xs:sequence>
+            <xs:element name="name"   type="xs:string"/>
+            <xs:element name="street" type="xs:string"/>
+            <xs:element name="city"   type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="USAddress">
+        <xs:complexContent mixed="false">
+            <xs:extension base="address">
+                <xs:sequence>
+                    <xs:element name="state" type="xs:string"/>
+                    <xs:element name="zipcode" type="xs:positiveInteger"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+</xs:schema>
+   <!--</Snippet2>-->
+

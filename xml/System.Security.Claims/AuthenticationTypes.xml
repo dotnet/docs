@@ -1,0 +1,155 @@
+<Type Name="AuthenticationTypes" FullName="System.Security.Claims.AuthenticationTypes">
+  <TypeSignature Language="C#" Value="public static class AuthenticationTypes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit AuthenticationTypes extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Claims.AuthenticationTypes" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines authentication types for the <see cref="P:System.Security.Principal.WindowsIdentity.AuthenticationType" /> property.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Basic">
+      <MemberSignature Language="C#" Value="public const string Basic;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Basic" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.AuthenticationTypes.Basic" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Basic Authentication.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Federation">
+      <MemberSignature Language="C#" Value="public const string Federation;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Federation" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.AuthenticationTypes.Federation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Federated Authentication.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Kerberos">
+      <MemberSignature Language="C#" Value="public const string Kerberos;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Kerberos" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.AuthenticationTypes.Kerberos" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Kerberos authentication.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Negotiate">
+      <MemberSignature Language="C#" Value="public const string Negotiate;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Negotiate" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.AuthenticationTypes.Negotiate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Negotiated authentication.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Password">
+      <MemberSignature Language="C#" Value="public const string Password;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Password" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.AuthenticationTypes.Password" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Username and password authenticiation.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Signature">
+      <MemberSignature Language="C#" Value="public const string Signature;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Signature" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.AuthenticationTypes.Signature" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Authentication using a digital signature.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Windows">
+      <MemberSignature Language="C#" Value="public const string Windows;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Windows" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.AuthenticationTypes.Windows" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Windows authentication.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="X509">
+      <MemberSignature Language="C#" Value="public const string X509;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string X509" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Claims.AuthenticationTypes.X509" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Authentication using an X.509 certificate.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

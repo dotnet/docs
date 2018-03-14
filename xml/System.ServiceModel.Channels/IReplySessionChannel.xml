@@ -1,0 +1,31 @@
+<Type Name="IReplySessionChannel" FullName="System.ServiceModel.Channels.IReplySessionChannel">
+  <TypeSignature Language="C#" Value="public interface IReplySessionChannel : System.ServiceModel.Channels.IReplyChannel, System.ServiceModel.Channels.ISessionChannel&lt;System.ServiceModel.Channels.IInputSession&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IReplySessionChannel implements class System.ServiceModel.Channels.IChannel, class System.ServiceModel.Channels.IReplyChannel, class System.ServiceModel.Channels.ISessionChannel`1&lt;class System.ServiceModel.Channels.IInputSession&gt;, class System.ServiceModel.ICommunicationObject" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.IReplySessionChannel" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ServiceModel.Channels.IReplyChannel</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ServiceModel.Channels.ISessionChannel&lt;System.ServiceModel.Channels.IInputSession&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Defines the interface to associate a reply channel with a session</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Channels.IReplySessionChannel> interface indicates that an <xref:System.ServiceModel.Channels.IReplyChannel> implements <xref:System.ServiceModel.Channels.IInputSession> semantics.  
+  
+ The <xref:System.ServiceModel.Channels.IInputSession> associated with its <xref:System.ServiceModel.Channels.IReplySessionChannel> can be retrieved through the <xref:System.ServiceModel.Channels.ISessionChannel%601.Session%2A> property.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

@@ -1,0 +1,81 @@
+<Type Name="RuleInvokeAttribute" FullName="System.Workflow.Activities.Rules.RuleInvokeAttribute">
+  <TypeSignature Language="C#" Value="public sealed class RuleInvokeAttribute : System.Workflow.Activities.Rules.RuleAttribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RuleInvokeAttribute extends System.Workflow.Activities.Rules.RuleAttribute" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RuleInvokeAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Workflow.Activities.Rules.RuleAttribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Method | System.AttributeTargets.Property, AllowMultiple=true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Indicates that a method is invoked by a condition. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This attribute is used to support a forward chaining model that will cause the reevaluation of rules based on state change. The <xref:System.Workflow.Activities.Rules.RuleReadAttribute>, <xref:System.Workflow.Activities.Rules.RuleInvokeAttribute>, and <xref:System.Workflow.Activities.Rules.RuleWriteAttribute> classes each indicate the properties used to read a condition, write an action, and invoke a method. These attributes enable the workflow to only reevaluate rules that will change the final output.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates proper usage of the <xref:System.Workflow.Activities.Rules.RuleInvokeAttribute>.  
+  
+```csharp  
+[RuleInvokeAttribute("UpdateAttributeValue")]  
+  
+bool DoSomething()  
+{  
+    return attributevalue();  
+}  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RuleInvokeAttribute (string methodInvoked);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string methodInvoked) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleInvokeAttribute.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="methodInvoked" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="methodInvoked">The method invoked by the rule.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleInvokeAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MethodInvoked">
+      <MemberSignature Language="C#" Value="public string MethodInvoked { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MethodInvoked" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RuleInvokeAttribute.MethodInvoked" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the method invoked by the condition.</summary>
+        <value>The method invoked by the condition.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

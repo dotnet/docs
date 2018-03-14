@@ -1,0 +1,89 @@
+<Canvas
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="TabControlGrid.Pane1"
+>
+
+  <Grid Name="grid" ShowGridLines ="false" Background ="White">
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="300"/>
+      <ColumnDefinition Width="250"/>
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+    </Grid.RowDefinitions>
+
+    <TextBlock Margin="10, 10, 3, 3" Grid.Column="0" Grid.Row="0" FontSize="24">
+      Tab Control Styles
+    </TextBlock>
+    <TextBlock Margin="10, 10, 3, 3" Grid.Column="0" Grid.Row="1" FontSize="14" 
+          Grid.ColumnSpan="2">
+      The following tab controls are created using styles.
+    </TextBlock>
+
+    <DockPanel Margin="30, 10, 3, 3" Grid.Column="0" Grid.Row="2">
+      <TabControl Height="50" Style="{StaticResource SimpleTabControl}">
+        <TabControl.Background>
+          <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+            <LinearGradientBrush.GradientStops>
+              <GradientStop Offset="0.0" Color="Pink"/>
+              <GradientStop Offset="1.0" Color="Red"/>
+            </LinearGradientBrush.GradientStops>
+          </LinearGradientBrush>
+        </TabControl.Background>
+        <TabItem Header="Background" IsSelected="true"></TabItem>
+        <TabItem Header="Foreground"></TabItem>
+        <TabItem Header="BorderBrush"></TabItem>
+      </TabControl>
+    </DockPanel>
+    <TextBlock Margin="10, 10, 3, 3" Grid.Column="1" Grid.Row="2" FontSize="12" 
+        VerticalAlignment="Center" TextWrapping="WrapWithOverflow">
+      Creates a tab control with the tabs on the top and a linear gradiant
+      brush as the background.
+    </TextBlock>
+
+    <DockPanel Margin="30, 10, 3, 3" Grid.Column="0" Grid.Row="3">
+      <TabControl TabStripPlacement="Left">
+        <TabItem Header="Background" Style="{StaticResource SimpleTabItem}">
+        </TabItem>
+        <TabItem Header="Foreground" Style="{StaticResource SimpleTabItem}">
+        </TabItem>
+        <TabItem Header="BorderBrush" Style="{StaticResource SimpleTabItem}">
+        </TabItem>
+      </TabControl>
+    </DockPanel>
+    <TextBlock Margin="10, 10, 3, 3" Grid.Column="1" Grid.Row="3" FontSize="12" 
+        VerticalAlignment="Center" TextWrapping="WrapWithOverflow">
+      Styles the tab items by changing the background color and font weight.
+    </TextBlock>
+
+    <DockPanel Margin="30, 10, 3, 3" Grid.Column="0" Grid.Row="4">
+      <TabControl TabStripPlacement="Bottom">
+        <!--<Snippet4>-->
+        <TabItem Header="Background" IsSelected="true" Style="{StaticResource Triggers}">
+        </TabItem>
+        <!--</Snippet4>-->
+        <TabItem Header="Foreground" Style="{StaticResource Triggers}"></TabItem>
+        <TabItem Header="BorderBrush" Style="{StaticResource Triggers}"></TabItem>
+      </TabControl>
+    </DockPanel>
+    <TextBlock Margin="10, 10, 3, 3" Grid.Column="1" Grid.Row="4" FontSize="12"
+         VerticalAlignment="Center" TextWrapping="WrapWithOverflow">
+      Changes the appearance of the tab items in response to a mouse over event.
+    </TextBlock>
+
+  </Grid>
+
+</Canvas>

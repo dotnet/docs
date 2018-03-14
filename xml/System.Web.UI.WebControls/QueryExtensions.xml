@@ -1,0 +1,51 @@
+<Type Name="QueryExtensions" FullName="System.Web.UI.WebControls.QueryExtensions">
+  <TypeSignature Language="C#" Value="public static class QueryExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit QueryExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.QueryExtensions" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides an extension method for objects that implement the <see cref="T:System.Linq.IQueryable`1" /> interface.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="SortBy&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Linq.IQueryable&lt;T&gt; SortBy&lt;T&gt; (this System.Linq.IQueryable&lt;T&gt; source, string sortExpression) where T : class;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.IQueryable`1&lt;!!T&gt; SortBy&lt;class T&gt;(class System.Linq.IQueryable`1&lt;!!T&gt; source, string sortExpression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.QueryExtensions.SortBy``1(System.Linq.IQueryable{``0},System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Linq.IQueryable&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="System.Linq.IQueryable&lt;T&gt;" RefType="this" />
+        <Parameter Name="sortExpression" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The generic type of the object.</typeparam>
+        <param name="source">The object to sort.</param>
+        <param name="sortExpression">The sort expression.</param>
+        <summary>Specifies a sort order.</summary>
+        <returns>The sorted version of the <paramref name="source" /> object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

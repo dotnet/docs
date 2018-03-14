@@ -1,0 +1,101 @@
+<Type Name="FrameworkCompatibilityPreferences" FullName="System.Windows.FrameworkCompatibilityPreferences">
+  <TypeSignature Language="C#" Value="public static class FrameworkCompatibilityPreferences" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed FrameworkCompatibilityPreferences extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.FrameworkCompatibilityPreferences" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains properties that specify how an application should behave relative to WPF features that are in the PresentationFramework assembly.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AreInactiveSelectionHighlightBrushKeysSupported">
+      <MemberSignature Language="C#" Value="public static bool AreInactiveSelectionHighlightBrushKeysSupported { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool AreInactiveSelectionHighlightBrushKeysSupported" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkCompatibilityPreferences.AreInactiveSelectionHighlightBrushKeysSupported" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the application should use the <see cref="P:System.Windows.SystemColors.InactiveSelectionHighlightBrush" /> and <see cref="P:System.Windows.SystemColors.InactiveSelectionHighlightTextBrush" /> properties for the colors of inactive selected items.</summary>
+        <value>
+          <see langword="true" /> if the application should use the <see cref="P:System.Windows.SystemColors.InactiveSelectionHighlightBrush" /> and <see cref="P:System.Windows.SystemColors.InactiveSelectionHighlightTextBrush" /> properties for the colors of inactive selected items; otherwise, <see langword="false" /></value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value of this property depends which version of WPF that your app targets.  If your app targets WPF 4.0 or earlier, the default is `false`.  If your app targets WPF 4.5, the default is `true`.  If you use this property to change the behavior of WPF, you must change the property’s value early in the app’s lifetime, such in the constructor of the class that inherits from Application.  After the value is read, you cannot change it again.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeepTextBoxDisplaySynchronizedWithTextProperty">
+      <MemberSignature Language="C#" Value="public static bool KeepTextBoxDisplaySynchronizedWithTextProperty { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool KeepTextBoxDisplaySynchronizedWithTextProperty" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkCompatibilityPreferences.KeepTextBoxDisplaySynchronizedWithTextProperty" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether a data-bound <see cref="T:System.Windows.Controls.TextBox" /> should display a string that is identical to the value of the source its <see cref="P:System.Windows.Controls.TextBox.Text" /> property</summary>
+        <value>
+          <see langword="true" /> if a data-bound <see cref="T:System.Windows.Controls.TextBox" /> should display a string that is identical to the value of the source its <see cref="P:System.Windows.Controls.TextBox.Text" /> property; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value of this property depends which version of WPF that your app targets.  If your app targets WPF 4.0 or earlier, the default is `false`.  If your app targets WPF 4.5, the default is `true`.  If you use this property to change the behavior of WPF, you must change the property’s value early in the app’s lifetime, such in the constructor of the class that inherits from Application.  After the value is read, you cannot change it again.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldThrowOnCopyOrCutFailure">
+      <MemberSignature Language="C#" Value="public static bool ShouldThrowOnCopyOrCutFailure { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool ShouldThrowOnCopyOrCutFailure" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkCompatibilityPreferences.ShouldThrowOnCopyOrCutFailure" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether a failed copy or cut operation in a <see cref="T:System.Windows.Controls.Primitives.TextBoxBase" /> instance results in a <see cref="T:System.Runtime.InteropServices.ExternalException" />.</summary>
+        <value>
+          <see langword="true" /> if a failed copy or cut operation in a <see cref="T:System.Windows.Controls.Primitives.TextBoxBase" /> instance results in a <see cref="T:System.Runtime.InteropServices.ExternalException" />; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a clipboard operation fails, such as with a **HRESULT 0x800401D0 (CLIPBRD_E_CANT_OPEN)** error, a corresponding <xref:System.Runtime.InteropServices.ExternalException> (which is a type of ExternalException) is thrown.  
+  
+ Because the Win32 `OpenClipboard` API acts globally, well-written applications should call the corresponding `CloseClipboard` API as soon as they have completed their clipboard operations. Otherwise, other applications running in the same session will be unable to access clipboard functions.  
+  
+ In WPF, such a denial of access to the clipboard is normally ignored silently. However, applications can opt to receive an `ExternalException` upon failure by setting the <xref:System.Windows.FrameworkCompatibilityPreferences.ShouldThrowOnCopyOrCutFailure%2A> flag to `true`. However, opting to receive exceptions also requires the application to handle <xref:System.Windows.Input.ApplicationCommands.Cut%2A> and <xref:System.Windows.Input.ApplicationCommands.Copy%2A> RoutedUICommands through a <xref:System.Windows.Input.CommandBinding>, and then apply that binding to all TextBoxBase controls (<xref:System.Windows.Controls.TextBox> and <xref:System.Windows.Controls.RichTextBox>)  in the application. The application should ensure that it handles ExternalExceptions resulting from copy and cut operations in the CommandBinding's Executed handler.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

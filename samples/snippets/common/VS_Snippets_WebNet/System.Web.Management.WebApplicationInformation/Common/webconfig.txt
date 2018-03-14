@@ -1,0 +1,36 @@
+<!-- Standard settings -->
+<healthMonitoring 
+  enabled="true" heartBeatInterval="0">
+
+    <rules>
+     <add 
+       name="All Errors Default"
+       eventName="All Errors"
+       provider="EventLogProvider"
+       profile="Default"
+       minInterval="00:01:00" />
+    </rules>
+
+</healthMonitoring>
+
+
+
+<!-- Custom settings -->
+<healthMonitoring 
+  enabled="true" heartBeatInterval="0">
+
+    <eventMappings>
+      <add  
+        name="SampleApplicationInformation" 
+        type="SamplesAspNet.SampleWebApplicationInformation, webapplicationinformation, Version=1.0.1585.27289, Culture=neutral, PublicKeyToken=3648e5c763a8239f, processorArchitecture=MSIL"/>
+    </eventMappings>
+  
+    <rules>
+       <add 
+         name="Custom Application Information"
+         eventName="SampleApplicationInformation" 
+         provider="EventLogProvider"  
+         profile="Default"/>
+    </rules>
+
+</healthMonitoring>

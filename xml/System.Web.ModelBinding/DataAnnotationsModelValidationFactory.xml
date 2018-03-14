@@ -1,0 +1,28 @@
+<Type Name="DataAnnotationsModelValidationFactory" FullName="System.Web.ModelBinding.DataAnnotationsModelValidationFactory">
+  <TypeSignature Language="C#" Value="public delegate System.Web.ModelBinding.ModelValidator DataAnnotationsModelValidationFactory(ModelMetadata metadata, ModelBindingExecutionContext context, ValidationAttribute attribute);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataAnnotationsModelValidationFactory extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.DataAnnotationsModelValidationFactory" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="metadata" Type="System.Web.ModelBinding.ModelMetadata" />
+    <Parameter Name="context" Type="System.Web.ModelBinding.ModelBindingExecutionContext" />
+    <Parameter Name="attribute" Type="System.ComponentModel.DataAnnotations.ValidationAttribute" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Web.ModelBinding.ModelValidator</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="metadata">To be added.</param>
+    <param name="context">To be added.</param>
+    <param name="attribute">To be added.</param>
+    <summary>Represents the method that creates a <see cref="T:System.Web.ModelBinding.DataAnnotationsModelValidatorProvider" /> instance.</summary>
+    <returns>To be added.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

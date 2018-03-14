@@ -1,0 +1,67 @@
+<Type Name="SrgsElement" FullName="System.Speech.Recognition.SrgsGrammar.SrgsElement">
+  <TypeSignature Language="C#" Value="public abstract class SrgsElement : MarshalByRefObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit SrgsElement extends System.MarshalByRefObject" />
+  <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.SrgsGrammar.SrgsElement" />
+  <AssemblyInfo>
+    <AssemblyName>System.Speech</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.MarshalByRefObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerDisplay("SrgsElement Children:[{_items.Count}]")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(System.Speech.Recognition.SrgsGrammar.SrgsElement/SrgsElementDebugDisplay))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines the base class for classes in the <see cref="N:System.Speech.Recognition.SrgsGrammar" /> namespace that correspond to the elements in an SRGS grammar.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Speech.Recognition.SrgsGrammar.SrgsElement> class is the base class for the following classes, which correspond to elements defined in the [Speech Recognition Grammar Specification (SRGS) Version 1.0](http://go.microsoft.com/fwlink/?LinkId=201761):  
+  
+-   <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem>  
+  
+-   <xref:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag>  
+  
+-   <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf>  
+  
+-   <xref:System.Speech.Recognition.SrgsGrammar.SrgsRuleRef>  
+  
+-   <xref:System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag>  
+  
+-   <xref:System.Speech.Recognition.SrgsGrammar.SrgsToken>  
+  
+ Two additional classes inherit from <xref:System.Speech.Recognition.SrgsGrammar.SrgsElement> and represent the text contained within the classes listed above (SrgsText), and recognition matching modes (SrgsSubset):  
+  
+-   <xref:System.Speech.Recognition.SrgsGrammar.SrgsSubset>  
+  
+-   <xref:System.Speech.Recognition.SrgsGrammar.SrgsText>  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected SrgsElement ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsElement.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsElement" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

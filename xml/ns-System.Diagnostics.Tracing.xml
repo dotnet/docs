@@ -1,0 +1,13 @@
+<Namespace Name="System.Diagnostics.Tracing">
+  <Docs>
+    <summary>The <see cref="N:System.Diagnostics.Tracing" /> namespace provides types and members that enable you to create strongly typed events to be captured by event tracing for Windows (ETW).</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A strongly typed event is identified by name and contains payload descriptions. You can discover the list of events that a program can produce by using reflection.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Namespace>

@@ -1,0 +1,67 @@
+﻿<Window x:Class="MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <DrawingImage x:Key="PlayImage">
+            <DrawingImage.Drawing>
+                <DrawingGroup>
+                    <DrawingGroup.Children>
+                        <GeometryDrawing Brush="Green" Geometry="F1 M 50,25L 0,0L 0,50L 50,25 Z "/>
+                    </DrawingGroup.Children>
+                </DrawingGroup>
+            </DrawingImage.Drawing>
+        </DrawingImage>
+        <DrawingImage x:Key="StopImage">
+            <DrawingImage.Drawing>
+                <DrawingGroup>
+                    <DrawingGroup.Children>
+                        <GeometryDrawing Brush="Gray" Geometry="F1 M 0,0L 50,0L 50,50L 0,50L 0,0 Z "/>
+                    </DrawingGroup.Children>
+                </DrawingGroup>
+            </DrawingImage.Drawing>
+        </DrawingImage>
+    </Window.Resources>
+    <Window.CommandBindings>
+        <CommandBinding Command="MediaCommands.Play"
+                  Executed="StartCommand_Executed"
+                  CanExecute="StartCommand_CanExecute"/>
+        <CommandBinding Command="MediaCommands.Stop"
+                  Executed="StopCommand_Executed"
+                  CanExecute="StopCommand_CanExecute"/>
+    </Window.CommandBindings>
+
+    <Window.TaskbarItemInfo>
+        <TaskbarItemInfo x:Name="taskBarItemInfo1" 
+                         Overlay="{StaticResource ResourceKey=StopImage}"
+                         ThumbnailClipMargin="80,0,80,140"
+                         Description="Taskbar Item Info Sample">
+            <TaskbarItemInfo.ThumbButtonInfos>
+                <ThumbButtonInfoCollection>
+                    <ThumbButtonInfo
+                        DismissWhenClicked="False"
+                        Command="MediaCommands.Play"
+                        CommandTarget="{Binding ElementName=btnPlay}"
+                        Description="Play"
+                        ImageSource="{StaticResource ResourceKey=PlayImage}"/>
+                    <ThumbButtonInfo
+                        DismissWhenClicked="True"
+                        Command="MediaCommands.Stop"
+                        CommandTarget="{Binding ElementName=btnStop}"
+                        Description="Stop"
+                        ImageSource="{StaticResource ResourceKey=StopImage}"/>
+                </ThumbButtonInfoCollection>
+            </TaskbarItemInfo.ThumbButtonInfos>
+        </TaskbarItemInfo>
+    </Window.TaskbarItemInfo>
+
+    <Grid>
+        <StackPanel>
+            <TextBlock x:Name="tbCount" FontSize="72" HorizontalAlignment="Center"/>
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="btnPlay" Content="Play" Command="MediaCommands.Play" />
+                <Button x:Name="btnStop" Content="Stop" Command="MediaCommands.Stop" />
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,87 @@
+<Type Name="BookmarkOptions" FullName="System.Activities.BookmarkOptions">
+  <TypeSignature Language="C#" Value="public enum BookmarkOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BookmarkOptions extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.BookmarkOptions" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the options for a <see cref="T:System.Activities.Bookmark" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="MultipleResume">
+      <MemberSignature Language="C#" Value="MultipleResume" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.BookmarkOptions MultipleResume = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.BookmarkOptions.MultipleResume" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.BookmarkOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.Activities.Bookmark" /> that can be resumed multiple times.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, the workflow runtime removes a pending bookmark from its bookmarks table when resuming the bookmark. However if the bookmark is specified as MultipleResume, then the bookmark is not removed from the table and the same bookmark can be resumed multiple times. An example usage of MultipleResume is by looping activities such as <xref:System.Activities.While>, <xref:System.Activities.ForEach%601>, and <xref:System.Activities.Flowchart>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NonBlocking">
+      <MemberSignature Language="C#" Value="NonBlocking" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.BookmarkOptions NonBlocking = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.BookmarkOptions.NonBlocking" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.BookmarkOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.Activities.Bookmark" /> that does not block the workflow.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, the workflow runtime does not consider an activity to have completed execution if it has pending bookmarks. However, if a bookmark is specified as NonBlocking at creation time, the workflow runtime allows the activity to complete execution even if it has pending NonBlocking bookmarks,  provided it has no other pending work.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.BookmarkOptions None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.BookmarkOptions.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.BookmarkOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Default <see cref="T:System.Activities.Bookmark" /> options,</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,21 @@
+<Page  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  x:Class="SDKSample.SampleViewer"
+  WindowTitle="Drawing Misc Snippets">
+  <DockPanel Background="White">
+    <TabControl>
+      <TabItem Header="Pen Example">
+        <Frame Source="PenExample.xaml" Background="White" />
+      </TabItem>    
+      <TabItem Header="Pen MiterLimit Example">
+        <Frame Source="PenMiterLimitExample.xaml" Background="White" />
+      </TabItem>
+      <TabItem Header="DashStyle Example">
+        <Frame Source="DashStyleExample.xaml" Background="White" />
+      </TabItem> 
+      <TabItem Header="Pen Start and End LineCap Example">
+        <Frame Source="PenStartEndLineCapExample.xaml" Background="White" />
+      </TabItem>
+    </TabControl>
+  </DockPanel>
+</Page>

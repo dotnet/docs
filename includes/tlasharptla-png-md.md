@@ -1,0 +1,1 @@
+Portable Network Graphics (PNG)

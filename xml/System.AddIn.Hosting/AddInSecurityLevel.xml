@@ -1,0 +1,111 @@
+<Type Name="AddInSecurityLevel" FullName="System.AddIn.Hosting.AddInSecurityLevel">
+  <TypeSignature Language="C#" Value="public enum AddInSecurityLevel" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed AddInSecurityLevel extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.AddIn.Hosting.AddInSecurityLevel" />
+  <AssemblyInfo>
+    <AssemblyName>System.AddIn</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the trust level that is granted to the application domain that an add-in is loaded into.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The add-in system activates the add-in with the permission set that corresponds to the trust level specified for the add-in's application domain. That permission set is defined by the common language runtime's code access security (CAS) configuration.  
+  
+ The values of this enumeration cannot be combined by using the bitwise OR operation.  
+  
+   
+  
+## Examples  
+ The following example activates an add-in with a specified trust level.  
+  
+ [!code-csharp[AddInP3Host#5](~/samples/snippets/csharp/VS_Snippets_CLR/addinP3Host/cs/P3Host.cs#5)]
+ [!code-vb[AddInP3Host#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/addinP3Host/vb/p3host.vb#5)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FullTrust">
+      <MemberSignature Language="C#" Value="FullTrust" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AddIn.Hosting.AddInSecurityLevel FullTrust = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.AddIn.Hosting.AddInSecurityLevel.FullTrust" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AddIn.Hosting.AddInSecurityLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Use the full trust security level for add-ins that are allowed to read and write to the local file system, create network connections, and read from the registry. This security level grants full access to the add-in's code access security (CAS) by applying the <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /> field.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Host">
+      <MemberSignature Language="C#" Value="Host" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AddIn.Hosting.AddInSecurityLevel Host = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.AddIn.Hosting.AddInSecurityLevel.Host" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AddIn.Hosting.AddInSecurityLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Use the host security level to give the add-in the same permissions currently granted to the hosting code.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This setting has two purposes:  
+  
+-   It represents the maximum permission set a host can grant to its add-ins.  
+  
+-   It allows a ClickOnce or an Extensible Application Markup Language (XAML) Browser Application (XBAP) host to propagate its site of origin to its add-ins, which enables them to contact the server.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Internet">
+      <MemberSignature Language="C#" Value="Internet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AddIn.Hosting.AddInSecurityLevel Internet = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.AddIn.Hosting.AddInSecurityLevel.Internet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AddIn.Hosting.AddInSecurityLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Use the Internet security level for add-ins that have a low trust level.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Intranet">
+      <MemberSignature Language="C#" Value="Intranet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AddIn.Hosting.AddInSecurityLevel Intranet = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.AddIn.Hosting.AddInSecurityLevel.Intranet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AddIn.Hosting.AddInSecurityLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Use the Intranet security level for add-ins that are located on a company's intranet. These add-ins can have a greater trust level because the servers and information are within a company's firewall.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

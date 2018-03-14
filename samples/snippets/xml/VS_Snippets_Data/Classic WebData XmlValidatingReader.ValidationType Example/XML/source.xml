@@ -1,0 +1,84 @@
+<!--<Snippet2>-->
+
+<?xml version='1.0'?>
+<bookstore xmlns="x-schema:schema1.xdr">
+  <book genre="novel" style="hardcover">
+    <title>The Handmaid's Tale</title>
+    <author>
+      <first-name>Margaret</first-name>
+      <last-name>Atwood</last-name>
+    </author>
+    <price>19.95</price>
+  </book>
+  <book genre="novel" style="other">
+    <title>The Poisonwood Bible</title>
+    <author>
+      <first-name>Barbara</first-name>
+      <last-name>Kingsolver</last-name>
+    </author>
+    <price>11.99</price>
+  </book>
+</bookstore>
+<!--</Snippet2>-->
+<!--<Snippet3>-->
+
+<?xml version="1.0"?>
+ <Schema xmlns="urn:schemas-microsoft-com:xml-data"
+         xmlns:dt="urn:schemas-microsoft-com:datatypes">
+   <ElementType name="first-name" content="textOnly"/>
+   <ElementType name="last-name" content="textOnly"/>
+   <ElementType name="name" content="textOnly"/>
+   <ElementType name="price" content="textOnly" dt:type="fixed.14.4"/>
+   <ElementType name="author" content="eltOnly" order="one">
+     <group order="seq">
+       <element type="name"/>
+     </group>
+     <group order="seq">
+       <element type="first-name"/>
+       <element type="last-name"/>
+     </group>
+   </ElementType>
+   <ElementType name="title" content="textOnly"/>
+   <AttributeType name="genre" dt:type="string"/>
+   <AttributeType name="style" dt:type="enumeration"
+         dt:values="paperback hardcover"/>
+   <ElementType name="book" content="eltOnly">
+     <attribute type="genre" required="yes"/>
+     <attribute type="style" required="yes"/>
+     <element type="title"/>
+     <element type="author"/>
+     <element type="price"/>
+   </ElementType>
+   <ElementType name="bookstore" content="eltOnly">
+     <element type="book"/>
+   </ElementType>
+ </Schema>
+<!--</Snippet3>-->
+<!--<Snippet4>-->
+
+<!--XML file using a DTD-->
+<!DOCTYPE bookstore [
+  <!ELEMENT bookstore (cd)*> 
+  <!ELEMENT cd (title,artist,price)>
+  <!ATTLIST cd genre CDATA #REQUIRED>
+  <!ELEMENT title (#PCDATA)>
+  <!ELEMENT artist (#PCDATA)>
+  <!ELEMENT price (#PCDATA)>]>
+<bookstore>
+  <cd genre="alternative"  ISBN="2-3631-4">
+    <title>Americana</title>
+    <artist>Offspring</artist>
+    <price>16.95</price>
+  </cd>
+</bookstore>
+<!--</Snippet4>-->
+<!--<Snippet5>-->
+
+<?xml version='1.0' ?>
+<!DOCTYPE book [<!ENTITY h 'hardcover'>]>
+<book>
+  <title>Pride And Prejudice</title>
+  <misc>&h;</misc>
+</book>
+<!--</Snippet5>-->
+

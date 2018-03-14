@@ -1,0 +1,57 @@
+<Type Name="RenderMode" FullName="System.Windows.Interop.RenderMode">
+  <TypeSignature Language="C#" Value="public enum RenderMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RenderMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Interop.RenderMode" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the rendering preference.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The SoftwareOnly preference overrides the <xref:System.Windows.Interop.HwndTarget.RenderMode%2A> setting.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Interop.RenderMode Default = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Interop.RenderMode.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Interop.RenderMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)] rendering is in hardware, if possible; software otherwise.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SoftwareOnly">
+      <MemberSignature Language="C#" Value="SoftwareOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Interop.RenderMode SoftwareOnly = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Interop.RenderMode.SoftwareOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Interop.RenderMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)] rendering is in software only.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,126 @@
+<Type Name="DataControlReferenceCollection" FullName="System.Web.DynamicData.DataControlReferenceCollection">
+  <TypeSignature Language="C#" Value="public class DataControlReferenceCollection : System.Collections.ObjectModel.Collection&lt;System.Web.DynamicData.DataControlReference&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataControlReferenceCollection extends System.Collections.ObjectModel.Collection`1&lt;class System.Web.DynamicData.DataControlReference&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.DataControlReferenceCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.DynamicData</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.ObjectModel.Collection&lt;System.Web.DynamicData.DataControlReference&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">System.Web.DynamicData.DataControlReference</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a collection of <see cref="T:System.Web.UI.WebControls.MenuItemBinding" /> objects.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataControlReferenceCollection (System.Web.DynamicData.DynamicDataManager owner);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.DynamicData.DynamicDataManager owner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DataControlReferenceCollection.#ctor(System.Web.DynamicData.DynamicDataManager)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Web.DynamicData.DynamicDataManager" />
+      </Parameters>
+      <Docs>
+        <param name="owner">The container object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.DataControlReferenceCollection" /> class.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="owner" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertItem">
+      <MemberSignature Language="C#" Value="protected override void InsertItem (int index, System.Web.DynamicData.DataControlReference item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InsertItem(int32 index, class System.Web.DynamicData.DataControlReference item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DataControlReferenceCollection.InsertItem(System.Int32,System.Web.DynamicData.DataControlReference)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="item" Type="System.Web.DynamicData.DataControlReference" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index that indicates where to insert the data control.</param>
+        <param name="item">The data control to insert.</param>
+        <summary>Inserts a data-control reference into the data-control reference collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Owner">
+      <MemberSignature Language="C#" Value="public System.Web.DynamicData.DynamicDataManager Owner { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.DynamicData.DynamicDataManager Owner" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DataControlReferenceCollection.Owner" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.DynamicData.DynamicDataManager</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Web.DynamicData.DynamicDataManager" /> control that contains the data control.</summary>
+        <value>The <see cref="T:System.Web.DynamicData.DynamicDataManager" /> control that contains the data control.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveItem">
+      <MemberSignature Language="C#" Value="protected override void RemoveItem (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RemoveItem(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DataControlReferenceCollection.RemoveItem(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the data-control reference to remove.</param>
+        <summary>Removes a data-control reference from the collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetItem">
+      <MemberSignature Language="C#" Value="protected override void SetItem (int index, System.Web.DynamicData.DataControlReference item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetItem(int32 index, class System.Web.DynamicData.DataControlReference item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DataControlReferenceCollection.SetItem(System.Int32,System.Web.DynamicData.DataControlReference)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="item" Type="System.Web.DynamicData.DataControlReference" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the data-control reference to set.</param>
+        <param name="item">The data control.</param>
+        <summary>Sets the <see cref="T:System.Web.DynamicData.DynamicDataManager" /> control that contains the data-control reference.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

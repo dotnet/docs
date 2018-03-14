@@ -1,0 +1,120 @@
+﻿<ResourceDictionary
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:local="clr-namespace:ColorPickerLib">
+
+  <!--<SnippetColorBrushConverterKey>-->
+  <local:ColorBrushConverter 
+		x:Key="{ComponentResourceKey
+			TypeInTargetAssembly={x:Type local:ColorPicker},
+			ResourceId=ColorBrushConverter}"/>
+  <!--</SnippetColorBrushConverterKey>-->
+  
+	<!--<Snippet13>-->
+	<local:ByteDoubleConverter 
+		x:Key="{ComponentResourceKey 
+			TypeInTargetAssembly={x:Type local:ColorPicker},
+			ResourceId=ByteDoubleConverter}"/>
+	<!--</Snippet13>-->
+
+  <!--<SnippetSliderStyle>-->
+	<Style 
+		x:Key="{ComponentResourceKey 
+			TypeInTargetAssembly={x:Type local:ColorPicker},
+			ResourceId=ColorSliderStyle}"
+		TargetType="{x:Type Slider}">
+
+		<Setter Property="Minimum" Value="0"/>
+		<Setter Property="Maximum" Value="255"/>
+		<Setter Property="SmallChange" Value="1"/>
+		<Setter Property="LargeChange" Value="51"/>
+		<Setter Property="IsMoveToPointEnabled" Value="true"/>
+		<Setter Property="Orientation" Value="Horizontal"/>
+	</Style>
+  <!--</SnippetSliderStyle>-->
+  
+  <!--<SnippetCPStyle1>-->
+	<Style TargetType="{x:Type local:ColorPicker}" x:Key="{x:Type local:ColorPicker}">
+		<Setter Property="VerticalAlignment" Value="Center"/>
+		<Setter Property="HorizontalAlignment" Value="Center"/>
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="{x:Type local:ColorPicker}">
+					<Grid>
+            <Grid.RowDefinitions>
+              <RowDefinition/>
+              <RowDefinition/>
+              <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition/>
+              <ColumnDefinition/>
+              <ColumnDefinition/>
+              <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+						<TextBlock Text="Red:" Grid.Row="0" Grid.Column="0" />
+						<TextBlock Text="Green:" Grid.Row="1" Grid.Column="0"/>
+						<TextBlock Text="Blue:" Grid.Row="2" Grid.Column="0"/>
+  <!--</SnippetCPStyle1>-->
+            
+            <!--<Snippet14>-->
+						<Slider Grid.Row="0" Grid.Column="1"
+							Style="{StaticResource {ComponentResourceKey
+								TypeInTargetAssembly={x:Type local:ColorPicker},ResourceId=ColorSliderStyle}}" 
+													Value="{Binding Path=Red,
+														Converter={StaticResource 
+															{ComponentResourceKey
+																TypeInTargetAssembly={x:Type local:ColorPicker},
+																ResourceId=ByteDoubleConverter}},
+														RelativeSource={RelativeSource TemplatedParent}}"/>
+
+						<Slider Grid.Row="1" Grid.Column="1"
+							Style="{StaticResource {ComponentResourceKey 
+								TypeInTargetAssembly={x:Type local:ColorPicker},ResourceId=ColorSliderStyle}}" 
+													Value="{Binding Path=Green, 
+														Converter={StaticResource 
+															{ComponentResourceKey 
+																TypeInTargetAssembly={x:Type local:ColorPicker},
+																ResourceId=ByteDoubleConverter}}, 
+														RelativeSource={RelativeSource TemplatedParent}}"/>
+
+						<Slider Grid.Row="2" Grid.Column="1"
+							Style="{StaticResource {ComponentResourceKey
+								TypeInTargetAssembly={x:Type local:ColorPicker},ResourceId=ColorSliderStyle}}" 
+													Value="{Binding Path=Blue, 
+														Converter={StaticResource 
+															{ComponentResourceKey 
+																TypeInTargetAssembly={x:Type local:ColorPicker},
+																ResourceId=ByteDoubleConverter}},
+														RelativeSource={RelativeSource TemplatedParent}}"/>
+
+						<!--</Snippet14>-->
+
+						<!--<Snippet15>-->
+						<TextBox Grid.Row="0" Grid.Column="2" Width="32"
+							Text="{Binding Path=Red, RelativeSource={RelativeSource TemplatedParent}}" />
+						<TextBox Grid.Row="1" Grid.Column="2" Width="32"
+							Text="{Binding Path=Green, RelativeSource={RelativeSource TemplatedParent}}" />
+						<TextBox Grid.Row="2" Grid.Column="2" Width="32"
+							Text="{Binding Path=Blue, RelativeSource={RelativeSource TemplatedParent}}" />
+						<!--</Snippet15>-->
+
+            <!--<SnippetBorderRectangle>-->
+            <Border BorderThickness="1" BorderBrush="Black"
+                    Grid.Row="0" Grid.Column="3" Grid.RowSpan="3">
+              <Rectangle Width="50" Fill="{Binding Path=Color, 
+                Converter={StaticResource {ComponentResourceKey
+                TypeInTargetAssembly={x:Type local:ColorPicker},
+                ResourceId=ColorBrushConverter}}, 
+                RelativeSource={RelativeSource TemplatedParent}}"/>
+            </Border>
+            <!--</SnippetBorderRectangle>-->
+					</Grid>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+  <!--</SnippetCPStyle2>-->
+</ResourceDictionary>

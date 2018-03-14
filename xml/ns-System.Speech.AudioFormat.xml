@@ -1,0 +1,19 @@
+<Namespace Name="System.Speech.AudioFormat">
+  <Docs>
+    <summary>The <see cref="N:System.Speech.AudioFormat" /> namespace consists of a single class, <see cref="T:System.Speech.AudioFormat.SpeechAudioFormatInfo" />, which contains information about the format of the audio that is being input to the speech recognition engine, or being output from the speech synthesis engine.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the properties of <xref:System.Speech.AudioFormat.SpeechAudioFormatInfo> to obtain information about specific characteristics of an audio format. These properties are read-only, except for <xref:System.Speech.AudioFormat.SpeechAudioFormatInfo.BlockAlign%2A>, which you can use to set the block alignment of incoming audio. To get all the properties of the incoming audio format, use the <xref:System.Speech.AudioFormat.SpeechAudioFormatInfo.FormatSpecificData%2A> method.  
+  
+ Using the constructors on the <xref:System.Speech.AudioFormat.SpeechAudioFormatInfo> class, you can specify any of the properties of the audio format when you initialize the object.  
+  
+ ]]></format>
+    </remarks>
+    <altmember cref="N:System.Speech.Recognition" />
+    <altmember cref="N:System.Speech.Recognition.SrgsGrammar" />
+    <altmember cref="N:System.Speech.Synthesis" />
+    <altmember cref="N:System.Speech.Synthesis.TtsEngine" />
+  </Docs>
+</Namespace>

@@ -1,0 +1,199 @@
+<Type Name="PrintQueueAttributes" FullName="System.Printing.PrintQueueAttributes">
+  <TypeSignature Language="C#" Value="public enum PrintQueueAttributes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PrintQueueAttributes extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Printing.PrintQueueAttributes" />
+  <AssemblyInfo>
+    <AssemblyName>System.Printing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the attributes of a print queue and its printer.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Direct">
+      <MemberSignature Language="C#" Value="Direct" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueAttributes Direct = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueAttributes.Direct" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueAttributes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The print queue sends print jobs immediately to the printer instead of spooling jobs first.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableBidi">
+      <MemberSignature Language="C#" Value="EnableBidi" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueAttributes EnableBidi = int32(2048)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueAttributes.EnableBidi" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueAttributes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The printer's bidirectional communication is enabled.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableDevQuery">
+      <MemberSignature Language="C#" Value="EnableDevQuery" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueAttributes EnableDevQuery = int32(128)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueAttributes.EnableDevQuery" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueAttributes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The queue holds its jobs when the document and printer configurations do not match.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Hidden">
+      <MemberSignature Language="C#" Value="Hidden" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueAttributes Hidden = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueAttributes.Hidden" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueAttributes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The print queue is not visible in the application UI.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="KeepPrintedJobs">
+      <MemberSignature Language="C#" Value="KeepPrintedJobs" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueAttributes KeepPrintedJobs = int32(256)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueAttributes.KeepPrintedJobs" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueAttributes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The printer language file is not deleted after the file prints.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueAttributes None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueAttributes.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueAttributes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No print queue attribute is specified.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Published">
+      <MemberSignature Language="C#" Value="Published" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueAttributes Published = int32(8192)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueAttributes.Published" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueAttributes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The print queue is visible to other network users.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Queued">
+      <MemberSignature Language="C#" Value="Queued" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueAttributes Queued = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueAttributes.Queued" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueAttributes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The print queue can hold more than one print job at a time.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RawOnly">
+      <MemberSignature Language="C#" Value="RawOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueAttributes RawOnly = int32(4096)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueAttributes.RawOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueAttributes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The print queue cannot use enhanced metafile (EMF) printing.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ScheduleCompletedJobsFirst">
+      <MemberSignature Language="C#" Value="ScheduleCompletedJobsFirst" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueAttributes ScheduleCompletedJobsFirst = int32(512)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueAttributes.ScheduleCompletedJobsFirst" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueAttributes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The queue prints a fully spooled job before it prints higher priority jobs that are still spooling.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Shared">
+      <MemberSignature Language="C#" Value="Shared" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueAttributes Shared = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueAttributes.Shared" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueAttributes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The print queue is shared.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

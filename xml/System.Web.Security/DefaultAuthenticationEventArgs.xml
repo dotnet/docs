@@ -1,0 +1,93 @@
+<Type Name="DefaultAuthenticationEventArgs" FullName="System.Web.Security.DefaultAuthenticationEventArgs">
+  <TypeSignature Language="C#" Value="public sealed class DefaultAuthenticationEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DefaultAuthenticationEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Security.DefaultAuthenticationEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the **DefaultAuthentication_OnAuthenticate** event. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.DefaultAuthenticationEventArgs> class is used to supply event values to the **DefaultAuthentication_OnAuthenticate** event and to enable you to specify a custom Windows identity for the current request.  
+  
+ The <xref:System.Web.Security.DefaultAuthenticationModule> constructs a <xref:System.Web.Security.DefaultAuthenticationEventArgs> object using the current <xref:System.Web.HttpContext> and passes it to the **DefaultAuthentication_OnAuthenticate** event.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DefaultAuthenticationEventArgs (System.Web.HttpContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.HttpContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.DefaultAuthenticationEventArgs.#ctor(System.Web.HttpContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="context" Type="System.Web.HttpContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">The context for the event.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Security.DefaultAuthenticationEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.DefaultAuthenticationModule> object constructs a <xref:System.Web.Security.DefaultAuthenticationEventArgs> object using the current <xref:System.Web.HttpContext> and passes it to the **DefaultAuthentication_OnAuthenticate** event.  
+  
+ You can use the <xref:System.Web.Security.DefaultAuthenticationEventArgs.Context%2A> property of the <xref:System.Web.Security.DefaultAuthenticationEventArgs> object supplied to the **DefaultAuthentication_OnAuthenticate** event to set the <xref:System.Web.HttpContext.User%2A> property of the current <xref:System.Web.HttpContext> to a custom <xref:System.Security.Principal.IPrincipal> object. If you do not specify a value for the <xref:System.Web.HttpContext.User%2A> property of the <xref:System.Web.HttpContext> referenced by the <xref:System.Web.Security.DefaultAuthenticationEventArgs.Context%2A> property, the <xref:System.Web.Security.DefaultAuthenticationModule> sets the <xref:System.Web.HttpContext.User%2A> property of the <xref:System.Web.HttpContext> to a <xref:System.Security.Principal.GenericPrincipal> object that contains no user information.  
+  
+ The **DefaultAuthentication_OnAuthenticate** event is raised after the <xref:System.Web.HttpApplication.AuthenticateRequest> event and before the <xref:System.Web.HttpApplication.AuthorizeRequest> event. If you have an  section that depends on the user name to deny or allow access to your application, modifying the <xref:System.Web.HttpContext.User%2A> property of the current <xref:System.Web.HttpContext> can affect the behavior of your application. Be sure that the user name you set during the **DefaultAuthentication_OnAuthenticate** event is considered when you specify the  section in your configuration.  
+  
+   
+  
+## Examples  
+ The following code example uses the **DefaultAuthentication_OnAuthenticate** event to test whether the <xref:System.Web.HttpContext.User%2A> property of the current <xref:System.Web.HttpContext> is `null`. If the property is `null`, the example sets the <xref:System.Web.HttpContext.User%2A> property of the current <xref:System.Web.HttpContext> to a <xref:System.Security.Principal.GenericPrincipal> object where the <xref:System.Security.Principal.GenericPrincipal.Identity%2A> property of the <xref:System.Security.Principal.GenericPrincipal> object is a <xref:System.Security.Principal.GenericIdentity> object with a <xref:System.Security.Principal.GenericIdentity.Name%2A> property value of "default".  
+  
+> [!NOTE]
+>  The **DefaultAuthentication_OnAuthenticate** event is raised before the <xref:System.Web.HttpApplication.AuthorizeRequest> event. As a result, if you set the <xref:System.Web.HttpContext.User%2A> property of the current <xref:System.Web.HttpContext> to a custom identity, it can affect the behavior of your application. For example, if you are using the <xref:System.Web.Security.FormsAuthentication> class and you are ensuring that only authenticated users have access to your site, by using the  section and specifying `<deny users="?" />`, you will cause the  element in this example to be ignored, as the user will have a name, which is "default". Instead you would specify `<deny users="default" />` to ensure that only authenticated users can access your site.  
+  
+ [!code-csharp[System.Web.Security.DefaultAuthenticationModule#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.DefaultAuthenticationModule/CS/global.asax#1)]
+ [!code-vb[System.Web.Security.DefaultAuthenticationModule#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.DefaultAuthenticationModule/VB/global.asax#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Context">
+      <MemberSignature Language="C#" Value="public System.Web.HttpContext Context { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.HttpContext Context" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Security.DefaultAuthenticationEventArgs.Context" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.HttpContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Web.HttpContext" /> object for the current HTTP request.</summary>
+        <value>The <see cref="T:System.Web.HttpContext" /> object for the current HTTP request.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.HttpContext> provides access to <xref:System.Web.HttpContext.Request%2A>, <xref:System.Web.HttpContext.Response%2A>, and <xref:System.Web.HttpContext.User%2A> objects for the current request.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

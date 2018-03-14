@@ -1,0 +1,58 @@
+<Type Name="TextPatternRangeEndpoint" FullName="System.Windows.Automation.Text.TextPatternRangeEndpoint">
+  <TypeSignature Language="C#" Value="public enum TextPatternRangeEndpoint" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TextPatternRangeEndpoint extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Text.TextPatternRangeEndpoint" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationTypes</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("62242CAC-9CD0-4364-813D-4F0A36DD842D")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Allows the endpoints to be identified when calling methods of <see cref="T:System.Windows.Automation.Text.TextPatternRange" />. Each <see cref="T:System.Windows.Automation.Text.TextPatternRange" /> has two endpoints (<see cref="F:System.Windows.Automation.Text.TextPatternRangeEndpoint.Start" /> and <see cref="F:System.Windows.Automation.Text.TextPatternRangeEndpoint.End" />).</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="End">
+      <MemberSignature Language="C#" Value="End" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.TextPatternRangeEndpoint End = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextPatternRangeEndpoint.End" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Text.TextPatternRangeEndpoint</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the ending point of the range.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Start">
+      <MemberSignature Language="C#" Value="Start" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.TextPatternRangeEndpoint Start = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextPatternRangeEndpoint.Start" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Text.TextPatternRangeEndpoint</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the starting point of the range.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

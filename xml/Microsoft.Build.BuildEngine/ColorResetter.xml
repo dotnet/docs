@@ -1,0 +1,20 @@
+<Type Name="ColorResetter" FullName="Microsoft.Build.BuildEngine.ColorResetter">
+  <TypeSignature Language="C#" Value="public delegate void ColorResetter();" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ColorResetter extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.BuildEngine.ColorResetter" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters />
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <summary>Defines the type of delegate used to reset the console color.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

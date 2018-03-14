@@ -1,0 +1,19 @@
+<!--<Snippet2>-->
+<?xml version="1.0" encoding="IBM437"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:simpleType name="StringOrIntType">
+        <xs:union>
+            <xs:simpleType>
+                <xs:restriction base="xs:string"/>
+            </xs:simpleType>
+    
+            <xs:simpleType>
+                <xs:restriction base="xs:int"/>
+            </xs:simpleType>
+        </xs:union>
+    </xs:simpleType>
+    
+    <xs:element name="size" type="StringOrIntType"/>
+</xs:schema>
+<!--</Snippet2>-->

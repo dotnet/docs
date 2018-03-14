@@ -1,0 +1,45 @@
+﻿<Window x:Class="SDKSample.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="SDKSample"
+    Loaded="WindowLoaded">
+
+  <Grid>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width ="225"></ColumnDefinition>
+      <ColumnDefinition></ColumnDefinition>
+    </Grid.ColumnDefinitions>
+    
+    <Grid.RowDefinitions>
+      <RowDefinition></RowDefinition>
+    </Grid.RowDefinitions>
+    
+    <StackPanel Grid.Column ="0" Grid.Row="0">
+      <Label>Select Content:</Label>
+      <ComboBox Name="cbMode" SelectionChanged ="OnCbModeChange">
+        <ComboBoxItem>Single Visual</ComboBoxItem>
+        <ComboBoxItem>Multiple Visuals</ComboBoxItem>
+        <ComboBoxItem>Flow Document</ComboBoxItem>
+        <ComboBoxItem>Fixed Document</ComboBoxItem>
+        <ComboBoxItem>Multiple Fixed Documents</ComboBoxItem>
+      </ComboBox>
+      <Label>Operation:</Label>
+      <Button Name="btnSave" MaxWidth ="200" MaxHeight ="80"
+              Click="OnBtnSaveClick">Save (synchronous)</Button>
+      <Button Name="btnSaveAsync" MaxWidth ="200" MaxHeight ="80"
+              Click="OnBtnSaveAsyncClick">Save (asynchronous)</Button>
+      <Button Name="btnCancelAsync" MaxWidth ="200" MaxHeight ="80"
+              Click="OnBtnCancelClick">Cancel</Button>
+      <Label  Visibility="Hidden" Name="AsyncSaveLabel">
+              Async Save Progress</Label>
+      <ProgressBar Visibility="Hidden" Name="AsyncSaveProgress" MaxWidth ="200"
+                   MaxHeight="80" Minimum="0" Maximum ="100" Value="1">
+      </ProgressBar>
+      <TextBox Visibility="Hidden" Name="AsyncSaveStatus"
+               MaxWidth ="200" MaxHeight="80"></TextBox>
+    </StackPanel>
+    
+    <DocumentViewer Name="docViewer" Grid.Column ="1" Grid.Row ="0">
+    </DocumentViewer>
+  </Grid>
+</Window>

@@ -1,0 +1,49 @@
+﻿<UserControl
+    x:Class="ManipulationAPI.ManipulationItem"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <UserControl.Resources>
+        <Style x:Key="NullButtonStyle" TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <ContentPresenter/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+    
+    <Grid>
+        <!-- main body of item -->
+        <Ellipse Stroke="Black" StrokeThickness="1"    >
+            <Ellipse.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Offset="0" Color="#00FF0000"/>
+                    <GradientStop Offset="0.37" Color="#00FF0000"/>
+                    <GradientStop Offset="1" Color="#60FF0000"/>
+                </RadialGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+
+        <!-- pivot indicator -->
+        <Button x:Name="PivotButton" Style="{StaticResource NullButtonStyle}">
+            <Ellipse Width="15" Height="15">
+                <Ellipse.Fill>
+                    <RadialGradientBrush GradientOrigin="0.4,0.4">
+                        <GradientStop Offset="0" Color="White"/>
+                        <GradientStop Offset="0.5" Color="Gray"/>
+                        <GradientStop Offset="1" Color="Black"/>
+                    </RadialGradientBrush>
+                </Ellipse.Fill>
+            </Ellipse>
+        </Button>
+
+        <!-- mode controls -->
+        <StackPanel VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="10">
+            <Label Name="LabelCenter" Content="Center"/>
+        </StackPanel>
+    </Grid>
+    
+</UserControl>

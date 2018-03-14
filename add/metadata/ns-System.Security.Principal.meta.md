@@ -1,0 +1,8 @@
+---
+uid: System.Security.Principal
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---

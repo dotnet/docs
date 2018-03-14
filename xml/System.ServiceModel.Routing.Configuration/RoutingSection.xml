@@ -1,0 +1,155 @@
+<Type Name="RoutingSection" FullName="System.ServiceModel.Routing.Configuration.RoutingSection">
+  <TypeSignature Language="C#" Value="public class RoutingSection : System.Configuration.ConfigurationSection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RoutingSection extends System.Configuration.ConfigurationSection" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Routing.Configuration.RoutingSection" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Routing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationSection</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a collection of elements that are used to configure routing.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RoutingSection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Routing.Configuration.RoutingSection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Routing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Routing.Configuration.RoutingSection" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackupLists">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Routing.Configuration.BackupListCollection BackupLists { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Routing.Configuration.BackupListCollection BackupLists" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Routing.Configuration.RoutingSection.BackupLists" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Routing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("backupLists", Options=System.Configuration.ConfigurationPropertyOptions.None)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Routing.Configuration.BackupListCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the configuration element that contains a collection of <see cref="T:System.ServiceModel.Routing.Configuration.BackupEndpointElement" /> objects.</summary>
+        <value>A collection that defines the configuration section that contains a collection of <see cref="T:System.ServiceModel.Routing.Configuration.BackupEndpointElement" /> objects.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateFilterTable">
+      <MemberSignature Language="C#" Value="public static System.ServiceModel.Dispatcher.MessageFilterTable&lt;System.Collections.Generic.IEnumerable&lt;System.ServiceModel.Description.ServiceEndpoint&gt;&gt; CreateFilterTable (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Dispatcher.MessageFilterTable`1&lt;class System.Collections.Generic.IEnumerable`1&lt;class System.ServiceModel.Description.ServiceEndpoint&gt;&gt; CreateFilterTable(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Routing.Configuration.RoutingSection.CreateFilterTable(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Routing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Dispatcher.MessageFilterTable&lt;System.Collections.Generic.IEnumerable&lt;System.ServiceModel.Description.ServiceEndpoint&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the filter table to create.</param>
+        <summary>Creates a filter table using the specified name.</summary>
+        <returns>A filter table with the specified name.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A routing table with the specified name must exist in the configuration file for the current AppDomain; otherwise an <xref:System.InvalidOperationException> occurs.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filters">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Routing.Configuration.FilterElementCollection Filters { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Routing.Configuration.FilterElementCollection Filters" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Routing.Configuration.RoutingSection.Filters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Routing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("filters", Options=System.Configuration.ConfigurationPropertyOptions.None)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Routing.Configuration.FilterElementCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the configuration element that contains a collection of <see cref="T:System.ServiceModel.Routing.Configuration.FilterElement" /> objects.</summary>
+        <value>A collection that defines the configuration section that contains a collection of <see cref="T:System.ServiceModel.Routing.Configuration.FilterElement" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterTables">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Routing.Configuration.FilterTableCollection FilterTables { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Routing.Configuration.FilterTableCollection FilterTables" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Routing.Configuration.RoutingSection.FilterTables" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Routing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("filterTables", Options=System.Configuration.ConfigurationPropertyOptions.None)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Routing.Configuration.FilterTableCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the configuration element that contains a collection of <see cref="T:System.ServiceModel.Routing.Configuration.FilterTableEntryElement" /> objects.</summary>
+        <value>A collection that defines the configuration section that contains a collection of <see cref="T:System.ServiceModel.Routing.Configuration.FilterTableEntryElement" /> objects.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NamespaceTable">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Routing.Configuration.NamespaceElementCollection NamespaceTable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Routing.Configuration.NamespaceElementCollection NamespaceTable" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Routing.Configuration.RoutingSection.NamespaceTable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Routing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("namespaceTable", Options=System.Configuration.ConfigurationPropertyOptions.None)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Routing.Configuration.NamespaceElementCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the configuration element that contains a collection of <see cref="T:System.ServiceModel.Routing.Configuration.NamespaceElement" /> objects.</summary>
+        <value>A collection that defines the configuration section that contains a collection of <see cref="T:System.ServiceModel.Routing.Configuration.NamespaceElement" /> objects.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

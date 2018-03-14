@@ -1,0 +1,99 @@
+<Type Name="ClientRemotingConfig" FullName="System.EnterpriseServices.Internal.ClientRemotingConfig">
+  <TypeSignature Language="C#" Value="public class ClientRemotingConfig" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ClientRemotingConfig extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.Internal.ClientRemotingConfig" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines a static <see cref="M:System.EnterpriseServices.Internal.ClientRemotingConfig.Write(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)" /> method that creates a client remoting configuration file for a client type library.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.EnterpriseServices.Internal.ClientRemotingConfig.Write%2A> method is used by the <xref:System.EnterpriseServices.Internal.Publish> class while generating a COM interface from a client type library (with a .tlb extension). The <xref:System.EnterpriseServices.Internal.Publish> class publishes COM interfaces in a SOAP-enabled COM+ application. One of the method's parameters is the name of an assembly that contains common language runtime (CLR) metadata that <xref:System.EnterpriseServices.Internal.Publish> has already generated for the client type library.  
+  
+ <xref:System.EnterpriseServices.Internal.ClientRemotingConfig.Write%2A> does not need to be called directly. Instead, call the <xref:System.EnterpriseServices.Internal.Publish.ProcessClientTlb%2A> method of the <xref:System.EnterpriseServices.Internal.Publish> class.  
+  
+ <xref:System.EnterpriseServices.Internal.ClientRemotingConfig> is used internally by the .NET Framework. You do not need to use the class directly in your code.  
+  
+ ]]></format>
+    </remarks>
+    <forInternalUseOnly />
+    <altmember cref="T:System.EnterpriseServices.Internal.Publish" />
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ClientRemotingConfig ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.ClientRemotingConfig.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.EnterpriseServices.Internal.ClientRemotingConfig" /> class.</summary>
+        <remarks>To be added.</remarks>
+        <forInternalUseOnly />
+      </Docs>
+    </Member>
+    <Member MemberName="Write">
+      <MemberSignature Language="C#" Value="public static bool Write (string DestinationDirectory, string VRoot, string BaseUrl, string AssemblyName, string TypeName, string ProgId, string Mode, string Transport);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Write(string DestinationDirectory, string VRoot, string BaseUrl, string AssemblyName, string TypeName, string ProgId, string Mode, string Transport) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.ClientRemotingConfig.Write(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="DestinationDirectory" Type="System.String" />
+        <Parameter Name="VRoot" Type="System.String" />
+        <Parameter Name="BaseUrl" Type="System.String" />
+        <Parameter Name="AssemblyName" Type="System.String" />
+        <Parameter Name="TypeName" Type="System.String" />
+        <Parameter Name="ProgId" Type="System.String" />
+        <Parameter Name="Mode" Type="System.String" />
+        <Parameter Name="Transport" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="DestinationDirectory">The folder in which to create the configuration file.</param>
+        <param name="VRoot">The name of the virtual root.</param>
+        <param name="BaseUrl">The base URL that contains the virtual root.</param>
+        <param name="AssemblyName">The display name of the assembly that contains common language runtime (CLR) metadata corresponding to the type library.</param>
+        <param name="TypeName">The fully qualified name of the assembly that contains CLR metadata corresponding to the type library.</param>
+        <param name="ProgId">The programmatic identifier of the class.</param>
+        <param name="Mode">The activation mode.</param>
+        <param name="Transport">Not used. Specify <see langword="null" /> for this parameter.</param>
+        <summary>Creates a client remoting configuration file for a client type library in a SOAP-enabled COM+ application.</summary>
+        <returns>
+          <see langword="true" /> if the client remoting configuration file was successfully created; otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The static <xref:System.EnterpriseServices.Internal.ClientRemotingConfig.Write%2A> method is called by the <xref:System.EnterpriseServices.Internal.Publish> class while generating a COM interface from a client type library (with a .tlb extension). The <xref:System.EnterpriseServices.Internal.Publish> class publishes COM interfaces in a SOAP-enabled COM+ application.  
+  
+ <xref:System.EnterpriseServices.Internal.ClientRemotingConfig.Write%2A> does not need to be called directly. Instead, call the <xref:System.EnterpriseServices.Internal.Publish.ProcessClientTlb%2A> method of the <xref:System.EnterpriseServices.Internal.Publish> class.  
+  
+ The `BaseUrl` and `VRoot` parameter values are concatenated (with a path separator, if needed) to form the client element's `URL` attribute value.  
+  
+ The `AssemblyName` parameter identifies an assembly containing CLR metadata that <xref:System.EnterpriseServices.Internal.Publish>, using the <xref:System.EnterpriseServices.Internal.GenerateMetadata> class, has already generated for the client type library.  
+  
+ ]]></format>
+        </remarks>
+        <forInternalUseOnly />
+      </Docs>
+    </Member>
+  </Members>
+</Type>

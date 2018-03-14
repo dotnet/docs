@@ -1,0 +1,147 @@
+<Type Name="WeakEventManager&lt;TEventSource,TEventArgs&gt;" FullName="System.Windows.WeakEventManager&lt;TEventSource,TEventArgs&gt;">
+  <TypeSignature Language="C#" Value="public class WeakEventManager&lt;TEventSource,TEventArgs&gt; : System.Windows.WeakEventManager where TEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WeakEventManager`2&lt;TEventSource, (class System.EventArgs) TEventArgs&gt; extends System.Windows.WeakEventManager" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.WeakEventManager`2" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TEventSource" />
+    <TypeParameter Name="TEventArgs">
+      <Constraints>
+        <BaseTypeName>System.EventArgs</BaseTypeName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Windows.WeakEventManager</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="TEventSource">The type that raises the event.</typeparam>
+    <typeparam name="TEventArgs">The type that holds the event data.</typeparam>
+    <summary>Provides a type-safe <see cref="T:System.Windows.WeakEventManager" /> that enables you to specify the event handler to use for the "weak event listener" pattern. This class defines a type parameter for the source of the event and a type parameter for the event data that is used.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.WeakEventManager> class enables you to leverage the weak event listener pattern by specifying the event to subscribe to, the source of the event, and event handler.  You can use <xref:System.Windows.WeakEventManager%602> as an alternative to implementing the <xref:System.Windows.IWeakEventListener> interface and using a specialized <xref:System.Windows.WeakEventManager>. When you call <xref:System.Windows.WeakEventManager%602.AddHandler%2A>, the source must be of type `TEventSource` and the event handler you pass must have `TEventArgs` as its event data. This ensures that type checking occurs at compile time.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddHandler">
+      <MemberSignature Language="C#" Value="public static void AddHandler (TEventSource source, string eventName, EventHandler&lt;TEventArgs&gt; handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddHandler(!TEventSource source, string eventName, class System.EventHandler`1&lt;!TEventArgs&gt; handler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager`2.AddHandler(`0,System.String,System.EventHandler{`1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="TEventSource" />
+        <Parameter Name="eventName" Type="System.String" />
+        <Parameter Name="handler" Type="System.EventHandler&lt;TEventArgs&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="source">The source object that raises the specified event.</param>
+        <param name="eventName">The name of the event to subscribe to.</param>
+        <param name="handler">The delegate that handles the event.</param>
+        <summary>Adds the specified event handler to the specified event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewListenerList">
+      <MemberSignature Language="C#" Value="protected override System.Windows.WeakEventManager.ListenerList NewListenerList ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.WeakEventManager/ListenerList NewListenerList() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager`2.NewListenerList" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.WeakEventManager+ListenerList</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a new object to contain listeners to an event.</summary>
+        <returns>A new object to contain listeners to an event.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveHandler">
+      <MemberSignature Language="C#" Value="public static void RemoveHandler (TEventSource source, string eventName, EventHandler&lt;TEventArgs&gt; handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemoveHandler(!TEventSource source, string eventName, class System.EventHandler`1&lt;!TEventArgs&gt; handler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager`2.RemoveHandler(`0,System.String,System.EventHandler{`1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="TEventSource" />
+        <Parameter Name="eventName" Type="System.String" />
+        <Parameter Name="handler" Type="System.EventHandler&lt;TEventArgs&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="source">The source object that raises the specified event.</param>
+        <param name="eventName">The name of the event to remove the handler from.</param>
+        <param name="handler">The delegate to remove</param>
+        <summary>Removes the specified event handler from the specified event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartListening">
+      <MemberSignature Language="C#" Value="protected override void StartListening (object source);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void StartListening(object source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager`2.StartListening(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="source">The object to that raises the event.</param>
+        <summary>Starts listening for the event on the specified object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StopListening">
+      <MemberSignature Language="C#" Value="protected override void StopListening (object source);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void StopListening(object source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager`2.StopListening(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="source">The object to that raises the event.</param>
+        <summary>Stops listening for the event on the specified object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

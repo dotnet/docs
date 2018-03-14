@@ -1,0 +1,18 @@
+<Namespace Name="System.Net.PeerToPeer.Collaboration">
+  <Docs>
+    <summary>The <see cref="N:System.Net.PeerToPeer.Collaboration" /> namespace enhances <see cref="N:System.Net.PeerToPeer" /> networking functionality and provides capabilities for serverless managed collaboration sessions.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Peer-to-Peer (P2P) Collaboration Infrastructure provides a peer-to-peer network-based framework for collaborative activities, such as network game matchmaking, conferencing, and other interactive multi-participant activities. This serverless infrastructure includes APIs that simplify the process by which applications can track peer presence without a server, send invitations to participants, discover peers on the same subnet, and manage contacts.  
+  
+ Native Peer Collaboration APIs are available on Windows Vista clients in both 32-bit and 64-bit editions. Peer Collaboration APIs are not available on Windows Server 2008.  
+  
+ NOTE: The Collaboration APIs are functional from a service only if the service is impersonating a caller, and the caller is an interactive user (as opposed to a built-in user). Multiple Contact Managers are not supported.  
+  
+ ]]></format>
+    </remarks>
+    <altmember cref="N:System.Net.PeerToPeer" />
+  </Docs>
+</Namespace>

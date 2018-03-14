@@ -1,0 +1,192 @@
+<Type Name="SettingsAllowAnonymousAttribute" FullName="System.Web.Profile.SettingsAllowAnonymousAttribute">
+  <TypeSignature Language="C#" Value="public sealed class SettingsAllowAnonymousAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SettingsAllowAnonymousAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Profile.SettingsAllowAnonymousAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Identifies whether a profile property can be set or accessed for an anonymous user.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Profile.SettingsAllowAnonymousAttribute> class is used to identify whether a property of a custom profile implementation can be accessed if the user is an anonymous user. For information about enabling anonymous identification, see the documentation provided for the  configuration element.  
+  
+ If no <xref:System.Web.Profile.SettingsAllowAnonymousAttribute> is specified for a profile property, anonymous access of the profile property is not allowed.  
+  
+ A custom profile implementation is a class that inherits from the <xref:System.Web.Profile.ProfileBase> abstract class and defines properties for the user profile that are not specified in the  configuration element. You can specify a custom user-profile type in the application's Web.config file with the `inherits` attribute of the  configuration element as shown in the following example.  
+  
+ `<configuration>`  
+  
+ `<connectionStrings>`  
+  
+ `<add`  
+  
+ `name="SqlServices"`  
+  
+ `connectionString="Data Source=localhost;Integrated Security=SSPI;Initial Catalog=aspnetdb;" />`  
+  
+ `</connectionStrings>`  
+  
+ `<system.web>`  
+  
+ `<authentication mode="Forms" >`  
+  
+ `<forms`  
+  
+ `loginUrl="login.aspx"`  
+  
+ `name=".ASPXFORMSAUTH" />`  
+  
+ `</authentication>`  
+  
+ `<authorization>`  
+  
+ `<deny users="?" />`  
+  
+ `</authorization>`  
+  
+ `<profile inherits="Samples.AspNet.Profile.EmployeeProfile"`  
+  
+ `defaultProvider="SqlProvider">`  
+  
+ `<providers>`  
+  
+ `<clear />`  
+  
+ `<add`  
+  
+ `name="SqlProvider"`  
+  
+ `type="System.Web.Profile.SqlProfileProvider"`  
+  
+ `connectionStringName="SqlServices"`  
+  
+ `description="SQL Profile Provider for Sample"/>`  
+  
+ `<add`  
+  
+ `name="EmployeeInfoProvider"`  
+  
+ `type="System.Web.Profile.SqlProfileProvider"`  
+  
+ `connectionStringName="SqlServices"`  
+  
+ `description="SQL Profile Provider for Employee Info"/>`  
+  
+ `</providers>`  
+  
+ `<properties>`  
+  
+ `<add name="GarmentSize" />`  
+  
+ `</properties>`  
+  
+ `</profile>`  
+  
+ `</system.web>`  
+  
+ `</configuration>`  
+  
+   
+  
+## Examples  
+ The following code example defines a class that inherits from the <xref:System.Web.Profile.ProfileBase> to create a custom profile. The type of the custom profile is specified in the `inherits` attribute of the  configuration element in the Web.config file for an application.  
+  
+ [!code-csharp[System.Web.Profile.ProfileBase#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.ProfileBase/CS/employeeprofile.cs#1)]
+ [!code-vb[System.Web.Profile.ProfileBase#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.ProfileBase/VB/employeeprofile.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SettingsAllowAnonymousAttribute (bool allow);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool allow) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Profile.SettingsAllowAnonymousAttribute.#ctor(System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="allow" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="allow">
+          <see langword="true" /> if anonymous users can access the associated profile property; otherwise <see langword="false" />.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Web.Profile.SettingsAllowAnonymousAttribute" /> class and specifies whether to allow anonymous access to the associated profile property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Profile.SettingsAllowAnonymousAttribute> class is used to identify whether a property of a custom profile implementation can be accessed if the user is an anonymous user. For information about enabling anonymous identification, see the  configuration element.  
+  
+ If no <xref:System.Web.Profile.SettingsAllowAnonymousAttribute> is specified for a profile property, anonymous access to the profile property is not allowed.  
+  
+ A custom profile implementation is a class that inherits from the <xref:System.Web.Profile.ProfileBase> abstract class and defines properties for the user profile that are not specified in the  configuration element.  
+  
+   
+  
+## Examples  
+ The following example defines a class that inherits from the <xref:System.Web.Profile.ProfileBase> class to create a custom profile. The type of the custom profile is specified in the `inherits` attribute of the  configuration element in the Web.config file for an application. For an example of a configuration file that specifies a custom profile implementation, see the <xref:System.Web.Profile.SettingsAllowAnonymousAttribute> class overview.  
+  
+ [!code-csharp[System.Web.Profile.ProfileBase#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.ProfileBase/CS/employeeprofile.cs#1)]
+ [!code-vb[System.Web.Profile.ProfileBase#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.ProfileBase/VB/employeeprofile.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Allow">
+      <MemberSignature Language="C#" Value="public bool Allow { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Allow" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Profile.SettingsAllowAnonymousAttribute.Allow" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the associated property of a custom profile implementation can be accessed if the user is an anonymous user.</summary>
+        <value>
+          <see langword="true" /> if anonymous users can access the associated profile property; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDefaultAttribute">
+      <MemberSignature Language="C#" Value="public override bool IsDefaultAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsDefaultAttribute() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Profile.SettingsAllowAnonymousAttribute.IsDefaultAttribute" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a value indicating whether the <see cref="P:System.Web.Profile.SettingsAllowAnonymousAttribute.Allow" /> property is set to the default value.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="P:System.Web.Profile.SettingsAllowAnonymousAttribute.Allow" /> property is set to the default value; otherwise <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

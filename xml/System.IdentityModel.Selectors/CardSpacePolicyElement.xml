@@ -1,0 +1,159 @@
+<Type Name="CardSpacePolicyElement" FullName="System.IdentityModel.Selectors.CardSpacePolicyElement">
+  <TypeSignature Language="C#" Value="public class CardSpacePolicyElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CardSpacePolicyElement extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Selectors.CardSpacePolicyElement" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel.Selectors</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>This class is intended for use by the infrastructure.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CardSpacePolicyElement (System.Xml.XmlElement target, System.Xml.XmlElement issuer, System.Collections.ObjectModel.Collection&lt;System.Xml.XmlElement&gt; parameters, Uri policyNoticeLink, int policyNoticeVersion, bool isManagedIssuer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlElement target, class System.Xml.XmlElement issuer, class System.Collections.ObjectModel.Collection`1&lt;class System.Xml.XmlElement&gt; parameters, class System.Uri policyNoticeLink, int32 policyNoticeVersion, bool isManagedIssuer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.CardSpacePolicyElement.#ctor(System.Xml.XmlElement,System.Xml.XmlElement,System.Collections.ObjectModel.Collection{System.Xml.XmlElement},System.Uri,System.Int32,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Selectors</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="target" Type="System.Xml.XmlElement" />
+        <Parameter Name="issuer" Type="System.Xml.XmlElement" />
+        <Parameter Name="parameters" Type="System.Collections.ObjectModel.Collection&lt;System.Xml.XmlElement&gt;" />
+        <Parameter Name="privacyNoticeLink" Type="System.Uri" />
+        <Parameter Name="privacyNoticeVersion" Type="System.Int32" />
+        <Parameter Name="isManagedIssuer" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="target">An <see cref="T:System.Xml.XmlElement" /> that represents the target of this policy.  
+  
+ Sets the <see cref="P:System.IdentityModel.Selectors.CardSpacePolicyElement.Target" /> property.</param>
+        <param name="issuer">An <see cref="T:System.Xml.XmlElement" /> that represents the policy issuer. Sets the <see cref="P:System.IdentityModel.Selectors.CardSpacePolicyElement.Issuer" /> property.</param>
+        <param name="parameters">A <see cref="T:System.Collections.ObjectModel.Collection`1" /> of type <see cref="T:System.Xml.XmlElement" /> that represents the parameters for this element. Sets the <see cref="P:System.IdentityModel.Selectors.CardSpacePolicyElement.Parameters" /> property.</param>
+        <param name="policyNoticeLink">To be added.</param>
+        <param name="policyNoticeVersion">To be added.</param>
+        <param name="isManagedIssuer">
+          <see langword="true" /> if the issuer is managed; otherwise <see langword="false" />. Sets the <see cref="P:System.IdentityModel.Selectors.CardSpacePolicyElement.IsManagedIssuer" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Selectors.CardSpacePolicyElement" /> class using the specified target and issuer of the policy, the policy parameters, privacy notice location, and the privacy notice version.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsManagedIssuer">
+      <MemberSignature Language="C#" Value="public bool IsManagedIssuer { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsManagedIssuer" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Selectors.CardSpacePolicyElement.IsManagedIssuer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Selectors</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the issuer of the policy is a managed issuer.</summary>
+        <value>
+          <see langword="true" /> if the issuer is managed; otherwise <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Issuer">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlElement Issuer { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlElement Issuer" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Selectors.CardSpacePolicyElement.Issuer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Selectors</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the policy issuer.</summary>
+        <value>An <see cref="T:System.Xml.XmlElement" /> that represents the policy issuer.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parameters">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.Xml.XmlElement&gt; Parameters { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.Xml.XmlElement&gt; Parameters" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Selectors.CardSpacePolicyElement.Parameters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Selectors</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Xml.XmlElement&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of XML elements that represent the parameters for this element.</summary>
+        <value>A <see cref="T:System.Collections.ObjectModel.Collection`1" /> of type <see cref="T:System.Xml.XmlElement" /> that represents the parameters for this element.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PolicyNoticeLink">
+      <MemberSignature Language="C#" Value="public Uri PolicyNoticeLink { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri PolicyNoticeLink" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Selectors.CardSpacePolicyElement.PolicyNoticeLink" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Selectors</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the URI for the privacy information of this policy.</summary>
+        <value>The <see cref="T:System.Uri" /> where the privacy policy is located.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PolicyNoticeVersion">
+      <MemberSignature Language="C#" Value="public int PolicyNoticeVersion { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 PolicyNoticeVersion" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Selectors.CardSpacePolicyElement.PolicyNoticeVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Selectors</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the version of the privacy information.</summary>
+        <value>The version of the privacy information.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Target">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlElement Target { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlElement Target" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Selectors.CardSpacePolicyElement.Target" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Selectors</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the target of this policy.</summary>
+        <value>An <see cref="T:System.Xml.XmlElement" /> that represents the target of this policy.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

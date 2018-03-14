@@ -1,0 +1,25 @@
+<Type Name="CreatingModelDataSourceEventHandler" FullName="System.Web.UI.WebControls.CreatingModelDataSourceEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void CreatingModelDataSourceEventHandler(object sender, CreatingModelDataSourceEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CreatingModelDataSourceEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.CreatingModelDataSourceEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Web.UI.WebControls.CreatingModelDataSourceEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">To be added.</param>
+    <param name="e">To be added.</param>
+    <summary>Represents the method that handles the <see cref="E:System.Web.UI.WebControls.DataBoundControl.CreatingModelDataSource" /> and <see cref="E:System.Web.UI.WebControls.Repeater.CreatingModelDataSource" /> events.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

@@ -1,0 +1,86 @@
+<Type Name="IsOffscreenBehavior" FullName="System.Windows.Automation.IsOffscreenBehavior">
+  <TypeSignature Language="C#" Value="public enum IsOffscreenBehavior" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed IsOffscreenBehavior extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.IsOffscreenBehavior" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies how the <see cref="M:System.Windows.Automation.Peers.AutomationPeer.IsOffscreen" /> property is determined.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.IsOffscreenBehavior Default = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.IsOffscreenBehavior.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.IsOffscreenBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="M:System.Windows.Automation.Peers.AutomationPeer.IsOffscreen" /> is calculated based on the <see cref="P:System.Windows.UIElement.IsVisible" /> property.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FromClip">
+      <MemberSignature Language="C#" Value="FromClip" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.IsOffscreenBehavior FromClip = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.IsOffscreenBehavior.FromClip" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.IsOffscreenBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="M:System.Windows.Automation.Peers.AutomationPeer.IsOffscreen" /> is calculated based on clip regions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Offscreen">
+      <MemberSignature Language="C#" Value="Offscreen" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.IsOffscreenBehavior Offscreen = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.IsOffscreenBehavior.Offscreen" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.IsOffscreenBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="M:System.Windows.Automation.Peers.AutomationPeer.IsOffscreen" /> is <see langword="true" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Onscreen">
+      <MemberSignature Language="C#" Value="Onscreen" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.IsOffscreenBehavior Onscreen = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.IsOffscreenBehavior.Onscreen" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.IsOffscreenBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="M:System.Windows.Automation.Peers.AutomationPeer.IsOffscreen" /> is <see langword="false" />.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

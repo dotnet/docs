@@ -1,0 +1,66 @@
+<Type Name="RecycleLimitNotificationFrequency" FullName="System.Web.Hosting.RecycleLimitNotificationFrequency">
+  <TypeSignature Language="C#" Value="public enum RecycleLimitNotificationFrequency" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RecycleLimitNotificationFrequency extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Hosting.RecycleLimitNotificationFrequency" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Indicates how frequently the memory monitor perceives we are asking listeners to react to the approaching memory threshold.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="High">
+      <MemberSignature Language="C#" Value="High" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Hosting.RecycleLimitNotificationFrequency High = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Hosting.RecycleLimitNotificationFrequency.High" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Hosting.RecycleLimitNotificationFrequency</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>High frequency of reaction to approaching memory threshold.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Low">
+      <MemberSignature Language="C#" Value="Low" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Hosting.RecycleLimitNotificationFrequency Low = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Hosting.RecycleLimitNotificationFrequency.Low" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Hosting.RecycleLimitNotificationFrequency</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Low frequency of reaction to approaching memory threshold.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Medium">
+      <MemberSignature Language="C#" Value="Medium" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Hosting.RecycleLimitNotificationFrequency Medium = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Hosting.RecycleLimitNotificationFrequency.Medium" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Hosting.RecycleLimitNotificationFrequency</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Medium frequency of reaction to approaching memory threshold.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

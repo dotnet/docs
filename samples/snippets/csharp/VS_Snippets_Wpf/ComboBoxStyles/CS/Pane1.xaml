@@ -1,0 +1,95 @@
+ 
+<Canvas
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="ComboBoxStyles.Pane1"
+>
+<Grid ShowGridLines ="false" Background ="White" >
+<Grid.ColumnDefinitions>
+<ColumnDefinition Width="250"/>
+<ColumnDefinition Width="250"/>
+</Grid.ColumnDefinitions>
+<Grid.RowDefinitions>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+</Grid.RowDefinitions>
+<TextBlock Margin="10, 10, 3, 3" Grid.Column="0" Grid.Row="0" FontSize="24">Combo Box Styles</TextBlock>
+<TextBlock Margin="10, 10, 3, 3" Grid.Column="0" Grid.Row="1" FontSize="14" Grid.ColumnSpan="2">
+        The following combo boxes are created using styles.
+</TextBlock>  
+
+<DockPanel Margin="10, 10, 3, 30" Grid.Column="0" Grid.Row="2">
+<ComboBox Style="{StaticResource SimplePlus}">
+    <ComboBoxItem>Item1</ComboBoxItem>
+    <ComboBoxItem>Item2</ComboBoxItem>
+    <ComboBoxItem>Item3</ComboBoxItem>
+    <ComboBoxItem>Item4</ComboBoxItem>
+    <ComboBoxItem>Item5</ComboBoxItem>
+    <ComboBoxItem>Item6</ComboBoxItem>
+</ComboBox>
+</DockPanel>
+<TextBlock Margin="10, 10, 3, 3" Grid.Column="1" Grid.Row="2" FontSize="12" VerticalAlignment="Center" 
+        TextWrapping="WrapWithOverflow">Style sets the maximum height of the drop down and sets the drop 
+        down to open when the combo box initiates.
+</TextBlock>
+
+<DockPanel Margin="10, 10, 3, 3" Grid.Column="0" Grid.Row="4">
+<ComboBox Style="{StaticResource Simple}">
+    <ComboBoxItem>Item1</ComboBoxItem>
+    <ComboBoxItem>Item2</ComboBoxItem>
+    <ComboBoxItem>Item3</ComboBoxItem>
+</ComboBox>
+</DockPanel>
+<TextBlock Margin="10, 10, 3, 3" Grid.Column="1" Grid.Row="4" FontSize="12" VerticalAlignment="Center" 
+        TextWrapping="WrapWithOverflow">Style applied to the combo box that sets the background and 
+        foreground colors.
+</TextBlock>
+
+<DockPanel Margin="10, 10, 3, 3" Grid.Column="0" Grid.Row="5">
+<ComboBox IsEditable="true" Style="{StaticResource Simple}">
+    <ComboBoxItem Style="{StaticResource SimpleComboBoxItem}">Item1</ComboBoxItem>
+    <ComboBoxItem Style="{StaticResource SimpleComboBoxItem}">Item2</ComboBoxItem>
+    <ComboBoxItem Style="{StaticResource SimpleComboBoxItem}">Item3</ComboBoxItem>
+    <ComboBoxItem Style="{StaticResource SimpleComboBoxItem}">Item4</ComboBoxItem>
+    <ComboBoxItem Style="{StaticResource SimpleComboBoxItem}">Item5</ComboBoxItem>
+    <ComboBoxItem Style="{StaticResource SimpleComboBoxItem}">Item6</ComboBoxItem>
+    <ComboBoxItem Style="{StaticResource SimpleComboBoxItem}">Item7</ComboBoxItem>
+    <ComboBoxItem Style="{StaticResource SimpleComboBoxItem}">Item8</ComboBoxItem>
+    <ComboBoxItem Style="{StaticResource SimpleComboBoxItem}">Item9</ComboBoxItem>
+    <ComboBoxItem Style="{StaticResource SimpleComboBoxItem}">Item10</ComboBoxItem>
+</ComboBox>
+</DockPanel>
+<TextBlock Margin="10, 10, 3, 3" Grid.Column="1" Grid.Row="5" FontSize="12" VerticalAlignment="Center" 
+        TextWrapping="WrapWithOverflow">Styles are applied to both the combo box and the combo box items. 
+        The styles set the background, foreground, and font size.
+</TextBlock>
+
+<DockPanel Margin="10, 10, 3, 3" Grid.Column="0" Grid.Row="6">
+<ComboBox>
+    <ComboBoxItem Style="{StaticResource Triggers}">Item1</ComboBoxItem>
+    <ComboBoxItem Style="{StaticResource Triggers}">Item2</ComboBoxItem>
+    <ComboBoxItem Style="{StaticResource Triggers}">Item3</ComboBoxItem>
+</ComboBox>
+</DockPanel>
+<TextBlock Margin="10, 10, 3, 3" Grid.Column="1" Grid.Row="6" FontSize="12" VerticalAlignment="Center" 
+        TextWrapping="WrapWithOverflow">Style changes the background and foreground colors of the combo 
+        box items in response to a mouse over event.
+</TextBlock>
+
+</Grid>
+
+
+</Canvas>

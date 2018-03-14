@@ -1,0 +1,19 @@
+<Namespace Name="System.Linq">
+  <Docs>
+    <summary>The <see cref="N:System.Linq" /> namespace provides classes and interfaces that support queries that use Language-Integrated Query (LINQ).</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Linq> namespace is in the System.Core assembly (in System.Core.dll).  
+  
+ The <xref:System.Linq.Enumerable> class contains [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] standard query operators that operate on objects that implement <xref:System.Collections.Generic.IEnumerable%601>.  
+  
+ The <xref:System.Linq.Queryable> class contains [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] standard query operators that operate on objects that implement <xref:System.Linq.IQueryable%601>.  
+  
+ For information about LINQ to SQL, see [LINQ to SQL &#91;LINQ to SQL&#93;](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Namespace>

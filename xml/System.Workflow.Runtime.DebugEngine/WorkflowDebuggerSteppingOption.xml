@@ -1,0 +1,70 @@
+<Type Name="WorkflowDebuggerSteppingOption" FullName="System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingOption">
+  <TypeSignature Language="C#" Value="public enum WorkflowDebuggerSteppingOption" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WorkflowDebuggerSteppingOption extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingOption" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies how the workflow debugger will step through concurrently executing child activities of a composite activity.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ This enumeration is used with the <xref:System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingAttribute> attribute to define the following two behaviors:  
+  
+-   **Concurrent stepping**. This mode of stepping enables you to step through and debug concurrently executing activities in the workflow. With this option, you will notice that a change in control occurs when concurrently executing activities run within the workflow.  
+  
+-   **Sequential stepping**. This mode of stepping enables you to step through and debug a particular branch of a composite activity, such as the <xref:System.Workflow.Activities.ParallelActivity> or the <xref:System.Workflow.Activities.ConditionedActivityGroup> activity. When you use this option to debug, you will not notice that a change in control occurs due to concurrent execution of other activities in the workflow. The debugger only steps through the activities in the currently selected branch while other activities in the workflow may be executing concurrently. For example, by default, the leftmost branch in a <xref:System.Workflow.Activities.ParallelActivity> activity and the first child activity of a <xref:System.Workflow.Activities.ConditionedActivityGroup> activity are used for stepping. If you are interested in debugging any other branch or child activity, an explicit breakpoint must be placed on that branch or child activity. Stepping continues in that branch when the breakpoint is triggered.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Concurrent">
+      <MemberSignature Language="C#" Value="Concurrent" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingOption Concurrent = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingOption.Concurrent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The child activities will be debugged concurrently.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Sequential">
+      <MemberSignature Language="C#" Value="Sequential" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingOption Sequential = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingOption.Sequential" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The child activities will be debugged sequentially.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,71 @@
+<Type Name="DynamicArgumentDialog" FullName="System.Activities.Presentation.DynamicArgumentDialog">
+  <TypeSignature Language="C#" Value="public sealed class DynamicArgumentDialog : System.Activities.Presentation.WorkflowElementDialog" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DynamicArgumentDialog extends System.Activities.Presentation.WorkflowElementDialog" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.DynamicArgumentDialog" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Activities.Presentation.WorkflowElementDialog</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a dialog box for a dynamic argument element.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="OnWorkflowElementDialogClosed">
+      <MemberSignature Language="C#" Value="protected override void OnWorkflowElementDialogClosed (Nullable&lt;bool&gt; dialogResult);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnWorkflowElementDialogClosed(valuetype System.Nullable`1&lt;bool&gt; dialogResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.DynamicArgumentDialog.OnWorkflowElementDialogClosed(System.Nullable{System.Boolean})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dialogResult" Type="System.Nullable&lt;System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="dialogResult">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowDialog">
+      <MemberSignature Language="C#" Value="public static bool ShowDialog (System.Activities.Presentation.Model.ModelItem activity, System.Activities.Presentation.Model.ModelItem data, System.Activities.Presentation.EditingContext context, System.Windows.DependencyObject owner, System.Activities.Presentation.DynamicArgumentDesignerOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ShowDialog(class System.Activities.Presentation.Model.ModelItem activity, class System.Activities.Presentation.Model.ModelItem data, class System.Activities.Presentation.EditingContext context, class System.Windows.DependencyObject owner, class System.Activities.Presentation.DynamicArgumentDesignerOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.DynamicArgumentDialog.ShowDialog(System.Activities.Presentation.Model.ModelItem,System.Activities.Presentation.Model.ModelItem,System.Activities.Presentation.EditingContext,System.Windows.DependencyObject,System.Activities.Presentation.DynamicArgumentDesignerOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activity" Type="System.Activities.Presentation.Model.ModelItem" />
+        <Parameter Name="data" Type="System.Activities.Presentation.Model.ModelItem" />
+        <Parameter Name="context" Type="System.Activities.Presentation.EditingContext" />
+        <Parameter Name="owner" Type="System.Windows.DependencyObject" />
+        <Parameter Name="options" Type="System.Activities.Presentation.DynamicArgumentDesignerOptions" />
+      </Parameters>
+      <Docs>
+        <param name="activity">The activity associated with the dynamic argument dialog.</param>
+        <param name="data">The data associated with the dynamic argument dialog.</param>
+        <param name="context">The editing context associated with the dynamic argument dialog.</param>
+        <param name="owner">The owner of the dynamic argument dialog.</param>
+        <param name="options">The options of the dynamic argument designer that contain the argument prefix and the designer title. The dynamic argument dialog contains the designer as its content.</param>
+        <summary>Displays the dynamic argument dialog with **OK** and **Cancel** buttons and returns after the dialog is closed.</summary>
+        <returns>
+          <see langword="true" /> if the user accepted the dialog; <see langword="false" /> if the user cancelled the dialog.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- To show this window, do this: Window w=new Window1; w.Show(); -->
+<Window  
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="ThreeDPointSample.Window1"
+    Title="3D Point Sample"
+    Height = "600"
+    Width = "800">
+    
+    
+    <!--Main Grid Panel-->
+    <Grid Name="mainGridPanel" Margin="10">
+      <Grid.ColumnDefinitions>	
+        <ColumnDefinition Width="Auto" />
+        <ColumnDefinition Width="20" />
+        <ColumnDefinition />
+      </Grid.ColumnDefinitions>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="20" />
+        <RowDefinition Height="Auto" />
+      </Grid.RowDefinitions>
+        <!-- Top Border -->
+        <Rectangle Grid.Row="0" 
+            Grid.Column="0" 
+            Grid.ColumnSpan="3"
+            Fill="#99CCCCCC" />
+        <TextBlock Grid.Row="0" Grid.Column="0" Margin="10,10,0,10"><Bold>Point3D Sample</Bold></TextBlock>
+        
+        <!--Begin: List of operations-->
+        <Rectangle Grid.Row="2" Grid.Column="0"
+            Fill="#99CCCCFF" RadiusX="10" RadiusY="10"/>
+		
+        <DockPanel Grid.Row="2" Grid.Column="0" >
+         <TextBlock Margin ="10,20,0,0" DockPanel.Dock ="Top">
+             <Bold>Point3D Operations</Bold>
+         </TextBlock>
+  
+          <!-- A list of radio buttons used to select which operation to perform -->
+         <!--<ScrollViewer Width="400" Height="400" DockPanel.Dock="Left" Margin ="10">-->
+			 <!-- 
+			 <RadioButtonList SelectionChanged="PerformOperation"> -->
+          <StackPanel>
+				<RadioButton GroupName="optionslist" Checked="PerformOperation" Name="rb1">Add 3D point1 to 3D vector1 using overloaded + operator</RadioButton>
+				<RadioButton GroupName="optionslist" Checked="PerformOperation" Name="rb2">Add 3D point1 to 3D vector1 using the static Add method</RadioButton>
+				<RadioButton GroupName="optionslist" Checked="PerformOperation" Name="rb3">Subtract 3D vector1 from 3D point1 using overloaded - operator</RadioButton>
+				<RadioButton GroupName="optionslist" Checked="PerformOperation" Name="rb4">Subtract 3D vector1 from 3D point1 using the static Add method</RadioButton>
+				<RadioButton GroupName="optionslist" Checked="PerformOperation" Name="rb5">Subtract 3D point1 from 3D point2 using overloaded - operator</RadioButton>
+				<RadioButton GroupName="optionslist" Checked="PerformOperation" Name="rb6">Subtract 3D point1 from 3D point2 using the static Subtract method</RadioButton>	
+				<RadioButton GroupName="optionslist" Checked="PerformOperation" Name="rb7">Offset 3D point1.X by 20 and 3D point1.Y by 30</RadioButton>
+				<RadioButton GroupName="optionslist" Checked="PerformOperation" Name="rb8">Multiply 3D point1 by 3D matrix 1 using overloaded * operator</RadioButton>
+				<RadioButton GroupName="optionslist" Name="rb9">Multiply 3D point1 by 3D matrix 1 using static Multiply method</RadioButton>
+				<RadioButton GroupName="optionslist" Checked="PerformOperation" Name="rb10">Check 3D point1 and 3D point2 for equality using the overloaded == operator</RadioButton>
+				<RadioButton GroupName="optionslist" Checked="PerformOperation" Name="rb11">Check 3D point1 and 3D point2 for equality using the static Equals method</RadioButton>
+				<RadioButton GroupName="optionslist" Checked="PerformOperation" Name="rb12">Check object and 3D point2 for equality using the non-static Equals method</RadioButton>	
+				<RadioButton GroupName="optionslist" Checked="PerformOperation" Name="rb13">Converts a string representation of a 3D point into a Point3D structure using static Parse method</RadioButton>		   
+				<RadioButton GroupName="optionslist" Checked="PerformOperation" Name="rb14">Check 3D point1 and 3D point2 for inequality using the overloaded != operator</RadioButton>			
+				     
+          <!--</ScrollViewer>-->
+          </StackPanel>
+        </DockPanel>
+        <!--End: List of operations-->        
+        
+        <!-- Begin: The Variable and Result Tables -->         
+        <Rectangle Grid.Row="2" Grid.Column="2"
+            Fill="#99CCCCCC" RadiusX="10" RadiusY="10"/>
+        <DockPanel Grid.Row="2" Grid.Column="2" Margin ="0,10,0,30">
+
+            <!-- Displays the variables used in the operations -->
+
+            <Grid DockPanel.Dock="Top"  Margin="20,30,0,0">
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="75" />
+                <ColumnDefinition Width="Auto" />
+              </Grid.ColumnDefinitions>
+
+              <Grid.RowDefinitions>
+                <RowDefinition Height="20" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+              </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" Grid.Column="0">
+                    <Bold>Variables</Bold>
+                </TextBlock>
+                <TextBlock Grid.Row="1" Grid.Column="0">
+                    <Bold>Point 1:</Bold>
+                </TextBlock>
+                <TextBlock Grid.Row="1" Grid.Column="1" Name="txtPoint1">
+                    <Bold></Bold>
+                </TextBlock>
+                <TextBlock Grid.Row="2" Grid.Column="0">
+                    <Bold>Point 2:</Bold>
+                </TextBlock>
+                <TextBlock Grid.Row="2" Grid.Column="1" Name="txtPoint2">
+                    <Bold></Bold>
+                </TextBlock>
+                <TextBlock Grid.Row="3" Grid.Column="0">
+                    <Bold>Vector 1:</Bold>
+                </TextBlock>
+                <TextBlock Grid.Row="3" Grid.Column="1" Name="txtVector1">
+                    <Bold></Bold>
+                </TextBlock>
+                <TextBlock Grid.Row="4" Grid.Column="0">
+                    <Bold>Vector 2:</Bold>
+                </TextBlock>
+                <TextBlock Grid.Row="4" Grid.Column="1" Name="txtVector2">
+                    <Bold></Bold>
+                </TextBlock>
+                <TextBlock Grid.Row="5" Grid.Column="0">
+                    <Bold>Matrix 1:</Bold>
+                </TextBlock>
+                <TextBlock Grid.Row="5" Grid.Column="1" Name="txtMatrix1">
+                    <Bold></Bold>
+                </TextBlock>
+            </Grid>
+
+            <!-- Displays the result information of the operations -->
+            <Grid DockPanel.Dock="Top"
+                  Margin="20,110,0,0">
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="75" />
+                <ColumnDefinition Width="Auto" />
+              </Grid.ColumnDefinitions>
+
+              <Grid.RowDefinitions>
+                <RowDefinition Height="20" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+              </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" Grid.Column="0">
+                    <Bold>Results</Bold>
+                </TextBlock>
+                <TextBlock Grid.Row="1" Grid.Column="0">
+                    <Bold>Operation:</Bold>
+                </TextBlock>
+                <TextBlock Grid.Row="1" Grid.Column="1" Name="txtOperation">
+                    <Bold></Bold>
+                </TextBlock>
+                <TextBlock Grid.Row="2" Grid.Column="0">
+                    <Bold>Syntax:</Bold>
+                </TextBlock>
+                <TextBlock Grid.Row="2" Grid.Column="1" Name="txtSyntax">
+                    <Bold></Bold>
+                </TextBlock>
+                <TextBlock Grid.Row="3" Grid.Column="0">
+                    <Bold>Result:</Bold>
+                </TextBlock>
+                <TextBlock Grid.Row="3" Grid.Column="1" Name="txtResultValue">
+                    <Bold></Bold>
+                </TextBlock>
+                <TextBlock Grid.Row="4" Grid.Column="0">
+                    <Bold>Result Type:</Bold>
+                </TextBlock>
+                <TextBlock Grid.Row="4" Grid.Column="1" Name="txtResultType">
+                    <Bold></Bold>
+                </TextBlock>
+            </Grid>
+
+        </DockPanel>
+        <!-- End: The Variable and Result Tables -->
+       
+    </Grid> <!--End Main Grid Panel-->    
+    
+    
+</Window>

@@ -1,0 +1,25 @@
+<Type Name="SelectedCellsChangedEventHandler" FullName="System.Windows.Controls.SelectedCellsChangedEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void SelectedCellsChangedEventHandler(object sender, SelectedCellsChangedEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SelectedCellsChangedEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.SelectedCellsChangedEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.Controls.SelectedCellsChangedEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">The data for the event.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Windows.Controls.DataGrid.SelectedCellsChanged" /> event of a <see cref="T:System.Windows.Controls.DataGrid" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

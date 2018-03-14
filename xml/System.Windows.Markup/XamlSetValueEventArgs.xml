@@ -1,0 +1,140 @@
+<Type Name="XamlSetValueEventArgs" FullName="System.Windows.Markup.XamlSetValueEventArgs">
+  <TypeSignature Language="C#" Value="public class XamlSetValueEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XamlSetValueEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Markup.XamlSetValueEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xaml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for callbacks that are invoked when a <see cref="T:System.Xaml.XamlObjectWriter" /> sets certain values.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Markup.XamlSetValueEventArgs> provides data specifically for callbacks associated with a <xref:System.Xaml.XamlObjectWriter> or its settings. The callbacks use the generic <xref:System.EventHandler%601> delegate, with <xref:System.Windows.Markup.XamlSetValueEventArgs> event data constraint.  
+  
+ This event data class is potentially used for set-value callback scenarios that are not specifically markup extensions or type converters acting. There are also two subclasses of <xref:System.Windows.Markup.XamlSetValueEventArgs> for more specific XAML value setting cases, and the specific event data class constrains that event data. <xref:System.Windows.Markup.XamlSetMarkupExtensionEventArgs> is used for the markup extension callback case and <xref:System.Windows.Markup.XamlSetTypeConverterEventArgs> is used for the type converter callback case. An example of a scenario where the set-value operation is not a markup extension or type converter is the DataTrigger scenario in WPF data binding.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XamlSetValueEventArgs (System.Xaml.XamlMember member, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xaml.XamlMember member, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XamlSetValueEventArgs.#ctor(System.Xaml.XamlMember,System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="member" Type="System.Xaml.XamlMember" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="member">XAML type system / schema information for the member being set.</param>
+        <param name="value">The value to provide for the member.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.XamlSetValueEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CallBase">
+      <MemberSignature Language="C#" Value="public virtual void CallBase ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CallBase() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XamlSetValueEventArgs.CallBase" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When overridden in a derived class, provides a way to invoke a <see langword="SetValue" /> callback as defined on a base class of the current acting type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Markup.XamlSetValueEventArgs.CallBase%2A> might be invoked as part of a `ReceiveMarkupExtension` implementation, in cases where the implementation is expecting a particular markup extension as the primary case but wants a way to attempt alternative cases without immediately failing. This is useful for dealing with a markup extension that might itself be extensible.  
+  
+ The "current acting type information" is only available internally, and refers to the type of the instance where the set operation is occurring. <xref:System.Windows.Markup.XamlSetMarkupExtensionEventArgs> and <xref:System.Windows.Markup.XamlSetTypeConverterEventArgs> both override this method by using the internal current acting type information.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>The default implementation is empty.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="Handled">
+      <MemberSignature Language="C#" Value="public bool Handled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Handled" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XamlSetValueEventArgs.Handled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that determines whether a caller that is using the <see cref="T:System.Windows.Markup.XamlSetValueEventArgs" /> can use the values without having to call <see cref="M:System.Windows.Markup.XamlSetValueEventArgs.CallBase" />.</summary>
+        <value>
+          <see langword="true" /> if the values were useful and calling <see cref="M:System.Windows.Markup.XamlSetValueEventArgs.CallBase" /> is not necessary; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property as a sentinel for cases where a callback referenced as <xref:System.Windows.Markup.XamlSetMarkupExtensionAttribute.XamlSetMarkupExtensionHandler%2A> or <xref:System.Windows.Markup.XamlSetTypeConverterAttribute.XamlSetTypeConverterHandler%2A> has code pathways that has processed the set value attempt.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Member">
+      <MemberSignature Language="C#" Value="public System.Xaml.XamlMember Member { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xaml.XamlMember Member" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XamlSetValueEventArgs.Member" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.XamlMember</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets XAML type system and XAML schema information for the member being set.</summary>
+        <value>XAML type system and XAML schema information for the member being set.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public object Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Value" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XamlSetValueEventArgs.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value to provide for the member being set.</summary>
+        <value>The value to provide for the member being set.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,67 @@
+<!-- <Snippet1> -->
+
+<!-- <SnippetSolidColorBrushAnimationExample> -->
+<!-- SolidColorBrushExample.xaml
+     This example shows how to animate the Opacity and Color 
+     properties of a SolidColorBrush.-->
+<Page 
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Title="SolidColorBrush Animation Example"
+  Background="White">
+  <StackPanel Margin="20">
+  
+    <!-- The Opacity and Color of the SolidColorBrush 
+         used to fill this rectangle is animated. -->
+    <Rectangle Width="100" Height="100">
+      <Rectangle.Fill>
+        <SolidColorBrush x:Name="MyAnimatedBrush" Color="Orange" />
+      </Rectangle.Fill>
+      <Rectangle.Triggers>
+      
+        <!-- Animates the brush's color to gray
+             When the mouse enters the rectangle. -->
+        <EventTrigger RoutedEvent="Rectangle.MouseEnter">
+          <BeginStoryboard>
+            <Storyboard>
+              <ColorAnimation
+                Storyboard.TargetName="MyAnimatedBrush"
+                Storyboard.TargetProperty="Color"
+                To="Gray" Duration="0:0:1" />
+            </Storyboard>
+          </BeginStoryboard>
+        </EventTrigger>
+        
+        <!-- Animates the brush's color to orange
+             when the mouse leaves the rectangle. -->
+        <EventTrigger RoutedEvent="Rectangle.MouseLeave">
+          <BeginStoryboard>
+            <Storyboard>
+              <ColorAnimation
+                Storyboard.TargetName="MyAnimatedBrush"
+                Storyboard.TargetProperty="Color"
+                To="Orange" Duration="0:0:1" />
+            </Storyboard>
+          </BeginStoryboard>
+        </EventTrigger>    
+        
+        <!-- Animates the brush's opacity when the
+             left mouse button is pressed over the rectangle. -->
+        <EventTrigger RoutedEvent="Rectangle.MouseLeftButtonDown">
+          <BeginStoryboard>
+            <Storyboard>
+              <DoubleAnimation
+                Storyboard.TargetName="MyAnimatedBrush"
+                Storyboard.TargetProperty="Opacity"
+                To="0.0" Duration="0:0:0.5" AutoReverse="True" />
+            </Storyboard>
+          </BeginStoryboard>
+        </EventTrigger>        
+      </Rectangle.Triggers>
+    </Rectangle>
+  </StackPanel>
+</Page>
+<!-- </SnippetSolidColorBrushAnimationExample> -->
+
+
+<!-- </Snippet1> -->

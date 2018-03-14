@@ -1,0 +1,24 @@
+all :  source.csout eventlogmsgs.rc
+
+exes :   source_cs.exe 
+
+# Build a resource dll from the message file (*.mc)
+# Build the various files to include in the projects with the message constants
+# and build the resource dll for the actual string messages.
+# Notice EventLogMsgs.DLL is a Win32 resource-only dll.
+
+
+eventlogmsgs.rc: eventlogmsgs.mc
+	mc -s $**
+
+
+.rc.res:
+	rc $**
+
+
+eventlogmsgs.dll:  eventlogmsgs.res
+	link /OUT:".\EventLogMsgs.dll" /NOLOGO /DLL /DEBUG /SUBSYSTEM:WINDOWS /NOENTRY /IMPLIB:".\EventLogMsgs.lib" /MACHINE:X86  $**
+
+
+source.csout: source.cs 
+	csc /target:library /nologo source.cs

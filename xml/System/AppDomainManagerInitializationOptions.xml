@@ -1,0 +1,68 @@
+<Type Name="AppDomainManagerInitializationOptions" FullName="System.AppDomainManagerInitializationOptions">
+  <TypeSignature Language="C#" Value="public enum AppDomainManagerInitializationOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AppDomainManagerInitializationOptions extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.AppDomainManagerInitializationOptions" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the action that a custom application domain manager takes when initializing a new domain.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ These flags are used for property settings in the <xref:System.AppDomainManager> class. The <xref:System.AppDomainManagerInitializationOptions> flags apply only to custom application domain managers; they do not apply to the default manager. The <xref:System.AppDomainManager.InitializeNewDomain%2A> method in the default application domain manager does nothing. The default enumeration value is None.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AppDomainManagerInitializationOptions None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.AppDomainManagerInitializationOptions.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AppDomainManagerInitializationOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No initialization action.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterWithHost">
+      <MemberSignature Language="C#" Value="RegisterWithHost" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AppDomainManagerInitializationOptions RegisterWithHost = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.AppDomainManagerInitializationOptions.RegisterWithHost" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AppDomainManagerInitializationOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Register the COM callable wrapper for the current <see cref="T:System.AppDomainManager" /> with the unmanaged host.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

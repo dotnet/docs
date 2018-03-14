@@ -1,0 +1,37 @@
+<Type Name="NamedPipeSettings" FullName="System.ServiceModel.Channels.NamedPipeSettings">
+  <TypeSignature Language="C#" Value="public sealed class NamedPipeSettings" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit NamedPipeSettings extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.NamedPipeSettings" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Specifies named pipe settings.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ApplicationContainerSettings">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.ApplicationContainerSettings ApplicationContainerSettings { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Channels.ApplicationContainerSettings ApplicationContainerSettings" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.NamedPipeSettings.ApplicationContainerSettings" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.ApplicationContainerSettings</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the application container settings for the named pipe settings.</summary>
+        <value>The application container settings for the named pipe settings.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

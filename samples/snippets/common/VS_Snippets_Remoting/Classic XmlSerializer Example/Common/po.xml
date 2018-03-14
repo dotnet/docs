@@ -1,0 +1,24 @@
+<!-- <Snippet2> -->
+<?xml version="1.0"?>
+<PurchaseOrder xmlns:xsi="http://www.w3.org/2000/10/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2000/10/XMLSchema" xmlns="http://www.cpandl.com">
+   <ShipTo Name="Rita Hernandez">
+      <Line1>1 Main St.</Line1>
+      <City>AnyTown</City>
+      <State>WA</State>
+      <Zip>00000</Zip>
+   </ShipTo>
+   <OrderDate>Monday, January 08, 2001</OrderDate>
+   <Items>
+      <OrderedItem>
+         <ItemName>Widget S</ItemName>
+         <Description>Small widget</Description>
+         <UnitPrice>5.23</UnitPrice>
+         <Quantity>3</Quantity>
+         <LineTotal>15.69</LineTotal>
+      </OrderedItem>
+   </Items>
+   <SubTotal>15.69</SubTotal>
+   <ShipCost>12.51</ShipCost>
+   <TotalCost>28.2</TotalCost>
+</PurchaseOrder>
+<!-- </Snippet2> -->

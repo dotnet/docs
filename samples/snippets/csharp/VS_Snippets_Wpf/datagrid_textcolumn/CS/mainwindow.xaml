@@ -1,0 +1,18 @@
+﻿<Window x:Class="DataGrid_TextColumn.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Window" Height="240" Width="809">
+    <!--<Snippet1>-->
+    <Window.Resources>
+        <XmlDataProvider x:Key="customerdata" Source="customers.xml" XPath="Data" />
+    </Window.Resources>
+    <Grid>
+        <DataGrid AutoGenerateColumns="False" ItemsSource="{Binding Source={StaticResource customerdata}, XPath=Customer}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="First Name" Binding="{Binding XPath=@FirstName}" FontFamily="Arial" FontStyle="Italic" />
+                <DataGridTextColumn Header="Last Name" Binding="{Binding XPath=@LastName}" FontFamily="Arial" FontWeight="Bold" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+    <!--</Snippet1>-->
+</Window>

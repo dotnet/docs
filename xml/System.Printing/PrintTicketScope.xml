@@ -1,0 +1,80 @@
+<Type Name="PrintTicketScope" FullName="System.Printing.PrintTicketScope">
+  <TypeSignature Language="C#" Value="public enum PrintTicketScope" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PrintTicketScope extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Printing.PrintTicketScope" />
+  <AssemblyInfo>
+    <AssemblyName>ReachFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies whether a <see cref="T:System.Printing.PrintTicket" /> applies to an entire print job, one document within the print job, or just a page within the print job.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this enumeration primarily as a parameter in the <xref:System.Printing.PrintQueue.MergeAndValidatePrintTicket%2A> method of a <xref:System.Printing.PrintQueue>.  
+  
+ The values in this enumeration parallel the **PrintTicket** keyword scoping prefix in the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397), where in the **PrintTicket** every keyword must start with either the "Job" or "Document" or "Page" scoping prefix.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DocumentScope">
+      <MemberSignature Language="C#" Value="DocumentScope" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintTicketScope DocumentScope = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintTicketScope.DocumentScope" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintTicketScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A single document.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="JobScope">
+      <MemberSignature Language="C#" Value="JobScope" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintTicketScope JobScope = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintTicketScope.JobScope" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintTicketScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An entire print job.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PageScope">
+      <MemberSignature Language="C#" Value="PageScope" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintTicketScope PageScope = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintTicketScope.PageScope" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintTicketScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A single page.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

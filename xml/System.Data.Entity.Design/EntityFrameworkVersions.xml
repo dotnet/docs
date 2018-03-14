@@ -1,0 +1,94 @@
+<Type Name="EntityFrameworkVersions" FullName="System.Data.Entity.Design.EntityFrameworkVersions">
+  <TypeSignature Language="C#" Value="public static class EntityFrameworkVersions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit EntityFrameworkVersions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Entity.Design.EntityFrameworkVersions" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides information about different versions of the Entity Framework.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetSchemaXsd">
+      <MemberSignature Language="C#" Value="public static System.IO.Stream GetSchemaXsd (Version entityFrameworkVersion, System.Data.Metadata.Edm.DataSpace dataSpace);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Stream GetSchemaXsd(class System.Version entityFrameworkVersion, valuetype System.Data.Metadata.Edm.DataSpace dataSpace) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityFrameworkVersions.GetSchemaXsd(System.Version,System.Data.Metadata.Edm.DataSpace)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="entityFrameworkVersion" Type="System.Version" />
+        <Parameter Name="dataSpace" Type="System.Data.Metadata.Edm.DataSpace" />
+      </Parameters>
+      <Docs>
+        <param name="entityFrameworkVersion">The property of <see cref="T:System.Data.Entity.Design.EntityFrameworkVersions" /> that corresponds to the targeted version of the Entity Framework.</param>
+        <param name="dataSpace">The desired <see cref="T:System.Data.Metadata.Edm.DataSpace" /> of the XSD.</param>
+        <summary>Returns a stream of the XSD that corresponds to the specified Entity Framework version, with default model names as specified in the <paramref name="dataSpace" /> parameter.</summary>
+        <returns>A  <see cref="T:System.IO.Stream" /> of the XSD that corresponds to the specified Entity Framework version and <see cref="T:System.Data.Metadata.Edm.DataSpace" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Version1">
+      <MemberSignature Language="C#" Value="public static readonly Version Version1;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Version Version1" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Entity.Design.EntityFrameworkVersions.Version1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Version</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A read-only property that represents version 1 of the Entity Framework.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Version2">
+      <MemberSignature Language="C#" Value="public static readonly Version Version2;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Version Version2" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Entity.Design.EntityFrameworkVersions.Version2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Version</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A read-only property that represents version 2 of the Entity Framework.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Version3">
+      <MemberSignature Language="C#" Value="public static readonly Version Version3;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Version Version3" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Entity.Design.EntityFrameworkVersions.Version3" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Version</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A read-only property that represents version 3 of the Entity Framework.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

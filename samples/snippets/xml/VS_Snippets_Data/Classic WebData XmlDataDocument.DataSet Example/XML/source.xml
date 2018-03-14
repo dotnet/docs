@@ -1,0 +1,45 @@
+<!--<Snippet2>-->
+
+<!--sample XML fragment-->
+<bookstore>
+  <book genre='novel' ISBN='10-861003-324'>
+    <title>The Handmaid's Tale</title>
+    <price>19.95</price>
+  </book>
+  <book genre='novel' ISBN='1-861001-57-5'>
+    <title>Pride And Prejudice</title>
+    <price>24.95</price>
+  </book>
+</bookstore>
+<!--</Snippet2>-->
+<!--<Snippet3>-->
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+ <xsd:element name="bookstore" type="bookstoreType"/>
+
+ <xsd:complexType name="bookstoreType">
+  <xsd:sequence maxOccurs="unbounded">
+   <xsd:element name="book"  type="bookType"/>
+  </xsd:sequence>
+ </xsd:complexType>
+
+ <xsd:complexType name="bookType">
+  <xsd:sequence>
+   <xsd:element name="title" type="xsd:string"/>
+   <xsd:element name="author" type="authorName"/>
+   <xsd:element name="price"  type="xsd:decimal"/>
+  </xsd:sequence>
+  <xsd:attribute name="genre" type="xsd:string"/>
+ </xsd:complexType>
+
+ <xsd:complexType name="authorName">
+  <xsd:sequence>
+   <xsd:element name="first-name"  type="xsd:string"/>
+   <xsd:element name="last-name" type="xsd:string"/>
+  </xsd:sequence>
+ </xsd:complexType>
+
+</xsd:schema>
+<!--</Snippet3>-->
+

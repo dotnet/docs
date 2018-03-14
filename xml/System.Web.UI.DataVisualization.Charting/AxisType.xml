@@ -1,0 +1,70 @@
+<Type Name="AxisType" FullName="System.Web.UI.DataVisualization.Charting.AxisType">
+  <TypeSignature Language="C#" Value="public enum AxisType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AxisType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.AxisType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.DataVisualization</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the axis type for the X and Y-axes of a <see cref="T:System.Web.UI.DataVisualization.Charting.Series" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.DataVisualization.Charting.AxisType> enumeration represents the axis type used for the X and Y-axes of a <xref:System.Web.UI.DataVisualization.Charting.Series>.  
+  
+ A <xref:System.Web.UI.DataVisualization.Charting.Series> is plotted using two axes, with the exception of pie and doughnut charts. This enumeration is used in conjunction with the <xref:System.Web.UI.DataVisualization.Charting.Series.XAxisType%2A> and <xref:System.Web.UI.DataVisualization.Charting.Series.YAxisType%2A> properties to set the axes used for plotting the associated data points of the <xref:System.Web.UI.DataVisualization.Charting.Series>.  
+  
+ For all charts except for bar, stacked bar, pie and doughnut types, the primary and secondary axes are as follows:  
+  
+|Axis Type|Description|  
+|---------------|-----------------|  
+|Primary X-Axis|Bottom horizontal axis.|  
+|Secondary X-Axis|Top horizontal axis.|  
+|Primary Y-Axis|Left vertical axis.|  
+|Secondary Y-Axis|Right vertical axis.|  
+  
+ Bar and stacked-bar charts have their axes rotated 90 degrees clockwise. For example, the primary X-axis for these two charts is the left-vertical axis.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Primary">
+      <MemberSignature Language="C#" Value="Primary" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.AxisType Primary = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.AxisType.Primary" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.AxisType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Designates an axis as the primary axis.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Secondary">
+      <MemberSignature Language="C#" Value="Secondary" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.AxisType Secondary = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.AxisType.Secondary" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.AxisType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Designates an axis as the secondary axis.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

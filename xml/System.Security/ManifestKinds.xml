@@ -1,0 +1,98 @@
+<Type Name="ManifestKinds" FullName="System.Security.ManifestKinds">
+  <TypeSignature Language="C#" Value="public enum ManifestKinds" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ManifestKinds extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Security.ManifestKinds" />
+  <AssemblyInfo>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents the type of manifest that the signature information applies to.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration has two purposes:  
+  
+-   In the <xref:System.Security.Cryptography.ManifestSignatureInformation.VerifySignature%2A> method, it specifies which manifests you want to generate signature information for.  
+  
+-   In a <xref:System.Security.Cryptography.ManifestSignatureInformation> object, it shows you which manifest the signature information is generated from.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="Application" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.ManifestKinds Application = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.ManifestKinds.Application" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.ManifestKinds</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The manifest is for an application.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplicationAndDeployment">
+      <MemberSignature Language="C#" Value="ApplicationAndDeployment" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.ManifestKinds ApplicationAndDeployment = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.ManifestKinds.ApplicationAndDeployment" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.ManifestKinds</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The manifest is for deployment and application. The is the default value for verifying signatures.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Deployment">
+      <MemberSignature Language="C#" Value="Deployment" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.ManifestKinds Deployment = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.ManifestKinds.Deployment" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.ManifestKinds</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The manifest is for deployment only.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.ManifestKinds None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.ManifestKinds.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.ManifestKinds</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The manifest is of no particular type.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

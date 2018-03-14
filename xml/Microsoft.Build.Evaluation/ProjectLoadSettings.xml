@@ -1,0 +1,94 @@
+<Type Name="ProjectLoadSettings" FullName="Microsoft.Build.Evaluation.ProjectLoadSettings">
+  <TypeSignature Language="C#" Value="public enum ProjectLoadSettings" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ProjectLoadSettings extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Evaluation.ProjectLoadSettings" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Flags for controlling the project load.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is a "flags" enum, allowing future settings to be added in an additive, non breaking fashion.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Evaluation.ProjectLoadSettings Default = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Evaluation.ProjectLoadSettings.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Evaluation.ProjectLoadSettings</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Normal load. This is the default.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreMissingImports">
+      <MemberSignature Language="C#" Value="IgnoreMissingImports" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Evaluation.ProjectLoadSettings IgnoreMissingImports = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Evaluation.ProjectLoadSettings.IgnoreMissingImports" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Evaluation.ProjectLoadSettings</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ignore nonexistent targets files when evaluating the project.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RecordDuplicateButNotCircularImports">
+      <MemberSignature Language="C#" Value="RecordDuplicateButNotCircularImports" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Evaluation.ProjectLoadSettings RecordDuplicateButNotCircularImports = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Evaluation.ProjectLoadSettings.RecordDuplicateButNotCircularImports" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Evaluation.ProjectLoadSettings</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that imports including duplicate, but not circular, imports on the <c>ImportsIncludingDuplicates</c> property should be recorded</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RejectCircularImports">
+      <MemberSignature Language="C#" Value="RejectCircularImports" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Evaluation.ProjectLoadSettings RejectCircularImports = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Evaluation.ProjectLoadSettings.RejectCircularImports" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Evaluation.ProjectLoadSettings</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that an exception will be thrown if any circular imports are detected</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

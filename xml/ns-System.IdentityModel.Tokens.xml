@@ -1,0 +1,6 @@
+<Namespace Name="System.IdentityModel.Tokens">
+  <Docs>
+    <summary>The <see cref="N:System.IdentityModel.Tokens" /> namespace contains classes that represent security tokens, security token handlers, key identifier clauses and other artifacts used in token generation and processing. The namespace contains base classes such as <see cref="T:System.IdentityModel.Tokens.SecurityToken" />, <see cref="T:System.IdentityModel.Tokens.SecurityTokenHandler" />, and <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />, as well as classes that derive from these classes and represent several of the token types, artifacts, and handlers for which the Windows Identity Foundation (WIF) has built in support. This includes classes that contain support for SAML v1.1 and v2.0 tokens, such as: <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" />, <see cref="T:System.IdentityModel.Tokens.SamlSecurityTokenHandler" />, <see cref="T:System.IdentityModel.Tokens.Saml2SecurityToken" />, and <see cref="T:System.IdentityModel.Tokens.Saml2SecurityTokenHandler" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Namespace>

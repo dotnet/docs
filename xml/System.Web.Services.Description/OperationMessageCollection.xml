@@ -1,0 +1,456 @@
+<Type Name="OperationMessageCollection" FullName="System.Web.Services.Description.OperationMessageCollection">
+  <TypeSignature Language="C#" Value="public sealed class OperationMessageCollection : System.Web.Services.Description.ServiceDescriptionBaseCollection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OperationMessageCollection extends System.Web.Services.Description.ServiceDescriptionBaseCollection" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.OperationMessageCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.Services.Description.ServiceDescriptionBaseCollection</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a collection of <see cref="T:System.Web.Services.Description.OperationInput" /> and <see cref="T:System.Web.Services.Description.OperationOutput" /> messages related to an XML Web service. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An instance of this class will be returned by the <xref:System.Web.Services.Description.Operation.Messages%2A> property of the parent <xref:System.Web.Services.Description.Operation>. As such, it can have exactly two members, one an <xref:System.Web.Services.Description.OperationInput> and the other an <xref:System.Web.Services.Description.OperationOutput>.  
+  
+   
+  
+## Examples  
+ [!code-cpp[OperationMessageCollection_Sample#1](~/samples/snippets/cpp/VS_Snippets_Remoting/OperationMessageCollection_Sample/CPP/operationmessagecollection_sample.cpp#1)]
+ [!code-csharp[OperationMessageCollection_Sample#1](~/samples/snippets/csharp/VS_Snippets_Remoting/OperationMessageCollection_Sample/CS/operationmessagecollection_sample.cs#1)]
+ [!code-vb[OperationMessageCollection_Sample#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/OperationMessageCollection_Sample/VB/operationmessagecollection_sample.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public int Add (System.Web.Services.Description.OperationMessage operationMessage);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.Web.Services.Description.OperationMessage operationMessage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.OperationMessageCollection.Add(System.Web.Services.Description.OperationMessage)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operationMessage" Type="System.Web.Services.Description.OperationMessage" />
+      </Parameters>
+      <Docs>
+        <param name="operationMessage">The <see cref="T:System.Web.Services.Description.OperationMessage" /> to add to the collection.</param>
+        <summary>Adds the specified <see cref="T:System.Web.Services.Description.OperationMessage" /> to the end of the <see cref="T:System.Web.Services.Description.OperationMessageCollection" />.</summary>
+        <returns>The zero-based index where the <paramref name="operationMessage" /> parameter has been added.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[OperationMessageCollection_Sample#4](~/samples/snippets/cpp/VS_Snippets_Remoting/OperationMessageCollection_Sample/CPP/operationmessagecollection_sample.cpp#4)]
+ [!code-csharp[OperationMessageCollection_Sample#4](~/samples/snippets/csharp/VS_Snippets_Remoting/OperationMessageCollection_Sample/CS/operationmessagecollection_sample.cs#4)]
+ [!code-vb[OperationMessageCollection_Sample#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/OperationMessageCollection_Sample/VB/operationmessagecollection_sample.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (System.Web.Services.Description.OperationMessage operationMessage);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Web.Services.Description.OperationMessage operationMessage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.OperationMessageCollection.Contains(System.Web.Services.Description.OperationMessage)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operationMessage" Type="System.Web.Services.Description.OperationMessage" />
+      </Parameters>
+      <Docs>
+        <param name="operationMessage">The <see cref="T:System.Web.Services.Description.OperationMessage" /> for which to check collection membership.</param>
+        <summary>Determines whether the specified <see cref="T:System.Web.Services.Description.OperationMessage" /> is a member of the <see cref="T:System.Web.Services.Description.OperationMessageCollection" />.</summary>
+        <returns>
+          <see langword="true" /> if the <paramref name="operationMessage" /> parameter is a member of the <see cref="T:System.Web.Services.Description.OperationMessageCollection" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[OperationMessageCollection_Sample#5](~/samples/snippets/cpp/VS_Snippets_Remoting/OperationMessageCollection_Sample/CPP/operationmessagecollection_sample.cpp#5)]
+ [!code-csharp[OperationMessageCollection_Sample#5](~/samples/snippets/csharp/VS_Snippets_Remoting/OperationMessageCollection_Sample/CS/operationmessagecollection_sample.cs#5)]
+ [!code-vb[OperationMessageCollection_Sample#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/OperationMessageCollection_Sample/VB/operationmessagecollection_sample.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (System.Web.Services.Description.OperationMessage[] array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Web.Services.Description.OperationMessage[] array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.OperationMessageCollection.CopyTo(System.Web.Services.Description.OperationMessage[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Web.Services.Description.OperationMessage[]" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">An array of type <see cref="T:System.Web.Services.Description.OperationMessage" /> serving as the destination for the copy action.</param>
+        <param name="index">The zero-based index at which to start placing the copied collection.</param>
+        <summary>Copies the entire <see cref="T:System.Web.Services.Description.OperationMessageCollection" /> to a compatible one-dimensional array of type <see cref="T:System.Web.Services.Description.OperationMessage" />, starting at the specified zero-based index of the target array.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[OperationMessageCollection_Sample#3](~/samples/snippets/cpp/VS_Snippets_Remoting/OperationMessageCollection_Sample/CPP/operationmessagecollection_sample.cpp#3)]
+ [!code-csharp[OperationMessageCollection_Sample#3](~/samples/snippets/csharp/VS_Snippets_Remoting/OperationMessageCollection_Sample/CS/operationmessagecollection_sample.cs#3)]
+ [!code-vb[OperationMessageCollection_Sample#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/OperationMessageCollection_Sample/VB/operationmessagecollection_sample.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Flow">
+      <MemberSignature Language="C#" Value="public System.Web.Services.Description.OperationFlow Flow { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Services.Description.OperationFlow Flow" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.OperationMessageCollection.Flow" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Description.OperationFlow</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of transmission supported by the <see cref="T:System.Web.Services.Description.OperationMessageCollection" />.</summary>
+        <value>One of the <see cref="T:System.Web.Services.Description.OperationFlow" /> values. The default is <see langword="SolicitResponse" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[OperationMessageCollection_Sample#9](~/samples/snippets/cpp/VS_Snippets_Remoting/OperationMessageCollection_Sample/CPP/operationmessagecollection_sample.cpp#9)]
+ [!code-csharp[OperationMessageCollection_Sample#9](~/samples/snippets/csharp/VS_Snippets_Remoting/OperationMessageCollection_Sample/CS/operationmessagecollection_sample.cs#9)]
+ [!code-vb[OperationMessageCollection_Sample#9](~/samples/snippets/visualbasic/VS_Snippets_Remoting/OperationMessageCollection_Sample/VB/operationmessagecollection_sample.vb#9)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOf">
+      <MemberSignature Language="C#" Value="public int IndexOf (System.Web.Services.Description.OperationMessage operationMessage);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Web.Services.Description.OperationMessage operationMessage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.OperationMessageCollection.IndexOf(System.Web.Services.Description.OperationMessage)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operationMessage" Type="System.Web.Services.Description.OperationMessage" />
+      </Parameters>
+      <Docs>
+        <param name="operationMessage">The <see cref="T:System.Web.Services.Description.OperationMessage" /> for which to search in the collection.</param>
+        <summary>Searches for the specified <see cref="T:System.Web.Services.Description.OperationMessage" /> and returns the zero-based index of the first occurrence within the collection.</summary>
+        <returns>The zero-based index of the specified operation message, or -1 if the element was not found in the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[OperationMessageCollection_Sample#6](~/samples/snippets/cpp/VS_Snippets_Remoting/OperationMessageCollection_Sample/CPP/operationmessagecollection_sample.cpp#6)]
+ [!code-csharp[OperationMessageCollection_Sample#6](~/samples/snippets/csharp/VS_Snippets_Remoting/OperationMessageCollection_Sample/CS/operationmessagecollection_sample.cs#6)]
+ [!code-vb[OperationMessageCollection_Sample#6](~/samples/snippets/visualbasic/VS_Snippets_Remoting/OperationMessageCollection_Sample/VB/operationmessagecollection_sample.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Input">
+      <MemberSignature Language="C#" Value="public System.Web.Services.Description.OperationInput Input { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.OperationInput Input" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.OperationMessageCollection.Input" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Description.OperationInput</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the first occurrence of an <see cref="T:System.Web.Services.Description.OperationInput" /> within the collection.</summary>
+        <value>An <see cref="T:System.Web.Services.Description.OperationInput" /> within the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[OperationMessageCollection_Sample#10](~/samples/snippets/cpp/VS_Snippets_Remoting/OperationMessageCollection_Sample/CPP/operationmessagecollection_sample.cpp#10)]
+ [!code-csharp[OperationMessageCollection_Sample#10](~/samples/snippets/csharp/VS_Snippets_Remoting/OperationMessageCollection_Sample/CS/operationmessagecollection_sample.cs#10)]
+ [!code-vb[OperationMessageCollection_Sample#10](~/samples/snippets/visualbasic/VS_Snippets_Remoting/OperationMessageCollection_Sample/VB/operationmessagecollection_sample.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="public void Insert (int index, System.Web.Services.Description.OperationMessage operationMessage);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.Web.Services.Description.OperationMessage operationMessage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.OperationMessageCollection.Insert(System.Int32,System.Web.Services.Description.OperationMessage)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="operationMessage" Type="System.Web.Services.Description.OperationMessage" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index at which to insert the <c>operationMessage</c> parameter.</param>
+        <param name="operationMessage">The <see cref="T:System.Web.Services.Description.OperationMessage" /> to add to the collection.</param>
+        <summary>Adds the specified <see cref="T:System.Web.Services.Description.OperationMessage" /> to the <see cref="T:System.Web.Services.Description.OperationMessageCollection" /> at the specified zero-based index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the number of items in the collection already equals the collection's capacity, the capacity is doubled by automatically reallocating the internal array before the new element is inserted.  
+  
+ If the `index` parameter is equal to <xref:System.Collections.CollectionBase.Count%2A>, the `operationMessage` parameter is added to the end of the collection.  
+  
+ The elements after the insertion point move down to accommodate the new element.  
+  
+   
+  
+## Examples  
+ [!code-cpp[OperationMessageCollection_Sample#8](~/samples/snippets/cpp/VS_Snippets_Remoting/OperationMessageCollection_Sample/CPP/operationmessagecollection_sample.cpp#8)]
+ [!code-csharp[OperationMessageCollection_Sample#8](~/samples/snippets/csharp/VS_Snippets_Remoting/OperationMessageCollection_Sample/CS/operationmessagecollection_sample.cs#8)]
+ [!code-vb[OperationMessageCollection_Sample#8](~/samples/snippets/visualbasic/VS_Snippets_Remoting/OperationMessageCollection_Sample/VB/operationmessagecollection_sample.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Web.Services.Description.OperationMessage this[int index] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.OperationMessage Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.OperationMessageCollection.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Description.OperationMessage</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the <see cref="T:System.Web.Services.Description.OperationMessage" /> whose value is modified or returned.</param>
+        <summary>Gets or sets the value of an <see cref="T:System.Web.Services.Description.OperationMessage" /> at the specified zero-based index.</summary>
+        <value>An <see langword="OperationMessage" /> at the specified zero-based index.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[OperationMessageCollection_Sample#2](~/samples/snippets/cpp/VS_Snippets_Remoting/OperationMessageCollection_Sample/CPP/operationmessagecollection_sample.cpp#2)]
+ [!code-csharp[OperationMessageCollection_Sample#2](~/samples/snippets/csharp/VS_Snippets_Remoting/OperationMessageCollection_Sample/CS/operationmessagecollection_sample.cs#2)]
+ [!code-vb[OperationMessageCollection_Sample#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/OperationMessageCollection_Sample/VB/operationmessagecollection_sample.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnInsert">
+      <MemberSignature Language="C#" Value="protected override void OnInsert (int index, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnInsert(int32 index, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.OperationMessageCollection.OnInsert(System.Int32,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnSet">
+      <MemberSignature Language="C#" Value="protected override void OnSet (int index, object oldValue, object newValue);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnSet(int32 index, object oldValue, object newValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.OperationMessageCollection.OnSet(System.Int32,System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="oldValue" Type="System.Object" />
+        <Parameter Name="newValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <param name="oldValue">To be added.</param>
+        <param name="newValue">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnValidate">
+      <MemberSignature Language="C#" Value="protected override void OnValidate (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnValidate(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.OperationMessageCollection.OnValidate(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Output">
+      <MemberSignature Language="C#" Value="public System.Web.Services.Description.OperationOutput Output { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.OperationOutput Output" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.OperationMessageCollection.Output" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Description.OperationOutput</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the first occurrence of an <see cref="T:System.Web.Services.Description.OperationOutput" /> within the collection.</summary>
+        <value>An <see cref="T:System.Web.Services.Description.OperationOutput" /> within the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[OperationMessageCollection_Sample#11](~/samples/snippets/cpp/VS_Snippets_Remoting/OperationMessageCollection_Sample/CPP/operationmessagecollection_sample.cpp#11)]
+ [!code-csharp[OperationMessageCollection_Sample#11](~/samples/snippets/csharp/VS_Snippets_Remoting/OperationMessageCollection_Sample/CS/operationmessagecollection_sample.cs#11)]
+ [!code-vb[OperationMessageCollection_Sample#11](~/samples/snippets/visualbasic/VS_Snippets_Remoting/OperationMessageCollection_Sample/VB/operationmessagecollection_sample.vb#11)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (System.Web.Services.Description.OperationMessage operationMessage);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Web.Services.Description.OperationMessage operationMessage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.OperationMessageCollection.Remove(System.Web.Services.Description.OperationMessage)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operationMessage" Type="System.Web.Services.Description.OperationMessage" />
+      </Parameters>
+      <Docs>
+        <param name="operationMessage">The <see cref="T:System.Web.Services.Description.OperationMessage" /> to remove from the collection.</param>
+        <summary>Removes the first occurrence of the specified <see cref="T:System.Web.Services.Description.OperationMessage" /> from the <see cref="T:System.Web.Services.Description.OperationMessageCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method performs a linear search; therefore, the average execution time is proportional to <xref:System.Collections.CollectionBase.Count%2A>.  
+  
+ The elements that follow the removed <xref:System.Web.Services.Description.OperationMessage> move up to occupy the vacated spot.  
+  
+   
+  
+## Examples  
+ [!code-cpp[OperationMessageCollection_Sample#7](~/samples/snippets/cpp/VS_Snippets_Remoting/OperationMessageCollection_Sample/CPP/operationmessagecollection_sample.cpp#7)]
+ [!code-csharp[OperationMessageCollection_Sample#7](~/samples/snippets/csharp/VS_Snippets_Remoting/OperationMessageCollection_Sample/CS/operationmessagecollection_sample.cs#7)]
+ [!code-vb[OperationMessageCollection_Sample#7](~/samples/snippets/visualbasic/VS_Snippets_Remoting/OperationMessageCollection_Sample/VB/operationmessagecollection_sample.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetParent">
+      <MemberSignature Language="C#" Value="protected override void SetParent (object value, object parent);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetParent(object value, object parent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.OperationMessageCollection.SetParent(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="parent" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="parent">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,18 @@
+﻿<!--<Snippet2>-->
+<?xml version="1.0" encoding="IBM437"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:simpleType name="WaitQueueLengthType">
+		<xs:restriction base="xs:int">
+			<xs:maxExclusive value="5"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:element name="Lobby">
+		<xs:complexType>
+			<xs:attribute name="WaitQueueLength" type="WaitQueueLengthType"/>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>
+<!--</Snippet2>-->

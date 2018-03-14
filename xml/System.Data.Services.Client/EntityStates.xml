@@ -1,0 +1,109 @@
+<Type Name="EntityStates" FullName="System.Data.Services.Client.EntityStates">
+  <TypeSignature Language="C#" Value="public enum EntityStates" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EntityStates extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Services.Client.EntityStates" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Services.Client</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents the enumeration that identifies the state of an entity being tracked by the <see cref="T:System.Data.Services.Client.DataServiceContext" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Added">
+      <MemberSignature Language="C#" Value="Added" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.Client.EntityStates Added = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.Client.EntityStates.Added" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Client.EntityStates</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The entity was added since the last call to <see cref="M:System.Data.Services.Client.DataServiceContext.SaveChanges" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Deleted">
+      <MemberSignature Language="C#" Value="Deleted" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.Client.EntityStates Deleted = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.Client.EntityStates.Deleted" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Client.EntityStates</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The entity was deleted since the last call to <see cref="M:System.Data.Services.Client.DataServiceContext.SaveChanges" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Detached">
+      <MemberSignature Language="C#" Value="Detached" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.Client.EntityStates Detached = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.Client.EntityStates.Detached" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Client.EntityStates</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The entity was detached since the last call to <see cref="M:System.Data.Services.Client.DataServiceContext.SaveChanges" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Modified">
+      <MemberSignature Language="C#" Value="Modified" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.Client.EntityStates Modified = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.Client.EntityStates.Modified" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Client.EntityStates</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The entity was modified since the last call to <see cref="M:System.Data.Services.Client.DataServiceContext.SaveChanges" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unchanged">
+      <MemberSignature Language="C#" Value="Unchanged" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.Client.EntityStates Unchanged = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.Client.EntityStates.Unchanged" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Client.EntityStates</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The entity is unchanged since the last call to <see cref="M:System.Data.Services.Client.DataServiceContext.SaveChanges" />.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

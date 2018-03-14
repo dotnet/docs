@@ -1,0 +1,31 @@
+﻿<Window x:Class="Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:DataGrid_FrozenColumn_VB"
+    Title="Window1" Height="300" Width="300">
+   
+    <!--Defines the handlers for when the FreezeColumnCommand is executed-->
+    <Window.CommandBindings>
+        <CommandBinding Command="{x:Static local:Window1.FreezeColumnCommand}" Executed="CommandBinding_Executed" />
+    </Window.CommandBindings>
+    <!--Defines the context menu for the ColumnHeaders and attaches the FreezeColumnCommand-->
+    <Window.Resources>
+        <ContextMenu x:Key="ColumnHeaderMenu" IsEnabled="True"  >
+            <MenuItem Header="Freeze Column" IsEnabled="True" Command="{x:Static local:Window1.FreezeColumnCommand}"
+                      CommandTarget="{Binding RelativeSource={RelativeSource AncestorType=Popup}, Path=PlacementTarget}" 
+                      CommandParameter="{Binding ElementName=DG1, Path=CurrentColumn.DisplayIndex}" />
+        </ContextMenu>
+    </Window.Resources>
+
+    <Grid>
+        <!--Creates a new DataGrid with a context menu for the column headers-->
+        <DataGrid Name="DG1" ItemsSource="{Binding}"  >
+            <DataGrid.ColumnHeaderStyle >
+                <Style TargetType="DataGridColumnHeader">
+                    <Setter Property="ContextMenu" Value="{StaticResource ColumnHeaderMenu}" />
+                </Style>
+            </DataGrid.ColumnHeaderStyle>
+        </DataGrid>
+    </Grid>
+    
+</Window>

@@ -1,0 +1,96 @@
+﻿<Application x:Class="SDKSample.app"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	  xmlns:src="clr-namespace:SDKSample" 
+    Startup="AppStartup" 
+    >
+	<Application.Resources>
+    <Style x:Key="smallTitleStyle" TargetType="{x:Type TextBlock}">
+      <Setter Property="FontWeight" Value="Bold"/>
+      <Setter Property="Foreground" Value="DimGray"/>
+      <Setter Property="VerticalAlignment" Value="Center"/>
+      <Setter Property="HorizontalAlignment" Value="Right"/>
+    </Style>
+    
+    <Style x:Key="textStyleTextBlock" TargetType="{x:Type TextBlock}">
+      <Setter Property="Foreground" Value="#333333" />
+    </Style>
+   
+    <Style x:Key="AuctionItem_Color.TextBlock" TargetType="{x:Type TextBlock}">
+      <Setter Property="FontFamily" Value="Segoe" />
+      <Setter Property="FontWeight" Value="Bold" />
+      <Setter Property="FontSize" Value="14pt" />
+      <Setter Property="Foreground" Value="#787070" />
+      <Setter Property="VerticalAlignment" Value="Center" />
+      <Setter Property="HorizontalAlignment" Value="Left" />
+    </Style>
+    
+    <DataTemplate x:Key="AuctionItem_None">
+      <Border BorderThickness="1" BorderBrush="Gray" Padding="7" Name="border" Margin="3" Width="500">
+        <Grid>
+          <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+          </Grid.RowDefinitions>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="86"/>
+            <ColumnDefinition Width="*"/>
+          </Grid.ColumnDefinitions>
+
+         
+          <TextBlock Grid.Row="0" Grid.Column="1" Margin="0,0,8,0" Name="descriptionTitle" Style="{StaticResource smallTitleStyle}">Description:</TextBlock>
+          <TextBlock Name="DescriptionDTDataType" Grid.Row="0" Grid.Column="2" 
+              Text="{Binding Path=Description}" 
+              Style="{StaticResource textStyleTextBlock}"/>
+
+          <TextBlock Grid.Row="1" Grid.Column="1" Margin="0,0,8,0" Name="currentPriceTitle" Style="{StaticResource smallTitleStyle}">Current Price:</TextBlock>
+          <StackPanel Grid.Row="1" Grid.Column="2" Orientation="Horizontal">
+            <TextBlock Text="$" Style="{StaticResource textStyleTextBlock}"/>
+            <TextBlock Name="CurrentPriceDTDataType" 
+                Text="{Binding Path=CurrentPrice}" 
+                Style="{StaticResource textStyleTextBlock}"/>
+          </StackPanel>
+        </Grid>
+      </Border>
+		</DataTemplate>
+
+		<DataTemplate x:Key="AuctionItem_Color">
+      <Border BorderThickness="3" BorderBrush="Orange" Padding="5" Name="border" Margin="3" Width="500">
+        <Grid>
+          <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+          </Grid.RowDefinitions>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="86"/>
+            <ColumnDefinition Width="*"/>
+          </Grid.ColumnDefinitions>
+
+          <Polygon Grid.Row="0" Grid.Column="0" Grid.RowSpan="4" Fill="Yellow" Stroke="Black" StrokeThickness="1" StrokeLineJoin="Round" Width="20" Height="20" Stretch="Fill" Points="9,2 11,7 17,7 12,10 14,15 9,12 4,15 6,10 1,7 7,7" Visibility="Visible" Name="star"/>
+
+          <TextBlock Grid.Row="0" Grid.Column="1" Margin="0,0,8,0" Name="descriptionTitle" Style="{StaticResource smallTitleStyle}">Description:</TextBlock>
+          <TextBlock Name="DescriptionDTDataType" Grid.Row="0" Grid.Column="2" 
+              Text="{Binding Path=Description}" 
+              Style="{StaticResource AuctionItem_Color.TextBlock}"/>
+
+          <TextBlock Grid.Row="1" Grid.Column="1" Margin="0,0,8,0" Name="currentPriceTitle" Style="{StaticResource smallTitleStyle}">Current Price:</TextBlock>
+          <StackPanel Grid.Row="1" Grid.Column="2" Orientation="Horizontal">
+            <TextBlock Text="$" Style="{StaticResource AuctionItem_Color.TextBlock}"/>
+            <TextBlock Name="CurrentPriceDTDataType" 
+                Text="{Binding Path=CurrentPrice}" 
+                Style="{StaticResource AuctionItem_Color.TextBlock}"/>
+          </StackPanel>
+          
+        </Grid>
+      </Border>
+		</DataTemplate>
+
+		<src:AuctionItemDataTemplateSelector x:Key="auctionItemDataTemplateSelector" />
+	</Application.Resources>
+</Application>

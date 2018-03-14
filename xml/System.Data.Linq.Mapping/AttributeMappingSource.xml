@@ -1,0 +1,56 @@
+<Type Name="AttributeMappingSource" FullName="System.Data.Linq.Mapping.AttributeMappingSource">
+  <TypeSignature Language="C#" Value="public sealed class AttributeMappingSource : System.Data.Linq.Mapping.MappingSource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AttributeMappingSource extends System.Data.Linq.Mapping.MappingSource" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Linq.Mapping.AttributeMappingSource" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Linq</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Data.Linq.Mapping.MappingSource</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>A mapping source that uses attributes on the context to create the mapping model.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AttributeMappingSource ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.AttributeMappingSource.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Linq.Mapping.AttributeMappingSource" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateModel">
+      <MemberSignature Language="C#" Value="protected override System.Data.Linq.Mapping.MetaModel CreateModel (Type dataContextType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Data.Linq.Mapping.MetaModel CreateModel(class System.Type dataContextType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.AttributeMappingSource.CreateModel(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Linq.Mapping.MetaModel</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dataContextType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="dataContextType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

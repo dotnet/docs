@@ -1,0 +1,411 @@
+<Type Name="ObjectPoolingAttribute" FullName="System.EnterpriseServices.ObjectPoolingAttribute">
+  <TypeSignature Language="C#" Value="public sealed class ObjectPoolingAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ObjectPoolingAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.ObjectPoolingAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class, Inherited=true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Enables and configures object pooling for a component. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If object pooling is specified, it must not be disabled in the COM+ catalog; if enabled in the COM+ catalog, it must be specified on the component.  
+  
+ For a list of initial property values for an instance of <xref:System.EnterpriseServices.ObjectPoolingAttribute>, see the <xref:System.EnterpriseServices.ObjectPoolingAttribute.%23ctor%2A> constructor.  
+  
+ For more information about using attributes, see [Attributes](~/docs/standard/attributes/index.md).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this attribute.  
+  
+ [!code-cpp[EnterpriseServices_Pooling#0](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServices_Pooling/CPP/inspector.cpp#0)]
+ [!code-csharp[EnterpriseServices_Pooling#0](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServices_Pooling/CS/inspector.cs#0)]
+ [!code-vb[EnterpriseServices_Pooling#0](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServices_Pooling/VB/inspector.vb#0)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.EnterpriseServices.ObjectPoolingAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ObjectPoolingAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ObjectPoolingAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.EnterpriseServices.ObjectPoolingAttribute" /> class and sets the <see cref="P:System.EnterpriseServices.ObjectPoolingAttribute.Enabled" />, <see cref="P:System.EnterpriseServices.ObjectPoolingAttribute.MaxPoolSize" />, <see cref="P:System.EnterpriseServices.ObjectPoolingAttribute.MinPoolSize" />, and <see cref="P:System.EnterpriseServices.ObjectPoolingAttribute.CreationTimeout" /> properties to their default values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows initial property values for an instance of <xref:System.EnterpriseServices.ObjectPoolingAttribute>.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|Enabled|`true`|  
+|MaxPoolSize|-1|  
+|MinPoolSize|-1|  
+|CreationTimeout|-1|  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this attribute.  
+  
+ [!code-cpp[EnterpriseServices_Pooling#0](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServices_Pooling/CPP/inspector.cpp#0)]
+ [!code-csharp[EnterpriseServices_Pooling#0](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServices_Pooling/CS/inspector.cs#0)]
+ [!code-vb[EnterpriseServices_Pooling#0](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServices_Pooling/VB/inspector.vb#0)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ObjectPoolingAttribute (bool enable);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool enable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ObjectPoolingAttribute.#ctor(System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="enable" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="enable">
+          <see langword="true" /> to enable object pooling; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.EnterpriseServices.ObjectPoolingAttribute" /> class and sets the <see cref="P:System.EnterpriseServices.ObjectPoolingAttribute.Enabled" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example creates a new <xref:System.EnterpriseServices.ObjectPoolingAttribute>.  
+  
+ [!code-cpp[EnterpriseServicesObjectPoolingAttribute#1](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServicesObjectPoolingAttribute/cpp/class1.cpp#1)]
+ [!code-csharp[EnterpriseServicesObjectPoolingAttribute#1](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServicesObjectPoolingAttribute/CS/class1.cs#1)]
+ [!code-vb[EnterpriseServicesObjectPoolingAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServicesObjectPoolingAttribute/VB/class1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ObjectPoolingAttribute (int minPoolSize, int maxPoolSize);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 minPoolSize, int32 maxPoolSize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ObjectPoolingAttribute.#ctor(System.Int32,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="minPoolSize" Type="System.Int32" />
+        <Parameter Name="maxPoolSize" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="minPoolSize">The minimum pool size.</param>
+        <param name="maxPoolSize">The maximum pool size.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.EnterpriseServices.ObjectPoolingAttribute" /> class and sets the <see cref="P:System.EnterpriseServices.ObjectPoolingAttribute.MaxPoolSize" /> and <see cref="P:System.EnterpriseServices.ObjectPoolingAttribute.MinPoolSize" /> properties.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example creates a new <xref:System.EnterpriseServices.ObjectPoolingAttribute>.  
+  
+ [!code-cpp[EnterpriseServicesObjectPoolingAttribute#3](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServicesObjectPoolingAttribute/cpp/class1.cpp#3)]
+ [!code-csharp[EnterpriseServicesObjectPoolingAttribute#3](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServicesObjectPoolingAttribute/CS/class1.cs#3)]
+ [!code-vb[EnterpriseServicesObjectPoolingAttribute#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServicesObjectPoolingAttribute/VB/class1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ObjectPoolingAttribute (bool enable, int minPoolSize, int maxPoolSize);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool enable, int32 minPoolSize, int32 maxPoolSize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ObjectPoolingAttribute.#ctor(System.Boolean,System.Int32,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="enable" Type="System.Boolean" />
+        <Parameter Name="minPoolSize" Type="System.Int32" />
+        <Parameter Name="maxPoolSize" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="enable">
+          <see langword="true" /> to enable object pooling; otherwise, <see langword="false" />.</param>
+        <param name="minPoolSize">The minimum pool size.</param>
+        <param name="maxPoolSize">The maximum pool size.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.EnterpriseServices.ObjectPoolingAttribute" /> class and sets the <see cref="P:System.EnterpriseServices.ObjectPoolingAttribute.Enabled" />, <see cref="P:System.EnterpriseServices.ObjectPoolingAttribute.MaxPoolSize" />, and <see cref="P:System.EnterpriseServices.ObjectPoolingAttribute.MinPoolSize" /> properties.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example creates a new <xref:System.EnterpriseServices.ObjectPoolingAttribute>.  
+  
+ [!code-cpp[EnterpriseServicesObjectPoolingAttribute#2](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServicesObjectPoolingAttribute/cpp/class1.cpp#2)]
+ [!code-csharp[EnterpriseServicesObjectPoolingAttribute#2](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServicesObjectPoolingAttribute/CS/class1.cs#2)]
+ [!code-vb[EnterpriseServicesObjectPoolingAttribute#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServicesObjectPoolingAttribute/VB/class1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AfterSaveChanges">
+      <MemberSignature Language="C#" Value="public bool AfterSaveChanges (System.Collections.Hashtable info);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool AfterSaveChanges(class System.Collections.Hashtable info) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ObjectPoolingAttribute.AfterSaveChanges(System.Collections.Hashtable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="info" Type="System.Collections.Hashtable" />
+      </Parameters>
+      <Docs>
+        <param name="info">A hash table that contains internal objects referenced by internal keys.</param>
+        <summary>Called internally by the .NET Framework infrastructure while installing and configuring assemblies in the COM+ catalog.</summary>
+        <returns>
+          <see langword="true" /> if the method has made changes.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Even though it is a public method, the <xref:System.EnterpriseServices.ObjectPoolingAttribute.AfterSaveChanges%2A> method is intended only to be used from within the .NET Framework infrastructure. It is sufficient for a developer to apply the <xref:System.EnterpriseServices.ObjectPoolingAttribute> class attribute and set other members in its interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Apply">
+      <MemberSignature Language="C#" Value="public bool Apply (System.Collections.Hashtable info);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Apply(class System.Collections.Hashtable info) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ObjectPoolingAttribute.Apply(System.Collections.Hashtable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="info" Type="System.Collections.Hashtable" />
+      </Parameters>
+      <Docs>
+        <param name="info">A hash table that contains an internal object to which object pooling properties are applied, referenced by an internal key.</param>
+        <summary>Called internally by the .NET Framework infrastructure while applying the <see cref="T:System.EnterpriseServices.ObjectPoolingAttribute" /> class attribute to a serviced component.</summary>
+        <returns>
+          <see langword="true " />if the method has made changes.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Even though it is a public method, the <xref:System.EnterpriseServices.ObjectPoolingAttribute.Apply%2A> method is intended only to be used from within the .NET Framework infrastructure. It is sufficient for a developer to apply the <xref:System.EnterpriseServices.ObjectPoolingAttribute> class attribute and set other members in its interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreationTimeout">
+      <MemberSignature Language="C#" Value="public int CreationTimeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 CreationTimeout" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ObjectPoolingAttribute.CreationTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the length of time to wait for an object to become available in the pool before throwing an exception. This value is in milliseconds.</summary>
+        <value>The time-out value in milliseconds.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Specifies how long a client will wait, in milliseconds, for an object to be returned from the pool.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this property.  
+  
+ [!code-cpp[EnterpriseServices_Pooling#1](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServices_Pooling/CPP/inspector.cpp#1)]
+ [!code-csharp[EnterpriseServices_Pooling#1](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServices_Pooling/CS/inspector.cs#1)]
+ [!code-vb[EnterpriseServices_Pooling#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServices_Pooling/VB/inspector.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Enabled">
+      <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ObjectPoolingAttribute.Enabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether object pooling is enabled.</summary>
+        <value>
+          <see langword="true" /> if object pooling is enabled; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example gets and sets the value of an `ObjectPoolingAttribute`'s <xref:System.EnterpriseServices.ObjectPoolingAttribute.Enabled%2A> property.  
+  
+ [!code-cpp[EnterpriseServicesObjectPoolingAttribute#4](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServicesObjectPoolingAttribute/cpp/class1.cpp#4)]
+ [!code-csharp[EnterpriseServicesObjectPoolingAttribute#4](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServicesObjectPoolingAttribute/CS/class1.cs#4)]
+ [!code-vb[EnterpriseServicesObjectPoolingAttribute#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServicesObjectPoolingAttribute/VB/class1.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsValidTarget">
+      <MemberSignature Language="C#" Value="public bool IsValidTarget (string s);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsValidTarget(string s) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ObjectPoolingAttribute.IsValidTarget(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="s">A string generated by the .NET Framework infrastructure that is checked for a special value that indicates a serviced component.</param>
+        <summary>Called internally by the .NET Framework infrastructure while installing and configuring assemblies in the COM+ catalog.</summary>
+        <returns>
+          <see langword="true" /> if the attribute is applied to a serviced component class.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Even though it is a public method, the <xref:System.EnterpriseServices.ObjectPoolingAttribute.IsValidTarget%2A> method is intended only to be used from within the .NET Framework infrastructure. It is sufficient for a developer to apply the <xref:System.EnterpriseServices.ObjectPoolingAttribute> class attribute and set other members in its interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxPoolSize">
+      <MemberSignature Language="C#" Value="public int MaxPoolSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxPoolSize" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ObjectPoolingAttribute.MaxPoolSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value for the maximum size of the pool.</summary>
+        <value>The maximum number of objects in the pool.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.EnterpriseServices.ObjectPoolingAttribute.MaxPoolSize%2A> represents the maximum number of pooled objects that the pooling manager will create, both actively used by clients and inactive in the pool. When creating objects, the pooling manager checks to verify that the maximum pool size has not been reached and, if it has not, the pooling manager creates a new object to dispense to the client. If the maximum pool size has been reached, client requests are queued and receive the first available object from the pool in the order in which they arrived. Object creation requests time-out after a specified period.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this property.  
+  
+ [!code-cpp[EnterpriseServices_Pooling#1](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServices_Pooling/CPP/inspector.cpp#1)]
+ [!code-csharp[EnterpriseServices_Pooling#1](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServices_Pooling/CS/inspector.cs#1)]
+ [!code-vb[EnterpriseServices_Pooling#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServices_Pooling/VB/inspector.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinPoolSize">
+      <MemberSignature Language="C#" Value="public int MinPoolSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MinPoolSize" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ObjectPoolingAttribute.MinPoolSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value for the minimum size of the pool.</summary>
+        <value>The minimum number of objects in the pool.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.EnterpriseServices.ObjectPoolingAttribute.MinPoolSize%2A> represents the number of objects that are created when the application starts and the minimum number of objects that are maintained in the pool while the application is running. If the number of available objects in the pool drops below the specified minimum, new objects are created to meet any outstanding object requests and refill the pool. If the number of available objects in the pool is greater than the minimum number, those surplus objects are destroyed during a clean-up cycle.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this property.  
+  
+ [!code-cpp[EnterpriseServices_Pooling#1](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServices_Pooling/CPP/inspector.cpp#1)]
+ [!code-csharp[EnterpriseServices_Pooling#1](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServices_Pooling/CS/inspector.cs#1)]
+ [!code-vb[EnterpriseServices_Pooling#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServices_Pooling/VB/inspector.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

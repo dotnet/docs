@@ -1,0 +1,25 @@
+<Type Name="CompletionCallback" FullName="System.Activities.CompletionCallback">
+  <TypeSignature Language="C#" Value="public delegate void CompletionCallback(NativeActivityContext context, ActivityInstance completedInstance);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CompletionCallback extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.CompletionCallback" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="context" Type="System.Activities.NativeActivityContext" />
+    <Parameter Name="completedInstance" Type="System.Activities.ActivityInstance" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="context">The execution environment of the activity.</param>
+    <param name="completedInstance">The activity that completed.</param>
+    <summary>The method that is called when an activity completes.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

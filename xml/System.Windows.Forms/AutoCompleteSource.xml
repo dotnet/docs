@@ -1,0 +1,162 @@
+<Type Name="AutoCompleteSource" FullName="System.Windows.Forms.AutoCompleteSource">
+  <TypeSignature Language="C#" Value="public enum AutoCompleteSource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AutoCompleteSource extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.AutoCompleteSource" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the source for <see cref="T:System.Windows.Forms.ComboBox" /> and <see cref="T:System.Windows.Forms.TextBox" /> automatic completion functionality.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AllSystemSources">
+      <MemberSignature Language="C#" Value="AllSystemSources" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.AutoCompleteSource AllSystemSources = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AutoCompleteSource.AllSystemSources" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AutoCompleteSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the equivalent of <see cref="F:System.Windows.Forms.AutoCompleteSource.FileSystem" /> and <see cref="F:System.Windows.Forms.AutoCompleteSource.AllUrl" /> as the source. This is the default value when <see cref="T:System.Windows.Forms.AutoCompleteMode" /> has been set to a value other than the default.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AllUrl">
+      <MemberSignature Language="C#" Value="AllUrl" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.AutoCompleteSource AllUrl = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AutoCompleteSource.AllUrl" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AutoCompleteSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the equivalent of <see cref="F:System.Windows.Forms.AutoCompleteSource.HistoryList" /> and <see cref="F:System.Windows.Forms.AutoCompleteSource.RecentlyUsedList" /> as the source.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomSource">
+      <MemberSignature Language="C#" Value="CustomSource" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.AutoCompleteSource CustomSource = int32(64)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AutoCompleteSource.CustomSource" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AutoCompleteSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies strings from a built-in <see cref="T:System.Windows.Forms.AutoCompleteStringCollection" /> as the source.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FileSystem">
+      <MemberSignature Language="C#" Value="FileSystem" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.AutoCompleteSource FileSystem = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AutoCompleteSource.FileSystem" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AutoCompleteSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the file system as the source.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FileSystemDirectories">
+      <MemberSignature Language="C#" Value="FileSystemDirectories" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.AutoCompleteSource FileSystemDirectories = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AutoCompleteSource.FileSystemDirectories" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AutoCompleteSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that only directory names and not file names will be automatically completed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HistoryList">
+      <MemberSignature Language="C#" Value="HistoryList" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.AutoCompleteSource HistoryList = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AutoCompleteSource.HistoryList" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AutoCompleteSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Includes the Uniform Resource Locators (URLs) in the history list.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ListItems">
+      <MemberSignature Language="C#" Value="ListItems" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.AutoCompleteSource ListItems = int32(256)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AutoCompleteSource.ListItems" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AutoCompleteSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the items of the <see cref="T:System.Windows.Forms.ComboBox" /> represent the source.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.AutoCompleteSource None = int32(128)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AutoCompleteSource.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AutoCompleteSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that no <see cref="T:System.Windows.Forms.AutoCompleteSource" /> is currently in use. This is the default value of <see cref="T:System.Windows.Forms.AutoCompleteSource" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RecentlyUsedList">
+      <MemberSignature Language="C#" Value="RecentlyUsedList" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.AutoCompleteSource RecentlyUsedList = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AutoCompleteSource.RecentlyUsedList" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AutoCompleteSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Includes the Uniform Resource Locators (URLs) in the list of those URLs most recently used.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

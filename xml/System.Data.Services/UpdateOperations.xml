@@ -1,0 +1,94 @@
+<Type Name="UpdateOperations" FullName="System.Data.Services.UpdateOperations">
+  <TypeSignature Language="C#" Value="public enum UpdateOperations" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed UpdateOperations extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Services.UpdateOperations" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>An enumeration used to specify the update operations that were performed on an entity.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used on interceptors to determine what kind of changes were performed on entities before they were saved.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="Add" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.UpdateOperations Add = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.UpdateOperations.Add" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.UpdateOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The entity was added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Change">
+      <MemberSignature Language="C#" Value="Change" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.UpdateOperations Change = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.UpdateOperations.Change" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.UpdateOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The entity was modified.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="Delete" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.UpdateOperations Delete = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.UpdateOperations.Delete" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.UpdateOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The entity was deleted.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.UpdateOperations None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.UpdateOperations.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.UpdateOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No operations were performed on the resource.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

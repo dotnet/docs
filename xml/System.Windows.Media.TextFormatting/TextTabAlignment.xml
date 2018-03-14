@@ -1,0 +1,89 @@
+<Type Name="TextTabAlignment" FullName="System.Windows.Media.TextFormatting.TextTabAlignment">
+  <TypeSignature Language="C#" Value="public enum TextTabAlignment" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TextTabAlignment extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.TextTabAlignment" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Describes how text is aligned at a tab location.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Media.TextFormatting.TextTabProperties> object to set tab properties for text.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Center">
+      <MemberSignature Language="C#" Value="Center" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.TextFormatting.TextTabAlignment Center = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.TextFormatting.TextTabAlignment.Center" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TextFormatting.TextTabAlignment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Text is center-aligned at the tab location.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Character">
+      <MemberSignature Language="C#" Value="Character" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.TextFormatting.TextTabAlignment Character = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.TextFormatting.TextTabAlignment.Character" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TextFormatting.TextTabAlignment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Text is aligned at the tab location at a specified character.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Left">
+      <MemberSignature Language="C#" Value="Left" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.TextFormatting.TextTabAlignment Left = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.TextFormatting.TextTabAlignment.Left" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TextFormatting.TextTabAlignment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Text is left-aligned at the tab location.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Right">
+      <MemberSignature Language="C#" Value="Right" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.TextFormatting.TextTabAlignment Right = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.TextFormatting.TextTabAlignment.Right" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TextFormatting.TextTabAlignment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Text is right-aligned at the tab location.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

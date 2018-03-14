@@ -1,0 +1,38 @@
+﻿<Window x:Class="BackEase_scale.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Window1" Height="300" Width="300">
+    <StackPanel Margin="10">
+      <!-- <SnippetBackEase_scale> -->
+      <Rectangle Name="MyRectangle" Margin="60" Width="50" Height="50" Fill="Blue">
+            <Rectangle.Triggers>
+                <EventTrigger RoutedEvent="Rectangle.MouseDown">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation From="1" To="2" Duration="00:00:1" 
+                           Storyboard.TargetName="myScaleTransform" 
+                           Storyboard.TargetProperty="ScaleX">
+                                <DoubleAnimation.EasingFunction>
+                                    <BackEase Amplitude="0.3" EasingMode="EaseInOut" />
+                                </DoubleAnimation.EasingFunction>
+                            </DoubleAnimation>
+                            <DoubleAnimation From="1" To="2" Duration="00:00:1" 
+                           Storyboard.TargetName="myScaleTransform" 
+                           Storyboard.TargetProperty="ScaleY">
+                                <DoubleAnimation.EasingFunction>
+                                    <BackEase Amplitude="0.3" EasingMode="EaseInOut" />
+                                </DoubleAnimation.EasingFunction>
+                            </DoubleAnimation>
+
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Rectangle.Triggers>
+            <Rectangle.RenderTransform>
+                <ScaleTransform x:Name="myScaleTransform" />
+            </Rectangle.RenderTransform>
+
+        </Rectangle>
+        <!-- </SnippetBackEase_scale> -->
+    </StackPanel>
+</Window>

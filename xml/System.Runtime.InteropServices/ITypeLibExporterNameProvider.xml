@@ -1,0 +1,62 @@
+<Type Name="ITypeLibExporterNameProvider" FullName="System.Runtime.InteropServices.ITypeLibExporterNameProvider">
+  <TypeSignature Language="C#" Value="public interface ITypeLibExporterNameProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITypeLibExporterNameProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ITypeLibExporterNameProvider" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("fa1f3615-acb9-486d-9eac-1bef87e36b09")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides control over the casing of names when exported to a type library.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In order to control how types are named when exported to a type library, an object must implement this interface, as well as <xref:System.Runtime.InteropServices.ITypeLibExporterNotifySink>. You then pass this object as the last parameter to <xref:System.Runtime.InteropServices.TypeLibConverter.ConvertAssemblyToTypeLib%2A>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetNames">
+      <MemberSignature Language="C#" Value="public string[] GetNames ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string[] GetNames() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ITypeLibExporterNameProvider.GetNames" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a list of names to control the casing of.</summary>
+        <returns>An array of strings, where each element contains the name of a type to control casing for.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Names in the array returned from this method must be unique. If a name appears twice in the array of names, even with different casing, the first occurance takes precedence.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

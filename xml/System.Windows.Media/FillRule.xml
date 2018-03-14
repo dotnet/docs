@@ -1,0 +1,50 @@
+<Type Name="FillRule" FullName="System.Windows.Media.FillRule">
+  <TypeSignature Language="C#" Value="public enum FillRule" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FillRule extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.FillRule" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies how the intersecting areas of <see cref="T:System.Windows.Media.PathFigure" /> objects contained in a <see cref="T:System.Windows.Media.Geometry" /> are combined to form the area of the <see cref="T:System.Windows.Media.Geometry" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="EvenOdd">
+      <MemberSignature Language="C#" Value="EvenOdd" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.FillRule EvenOdd = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.FillRule.EvenOdd" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.FillRule</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Rule that determines whether a point is in the fill region by drawing a ray from that point to infinity in any direction and counting the number of path segments within the given shape that the ray crosses. If this number is odd, the point is inside; if even, the point is outside.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Nonzero">
+      <MemberSignature Language="C#" Value="Nonzero" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.FillRule Nonzero = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.FillRule.Nonzero" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.FillRule</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Rule that determines whether a point is in the fill region of the path by drawing a ray from that point to infinity in any direction and then examining the places where a segment of the shape crosses the ray. Starting with a count of zero, add one each time a segment crosses the ray from left to right and subtract one each time a path segment crosses the ray from right to left. After counting the crossings, if the result is zero then the point is outside the path. Otherwise, it is inside.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

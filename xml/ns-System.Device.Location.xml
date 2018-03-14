@@ -1,0 +1,23 @@
+<Namespace Name="System.Device.Location">
+  <Docs>
+    <summary>The <see cref="N:System.Device.Location" /> namespace allows application developers to easily access the computer's location by using a single API.  Location information may come from multiple providers, such as GPS, Wi-Fi triangulation, and cell phone tower triangulation. The <see cref="N:System.Device.Location" /> classes provide a single API to encapsulate the multiple location providers on a computer and support seamless prioritization and transitioning between them. As a result, application developers who use this API do not need to tailor applications to specific hardware configurations.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Device.Location.GeoCoordinateWatcher> class supplies location data that is based on latitude and longitude coordinates. The <xref:System.Device.Location.CivicAddressResolver> and <xref:System.Device.Location.ICivicAddressResolver> types provide the ability to resolve from a coordinate location to a civic address. Additionally, the <xref:System.Device.Location.IGeoPositionWatcher%601> interface can be implemented to extend the types of location data that are supplied.  
+  
+ In Windows 7, all the <xref:System.Device.Location> classes are fully functional if a location provider is installed and can determine the computer's location. On Windows 7 Starter Edition, the Default Location Provider that can be set in Control Panel is the only location provider that is supported.  
+  
+ **Note** In versions of Windows prior to Windows 7, the following conditions apply:  
+  
+-   All <xref:System.Device.Location> objects that have constructors can be created, but the <xref:System.Device.Location.GeoCoordinateWatcher.Status%2A> property will always have the value <xref:System.Device.Location.GeoPositionStatus.Disabled>.  
+  
+-   The location indicated by the <xref:System.Device.Location.GeoPosition%601.Location%2A> property of <xref:System.Device.Location.GeoCoordinateWatcher.Position%2A> will always be <xref:System.Device.Location.GeoCoordinate.Unknown>.  
+  
+-   No location events will be raised.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Namespace>

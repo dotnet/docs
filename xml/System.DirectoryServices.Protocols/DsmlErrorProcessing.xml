@@ -1,0 +1,50 @@
+<Type Name="DsmlErrorProcessing" FullName="System.DirectoryServices.Protocols.DsmlErrorProcessing">
+  <TypeSignature Language="C#" Value="public enum DsmlErrorProcessing" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DsmlErrorProcessing extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.DsmlErrorProcessing" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.DsmlErrorProcessing" /> enumeration specifies how to proceed when an error occurs.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Exit">
+      <MemberSignature Language="C#" Value="Exit" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.DsmlErrorProcessing Exit = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.DsmlErrorProcessing.Exit" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.DsmlErrorProcessing</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Exit. Value is equal to 1.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Resume">
+      <MemberSignature Language="C#" Value="Resume" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.DsmlErrorProcessing Resume = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.DsmlErrorProcessing.Resume" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.DsmlErrorProcessing</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Resume. Value is equal to 0.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

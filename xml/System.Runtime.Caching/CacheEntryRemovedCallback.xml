@@ -1,0 +1,30 @@
+<Type Name="CacheEntryRemovedCallback" FullName="System.Runtime.Caching.CacheEntryRemovedCallback">
+  <TypeSignature Language="C#" Value="public delegate void CacheEntryRemovedCallback(CacheEntryRemovedArguments arguments);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CacheEntryRemovedCallback extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Caching.CacheEntryRemovedCallback" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Caching</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="arguments" Type="System.Runtime.Caching.CacheEntryRemovedArguments" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="arguments">The information about the cache entry that was removed from the cache.</param>
+    <summary>Defines a reference to a method that is called after a cache entry is removed from the cache.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Caching.CacheEntryRemovedCallback> delegate passes information about the removed cache entry in the form of a <xref:System.Runtime.Caching.CacheEntryRemovedArguments> object.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

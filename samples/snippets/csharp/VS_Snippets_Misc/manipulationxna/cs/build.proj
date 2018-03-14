@@ -1,0 +1,32 @@
+<Project DefaultTargets="CreateLib;Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" >
+  <Import Project="$(TABLETOOLS)\TableCS.targets" />
+
+  <PropertyGroup>
+    <ThisProjectName>ManipulationXNA</ThisProjectName>
+    <ThisFolder>$(TableRoot)\Docs\Snippets\MPIP\$(ThisProjectName)</ThisFolder>
+  
+    <ManipulationsProjectName>Manipulations</ManipulationsProjectName>
+    <ManipulationsProjectFolder>$(TableRoot)\Source\Manipulations</ManipulationsProjectFolder>
+
+    <ManipulationsDll>System.Windows.Input.Manipulations.dll</ManipulationsDll>
+  </PropertyGroup>
+
+  <Target Name="CreateLib">
+    <MSBuild Projects="$(ManipulationsProjectFolder)\$(ManipulationsProjectName).csproj"/>
+    <Copy SourceFiles="$(ManipulationsProjectFolder)\obj\$(Configuration)\$(ManipulationsDll)" DestinationFolder="$(ThisFolder)" SkipUnchangedFiles="true"/>
+  </Target>
+
+  <Target Name="Build">
+    <Error Text="The $(ManipulationsDll) file was not copied to the $(ThisProjectName) project." Condition="!Exists('$(ThisFolder)\$(ManipulationsDll)')" />
+    <MSBuild Projects="$(ThisProjectName).csproj" />
+  </Target>
+
+  <Target Name="Clean">
+    <RemoveDir Directories="$(ThisFolder)\bin;$(ThisFolder)\obj" />
+    <Delete Files="$(ThisFolder)\$(ManipulationsDll)" />
+    <Delete Files="$(ThisFolder)\$(ThisProjectName).sln" />
+    <Delete Files="$(ThisFolder)\$(ThisProjectName).suo" />
+  </Target>
+
+</Project>
+

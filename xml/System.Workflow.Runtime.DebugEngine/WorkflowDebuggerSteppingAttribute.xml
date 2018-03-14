@@ -1,0 +1,76 @@
+<Type Name="WorkflowDebuggerSteppingAttribute" FullName="System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingAttribute">
+  <TypeSignature Language="C#" Value="public sealed class WorkflowDebuggerSteppingAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WorkflowDebuggerSteppingAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class, AllowMultiple=false, Inherited=true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the debug stepping behavior for composite activities whose child activities can execute concurrently.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ This attribute is used by workflow debugger to determine the order of debugging for child activities that can execute concurrently. This is to allow you to either keep the focus on one branch of your composite activity, or shift back and forth between the concurrently executing child activities.  
+  
+ This attribute should decorate the composite activity, not the child activities.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WorkflowDebuggerSteppingAttribute (System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingOption steppingOption);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingOption steppingOption) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingAttribute.#ctor(System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingOption)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="steppingOption" Type="System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingOption" />
+      </Parameters>
+      <Docs>
+        <param name="steppingOption">A <see cref="T:System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingOption" /> enumeration value specifying the stepping behavior for the concurrently executing child activities.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingAttribute" /> class by using a <see cref="T:System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingOption" /> enumeration value.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SteppingOption">
+      <MemberSignature Language="C#" Value="public System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingOption SteppingOption { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingOption SteppingOption" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingAttribute.SteppingOption" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the stepping behavior for the composite activity.</summary>
+        <value>A <see cref="T:System.Workflow.Runtime.DebugEngine.WorkflowDebuggerSteppingOption" /> enumeration value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

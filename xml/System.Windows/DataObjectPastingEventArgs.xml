@@ -1,0 +1,155 @@
+<Type Name="DataObjectPastingEventArgs" FullName="System.Windows.DataObjectPastingEventArgs">
+  <TypeSignature Language="C#" Value="public sealed class DataObjectPastingEventArgs : System.Windows.DataObjectEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DataObjectPastingEventArgs extends System.Windows.DataObjectEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.DataObjectPastingEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.DataObjectEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains arguments for the <see cref="T:System.Windows.DataObject" />.<see cref="E:System.Windows.DataObject.Pasting" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.DataObject.Pasting> event occurs when a paste operation has selected a data format to paste as, but before the data is actually pasted.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataObjectPastingEventArgs (System.Windows.IDataObject dataObject, bool isDragDrop, string formatToApply);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.IDataObject dataObject, bool isDragDrop, string formatToApply) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.DataObjectPastingEventArgs.#ctor(System.Windows.IDataObject,System.Boolean,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="dataObject" Type="System.Windows.IDataObject" />
+        <Parameter Name="isDragDrop" Type="System.Boolean" />
+        <Parameter Name="formatToApply" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="dataObject">A <see cref="T:System.Windows.DataObject" /> containing the data to be pasted.</param>
+        <param name="isDragDrop">A <see langword="Boolean" /> value indicating whether the paste is part of a drag-and-drop operation. <see langword="true" /> to indicate that the paste is part of a drag-and-drop operation; otherwise, <see langword="false" />. If this parameter is set to <see langword="true" />, a <see cref="E:System.Windows.DataObject.Pasting" /> event is fired on drop.</param>
+        <param name="formatToApply">A string specifying the preferred data format to use for the paste operation. See the <see cref="T:System.Windows.DataFormats" /> class for a set of predefined data formats.</param>
+        <summary>Initializes a new instance of <see cref="T:System.Windows.DataObjectPastingEventArgs" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.DataObjectPastingEventArgs> object is typically created by the application that is initiating the paste operation.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">Raised when <paramref name="dataObject" /> or <paramref name="formatToApply" /> is **null**.</exception>
+        <exception cref="T:System.ArgumentException">Raised when <paramref name="formatToApply" /> specifies a data format that is not present in the data object specified by <paramref name="dataObject" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DataObject">
+      <MemberSignature Language="C#" Value="public System.Windows.IDataObject DataObject { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.IDataObject DataObject" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.DataObjectPastingEventArgs.DataObject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.IDataObject</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a suggested <see cref="T:System.Windows.DataObject" /> to use for the paste operation.</summary>
+        <value>The currently suggested <see cref="T:System.Windows.DataObject" /> to use for the paste operation.  
+  
+ Getting this value returns the currently suggested <see cref="T:System.Windows.DataObject" /> for the paste operation.  
+  
+ Setting this value specifies a new suggested <see cref="T:System.Windows.DataObject" /> to use for the paste operation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Initially this property contains a <xref:System.Windows.DataObject> that is identical to that stored in the <xref:System.Windows.DataObjectPastingEventArgs.SourceDataObject%2A> property. Custom pasting event handlers can specify a new suggested <xref:System.Windows.DataObject> to paste by setting this property.  
+  
+ A <xref:System.Windows.DataObject> stored in this property must have at least one data format, the first of which is automatically applied to the <xref:System.Windows.DataObjectPastingEventArgs.FormatToApply%2A> property when this property is set.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">Raised when an attempt is made to set this property to **null**.</exception>
+        <exception cref="T:System.ArgumentException">Raised when an attempt is made to set this property to a data object that contains no data formats.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FormatToApply">
+      <MemberSignature Language="C#" Value="public string FormatToApply { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FormatToApply" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.DataObjectPastingEventArgs.FormatToApply" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a string specifying the suggested data format to use for the paste operation.</summary>
+        <value>A string specifying the suggested data format to use for the paste operation.  
+  
+ Getting this value returns the currently suggested data format to use for the paste operation.  
+  
+ Setting this value specifies a new suggested data format to use for the paste operation.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Raised when an attempt is made to set this property to **null**.</exception>
+        <exception cref="T:System.ArgumentException">Raised when an attempt is made to set this property to a data format that is not present in the data object referenced by the <see cref="P:System.Windows.DataObjectPastingEventArgs.DataObject" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="InvokeEventHandler">
+      <MemberSignature Language="C#" Value="protected override void InvokeEventHandler (Delegate genericHandler, object genericTarget);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InvokeEventHandler(class System.Delegate genericHandler, object genericTarget) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.DataObjectPastingEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="genericHandler" Type="System.Delegate" />
+        <Parameter Name="genericTarget" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="genericHandler">To be added.</param>
+        <param name="genericTarget">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceDataObject">
+      <MemberSignature Language="C#" Value="public System.Windows.IDataObject SourceDataObject { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.IDataObject SourceDataObject" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.DataObjectPastingEventArgs.SourceDataObject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.IDataObject</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a copy of the original data object associated with the paste operation.</summary>
+        <value>A copy of the original data object associated with the paste operation.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

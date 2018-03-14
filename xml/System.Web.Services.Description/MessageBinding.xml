@@ -1,0 +1,86 @@
+<Type Name="MessageBinding" FullName="System.Web.Services.Description.MessageBinding">
+  <TypeSignature Language="C#" Value="public abstract class MessageBinding : System.Web.Services.Description.NamedItem" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit MessageBinding extends System.Web.Services.Description.NamedItem" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.MessageBinding" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.Services.Description.NamedItem</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Describes how abstract content is mapped into a concrete format.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This abstract class forms the base class for the following classes:  
+  
+-   <xref:System.Web.Services.Description.FaultBinding>  
+  
+-   <xref:System.Web.Services.Description.InputBinding>  
+  
+-   <xref:System.Web.Services.Description.OutputBinding>  
+  
+   
+  
+## Examples  
+ The following example demonstrates a typical use of the `MessageBinding` class.  
+  
+ [!code-cpp[MessageBinding_sample#1](~/samples/snippets/cpp/VS_Snippets_Remoting/MessageBinding_sample/CPP/messagebinding_sample.cpp#1)]
+ [!code-csharp[MessageBinding_sample#1](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageBinding_sample/CS/messagebinding_sample.cs#1)]
+ [!code-vb[MessageBinding_sample#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MessageBinding_sample/VB/messagebinding_sample.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected MessageBinding ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.MessageBinding.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Description.MessageBinding" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OperationBinding">
+      <MemberSignature Language="C#" Value="public System.Web.Services.Description.OperationBinding OperationBinding { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.OperationBinding OperationBinding" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.MessageBinding.OperationBinding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Description.OperationBinding</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Web.Services.Description.OperationBinding" /> of which the current <see cref="T:System.Web.Services.Description.MessageBinding" /> is a member.</summary>
+        <value>An <see cref="T:System.Web.Services.Description.OperationBinding" /> of which the current <see cref="T:System.Web.Services.Description.MessageBinding" /> is a member.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each of the classes derived from the <xref:System.Web.Services.Description.MessageBinding> class corresponds to a Web Services Description Language (WSDL) element (`<input>`, `<output>` or `<fault>`) enclosed by the `<operation>` element, which is in turn enclosed by the `<binding>` element. The <xref:System.Web.Services.Description.OperationBinding> class corresponds to that `<operation>` element in the WSDL document.  
+  
+ For more information about WSDL, see the specification at http://www.w3.org/TR/wsdl/.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

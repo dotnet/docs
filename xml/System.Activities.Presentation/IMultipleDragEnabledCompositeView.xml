@@ -1,0 +1,63 @@
+<Type Name="IMultipleDragEnabledCompositeView" FullName="System.Activities.Presentation.IMultipleDragEnabledCompositeView">
+  <TypeSignature Language="C#" Value="public interface IMultipleDragEnabledCompositeView : System.Activities.Presentation.ICompositeView" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMultipleDragEnabledCompositeView implements class System.Activities.Presentation.ICompositeView" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.IMultipleDragEnabledCompositeView" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Activities.Presentation.ICompositeView</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>An extension interface for ICompositeView to better support multiple drag/drop.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="OnItemsMoved">
+      <MemberSignature Language="C#" Value="public void OnItemsMoved (System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt; movedItems);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnItemsMoved(class System.Collections.Generic.List`1&lt;class System.Activities.Presentation.Model.ModelItem&gt; movedItems) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.IMultipleDragEnabledCompositeView.OnItemsMoved(System.Collections.Generic.List{System.Activities.Presentation.Model.ModelItem})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="movedItems" Type="System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="movedItems">Moved items.</param>
+        <summary>After drag/drop, the source container will be notified which items are moved out. After implement this interface, ICompositeView.OnItemMoved will not be called even in single element drag/drop.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SortSelectedItems">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt; SortSelectedItems (System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt; selectedItems);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.List`1&lt;class System.Activities.Presentation.Model.ModelItem&gt; SortSelectedItems(class System.Collections.Generic.List`1&lt;class System.Activities.Presentation.Model.ModelItem&gt; selectedItems) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.IMultipleDragEnabledCompositeView.SortSelectedItems(System.Collections.Generic.List{System.Activities.Presentation.Model.ModelItem})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="selectedItems" Type="System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="selectedItems">Selected items to sort.</param>
+        <summary>Represents a method that will be used when item order is needed.</summary>
+        <returns>Sorted items.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

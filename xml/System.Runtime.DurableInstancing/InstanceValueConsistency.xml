@@ -1,0 +1,71 @@
+<Type Name="InstanceValueConsistency" FullName="System.Runtime.DurableInstancing.InstanceValueConsistency">
+  <TypeSignature Language="C#" Value="public enum InstanceValueConsistency" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed InstanceValueConsistency extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.DurableInstancing.InstanceValueConsistency" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Describes the consistency guarantee of the instance values contained in a specified dictionary.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="InDoubt">
+      <MemberSignature Language="C#" Value="InDoubt" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.DurableInstancing.InstanceValueConsistency InDoubt = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.DurableInstancing.InstanceValueConsistency.InDoubt" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.DurableInstancing.InstanceValueConsistency</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the consistency of the instance value is in doubt.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.DurableInstancing.InstanceValueConsistency None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.DurableInstancing.InstanceValueConsistency.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.DurableInstancing.InstanceValueConsistency</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that there is no consistency guarantee.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Partial">
+      <MemberSignature Language="C#" Value="Partial" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.DurableInstancing.InstanceValueConsistency Partial = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.DurableInstancing.InstanceValueConsistency.Partial" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.DurableInstancing.InstanceValueConsistency</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the consistency of the instance value is partial.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

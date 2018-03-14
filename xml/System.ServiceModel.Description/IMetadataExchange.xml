@@ -1,0 +1,116 @@
+<Type Name="IMetadataExchange" FullName="System.ServiceModel.Description.IMetadataExchange">
+  <TypeSignature Language="C#" Value="public interface IMetadataExchange" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMetadataExchange" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.IMetadataExchange" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ServiceModel.ServiceContract(ConfigurationName="IMetadataExchange", Name="IMetadataExchange", Namespace="http://schemas.microsoft.com/2006/04/mex")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Exposes methods used to return metadata about a service.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When programming [!INCLUDE[indigo1](~/includes/indigo1-md.md)] services, it is useful to publish metadata about the service. For example, metadata can be a Web Services Description Language (WSDL) document that describes all of the methods and data types employed by a service. Returning metadata about an [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service allows consumers of a service to easily create clients for the service. For more information about [!INCLUDE[indigo2](~/includes/indigo2-md.md)] metadata endpoints, see [Metadata](~/docs/framework/wcf/feature-details/metadata.md).  
+  
+ Services implemented using [!INCLUDE[indigo2](~/includes/indigo2-md.md)] publish metadata by exposing one or more metadata endpoints. Metadata endpoints in [!INCLUDE[indigo2](~/includes/indigo2-md.md)] have an address, a binding and a contract like any other endpoint.  The <xref:System.ServiceModel.Description.MetadataReference> interface specifies the service contract implemented by all metadata endpoints in [!INCLUDE[indigo2](~/includes/indigo2-md.md)].  
+  
+ There is no need to implement the <xref:System.ServiceModel.Description.MetadataReference> contract in your service implementation.  Instead, add the <xref:System.ServiceModel.Description.ServiceMetadataBehavior> to the service description.  
+  
+ Or, when using configuration, set the `contract` attribute of the endpoint element to `IMetadataExchange`. For an example, see [How to: Publish Metadata for a Service Using a Configuration File](~/docs/framework/wcf/feature-details/how-to-publish-metadata-for-a-service-using-a-configuration-file.md).  
+  
+ For details on publishing metadata in [!INCLUDE[indigo2](~/includes/indigo2-md.md)] see [Publishing Metadata](~/docs/framework/wcf/feature-details/publishing-metadata.md).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BeginGet">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginGet (System.ServiceModel.Channels.Message request, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginGet(class System.ServiceModel.Channels.Message request, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.IMetadataExchange.BeginGet(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ServiceModel.OperationContract(Action="http://schemas.xmlsoap.org/ws/2004/09/transfer/Get", AsyncPattern=true, ReplyAction="http://schemas.xmlsoap.org/ws/2004/09/transfer/GetResponse")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="System.ServiceModel.Channels.Message" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="request">A <see cref="T:System.ServiceModel.Channels.Message" /> that should be processed to determine the metadata to return.</param>
+        <param name="callback">An <see cref="T:System.AsyncCallback" /> that points to the method that will process the metadata.</param>
+        <param name="state">Any data which allows the caller to determine which asynchronous call is being returned.</param>
+        <summary>Starts an asynchronous retrieval of metadata.</summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> that can be passed to the <see cref="M:System.ServiceModel.Description.IMetadataExchange.EndGet(System.IAsyncResult)" /> method.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndGet">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message EndGet (IAsyncResult result);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message EndGet(class System.IAsyncResult result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.IMetadataExchange.EndGet(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="result">An <see cref="T:System.IAsyncResult" /> that contains data used to further process the metadata.</param>
+        <summary>Concludes the retrieval of metadata.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> containing the processed metadata.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message Get (System.ServiceModel.Channels.Message request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message Get(class System.ServiceModel.Channels.Message request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.IMetadataExchange.Get(System.ServiceModel.Channels.Message)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ServiceModel.OperationContract(Action="http://schemas.xmlsoap.org/ws/2004/09/transfer/Get", ReplyAction="http://schemas.xmlsoap.org/ws/2004/09/transfer/GetResponse")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="System.ServiceModel.Channels.Message" />
+      </Parameters>
+      <Docs>
+        <param name="request">A <see cref="T:System.ServiceModel.Channels.Message" /> that contains the request for metadata.</param>
+        <summary>Returns the service metadata.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> containing the metadata.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

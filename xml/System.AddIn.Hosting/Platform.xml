@@ -1,0 +1,113 @@
+<Type Name="Platform" FullName="System.AddIn.Hosting.Platform">
+  <TypeSignature Language="C#" Value="public enum Platform" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed Platform extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.AddIn.Hosting.Platform" />
+  <AssemblyInfo>
+    <AssemblyName>System.AddIn</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the bits-per-word of the process in which an out-of-process add-in is run.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows how the enumeration value affects the bits-per-word of the process on different operating systems:  
+  
+||32-bit operating system|64-bit operating system|  
+|-|------------------------------|------------------------------|  
+|Host|32-bit|Same as host process|  
+|AnyCPU|32-bit|64-bit|  
+|X86|32-bit|32-bit|  
+|X64|Exception is thrown|64-bit|  
+||32-bit|N/A|  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AnyCpu">
+      <MemberSignature Language="C#" Value="AnyCpu" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AddIn.Hosting.Platform AnyCpu = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.AddIn.Hosting.Platform.AnyCpu" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AddIn.Hosting.Platform</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The add-in is loaded into an external process with the same bits-per-word as the operating system.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ARM">
+      <MemberSignature Language="C#" Value="ARM" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AddIn.Hosting.Platform ARM = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.AddIn.Hosting.Platform.ARM" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AddIn.Hosting.Platform</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The add-in is loaded into a 32-bit process on an ARM processor.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Host">
+      <MemberSignature Language="C#" Value="Host" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AddIn.Hosting.Platform Host = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.AddIn.Hosting.Platform.Host" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AddIn.Hosting.Platform</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The add-in is loaded into an external process with the same bits-per-word as the host process.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="X64">
+      <MemberSignature Language="C#" Value="X64" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AddIn.Hosting.Platform X64 = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.AddIn.Hosting.Platform.X64" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AddIn.Hosting.Platform</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The add-in is loaded into a 64-bit external process.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="X86">
+      <MemberSignature Language="C#" Value="X86" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AddIn.Hosting.Platform X86 = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.AddIn.Hosting.Platform.X86" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AddIn.Hosting.Platform</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The add-in is loaded into a 32-bit external process.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

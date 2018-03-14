@@ -1,0 +1,60 @@
+<Window  
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="SDKSample.Window1"
+    Title="Grid Methods Sample">
+  <Border BorderBrush="Black" Background="White" BorderThickness="2">
+    <DockPanel VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10">
+      <TextBlock FontSize="20" FontWeight="Bold" DockPanel.Dock="Top">Grid Methods Sample</TextBlock>
+      <TextBlock DockPanel.Dock="Top">Click the buttons on the left to reposition the Rectangle below using methods defined on Grid.</TextBlock>
+      <Grid Margin="0,10,15,0" DockPanel.Dock="Left">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition/>
+          <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+          <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Column="0" Grid.Row="0" HorizontalAlignment="Left" Orientation="Vertical">
+          <Button Click="setCol0">Move Rectangle to Column 0</Button>
+          <Button Click="setCol1">Move Rectangle to Column 1</Button>
+          <Button Click="setCol2" Margin="0,0,0,10">Move Rectangle to Column 2</Button>
+          <Button Click="setRow0">Move Rectangle to Row 0</Button>
+          <Button Click="setRow1">Move Rectangle to Row 1</Button>
+          <Button Click="setRow2" Margin="0,0,0,10">Move Rectangle to Row 2</Button>
+          <Button Click="setColspan">Span All Columns</Button>
+          <Button Click="setRowspan">Span All Rows</Button>
+          <Button Click="clearAll">Clear All</Button>
+        </StackPanel>
+      </Grid>
+      <Grid DockPanel.Dock="Top" Margin="0,10,15,0" HorizontalAlignment="Left" Name="grid1" ShowGridLines="True" Width="400" Height="400" Background="LightSteelBlue">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition/>
+          <ColumnDefinition/>
+          <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+          <RowDefinition/>
+          <RowDefinition/>
+          <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Rectangle Name="rect1" Fill="Silver" Grid.Column="0" Grid.Row="0"/>
+        <TextBlock FontSize="15" HorizontalAlignment="Right" VerticalAlignment="Bottom" Grid.Column="0" Grid.Row="0" Margin="5">Column 0, Row 0</TextBlock>
+        <TextBlock FontSize="15" HorizontalAlignment="Right" VerticalAlignment="Bottom" Grid.Column="1" Grid.Row="0" Margin="5">Column 1, Row 0</TextBlock>
+        <TextBlock FontSize="15" HorizontalAlignment="Right" VerticalAlignment="Bottom" Grid.Column="2" Grid.Row="0" Margin="5">Column 2, Row 0</TextBlock>
+        <TextBlock FontSize="15" HorizontalAlignment="Right" VerticalAlignment="Bottom" Grid.Column="0" Grid.Row="1" Margin="5">Column 0, Row 1</TextBlock>
+        <TextBlock FontSize="15" HorizontalAlignment="Right" VerticalAlignment="Bottom" Grid.Column="1" Grid.Row="1" Margin="5">Column 1, Row 1</TextBlock>
+        <TextBlock FontSize="15" HorizontalAlignment="Right" VerticalAlignment="Bottom" Grid.Column="2" Grid.Row="1" Margin="5">Column 2, Row 1</TextBlock>
+        <TextBlock FontSize="15" HorizontalAlignment="Right" VerticalAlignment="Bottom" Grid.Column="0" Grid.Row="2" Margin="5">Column 0, Row 2</TextBlock>
+        <TextBlock FontSize="15" HorizontalAlignment="Right" VerticalAlignment="Bottom" Grid.Column="1" Grid.Row="2" Margin="5">Column 1, Row 2</TextBlock>
+        <TextBlock FontSize="15" HorizontalAlignment="Right" VerticalAlignment="Bottom" Grid.Column="2" Grid.Row="2" Margin="5">Column 2, Row 2</TextBlock>
+      </Grid>
+
+      <TextBlock DockPanel.Dock="Top" Name="txt1"/>
+      <TextBlock DockPanel.Dock="Top" Name="txt2"/>
+      <TextBlock DockPanel.Dock="Top" Name="txt3"/>
+      <TextBlock DockPanel.Dock="Top" Name="txt4"/>
+    </DockPanel>
+  </Border>
+</Window>

@@ -1,0 +1,99 @@
+<Type Name="SourceLocationProvider" FullName="System.Activities.Debugger.SourceLocationProvider">
+  <TypeSignature Language="C#" Value="public static class SourceLocationProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SourceLocationProvider extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Debugger.SourceLocationProvider" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerNonUserCode</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides <see cref="T:System.Activities.Debugger.SourceLocation" /> information for the mapping of a root activity and its descendants to their corresponding source locations.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CollectMapping">
+      <MemberSignature Language="C#" Value="public static void CollectMapping (System.Activities.Activity rootActivity1, System.Activities.Activity rootActivity2, System.Collections.Generic.Dictionary&lt;object,System.Activities.Debugger.SourceLocation&gt; mapping, string path);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CollectMapping(class System.Activities.Activity rootActivity1, class System.Activities.Activity rootActivity2, class System.Collections.Generic.Dictionary`2&lt;object, class System.Activities.Debugger.SourceLocation&gt; mapping, string path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.SourceLocationProvider.CollectMapping(System.Activities.Activity,System.Activities.Activity,System.Collections.Generic.Dictionary{System.Object,System.Activities.Debugger.SourceLocation},System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rootActivity1" Type="System.Activities.Activity" />
+        <Parameter Name="rootActivity2" Type="System.Activities.Activity" />
+        <Parameter Name="mapping" Type="System.Collections.Generic.Dictionary&lt;System.Object,System.Activities.Debugger.SourceLocation&gt;" />
+        <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="rootActivity1">A workflow element that represents an activity that is not mapped to a source location.</param>
+        <param name="rootActivity2">A workflow element that shadows <c>rootActivity1</c> but has specific source locations to which its members are mapped.</param>
+        <param name="mapping">A dictionary object that contains a root activity and its descendants, each mapped to a source location.</param>
+        <param name="path">The path of the source file to use.</param>
+        <summary>Creates to a dictionary type collection of mappings of the root activity and its descendants to their corresponding source locations.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSourceLocations">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.Dictionary&lt;object,System.Activities.Debugger.SourceLocation&gt; GetSourceLocations (System.Activities.Activity rootActivity, System.Activities.Debugger.Symbol.WorkflowSymbol symbol);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.Dictionary`2&lt;object, class System.Activities.Debugger.SourceLocation&gt; GetSourceLocations(class System.Activities.Activity rootActivity, class System.Activities.Debugger.Symbol.WorkflowSymbol symbol) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.SourceLocationProvider.GetSourceLocations(System.Activities.Activity,System.Activities.Debugger.Symbol.WorkflowSymbol)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.Dictionary&lt;System.Object,System.Activities.Debugger.SourceLocation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rootActivity" Type="System.Activities.Activity" />
+        <Parameter Name="symbol" Type="System.Activities.Debugger.Symbol.WorkflowSymbol" />
+      </Parameters>
+      <Docs>
+        <param name="rootActivity">A workflow element that represents the root activity from which to get the source locations.</param>
+        <param name="symbol">An object that contains the workflow symbols.</param>
+        <summary>Gets the source locations for the specified root activity and workflow symbols.</summary>
+        <returns>A <see cref="T:System.Collections.Generic.Dictionary`2" /> object that contains the source locations.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSymbols">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.ICollection&lt;System.Activities.Debugger.Symbol.ActivitySymbol&gt; GetSymbols (System.Activities.Activity rootActivity, System.Collections.Generic.Dictionary&lt;object,System.Activities.Debugger.SourceLocation&gt; sourceLocations);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.ICollection`1&lt;class System.Activities.Debugger.Symbol.ActivitySymbol&gt; GetSymbols(class System.Activities.Activity rootActivity, class System.Collections.Generic.Dictionary`2&lt;object, class System.Activities.Debugger.SourceLocation&gt; sourceLocations) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.SourceLocationProvider.GetSymbols(System.Activities.Activity,System.Collections.Generic.Dictionary{System.Object,System.Activities.Debugger.SourceLocation})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.ICollection&lt;System.Activities.Debugger.Symbol.ActivitySymbol&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rootActivity" Type="System.Activities.Activity" />
+        <Parameter Name="sourceLocations" Type="System.Collections.Generic.Dictionary&lt;System.Object,System.Activities.Debugger.SourceLocation&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="rootActivity">A workflow element that represents the root activity from which to get the workflow symbols.</param>
+        <param name="sourceLocations">An object that contains the source locations.</param>
+        <summary>Gets the workflow symbols for the specified root activity and source locations.</summary>
+        <returns>An <see cref="T:System.Collections.Generic.ICollection`1" /> object that contains the workflow symbols.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

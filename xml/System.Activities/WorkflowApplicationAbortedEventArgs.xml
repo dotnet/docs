@@ -1,0 +1,65 @@
+<Type Name="WorkflowApplicationAbortedEventArgs" FullName="System.Activities.WorkflowApplicationAbortedEventArgs">
+  <TypeSignature Language="C#" Value="public class WorkflowApplicationAbortedEventArgs : System.Activities.WorkflowApplicationEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WorkflowApplicationAbortedEventArgs extends System.Activities.WorkflowApplicationEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.WorkflowApplicationAbortedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Activities.WorkflowApplicationEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data about an aborted workflow instance.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a workflow hosted by a <xref:System.Activities.WorkflowApplication> is aborted, the <xref:System.Activities.WorkflowApplication.Aborted%2A> handler is invoked and the <xref:System.Activities.WorkflowApplication.Completed%2A> handler is not invoked.  
+  
+   
+  
+## Examples  
+ The following code example inspects the <xref:System.Activities.WorkflowApplicationAbortedEventArgs> passed into the <xref:System.Activities.WorkflowApplication.Aborted%2A> handler of a <xref:System.Activities.WorkflowApplication> instance and displays information about why workflow was aborted.  
+  
+ [!code-csharp[CFX_WorkflowApplicationExample#5](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#5)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Reason">
+      <MemberSignature Language="C#" Value="public Exception Reason { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Exception Reason" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.WorkflowApplicationAbortedEventArgs.Reason" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Exception</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the exception that provides information about why the workflow instance was aborted</summary>
+        <value>The exception that provides information about why the workflow instance was aborted.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a workflow hosted by a <xref:System.Activities.WorkflowApplication> is aborted, the <xref:System.Activities.WorkflowApplication.Aborted%2A> handler is invoked and the <xref:System.Activities.WorkflowApplication.Completed%2A> handler is not invoked.  
+  
+   
+  
+## Examples  
+ The following code example inspects the <xref:System.Activities.WorkflowApplicationAbortedEventArgs> passed into the <xref:System.Activities.WorkflowApplication.Aborted%2A> handler of a <xref:System.Activities.WorkflowApplication> instance and displays information about why workflow was aborted.  
+  
+ [!code-csharp[CFX_WorkflowApplicationExample#5](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

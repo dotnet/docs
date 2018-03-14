@@ -1,0 +1,77 @@
+<Type Name="CertificateValidationHelper" FullName="Mono.Security.Interface.CertificateValidationHelper">
+  <TypeSignature Language="C#" Value="public static class CertificateValidationHelper" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed CertificateValidationHelper extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Mono.Security.Interface.CertificateValidationHelper" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetValidator">
+      <MemberSignature Language="C#" Value="public static Mono.Security.Interface.ICertificateValidator GetValidator (Mono.Security.Interface.MonoTlsSettings settings);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Mono.Security.Interface.ICertificateValidator GetValidator(class Mono.Security.Interface.MonoTlsSettings settings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.CertificateValidationHelper.GetValidator(Mono.Security.Interface.MonoTlsSettings)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.ICertificateValidator</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="settings" Type="Mono.Security.Interface.MonoTlsSettings" />
+      </Parameters>
+      <Docs>
+        <param name="settings">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsTrustAnchors">
+      <MemberSignature Language="C#" Value="public static bool SupportsTrustAnchors { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool SupportsTrustAnchors" />
+      <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.CertificateValidationHelper.SupportsTrustAnchors" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsX509Chain">
+      <MemberSignature Language="C#" Value="public static bool SupportsX509Chain { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool SupportsX509Chain" />
+      <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.CertificateValidationHelper.SupportsX509Chain" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

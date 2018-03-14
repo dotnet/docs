@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0">
+  <channel CustomAttribute="Value">
+    <title>Feed Title</title>
+    <link>http://feed/Alternate/Link</link>
+    <description>This is a sample feed</description>
+    <language>en-us</language>
+    <copyright>Copyright 2007</copyright>
+    <managingEditor>jesper@contoso.com</managingEditor>
+    <lastBuildDate>Fri, 13 Apr 2007 17:29:38 Z</lastBuildDate>
+    <category domain="CategoryScheme">FeedCategory</category>
+    <a10:link rel="alternate" type="text/html" title="Link Title" length="1000" href="http://server/link" />
+    <generator>Sample Code</generator>
+    <!-- <Snippet11> -->
+    <a10:contributor>
+      <a10:name>Jesper Aaberg</a10:name>
+      <a10:uri>http://Jesper/Aaberg</a10:uri>
+      <a10:email>Jesper@company.com</a10:email>
+    </a10:contributor>
+    <!-- </Snippet11> -->
+    <a10:author>
+      <a10:name>Lene Aalling</a10:name>
+      <a10:uri>http://Lene/Aalling</a10:uri>
+      <a10:email>Lene@company.com</a10:email>
+    </a10:author>
+    <image>
+      <url>http://server/image.jpg</url>
+      <title>Feed Title</title>
+      <link>http://feed/Alternate/Link</link>
+    </image>
+    <a10:id>FeedID</a10:id>
+    <a10:link customAttribute="value" rel="alternate" type="text/html" title="Link Title" length="1000" href="http://server/link" />   
+    <CustomElement>Some text</CustomElement>
+    <item>
+      <guid isPermaLink="false">ItemID</guid>
+      <link>http://server/items</link>
+      <title>Item Title</title>
+      <description>Some text content</description>
+      <a10:updated>2007-04-13T17:29:38Z</a10:updated>
+    </item>
+    <!-- <Snippet5> -->
+    <item p4:itemAttrib="ItemAttribValue" xmlns:p4="http://FeedServer/tags">
+      <!-- <Snippet13> -->
+      <link>http://someserver/MyItem</link>
+      <link>http://alternate/Link</link>
+      <!-- </Snippet13> -->
+      <!-- <Snippet15> -->
+      <source>MyFeed</source>
+      <!-- </Snippet15> -->
+      <link>http://someserver/MyItem</link>
+      <author>jesper@contoso.com</author>
+      <!-- <Snippet17> -->
+      <description>this is a summary for my item</description>
+      <!-- </Snippet17> -->
+      <a10:content type="text">This is some content</a10:content>
+    </item>
+    <!-- </Snippet5> -->
+    <!-- <Snippet7> -->
+    <item>
+      <guid isPermaLink="false">Item ID</guid>
+      <link>http://someserver/MyItem</link>
+      <author>someone@mycompany.com</author>
+      <title>My Item</title>
+      <description>This is some content</description>
+      <a10:link rel="alternate" type="text/html" title="Alternate Link" length="1000" href="http://otherserver/Item" />
+      <a10:updated>2007-03-16T23:00:59Z</a10:updated>
+    </item>
+    <!-- </Snippet7> -->
+    <!-- <Snippet9> -->
+    <item>
+      <guid isPermaLink="false">Item ID</guid>
+      <link>http://someserver/MyItem</link>
+      <author>lene@contoso.com</author>
+      <category>Category One</category>
+      <!-- <Snippet19> -->
+      <title>My Item</title>
+      <!-- </Snippet19> -->
+
+      <description>This is some content</description>
+      <a10:link rel="alternate" type="text/html" title="Alternate Link" length="1000" href="http://otherserver/Item" />
+      <a10:updated>2007-03-16T23:02:54Z</a10:updated>
+    </item>
+    <!-- </Snippet9> -->
+
+  </channel>
+</rss>
+

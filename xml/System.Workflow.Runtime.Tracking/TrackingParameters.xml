@@ -1,0 +1,225 @@
+<Type Name="TrackingParameters" FullName="System.Workflow.Runtime.Tracking.TrackingParameters">
+  <TypeSignature Language="C#" Value="public sealed class TrackingParameters" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TrackingParameters extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.TrackingParameters" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Contains information about the workflow instance associated with a <see cref="T:System.Workflow.Runtime.Tracking.TrackingChannel" />. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ The runtime tracking infrastructure passes a <xref:System.Workflow.Runtime.Tracking.TrackingParameters> object in when it calls <xref:System.Workflow.Runtime.Tracking.TrackingService.GetTrackingChannel%2A> on a <xref:System.Workflow.Runtime.Tracking.TrackingService>. You can use these parameters in your tracking service to associate tracking data received on the <xref:System.Workflow.Runtime.Tracking.TrackingChannel> with a specific workflow instance.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TrackingParameters (Guid instanceId, Type workflowType, System.Workflow.ComponentModel.Activity rootActivity, System.Collections.Generic.IList&lt;string&gt; callPath, Guid callerInstanceId, Guid contextGuid, Guid callerContextGuid, Guid callerParentContextGuid);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Guid instanceId, class System.Type workflowType, class System.Workflow.ComponentModel.Activity rootActivity, class System.Collections.Generic.IList`1&lt;string&gt; callPath, valuetype System.Guid callerInstanceId, valuetype System.Guid contextGuid, valuetype System.Guid callerContextGuid, valuetype System.Guid callerParentContextGuid) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.TrackingParameters.#ctor(System.Guid,System.Type,System.Workflow.ComponentModel.Activity,System.Collections.Generic.IList{System.String},System.Guid,System.Guid,System.Guid,System.Guid)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="instanceId" Type="System.Guid" />
+        <Parameter Name="workflowType" Type="System.Type" />
+        <Parameter Name="rootActivity" Type="System.Workflow.ComponentModel.Activity" />
+        <Parameter Name="callPath" Type="System.Collections.Generic.IList&lt;System.String&gt;" />
+        <Parameter Name="callerInstanceId" Type="System.Guid" />
+        <Parameter Name="contextGuid" Type="System.Guid" />
+        <Parameter Name="callerContextGuid" Type="System.Guid" />
+        <Parameter Name="callerParentContextGuid" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="instanceId">The <see cref="T:System.Guid" /> of the workflow instance associated with the tracking channel.</param>
+        <param name="workflowType">The <see cref="T:System.Type" /> of the workflow instance associated with the tracking channel.</param>
+        <param name="rootActivity">The root <see cref="T:System.Workflow.ComponentModel.Activity" /> of the workflow instance associated with the tracking channel.</param>
+        <param name="callPath">A list of strings, each of which represents the <see cref="P:System.Workflow.ComponentModel.Activity.QualifiedName" /> of an activity in the call chain of the workflow instance associated with the tracking channel. Currently, only the <see cref="P:System.Workflow.ComponentModel.Activity.QualifiedName" /> of the activity that invoked the workflow instance is included in the list.</param>
+        <param name="callerInstanceId">The <see cref="T:System.Guid" /> of the workflow that has called the workflow instance associated with the tracking channel.</param>
+        <param name="contextGuid">A number that identifies the <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> of the root activity of the workflow instance associated with the tracking channel.</param>
+        <param name="callerContextGuid">A number that identifies the <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> of the activity that invoked the workflow instance associated with the tracking channel.</param>
+        <param name="callerParentContextGuid">A number that identifies the parent <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> of the activity that invoked the workflow instance associated with the tracking channel.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.TrackingParameters" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The constructor is called by the runtime tracking infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CallerContextGuid">
+      <MemberSignature Language="C#" Value="public Guid CallerContextGuid { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid CallerContextGuid" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingParameters.CallerContextGuid" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the context ID of the caller activity.</summary>
+        <value>A <see cref="T:System.Guid" /> that contains the context ID of the caller <see cref="T:System.Workflow.ComponentModel.Activity" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CallerInstanceId">
+      <MemberSignature Language="C#" Value="public Guid CallerInstanceId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid CallerInstanceId" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingParameters.CallerInstanceId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Guid" /> of the workflow instance that called the workflow instance associated with the tracking channel.</summary>
+        <value>The <see cref="T:System.Guid" /> of the workflow instance that called the workflow instance associated with the tracking channel.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CallerParentContextGuid">
+      <MemberSignature Language="C#" Value="public Guid CallerParentContextGuid { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid CallerParentContextGuid" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingParameters.CallerParentContextGuid" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the context ID of the caller's parent activity.</summary>
+        <value>A <see cref="T:System.Guid" /> that contains the context ID of the caller's parent <see cref="T:System.Workflow.ComponentModel.Activity" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CallPath">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;string&gt; CallPath { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;string&gt; CallPath" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingParameters.CallPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a list of strings, each of which represents the <see cref="P:System.Workflow.ComponentModel.Activity.QualifiedName" /> of an activity in the call chain of the workflow instance associated with the tracking channel.</summary>
+        <value>A list of strings, each of which represents the <see cref="P:System.Workflow.ComponentModel.Activity.QualifiedName" /> of an activity in the call chain of the workflow instance associated with the tracking channel.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Currently, only the <xref:System.Workflow.ComponentModel.Activity.QualifiedName%2A> of the activity that invoked the workflow instance is included in the list.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContextGuid">
+      <MemberSignature Language="C#" Value="public Guid ContextGuid { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid ContextGuid" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingParameters.ContextGuid" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the context ID of the associated activity.</summary>
+        <value>A <see cref="T:System.Guid" /> that contains the context ID of the <see cref="T:System.Workflow.ComponentModel.Activity" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InstanceId">
+      <MemberSignature Language="C#" Value="public Guid InstanceId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid InstanceId" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingParameters.InstanceId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Guid" /> of the workflow instance associated with the tracking channel.</summary>
+        <value>The <see cref="T:System.Guid" /> of the workflow instance associated with the tracking channel.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RootActivity">
+      <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.Activity RootActivity { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.ComponentModel.Activity RootActivity" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingParameters.RootActivity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.Activity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the root activity of the workflow instance associated with the tracking channel.</summary>
+        <value>An <see cref="T:System.Workflow.ComponentModel.Activity" /> that represents the root activity of the workflow instance associated with the tracking channel.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkflowType">
+      <MemberSignature Language="C#" Value="public Type WorkflowType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type WorkflowType" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingParameters.WorkflowType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Type" /> of the workflow instance associated with the tracking channel.</summary>
+        <value>The <see cref="T:System.Type" /> of the workflow instance associated with the tracking channel.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

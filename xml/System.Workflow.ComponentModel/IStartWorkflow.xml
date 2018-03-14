@@ -1,0 +1,54 @@
+<Type Name="IStartWorkflow" FullName="System.Workflow.ComponentModel.IStartWorkflow">
+  <TypeSignature Language="C#" Value="public interface IStartWorkflow" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IStartWorkflow" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.IStartWorkflow" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines a service that can be obtained from an <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> for the purpose of starting a new workflow instance.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="StartWorkflow">
+      <MemberSignature Language="C#" Value="public Guid StartWorkflow (Type workflowType, System.Collections.Generic.Dictionary&lt;string,object&gt; namedArgumentValues);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Guid StartWorkflow(class System.Type workflowType, class System.Collections.Generic.Dictionary`2&lt;string, object&gt; namedArgumentValues) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.IStartWorkflow.StartWorkflow(System.Type,System.Collections.Generic.Dictionary{System.String,System.Object})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="workflowType" Type="System.Type" />
+        <Parameter Name="namedArgumentValues" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Object&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="workflowType">The <see cref="T:System.Type" /> of the workflow.</param>
+        <param name="namedArgumentValues">A <see cref="P:System.Collections.DictionaryBase.Dictionary" /> that contains runtime parameters for the workflow.</param>
+        <summary>Starts the workflow of designated <see cref="T:System.Type" /> providing the running instance with a <see cref="P:System.Collections.DictionaryBase.Dictionary" /> that contains runtime parameters.</summary>
+        <returns>The instance ID of the workflow that is started.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

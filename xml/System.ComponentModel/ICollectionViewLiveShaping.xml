@@ -1,0 +1,250 @@
+<Type Name="ICollectionViewLiveShaping" FullName="System.ComponentModel.ICollectionViewLiveShaping">
+  <TypeSignature Language="C#" Value="public interface ICollectionViewLiveShaping" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICollectionViewLiveShaping" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.ICollectionViewLiveShaping" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines properties that enables sorting, grouping, and filtering on a <see cref="T:System.Windows.Data.CollectionView" /> in real time.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When live sorting, grouping, or filtering is enabled, a <xref:System.Windows.Data.CollectionView> will rearrange the position of data in the <xref:System.Windows.Data.CollectionView> when the data is modified.  For example, suppose that an application uses a <xref:System.Windows.Controls.DataGrid> to list stocks in a stock market and the stocks are sorted by stock value.  If live sorting is enabled on the stocks' <xref:System.Windows.Data.CollectionView>, a stock's position in the <xref:System.Windows.Controls.DataGrid> moves when the value of the stock becomes greater or less than another stock's value.  
+  
+ The <xref:System.Windows.Data.ListCollectionView>, <xref:System.Windows.Data.BindingListCollectionView>, and <xref:System.Windows.Controls.ItemCollection> classes implement the <xref:System.ComponentModel.ICollectionViewLiveShaping> interface. The <xref:System.Windows.Data.CollectionViewSource> class also implements the properties defined by <xref:System.ComponentModel.ICollectionViewLiveShaping> to enable setting the properties in XAML.  
+  
+## Notes for Inheritors  
+ Implement this interface on your custom <xref:System.Windows.Data.CollectionView> to support sorting, grouping, and filtering data in real time. Your <xref:System.Windows.Data.CollectionView> can implement the sorting, grouping, and filtering operations itself, or you can delegate one or more of them to another object, such as the underlying collection. If you delegate the shaping operations, the <xref:System.Windows.Data.CollectionView> might not have control over whether live shaping is enabled. Your <xref:System.Windows.Data.CollectionView> must accept the behavior of the object to which it delegates. In this case, set the appropriate **CanChange*** properties to `false`.  If your <xref:System.Windows.Data.CollectionView> knows whether the delegate object supports live shaping, it can set the appropriate `IsLive`* properties to the known value.  Otherwise, the <xref:System.Windows.Data.CollectionView> should set the `IsLive`* properties to `null`.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CanChangeLiveFiltering">
+      <MemberSignature Language="C#" Value="public bool CanChangeLiveFiltering { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanChangeLiveFiltering" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.ICollectionViewLiveShaping.CanChangeLiveFiltering" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the collection view supports turning filtering data in real time on or off.</summary>
+        <value>
+          <see langword="true" /> if the collection view supports turning live filtering on or off; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## Notes for Inheritors  
+ Your <xref:System.Windows.Data.CollectionView> can implement live filtering itself, or you can delegate live filtering to another object, such as the underlying collection. If you delegate live filtering, the <xref:System.Windows.Data.CollectionView> might not have control over whether it is enabled. Your <xref:System.Windows.Data.CollectionView> must accept the behavior of the object to which it delegates. In this case, set the <xref:System.ComponentModel.ICollectionViewLiveShaping.CanChangeLiveFiltering%2A> property to `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanChangeLiveGrouping">
+      <MemberSignature Language="C#" Value="public bool CanChangeLiveGrouping { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanChangeLiveGrouping" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.ICollectionViewLiveShaping.CanChangeLiveGrouping" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the collection view supports turning grouping data in real time on or off.</summary>
+        <value>
+          <see langword="true" /> if the collection view supports turning live grouping on or off; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## Notes for Inheritors  
+ Your <xref:System.Windows.Data.CollectionView> can implement live grouping itself, or you can delegate live grouping to another object, such as the underlying collection. If you delegate live grouping, the <xref:System.Windows.Data.CollectionView> might not have control over whether it is enabled. Your <xref:System.Windows.Data.CollectionView> must accept the behavior of the object to which it delegates. In this case, set the <xref:System.ComponentModel.ICollectionViewLiveShaping.CanChangeLiveGrouping%2A> property to `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanChangeLiveSorting">
+      <MemberSignature Language="C#" Value="public bool CanChangeLiveSorting { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanChangeLiveSorting" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.ICollectionViewLiveShaping.CanChangeLiveSorting" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the collection view supports turning sorting data in real time on or off.</summary>
+        <value>
+          <see langword="true" /> if the collection view supports turning live sorting on or off; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## Notes for Inheritors  
+ Your <xref:System.Windows.Data.CollectionView> can implement live sorting itself, or you can delegate live sorting to another object, such as the underlying collection. If you delegate live sorting, the <xref:System.Windows.Data.CollectionView> might not have control over whether it is enabled. Your <xref:System.Windows.Data.CollectionView> must accept the behavior of the object to which it delegates. In this case, set the <xref:System.ComponentModel.ICollectionViewLiveShaping.CanChangeLiveSorting%2A> property to `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsLiveFiltering">
+      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; IsLiveFiltering { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsLiveFiltering" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.ICollectionViewLiveShaping.IsLiveFiltering" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether filtering data in real time is enabled.</summary>
+        <value>
+          <see langword="true" /> if filtering data in real time is enabled; <see langword="false" /> if live filtering is not enabled; <see langword="null" /> if it cannot be determined whether the collection view implements live filtering.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## Notes for Inheritors  
+ Your <xref:System.Windows.Data.CollectionView> can implement live filtering itself, or you can delegate live filtering to another object, such as the underlying collection. If you delegate live filtering, the <xref:System.Windows.Data.CollectionView> might not have control over whether it is enabled. Your <xref:System.Windows.Data.CollectionView> must accept the behavior of the object to which it delegates. If your <xref:System.Windows.Data.CollectionView> knows whether the delegate object supports live filtering, set the <xref:System.ComponentModel.ICollectionViewLiveShaping.IsLiveFiltering%2A> property to the known value.  Otherwise, set <xref:System.ComponentModel.ICollectionViewLiveShaping.IsLiveFiltering%2A> to `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsLiveGrouping">
+      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; IsLiveGrouping { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsLiveGrouping" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.ICollectionViewLiveShaping.IsLiveGrouping" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether grouping data in real time is enabled.</summary>
+        <value>
+          <see langword="true" /> if grouping data in real time is enable; <see langword="false" /> if live grouping is not enabled; <see langword="null" /> if it cannot be determined whether the collection view implements live grouping.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## Notes for Inheritors  
+ Your <xref:System.Windows.Data.CollectionView> can implement live grouping itself, or you can delegate live grouping to another object, such as the underlying collection. If you delegate live grouping, the <xref:System.Windows.Data.CollectionView> might not have control over whether it is enabled. Your <xref:System.Windows.Data.CollectionView> must accept the behavior of the object to which it delegates. If your <xref:System.Windows.Data.CollectionView> knows whether the delegate object supports live grouping, set the <xref:System.ComponentModel.ICollectionViewLiveShaping.IsLiveGrouping%2A> property to the known value.  Otherwise, set <xref:System.ComponentModel.ICollectionViewLiveShaping.IsLiveGrouping%2A> to `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsLiveSorting">
+      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; IsLiveSorting { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsLiveSorting" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.ICollectionViewLiveShaping.IsLiveSorting" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether sorting in real time is enabled.</summary>
+        <value>
+          <see langword="true" /> if sorting data in real time is enable; <see langword="false" /> if live sorting is not enabled; <see langword="null" /> if it cannot be determined whether the collection view implements live sorting.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## Notes for Inheritors  
+ Your <xref:System.Windows.Data.CollectionView> can implement live sorting itself, or you can delegate live sorting to another object, such as the underlying collection. If you delegate live sorting, the <xref:System.Windows.Data.CollectionView> might not have control over whether it is enabled. Your <xref:System.Windows.Data.CollectionView> must accept the behavior of the object to which it delegates. If your <xref:System.Windows.Data.CollectionView> knows whether the delegate object supports live sorting, set the <xref:System.ComponentModel.ICollectionViewLiveShaping.IsLiveSorting%2A> property to the known value.  Otherwise, set <xref:System.ComponentModel.ICollectionViewLiveShaping.IsLiveSorting%2A> to `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LiveFilteringProperties">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ObservableCollection&lt;string&gt; LiveFilteringProperties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ObservableCollection`1&lt;string&gt; LiveFilteringProperties" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.ICollectionViewLiveShaping.LiveFilteringProperties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ObservableCollection&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of strings that specify the properties that participate in filtering data in real time.</summary>
+        <value>A collection of strings that specify the properties that participate in filtering data in real time.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LiveGroupingProperties">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ObservableCollection&lt;string&gt; LiveGroupingProperties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ObservableCollection`1&lt;string&gt; LiveGroupingProperties" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.ICollectionViewLiveShaping.LiveGroupingProperties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ObservableCollection&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of strings that specify the properties that participate in grouping data in real time.</summary>
+        <value>A collection of strings that specify the properties that participate in grouping data in real time.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LiveSortingProperties">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ObservableCollection&lt;string&gt; LiveSortingProperties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ObservableCollection`1&lt;string&gt; LiveSortingProperties" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.ICollectionViewLiveShaping.LiveSortingProperties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ObservableCollection&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of strings that specify the properties that participate in sorting data in real time.</summary>
+        <value>A collection of strings that specify the properties that participate in sorting data in real time.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

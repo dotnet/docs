@@ -1,0 +1,326 @@
+<Type Name="WorkflowDesignerIcons+DesignerItems" FullName="System.Activities.Presentation.WorkflowDesignerIcons+DesignerItems">
+  <TypeSignature Language="C#" Value="public static class WorkflowDesignerIcons.DesignerItems" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed beforefieldinit WorkflowDesignerIcons/DesignerItems extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides the items available when working with the workflow designer.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ActivityErrorValidation">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush ActivityErrorValidation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush ActivityErrorValidation" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems.ActivityErrorValidation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the control used to display the result of activity error validation.</summary>
+        <value>The control used to display the result of activity error validation.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Annotation">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush Annotation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush Annotation" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems.Annotation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the control used for assigning annotation.</summary>
+        <value>The control used for assigning annotation.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteButton">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush DeleteButton { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush DeleteButton" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems.DeleteButton" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the control button for deleting items within the designer canvas.</summary>
+        <value>The control button for deleting items within the designer canvas.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteDisabledButton">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush DeleteDisabledButton { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush DeleteDisabledButton" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems.DeleteDisabledButton" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the disabled delete button.</summary>
+        <value>The disabled delete button.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FitToScreen">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush FitToScreen { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush FitToScreen" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems.FitToScreen" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the control that is used to reduce size of the designer components to fit them all within the design surface.</summary>
+        <value>
+          <see langword="True" /> if the width of the form is reduced to fit the width of the screen; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveDownButton">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush MoveDownButton { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush MoveDownButton" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems.MoveDownButton" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the button control to move down the selected component(s) on the design surface.</summary>
+        <value>The button control to move down the selected component(s) on the design surface.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveDownDisabledButton">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush MoveDownDisabledButton { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush MoveDownDisabledButton" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems.MoveDownDisabledButton" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the disabled move down button.</summary>
+        <value>The disabled move down button.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveUpButton">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush MoveUpButton { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush MoveUpButton" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems.MoveUpButton" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the button control to move up the selected component(s) on the design surface.</summary>
+        <value>The button control to move up the selected component(s) on the design surface.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveUpDisabledButton">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush MoveUpDisabledButton { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush MoveUpDisabledButton" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems.MoveUpDisabledButton" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the disabled move up button.</summary>
+        <value>The disabled move up button.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Overview">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush Overview { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush Overview" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems.Overview" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the control for viewing the entire workflow map.</summary>
+        <value>The control for viewing the entire workflow map.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OverviewWindowCloseButton">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush OverviewWindowCloseButton { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush OverviewWindowCloseButton" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems.OverviewWindowCloseButton" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the button control for closing overview map.</summary>
+        <value>The button control for closing overview map.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PanMode">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush PanMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush PanMode" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems.PanMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the control that contains the pan mode.</summary>
+        <value>The control that contains the pan mode.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResizeGrip">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush ResizeGrip { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush ResizeGrip" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems.ResizeGrip" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the control that enables a window to change its size.</summary>
+        <value>The control that enables a window to change its size.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextBoxErrorValidation">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush TextBoxErrorValidation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush TextBoxErrorValidation" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems.TextBoxErrorValidation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the control used to display the result of warning validation.</summary>
+        <value>The control used to display the result of the text box error validation.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WarningValidation">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush WarningValidation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush WarningValidation" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems.WarningValidation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the control used to display the result of the warning validation.</summary>
+        <value>The control used to display the result of the warning validation.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkflowErrorValidation">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush WorkflowErrorValidation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush WorkflowErrorValidation" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems.WorkflowErrorValidation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the control used to display the result of the workflow error validation.</summary>
+        <value>The control used to display the result of the workflow error validation.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Zoom">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush Zoom { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush Zoom" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems.Zoom" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the control that allows the window to be magnified.</summary>
+        <value>The control that allows the window to be magnified</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

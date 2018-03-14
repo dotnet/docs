@@ -1,0 +1,93 @@
+<Type Name="FlowDirections" FullName="System.Windows.Automation.Text.FlowDirections">
+  <TypeSignature Language="C#" Value="public enum FlowDirections" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FlowDirections extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Text.FlowDirections" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationTypes</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("2E22CC6B-7C34-4002-91AA-E103A09D1027")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Values for <see cref="F:System.Windows.Automation.TextPattern.TextFlowDirectionsAttribute" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BottomToTop">
+      <MemberSignature Language="C#" Value="BottomToTop" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.FlowDirections BottomToTop = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.FlowDirections.BottomToTop" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Text.FlowDirections</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bottom to top.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.FlowDirections Default = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.FlowDirections.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Text.FlowDirections</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Top to bottom, left to right, horizontal.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RightToLeft">
+      <MemberSignature Language="C#" Value="RightToLeft" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.FlowDirections RightToLeft = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.FlowDirections.RightToLeft" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Text.FlowDirections</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Right to left.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Vertical">
+      <MemberSignature Language="C#" Value="Vertical" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.FlowDirections Vertical = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.FlowDirections.Vertical" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Text.FlowDirections</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Vertical.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

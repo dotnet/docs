@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:s0="http://tempuri.org/" targetNamespace="http://tempuri.org/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <s:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Subtract">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="a" type="s:float" />
+            <s:element minOccurs="1" maxOccurs="1" name="b" type="s:float" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SubtractResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SubtractResult" type="s:float" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="float" type="s:float" />
+    </s:schema>
+  </types>
+  <message name="SubtractSoapIn">
+    <part name="parameters" element="s0:Subtract" />
+  </message>
+  <message name="SubtractSoapOut">
+    <part name="parameters" element="s0:SubtractResponse" />
+  </message>
+  <message name="SubtractHttpGetIn">
+    <part name="a" type="s:string" />
+    <part name="b" type="s:string" />
+  </message>
+  <message name="SubtractHttpGetOut">
+    <part name="Body" element="s0:float" />
+  </message>
+  <message name="SubtractHttpPostIn">
+    <part name="a" type="s:string" />
+    <part name="b" type="s:string" />
+  </message>
+  <message name="SubtractHttpPostOut">
+    <part name="Body" element="s0:float" />
+  </message>
+  <portType name="MathService1Soap">
+    <operation name="Subtract">
+      <input message="s0:SubtractSoapIn" />
+      <output message="s0:SubtractSoapOut" />
+    </operation>
+  </portType>
+  <portType name="MathService1HttpGet">
+    <operation name="Subtract">
+      <input message="s0:SubtractHttpGetIn" />
+      <output message="s0:SubtractHttpGetOut" />
+    </operation>
+  </portType>
+  <portType name="MathService1HttpPost">
+    <operation name="Subtract">
+      <input message="s0:SubtractHttpPostIn" />
+      <output message="s0:SubtractHttpPostOut" />
+    </operation>
+  </portType>
+  <binding name="MathService1Soap" type="s0:MathService1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <operation name="Subtract">
+      <soap:operation soapAction="http://tempuri.org/Subtract" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <binding name="MathService1HttpGet" type="s0:MathService1HttpGet">
+    <http:binding verb="GET" />
+    <operation name="Subtract">
+      <http:operation location="/Subtract" />
+      <input>
+        <http:urlEncoded />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+  </binding>
+  <binding name="MathService1HttpPost" type="s0:MathService1HttpPost">
+    <http:binding verb="POST" />
+    <operation name="Subtract">
+      <http:operation location="/Subtract" />
+      <input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+  </binding>
+  <service name="MathService1">
+    <port name="MathService1Soap" binding="s0:MathService1Soap">
+      <soap:address location="http://localhost/ServiceDescription_Read/SubtractService_VB.asmx" />
+    </port>
+    <port name="MathService1HttpGet" binding="s0:MathService1HttpGet">
+      <http:address location="http://localhost/ServiceDescription_Read/SubtractService_VB.asmx" />
+    </port>
+    <port name="MathService1HttpPost" binding="s0:MathService1HttpPost">
+      <http:address location="http://localhost/ServiceDescription_Read/SubtractService_VB.asmx" />
+    </port>
+  </service>
+</definitions>

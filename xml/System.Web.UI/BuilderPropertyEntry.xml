@@ -1,0 +1,44 @@
+<Type Name="BuilderPropertyEntry" FullName="System.Web.UI.BuilderPropertyEntry">
+  <TypeSignature Language="C#" Value="public abstract class BuilderPropertyEntry : System.Web.UI.PropertyEntry" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BuilderPropertyEntry extends System.Web.UI.PropertyEntry" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.BuilderPropertyEntry" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.PropertyEntry</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Serves as the base class for all property entries that require a control builder.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The page parser uses property entry classes during parsing to represent expressions found within server control tags. <xref:System.Web.UI.ComplexPropertyEntry> and <xref:System.Web.UI.TemplatePropertyEntry> both derive from <xref:System.Web.UI.BuilderPropertyEntry> to allow for the specifying of a control builder.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Builder">
+      <MemberSignature Language="C#" Value="public System.Web.UI.ControlBuilder Builder { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ControlBuilder Builder" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.BuilderPropertyEntry.Builder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.ControlBuilder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the control builder for the property entry.</summary>
+        <value>A <see cref="T:System.Web.UI.ControlBuilder" /> for this property entry.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

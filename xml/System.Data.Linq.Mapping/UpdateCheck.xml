@@ -1,0 +1,79 @@
+<Type Name="UpdateCheck" FullName="System.Data.Linq.Mapping.UpdateCheck">
+  <TypeSignature Language="C#" Value="public enum UpdateCheck" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed UpdateCheck extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Linq.Mapping.UpdateCheck" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Linq</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies when objects are to be tested for concurrency conflicts.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The code example after the table specifies that `HomePage` objects should never be tested.  
+  
+   
+  
+## Examples  
+ [!code-csharp[System.Data.Linq.Mapping.UpdateCheck#1](~/samples/snippets/csharp/VS_Snippets_Data/system.data.linq.mapping.updatecheck/cs/northwind.cs#1)]
+ [!code-vb[System.Data.Linq.Mapping.UpdateCheck#1](~/samples/snippets/visualbasic/VS_Snippets_Data/system.data.linq.mapping.updatecheck/vb/northwind.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Always">
+      <MemberSignature Language="C#" Value="Always" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Linq.Mapping.UpdateCheck Always = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Linq.Mapping.UpdateCheck.Always" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Linq.Mapping.UpdateCheck</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Always check. This is the default unless <see cref="P:System.Data.Linq.Mapping.ColumnAttribute.IsVersion" /> is <see langword="true" /> for a member.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Never">
+      <MemberSignature Language="C#" Value="Never" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Linq.Mapping.UpdateCheck Never = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Linq.Mapping.UpdateCheck.Never" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Linq.Mapping.UpdateCheck</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Never check.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WhenChanged">
+      <MemberSignature Language="C#" Value="WhenChanged" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Linq.Mapping.UpdateCheck WhenChanged = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Linq.Mapping.UpdateCheck.WhenChanged" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Linq.Mapping.UpdateCheck</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Check only when the object has been changed.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

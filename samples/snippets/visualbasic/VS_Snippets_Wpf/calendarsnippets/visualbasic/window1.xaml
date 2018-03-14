@@ -1,0 +1,8 @@
+﻿<Window x:Class="Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Window1">
+  <StackPanel Name="root">
+    <Calendar Name="calendar1" Loaded="calendar1_Loaded"/>
+  </StackPanel>
+</Window>

@@ -1,0 +1,75 @@
+<Type Name="SelectResult" FullName="System.Web.UI.WebControls.SelectResult">
+  <TypeSignature Language="C#" Value="public sealed class SelectResult" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SelectResult extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.SelectResult" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the select result. This type is designed to be used when you use the async model binding feature, which is introduced in 4.6, and want to enable custom paging.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SelectResult (int totalRowCount, System.Collections.IEnumerable results);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 totalRowCount, class System.Collections.IEnumerable results) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SelectResult.#ctor(System.Int32,System.Collections.IEnumerable)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="totalRowCount" Type="System.Int32" />
+        <Parameter Name="results" Type="System.Collections.IEnumerable" />
+      </Parameters>
+      <Docs>
+        <param name="totalRowCount">The total number of rows in the result.</param>
+        <param name="results">The list of results.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.SelectResult" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Results">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerable Results { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IEnumerable Results" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SelectResult.Results" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a list of results.</summary>
+        <value>A list of results.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TotalRowCount">
+      <MemberSignature Language="C#" Value="public int TotalRowCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 TotalRowCount" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SelectResult.TotalRowCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the total number of rows in the result.</summary>
+        <value>The total number of rows in the result.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

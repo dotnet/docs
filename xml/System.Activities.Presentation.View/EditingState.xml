@@ -1,0 +1,66 @@
+<Type Name="EditingState" FullName="System.Activities.Presentation.View.EditingState">
+  <TypeSignature Language="C#" Value="public enum EditingState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EditingState extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.View.EditingState" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Enumerates the possible states of editing an expression in an expression text box.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Editing">
+      <MemberSignature Language="C#" Value="Editing" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Presentation.View.EditingState Editing = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.EditingState.Editing" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.View.EditingState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the editing state for an expression.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Idle">
+      <MemberSignature Language="C#" Value="Idle" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Presentation.View.EditingState Idle = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.EditingState.Idle" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.View.EditingState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the idle state in editing an expression.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Validating">
+      <MemberSignature Language="C#" Value="Validating" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Presentation.View.EditingState Validating = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.EditingState.Validating" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.View.EditingState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the validating state in editing an expression.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

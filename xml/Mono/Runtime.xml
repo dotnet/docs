@@ -1,0 +1,101 @@
+<Type Name="Runtime" FullName="Mono.Runtime">
+  <TypeSignature Language="C#" Value="public static class Runtime" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Runtime extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Mono.Runtime" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetDisplayName">
+      <MemberSignature Language="C#" Value="public static string GetDisplayName ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetDisplayName() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Mono.Runtime.GetDisplayName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InstallSignalHandlers">
+      <MemberSignature Language="C#" Value="public static void InstallSignalHandlers ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void InstallSignalHandlers() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Mono.Runtime.InstallSignalHandlers" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveSignalHandlers">
+      <MemberSignature Language="C#" Value="public static void RemoveSignalHandlers ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemoveSignalHandlers() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Mono.Runtime.RemoveSignalHandlers" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetGCAllowSynchronousMajor">
+      <MemberSignature Language="C#" Value="public static bool SetGCAllowSynchronousMajor (bool flag);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool SetGCAllowSynchronousMajor(bool flag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Mono.Runtime.SetGCAllowSynchronousMajor(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="flag" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="flag">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

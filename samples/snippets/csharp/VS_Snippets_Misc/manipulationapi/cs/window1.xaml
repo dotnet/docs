@@ -1,0 +1,34 @@
+﻿<Window 
+    x:Class="ManipulationAPI.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Mainipulation API Test" Height="400" Width="560">
+    <Grid ShowGridLines="True">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="40"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Label Name="StatusLabel" Grid.Column="1" Grid.Row="0" />
+        
+        <Canvas Name="MainCanvas" Grid.Column="1" Grid.Row="2"/>
+        
+        <StackPanel Grid.Column="1" Grid.Row="1" Margin="8"  Orientation="Horizontal">
+            <CheckBox Name="CheckTranslate" 
+                      Margin="5" Content="Transform" 
+                      IsChecked="True"/>
+            <CheckBox Name="CheckRotate" 
+                      Margin="5" Content="Rotate" 
+                      IsChecked="True"/>
+            <CheckBox Name="CheckScale" 
+                      Margin="5" Content="Scale" 
+                      IsChecked="True"/>
+        </StackPanel>
+    </Grid>
+</Window>

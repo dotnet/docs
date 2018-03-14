@@ -1,0 +1,128 @@
+<Type Name="WindowHelperService" FullName="System.Activities.Presentation.Hosting.WindowHelperService">
+  <TypeSignature Language="C#" Value="public class WindowHelperService" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WindowHelperService extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Hosting.WindowHelperService" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides functionalities to register and unregister delegates for event notifications, as well as set ownership for windows.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WindowHelperService (IntPtr hwnd);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(native int hwnd) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Hosting.WindowHelperService.#ctor(System.IntPtr)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="hwnd" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="hwnd">A handle to a parent window.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Presentation.Hosting.WindowHelperService" /> class with the specific handle to a parent window.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParentWindowHwnd">
+      <MemberSignature Language="C#" Value="public IntPtr ParentWindowHwnd { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance native int ParentWindowHwnd" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Hosting.WindowHelperService.ParentWindowHwnd" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the handle of the parent window.</summary>
+        <value>Returns <see cref="T:System.IntPtr" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterWindowMessageHandler">
+      <MemberSignature Language="C#" Value="public bool RegisterWindowMessageHandler (System.Activities.Presentation.Hosting.WindowMessage callback);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RegisterWindowMessageHandler(class System.Activities.Presentation.Hosting.WindowMessage callback) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Hosting.WindowHelperService.RegisterWindowMessageHandler(System.Activities.Presentation.Hosting.WindowMessage)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="callback" Type="System.Activities.Presentation.Hosting.WindowMessage" />
+      </Parameters>
+      <Docs>
+        <param name="callback">The delegate to be registered for event notifications.</param>
+        <summary>Registers the specified delegate for event notifications.</summary>
+        <returns>
+          <see langword="true" /> if the operation is successful; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="callback" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TrySetWindowOwner">
+      <MemberSignature Language="C#" Value="public bool TrySetWindowOwner (System.Windows.DependencyObject source, System.Windows.Window target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TrySetWindowOwner(class System.Windows.DependencyObject source, class System.Windows.Window target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Hosting.WindowHelperService.TrySetWindowOwner(System.Windows.DependencyObject,System.Windows.Window)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Windows.DependencyObject" />
+        <Parameter Name="target" Type="System.Windows.Window" />
+      </Parameters>
+      <Docs>
+        <param name="source">The owner of <c>target</c>.</param>
+        <param name="target">The window that is to be owned by <c>source</c>.</param>
+        <summary>Assigns the window to be the owner of the specified window.</summary>
+        <returns>
+          <see langword="true" /> if the operation is successful; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnregisterWindowMessageHandler">
+      <MemberSignature Language="C#" Value="public bool UnregisterWindowMessageHandler (System.Activities.Presentation.Hosting.WindowMessage callback);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool UnregisterWindowMessageHandler(class System.Activities.Presentation.Hosting.WindowMessage callback) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Hosting.WindowHelperService.UnregisterWindowMessageHandler(System.Activities.Presentation.Hosting.WindowMessage)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="callback" Type="System.Activities.Presentation.Hosting.WindowMessage" />
+      </Parameters>
+      <Docs>
+        <param name="callback">The delegate to be removed from event notifications.</param>
+        <summary>Unregisters the specified delegate for event notifications.</summary>
+        <returns>
+          <see langword="true" /> if the operation is successful; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

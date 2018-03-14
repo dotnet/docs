@@ -1,0 +1,79 @@
+<Type Name="CustomizeMapAreasEventArgs" FullName="System.Web.UI.DataVisualization.Charting.CustomizeMapAreasEventArgs">
+  <TypeSignature Language="C#" Value="public class CustomizeMapAreasEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CustomizeMapAreasEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.CustomizeMapAreasEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.DataVisualization</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the CustomizeMapAreas event of the <see cref="T:System.Web.UI.DataVisualization.Charting.Chart" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class provides data for the <xref:System.Web.UI.DataVisualization.Charting.Chart.CustomizeMapAreas> event of the Chart control.  
+  
+ The only property of this class is the <xref:System.Web.UI.DataVisualization.Charting.CustomizeMapAreasEventArgs.MapAreaItems%2A>s property, which enables developers to:  
+  
+-   Delete or customize map areas that have been created for a chart object; any <xref:System.Web.UI.DataVisualization.Charting.DataPoint>, <xref:System.Web.UI.DataVisualization.Charting.Series>, <xref:System.Web.UI.DataVisualization.Charting.LegendItem> or <xref:System.Web.UI.DataVisualization.Charting.StripLine> object that has a non-empty `Url`, `MapAreaAttributes` or `ToolTip` property will have an associated map area object.  
+  
+-   Add custom map areas that have a user-defined shape and coordinates.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CustomizeMapAreasEventArgs (System.Web.UI.DataVisualization.Charting.MapAreasCollection areaItems);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.DataVisualization.Charting.MapAreasCollection areaItems) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.CustomizeMapAreasEventArgs.#ctor(System.Web.UI.DataVisualization.Charting.MapAreasCollection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="areaItems" Type="System.Web.UI.DataVisualization.Charting.MapAreasCollection" />
+      </Parameters>
+      <Docs>
+        <param name="areaItems">A map areas collection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataVisualization.Charting.CustomizeMapAreasEventArgs" /> class with the specified map areas collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MapAreaItems">
+      <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.MapAreasCollection MapAreaItems { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.DataVisualization.Charting.MapAreasCollection MapAreaItems" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.CustomizeMapAreasEventArgs.MapAreaItems" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.MapAreasCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.Web.UI.DataVisualization.Charting.MapAreasCollection" /> object. Can be used to remove or modify map areas that correspond to a chart object, or to add custom map areas.</summary>
+        <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.MapAreasCollection" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property allows you to:  
+  
+-   Delete or customize map areas that have been created for a chart object; any <xref:System.Web.UI.DataVisualization.Charting.DataPoint>, <xref:System.Web.UI.DataVisualization.Charting.Series>, <xref:System.Web.UI.DataVisualization.Charting.LegendItem> or <xref:System.Web.UI.DataVisualization.Charting.StripLine> object that has a non-empty `Url`, `MapAreaAttributes` or `ToolTip` property will have an associated map area object.  
+  
+-   Add custom map areas that have a user-defined shape and coordinates.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

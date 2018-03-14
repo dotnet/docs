@@ -1,0 +1,66 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "0.1.0",
+    "windows": {
+        "command": "powershell",
+        "options": {
+            "cwd": "${workspaceRoot}"
+        },
+        "tasks": [
+            {
+                "taskName": "build",
+                "suppressTaskName": true,
+                "args": ["-ExecutionPolicy", "RemoteSigned", ".\\dockerTask.ps1", "-Build", "-Environment", "debug" ],
+                "isBuildCommand": true,
+                "showOutput": "always",
+                "echoCommand": true
+            },
+            {
+                "taskName": "compose",
+                "suppressTaskName": true,
+                "args": ["-ExecutionPolicy", "RemoteSigned", ".\\dockerTask.ps1", "-Compose", "-Environment", "debug" ],
+                "isBuildCommand": false,
+                "showOutput": "always",
+                "echoCommand": true
+            },
+            {
+                "taskName": "composeForDebug",
+                "suppressTaskName": true,
+                "args": ["-ExecutionPolicy", "RemoteSigned", ".\\dockerTask.ps1", "-ComposeForDebug", "-Environment", "debug" ],
+                "isBuildCommand": false,
+                "showOutput": "always",
+                "echoCommand": true
+            }
+        ]
+    },
+    "osx": {
+        "command": "/bin/bash",
+        "options": {
+            "cwd": "${workspaceRoot}"
+        },
+        "tasks": [
+            {
+                "taskName": "build",
+                "suppressTaskName": true,
+                "args": [ "-c", "./dockerTask.sh build debug" ],
+                "isBuildCommand": true,
+                "showOutput": "always"
+            },
+            {
+                "taskName": "compose",
+                "suppressTaskName": true,
+                "args": [ "-c", "./dockerTask.sh compose debug" ],
+                "isBuildCommand": false,
+                "showOutput": "always"
+            },
+            {
+                "taskName": "composeForDebug",
+                "suppressTaskName": true,
+                "args": [ "-c", "./dockerTask.sh composeForDebug debug" ],
+                "isBuildCommand": false,
+                "showOutput": "always"
+            }
+        ]
+    }
+}

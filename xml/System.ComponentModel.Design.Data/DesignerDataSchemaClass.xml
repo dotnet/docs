@@ -1,0 +1,79 @@
+<Type Name="DesignerDataSchemaClass" FullName="System.ComponentModel.Design.Data.DesignerDataSchemaClass">
+  <TypeSignature Language="C#" Value="public sealed class DesignerDataSchemaClass" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DesignerDataSchemaClass extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Data.DesignerDataSchemaClass" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Specifies the types of objects that can be retrieved from a data-store schema. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.Data.DesignerDataSchemaClass> class is one of several types that represent the schema of a data store at design-time. These schema items are made available to controls by designers implementing the <xref:System.ComponentModel.Design.Data.IDataEnvironment> interface. Controls access schema objects by calling the <xref:System.ComponentModel.Design.Data.IDataEnvironment.GetConnectionSchema%2A> method of the interface.  
+  
+ Use fields from the <xref:System.ComponentModel.Design.Data.DesignerDataSchemaClass> class when calling the <xref:System.ComponentModel.Design.Data.IDesignerDataSchema.GetSchemaItems%2A> method to specify the types of objects you want to retrieve from a data-store schema.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="StoredProcedures">
+      <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.Data.DesignerDataSchemaClass StoredProcedures;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.Data.DesignerDataSchemaClass StoredProcedures" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.Data.DesignerDataSchemaClass.StoredProcedures" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.Data.DesignerDataSchemaClass</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that stored procedures should be returned from the data-store schema.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tables">
+      <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.Data.DesignerDataSchemaClass Tables;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.Data.DesignerDataSchemaClass Tables" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.Data.DesignerDataSchemaClass.Tables" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.Data.DesignerDataSchemaClass</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that tables should be returned from the data-store schema.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Views">
+      <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.Data.DesignerDataSchemaClass Views;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.Data.DesignerDataSchemaClass Views" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.Data.DesignerDataSchemaClass.Views" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.Data.DesignerDataSchemaClass</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that data views should be returned from the data-store schema.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

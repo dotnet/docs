@@ -1,0 +1,119 @@
+<Type Name="AsyncPreloadModeFlags" FullName="System.Web.Configuration.AsyncPreloadModeFlags">
+  <TypeSignature Language="C#" Value="public enum AsyncPreloadModeFlags" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AsyncPreloadModeFlags extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Configuration.AsyncPreloadModeFlags" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the mode for asynchronous requests.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="All">
+      <MemberSignature Language="C#" Value="All" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.AsyncPreloadModeFlags All = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Configuration.AsyncPreloadModeFlags.All" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.AsyncPreloadModeFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Asynchronous uploads of the request entity body will occur for all posts.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AllFormTypes">
+      <MemberSignature Language="C#" Value="AllFormTypes" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.AsyncPreloadModeFlags AllFormTypes = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Configuration.AsyncPreloadModeFlags.AllFormTypes" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.AsyncPreloadModeFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Asynchronous uploads of the request entity body will occur only for form posts.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Form">
+      <MemberSignature Language="C#" Value="Form" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.AsyncPreloadModeFlags Form = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Configuration.AsyncPreloadModeFlags.Form" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.AsyncPreloadModeFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Asynchronous uploads of the request entity body will occur only for form posts. This flag enables asynchronous preloading for MIME types that are specifically set to <c>application/x-www-form-urlencoded</c>.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FormMultiPart">
+      <MemberSignature Language="C#" Value="FormMultiPart" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.AsyncPreloadModeFlags FormMultiPart = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Configuration.AsyncPreloadModeFlags.FormMultiPart" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.AsyncPreloadModeFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Asynchronous uploads of the request entity body will occur only for multi-part form data. This flag enables asynchronous preloading for MIME types that are specifically set to <c>multipart/form-data</c>.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.AsyncPreloadModeFlags None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Configuration.AsyncPreloadModeFlags.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.AsyncPreloadModeFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No asynchronous upload of the request entity body will occur.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NonForm">
+      <MemberSignature Language="C#" Value="NonForm" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.AsyncPreloadModeFlags NonForm = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Configuration.AsyncPreloadModeFlags.NonForm" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.AsyncPreloadModeFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Asynchronous uploads of the request entity body will occur only for non-form posts.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

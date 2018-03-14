@@ -1,0 +1,7 @@
+# [Interoperability](index.md)
+## [Interoperability Overview](interoperability-overview.md)
+## [How to: Access Office Interop Objects by Using Visual C# Features](how-to-access-office-onterop-objects.md)
+## [How to: Use Indexed Properties in COM Interop Programming](how-to-use-indexed-properties-in-com-interop-rogramming.md)
+## [How to: Use Platform Invoke to Play a Wave File](how-to-use-platform-invoke-to-play-a-wave-file.md)
+## [Walkthrough: Office Programming (C# and Visual Basic)](walkthrough-office-programming.md)
+## [Example COM Class](example-com-class.md)

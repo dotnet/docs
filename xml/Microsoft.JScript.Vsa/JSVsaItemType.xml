@@ -1,0 +1,77 @@
+<Type Name="JSVsaItemType" FullName="Microsoft.JScript.Vsa.JSVsaItemType">
+  <TypeSignature Language="C#" Value="public enum JSVsaItemType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed JSVsaItemType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Vsa.JSVsaItemType" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("Use of this type is not recommended because it is being deprecated in Visual Studio 2005; there will be no replacement for this feature. Please see the ICodeCompiler documentation for additional help.")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("97453226-34DD-4379-B658-005DF8F84EA1")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents the type of the item.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AppGlobal">
+      <MemberSignature Language="C#" Value="AppGlobal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaItemType AppGlobal = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaItemType.AppGlobal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaItemType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used to add a global object to the .NET script engine. This type is used to create an IJSVsaGlobalItem object.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Code">
+      <MemberSignature Language="C#" Value="Code" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaItemType Code = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaItemType.Code" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaItemType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used to create a code item for storing source code for the .NET script engine.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Reference">
+      <MemberSignature Language="C#" Value="Reference" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaItemType Reference = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaItemType.Reference" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaItemType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used to add a reference to an external .NET assembly, which can then be referenced from code. This type is used to create an IJSVsaReferenceItem object</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

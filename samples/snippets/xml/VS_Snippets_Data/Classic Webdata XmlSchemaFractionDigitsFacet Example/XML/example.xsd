@@ -1,0 +1,19 @@
+﻿<!--<Snippet2>-->
+<?xml version="1.0" encoding="IBM437"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:simpleType name="RatingType">
+		<xs:restriction base="xs:decimal">
+		    <xs:totalDigits value="2"/>
+			<xs:fractionDigits value="1"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:element name="movie">
+		<xs:complexType>
+			<xs:attribute name="rating" type="RatingType"/>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>
+<!--</Snippet2>-->

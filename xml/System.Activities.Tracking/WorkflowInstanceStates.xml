@@ -1,0 +1,274 @@
+<Type Name="WorkflowInstanceStates" FullName="System.Activities.Tracking.WorkflowInstanceStates">
+  <TypeSignature Language="C#" Value="public static class WorkflowInstanceStates" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit WorkflowInstanceStates extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Tracking.WorkflowInstanceStates" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Specifies the state of a workflow instance.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Aborted">
+      <MemberSignature Language="C#" Value="public const string Aborted;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Aborted" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Tracking.WorkflowInstanceStates.Aborted" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The workflow instance is aborted.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Canceled">
+      <MemberSignature Language="C#" Value="public const string Canceled;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Canceled" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Tracking.WorkflowInstanceStates.Canceled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The workflow instance is canceled.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Completed">
+      <MemberSignature Language="C#" Value="public const string Completed;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Completed" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Tracking.WorkflowInstanceStates.Completed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The workflow instance is completed.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deleted">
+      <MemberSignature Language="C#" Value="public const string Deleted;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Deleted" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Tracking.WorkflowInstanceStates.Deleted" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The workflow instance is deleted.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Idle">
+      <MemberSignature Language="C#" Value="public const string Idle;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Idle" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Tracking.WorkflowInstanceStates.Idle" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The workflow instance is idle.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Persisted">
+      <MemberSignature Language="C#" Value="public const string Persisted;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Persisted" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Tracking.WorkflowInstanceStates.Persisted" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The workflow instance is persisted.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Resumed">
+      <MemberSignature Language="C#" Value="public const string Resumed;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Resumed" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Tracking.WorkflowInstanceStates.Resumed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The workflow instance is resumed.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Started">
+      <MemberSignature Language="C#" Value="public const string Started;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Started" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Tracking.WorkflowInstanceStates.Started" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The workflow instance is started.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Suspended">
+      <MemberSignature Language="C#" Value="public const string Suspended;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Suspended" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Tracking.WorkflowInstanceStates.Suspended" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The workflow instance is suspended.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Terminated">
+      <MemberSignature Language="C#" Value="public const string Terminated;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Terminated" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Tracking.WorkflowInstanceStates.Terminated" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The workflow instance is terminated.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnhandledException">
+      <MemberSignature Language="C#" Value="public const string UnhandledException;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string UnhandledException" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Tracking.WorkflowInstanceStates.UnhandledException" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The workflow instance encountered an unhandled exception.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unloaded">
+      <MemberSignature Language="C#" Value="public const string Unloaded;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Unloaded" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Tracking.WorkflowInstanceStates.Unloaded" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The workflow instance is unloaded.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unsuspended">
+      <MemberSignature Language="C#" Value="public const string Unsuspended;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Unsuspended" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Tracking.WorkflowInstanceStates.Unsuspended" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The workflow instance is unsuspended.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Updated">
+      <MemberSignature Language="C#" Value="public const string Updated;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Updated" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Tracking.WorkflowInstanceStates.Updated" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The workflow instance is updated.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateFailed">
+      <MemberSignature Language="C#" Value="public const string UpdateFailed;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string UpdateFailed" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Tracking.WorkflowInstanceStates.UpdateFailed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The workflow instance failed to update.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

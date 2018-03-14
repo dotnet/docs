@@ -1,0 +1,30 @@
+﻿<!--<snippet4>-->
+<store-data>
+<!--Inline XSD schema-->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+ <xsd:element name="bookstore" type="bookstoreType"/>
+ <xsd:complexType name="bookstoreType">
+  <xsd:sequence maxOccurs="unbounded">
+   <xsd:element name="book"  type="bookType"/>
+  </xsd:sequence>
+ </xsd:complexType>
+
+ <xsd:complexType name="bookType">
+  <xsd:sequence>
+   <xsd:element name="title" type="xsd:string"/>
+   <xsd:element name="price"  type="xsd:decimal"/>
+  </xsd:sequence>
+  <xsd:attribute name="genre" type="xsd:string"/>
+ </xsd:complexType>
+</xsd:schema>
+<!-- end of schema -->
+
+<bookstore>
+  <book genre="novel">
+    <title>Pride And Prejudice</title>
+    <price>19.95</price>
+  </book>
+</bookstore>
+</store-data>
+<!--</snippet4>-->
+

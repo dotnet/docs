@@ -1,0 +1,173 @@
+<Type Name="IContract" FullName="System.AddIn.Contract.IContract">
+  <TypeSignature Language="C#" Value="public interface IContract" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IContract" />
+  <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.IContract" />
+  <AssemblyInfo>
+    <AssemblyName>System.AddIn.Contract</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the base interface for all contracts that are used for communication between components that are updated independently.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.AddIn.Contract.IContract> interface defines a contract that independently updated components, such as an application and an add-in, can use to communicate. Components can use <xref:System.AddIn.Contract.IContract> to communicate across process or application domain boundaries, or to communicate with other components in the same process or application domain. <xref:System.AddIn.Contract.IContract> serves a similar purpose for components created using the .NET Framework as the `IUnknown` interface serves for components created using COM. To determine whether an object implements a particular contract, use the <xref:System.AddIn.Contract.IContract.QueryContract%2A> method.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AcquireLifetimeToken">
+      <MemberSignature Language="C#" Value="public int AcquireLifetimeToken ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 AcquireLifetimeToken() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.IContract.AcquireLifetimeToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Specifies that the contract is accessible to a client until the client revokes the contract.</summary>
+        <returns>A value, also known as a lifetime token, that identifies the client that has acquired the contract.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Clients of an object that implements <xref:System.AddIn.Contract.IContract> call the <xref:System.AddIn.Contract.IContract.AcquireLifetimeToken%2A> method to notify the object that the client requires access to the contract. An <xref:System.AddIn.Contract.IContract> is guaranteed to be usable as long as at least one lifetime token that it passed to a client has not been revoked.  
+  
+ To revoke a contract, clients call the <xref:System.AddIn.Contract.IContract.RevokeLifetimeToken%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRemoteHashCode">
+      <MemberSignature Language="C#" Value="public int GetRemoteHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetRemoteHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.IContract.GetRemoteHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a hash code for the <see cref="T:System.AddIn.Contract.IContract" />.</summary>
+        <returns>A hash code for the <see cref="T:System.AddIn.Contract.IContract" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryContract">
+      <MemberSignature Language="C#" Value="public System.AddIn.Contract.IContract QueryContract (string contractIdentifier);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.AddIn.Contract.IContract QueryContract(string contractIdentifier) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.IContract.QueryContract(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AddIn.Contract.IContract</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="contractIdentifier" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="contractIdentifier">A string that identifies the contract that is being requested.</param>
+        <summary>Returns a contract that is implemented by this contract.</summary>
+        <returns>An <see cref="T:System.AddIn.Contract.IContract" /> that represents a contract that a client is requesting from the current contract; <see langword="null" /> if the current contract does not support the contract that is requested.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.AddIn.Contract.IContract.QueryContract%2A> method enables <xref:System.AddIn.Contract.IContract> objects to expose other contracts. <xref:System.AddIn.Contract.IContract.QueryContract%2A> serves a purpose similar to that of the `IUnknown.QueryInterface` method in COM.  
+  
+ The format of the strings used to identify contracts is defined by the <xref:System.AddIn.Contract.IContract> implementation. It is recommended that you use the <xref:System.Type.AssemblyQualifiedName%2A> of the contract that is being queried.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoteEquals">
+      <MemberSignature Language="C#" Value="public bool RemoteEquals (System.AddIn.Contract.IContract contract);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool RemoteEquals(class System.AddIn.Contract.IContract contract) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.IContract.RemoteEquals(System.AddIn.Contract.IContract)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="contract" Type="System.AddIn.Contract.IContract" />
+      </Parameters>
+      <Docs>
+        <param name="contract">The contract to compare with this <see cref="T:System.AddIn.Contract.IContract" />.</param>
+        <summary>Indicates whether the specified contract is equal to this <see cref="T:System.AddIn.Contract.IContract" />.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="contract" /> is equal to this <see cref="T:System.AddIn.Contract.IContract" />; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoteToString">
+      <MemberSignature Language="C#" Value="public string RemoteToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string RemoteToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.IContract.RemoteToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a string representation of the current <see cref="T:System.AddIn.Contract.IContract" />.</summary>
+        <returns>A string representation of the current <see cref="T:System.AddIn.Contract.IContract" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RevokeLifetimeToken">
+      <MemberSignature Language="C#" Value="public void RevokeLifetimeToken (int token);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RevokeLifetimeToken(int32 token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.IContract.RevokeLifetimeToken(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="token" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="token">A value, also known as a lifetime token, that identifies the client that is revoking the contract.</param>
+        <summary>Specifies that the contract is no longer accessible to a client.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Clients of an object that implements <xref:System.AddIn.Contract.IContract> call the <xref:System.AddIn.Contract.IContract.RevokeLifetimeToken%2A> method to notify the object that the client no longer needs the contract. An <xref:System.AddIn.Contract.IContract> is guaranteed to be usable as long as at least one lifetime token that it passed to a client has not been revoked.  
+  
+ To acquire a contract, clients call the <xref:System.AddIn.Contract.IContract.AcquireLifetimeToken%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

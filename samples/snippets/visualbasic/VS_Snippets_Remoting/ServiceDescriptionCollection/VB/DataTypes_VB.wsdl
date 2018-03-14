@@ -1,0 +1,919 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<definitions xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:urt="http://microsoft.com/urt/wsdl/text/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:s0="http://tempuri1.org/" targetNamespace="http://tempuri1.org/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+
+  <types>
+
+    <s:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://tempuri1.org/">
+
+      <s:element name="SayHello">
+
+        <s:complexType />
+
+      </s:element>
+
+      <s:element name="SayHelloResponse">
+
+        <s:complexType>
+
+          <s:sequence>
+
+            <s:element minOccurs="1" maxOccurs="1" name="SayHelloResult" nillable="true" type="s:string" />
+
+          </s:sequence>
+
+        </s:complexType>
+
+      </s:element>
+
+      <s:element name="SayHelloName">
+
+        <s:complexType>
+
+          <s:sequence>
+
+            <s:element minOccurs="1" maxOccurs="1" name="Name" nillable="true" type="s:string" />
+
+          </s:sequence>
+
+        </s:complexType>
+
+      </s:element>
+
+      <s:element name="SayHelloNameResponse">
+
+        <s:complexType>
+
+          <s:sequence>
+
+            <s:element minOccurs="1" maxOccurs="1" name="SayHelloNameResult" nillable="true" type="s:string" />
+
+          </s:sequence>
+
+        </s:complexType>
+
+      </s:element>
+
+      <s:element name="GetIntArray">
+
+        <s:complexType />
+
+      </s:element>
+
+      <s:element name="GetIntArrayResponse">
+
+        <s:complexType>
+
+          <s:sequence>
+
+            <s:element minOccurs="1" maxOccurs="1" name="GetIntArrayResult" nillable="true">
+
+              <s:complexType>
+
+                <s:sequence>
+
+                  <s:element minOccurs="0" maxOccurs="unbounded" name="int" type="s:int" />
+
+                </s:sequence>
+
+              </s:complexType>
+
+            </s:element>
+
+          </s:sequence>
+
+        </s:complexType>
+
+      </s:element>
+
+      <s:element name="GetMode">
+
+        <s:complexType />
+
+      </s:element>
+
+      <s:element name="GetModeResponse">
+
+        <s:complexType>
+
+          <s:sequence>
+
+            <s:element minOccurs="1" maxOccurs="1" name="GetModeResult" type="s0:Mode" />
+
+          </s:sequence>
+
+        </s:complexType>
+
+      </s:element>
+
+      <s:simpleType name="Mode">
+
+        <s:restriction base="s:string">
+
+          <s:enumeration value="EOn" />
+
+          <s:enumeration value="EOff" />
+
+        </s:restriction>
+
+      </s:simpleType>
+
+      <s:element name="GetOrder">
+
+        <s:complexType />
+
+      </s:element>
+
+      <s:element name="GetOrderResponse">
+
+        <s:complexType>
+
+          <s:sequence>
+
+            <s:element minOccurs="1" maxOccurs="1" name="GetOrderResult" nillable="true" type="s0:Order" />
+
+          </s:sequence>
+
+        </s:complexType>
+
+      </s:element>
+
+      <s:complexType name="Order">
+
+        <s:sequence>
+
+          <s:element minOccurs="1" maxOccurs="1" name="OrderID" type="s:int" />
+
+          <s:element minOccurs="1" maxOccurs="1" name="Price" type="s:double" />
+
+        </s:sequence>
+
+      </s:complexType>
+
+      <s:element name="GetOrders">
+
+        <s:complexType />
+
+      </s:element>
+
+      <s:element name="GetOrdersResponse">
+
+        <s:complexType>
+
+          <s:sequence>
+
+            <s:element minOccurs="1" maxOccurs="1" name="GetOrdersResult" nillable="true">
+
+              <s:complexType>
+
+                <s:sequence>
+
+                  <s:element minOccurs="0" maxOccurs="unbounded" name="Order" nillable="true" type="s0:Order" />
+
+                </s:sequence>
+
+              </s:complexType>
+
+            </s:element>
+
+          </s:sequence>
+
+        </s:complexType>
+
+      </s:element>
+
+      <s:element name="string" nillable="true" type="s:string" />
+
+      <s:element name="ArrayOfInt" nillable="true">
+
+        <s:complexType>
+
+          <s:sequence>
+
+            <s:element minOccurs="0" maxOccurs="unbounded" name="int" type="s:int" />
+
+          </s:sequence>
+
+        </s:complexType>
+
+      </s:element>
+
+      <s:element name="Mode" type="s0:Mode" />
+
+      <s:element name="Order" nillable="true" type="s0:Order" />
+
+      <s:element name="ArrayOfOrder" nillable="true">
+
+        <s:complexType>
+
+          <s:sequence>
+
+            <s:element minOccurs="0" maxOccurs="unbounded" name="Order" nillable="true" type="s0:Order" />
+
+          </s:sequence>
+
+        </s:complexType>
+
+      </s:element>
+
+    </s:schema>
+
+  </types>
+
+  <message name="SayHelloSoapIn">
+
+    <part name="parameters" element="s0:SayHello" />
+
+  </message>
+
+  <message name="SayHelloSoapOut">
+
+    <part name="parameters" element="s0:SayHelloResponse" />
+
+  </message>
+
+  <message name="SayHelloNameSoapIn">
+
+    <part name="parameters" element="s0:SayHelloName" />
+
+  </message>
+
+  <message name="SayHelloNameSoapOut">
+
+    <part name="parameters" element="s0:SayHelloNameResponse" />
+
+  </message>
+
+  <message name="GetIntArraySoapIn">
+
+    <part name="parameters" element="s0:GetIntArray" />
+
+  </message>
+
+  <message name="GetIntArraySoapOut">
+
+    <part name="parameters" element="s0:GetIntArrayResponse" />
+
+  </message>
+
+  <message name="GetModeSoapIn">
+
+    <part name="parameters" element="s0:GetMode" />
+
+  </message>
+
+  <message name="GetModeSoapOut">
+
+    <part name="parameters" element="s0:GetModeResponse" />
+
+  </message>
+
+  <message name="GetOrderSoapIn">
+
+    <part name="parameters" element="s0:GetOrder" />
+
+  </message>
+
+  <message name="GetOrderSoapOut">
+
+    <part name="parameters" element="s0:GetOrderResponse" />
+
+  </message>
+
+  <message name="GetOrdersSoapIn">
+
+    <part name="parameters" element="s0:GetOrders" />
+
+  </message>
+
+  <message name="GetOrdersSoapOut">
+
+    <part name="parameters" element="s0:GetOrdersResponse" />
+
+  </message>
+
+  <message name="SayHelloHttpGetIn" />
+
+  <message name="SayHelloHttpGetOut">
+
+    <part name="Body" element="s0:string" />
+
+  </message>
+
+  <message name="SayHelloNameHttpGetIn">
+
+    <part name="Name" type="s:string" />
+
+  </message>
+
+  <message name="SayHelloNameHttpGetOut">
+
+    <part name="Body" element="s0:string" />
+
+  </message>
+
+  <message name="GetIntArrayHttpGetIn" />
+
+  <message name="GetIntArrayHttpGetOut">
+
+    <part name="Body" element="s0:ArrayOfInt" />
+
+  </message>
+
+  <message name="GetModeHttpGetIn" />
+
+  <message name="GetModeHttpGetOut">
+
+    <part name="Body" element="s0:Mode" />
+
+  </message>
+
+  <message name="GetOrderHttpGetIn" />
+
+  <message name="GetOrderHttpGetOut">
+
+    <part name="Body" element="s0:Order" />
+
+  </message>
+
+  <message name="GetOrdersHttpGetIn" />
+
+  <message name="GetOrdersHttpGetOut">
+
+    <part name="Body" element="s0:ArrayOfOrder" />
+
+  </message>
+
+  <message name="SayHelloHttpPostIn" />
+
+  <message name="SayHelloHttpPostOut">
+
+    <part name="Body" element="s0:string" />
+
+  </message>
+
+  <message name="SayHelloNameHttpPostIn">
+
+    <part name="Name" type="s:string" />
+
+  </message>
+
+  <message name="SayHelloNameHttpPostOut">
+
+    <part name="Body" element="s0:string" />
+
+  </message>
+
+  <message name="GetIntArrayHttpPostIn" />
+
+  <message name="GetIntArrayHttpPostOut">
+
+    <part name="Body" element="s0:ArrayOfInt" />
+
+  </message>
+
+  <message name="GetModeHttpPostIn" />
+
+  <message name="GetModeHttpPostOut">
+
+    <part name="Body" element="s0:Mode" />
+
+  </message>
+
+  <message name="GetOrderHttpPostIn" />
+
+  <message name="GetOrderHttpPostOut">
+
+    <part name="Body" element="s0:Order" />
+
+  </message>
+
+  <message name="GetOrdersHttpPostIn" />
+
+  <message name="GetOrdersHttpPostOut">
+
+    <part name="Body" element="s0:ArrayOfOrder" />
+
+  </message>
+
+  <portType name="DataTypesServiceSoap">
+
+    <operation name="SayHello">
+
+      <input message="s0:SayHelloSoapIn" />
+
+      <output message="s0:SayHelloSoapOut" />
+
+    </operation>
+
+    <operation name="SayHelloName">
+
+      <input message="s0:SayHelloNameSoapIn" />
+
+      <output message="s0:SayHelloNameSoapOut" />
+
+    </operation>
+
+    <operation name="GetIntArray">
+
+      <input message="s0:GetIntArraySoapIn" />
+
+      <output message="s0:GetIntArraySoapOut" />
+
+    </operation>
+
+    <operation name="GetMode">
+
+      <input message="s0:GetModeSoapIn" />
+
+      <output message="s0:GetModeSoapOut" />
+
+    </operation>
+
+    <operation name="GetOrder">
+
+      <input message="s0:GetOrderSoapIn" />
+
+      <output message="s0:GetOrderSoapOut" />
+
+    </operation>
+
+    <operation name="GetOrders">
+
+      <input message="s0:GetOrdersSoapIn" />
+
+      <output message="s0:GetOrdersSoapOut" />
+
+    </operation>
+
+  </portType>
+
+  <portType name="DataTypesServiceHttpGet">
+
+    <operation name="SayHello">
+
+      <input message="s0:SayHelloHttpGetIn" />
+
+      <output message="s0:SayHelloHttpGetOut" />
+
+    </operation>
+
+    <operation name="SayHelloName">
+
+      <input message="s0:SayHelloNameHttpGetIn" />
+
+      <output message="s0:SayHelloNameHttpGetOut" />
+
+    </operation>
+
+    <operation name="GetIntArray">
+
+      <input message="s0:GetIntArrayHttpGetIn" />
+
+      <output message="s0:GetIntArrayHttpGetOut" />
+
+    </operation>
+
+    <operation name="GetMode">
+
+      <input message="s0:GetModeHttpGetIn" />
+
+      <output message="s0:GetModeHttpGetOut" />
+
+    </operation>
+
+    <operation name="GetOrder">
+
+      <input message="s0:GetOrderHttpGetIn" />
+
+      <output message="s0:GetOrderHttpGetOut" />
+
+    </operation>
+
+    <operation name="GetOrders">
+
+      <input message="s0:GetOrdersHttpGetIn" />
+
+      <output message="s0:GetOrdersHttpGetOut" />
+
+    </operation>
+
+  </portType>
+
+  <portType name="DataTypesServiceHttpPost">
+
+    <operation name="SayHello">
+
+      <input message="s0:SayHelloHttpPostIn" />
+
+      <output message="s0:SayHelloHttpPostOut" />
+
+    </operation>
+
+    <operation name="SayHelloName">
+
+      <input message="s0:SayHelloNameHttpPostIn" />
+
+      <output message="s0:SayHelloNameHttpPostOut" />
+
+    </operation>
+
+    <operation name="GetIntArray">
+
+      <input message="s0:GetIntArrayHttpPostIn" />
+
+      <output message="s0:GetIntArrayHttpPostOut" />
+
+    </operation>
+
+    <operation name="GetMode">
+
+      <input message="s0:GetModeHttpPostIn" />
+
+      <output message="s0:GetModeHttpPostOut" />
+
+    </operation>
+
+    <operation name="GetOrder">
+
+      <input message="s0:GetOrderHttpPostIn" />
+
+      <output message="s0:GetOrderHttpPostOut" />
+
+    </operation>
+
+    <operation name="GetOrders">
+
+      <input message="s0:GetOrdersHttpPostIn" />
+
+      <output message="s0:GetOrdersHttpPostOut" />
+
+    </operation>
+
+  </portType>
+
+  <binding name="DataTypesServiceSoap" type="s0:DataTypesServiceSoap">
+
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+
+    <operation name="SayHello">
+
+      <soap:operation soapAction="http://tempuri1.org/SayHello" style="document" />
+
+      <input>
+
+        <soap:body use="literal" />
+
+      </input>
+
+      <output>
+
+        <soap:body use="literal" />
+
+      </output>
+
+    </operation>
+
+    <operation name="SayHelloName">
+
+      <soap:operation soapAction="http://tempuri1.org/SayHelloName" style="document" />
+
+      <input>
+
+        <soap:body use="literal" />
+
+      </input>
+
+      <output>
+
+        <soap:body use="literal" />
+
+      </output>
+
+    </operation>
+
+    <operation name="GetIntArray">
+
+      <soap:operation soapAction="http://tempuri1.org/GetIntArray" style="document" />
+
+      <input>
+
+        <soap:body use="literal" />
+
+      </input>
+
+      <output>
+
+        <soap:body use="literal" />
+
+      </output>
+
+    </operation>
+
+    <operation name="GetMode">
+
+      <soap:operation soapAction="http://tempuri1.org/GetMode" style="document" />
+
+      <input>
+
+        <soap:body use="literal" />
+
+      </input>
+
+      <output>
+
+        <soap:body use="literal" />
+
+      </output>
+
+    </operation>
+
+    <operation name="GetOrder">
+
+      <soap:operation soapAction="http://tempuri1.org/GetOrder" style="document" />
+
+      <input>
+
+        <soap:body use="literal" />
+
+      </input>
+
+      <output>
+
+        <soap:body use="literal" />
+
+      </output>
+
+    </operation>
+
+    <operation name="GetOrders">
+
+      <soap:operation soapAction="http://tempuri1.org/GetOrders" style="document" />
+
+      <input>
+
+        <soap:body use="literal" />
+
+      </input>
+
+      <output>
+
+        <soap:body use="literal" />
+
+      </output>
+
+    </operation>
+
+  </binding>
+
+  <binding name="DataTypesServiceHttpGet" type="s0:DataTypesServiceHttpGet">
+
+    <http:binding verb="GET" />
+
+    <operation name="SayHello">
+
+      <http:operation location="/SayHello" />
+
+      <input>
+
+        <http:urlEncoded />
+
+      </input>
+
+      <output>
+
+        <mime:mimeXml part="Body" />
+
+      </output>
+
+    </operation>
+
+    <operation name="SayHelloName">
+
+      <http:operation location="/SayHelloName" />
+
+      <input>
+
+        <http:urlEncoded />
+
+      </input>
+
+      <output>
+
+        <mime:mimeXml part="Body" />
+
+      </output>
+
+    </operation>
+
+    <operation name="GetIntArray">
+
+      <http:operation location="/GetIntArray" />
+
+      <input>
+
+        <http:urlEncoded />
+
+      </input>
+
+      <output>
+
+        <mime:mimeXml part="Body" />
+
+      </output>
+
+    </operation>
+
+    <operation name="GetMode">
+
+      <http:operation location="/GetMode" />
+
+      <input>
+
+        <http:urlEncoded />
+
+      </input>
+
+      <output>
+
+        <mime:mimeXml part="Body" />
+
+      </output>
+
+    </operation>
+
+    <operation name="GetOrder">
+
+      <http:operation location="/GetOrder" />
+
+      <input>
+
+        <http:urlEncoded />
+
+      </input>
+
+      <output>
+
+        <mime:mimeXml part="Body" />
+
+      </output>
+
+    </operation>
+
+    <operation name="GetOrders">
+
+      <http:operation location="/GetOrders" />
+
+      <input>
+
+        <http:urlEncoded />
+
+      </input>
+
+      <output>
+
+        <mime:mimeXml part="Body" />
+
+      </output>
+
+    </operation>
+
+  </binding>
+
+  <binding name="DataTypesServiceHttpPost" type="s0:DataTypesServiceHttpPost">
+
+    <http:binding verb="POST" />
+
+    <operation name="SayHello">
+
+      <http:operation location="/SayHello" />
+
+      <input>
+
+        <mime:content type="application/x-www-form-urlencoded" />
+
+      </input>
+
+      <output>
+
+        <mime:mimeXml part="Body" />
+
+      </output>
+
+    </operation>
+
+    <operation name="SayHelloName">
+
+      <http:operation location="/SayHelloName" />
+
+      <input>
+
+        <mime:content type="application/x-www-form-urlencoded" />
+
+      </input>
+
+      <output>
+
+        <mime:mimeXml part="Body" />
+
+      </output>
+
+    </operation>
+
+    <operation name="GetIntArray">
+
+      <http:operation location="/GetIntArray" />
+
+      <input>
+
+        <mime:content type="application/x-www-form-urlencoded" />
+
+      </input>
+
+      <output>
+
+        <mime:mimeXml part="Body" />
+
+      </output>
+
+    </operation>
+
+    <operation name="GetMode">
+
+      <http:operation location="/GetMode" />
+
+      <input>
+
+        <mime:content type="application/x-www-form-urlencoded" />
+
+      </input>
+
+      <output>
+
+        <mime:mimeXml part="Body" />
+
+      </output>
+
+    </operation>
+
+    <operation name="GetOrder">
+
+      <http:operation location="/GetOrder" />
+
+      <input>
+
+        <mime:content type="application/x-www-form-urlencoded" />
+
+      </input>
+
+      <output>
+
+        <mime:mimeXml part="Body" />
+
+      </output>
+
+    </operation>
+
+    <operation name="GetOrders">
+
+      <http:operation location="/GetOrders" />
+
+      <input>
+
+        <mime:content type="application/x-www-form-urlencoded" />
+
+      </input>
+
+      <output>
+
+        <mime:mimeXml part="Body" />
+
+      </output>
+
+    </operation>
+
+  </binding>
+
+  <service name="DataTypesService">
+
+    <port name="DataTypesServiceSoap" binding="s0:DataTypesServiceSoap">
+
+      <soap:address location="http://localhost/quickstart/aspplus/samples/vstudio/services/DataTypes/VB/DataTypes.asmx" />
+
+    </port>
+
+    <port name="DataTypesServiceHttpGet" binding="s0:DataTypesServiceHttpGet">
+
+      <http:address location="http://localhost/quickstart/aspplus/samples/vstudio/services/DataTypes/VB/DataTypes.asmx" />
+
+    </port>
+
+    <port name="DataTypesServiceHttpPost" binding="s0:DataTypesServiceHttpPost">
+
+      <http:address location="http://localhost/quickstart/aspplus/samples/vstudio/services/DataTypes/VB/DataTypes.asmx" />
+
+    </port>
+
+  </service>
+
+</definitions>

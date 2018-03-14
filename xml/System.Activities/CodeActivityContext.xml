@@ -1,0 +1,67 @@
+<Type Name="CodeActivityContext" FullName="System.Activities.CodeActivityContext">
+  <TypeSignature Language="C#" Value="public class CodeActivityContext : System.Activities.ActivityContext" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CodeActivityContext extends System.Activities.ActivityContext" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.CodeActivityContext" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Activities.ActivityContext</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Extends <see cref="T:System.Activities.ActivityContext" /> and provides additional functionality for <see cref="T:System.Activities.CodeActivity" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetProperty&lt;THandle&gt;">
+      <MemberSignature Language="C#" Value="public THandle GetProperty&lt;THandle&gt; () where THandle : System.Activities.Handle;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!THandle GetProperty&lt;(class System.Activities.Handle) THandle&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.CodeActivityContext.GetProperty``1" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>THandle</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="THandle">
+          <Constraints>
+            <BaseTypeName>System.Activities.Handle</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="THandle">The type of execution property.</typeparam>
+        <summary>Gets the execution property of the specified type.</summary>
+        <returns>The execution property.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Track">
+      <MemberSignature Language="C#" Value="public void Track (System.Activities.Tracking.CustomTrackingRecord record);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Track(class System.Activities.Tracking.CustomTrackingRecord record) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.CodeActivityContext.Track(System.Activities.Tracking.CustomTrackingRecord)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="record" Type="System.Activities.Tracking.CustomTrackingRecord" />
+      </Parameters>
+      <Docs>
+        <param name="record">The data to be tracked.</param>
+        <summary>Sends the specified custom tracking record to any registered tracking providers.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,125 @@
+<Type Name="PrintSystemDesiredAccess" FullName="System.Printing.PrintSystemDesiredAccess">
+  <TypeSignature Language="C#" Value="public enum PrintSystemDesiredAccess" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PrintSystemDesiredAccess extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Printing.PrintSystemDesiredAccess" />
+  <AssemblyInfo>
+    <AssemblyName>System.Printing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the different access rights (or levels of access) for printing objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The access rights that are available at each level of access vary according to the following:  
+  
+-   Whether the print server is a computer or a print server appliance.  
+  
+-   The operating system that is used.  
+  
+-   The security updates that are installed.  
+  
+-   The security policies that are supported.  
+  
+ For this reason, access right descriptions in the "Members" section are typical of the rights that will correspond to each access level, but the access levels listed may provide more or fewer rights on particular systems.  
+  
+ These values are primarily used as parameters for <xref:System.Printing.PrintServer> and <xref:System.Printing.PrintQueue> constructors. The constructors will throw exceptions if you use a value that can apply only to another kind of object. For example, do not pass AdministratePrinter to a <xref:System.Printing.PrintServer> constructor.  
+  
+   
+  
+## Examples  
+ The following example shows how to use this enumeration to install a second printer that differs in its properties from an existing printer only in location, port, and shared status.  
+  
+ [!code-csharp[ClonePrinter#ClonePrinter](~/samples/snippets/csharp/VS_Snippets_Wpf/ClonePrinter/CSharp/Program.cs#cloneprinter)]
+ [!code-vb[ClonePrinter#ClonePrinter](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ClonePrinter/visualbasic/program.vb#cloneprinter)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AdministratePrinter">
+      <MemberSignature Language="C#" Value="AdministratePrinter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintSystemDesiredAccess AdministratePrinter = int32(983052)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintSystemDesiredAccess.AdministratePrinter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintSystemDesiredAccess</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The right to perform all administrative tasks for the print queue, including the right to pause and resume any print job; and the right to delete all jobs from the queue. This access level also includes all rights under <see cref="F:System.Printing.PrintSystemDesiredAccess.UsePrinter" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AdministrateServer">
+      <MemberSignature Language="C#" Value="AdministrateServer" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintSystemDesiredAccess AdministrateServer = int32(983041)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintSystemDesiredAccess.AdministrateServer" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintSystemDesiredAccess</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The right to perform all administrative tasks for the print server. This access level does *not* include <see cref="F:System.Printing.PrintSystemDesiredAccess.AdministratePrinter" /> rights for the print queues hosted by the server.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumerateServer">
+      <MemberSignature Language="C#" Value="EnumerateServer" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintSystemDesiredAccess EnumerateServer = int32(131074)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintSystemDesiredAccess.EnumerateServer" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintSystemDesiredAccess</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The right to list the queues on the print server.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintSystemDesiredAccess None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintSystemDesiredAccess.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintSystemDesiredAccess</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No access.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UsePrinter">
+      <MemberSignature Language="C#" Value="UsePrinter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintSystemDesiredAccess UsePrinter = int32(131080)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintSystemDesiredAccess.UsePrinter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintSystemDesiredAccess</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The right to add print jobs to the queue and to delete and enumerate one's own jobs.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

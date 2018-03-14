@@ -1,0 +1,23 @@
+<!--<snippet2>-->
+<?xml version="1.0" encoding="IBM437"?>
+<xs:schema xmlns:r="http://www.example.com/Report" elementFormDefault="qualified" targetNamespace="http://www.example.com/Report" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="purchaseReport">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="region" type="xs:string">
+          <xs:keyref name="dummy2" refer="r:pNumKey">
+            <xs:selector xpath="r:zip/r:part" />
+            <xs:field xpath="@number" />
+          </xs:keyref>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="periodEnding" type="xs:date" />
+    </xs:complexType>
+    <xs:key name="pNumKey">
+      <xs:selector xpath="r:parts/r:part" />
+      <xs:field xpath="@number" />
+    </xs:key>
+  </xs:element>
+</xs:schema>
+<!--</snippet2>-->
+

@@ -1,0 +1,37 @@
+<Type Name="ProjectCollectionChangedEventArgs" FullName="Microsoft.Build.Evaluation.ProjectCollectionChangedEventArgs">
+  <TypeSignature Language="C#" Value="public class ProjectCollectionChangedEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProjectCollectionChangedEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Evaluation.ProjectCollectionChangedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Event arguments for the <see cref="E:Microsoft.Build.Evaluation.ProjectCollection.ProjectCollectionChanged" /> event.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Changed">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Evaluation.ProjectCollectionChangedState Changed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Build.Evaluation.ProjectCollectionChangedState Changed" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.ProjectCollectionChangedEventArgs.Changed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Evaluation.ProjectCollectionChangedState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of the change made to the <see cref="T:Microsoft.Build.Evaluation.ProjectCollection" />.</summary>
+        <value>Returns <see cref="T:Microsoft.Build.Evaluation.ProjectCollectionChangedState" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

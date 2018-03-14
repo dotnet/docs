@@ -1,0 +1,107 @@
+<Type Name="Constraint&lt;T&gt;" FullName="System.Activities.Validation.Constraint&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public sealed class Constraint&lt;T&gt; : System.Activities.Validation.Constraint" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Constraint`1&lt;T&gt; extends System.Activities.Validation.Constraint" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Validation.Constraint`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Activities.Validation.Constraint</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.ContentProperty("Body")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="T">The type of the element to be validated.</typeparam>
+    <summary>Handles a constraint used for validating an element of type T.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Constraint ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Validation.Constraint`1.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Validation.Constraint`1" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Body">
+      <MemberSignature Language="C#" Value="public System.Activities.ActivityAction&lt;T,System.Activities.Validation.ValidationContext&gt; Body { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.ActivityAction`2&lt;!T, class System.Activities.Validation.ValidationContext&gt; Body" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Validation.Constraint`1.Body" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.ActivityAction&lt;T,System.Activities.Validation.ValidationContext&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the validation logic.</summary>
+        <value>An <see cref="T:System.Activities.ActivityAction" /> delegate.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CacheMetadata">
+      <MemberSignature Language="C#" Value="protected override void CacheMetadata (System.Activities.NativeActivityMetadata metadata);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CacheMetadata(valuetype System.Activities.NativeActivityMetadata metadata) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Validation.Constraint`1.CacheMetadata(System.Activities.NativeActivityMetadata)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="metadata" Type="System.Activities.NativeActivityMetadata" />
+      </Parameters>
+      <Docs>
+        <param name="metadata">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnExecute">
+      <MemberSignature Language="C#" Value="protected override void OnExecute (System.Activities.NativeActivityContext context, object objectToValidate, System.Activities.Validation.ValidationContext objectToValidateContext);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnExecute(class System.Activities.NativeActivityContext context, object objectToValidate, class System.Activities.Validation.ValidationContext objectToValidateContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Validation.Constraint`1.OnExecute(System.Activities.NativeActivityContext,System.Object,System.Activities.Validation.ValidationContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Activities.NativeActivityContext" />
+        <Parameter Name="objectToValidate" Type="System.Object" />
+        <Parameter Name="objectToValidateContext" Type="System.Activities.Validation.ValidationContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <param name="objectToValidate">To be added.</param>
+        <param name="objectToValidateContext">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

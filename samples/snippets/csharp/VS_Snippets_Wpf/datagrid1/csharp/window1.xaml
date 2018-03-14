@@ -1,0 +1,11 @@
+﻿<Window x:Class="DataGrid1.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:my="clr-namespace:DataGrid1"
+        Title="Window1" Height="300" Width="300">
+    <Grid>
+        <!--<Snippet1>-->
+        <DataGrid x:Name="CustomerGrid" ItemsSource="{Binding}" AlternatingRowBackground="LightBlue" AlternationCount="2" />
+        <!--</Snippet1>-->
+    </Grid>
+</Window>

@@ -1,0 +1,56 @@
+<Type Name="AttachedPropertyInfo&lt;T&gt;" FullName="System.Activities.Presentation.Model.AttachedPropertyInfo&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public sealed class AttachedPropertyInfo&lt;T&gt; : System.Activities.Presentation.Model.AttachedPropertyInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AttachedPropertyInfo`1&lt;T&gt; extends System.Activities.Presentation.Model.AttachedPropertyInfo" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Model.AttachedPropertyInfo`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Activities.Presentation.Model.AttachedPropertyInfo</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">The type of the attached property.</typeparam>
+    <summary>Provides properties of an attached property.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AttachedPropertyInfo ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.AttachedPropertyInfo`1.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Presentation.Model.AttachedPropertyInfo`1" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultValue">
+      <MemberSignature Language="C#" Value="public T DefaultValue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !T DefaultValue" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.AttachedPropertyInfo`1.DefaultValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the default value of the attached property.</summary>
+        <value>The default value of the attached property.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

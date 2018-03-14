@@ -1,0 +1,110 @@
+﻿<!--9/2/10  Added the BindingGroupComplete snippet to show complete example and
+    used it for FrameworkElement.BindingGroup to replace BindingGroupName and 
+    ValidationAdornerSite.  Other topics use BindingGroupName and 
+    ValidationAdornerSite.  If customers complain about incomplete examples, 
+    use the example from FrameworkElement.BindingGroup.-->
+  <Window x:Class="BindingGroupSnippets.Window3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:src="clr-namespace:BindingGroupSnippets"
+        Title="Window3"
+        Width="500">
+  <StackPanel>
+    <StackPanel.Resources>
+      <src:Type2 x:Key="myObject" />
+
+      <Style TargetType="TextBlock">
+        <Setter Property="Margin"
+                Value="5" />
+      </Style>
+
+    </StackPanel.Resources>
+    <!--<SnippetBindingGroupComplete>-->
+    <StackPanel>
+      <StackPanel.Resources>
+        <src:Type1 x:Key="object1" />
+        <src:Type2 x:Key="object2" />
+      </StackPanel.Resources>
+
+      <!--<SnippetBindingGroupName>-->
+      <StackPanel Name="sp1"
+                  Margin="5"
+                  DataContext="{Binding Source={StaticResource object1}}"
+                  Validation.ValidationAdornerSite="{Binding ElementName=label1}"
+                  Orientation="Horizontal"
+                  HorizontalAlignment="Center">
+
+        <StackPanel.BindingGroup>
+          <BindingGroup Name="bindingGroup">
+            <BindingGroup.ValidationRules>
+              <src:BindingGroupValidationRule ValidatesOnTargetUpdated="True" />
+            </BindingGroup.ValidationRules>
+          </BindingGroup>
+        </StackPanel.BindingGroup>
+
+        <TextBlock Text="First string" />
+
+        <TextBox Width="150"
+                 Text="{Binding Path=PropertyA}" />
+
+        <TextBlock Text="Second string" />
+
+        <!--<SnippetTargetNullValue>-->
+        <TextBox Width="150"
+                 Text="{Binding Source={StaticResource object2}, 
+          Path=PropertyB, BindingGroupName=bindingGroup, 
+          TargetNullValue=please enter a string}" />
+        <!--</SnippetTargetNullValue>-->
+
+      </StackPanel>
+      <!--</SnippetBindingGroupName>-->
+
+      <!--<SnippetValidationAdornerSite>-->
+      <Label Name="label1"
+             Content="{Binding ElementName=sp1, Path=(Validation.Errors)[0].ErrorContent}"
+             Margin="5"
+             Foreground="Red"
+             HorizontalAlignment="Center" />
+      <!--</SnippetValidationAdornerSite>-->
+
+      <Button HorizontalAlignment="Center"
+              Click="Button_Click"
+              IsDefault="True">
+        _Submit
+      </Button>
+
+      <StackPanel Orientation="Horizontal">
+        <TextBlock Text="First string:"
+                   FontWeight="Bold" />
+        <TextBlock Text="{Binding Source={StaticResource object1}, 
+          Path=PropertyA, TargetNullValue=--}" />
+      </StackPanel>
+
+      <StackPanel Orientation="Horizontal">
+        <TextBlock Text="Second string:"
+                   FontWeight="Bold" />
+        <TextBlock Text="{Binding Source={StaticResource object2}, 
+          Path=PropertyB, TargetNullValue=--}" />
+      </StackPanel>
+    </StackPanel>
+    <!--</SnippetBindingGroupComplete>-->
+
+    <!--<SnippetValidatesOnTargetUpdated>-->
+    <TextBox Width="150"
+             Validation.Error="ItemError">
+      <TextBox.Text>
+        <Binding Source="{StaticResource myObject}"
+                 Path="PropertyB"
+                 UpdateSourceTrigger="PropertyChanged"
+                 NotifyOnValidationError="True">
+          <Binding.ValidationRules>
+            <src:ValueIsNotNull ValidatesOnTargetUpdated="True" />
+          </Binding.ValidationRules>
+        </Binding>
+      </TextBox.Text>
+    </TextBox>
+    <!--</SnippetValidatesOnTargetUpdated>-->
+  </StackPanel>
+</Window>
+
+  

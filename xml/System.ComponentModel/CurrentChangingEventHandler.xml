@@ -1,0 +1,25 @@
+<Type Name="CurrentChangingEventHandler" FullName="System.ComponentModel.CurrentChangingEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void CurrentChangingEventHandler(object sender, CurrentChangingEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CurrentChangingEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.CurrentChangingEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.ComponentModel.CurrentChangingEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The object that raised the event.</param>
+    <param name="e">Information about the event.</param>
+    <summary>Represents the method that handles the <see cref="E:System.Windows.Data.CollectionView.CurrentChanging" /> event.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

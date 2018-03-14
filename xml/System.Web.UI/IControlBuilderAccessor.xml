@@ -1,0 +1,48 @@
+<Type Name="IControlBuilderAccessor" FullName="System.Web.UI.IControlBuilderAccessor">
+  <TypeSignature Language="C#" Value="public interface IControlBuilderAccessor" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IControlBuilderAccessor" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.IControlBuilderAccessor" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Allows the control serializer to get to the builder for a control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.IControlBuilderAccessor> interface defines the property a control must implement to allow a control serializer to access the control's builder. <xref:System.Web.UI.Control> implements this interface, so all controls deriving from <xref:System.Web.UI.Control> have an implementation of this property.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ControlBuilder">
+      <MemberSignature Language="C#" Value="public System.Web.UI.ControlBuilder ControlBuilder { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ControlBuilder ControlBuilder" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.IControlBuilderAccessor.ControlBuilder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.ControlBuilder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the control builder for this control.</summary>
+        <value>The <see cref="T:System.Web.UI.ControlBuilder" /> that built the control; otherwise, <see langword="null" /> if no builder was used.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.IControlBuilderAccessor.ControlBuilder%2A> property allows a control serializer to access the builder that built the control that implements <xref:System.Web.UI.IControlBuilderAccessor>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

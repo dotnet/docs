@@ -1,0 +1,268 @@
+<Type Name="Clerk" FullName="System.EnterpriseServices.CompensatingResourceManager.Clerk">
+  <TypeSignature Language="C#" Value="public sealed class Clerk" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Clerk extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.CompensatingResourceManager.Clerk" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Writes records of transactional actions to a log.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each clerk is associated with a compensator, which is called back to perform actions during the two-phase commit of the transaction.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this class.  
+  
+ [!code-cpp[EnterpriseServices_Crm#10](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServices_Crm/cpp/crmserver.cpp#10)]
+ [!code-csharp[EnterpriseServices_Crm#10](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServices_Crm/CS/crmserver.cs#10)]
+ [!code-vb[EnterpriseServices_Crm#10](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServices_Crm/VB/crmserver.vb#10)]  
+  
+ The following code example demonstrates the corresponding <xref:System.EnterpriseServices.CompensatingResourceManager.Compensator> class.  
+  
+ [!code-cpp[EnterpriseServices_Crm#30](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServices_Crm/cpp/crmclient.cpp#30)]
+ [!code-csharp[EnterpriseServices_Crm#30](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServices_Crm/CS/crmclient.cs#30)]
+ [!code-vb[EnterpriseServices_Crm#30](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServices_Crm/VB/crmclient.vb#30)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.EnterpriseServices.CompensatingResourceManager.Clerk" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Clerk (string compensator, string description, System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions flags);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string compensator, string description, valuetype System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions flags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.CompensatingResourceManager.Clerk.#ctor(System.String,System.String,System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="compensator" Type="System.String" />
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="flags" Type="System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions" />
+      </Parameters>
+      <Docs>
+        <param name="compensator">The name of the compensator.</param>
+        <param name="description">The description of the compensator.</param>
+        <param name="flags">A bitwise combination of the <see cref="T:System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions" /> values.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.EnterpriseServices.CompensatingResourceManager.Clerk" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Clerk (Type compensator, string description, System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions flags);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type compensator, string description, valuetype System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions flags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.CompensatingResourceManager.Clerk.#ctor(System.Type,System.String,System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="compensator" Type="System.Type" />
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="flags" Type="System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions" />
+      </Parameters>
+      <Docs>
+        <param name="compensator">A type that represents the compensator.</param>
+        <param name="description">The description of the compensator.</param>
+        <param name="flags">A bitwise combination of the <see cref="T:System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions" /> values.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.EnterpriseServices.CompensatingResourceManager.Clerk" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this constructor.  
+  
+ [!code-cpp[EnterpriseServices_Crm#11](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServices_Crm/cpp/crmserver.cpp#11)]
+ [!code-csharp[EnterpriseServices_Crm#11](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServices_Crm/CS/crmserver.cs#11)]
+ [!code-vb[EnterpriseServices_Crm#11](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServices_Crm/VB/crmserver.vb#11)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="~Clerk ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.CompensatingResourceManager.Clerk.Finalize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Frees the resources of the current Clerk before it is reclaimed by the garbage collector.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForceLog">
+      <MemberSignature Language="C#" Value="public void ForceLog ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ForceLog() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.CompensatingResourceManager.Clerk.ForceLog" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Forces all log records to disk.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Compensating Resource Manager (CRM) Worker and CRM Compensator use this method to write records lazily to the log, which means they are not made durable until they have been forced to the log. Calling <xref:System.EnterpriseServices.CompensatingResourceManager.Clerk.ForceLog%2A> makes all log records that have been written durable on disk.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this method.  
+  
+ [!code-cpp[EnterpriseServices_Crm#12](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServices_Crm/cpp/crmserver.cpp#12)]
+ [!code-csharp[EnterpriseServices_Crm#12](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServices_Crm/CS/crmserver.cs#12)]
+ [!code-vb[EnterpriseServices_Crm#12](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServices_Crm/VB/crmserver.vb#12)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForceTransactionToAbort">
+      <MemberSignature Language="C#" Value="public void ForceTransactionToAbort ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ForceTransactionToAbort() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.CompensatingResourceManager.Clerk.ForceTransactionToAbort" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Performs an immediate abort call on the transaction.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForgetLogRecord">
+      <MemberSignature Language="C#" Value="public void ForgetLogRecord ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ForgetLogRecord() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.CompensatingResourceManager.Clerk.ForgetLogRecord" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Does not deliver the last log record that was written by this instance of this interface.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This can only be used to forget the last record, there is no concept of nesting; that is, "Write, Forget, Write, Forget" is valid, but "Write, Write, Forget, Forget" is not. A log record that has been forgotten is not delivered to the Compensating Resource Manager (CRM) Compensator during transaction outcome notifications.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogRecordCount">
+      <MemberSignature Language="C#" Value="public int LogRecordCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 LogRecordCount" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.CompensatingResourceManager.Clerk.LogRecordCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of log records.</summary>
+        <value>The number of log records.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransactionUOW">
+      <MemberSignature Language="C#" Value="public string TransactionUOW { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TransactionUOW" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.CompensatingResourceManager.Clerk.TransactionUOW" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value representing the transaction unit of work (UOW).</summary>
+        <value>A GUID representing the UOW.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteLogRecord">
+      <MemberSignature Language="C#" Value="public void WriteLogRecord (object record);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteLogRecord(object record) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.CompensatingResourceManager.Clerk.WriteLogRecord(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="record" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="record">The log record to write to the log.</param>
+        <summary>Writes unstructured log records to the log.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this constructor.  
+  
+ [!code-cpp[EnterpriseServices_Crm#11](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServices_Crm/cpp/crmserver.cpp#11)]
+ [!code-csharp[EnterpriseServices_Crm#11](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServices_Crm/CS/crmserver.cs#11)]
+ [!code-vb[EnterpriseServices_Crm#11](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServices_Crm/VB/crmserver.vb#11)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,208 @@
+<Type Name="ValueTypeIndexerReference&lt;TOperand,TItem&gt;" FullName="System.Activities.Expressions.ValueTypeIndexerReference&lt;TOperand,TItem&gt;">
+  <TypeSignature Language="C#" Value="public sealed class ValueTypeIndexerReference&lt;TOperand,TItem&gt; : System.Activities.CodeActivity&lt;System.Activities.Location&lt;TItem&gt;&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ValueTypeIndexerReference`2&lt;TOperand, TItem&gt; extends System.Activities.CodeActivity`1&lt;class System.Activities.Location`1&lt;!TItem&gt;&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Expressions.ValueTypeIndexerReference`2" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TOperand" />
+    <TypeParameter Name="TItem" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Activities.CodeActivity&lt;System.Activities.Location&lt;TItem&gt;&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="TResult">System.Activities.Location&lt;TItem&gt;</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.ContentProperty("Indices")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="TOperand">The value type with the indexer.</typeparam>
+    <typeparam name="TItem">The type of indexer array.</typeparam>
+    <summary>Represents an element referenced by an indexer on a value type that can be used as an l-value in an expression.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example uses <xref:System.Activities.Expressions.ValueTypeIndexerReference%602> in an `Assign` activity to assign a `string` value to the `struct` element at index 1 and prints the element value to the console. The `Assign` activity is equivalent to the following statement when using the `struct` defined in the following example: `myStructVariable[1] = "Hello";`.  
+  
+> [!NOTE]
+>  Instead of instantiating the <xref:System.Activities.Expressions.ValueTypeIndexerReference%602> l-value expression activity directly, it is strongly recommended that you call <xref:System.Activities.Expressions.ExpressionServices.ConvertReference%2A>, which provides a higher level of abstraction and enables you to implement your workflow more intuitively.  
+  
+```  
+  
+    // Define a struct with an indexer.  
+    struct StructWithIndexer  
+    {  
+        string val;  
+        public string this[int index]  
+        {                  
+            get { return val; }  
+            set { val = value; }  
+        }  
+    }  
+  
+    public static void ValueTypeIndexerReferenceSample()  
+    {  
+        // Create a variable of type StructWithIndexer to store the element.  
+        var swivar = new Variable<StructWithIndexer>("swivar", new StructWithIndexer());  
+  
+        // Create the top-level activity to be invoked later.  
+        Activity myActivity = new Sequence  
+        {  
+            Variables = { swivar },  
+            Activities =   
+            {  
+                // Create an Assign activity with an element at index 1.  
+                new Assign<string>  
+                {  
+                    To = new ValueTypeIndexerReference<StructWithIndexer, string>  
+                    {  
+                        OperandLocation = swivar,  
+                        Indices = { new InArgument<int>(1) },  
+                    },  
+                    // Assign a string literal to the element at index 1.  
+                    Value = "Hello",  
+                },  
+                new WriteLine()  
+                {  
+                    Text = ExpressionServices.Convert<string>(ctx => swivar.Get(ctx)[1]),  
+                }  
+            }  
+        };  
+  
+        // Invoke the Sequence activity.  
+        WorkflowInvoker.Invoke(myActivity);  
+}  
+  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ValueTypeIndexerReference ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.ValueTypeIndexerReference`2.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Expressions.ValueTypeIndexerReference`2" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CacheMetadata">
+      <MemberSignature Language="C#" Value="protected override void CacheMetadata (System.Activities.CodeActivityMetadata metadata);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CacheMetadata(valuetype System.Activities.CodeActivityMetadata metadata) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.ValueTypeIndexerReference`2.CacheMetadata(System.Activities.CodeActivityMetadata)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="metadata" Type="System.Activities.CodeActivityMetadata" />
+      </Parameters>
+      <Docs>
+        <param name="metadata">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="protected override System.Activities.Location&lt;TItem&gt; Execute (System.Activities.CodeActivityContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Activities.Location`1&lt;!TItem&gt; Execute(class System.Activities.CodeActivityContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.ValueTypeIndexerReference`2.Execute(System.Activities.CodeActivityContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Location&lt;TItem&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Activities.CodeActivityContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Indices">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.Activities.InArgument&gt; Indices { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.Activities.InArgument&gt; Indices" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.ValueTypeIndexerReference`2.Indices" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Activities.RequiredArgument</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Activities.InArgument&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of arguments that represent the indices of the element in the indexer array.</summary>
+        <value>The indices of the element in the indexer array.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Activities.Expressions.ValueTypeIndexerReference%602.Indices%2A> property is read-only, but the items in the collection can be modified and the indices can be changed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OperandLocation">
+      <MemberSignature Language="C#" Value="public System.Activities.InOutArgument&lt;TOperand&gt; OperandLocation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.InOutArgument`1&lt;!TOperand&gt; OperandLocation" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.ValueTypeIndexerReference`2.OperandLocation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Activities.RequiredArgument</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Activities.InOutArgument&lt;TOperand&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the instance of the value type that contains the indexer.</summary>
+        <value>The instance of the value type that contains the indexer.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,24 @@
+CMFCRibbonPanel* pPanel2 = pCategory->AddPanel(_T("Extended"));
+
+CMFCRibbonGallery* pBtn3 = new CMFCRibbonGallery(ID_RIBBON_PBTN_3, _T("Resize Vertical"), 2, 2, IDB_RIBBON_PALETTE_1, 64);
+pBtn3->SetButtonMode();
+pBtn3->SetIconsInRow(2);
+pBtn3->EnableMenuResize(TRUE, TRUE);
+pPanel2->Add(pBtn3);
+
+CMFCRibbonGallery* pBtn4 = new CMFCRibbonGallery(ID_RIBBON_PBTN_4, _T("Resize Both"), 3, 3, IDB_RIBBON_PALETTE_1, 64);
+pBtn4->SetButtonMode();
+pBtn4->SetIconsInRow(4);
+pBtn4->EnableMenuResize(TRUE);
+pPanel2->Add(pBtn4);
+
+CMFCRibbonGallery* pBtn5 = new CMFCRibbonGallery(ID_RIBBON_PBTN_5, _T("Groups && Subitems"), 4, 4);
+pBtn5->AddGroup(_T("Group 1"), IDB_RIBBON_PALETTE_1, 64);
+pBtn5->AddGroup(_T("Group 2"), IDB_RIBBON_PALETTE_2, 64);
+pBtn5->SetButtonMode();
+pBtn5->SetIconsInRow(4);
+pBtn5->EnableMenuResize(TRUE);
+pBtn5->AddSubItem(new CMFCRibbonButton(ID_RIBBON_MENU_ITEM_1, _T("Item 1")));
+pBtn5->AddSubItem(new CMFCRibbonButton(ID_RIBBON_MENU_ITEM_2, _T("Item 2")));
+pBtn5->AddSubItem(new CMFCRibbonButton(ID_RIBBON_MENU_ITEM_3, _T("Item 3")));
+pPanel2->Add(pBtn5);

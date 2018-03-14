@@ -1,0 +1,7 @@
+# [Developing for Multiple Platforms](index.md)
+## [Portable Class Library](cross-platform-development-with-the-portable-class-library.md)
+## [Using Portable Class Library with MVVM](using-portable-class-library-with-model-view-view-model.md)
+## [App Resources for Libraries That Target Multiple Platforms](app-resources-for-libraries-that-target-multiple-platforms.md)
+## [.NET Framework Support for Windows Store Apps and Windows Runtime](support-for-windows-store-apps-and-windows-runtime.md)
+## [Passing a URI to the Windows Runtime](passing-a-uri-to-the-windows-runtime.md)
+## [WindowsRuntimeStreamExtensions.AsRandomAccessStream(System.IO.Stream) Method](windowsruntimestreamextensions-asrandomaccessstream-method.md)

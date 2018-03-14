@@ -1,0 +1,263 @@
+<Type Name="MonoTlsProviderFactory" FullName="Mono.Security.Interface.MonoTlsProviderFactory">
+  <TypeSignature Language="C#" Value="public static class MonoTlsProviderFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit MonoTlsProviderFactory extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Mono.Security.Interface.MonoTlsProviderFactory" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateHttpListener">
+      <MemberSignature Language="C#" Value="public static System.Net.HttpListener CreateHttpListener (System.Security.Cryptography.X509Certificates.X509Certificate certificate, Mono.Security.Interface.MonoTlsProvider provider = null, Mono.Security.Interface.MonoTlsSettings settings = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.HttpListener CreateHttpListener(class System.Security.Cryptography.X509Certificates.X509Certificate certificate, class Mono.Security.Interface.MonoTlsProvider provider, class Mono.Security.Interface.MonoTlsSettings settings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.MonoTlsProviderFactory.CreateHttpListener(System.Security.Cryptography.X509Certificates.X509Certificate,Mono.Security.Interface.MonoTlsProvider,Mono.Security.Interface.MonoTlsSettings)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.HttpListener</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="certificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate" />
+        <Parameter Name="provider" Type="Mono.Security.Interface.MonoTlsProvider" />
+        <Parameter Name="settings" Type="Mono.Security.Interface.MonoTlsSettings" />
+      </Parameters>
+      <Docs>
+        <param name="certificate">To be added.</param>
+        <param name="provider">To be added.</param>
+        <param name="settings">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateHttpsRequest">
+      <MemberSignature Language="C#" Value="public static System.Net.HttpWebRequest CreateHttpsRequest (Uri requestUri, Mono.Security.Interface.MonoTlsProvider provider, Mono.Security.Interface.MonoTlsSettings settings = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.HttpWebRequest CreateHttpsRequest(class System.Uri requestUri, class Mono.Security.Interface.MonoTlsProvider provider, class Mono.Security.Interface.MonoTlsSettings settings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.MonoTlsProviderFactory.CreateHttpsRequest(System.Uri,Mono.Security.Interface.MonoTlsProvider,Mono.Security.Interface.MonoTlsSettings)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.HttpWebRequest</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="requestUri" Type="System.Uri" />
+        <Parameter Name="provider" Type="Mono.Security.Interface.MonoTlsProvider" />
+        <Parameter Name="settings" Type="Mono.Security.Interface.MonoTlsSettings" />
+      </Parameters>
+      <Docs>
+        <param name="requestUri">To be added.</param>
+        <param name="provider">To be added.</param>
+        <param name="settings">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDefaultProvider">
+      <MemberSignature Language="C#" Value="public static Mono.Security.Interface.MonoTlsProvider GetDefaultProvider ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Mono.Security.Interface.MonoTlsProvider GetDefaultProvider() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.MonoTlsProviderFactory.GetDefaultProvider" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Use GetProvider() instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.MonoTlsProvider</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMonoSslStream">
+      <MemberSignature Language="C#" Value="public static Mono.Security.Interface.IMonoSslStream GetMonoSslStream (System.Net.Security.SslStream stream);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Mono.Security.Interface.IMonoSslStream GetMonoSslStream(class System.Net.Security.SslStream stream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.MonoTlsProviderFactory.GetMonoSslStream(System.Net.Security.SslStream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.IMonoSslStream</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.Net.Security.SslStream" />
+      </Parameters>
+      <Docs>
+        <param name="stream">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProvider">
+      <MemberSignature Language="C#" Value="public static Mono.Security.Interface.MonoTlsProvider GetProvider ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Mono.Security.Interface.MonoTlsProvider GetProvider() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.MonoTlsProviderFactory.GetProvider" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.MonoTlsProvider</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProvider">
+      <MemberSignature Language="C#" Value="public static Mono.Security.Interface.MonoTlsProvider GetProvider (string provider);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Mono.Security.Interface.MonoTlsProvider GetProvider(string provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.MonoTlsProviderFactory.GetProvider(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.MonoTlsProvider</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="provider">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public static void Initialize ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Initialize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.MonoTlsProviderFactory.Initialize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public static void Initialize (string provider);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Initialize(string provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.MonoTlsProviderFactory.Initialize(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="provider">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsInitialized">
+      <MemberSignature Language="C#" Value="public static bool IsInitialized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool IsInitialized" />
+      <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.MonoTlsProviderFactory.IsInitialized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsProviderSupported">
+      <MemberSignature Language="C#" Value="public static bool IsProviderSupported (string provider);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsProviderSupported(string provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.MonoTlsProviderFactory.IsProviderSupported(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="provider">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDefaultProvider">
+      <MemberSignature Language="C#" Value="public static void SetDefaultProvider (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetDefaultProvider(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.MonoTlsProviderFactory.SetDefaultProvider(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Use Initialize(string provider) instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

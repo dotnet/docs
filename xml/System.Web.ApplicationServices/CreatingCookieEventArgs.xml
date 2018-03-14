@@ -1,0 +1,203 @@
+<Type Name="CreatingCookieEventArgs" FullName="System.Web.ApplicationServices.CreatingCookieEventArgs">
+  <TypeSignature Language="C#" Value="public class CreatingCookieEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CreatingCookieEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.ApplicationServices.CreatingCookieEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Web.ApplicationServices.AuthenticationService.CreatingCookie" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.ApplicationServices.CreatingCookieEventArgs> class supplies values to any <xref:System.Web.ApplicationServices.AuthenticationService.CreatingCookie> event handler. By using the properties of this class, you can retrieve user credentials when you create a custom authentication cookie.  
+  
+ The <xref:System.Web.ApplicationServices.AuthenticationService> class raises the <xref:System.Web.ApplicationServices.AuthenticationService.CreatingCookie> event when it sets the authentication cookie, after the user credentials have been authenticated. The <xref:System.Web.ApplicationServices.AuthenticationService> class constructs a <xref:System.Web.ApplicationServices.CreatingCookieEventArgs> object and passes it to any <xref:System.Web.ApplicationServices.AuthenticationService.CreatingCookie> event handler.  
+  
+ You retrieve the user credentials through the <xref:System.Web.ApplicationServices.CreatingCookieEventArgs.UserName%2A><xref:System.Web.ApplicationServices.CreatingCookieEventArgs.Password%2A>, and <xref:System.Web.ApplicationServices.CreatingCookieEventArgs.CustomCredential%2A> properties. The <xref:System.Web.ApplicationServices.CreatingCookieEventArgs.CustomCredential%2A> property can contain any custom values that you need in order to authenticate, such as an identification number. The <xref:System.Web.ApplicationServices.CreatingCookieEventArgs.IsPersistent%2A> property indicates whether the authentication cookie should be retained past the current session. Set the <xref:System.Web.ApplicationServices.CreatingCookieEventArgs.CookieIsSet%2A> property to `true` if you create the authentication cookie, so that the <xref:System.Web.ApplicationServices.AuthenticationService> class does not create the cookie.  
+  
+   
+  
+## Examples  
+ The following example shows an event handler for the <xref:System.Web.ApplicationServices.AuthenticationService.CreatingCookie> event. The handler retrieves user values from the <xref:System.Web.ApplicationServices.CreatingCookieEventArgs> object to customize the authentication cookie. The handler saves the value from the <xref:System.Web.ApplicationServices.CreatingCookieEventArgs.CustomCredential%2A> property in the authentication ticket and sets the <xref:System.Web.ApplicationServices.CreatingCookieEventArgs.CookieIsSet%2A> property to `true` to indicate that the authentication cookie has been created.  
+  
+ [!code-csharp[System.Web.Security.LoginService.CreatingCookieEventArgs#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.LoginService.CreatingCookieEventArgs/cs/Global.asax#2)]
+ [!code-vb[System.Web.Security.LoginService.CreatingCookieEventArgs#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.LoginService.CreatingCookieEventArgs/vb/Global.asax#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CookieIsSet">
+      <MemberSignature Language="C#" Value="public bool CookieIsSet { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CookieIsSet" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ApplicationServices.CreatingCookieEventArgs.CookieIsSet" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the authentication cookie has been created.</summary>
+        <value>
+          <see langword="true" /> if the authentication cookie was created; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.ApplicationServices.AuthenticationService> class checks the <xref:System.Web.ApplicationServices.CreatingCookieEventArgs.CookieIsSet%2A> property to determine whether the authentication cookie has been created. You set this value to `true` if you create an authentication cookie in an event handler for the <xref:System.Web.ApplicationServices.AuthenticationService.CreatingCookie> event. If <xref:System.Web.ApplicationServices.CreatingCookieEventArgs.CookieIsSet%2A> is set to `false` (the default value), the <xref:System.Web.ApplicationServices.AuthenticationService> class creates an authentication cookie, This overwrites any cookie that you have created in the handler for the <xref:System.Web.ApplicationServices.AuthenticationService.CreatingCookie> event.  
+  
+   
+  
+## Examples  
+ The following example shows an event handler for the <xref:System.Web.ApplicationServices.AuthenticationService.CreatingCookie> event. The handler retrieves user values from the <xref:System.Web.ApplicationServices.CreatingCookieEventArgs> object to customize the authentication cookie. The <xref:System.Web.ApplicationServices.CreatingCookieEventArgs.CookieIsSet%2A> property is set to `true` after the authentication ticket is created.  
+  
+ [!code-csharp[System.Web.Security.LoginService.CreatingCookieEventArgs#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.LoginService.CreatingCookieEventArgs/cs/Global.asax#2)]
+ [!code-vb[System.Web.Security.LoginService.CreatingCookieEventArgs#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.LoginService.CreatingCookieEventArgs/vb/Global.asax#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomCredential">
+      <MemberSignature Language="C#" Value="public string CustomCredential { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CustomCredential" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ApplicationServices.CreatingCookieEventArgs.CustomCredential" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets additional authentication values that are provided by the user.</summary>
+        <value>The custom values required for authentication, other than user name and password.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You use the <xref:System.Web.ApplicationServices.CreatingCookieEventArgs.CustomCredential%2A> property to retrieve custom values in the authentication ticket. The <xref:System.Web.ApplicationServices.CreatingCookieEventArgs.CustomCredential%2A> property contains the value passed to the <xref:System.Web.ApplicationServices.AuthenticationService.Login%2A> method. Typically, this property is used to pass custom values that must be validated with the user name and password, such as an identification number. If more than one value is stored in the property, you must parse the <xref:System.Web.ApplicationServices.CreatingCookieEventArgs.CustomCredential%2A> property in order to retrieve values.  
+  
+   
+  
+## Examples  
+ The following example shows an event handler for the <xref:System.Web.ApplicationServices.AuthenticationService.CreatingCookie> event. The handler retrieves user values from the <xref:System.Web.ApplicationServices.CreatingCookieEventArgs> object in order to customize the authentication cookie. The value passed in the <xref:System.Web.ApplicationServices.CreatingCookieEventArgs.CustomCredential%2A> property is stored in the <xref:System.Web.Security.FormsAuthenticationTicket.UserData%2A> property of the forms authentication ticket.  
+  
+> [!NOTE]
+>  Store the <xref:System.Web.ApplicationServices.CreatingCookieEventArgs.CustomCredential%2A> property in a cookie only when you know that the data in the property is not sensitive. Malicious users can access the values in the cookie.  
+  
+ [!code-csharp[System.Web.Security.LoginService.CreatingCookieEventArgs#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.LoginService.CreatingCookieEventArgs/cs/Global.asax#2)]
+ [!code-vb[System.Web.Security.LoginService.CreatingCookieEventArgs#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.LoginService.CreatingCookieEventArgs/vb/Global.asax#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsPersistent">
+      <MemberSignature Language="C#" Value="public bool IsPersistent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsPersistent" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ApplicationServices.CreatingCookieEventArgs.IsPersistent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the authentication cookie should be retained beyond the current session.</summary>
+        <value>
+          <see langword="true" /> if the cookie should be retained beyond the current session; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you create a <xref:System.Web.Security.FormsAuthenticationTicket> object, you can use the <xref:System.Web.ApplicationServices.CreatingCookieEventArgs.IsPersistent%2A> property to specify whether the authentication cookie is retained beyond the current session.  
+  
+   
+  
+## Examples  
+ The following example shows an event handler for the <xref:System.Web.ApplicationServices.AuthenticationService.CreatingCookie> event. The handler retrieves user values from the <xref:System.Web.ApplicationServices.CreatingCookieEventArgs> object in order to customize the authentication cookie. The <xref:System.Web.Security.FormsAuthenticationTicket.IsPersistent%2A> property of the <xref:System.Web.Security.FormsAuthenticationTicket> object is set to the value in the <xref:System.Web.ApplicationServices.CreatingCookieEventArgs.IsPersistent%2A> property.  
+  
+ [!code-csharp[System.Web.Security.LoginService.CreatingCookieEventArgs#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.LoginService.CreatingCookieEventArgs/cs/Global.asax#2)]
+ [!code-vb[System.Web.Security.LoginService.CreatingCookieEventArgs#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.LoginService.CreatingCookieEventArgs/vb/Global.asax#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Password">
+      <MemberSignature Language="C#" Value="public string Password { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Password" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ApplicationServices.CreatingCookieEventArgs.Password" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the password for the user.</summary>
+        <value>The password that is provided by the user for authentication.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You use the <xref:System.Web.ApplicationServices.CreatingCookieEventArgs.Password%2A> property to retrieve the password when you set custom values in the authentication ticket.  
+  
+> [!NOTE]
+>  Do not save the value of the <xref:System.Web.ApplicationServices.CreatingCookieEventArgs.Password%2A> property in the authentication ticket. A malicious user can access the cookie and retrieve the password even though the cookie is encrypted.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserName">
+      <MemberSignature Language="C#" Value="public string UserName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string UserName" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ApplicationServices.CreatingCookieEventArgs.UserName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name for the user.</summary>
+        <value>The name that is provided by the user for authentication.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You use the <xref:System.Web.ApplicationServices.CreatingCookieEventArgs.UserName%2A> property to retrieve the authentication name when you set custom values in the authentication ticket. Typically, you set the <xref:System.Web.Security.FormsAuthenticationTicket.Name%2A> property of the <xref:System.Web.Security.FormsAuthenticationTicket> object to the <xref:System.Web.ApplicationServices.CreatingCookieEventArgs.UserName%2A> value.  
+  
+   
+  
+## Examples  
+ The following example shows an event handler for the <xref:System.Web.ApplicationServices.AuthenticationService.CreatingCookie> event. The handler retrieves user values from the <xref:System.Web.ApplicationServices.CreatingCookieEventArgs> object to customize the authentication cookie. The <xref:System.Web.Security.FormsAuthenticationTicket.Name%2A> property is set to the values of the <xref:System.Web.ApplicationServices.CreatingCookieEventArgs.UserName%2A> property.  
+  
+ [!code-csharp[System.Web.Security.LoginService.CreatingCookieEventArgs#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.LoginService.CreatingCookieEventArgs/cs/Global.asax#2)]
+ [!code-vb[System.Web.Security.LoginService.CreatingCookieEventArgs#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.LoginService.CreatingCookieEventArgs/vb/Global.asax#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,130 @@
+﻿<Window x:Class="ScrollViewerPanning.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Width="400">
+    <Grid>
+      <Grid.RowDefinitions>
+        <RowDefinition/>
+        <RowDefinition/>
+      </Grid.RowDefinitions>
+      <Grid Grid.Row="0">
+        <!--<SnippetPanningModeDirect>-->
+        <ScrollViewer PanningMode="Both" 
+                      HorizontalScrollBarVisibility="Auto"
+                      VerticalScrollBarVisibility="Auto">
+
+          <StackPanel VerticalAlignment="Top" HorizontalAlignment="Left">
+            
+            <TextBlock TextWrapping="Wrap" Margin="0,0,0,20">
+              Scrolling is enabled when it is necessary. 
+              Resize the window, making it larger and smaller.
+            </TextBlock>
+          
+            <Grid>
+              <Rectangle Fill="Red" Opacity="0.75"/>
+              <TextBlock Name="TextBlock1">
+                 Hello world 1 Hello world 2 Hello world 3 Hello world 4 Hello world 5 <LineBreak/>
+                 Hello world 6 Hello world 7 Hello world 8 Hello world 9 Hello world 10 <LineBreak/>
+                 Hello world 11 Hello world 12 Hello world 13 Hello world 14 Hello world 15 <LineBreak/>
+                 Hello world 16 Hello world 17 Hello world 18 Hello world 19 Hello world 20 <LineBreak/>
+                 Hello world 21 Hello world 22 Hello world 23 Hello world 24 Hello world 25 <LineBreak/>
+                 Hello world 26 Hello world 27 Hello world 28 Hello world 29 Hello world 30 <LineBreak/>
+                 Hello world 31 Hello world 32 Hello world 33 Hello world 34 Hello world 35 <LineBreak/>
+                 Hello world 36 Hello world 37 Hello world 38 Hello world 39 Hello world 40 <LineBreak/>
+                 Hello world 41 Hello world 42 Hello world 43 Hello world 44 Hello world 45 <LineBreak/>
+                 Hello world 46 Hello world 47 Hello world 48 Hello world 49 Hello world 50 <LineBreak/>
+                 Hello world 51 Hello world 52 Hello world 53 Hello world 54 Hello world 55 <LineBreak/>
+                 Hello world 56 Hello world 57 Hello world 58 Hello world 59 Hello world 60 <LineBreak/>
+                 Hello world 61 Hello world 62 Hello world 63 Hello world 64 Hello world 65 <LineBreak/>
+                 Hello world 66 Hello world 67 Hello world 68 Hello world 69 Hello world 70 <LineBreak/>
+                 Hello world 71 Hello world 72 Hello world 73 Hello world 74 Hello world 75 <LineBreak/>
+                 Hello world 76 Hello world 77 Hello world 78 Hello world 79 Hello world 80 <LineBreak/>
+                 Hello world 81 Hello world 82 Hello world 83 Hello world 84 Hello world 85 <LineBreak/>
+                 Hello world 86 Hello world 87 Hello world 88 Hello world 89 Hello world 90 <LineBreak/>
+                 Hello world 91 Hello world 92 Hello world 93 Hello world 94 Hello world 95 <LineBreak/>
+                 Hello world 96 Hello world 97 Hello world 98 Hello world 99 Hello world 100 <LineBreak/>
+                 Hello world 101 Hello world 102 Hello world 103 Hello world 104 Hello world 105 <LineBreak/>
+                 Hello world 106 Hello world 107 Hello world 108 Hello world 109 Hello world 110 <LineBreak/>
+                 Hello world 111 Hello world 112 Hello world 113 Hello world 114 Hello world 115 <LineBreak/>
+                 Hello world 116 Hello world 117 Hello world 118 Hello world 119 Hello world 120 <LineBreak/>
+                 Hello world 121 Hello world 122 Hello world 123 Hello world 124 Hello world 125 <LineBreak/>
+                 Hello world 126 Hello world 127 Hello world 128 Hello world 129 Hello world 130 <LineBreak/>
+                 Hello world 131 Hello world 132 Hello world 133 Hello world 134 Hello world 135 <LineBreak/>
+                 Hello world 136 Hello world 137 Hello world 138 Hello world 139 Hello world 140 <LineBreak/>
+                 Hello world 141 Hello world 142 Hello world 143 Hello world 144 Hello world 145 <LineBreak/>
+                 Hello world 146 Hello world 147 Hello world 148 Hello world 149 Hello world 150 <LineBreak/>
+                 Hello world 151 Hello world 152 Hello world 153 Hello world 154 Hello world 155 <LineBreak/>
+                 Hello world 156 Hello world 157 Hello world 158 Hello world 159 Hello world 160 <LineBreak/>
+                 Hello world 161 Hello world 162 Hello world 163 Hello world 164 Hello world 165 <LineBreak/>
+                 Hello world 166 Hello world 167 Hello world 168 Hello world 169 Hello world 170 <LineBreak/>
+                 Hello world 171 Hello world 172 Hello world 173 Hello world 174 Hello world 175 <LineBreak/>
+                 Hello world 176 Hello world 177 Hello world 178 Hello world 179 Hello world 180 <LineBreak/>
+                 Hello world 181 Hello world 182 Hello world 183 Hello world 184 Hello world 185 <LineBreak/>
+                 Hello world 186 Hello world 187 Hello world 188 Hello world 189 Hello world 190 <LineBreak/>
+                 Hello world 191 Hello world 192 Hello world 193 Hello world 194 Hello world 195 <LineBreak/>
+                 Hello world 196 Hello world 197 Hello world 198 Hello world 199 Hello world 200 <LineBreak/>
+
+
+              </TextBlock>
+            </Grid>
+          
+          </StackPanel>
+        </ScrollViewer>
+        <!--</SnippetPanningModeDirect>-->
+
+      </Grid>
+
+    <Grid Grid.Row="1">
+      <!--<SnippetPanningModeAttached>-->
+        <TextBox Name="textBox1" TextWrapping="Wrap"
+                 IsReadOnly="True" IsReadOnlyCaretVisible="True"
+                 ScrollViewer.PanningMode="VerticalOnly"
+                 ScrollViewer.VerticalScrollBarVisibility="Auto"
+                 ScrollViewer.HorizontalScrollBarVisibility="Auto">
+                  Hello world 1 Hello world 2 Hello world 3 Hello world 4 Hello world 5
+                  Hello world 6 Hello world 7 Hello world 8 Hello world 9 Hello world 10 
+                  Hello world 11 Hello world 12 Hello world 13 Hello world 14 Hello world 15 
+                  Hello world 16 Hello world 17 Hello world 18 Hello world 19 Hello world 20 
+                  Hello world 21 Hello world 22 Hello world 23 Hello world 24 Hello world 25 
+                  Hello world 26 Hello world 27 Hello world 28 Hello world 29 Hello world 30 
+                  Hello world 31 Hello world 32 Hello world 33 Hello world 34 Hello world 35 
+                  Hello world 36 Hello world 37 Hello world 38 Hello world 39 Hello world 40 
+                  Hello world 41 Hello world 42 Hello world 43 Hello world 44 Hello world 45 
+                  Hello world 46 Hello world 47 Hello world 48 Hello world 49 Hello world 50 
+                  Hello world 51 Hello world 52 Hello world 53 Hello world 54 Hello world 55 
+                  Hello world 56 Hello world 57 Hello world 58 Hello world 59 Hello world 60 
+                  Hello world 61 Hello world 62 Hello world 63 Hello world 64 Hello world 65 
+                  Hello world 66 Hello world 67 Hello world 68 Hello world 69 Hello world 70 
+                  Hello world 71 Hello world 72 Hello world 73 Hello world 74 Hello world 75 
+                  Hello world 76 Hello world 77 Hello world 78 Hello world 79 Hello world 80 
+                  Hello world 81 Hello world 82 Hello world 83 Hello world 84 Hello world 85 
+                  Hello world 86 Hello world 87 Hello world 88 Hello world 89 Hello world 90 
+                  Hello world 91 Hello world 92 Hello world 93 Hello world 94 Hello world 95 
+                  Hello world 96 Hello world 97 Hello world 98 Hello world 99 Hello world 100 
+                  Hello world 101 Hello world 102 Hello world 103 Hello world 104 Hello world 105 
+                  Hello world 106 Hello world 107 Hello world 108 Hello world 109 Hello world 110 
+                  Hello world 111 Hello world 112 Hello world 113 Hello world 114 Hello world 115 
+                  Hello world 116 Hello world 117 Hello world 118 Hello world 119 Hello world 120 
+                  Hello world 121 Hello world 122 Hello world 123 Hello world 124 Hello world 125 
+                  Hello world 126 Hello world 127 Hello world 128 Hello world 129 Hello world 130 
+                  Hello world 131 Hello world 132 Hello world 133 Hello world 134 Hello world 135 
+                  Hello world 136 Hello world 137 Hello world 138 Hello world 139 Hello world 140 
+                  Hello world 141 Hello world 142 Hello world 143 Hello world 144 Hello world 145 
+                  Hello world 146 Hello world 147 Hello world 148 Hello world 149 Hello world 150 
+                  Hello world 151 Hello world 152 Hello world 153 Hello world 154 Hello world 155 
+                  Hello world 156 Hello world 157 Hello world 158 Hello world 159 Hello world 160 
+                  Hello world 161 Hello world 162 Hello world 163 Hello world 164 Hello world 165 
+                  Hello world 166 Hello world 167 Hello world 168 Hello world 169 Hello world 170 
+                  Hello world 171 Hello world 172 Hello world 173 Hello world 174 Hello world 175 
+                  Hello world 176 Hello world 177 Hello world 178 Hello world 179 Hello world 180 
+                  Hello world 181 Hello world 182 Hello world 183 Hello world 184 Hello world 185 
+                  Hello world 186 Hello world 187 Hello world 188 Hello world 189 Hello world 190 
+                  Hello world 191 Hello world 192 Hello world 193 Hello world 194 Hello world 195 
+                  Hello world 196 Hello world 197 Hello world 198 Hello world 199 Hello world 200 
+        </TextBox>
+
+      <!--</SnippetPanningModeAttached>-->
+
+    </Grid>
+  </Grid>
+</Window>

@@ -1,0 +1,31 @@
+<Type Name="StylusDeviceCollection" FullName="System.Windows.Input.StylusDeviceCollection">
+  <TypeSignature Language="C#" Value="public class StylusDeviceCollection : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Input.StylusDevice&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StylusDeviceCollection extends System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Windows.Input.StylusDevice&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.StylusDeviceCollection" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Input.StylusDevice&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">System.Windows.Input.StylusDevice</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains the <see cref="T:System.Windows.Input.StylusDevice" /> objects that represent a Tablet PC's stylus devices.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to access the <xref:System.Windows.Input.StylusDevice> objects.  
+  
+ [!code-csharp[HwCaps#11](~/samples/snippets/csharp/VS_Snippets_Wpf/HwCaps/CSharp/Window1.xaml.cs#11)]
+ [!code-vb[HwCaps#11](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HwCaps/VisualBasic/Window1.xaml.vb#11)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

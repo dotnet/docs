@@ -1,0 +1,70 @@
+<Type Name="DictionaryModelBinder&lt;TKey,TValue&gt;" FullName="System.Web.ModelBinding.DictionaryModelBinder&lt;TKey,TValue&gt;">
+  <TypeSignature Language="C#" Value="public class DictionaryModelBinder&lt;TKey,TValue&gt; : System.Web.ModelBinding.CollectionModelBinder&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DictionaryModelBinder`2&lt;TKey, TValue&gt; extends System.Web.ModelBinding.CollectionModelBinder`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;!TKey, !TValue&gt;&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.DictionaryModelBinder`2" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TKey" />
+    <TypeParameter Name="TValue" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Web.ModelBinding.CollectionModelBinder&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="TElement">System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="TKey">The type of the key.</typeparam>
+    <typeparam name="TValue">The type of the value.</typeparam>
+    <summary>Maps a browser request to a dictionary data object.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DictionaryModelBinder ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.DictionaryModelBinder`2.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.DictionaryModelBinder`2" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateOrReplaceCollection">
+      <MemberSignature Language="C#" Value="protected override bool CreateOrReplaceCollection (System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext, System.Web.ModelBinding.ModelBindingContext bindingContext, System.Collections.Generic.IList&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt; newCollection);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool CreateOrReplaceCollection(class System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext, class System.Web.ModelBinding.ModelBindingContext bindingContext, class System.Collections.Generic.IList`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;!TKey, !TValue&gt;&gt; newCollection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.DictionaryModelBinder`2.CreateOrReplaceCollection(System.Web.ModelBinding.ModelBindingExecutionContext,System.Web.ModelBinding.ModelBindingContext,System.Collections.Generic.IList{System.Collections.Generic.KeyValuePair{`0,`1}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="modelBindingExecutionContext" Type="System.Web.ModelBinding.ModelBindingExecutionContext" />
+        <Parameter Name="bindingContext" Type="System.Web.ModelBinding.ModelBindingContext" />
+        <Parameter Name="newCollection" Type="System.Collections.Generic.IList&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="modelBindingExecutionContext">The execution context.</param>
+        <param name="bindingContext">The binding context.</param>
+        <param name="newCollection">The new collection.</param>
+        <summary>Converts the collection to a dictionary.</summary>
+        <returns>
+          <see langword="true" /> in all cases.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

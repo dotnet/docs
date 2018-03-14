@@ -1,0 +1,1 @@
+                com1.Write("ATDT 555-0100" & vbCrLf)

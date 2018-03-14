@@ -1,0 +1,17 @@
+﻿<Window x:Class="MyInkEraser.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:my="clr-namespace:InkEraser"
+    Title="InkEraser"
+    xmlns:cc="controls"
+    >
+    <DockPanel Name="root">
+        <StackPanel Background="DarkSlateBlue">
+            <Button Name="btnToggleMode" MinHeight="20" MaxHeight="50" MinWidth="70" 
+              Click="ToggleErase">Erase Mode</Button>
+            <Button Name="btmEraseStrokes" Click="SaveStrokes">Save Strokes</Button>
+            <Button Name="btnResetInk" Click="ResetInk">Reset Ink</Button>
+        </StackPanel>
+        <!--<cc:InkEraser Background="DarkSlateBlue" Name="inkEraser1"  />-->
+    </DockPanel>
+</Window>

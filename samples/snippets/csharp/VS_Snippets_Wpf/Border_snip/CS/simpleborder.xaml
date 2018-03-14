@@ -1,0 +1,8 @@
+﻿<!-- <SnippetSimpleBorderWholePage> -->
+<Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Border BorderThickness="20" BorderBrush="Black">
+      <TextBox>TextBox with a black Border around it</TextBox>
+    </Border>
+</Page>
+<!-- </SnippetSimpleBorderWholePage> -->

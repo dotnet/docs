@@ -1,0 +1,92 @@
+<Type Name="SqlProcedureAttribute" FullName="Microsoft.SqlServer.Server.SqlProcedureAttribute">
+  <TypeSignature Language="C#" Value="public sealed class SqlProcedureAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit SqlProcedureAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Server.SqlProcedureAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Method, AllowMultiple=false, Inherited=false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Used to mark a method definition in an assembly as a stored procedure. The properties on the attribute reflect the physical characteristics used when the type is registered with SQL Server. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:Microsoft.SqlServer.Server.SqlProcedureAttribute> is used only by Microsoft Visual Studio to automatically register the specified method as a stored procedure. It is not used by SQL Server.  
+  
+ See "CLR Stored Procedures" in SQL Server 2005 Books Online for more information on CLR stored procedures and examples.  
+  
+   
+  
+## Examples  
+ The following example shows a method declaration in an assembly that has been attributed as a stored procedure. The <xref:Microsoft.SqlServer.Server.SqlProcedureAttribute> property has been set to the name of the stored procedure.  
+  
+ [!code-csharp[DataWorks SqlProcedureAttribute#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlProcedureAttribute/CS/source.cs#1)]
+ [!code-vb[DataWorks SqlProcedureAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlProcedureAttribute/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SqlProcedureAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.SqlProcedureAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>An attribute on a method definition in an assembly, used to indicate that the given method should be registered as a stored procedure in SQL Server.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlProcedureAttribute.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The name of the stored procedure.</summary>
+        <value>A <see cref="T:System.String" /> representing the name of the stored procedure.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The property is optional.  
+  
+ The following example specifies that the stored procedure is referenced using the name `sp_sqlName`.  
+  
+   
+  
+## Examples  
+ [!code-csharp[VbRaddataSQLObjects#7](~/samples/snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSQLObjects/CS/InsertCurrency.cs#7)]
+ [!code-vb[VbRaddataSQLObjects#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSQLObjects/VB/InsertCurrency.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

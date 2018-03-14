@@ -1,0 +1,25 @@
+<Type Name="SubscribeServiceCallback" FullName="System.Activities.Presentation.SubscribeServiceCallback">
+  <TypeSignature Language="C#" Value="public delegate void SubscribeServiceCallback(Type serviceType, object serviceInstance);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SubscribeServiceCallback extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.SubscribeServiceCallback" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="serviceType" Type="System.Type" />
+    <Parameter Name="serviceInstance" Type="System.Object" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="serviceType">The type of the service to subscribe to.</param>
+    <param name="serviceInstance">The instance of the service to subscribe to.</param>
+    <summary>Represents a delegate that is a callback for service subscriptions.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

@@ -1,0 +1,21 @@
+CMFCRibbonPanel* pPanel3 = pCategory->AddPanel(_T("Small with Indicator"));
+
+CMFCRibbonColorButton* pBtn7 = new CMFCRibbonColorButton(ID_RIBBON_CBTN_7, _T("Simple"), 6);
+pBtn7->SetColor(RGB(255, 0, 0));
+pPanel3->Add(pBtn7);
+
+CMFCRibbonColorButton* pBtn8 = new CMFCRibbonColorButton(ID_RIBBON_CBTN_8, _T("Simple with Options"), 7);
+pBtn8->SetColor(RGB(0, 0, 255));
+pBtn8->EnableAutomaticButton(_T("&Automatic"), RGB(0, 0, 0));
+pBtn8->EnableOtherButton(_T("&More Colors..."), _T("More Colors"));
+pPanel3->Add(pBtn8);
+
+CMFCRibbonColorButton* pBtn9 = new CMFCRibbonColorButton(ID_RIBBON_CBTN_9, _T("Custom"), 8);
+pBtn9->EnableAutomaticButton(_T("&Automatic"), RGB(0, 0, 0));
+pBtn9->EnableOtherButton(_T("&More Colors..."), _T("More Colors"));
+pBtn9->SetColumns(10);
+pBtn9->SetColorBoxSize(CSize(17, 17));
+pBtn9->AddColorsGroup(_T("Theme Colors"), m_lstMainColors);
+pBtn9->AddColorsGroup(_T(""), m_lstAdditionalColors, TRUE);
+pBtn9->AddColorsGroup(_T("Standard Colors"), m_lstStandardColors);
+pPanel3->Add(pBtn9);

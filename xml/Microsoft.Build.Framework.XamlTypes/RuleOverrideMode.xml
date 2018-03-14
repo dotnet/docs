@@ -1,0 +1,50 @@
+<Type Name="RuleOverrideMode" FullName="Microsoft.Build.Framework.XamlTypes.RuleOverrideMode">
+  <TypeSignature Language="C#" Value="public enum RuleOverrideMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RuleOverrideMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.XamlTypes.RuleOverrideMode" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Describes a subsequent definition for a rule with the same name.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Extend">
+      <MemberSignature Language="C#" Value="Extend" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Framework.XamlTypes.RuleOverrideMode Extend = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Framework.XamlTypes.RuleOverrideMode.Extend" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.XamlTypes.RuleOverrideMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A subsequent definition for a rule (with the same name) that adds properties to a previous definition.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Replace">
+      <MemberSignature Language="C#" Value="Replace" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Framework.XamlTypes.RuleOverrideMode Replace = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Framework.XamlTypes.RuleOverrideMode.Replace" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.XamlTypes.RuleOverrideMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A subsequent definition for a rule (with the same name) that entirely overrides a previous definition.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

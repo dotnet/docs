@@ -1,0 +1,43 @@
+<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="ProgBar.Window1"
+    Title ="ProgressBar"
+    Width="500"
+>
+
+  <Grid>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition/>
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+    </Grid.RowDefinitions>
+
+    <TextBlock Margin="10,0,0,3" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="0" Grid.Row="0" FontSize="20">Progress Bars</TextBlock>
+
+    <TextBlock Margin="10,0,0,3" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="0" Grid.Row="1" FontSize="12" TextWrapping="WrapWithOverflow">
+      Progress bars indicate the progress of an operation.
+      Some progress bars do not repeat others make many iterations. This example allows you to choose the number of times that the progress bar repeats.
+    </TextBlock>
+
+    <StackPanel Grid.Column="0" Grid.Row="2">
+      <Label>Choose number of ProgressBar iterations.</Label>
+      <RadioButton Content="One" Click="MakeOne"/>
+      <RadioButton Content="Three" Click="MakeThree"/>
+      <RadioButton Content="Five" Click="MakeFive"/>
+      <RadioButton Content="Forever" Click="MakeForever"/>
+      <RadioButton Content="Indeterminate" Click="MakeIndeterminate"/>
+    </StackPanel>
+    <StatusBar Name="sbar" Grid.Column="0" Grid.Row="5" 
+               VerticalAlignment="Bottom" Background="Beige" >
+      <StatusBarItem>
+        <TextBlock>StatusBar</TextBlock>
+      </StatusBarItem>
+    </StatusBar>
+  </Grid>
+</Window>

@@ -1,0 +1,96 @@
+<Type Name="InvertAxes" FullName="System.Windows.Media.TextFormatting.InvertAxes">
+  <TypeSignature Language="C#" Value="public enum InvertAxes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed InvertAxes extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.InvertAxes" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Indicate the inversion of horizontal and vertical axes of the drawing surface.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Text formatter clients usually invert the horizontal axis, or X-axis, of the drawing surface when performing right-to-left layout of text content.  
+  
+ In a less common case, a text formatter client may invert the vertical axis, or Y-axis, of the drawing surface to achieve the effect of having the coordinate origin at the bottom-left position of the screen. This is a useful technique when drawing certain types of graphs.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Both">
+      <MemberSignature Language="C#" Value="Both" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.TextFormatting.InvertAxes Both = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.TextFormatting.InvertAxes.Both" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TextFormatting.InvertAxes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Drawing surface is inverted in both axes.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Horizontal">
+      <MemberSignature Language="C#" Value="Horizontal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.TextFormatting.InvertAxes Horizontal = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.TextFormatting.InvertAxes.Horizontal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TextFormatting.InvertAxes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Drawing surface is inverted in the horizontal axis.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.TextFormatting.InvertAxes None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.TextFormatting.InvertAxes.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TextFormatting.InvertAxes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Drawing surface is not inverted in either axis.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Vertical">
+      <MemberSignature Language="C#" Value="Vertical" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.TextFormatting.InvertAxes Vertical = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.TextFormatting.InvertAxes.Vertical" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TextFormatting.InvertAxes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Drawing surface is inverted in the vertical axis.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

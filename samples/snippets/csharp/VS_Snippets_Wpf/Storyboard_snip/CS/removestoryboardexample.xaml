@@ -1,0 +1,42 @@
+<!-- <SnippetRemoveStoryboardExampleWholePage> -->
+<Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+  Name="RootPage">
+  <StackPanel>
+
+    <!-- The MediaElement control plays the sound. -->
+    <MediaElement Name="myMediaElement" />
+
+    <Button Name="BeginButton">Begin</Button>
+
+    <StackPanel.Triggers>
+
+      <!-- This trigger causes the Storyboard to start (the music start) when you click the
+           "BeginButton" button. -->
+      <EventTrigger RoutedEvent="Button.Click" SourceName="BeginButton">
+        <EventTrigger.Actions>
+          <BeginStoryboard Name="myBeginStoryboard">
+            <Storyboard>
+              <MediaTimeline Source="C:\WINDOWS\Media\town.mid" Storyboard.TargetName="myMediaElement"  
+               RepeatBehavior="Forever" />
+            </Storyboard>
+          </BeginStoryboard>
+        </EventTrigger.Actions>
+      </EventTrigger>
+
+      <!-- When this page unloads, like when you navigate away from the page, this
+           trigger causes the Storyboard to be removed and the clock to stop. If 
+           you come back to this page and click the button to start the Storyboard,
+           the music starts from the beginning. Alternatively, if you don't unload 
+           the Storyboard when you leave the page, the Storyboard does not stop while 
+           you're gone and when you navigate back to the page you hear the music  
+           continuing as though you had never left. -->
+      <EventTrigger RoutedEvent="Page.Unloaded" >
+        <EventTrigger.Actions>
+          <RemoveStoryboard BeginStoryboardName="myBeginStoryboard" />
+        </EventTrigger.Actions>
+      </EventTrigger>
+    </StackPanel.Triggers>
+  </StackPanel>
+</Page>
+<!-- </SnippetRemoveStoryboardExampleWholePage> -->

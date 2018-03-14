@@ -1,0 +1,30 @@
+<Type Name="MappingItemCollection" FullName="System.Data.Mapping.MappingItemCollection">
+  <TypeSignature Language="C#" Value="public abstract class MappingItemCollection : System.Data.Metadata.Edm.ItemCollection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit MappingItemCollection extends System.Data.Metadata.Edm.ItemCollection" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Mapping.MappingItemCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Data.Metadata.Edm.ItemCollection</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CLSCompliant(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Collection of <see cref="T:System.Data.Metadata.Edm.ItemCollection" /> objects designed for storing mapping information.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.Mapping.MappingItemCollection> inherits from <xref:System.Data.Metadata.Edm.ItemCollection>, providing strongly-typed accessors for retrieving mapping metadata.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

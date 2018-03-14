@@ -1,0 +1,76 @@
+<Type Name="RuleReadWriteAttribute" FullName="System.Workflow.Activities.Rules.RuleReadWriteAttribute">
+  <TypeSignature Language="C#" Value="public abstract class RuleReadWriteAttribute : System.Workflow.Activities.Rules.RuleAttribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit RuleReadWriteAttribute extends System.Workflow.Activities.Rules.RuleAttribute" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RuleReadWriteAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Workflow.Activities.Rules.RuleAttribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the base class for the <see cref="T:System.Workflow.Activities.Rules.RuleReadAttribute" /> and <see cref="T:System.Workflow.Activities.Rules.RuleWriteAttribute" /> classes.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected RuleReadWriteAttribute (string path, System.Workflow.Activities.Rules.RuleAttributeTarget target);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string path, valuetype System.Workflow.Activities.Rules.RuleAttributeTarget target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleReadWriteAttribute.#ctor(System.String,System.Workflow.Activities.Rules.RuleAttributeTarget)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="target" Type="System.Workflow.Activities.Rules.RuleAttributeTarget" />
+      </Parameters>
+      <Docs>
+        <param name="path">The path to target of the attribute.</param>
+        <param name="target">
+          <see cref="T:System.Workflow.Activities.Rules.RuleAttributeTarget" /> enumeration value that determines how to use path to find target.</param>
+        <summary>When implemented in a derived class, initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleReadWriteAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Path">
+      <MemberSignature Language="C#" Value="public string Path { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Path" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RuleReadWriteAttribute.Path" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the path to the target of the attribute.</summary>
+        <value>A <see cref="T:System.String" /> containing the path.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Target">
+      <MemberSignature Language="C#" Value="public System.Workflow.Activities.Rules.RuleAttributeTarget Target { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Workflow.Activities.Rules.RuleAttributeTarget Target" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RuleReadWriteAttribute.Target" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Activities.Rules.RuleAttributeTarget</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Workflow.Activities.Rules.RuleAttributeTarget" /> enumeration value that determines how to use path to find target.</summary>
+        <value>A <see cref="T:System.Workflow.Activities.Rules.RuleAttributeTarget" /> enumeration value that determines how to use the specified path to find target.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+<!--This file contains metadata for the sample applications in this directory.-->
+<Sample xmlns="Sample" xsi:schemaLocation="Sample http://snipper/sample.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Name>ControlsUsingExpressions</Name>
+    <Approval>
+        <ApprovalStatus>approved</ApprovalStatus>
+    </Approval>
+    <BuildInfo>
+        <BuildStatus>approved</BuildStatus>
+    </BuildInfo>
+    <TestInfo>
+        <Platform>1</Platform>
+        <SpecialDeliverable>1</SpecialDeliverable>
+    </TestInfo>
+    <Creator>REDMOND\doylec</Creator>
+    <CreationDate>2004-09-13T09:37:38.8170709-07:00</CreationDate>
+    <LastValidated>2004-09-13T09:37:38.8795677-07:00</LastValidated>
+    <LastGoodBuildVersion>1.0.2914.16</LastGoodBuildVersion>
+    <LastGoodBuildDate>2004-09-13T09:37:38.8795677-07:00</LastGoodBuildDate>
+    <Description><![CDATA[Sample for using expressions at design time]]></Description>
+        <!-- <Snippet1> -->
+            <FileName>ControlsUsingExpressions.aspx</FileName>
+            <RelevantItems>
+                <Reference>System.Web.UI.Design.AppSettingExpressionEditor</Reference>
+                <Reference>System.Web.UI.Design.ResourceExpressionEditor</Reference>
+                <Reference>System.Web.UI.Design.ConnectionStringsExpressionEditor</Reference>
+            </RelevantItems>
+	<!-- </Snippet1> -->
+        <!-- <Snippet2> -->
+            <FileName>ControlsUsingExpressions.aspx</FileName>
+            <RelevantItems>
+                <Reference>System.Web.UI.Design.AppSettingExpressionEditor</Reference>
+            </RelevantItems>
+        <!-- </Snippet2> -->
+        <!-- <Snippet3> -->
+            <FileName>ControlsUsingExpressions.aspx</FileName>
+            <RelevantItems>
+                <Reference>System.Web.UI.Design.ResourceExpressionEditor</Reference>
+            </RelevantItems>
+        <!-- </Snippet3> -->
+        <!-- <Snippet4> -->
+            <FileName>ControlsUsingExpressions.aspx</FileName>
+            <RelevantItems>
+                <Reference>System.Web.UI.Design.ConnectionStringsExpressionEditor</Reference>
+            </RelevantItems>
+        <!-- </Snippet4> -->
+        <!-- <Snippet5> -->
+            <FileName>web.config</FileName>
+            <RelevantItems>
+                <Reference>System.Web.UI.Design.AppSettingExpressionEditor</Reference>
+            </RelevantItems>
+        <!-- </Snippet5> -->
+        <!-- <Snippet6> -->
+            <FileName>web.config</FileName>
+            <RelevantItems>
+                <Reference>System.Web.UI.Design.ConnectionStringsExpressionEditor</Reference>
+            </RelevantItems>
+        <!-- </Snippet6> -->
+</Sample>

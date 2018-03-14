@@ -1,0 +1,62 @@
+<Type Name="LassoSelectionChangedEventArgs" FullName="System.Windows.Ink.LassoSelectionChangedEventArgs">
+  <TypeSignature Language="C#" Value="public class LassoSelectionChangedEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LassoSelectionChangedEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Ink.LassoSelectionChangedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.Ink.IncrementalLassoHitTester.SelectionChanged" /> event.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DeselectedStrokes">
+      <MemberSignature Language="C#" Value="public System.Windows.Ink.StrokeCollection DeselectedStrokes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Ink.StrokeCollection DeselectedStrokes" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Ink.LassoSelectionChangedEventArgs.DeselectedStrokes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.StrokeCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the strokes that have been removed from lasso path since the last time the <see cref="E:System.Windows.Ink.IncrementalLassoHitTester.SelectionChanged" /> event was raised.</summary>
+        <value>A <see cref="T:System.Windows.Ink.StrokeCollection" /> that contains the strokes that have been removed from the lasso path since the last time the <see cref="E:System.Windows.Ink.IncrementalLassoHitTester.SelectionChanged" /> event was raised.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Ink.Stroke> is removed from the lasso path when it is no longer within the bounds of the lasso path.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedStrokes">
+      <MemberSignature Language="C#" Value="public System.Windows.Ink.StrokeCollection SelectedStrokes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Ink.StrokeCollection SelectedStrokes" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Ink.LassoSelectionChangedEventArgs.SelectedStrokes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.StrokeCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the strokes that have been surrounded by the lasso path since the last time the <see cref="E:System.Windows.Ink.IncrementalLassoHitTester.SelectionChanged" /> event was raised.</summary>
+        <value>A <see cref="T:System.Windows.Ink.StrokeCollection" /> that contains the strokes that have been surrounded by the lasso path since the last time the <see cref="E:System.Windows.Ink.IncrementalLassoHitTester.SelectionChanged" /> event was raised.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,112 @@
+<Type Name="CommandLineGenerator" FullName="Microsoft.Build.Tasks.Xaml.CommandLineGenerator">
+  <TypeSignature Language="C#" Value="public class CommandLineGenerator" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CommandLineGenerator extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Xaml.CommandLineGenerator" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Class for generating command lines.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CommandLineGenerator (Microsoft.Build.Framework.XamlTypes.Rule rule, System.Collections.Generic.Dictionary&lt;string,object&gt; parameterValues);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Build.Framework.XamlTypes.Rule rule, class System.Collections.Generic.Dictionary`2&lt;string, object&gt; parameterValues) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Xaml.CommandLineGenerator.#ctor(Microsoft.Build.Framework.XamlTypes.Rule,System.Collections.Generic.Dictionary{System.String,System.Object})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="rule" Type="Microsoft.Build.Framework.XamlTypes.Rule" />
+        <Parameter Name="parameterValues" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Object&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="rule">The rule</param>
+        <param name="parameterValues">The parameter values.</param>
+        <summary>Initializes a new instance of the <see cref="Microsoft.Build.Tasks.Xaml.CommandLineGenerator" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AdditionalOptions">
+      <MemberSignature Language="C#" Value="public string AdditionalOptions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AdditionalOptions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineGenerator.AdditionalOptions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Contains a string of additional options to include on the command line.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AlwaysAppend">
+      <MemberSignature Language="C#" Value="public string AlwaysAppend { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AlwaysAppend" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineGenerator.AlwaysAppend" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Contains the string to append to a command line when there is no template.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandLineTemplate">
+      <MemberSignature Language="C#" Value="public string CommandLineTemplate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CommandLineTemplate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineGenerator.CommandLineTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Contains the template to use when creating the command line.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateCommandLine">
+      <MemberSignature Language="C#" Value="public string GenerateCommandLine ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GenerateCommandLine() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Xaml.CommandLineGenerator.GenerateCommandLine" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Generates a command line.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,124 @@
+<Type Name="EventClassAttribute" FullName="System.EnterpriseServices.EventClassAttribute">
+  <TypeSignature Language="C#" Value="public sealed class EventClassAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EventClassAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.EventClassAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class, Inherited=true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Marks the attributed class as an event class. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `EventClass` is specified, it must not be disabled in the COM+ catalog; if enabled in the COM+ catalog, it must be specified on the component.  
+  
+ Method calls on an event class are never delivered to the implementation; they are instead delivered to event subscribers.  
+  
+ For a list of initial property values for an instance of <xref:System.EnterpriseServices.EventClassAttribute>, see the <xref:System.EnterpriseServices.EventClassAttribute.%23ctor%2A> constructor.  
+  
+ For more information about using attributes, see [Attributes](~/docs/standard/attributes/index.md).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EventClassAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.EventClassAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.EnterpriseServices.EventClassAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There is no unconfigured default value for this attribute. The following table shows initial property values for a configured instance of <xref:System.EnterpriseServices.EventClassAttribute>.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|`FireInParallel`|`false`|  
+|`AllowInProcSubscribers`|`true`|  
+|`PublisherFilter`|`null`|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowInprocSubscribers">
+      <MemberSignature Language="C#" Value="public bool AllowInprocSubscribers { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowInprocSubscribers" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.EventClassAttribute.AllowInprocSubscribers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether subscribers can be activated in the publisher's process.</summary>
+        <value>
+          <see langword="true" /> if subscribers can be activated in the publisher's process; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FireInParallel">
+      <MemberSignature Language="C#" Value="public bool FireInParallel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool FireInParallel" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.EventClassAttribute.FireInParallel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether events are to be delivered to subscribers in parallel.</summary>
+        <value>
+          <see langword="true" /> if events are to be delivered to subscribers in parallel; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PublisherFilter">
+      <MemberSignature Language="C#" Value="public string PublisherFilter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PublisherFilter" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.EventClassAttribute.PublisherFilter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a publisher filter for an event method.</summary>
+        <value>The publisher filter.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

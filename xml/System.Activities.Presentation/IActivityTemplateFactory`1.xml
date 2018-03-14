@@ -1,0 +1,48 @@
+<Type Name="IActivityTemplateFactory&lt;T&gt;" FullName="System.Activities.Presentation.IActivityTemplateFactory&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public interface IActivityTemplateFactory&lt;T&gt; where T : class" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IActivityTemplateFactory`1&lt;class T&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.IActivityTemplateFactory`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T">
+      <Constraints>
+        <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">The type this factory is created.</typeparam>
+    <summary>Represents the generic IActivityTemplateFactory.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public T Create (System.Windows.DependencyObject target, System.Windows.IDataObject dataObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T Create(class System.Windows.DependencyObject target, class System.Windows.IDataObject dataObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.IActivityTemplateFactory`1.Create(System.Windows.DependencyObject,System.Windows.IDataObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Windows.DependencyObject" />
+        <Parameter Name="dataObject" Type="System.Windows.IDataObject" />
+      </Parameters>
+      <Docs>
+        <param name="target">The dependency object used by this instance of an <see cref="T:System.Activities.Presentation.IActivityTemplateFactory" />.</param>
+        <param name="dataObject">The data object in the activity.</param>
+        <summary>Creates an instance of the activity class that represents a predefined design pattern for the specified target object.</summary>
+        <returns>An instance of the activity class.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

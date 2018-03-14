@@ -1,0 +1,16 @@
+<Namespace Name="System.Windows.Documents.Serialization">
+  <Docs>
+    <summary>Provides types that support the creation and use of run-time accessible plug-in serializers that read and write documents in different data formats.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Plug-in serializers can only be used with full trust applications.  
+  
+ When called by the application, the plug-in serializer runs in the same thread as the application and can only access elements created within the application thread.  When designing a custom plug-in serializer, it is important to properly handle all possible error conditions. A failure within a plug-in serializer can cause an application to fail.  
+  
+ ]]></format>
+    </remarks>
+    <altmember cref="N:System.Windows.Xps.Serialization" />
+  </Docs>
+</Namespace>

@@ -1,0 +1,98 @@
+<Type Name="LowPhysicalMemoryObserver" FullName="System.Web.Hosting.LowPhysicalMemoryObserver">
+  <TypeSignature Language="C#" Value="public class LowPhysicalMemoryObserver : IObserver&lt;System.Web.Hosting.LowPhysicalMemoryInfo&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LowPhysicalMemoryObserver extends System.Object implements class System.IObserver`1&lt;class System.Web.Hosting.LowPhysicalMemoryInfo&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Hosting.LowPhysicalMemoryObserver" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IObserver&lt;System.Web.Hosting.LowPhysicalMemoryInfo&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>An observer that implements ASP.NET's default reaction to <see cref="T:System.Web.Hosting.LowPhysicalMemoryInfo" /> events raised by the application's memory monitor.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LowPhysicalMemoryObserver ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.LowPhysicalMemoryObserver.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Web.Hosting.LowPhysicalMemoryObserver" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCompleted">
+      <MemberSignature Language="C#" Value="public void OnCompleted ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnCompleted() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.LowPhysicalMemoryObserver.OnCompleted" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Notifies the observer that the provider has finished sending push-based notifications.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnError">
+      <MemberSignature Language="C#" Value="public void OnError (Exception error);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnError(class System.Exception error) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.LowPhysicalMemoryObserver.OnError(System.Exception)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="error" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="error">The exception.</param>
+        <summary>Notifies the observer that an exception has been raised.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnNext">
+      <MemberSignature Language="C#" Value="public void OnNext (System.Web.Hosting.LowPhysicalMemoryInfo lowMemoryInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnNext(class System.Web.Hosting.LowPhysicalMemoryInfo lowMemoryInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.LowPhysicalMemoryObserver.OnNext(System.Web.Hosting.LowPhysicalMemoryInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lowMemoryInfo" Type="System.Web.Hosting.LowPhysicalMemoryInfo" />
+      </Parameters>
+      <Docs>
+        <param name="lowMemoryInfo">To be added.</param>
+        <summary>Provides the observer with new data.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

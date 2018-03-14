@@ -1,0 +1,102 @@
+﻿<Page
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Name="MyPage"
+  Background="FloralWhite"
+  >
+
+  <FlowDocumentReader ViewingMode="Scroll" >
+    <FlowDocument FontFamily="Verdana" FontSize="16" Foreground="Maroon">
+
+      <!-- <SnippetTextMarkerStyleSnippet1> -->
+      <List MarkerStyle="Box">
+        <ListItem>
+          <Paragraph>Box</Paragraph>
+        </ListItem>
+      </List>
+      <!-- </SnippetTextMarkerStyleSnippet1> -->
+
+      <List Margin="20" MarkerStyle="Box">
+        <ListItem>
+          <Paragraph>Box</Paragraph>
+        </ListItem>
+      </List>
+      <List MarkerStyle="Circle">
+        <ListItem>
+          <Paragraph>Circle</Paragraph>
+        </ListItem>
+      </List>
+      <List MarkerStyle="Decimal">
+        <ListItem>
+          <Paragraph>Decimal</Paragraph>
+        </ListItem>
+        <ListItem>
+          <Paragraph>Decimal</Paragraph>
+        </ListItem>
+        <ListItem>
+          <Paragraph>Decimal</Paragraph>
+        </ListItem>
+      </List>
+      <List Margin="20" MarkerStyle="Disc">
+        <ListItem>
+          <Paragraph>Disc</Paragraph>
+        </ListItem>
+      </List>
+      <List MarkerStyle="LowerLatin">
+        <ListItem>
+          <Paragraph>LowerLatin</Paragraph>
+        </ListItem>
+        <ListItem>
+          <Paragraph>LowerLatin</Paragraph>
+        </ListItem>
+        <ListItem>
+          <Paragraph>LowerLatin</Paragraph>
+        </ListItem>
+      </List>
+      <List MarkerStyle="LowerRoman">
+        <ListItem>
+          <Paragraph>LowerRoman</Paragraph>
+        </ListItem>
+        <ListItem>
+          <Paragraph>LowerRoman</Paragraph>
+        </ListItem>
+        <ListItem>
+          <Paragraph>LowerRoman</Paragraph>
+        </ListItem>
+      </List>
+      <List Name="MyList" Margin="20" MarkerStyle="None">
+        <ListItem>
+          <Paragraph>None</Paragraph>
+        </ListItem>
+      </List>
+      <List MarkerStyle="Square">
+        <ListItem>
+          <Paragraph>Square</Paragraph>
+        </ListItem>
+      </List>
+      <List MarkerStyle="UpperLatin">
+        <ListItem>
+          <Paragraph>UpperLatin</Paragraph>
+        </ListItem>
+        <ListItem>
+          <Paragraph>UpperLatin</Paragraph>
+        </ListItem>
+        <ListItem>
+          <Paragraph>UpperLatin</Paragraph>
+        </ListItem>
+      </List>
+      <List MarkerStyle="UpperRoman">
+        <ListItem>
+          <Paragraph>UpperRoman</Paragraph>
+        </ListItem>
+        <ListItem>
+          <Paragraph>UpperRoman</Paragraph>
+        </ListItem>
+        <ListItem>
+          <Paragraph>UpperRoman</Paragraph>
+        </ListItem>
+      </List>
+    </FlowDocument>
+  </FlowDocumentReader>
+
+</Page>

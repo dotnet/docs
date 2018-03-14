@@ -1,0 +1,77 @@
+<Type Name="ArgumentAccessor" FullName="System.Activities.Presentation.ArgumentAccessor">
+  <TypeSignature Language="C#" Value="public class ArgumentAccessor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ArgumentAccessor extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.ArgumentAccessor" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>A class containing a get/set delegate pair to access an argument in an activity instance.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ArgumentAccessor ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ArgumentAccessor.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Presentation.ArgumentAccessor" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Getter">
+      <MemberSignature Language="C#" Value="public Func&lt;System.Activities.Activity,System.Activities.Argument&gt; Getter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Func`2&lt;class System.Activities.Activity, class System.Activities.Argument&gt; Getter" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.ArgumentAccessor.Getter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Func&lt;System.Activities.Activity,System.Activities.Argument&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the method to retrieve an argument from an activity instance.</summary>
+        <value>The method to retrieve an argument from an activity instance.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Setter">
+      <MemberSignature Language="C#" Value="public Action&lt;System.Activities.Activity,System.Activities.Argument&gt; Setter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Action`2&lt;class System.Activities.Activity, class System.Activities.Argument&gt; Setter" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.ArgumentAccessor.Setter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Action&lt;System.Activities.Activity,System.Activities.Argument&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the method to set an argument into an activity instance.</summary>
+        <value>The method to set an argument into an activity instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Using a method assigned to this property is the preferred way to set the values of a model property. Using <xref:System.Activities.Presentation.Model.ModelProperty.SetValue%2A> will set the value in the editing context, which will not update the underlying value until the editing context completes.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

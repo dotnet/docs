@@ -1,0 +1,94 @@
+<Type Name="ISimpleTypeProvider&lt;TType&gt;" FullName="System.Reflection.Metadata.ISimpleTypeProvider&lt;TType&gt;">
+  <TypeSignature Language="C#" Value="public interface ISimpleTypeProvider&lt;TType&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISimpleTypeProvider`1&lt;TType&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.ISimpleTypeProvider`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.Metadata</AssemblyName>
+    <AssemblyVersion>1.4.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TType" />
+  </TypeParameters>
+  <Interfaces />
+  <Docs>
+    <typeparam name="TType">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetPrimitiveType">
+      <MemberSignature Language="C#" Value="public TType GetPrimitiveType (System.Reflection.Metadata.PrimitiveTypeCode typeCode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TType GetPrimitiveType(valuetype System.Reflection.Metadata.PrimitiveTypeCode typeCode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ISimpleTypeProvider`1.GetPrimitiveType(System.Reflection.Metadata.PrimitiveTypeCode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TType</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="typeCode" Type="System.Reflection.Metadata.PrimitiveTypeCode" />
+      </Parameters>
+      <Docs>
+        <param name="typeCode">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTypeFromDefinition">
+      <MemberSignature Language="C#" Value="public TType GetTypeFromDefinition (System.Reflection.Metadata.MetadataReader reader, System.Reflection.Metadata.TypeDefinitionHandle handle, byte rawTypeKind);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TType GetTypeFromDefinition(class System.Reflection.Metadata.MetadataReader reader, valuetype System.Reflection.Metadata.TypeDefinitionHandle handle, unsigned int8 rawTypeKind) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ISimpleTypeProvider`1.GetTypeFromDefinition(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.TypeDefinitionHandle,System.Byte)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TType</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Reflection.Metadata.MetadataReader" />
+        <Parameter Name="handle" Type="System.Reflection.Metadata.TypeDefinitionHandle" />
+        <Parameter Name="rawTypeKind" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <param name="handle">To be added.</param>
+        <param name="rawTypeKind">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTypeFromReference">
+      <MemberSignature Language="C#" Value="public TType GetTypeFromReference (System.Reflection.Metadata.MetadataReader reader, System.Reflection.Metadata.TypeReferenceHandle handle, byte rawTypeKind);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TType GetTypeFromReference(class System.Reflection.Metadata.MetadataReader reader, valuetype System.Reflection.Metadata.TypeReferenceHandle handle, unsigned int8 rawTypeKind) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ISimpleTypeProvider`1.GetTypeFromReference(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.TypeReferenceHandle,System.Byte)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TType</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Reflection.Metadata.MetadataReader" />
+        <Parameter Name="handle" Type="System.Reflection.Metadata.TypeReferenceHandle" />
+        <Parameter Name="rawTypeKind" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <param name="handle">To be added.</param>
+        <param name="rawTypeKind">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

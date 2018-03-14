@@ -1,0 +1,1 @@
+independent software vendor (ISV)

@@ -1,0 +1,15 @@
+﻿<Window x:Class="DatePickerSnippets.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Window1" Height="300" Width="300">
+
+  <StackPanel Name="root">
+    <StackPanel>
+      <TextBlock Name="textBlock1" 
+                 Text="Enter a date or click the calendar."/>
+      <DatePicker CalendarOpened="DatePicker_CalendarOpened"
+                  CalendarClosed="DatePicker_CalendarClosed"/>
+    </StackPanel>
+
+  </StackPanel>
+</Window>

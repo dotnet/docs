@@ -1,0 +1,87 @@
+<Type Name="MonoSslPolicyErrors" FullName="Mono.Security.Interface.MonoSslPolicyErrors">
+  <TypeSignature Language="C#" Value="public enum MonoSslPolicyErrors" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MonoSslPolicyErrors extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Mono.Security.Interface.MonoSslPolicyErrors" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.MonoSslPolicyErrors None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.MonoSslPolicyErrors.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.MonoSslPolicyErrors</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoteCertificateChainErrors">
+      <MemberSignature Language="C#" Value="RemoteCertificateChainErrors" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.MonoSslPolicyErrors RemoteCertificateChainErrors = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.MonoSslPolicyErrors.RemoteCertificateChainErrors" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.MonoSslPolicyErrors</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoteCertificateNameMismatch">
+      <MemberSignature Language="C#" Value="RemoteCertificateNameMismatch" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.MonoSslPolicyErrors RemoteCertificateNameMismatch = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.MonoSslPolicyErrors.RemoteCertificateNameMismatch" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.MonoSslPolicyErrors</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoteCertificateNotAvailable">
+      <MemberSignature Language="C#" Value="RemoteCertificateNotAvailable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.MonoSslPolicyErrors RemoteCertificateNotAvailable = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.MonoSslPolicyErrors.RemoteCertificateNotAvailable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.MonoSslPolicyErrors</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

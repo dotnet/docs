@@ -1,0 +1,119 @@
+<Type Name="ResourceAssociationSet" FullName="System.Data.Services.Providers.ResourceAssociationSet">
+  <TypeSignature Language="C#" Value="public sealed class ResourceAssociationSet" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ResourceAssociationSet extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Services.Providers.ResourceAssociationSet" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerDisplay("ResourceAssociationSet: ({End1.ResourceSet.Name}, {End1.ResourceType.Name}, {End1.ResourceProperty.Name}) &lt;-&gt; ({End2.ResourceSet.Name}, {End2.ResourceType.Name}, {End2.ResourceProperty.Name})")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Describes an association between two resource sets.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ResourceAssociationSet (string name, System.Data.Services.Providers.ResourceAssociationSetEnd end1, System.Data.Services.Providers.ResourceAssociationSetEnd end2);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Data.Services.Providers.ResourceAssociationSetEnd end1, class System.Data.Services.Providers.ResourceAssociationSetEnd end2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.ResourceAssociationSet.#ctor(System.String,System.Data.Services.Providers.ResourceAssociationSetEnd,System.Data.Services.Providers.ResourceAssociationSetEnd)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="end1" Type="System.Data.Services.Providers.ResourceAssociationSetEnd" />
+        <Parameter Name="end2" Type="System.Data.Services.Providers.ResourceAssociationSetEnd" />
+      </Parameters>
+      <Docs>
+        <param name="name">Name of the association set.</param>
+        <param name="end1">
+          <see cref="T:System.Data.Services.Providers.ResourceAssociationSetEnd" /> that is at the source end of the association set.</param>
+        <param name="end2">
+          <see cref="T:System.Data.Services.Providers.ResourceAssociationSetEnd" /> that is at the target end of the association set.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Data.Services.Providers.ResourceAssociationSet" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="End1">
+      <MemberSignature Language="C#" Value="public System.Data.Services.Providers.ResourceAssociationSetEnd End1 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Services.Providers.ResourceAssociationSetEnd End1" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ResourceAssociationSet.End1" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Providers.ResourceAssociationSetEnd</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the source end of the association set.</summary>
+        <value>
+          <see cref="T:System.Data.Services.Providers.ResourceAssociationSetEnd" /> that is at the source end of the association set.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="End2">
+      <MemberSignature Language="C#" Value="public System.Data.Services.Providers.ResourceAssociationSetEnd End2 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Services.Providers.ResourceAssociationSetEnd End2" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ResourceAssociationSet.End2" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Providers.ResourceAssociationSetEnd</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the target end of the association set.</summary>
+        <value>
+          <see cref="T:System.Data.Services.Providers.ResourceAssociationSetEnd" /> that is at the target end of the association set.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ResourceAssociationSet.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the association set.</summary>
+        <value>The name of the association set.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,14 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="" GeneratedClassName="Settings">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings>
+    <Setting Name="VbVbalrMyWebService_localhost_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:1124/WebSite2/TemperatureConversion.asmx</Value>
+    </Setting>
+    <Setting Name="VbVbalrMyWebService_localhost_TemperatureConverter" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:1202/WebSite3/TemperatureConverter.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

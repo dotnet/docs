@@ -1,0 +1,98 @@
+<Type Name="Annotation" FullName="System.Activities.Presentation.Annotations.Annotation">
+  <TypeSignature Language="C#" Value="public static class Annotation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Annotation extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Annotations.Annotation" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides methods to access annotation attached properties.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AnnotationTextProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Xaml.AttachableMemberIdentifier AnnotationTextProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Xaml.AttachableMemberIdentifier AnnotationTextProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Annotations.Annotation.AnnotationTextProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.AttachableMemberIdentifier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The attachable property for annotation text.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AnnotationTextPropertyName">
+      <MemberSignature Language="C#" Value="public static readonly string AnnotationTextPropertyName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string AnnotationTextPropertyName" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Annotations.Annotation.AnnotationTextPropertyName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The property name to access annotation in a ModelItem.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAnnotationText">
+      <MemberSignature Language="C#" Value="public static string GetAnnotationText (object instance);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetAnnotationText(object instance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Annotations.Annotation.GetAnnotationText(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instance">The instance to get annotation.</param>
+        <summary>Gets the annotation text of an object.</summary>
+        <returns>An annotation text of an object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetAnnotationText">
+      <MemberSignature Language="C#" Value="public static void SetAnnotationText (object instance, string annotationText);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetAnnotationText(object instance, string annotationText) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Annotations.Annotation.SetAnnotationText(System.Object,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+        <Parameter Name="annotationText" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="instance">The instance to set annotation text.</param>
+        <param name="annotationText">The annotation text to be set.</param>
+        <summary>Sets an annotation of an object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,352 @@
+﻿<Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:vs="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.UI"
+      mc:Ignorable="d" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" d:DesignHeight="600" d:DesignWidth="800"
+      xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl">
+    <!--<snippet01>
+    xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"
+    </snippet01>-->
+
+    <Grid.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Microsoft.VisualStudio.Shell.UI;component/Styles/startpageresources.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Grid.Resources>
+   
+    <Grid x:Name="LayoutRoot" VerticalAlignment="Stretch" Background="{DynamicResource VsBrush.StartPageBackground}" >
+
+        <Grid.ColumnDefinitions>
+            <!--Left Hand Column -->
+            <ColumnDefinition Width="300" />
+            <!--Gutter -->
+            <ColumnDefinition Width="30"/>
+            <!-- Allow Center Column to collapse to 0 -->
+            <ColumnDefinition Width="1*" MinWidth="0"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <!-- Logo-->
+            <RowDefinition Height="95" />
+            <!-- Main Content Area -->
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--Logo Image -->
+        <Image Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" Source="{Binding Background.Logo}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="1600" />
+
+        <!--Left Column-->
+        <Grid Grid.Column="0" Margin="15,0,0,15" VerticalAlignment="Stretch" Grid.RowSpan="1" Grid.Row="1" >
+            <Grid.RowDefinitions>
+                <!-- Command Buttons for New Projects -->
+                <RowDefinition Height="Auto"/>
+                <!-- MRU Row -->
+                <RowDefinition Height="*"/>
+                <!--Gutter at bottom of page -->
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <!-- Command Buttons -->
+            <StackPanel Margin="15,15,0,30" HorizontalAlignment="Left" Grid.Row="0" Orientation="Vertical">
+                <vs:ImageButton 
+                    x:Uid="NewProjectButton"
+                    Margin="0,2,0,2"
+                    Width="Auto" 
+                    Content="New Project..."
+                    Style="{DynamicResource StartPage.ProjectCommand.ButtonStyle}"
+                    Command="{x:Static vs:VSCommands.ExecuteCommand}" CommandParameter="File.NewProject"
+                    ImageNormal="pack://application:,,,/Microsoft.VisualStudio.Shell.UI;component/Images/StartPage/NewProject.png"
+                    ImageHover="pack://application:,,,/Microsoft.VisualStudio.Shell.UI;component/Images/StartPage/NewProjectMouseOver.png"
+                    ImagePressed="pack://application:,,,/Microsoft.VisualStudio.Shell.UI;component/Images/StartPage/NewProjectMouseDown.png">
+                </vs:ImageButton>
+
+                <vs:ImageButton 
+                    x:Uid="OpenProjectButton"
+                    Margin="0,2,0,2"
+                    Width="Auto"        
+                    Content="Open Project..."
+                    Style="{DynamicResource StartPage.ProjectCommand.ButtonStyle}"
+                    Command="{x:Static vs:VSCommands.ExecuteCommand}" CommandParameter="File.OpenProject"
+                    ImageNormal="pack://application:,,,/Microsoft.VisualStudio.Shell.UI;component/Images/StartPage/OpenProject.png"
+                    ImageHover="pack://application:,,,/Microsoft.VisualStudio.Shell.UI;component/Images/StartPage/OpenProjectMouseOver.png"
+                    ImagePressed="pack://application:,,,/Microsoft.VisualStudio.Shell.UI;component/Images/StartPage/OpenProjectMouseDown.png">
+                </vs:ImageButton>
+
+            </StackPanel>
+
+            <vs:RecentProjects Grid.Row="1" DataContext="{Binding RecentProjects}" VerticalAlignment="Stretch" Height="Auto" />
+
+            <!-- Start Page Options -->
+            <StackPanel Margin="0,5,0,0" Grid.Column="0" Grid.ColumnSpan="1" Grid.Row="2">
+                <CheckBox x:Uid="ShowOnStartUp_Option" Content="Show page on startup" IsChecked="{Binding ShowPageAtStartup, Mode=TwoWay}" />
+                <CheckBox x:Uid="AutoClose_Option" Content="Close page after project load" IsChecked="{Binding ClosePageOnOpenProject, Mode=TwoWay}" />
+            </StackPanel>
+        </Grid>
+
+        <!--Center Content-->       
+        <Grid Grid.Column="2" Margin="0,0,15,15"  Grid.Row="1" Grid.RowSpan="1">
+            <TabControl SelectedIndex="{Binding SelectedTabItemIndex, Mode=TwoWay}">
+
+                <!-- This is the tabitem for creating a custom start page with a DLL -->
+                <!--<snippet02>-->
+                <TabItem Header="Web" Height="Auto">
+                    <vsc:UserControl1 />
+                </TabItem>
+                <!--</snippet02>-->
+                
+                <!-- This is the tabitem for creating a custom start page with XAML -->
+                <!--<snippet03>-->
+                <TabItem Header="Bing" Height="Auto">
+                    <Frame Source="http://www.bing.com" />
+                </TabItem>
+                <!--</snippet03>-->
+                    
+                <!-- Get Started Content Area 
+                The purpose of this content area is to highlight some of the usefull places where users can get help/information/resources for their projects 
+                -->
+
+                <TabItem Header="Get Started" Height="Auto" x:Uid="GetStarted_Tab" DataContext="{Binding Links.Content, Converter={StaticResource StringToXmlDataProviderConverter}}">
+                    <ScrollViewer Margin="12,12,0,0" VerticalScrollBarVisibility="Auto" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Style="{DynamicResource StartPage.ScrollViewerStyle}" >
+                        <ListBox x:Name="GetStarted_ListView" Width="Auto" Margin="0,0,15,0" ItemsPanel="{DynamicResource StartPage.GetStarted.ListBox.ItemsPanelTemplate}" BorderBrush="Transparent" HorizontalContentAlignment="Stretch" IsSynchronizedWithCurrentItem="True" ItemsSource="{Binding XPath=/items/itemgroup/item}" Background="Transparent"  HorizontalAlignment="Stretch" VerticalContentAlignment="Top" VerticalAlignment="Stretch" Height="Auto" ScrollViewer.HorizontalScrollBarVisibility="Disabled"  ScrollViewer.VerticalScrollBarVisibility="Auto">
+                            <ListBox.ItemContainerStyle>
+                                <Style TargetType="{x:Type ListBoxItem}">
+                                    <Setter Property="AutomationProperties.Name" Value="{Binding Mode=Default, XPath=title}"/>
+                                    <Setter Property="Template">
+                                        <Setter.Value>
+                                            <ControlTemplate TargetType="{x:Type ListBoxItem}">
+                                                <Border x:Name="GetStarted_ListBox_ItemHighlight" MinHeight="86" CornerRadius="2,2,2,2" HorizontalAlignment="Stretch" BorderBrush="Transparent" BorderThickness="1" Background="Transparent" >
+                                                    <Grid Width="Auto" Height="Auto">
+                                                        <Grid.ColumnDefinitions>
+                                                            <!-- Image Column-->
+                                                            <ColumnDefinition Width="Auto" />
+                                                            <!-- Text Column -->
+                                                            <ColumnDefinition Width="*"/>
+                                                        </Grid.ColumnDefinitions>
+
+                                                        <Border x:Name="GetStarted_ListBox_Item_ImageBorder" VerticalAlignment="Top" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Width="70" Height="50" Margin="12" BorderThickness="1" BorderBrush="{DynamicResource StartPage.GetStarted.ImageBorderBrush}" >
+                                                            <Image HorizontalAlignment="Stretch"  Width="Auto" Height="Auto" Stretch="Fill" VerticalAlignment="Top" Source="{Binding Mode=Default, XPath=image}"/>
+                                                        </Border>
+                                                        <Grid Grid.Column="1">
+                                                            <Grid.RowDefinitions>
+                                                                <!-- Title-->
+                                                                <RowDefinition Height="Auto" />
+
+                                                                <!-- Content Area -->
+                                                                <RowDefinition Height="*" />
+                                                            </Grid.RowDefinitions>
+                                                            
+                                                            <!-- Title-->
+                                                            <TextBlock x:Name="GetStarted_Title" Grid.Row="0" Margin="0,12,0,0" Grid.Column="1" Style="{DynamicResource StartPage.SubHeadingTextStyle}" Text="{Binding Mode=Default, XPath=title}" />
+
+                                                            <Grid Opacity="0" x:Name="GetStarted_ListBox_Item_ContentArea" Visibility="Collapsed"  HorizontalAlignment="Stretch" Grid.Row="1"  VerticalAlignment="Top" Grid.Column="1" >
+                                                                <Grid.RowDefinitions>
+                                                                    <!--Description-->
+                                                                    <RowDefinition Height="*" />
+                                                                    <!--Links-->
+                                                                    <RowDefinition Height="Auto" />
+                                                                </Grid.RowDefinitions>
+
+                                                                <!-- Description-->
+                                                                <TextBlock x:Name="GetStarted_Desc" Margin="0,3,15,0" Grid.Row="0" Style="{DynamicResource StartPage.NormalTextStyle}" Text="{Binding Mode=Default, XPath=description}"/>
+
+                                                                <!-- Links -->
+                                                                <ItemsControl Grid.Row="1" VerticalAlignment="Stretch" KeyboardNavigation.IsTabStop="False" HorizontalAlignment="Stretch" ItemTemplate="{DynamicResource StartPage.GetStarted.CommandTemplate}" ItemsSource="{Binding Mode=Default, XPath=commands/command}" Width="Auto" Margin="0,10,0,10" ScrollViewer.VerticalScrollBarVisibility="Disabled"/>
+                                                            </Grid>
+                                                        </Grid>
+                                                    </Grid>
+                                                </Border>
+                                                <ControlTemplate.Triggers>
+                                                    <MultiTrigger>
+                                                        <MultiTrigger.Conditions>
+                                                            <Condition Property="IsSelected" Value="False"/>
+                                                            <Condition Property="IsMouseOver" Value="True"/>
+                                                        </MultiTrigger.Conditions>
+                                                        <MultiTrigger.Setters>
+                                                            <Setter Property="Cursor" Value="Hand" />
+                                                                <Setter Property="BorderBrush" Value="{DynamicResource VsBrush.StartPageUnselectedItemStroke}" TargetName="GetStarted_ListBox_ItemHighlight" />
+                                                                <Setter Property="Background" Value="{DynamicResource  VsBrush.StartPageUnselectedItemBackground}" TargetName="GetStarted_ListBox_ItemHighlight" />
+                                                                <Setter Property="BorderBrush" Value="{DynamicResource StartPage.GetStarted.MouseOverImageBorderBrush}" TargetName="GetStarted_ListBox_Item_ImageBorder" />
+                                                        </MultiTrigger.Setters>
+                                                    </MultiTrigger>
+
+                                                    <Trigger Value="True" Property="IsSelected">
+                                                        <Trigger.EnterActions>
+                                                            <BeginStoryboard>
+                                                                <Storyboard>
+                                                                    <DoubleAnimation Storyboard.TargetName="GetStarted_ListBox_Item_ImageBorder" Duration="0:0:0.23" Storyboard.TargetProperty="Width" To="175" />
+                                                                    <DoubleAnimation Storyboard.TargetName="GetStarted_ListBox_Item_ImageBorder" Duration="0:0:0.23" Storyboard.TargetProperty="Height" To="125" />
+                                                                    <DoubleAnimation Storyboard.TargetName="GetStarted_ListBox_ItemHighlight" Duration="0:0:0.23" Storyboard.TargetProperty="MinHeight" To="160" />
+                                                                    <DoubleAnimation Storyboard.TargetName="GetStarted_ListBox_Item_ContentArea" BeginTime="0:0:0.22" Duration="0:0:0.1" Storyboard.TargetProperty="Opacity" To="1" />
+                                                                </Storyboard>
+                                                            </BeginStoryboard>
+                                                        </Trigger.EnterActions>
+                                                        <Setter Property="Visibility" Value="Visible" TargetName="GetStarted_ListBox_Item_ContentArea" />
+                                                            <Setter Property="BorderBrush" Value="{DynamicResource VsBrush.StartPageSelectedItemStroke}" TargetName="GetStarted_ListBox_ItemHighlight" />
+                                                            <Setter Property="Background" Value="{DynamicResource VsBrush.StartPageSelectedItemBackground}" TargetName="GetStarted_ListBox_ItemHighlight" />
+                                                        <Trigger.ExitActions>
+                                                            <BeginStoryboard>
+                                                                <Storyboard>
+                                                                    <DoubleAnimation Storyboard.TargetName="GetStarted_ListBox_Item_ImageBorder" Duration="0:0:0.23" Storyboard.TargetProperty="Width" To="70" />
+                                                                    <DoubleAnimation Storyboard.TargetName="GetStarted_ListBox_Item_ImageBorder" Duration="0:0:0.23" Storyboard.TargetProperty="Height" To="50" />
+                                                                    <DoubleAnimation Storyboard.TargetName="GetStarted_ListBox_ItemHighlight" Duration="0:0:0.23" Storyboard.TargetProperty="MinHeight" To="86" />
+                                                                    <DoubleAnimation Storyboard.TargetName="GetStarted_ListBox_Item_ContentArea" BeginTime="0:0:0" Duration="0:0:0.01" Storyboard.TargetProperty="Opacity" To="0" />
+                                                                </Storyboard>
+                                                            </BeginStoryboard>
+                                                        </Trigger.ExitActions>
+                                                    </Trigger>
+                                                </ControlTemplate.Triggers>
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Style>
+                            </ListBox.ItemContainerStyle>
+                        </ListBox>
+                    </ScrollViewer>
+                </TabItem>
+
+                <TabItem Header="RSS Feed" x:Uid="RSSFeed_Tab">
+                    <Grid Margin="12,0,0,0" VerticalAlignment="Stretch" >
+
+                        <Grid.RowDefinitions>
+                            <!--Heading-->
+                            <RowDefinition Height="Auto" />
+                            <!-- Main Content Area -->
+                            <RowDefinition Height="0.65*" />
+                        </Grid.RowDefinitions>
+
+                        <!-- Heading -->
+                        <Grid Grid.Row="0" Margin="0,6,0,6" Grid.RowSpan="1" Height="21" HorizontalAlignment="Stretch" Grid.ColumnSpan="2">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock x:Uid="RssFeed" Text="RSS Feed:" Style="{DynamicResource StartPage.HeadingTextStyle}" Margin="2,0,10,3"  Grid.Column="0" />
+                            <TextBox Grid.Column="1" x:Name="RSS_TextField_Source" Text="{Binding Rss.RssFeed, Mode=OneWay}"/>
+                            <vs:ImageButton Grid.Column="2"
+                                Focusable="True"
+                                Command="{x:Static vs:RssCommands.SetUrl}" CommandParameter="{Binding Text, ElementName=RSS_TextField_Source}"
+                                ImageNormal="pack://application:,,,/Microsoft.VisualStudio.Shell.UI;component/Images/StartPage/RSSButton.png"
+                                ImageHover="pack://application:,,,/Microsoft.VisualStudio.Shell.UI;component/Images/StartPage/RSSButtonMouseOver.png"
+                                ImagePressed="pack://application:,,,/Microsoft.VisualStudio.Shell.UI;component/Images/StartPage/RSSButtonMouseDown.png">
+                            </vs:ImageButton>
+                        </Grid>
+
+                        <ContentControl Grid.Row="1" Content="{Binding}" KeyboardNavigation.IsTabStop="False" >
+                            <ContentControl.ContentTemplate>
+                                <DataTemplate>
+                                    <Grid>
+                                        <ItemsControl x:Name="Displaying" DataContext="{Binding Rss.Content, Converter={StaticResource StringToXmlDataProviderConverter}}" ItemsSource="{Binding XPath=/rss/channel/item}" Background="Transparent" KeyboardNavigation.IsTabStop="False" >
+                                            <ItemsControl.Template>
+                                                <ControlTemplate TargetType="ItemsControl" >
+                                                    <ScrollViewer x:Name="RSSItems_ScrollViewer" CanContentScroll="True" Margin="3,4,0,0" VerticalScrollBarVisibility="Auto" VerticalAlignment="Stretch" Style="{DynamicResource StartPage.ScrollViewerStyle}" >
+                                                        <ItemsPresenter/>
+                                                    </ScrollViewer>
+                                                </ControlTemplate>
+                                            </ItemsControl.Template>
+                                            <ItemsControl.ItemsPanel>
+                                                <ItemsPanelTemplate>
+                                                    <VirtualizingStackPanel/>
+                                                </ItemsPanelTemplate>
+                                            </ItemsControl.ItemsPanel>
+                                            <ItemsControl.ItemTemplate>
+                                                <DataTemplate>
+                                                    <Grid Height="Auto" Width="Auto" Margin="0,0,20,19">
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="Auto"/>
+                                                            <ColumnDefinition/>
+                                                        </Grid.ColumnDefinitions>
+                                                        <Grid.RowDefinitions>
+                                                            <RowDefinition/>
+                                                            <RowDefinition/>
+                                                            <RowDefinition/>
+                                                        </Grid.RowDefinitions>
+                                                        <Button Margin="0,0,1,1" Style="{DynamicResource StartPage.RSS.TitleTextStyle}" Command="{x:Static vs:VSCommands.Browse}" CommandParameter="{Binding XPath=link}" Content="{Binding XPath=title}" AutomationProperties.Name="{Binding XPath=title}"/>
+                                                        <TextBlock Margin="3,0,8,1" Grid.Column="1" Text="{Binding XPath=pubDate}"  Style="{DynamicResource StartPage.RSS.DateTextStyle}" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+                                                        <TextBlock Grid.Row="1" Grid.ColumnSpan="2" Style="{DynamicResource StartPage.NormalTextStyle}" Margin="0,-1,0,0" Text="{Binding XPath=description, Converter={StaticResource StringToStringWithoutHypertextTagsConverter}}" />
+                                                        <TextBlock Grid.Row="2" Grid.ColumnSpan="2" Style="{DynamicResource StartPage.NormalTextStyle}" Margin="0,-1,0,0" Text="{Binding XPath=category}" />
+                                                    </Grid>
+                                                </DataTemplate>
+                                            </ItemsControl.ItemTemplate>
+                                        </ItemsControl>
+                                        <Grid>
+                                            <StackPanel x:Name="OptIn">
+                                                <TextBlock x:Name="OptIn_Text" x:Uid="Rss_OptIn_Text" Style="{DynamicResource StartPage.NormalTextStyle}" Margin="3,3,3,3">
+                                                    Click the button below to enable an RSS feed that provides regularly updated articles about new technologies, product tips and tricks, and upcoming events. This live feed also includes information about service packs, community technology previews, and Beta releases of Microsoft products and technologies. To view the Microsoft Privacy Policy, go to Help/Online Privacy Statement."
+                                                </TextBlock>
+                                                <Button x:Name="OptIn_Button" x:Uid="Rss_OptIn_Button" Content="Enable Rss Feed" Command="{x:Static vs:RssCommands.EnableDownload}" HorizontalAlignment="Left" Margin="0,6,0,0" />
+                                            </StackPanel>
+
+                                            <TextBlock x:Name="Loading" x:Uid="Rss_Loading" Style="{DynamicResource StartPage.NormalTextStyle}">
+                                                Updating the news channel
+                                            </TextBlock>
+
+                                            <StackPanel x:Name="Prompt">
+                                                <TextBlock x:Name="Prompt_Text" x:Uid="Rss_Prompt_Text" Style="{DynamicResource StartPage.NormalTextStyle}" Margin="3,3,3,3">
+                                                    Please enter your login credentials to enable this RSS feed.
+                                                </TextBlock>
+                                                <Button x:Name="Prompt_Button" x:Uid="Rss_Prompt_Button" Content="Enter Credentials" Command="{x:Static vs:RssCommands.PromptForCredentials}" HorizontalAlignment="Left" Margin="0,6,0,0" />
+                                            </StackPanel>
+
+                                            <TextBlock x:Name="Error" x:Uid="Rss_Error" Style="{DynamicResource StartPage.NormalTextStyle}" >
+                                                The current news channel might not be a valid RSS feed, or your internet connection might be unavailable. To change the news channel, on the Tools menu, click Options, then expand Environment and click Startup.
+                                            </TextBlock>
+                                        </Grid>
+                                    </Grid>
+                                    <DataTemplate.Triggers>
+                                        <!-- Changing disabled state from "Hidden" to "Collapsed" to work around DevDiv 517937.
+                                         This assumes that all the overlapped controls in the outer Grid are the same size.
+                                         Currently they are all TextBlocks but beware of resizing issues if this changes-->
+                                        <DataTrigger Binding="{Binding Path=Rss.Status}" Value="DownloadDisabled">
+                                            <Setter TargetName="OptIn"       Property="Visibility" Value="Visible" />
+                                            <Setter TargetName="Loading"     Property="Visibility" Value="Collapsed" />
+                                            <Setter TargetName="Displaying"  Property="Visibility" Value="Collapsed" />
+                                            <Setter TargetName="Prompt"      Property="Visibility" Value="Collapsed" />
+                                            <Setter TargetName="Error"       Property="Visibility" Value="Collapsed" />
+                                        </DataTrigger>
+
+                                        <DataTrigger Binding="{Binding Path=Rss.Status}" Value="Loading">
+                                            <Setter TargetName="OptIn"       Property="Visibility" Value="Collapsed" />
+                                            <Setter TargetName="Loading"     Property="Visibility" Value="Visible" />
+                                            <Setter TargetName="Displaying"  Property="Visibility" Value="Collapsed" />
+                                            <Setter TargetName="Prompt"      Property="Visibility" Value="Collapsed" />
+                                            <Setter TargetName="Error"       Property="Visibility" Value="Collapsed" />
+                                        </DataTrigger>
+
+                                        <DataTrigger Binding="{Binding Path=Rss.Status}" Value="Displaying">
+                                            <Setter TargetName="OptIn"       Property="Visibility" Value="Collapsed" />
+                                            <Setter TargetName="Loading"     Property="Visibility" Value="Collapsed" />
+                                            <Setter TargetName="Displaying"  Property="Visibility" Value="Visible" />
+                                            <Setter TargetName="Prompt"      Property="Visibility" Value="Collapsed" />
+                                            <Setter TargetName="Error"       Property="Visibility" Value="Collapsed" />
+                                        </DataTrigger>
+
+
+                                        <DataTrigger Binding="{Binding Path=Rss.Status}" Value="PromptForCredentials">
+                                            <Setter TargetName="OptIn"       Property="Visibility" Value="Collapsed" />
+                                            <Setter TargetName="Loading"     Property="Visibility" Value="Collapsed" />
+                                            <Setter TargetName="Displaying"  Property="Visibility" Value="Collapsed" />
+                                            <Setter TargetName="Prompt"     Property="Visibility" Value="Visible" />
+                                            <Setter TargetName="Error"       Property="Visibility" Value="Collapsed" />
+                                        </DataTrigger>
+
+                                        <DataTrigger Binding="{Binding Path=Rss.Status}" Value="Error">
+                                            <Setter TargetName="OptIn"       Property="Visibility" Value="Collapsed" />
+                                            <Setter TargetName="Loading"     Property="Visibility" Value="Collapsed" />
+                                            <Setter TargetName="Displaying"  Property="Visibility" Value="Collapsed" />
+                                            <Setter TargetName="Prompt"       Property="Visibility" Value="Collapsed" />
+                                            <Setter TargetName="Error"       Property="Visibility" Value="Visible" />
+                                        </DataTrigger>
+                                    </DataTemplate.Triggers>
+                                </DataTemplate>
+                            </ContentControl.ContentTemplate>
+                        </ContentControl>
+                    </Grid>
+                </TabItem>
+            </TabControl>
+        </Grid>
+    </Grid>
+</Grid>

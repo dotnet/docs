@@ -1,0 +1,82 @@
+<Type Name="PutType" FullName="System.Management.PutType">
+  <TypeSignature Language="C#" Value="public enum PutType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PutType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Management.PutType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Management</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Describes the possible effects of saving an object to WMI when using <see cref="M:System.Management.ManagementObject.Put" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateOnly">
+      <MemberSignature Language="C#" Value="CreateOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.PutType CreateOnly = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Management.PutType.CreateOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Management.PutType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Creates an object only; does not update an existing object.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.PutType None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Management.PutType.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Management.PutType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No change.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateOnly">
+      <MemberSignature Language="C#" Value="UpdateOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.PutType UpdateOnly = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Management.PutType.UpdateOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Management.PutType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Updates an existing object only; does not create a new object.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateOrCreate">
+      <MemberSignature Language="C#" Value="UpdateOrCreate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.PutType UpdateOrCreate = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Management.PutType.UpdateOrCreate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Management.PutType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Saves the object, whether updating an existing object or creating a new object.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,55 @@
+﻿<Window x:Class="StrokeCollectionEraseMethods.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:my="clr-namespace:StrokeCollectionEraseMethods"
+    xmlns:cc="controls"
+	Title="Window 1"
+    >
+    <DockPanel Name="root">
+        <StackPanel Background="DarkSlateBlue">
+            <Button Name="btnToggleMode" MinHeight="20" MaxHeight="50" MinWidth="70" 
+              Click="ToggleSelection">Selection Mode</Button>
+            
+            <Button Name="extractStrokes" MinHeight="20" MaxHeight="50" MinWidth="70" 
+              Click="erasePath_Click">Erase Path</Button>
+            
+            <Button Name="clipStrokes" MinHeight="20" MaxHeight="50" MinWidth="70" 
+              Click="clipStrokes_Click">clip Strokes</Button>
+            
+            <Button Name="eraseStrokes" MinHeight="20" MaxHeight="50" MinWidth="70" 
+              Click="eraseStrokes_Click">erase Strokes</Button>
+            
+            <Button Name="removeStrokes" MinHeight="20" MaxHeight="50" MinWidth="70" 
+              Click="RemoveStrokes_Click">Remove Strokes</Button>
+            
+            <Button Name="ClearCanvas" MinHeight="20" MaxHeight="50" MinWidth="70" 
+              Click="ClearCanvas_Click">ClearCanvas</Button>
+            
+            <Button Name="SaveStrokes" MinHeight="20" MaxHeight="50" MinWidth="70" 
+              Click="SaveStrokes_Click">Save Strokes</Button>
+            
+            <Button Name="LoadStrokes" MinHeight="20" MaxHeight="50" MinWidth="70" 
+              Click="LoadStrokes_Click">Load Strokes</Button>
+            
+            <Button Name="CopyStrokes" MinHeight="20" MaxHeight="50" MinWidth="70" 
+              Click="CopyStrokes_Click">Copy Strokes</Button>
+
+              
+            <Button Name="GetIds" MinHeight="20" MaxHeight="50" MinWidth="40"
+              Click="GetIds_Click">Get property Ids</Button>
+
+			<Button Name="RemoveFromRect" MinHeight="20" MaxHeight="50" MinWidth="40"
+              Click="RemoveFromRect_Click">Remove strokes from rect</Button>
+
+			<Button Name="ClipWithRect" MinHeight="20" MaxHeight="50" MinWidth="40"
+              Click="ClipWithRect_Click">Clip strokes with rect</Button>
+			
+			<Button Name="EraseWithRect" MinHeight="20" MaxHeight="50" MinWidth="40"
+              Click="EraseWithRect_Click">Erase strokes with rect</Button>
+
+			<Button Name="HitTestWithEraser" MinHeight="20" MaxHeight="50" MinWidth="40"
+              Click="HitTestWithEraser_Click">Hit test with eraser</Button>
+		</StackPanel>
+        <!--<cc:StrokeCollectionDemo Name="myInkSelector" Background="Green" />-->
+    </DockPanel>
+</Window>

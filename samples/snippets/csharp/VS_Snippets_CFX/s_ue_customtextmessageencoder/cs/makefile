@@ -1,0 +1,6 @@
+all: CustomTextMessageEncoder.dll
+ 
+CustomTextMessageEncoder.dll: ConfigurationStrings.cs CustomTextMessageEncoder.cs CustomTextMessageEncoderFactory.cs CustomTextMessageEncodingBindingElement.cs CustomTextMessageEncodingBindingSection.cs MessageVersionConverter.cs
+ csc /t:library ConfigurationStrings.cs CustomTextMessageEncoder.cs CustomTextMessageEncoderFactory.cs CustomTextMessageEncodingBindingElement.cs CustomTextMessageEncodingBindingSection.cs MessageVersionConverter.cs /r:System.ServiceModel.dll /r:System.Runtime.Serialization.dll 
+
+

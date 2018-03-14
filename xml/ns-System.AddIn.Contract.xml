@@ -1,0 +1,19 @@
+<Namespace Name="System.AddIn.Contract">
+  <Docs>
+    <summary>The <see cref="N:System.AddIn.Contract" /> namespace contains interfaces and structures that provide the basis for communication between components that are updated independently.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.AddIn.Contract?displayProperty=nameWithType> namespace defines a set of interfaces and structures that can be used by independently updated components, such as an application and an add-in, to communicate. Components can use the interfaces and structures in the <xref:System.AddIn.Contract?displayProperty=nameWithType> namespace to communicate across process or application domain boundaries, or to communicate with other components in the same process or application domain.  
+  
+ The interfaces in the <xref:System.AddIn.Contract?displayProperty=nameWithType> namespace are also called contracts. All contracts derive from the <xref:System.AddIn.Contract.IContract> interface. The purpose that <xref:System.AddIn.Contract.IContract> serves for components created using the .NET Framework is similar to the purpose that the `IUnknown` interface serves for components created using COM. To determine whether an object implements a particular contract, components use the <xref:System.AddIn.Contract.IContract.QueryContract%2A> method.  
+  
+ The <xref:System.AddIn.Contract.Automation?displayProperty=nameWithType> and <xref:System.AddIn.Contract.Collections?displayProperty=nameWithType> namespaces contain additional contracts that supplement the <xref:System.AddIn.Contract?displayProperty=nameWithType> namespace. The <xref:System.AddIn.Contract.Automation?displayProperty=nameWithType> namespace contains contracts that components use to access type information and invoke type members. The <xref:System.AddIn.Contract.Collections?displayProperty=nameWithType> namespace contains contracts that define collections of <xref:System.AddIn.Contract.IContract> and <xref:System.AddIn.Contract.RemoteArgument> objects.  
+  
+ ]]></format>
+    </remarks>
+    <altmember cref="N:System.AddIn.Contract.Automation" />
+    <altmember cref="N:System.AddIn.Contract.Collections" />
+  </Docs>
+</Namespace>

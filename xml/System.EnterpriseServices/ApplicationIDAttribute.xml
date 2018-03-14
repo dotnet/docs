@@ -1,0 +1,103 @@
+<Type Name="ApplicationIDAttribute" FullName="System.EnterpriseServices.ApplicationIDAttribute">
+  <TypeSignature Language="C#" Value="public sealed class ApplicationIDAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ApplicationIDAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.ApplicationIDAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly, Inherited=true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the application ID (as a GUID) for this assembly. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.EnterpriseServices.ApplicationIDAttribute> takes a GUID in its constructor. When registration occurs, the components in the assembly are installed in an application with the given ID.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.EnterpriseServices.ApplicationIDAttribute> type.  
+  
+ [!code-csharp[EnterpriseServices.ApplicationIDAttribute#0](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServices.ApplicationIDAttribute/CS/class1.cs#0)]
+ [!code-vb[EnterpriseServices.ApplicationIDAttribute#0](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServices.ApplicationIDAttribute/VB/class1.vb#0)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ApplicationIDAttribute (string guid);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string guid) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ApplicationIDAttribute.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="guid" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="guid">The GUID associated with the COM+ application.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.EnterpriseServices.ApplicationIDAttribute" /> class specifying the GUID representing the application ID for the COM+ application.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to create a new <xref:System.EnterpriseServices.ApplicationIDAttribute>.  
+  
+ [!code-csharp[EnterpriseServices.ApplicationIDAttribute#1](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServices.ApplicationIDAttribute/CS/class1.cs#1)]
+ [!code-vb[EnterpriseServices.ApplicationIDAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServices.ApplicationIDAttribute/VB/class1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public Guid Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid Value" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ApplicationIDAttribute.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the GUID of the COM+ application.</summary>
+        <value>The GUID representing the COM+ application.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.EnterpriseServices.ApplicationIDAttribute.Value%2A> is set by the constructor using the GUID passed in as a parameter.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to get the value of an `ApplicationID` attribute's <xref:System.EnterpriseServices.ApplicationIDAttribute.Value%2A> property.  
+  
+ [!code-csharp[EnterpriseServices.ApplicationIDAttribute#0](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServices.ApplicationIDAttribute/CS/class1.cs#0)]
+ [!code-vb[EnterpriseServices.ApplicationIDAttribute#0](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServices.ApplicationIDAttribute/VB/class1.vb#0)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

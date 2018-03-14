@@ -1,0 +1,37 @@
+<Type Name="EntityTypeBase" FullName="System.Data.Metadata.Edm.EntityTypeBase">
+  <TypeSignature Language="C#" Value="public abstract class EntityTypeBase : System.Data.Metadata.Edm.StructuralType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit EntityTypeBase extends System.Data.Metadata.Edm.StructuralType" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.EntityTypeBase" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Data.Metadata.Edm.StructuralType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>A base type for <see cref="T:System.Data.Metadata.Edm.EntityType" /> and <see cref="T:System.Data.Metadata.Edm.RelationshipType" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="KeyMembers">
+      <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;System.Data.Metadata.Edm.EdmMember&gt; KeyMembers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1&lt;class System.Data.Metadata.Edm.EdmMember&gt; KeyMembers" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.EntityTypeBase.KeyMembers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;System.Data.Metadata.Edm.EdmMember&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the list of all the key members for the current entity or relationship type.</summary>
+        <value>A <see cref="T:System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1" /> object that represents the list of key members for the current entity or relationship type.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

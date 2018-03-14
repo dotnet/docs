@@ -1,0 +1,87 @@
+<Type Name="ParseException" FullName="System.Web.Query.Dynamic.ParseException">
+  <TypeSignature Language="C#" Value="public class ParseException : Exception" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ParseException extends System.Exception" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Query.Dynamic.ParseException" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Exception</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents errors that occur when a <see cref="T:System.Web.UI.WebControls.LinqDataSource" /> control parses values to create a query.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Query.Dynamic.ParseException> object contains information about exceptions that occur when the <xref:System.Web.UI.WebControls.LinqDataSource> control parses values in order to dynamically create a query.  
+  
+ If the <xref:System.Web.UI.WebControls.LinqDataSource.Select%2A> property includes a property that is not in the data object, the <xref:System.Web.UI.WebControls.LinqDataSource> control raises a <xref:System.Web.Query.Dynamic.ParseException> exception. The message indicates that the property does not exist in the data object.  
+  
+ You can assign the data object in the <xref:System.Web.UI.WebControls.LinqDataSource.Selecting> event by setting the <xref:System.Web.UI.WebControls.LinqDataSourceSelectEventArgs.Result%2A> property to an object that is returned from a query. If you select a property that does not exist in the data object, the <xref:System.Web.UI.WebControls.LinqDataSource> control raises a <xref:System.Web.Query.Dynamic.ParseException> exception. The message indicates that the particular property does not exist in an `AnonymousType` object.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ParseException (string message, int position);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, int32 position) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Query.Dynamic.ParseException.#ctor(System.String,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="position" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="message">The message that describes the error.</param>
+        <param name="position">The location of the error.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Query.Dynamic.ParseException" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Position">
+      <MemberSignature Language="C#" Value="public int Position { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Position" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Query.Dynamic.ParseException.Position" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the location of the error.</summary>
+        <value>The location where the exception occurred.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Query.Dynamic.ParseException.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the error message and the location of the error.</summary>
+        <returns>The message and the position of the error.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

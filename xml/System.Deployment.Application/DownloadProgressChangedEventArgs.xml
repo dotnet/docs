@@ -1,0 +1,88 @@
+<Type Name="DownloadProgressChangedEventArgs" FullName="System.Deployment.Application.DownloadProgressChangedEventArgs">
+  <TypeSignature Language="C#" Value="public class DownloadProgressChangedEventArgs : System.ComponentModel.ProgressChangedEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DownloadProgressChangedEventArgs extends System.ComponentModel.ProgressChangedEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Deployment.Application.DownloadProgressChangedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Deployment</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.ProgressChangedEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Deployment.Application.InPlaceHostingManager.DownloadProgressChanged" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In a console application, since events are assigned to threads out of a thread pool, you might receive update progress events out of order, with a subsequent event showing a decrease compared to a previous event. You will not see such behavior in a Windows Forms application, because events in Windows Forms are processed sequentially out of the UI thread's message queue.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of <xref:System.Deployment.Application.DownloadProgressChangedEventArgs> in the context of an application that uses <xref:System.Deployment.Application.InPlaceHostingManager> to download and install a ClickOnce application programmatically.  
+  
+ [!code-csharp[System.Deployment.Application.InPlaceHostingManager#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/CS/Form1.cs#1)]
+ [!code-vb[System.Deployment.Application.InPlaceHostingManager#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/VB/Form1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BytesDownloaded">
+      <MemberSignature Language="C#" Value="public long BytesDownloaded { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 BytesDownloaded" />
+      <MemberSignature Language="DocId" Value="P:System.Deployment.Application.DownloadProgressChangedEventArgs.BytesDownloaded" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of bytes downloaded to the local computer.</summary>
+        <value>An <see cref="T:System.Int64" /> representing the number of downloaded bytes.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="State">
+      <MemberSignature Language="C#" Value="public System.Deployment.Application.DeploymentProgressState State { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Deployment.Application.DeploymentProgressState State" />
+      <MemberSignature Language="DocId" Value="P:System.Deployment.Application.DownloadProgressChangedEventArgs.State" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Deployment.Application.DeploymentProgressState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the progress state of the download.</summary>
+        <value>A <see cref="T:System.Deployment.Application.DeploymentProgressState" /> value describing which portion of the ClickOnce application is being downloaded.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TotalBytesToDownload">
+      <MemberSignature Language="C#" Value="public long TotalBytesToDownload { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 TotalBytesToDownload" />
+      <MemberSignature Language="DocId" Value="P:System.Deployment.Application.DownloadProgressChangedEventArgs.TotalBytesToDownload" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the total number of bytes for the download operation.</summary>
+        <value>An <see cref="T:System.Int64" /> representing the total size of the download, in bytes.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

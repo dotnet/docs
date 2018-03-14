@@ -1,0 +1,82 @@
+<Type Name="PrintTicketLevel" FullName="System.Windows.Xps.Serialization.PrintTicketLevel">
+  <TypeSignature Language="C#" Value="public enum PrintTicketLevel" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PrintTicketLevel extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Serialization.PrintTicketLevel" />
+  <AssemblyInfo>
+    <AssemblyName>ReachFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies whether a <see cref="T:System.Printing.PrintTicket" /> applies to an entire sequence of documents, to just one document, or to just one page.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FixedDocumentPrintTicket">
+      <MemberSignature Language="C#" Value="FixedDocumentPrintTicket" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Xps.Serialization.PrintTicketLevel FixedDocumentPrintTicket = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Serialization.PrintTicketLevel.FixedDocumentPrintTicket" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Xps.Serialization.PrintTicketLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A document.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FixedDocumentSequencePrintTicket">
+      <MemberSignature Language="C#" Value="FixedDocumentSequencePrintTicket" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Xps.Serialization.PrintTicketLevel FixedDocumentSequencePrintTicket = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Serialization.PrintTicketLevel.FixedDocumentSequencePrintTicket" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Xps.Serialization.PrintTicketLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A sequence of documents.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FixedPagePrintTicket">
+      <MemberSignature Language="C#" Value="FixedPagePrintTicket" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Xps.Serialization.PrintTicketLevel FixedPagePrintTicket = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Serialization.PrintTicketLevel.FixedPagePrintTicket" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Xps.Serialization.PrintTicketLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A page.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Xps.Serialization.PrintTicketLevel None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Serialization.PrintTicketLevel.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Xps.Serialization.PrintTicketLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An unknown or unspecified level.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

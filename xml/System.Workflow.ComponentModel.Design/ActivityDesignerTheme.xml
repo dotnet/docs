@@ -1,0 +1,853 @@
+<Type Name="ActivityDesignerTheme" FullName="System.Workflow.ComponentModel.Design.ActivityDesignerTheme">
+  <TypeSignature Language="C#" Value="public class ActivityDesignerTheme : System.Workflow.ComponentModel.Design.DesignerTheme" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ActivityDesignerTheme extends System.Workflow.ComponentModel.Design.DesignerTheme" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.ActivityDesignerTheme" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Workflow.ComponentModel.Design.DesignerTheme</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides the look and feel property settings to a designer in a design-time environment.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ Designer themes define the look and feel of a designer. This includes any background styles, foreground styles, fonts, and icons defined for the designer.  
+  
+ You can create a custom designer theme if you want to provide configuration abilities to properties unique to your designer. If you do not specify a designer theme for a custom designer, the theme from the base class is used.  
+  
+   
+  
+## Examples  
+ The following example shows how to create a custom <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme> by deriving from the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme> class and setting the appropriate properties for the new theme.  
+  
+ [!code-csharp[WF_Samples#80](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#80)]
+ [!code-vb[WF_Samples#80](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#80)]  
+  
+ To use the theme on an <xref:System.Workflow.ComponentModel.Design.ActivityDesigner>, apply the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerThemeAttribute> to the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> class.  
+  
+ [!code-csharp[WF_Samples#79](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#79)]
+ [!code-vb[WF_Samples#79](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#79)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ActivityDesignerTheme (System.Workflow.ComponentModel.Design.WorkflowTheme theme);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Workflow.ComponentModel.Design.WorkflowTheme theme) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityDesignerTheme.#ctor(System.Workflow.ComponentModel.Design.WorkflowTheme)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="theme" Type="System.Workflow.ComponentModel.Design.WorkflowTheme" />
+      </Parameters>
+      <Docs>
+        <param name="theme">A <see cref="T:System.Workflow.ComponentModel.Design.WorkflowTheme" /> that contains the theme information for the <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" />.</param>
+        <summary>Initializes an instance of an <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerTheme" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackColorEnd">
+      <MemberSignature Language="C#" Value="public virtual System.Drawing.Color BackColorEnd { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackColorEnd" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityDesignerTheme.BackColorEnd" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor(typeof(System.Workflow.ComponentModel.Design.ColorPickerEditor), typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Workflow.ComponentModel.Design.ColorPickerConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Drawing.Color" /> to end with when using a color gradient for the background color.</summary>
+        <value>The background ending <see cref="T:System.Drawing.Color" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme.BackColorEnd%2A> indicates the ending color of a background gradient. To use background gradient color, set the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme.BackColorStart%2A> and <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme.BackColorEnd%2A> properties. The background will gradually change color from the starting color to the ending color.  
+  
+   
+  
+## Examples  
+ The following example shows how to create a custom <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme> by deriving from the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme> class and setting the appropriate properties for the new theme.  
+  
+ [!code-csharp[WF_Samples#80](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#80)]
+ [!code-vb[WF_Samples#80](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#80)]  
+  
+ To use the theme on an <xref:System.Workflow.ComponentModel.Design.ActivityDesigner>, apply the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerThemeAttribute> to the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> class.  
+  
+ [!code-csharp[WF_Samples#79](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#79)]
+ [!code-vb[WF_Samples#79](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#79)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackColorStart">
+      <MemberSignature Language="C#" Value="public virtual System.Drawing.Color BackColorStart { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackColorStart" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityDesignerTheme.BackColorStart" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor(typeof(System.Workflow.ComponentModel.Design.ColorPickerEditor), typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Workflow.ComponentModel.Design.ColorPickerConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the starting color of the background when using a color gradient on the background.</summary>
+        <value>The background starting <see cref="T:System.Drawing.Color" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme.BackColorStart%2A> indicates the background color, or the beginning color of a background gradient. To use background gradient color, set the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme.BackColorStart%2A> and <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme.BackColorEnd%2A> properties. The background will gradually change color from the start color to the end color.  
+  
+   
+  
+## Examples  
+ The following example shows how to create a custom <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme> by deriving from the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme> class and setting the appropriate properties for the new theme.  
+  
+ [!code-csharp[WF_Samples#80](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#80)]
+ [!code-vb[WF_Samples#80](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#80)]  
+  
+ To use the theme on an <xref:System.Workflow.ComponentModel.Design.ActivityDesigner>, apply the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerThemeAttribute> to the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> class.  
+  
+ [!code-csharp[WF_Samples#79](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#79)]
+ [!code-vb[WF_Samples#79](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#79)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackgroundStyle">
+      <MemberSignature Language="C#" Value="public virtual System.Drawing.Drawing2D.LinearGradientMode BackgroundStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Drawing2D.LinearGradientMode BackgroundStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityDesignerTheme.BackgroundStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.LinearGradientMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the background style.</summary>
+        <value>A <see cref="T:System.Drawing.Drawing2D.LinearGradientMode" /> that describes the background style.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme.BackgroundStyle%2A> to get or set how the background displays color. The <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme.BackgroundStyle%2A> can be set to one of four modes:  
+  
+ `BackwardDiagonal`  
+ Specifies a gradient from upper right to lower left.  
+  
+ `ForwardDiagonal`  
+ Specifies a gradient from upper left to lower right.  
+  
+ `Horizontal`  
+ Specifies a gradient from left to right.  
+  
+ `Vertical`  
+ Specifies a gradient from top to bottom.  
+  
+   
+  
+## Examples  
+ The following example shows how to create a custom <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme> by deriving from the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme> class and setting the appropriate properties for the new theme.  
+  
+ [!code-csharp[WF_Samples#80](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#80)]
+ [!code-vb[WF_Samples#80](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#80)]  
+  
+ To use the theme on an <xref:System.Workflow.ComponentModel.Design.ActivityDesigner>, apply the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerThemeAttribute> to the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> class.  
+  
+ [!code-csharp[WF_Samples#79](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#79)]
+ [!code-vb[WF_Samples#79](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#79)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BoldFont">
+      <MemberSignature Language="C#" Value="public System.Drawing.Font BoldFont { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Font BoldFont" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityDesignerTheme.BoldFont" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Font</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the font for the theme.</summary>
+        <value>The <see cref="T:System.Drawing.Font" /> of the theme.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme.BoldFont%2A> represents the font to use for highlighted text for the theme.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BorderColor">
+      <MemberSignature Language="C#" Value="public virtual System.Drawing.Color BorderColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BorderColor" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityDesignerTheme.BorderColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor(typeof(System.Workflow.ComponentModel.Design.ColorPickerEditor), typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Workflow.ComponentModel.Design.ColorPickerConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="P:System.Workflow.ComponentModel.Design.ActivityDesignerTheme.BorderColor" /> for the theme.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that represents the <see cref="P:System.Workflow.ComponentModel.Design.ActivityDesignerTheme.BorderColor" /> of the theme.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme.BorderColor%2A> is the color used to draw borders for shapes.  
+  
+   
+  
+## Examples  
+ The following example shows how to create a custom <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme> by deriving from the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme> class and setting the appropriate properties for the new theme.  
+  
+ [!code-csharp[WF_Samples#80](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#80)]
+ [!code-vb[WF_Samples#80](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#80)]  
+  
+ To use the theme on an <xref:System.Workflow.ComponentModel.Design.ActivityDesigner>, apply the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerThemeAttribute> to the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> class.  
+  
+ [!code-csharp[WF_Samples#79](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#79)]
+ [!code-vb[WF_Samples#79](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#79)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BorderPen">
+      <MemberSignature Language="C#" Value="public System.Drawing.Pen BorderPen { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Pen BorderPen" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityDesignerTheme.BorderPen" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the BorderPen for the theme.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> that represents the <see cref="P:System.Workflow.ComponentModel.Design.ActivityDesignerTheme.BorderPen" /> of the theme.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme.BorderPen%2A> is the pen used to draw borders for shapes.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BorderStyle">
+      <MemberSignature Language="C#" Value="public virtual System.Drawing.Drawing2D.DashStyle BorderStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Drawing2D.DashStyle BorderStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityDesignerTheme.BorderStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Workflow.ComponentModel.Design.FilteredEnumConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.DashStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the style used for the border.</summary>
+        <value>A <see cref="T:System.Drawing.Drawing2D.DashStyle" /> enumeration that represents the style used for the border.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme.BorderStyle%2A> is the style of line to draw for borders of shapes.  
+  
+   
+  
+## Examples  
+ The following example shows how to create a custom <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme> by deriving from the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme> class and setting the appropriate properties for the new theme.  
+  
+ [!code-csharp[WF_Samples#80](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#80)]
+ [!code-vb[WF_Samples#80](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#80)]  
+  
+ To use the theme on an <xref:System.Workflow.ComponentModel.Design.ActivityDesigner>, apply the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerThemeAttribute> to the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> class.  
+  
+ [!code-csharp[WF_Samples#79](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#79)]
+ [!code-vb[WF_Samples#79](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#79)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BorderWidth">
+      <MemberSignature Language="C#" Value="public int BorderWidth { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 BorderWidth" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityDesignerTheme.BorderWidth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the width of the border in pixels.</summary>
+        <value>The width of the border in pixels.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme.BorderWidth%2A> is the width in pixels for borders of shapes.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DesignerGeometry">
+      <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.Design.DesignerGeometry DesignerGeometry { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Workflow.ComponentModel.Design.DesignerGeometry DesignerGeometry" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityDesignerTheme.DesignerGeometry" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.Design.DesignerGeometry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the geometry of the designer.</summary>
+        <value>An enumeration that describes the geometry of the designer.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme.DesignerGeometry%2A> represents the default geometry of shapes for the theme.  
+  
+ `Rectangle`  
+ Draws shapes with squared corners.  
+  
+ `RoundedRectangle`  
+ Draws shapes with rounded corners.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DesignerImage">
+      <MemberSignature Language="C#" Value="public System.Drawing.Image DesignerImage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Image DesignerImage" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityDesignerTheme.DesignerImage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Image</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the image associated with the designer.</summary>
+        <value>The <see cref="T:System.Drawing.Image" /> to display for the designer.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme.DesignerImage%2A> is the default image to display for the designer.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DesignerImagePath">
+      <MemberSignature Language="C#" Value="public virtual string DesignerImagePath { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DesignerImagePath" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityDesignerTheme.DesignerImagePath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor(typeof(System.Workflow.ComponentModel.Design.ImageBrowserEditor), typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the image path for the designer.</summary>
+        <value>The image path for the designer.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme.DesignerImagePath%2A> is the path to the image file to use as the default image to display for the designer.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityDesignerTheme.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources and optionally releases the managed resources used by <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerTheme" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When `disposing` is `true`, this method releases all resources held by any managed objects that <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme> references. This method invokes the `Dispose` method of each referenced object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Font">
+      <MemberSignature Language="C#" Value="public System.Drawing.Font Font { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Font Font" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityDesignerTheme.Font" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Font</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the font of the text used by the theme.</summary>
+        <value>The font of the designer theme.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `Font` is used to display text in the designer. The `Font` property determines the font to use for regular text displayed in the designer.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForeColor">
+      <MemberSignature Language="C#" Value="public virtual System.Drawing.Color ForeColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ForeColor" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityDesignerTheme.ForeColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor(typeof(System.Workflow.ComponentModel.Design.ColorPickerEditor), typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Workflow.ComponentModel.Design.ColorPickerConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the color of the foreground.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that represents the foreground color of the theme.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme.ForeColor%2A> property to specify the foreground color of the theme. The foreground color is usually the color of the text.  
+  
+   
+  
+## Examples  
+ The following example shows how to create a custom <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme> by deriving from the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme> class and setting the appropriate properties for the new theme.  
+  
+ [!code-csharp[WF_Samples#80](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#80)]
+ [!code-vb[WF_Samples#80](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#80)]  
+  
+ To use the theme on an <xref:System.Workflow.ComponentModel.Design.ActivityDesigner>, apply the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerThemeAttribute> to the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> class.  
+  
+ [!code-csharp[WF_Samples#79](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#79)]
+ [!code-vb[WF_Samples#79](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#79)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForegroundBrush">
+      <MemberSignature Language="C#" Value="public System.Drawing.Brush ForegroundBrush { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Brush ForegroundBrush" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityDesignerTheme.ForegroundBrush" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Brush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Drawing.Brush" /> object associated with the theme.</summary>
+        <value>A <see cref="T:System.Drawing.Brush" /> object associated with the theme.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Assigning this property causes the brush associated with the theme to draw filled lines and curves.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForegroundPen">
+      <MemberSignature Language="C#" Value="public System.Drawing.Pen ForegroundPen { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Pen ForegroundPen" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityDesignerTheme.ForegroundPen" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Drawing.Pen" /> used for painting the foreground of the theme.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> that is used to paint the foreground of the theme.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Drawing.Pen> is used to draw a line of a specified width and style. The line drawn by a `Pen` object can be filled in a variety of fill styles, including solid colors and textures. The fill style depends on which brush or texture used as the fill object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBackgroundBrush">
+      <MemberSignature Language="C#" Value="public System.Drawing.Brush GetBackgroundBrush (System.Drawing.Rectangle rectangle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Drawing.Brush GetBackgroundBrush(valuetype System.Drawing.Rectangle rectangle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityDesignerTheme.GetBackgroundBrush(System.Drawing.Rectangle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Brush</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rectangle" Type="System.Drawing.Rectangle" />
+      </Parameters>
+      <Docs>
+        <param name="rectangle">A <see cref="T:System.Drawing.Rectangle" /> that specifies the location and size of the area on the background.</param>
+        <summary>Gets a brush used to paint the area specified by the rectangle passed.</summary>
+        <returns>A <see cref="T:System.Drawing.Brush" /> that is used to fill interiors of graphical shapes such as rectangles, ellipses, pies, polygons, and paths.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The background brush is used to fill the interior of the background of the designer.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageSize">
+      <MemberSignature Language="C#" Value="public System.Drawing.Size ImageSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size ImageSize" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityDesignerTheme.ImageSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Size</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the size of the image of the theme.</summary>
+        <value>A <see cref="T:System.Drawing.Size" /> that represents the size of the image.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme.ImageSize%2A> is the <xref:System.Drawing.Size> of the default image used by the theme for the designer.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public override void Initialize ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityDesignerTheme.Initialize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Initializes the designer theme.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Initializes the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme> with the ambient theme.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnAmbientPropertyChanged">
+      <MemberSignature Language="C#" Value="public override void OnAmbientPropertyChanged (System.Workflow.ComponentModel.Design.AmbientProperty ambientProperty);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnAmbientPropertyChanged(valuetype System.Workflow.ComponentModel.Design.AmbientProperty ambientProperty) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityDesignerTheme.OnAmbientPropertyChanged(System.Workflow.ComponentModel.Design.AmbientProperty)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ambientProperty" Type="System.Workflow.ComponentModel.Design.AmbientProperty" />
+      </Parameters>
+      <Docs>
+        <param name="ambientProperty">The property that has changed.</param>
+        <summary>Called to signal changes to ambient settings.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.ActivityDesignerTheme.OnAmbientPropertyChanged%2A> is used to notify the theme to apply changes to ambient properties.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Size">
+      <MemberSignature Language="C#" Value="public System.Drawing.Size Size { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size Size" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityDesignerTheme.Size" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Size</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the size of the designer.</summary>
+        <value>A <see cref="T:System.Drawing.Size" /> that represents the size of the designer.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The size property represents the <xref:System.Drawing.Size> of the designer.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,12 @@
+﻿<!--<SnippetMarkupAndCodeBehindWindowMARKUP>-->
+<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="SDKSample.MarkupAndCodeBehindWindow"
+    Title="Markup and Code-Behind Window">
+  
+  <!-- Add button to window -->
+  <Button Name="button">Click Me!</Button>
+  
+</Window>
+<!--</SnippetMarkupAndCodeBehindWindowMARKUP>-->

@@ -1,0 +1,77 @@
+<Type Name="WorkflowInstanceQuery" FullName="System.Activities.Tracking.WorkflowInstanceQuery">
+  <TypeSignature Language="C#" Value="public class WorkflowInstanceQuery : System.Activities.Tracking.TrackingQuery" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WorkflowInstanceQuery extends System.Activities.Tracking.TrackingQuery" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Tracking.WorkflowInstanceQuery" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Activities.Tracking.TrackingQuery</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>When added to the <see cref="P:System.Activities.Tracking.TrackingProfile.Queries" /> collection, subscribes to workflow instance records when the tracking profile is created to subscribe to tracking records.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WorkflowInstanceQuery ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.WorkflowInstanceQuery.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Tracking.WorkflowInstanceQuery" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="States">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;string&gt; States { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;string&gt; States" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.WorkflowInstanceQuery.States" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The subscribed states from the tracked workflow instance when the tracking records are created.</summary>
+        <value>The workflow states.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The returned records are filtered by the states in this collection.  
+  
+ Possible state values are described in the following table.  
+  
+|State|Description|  
+|-----------|-----------------|  
+|Aborted|The workflow instance is aborted.|  
+|Completed|The workflow instance is completed.|  
+|Deleted|The workflow instance is deleted.|  
+|Idle|The workflow instance is idle.|  
+|Persisted|The workflow instance is persisted.|  
+|Resumed|The workflow instance is resumed.|  
+|Started|The workflow instance is started.|  
+|UnhandledException|The workflow instance encountered an unhandled exception.|  
+|Unloaded|The workflow instance is unloaded.|  
+|Canceled|The workflow instance is canceled.|  
+|Suspended|The workflow instance is suspended.|  
+|Terminated|The workflow instance is terminated.|  
+|Unsuspended|The workflow instance is unsuspended.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

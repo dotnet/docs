@@ -1,0 +1,330 @@
+<Type Name="TextDecorationLineStyle" FullName="System.Windows.Automation.Text.TextDecorationLineStyle">
+  <TypeSignature Language="C#" Value="public enum TextDecorationLineStyle" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TextDecorationLineStyle extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Text.TextDecorationLineStyle" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationTypes</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("909D8633-2941-428e-A549-C752E2FC078C")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Values for <see cref="F:System.Windows.Automation.TextPattern.UnderlineStyleAttribute" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Dash">
+      <MemberSignature Language="C#" Value="Dash" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.TextDecorationLineStyle Dash = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextDecorationLineStyle.Dash" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Text.TextDecorationLineStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Dashed line.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DashDot">
+      <MemberSignature Language="C#" Value="DashDot" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.TextDecorationLineStyle DashDot = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextDecorationLineStyle.DashDot" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Text.TextDecorationLineStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Alternating dash-dot line.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DashDotDot">
+      <MemberSignature Language="C#" Value="DashDotDot" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.TextDecorationLineStyle DashDotDot = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextDecorationLineStyle.DashDotDot" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Text.TextDecorationLineStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Alternating dash-dot-dot line.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Dot">
+      <MemberSignature Language="C#" Value="Dot" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.TextDecorationLineStyle Dot = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextDecorationLineStyle.Dot" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Text.TextDecorationLineStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Dotted line.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Double">
+      <MemberSignature Language="C#" Value="Double" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.TextDecorationLineStyle Double = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextDecorationLineStyle.Double" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Text.TextDecorationLineStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Double line.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DoubleWavy">
+      <MemberSignature Language="C#" Value="DoubleWavy" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.TextDecorationLineStyle DoubleWavy = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextDecorationLineStyle.DoubleWavy" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Text.TextDecorationLineStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Double wavy line.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LongDash">
+      <MemberSignature Language="C#" Value="LongDash" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.TextDecorationLineStyle LongDash = int32(13)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextDecorationLineStyle.LongDash" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Text.TextDecorationLineStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Long-dashed line.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.TextDecorationLineStyle None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextDecorationLineStyle.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Text.TextDecorationLineStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No text decoration line style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Other">
+      <MemberSignature Language="C#" Value="Other" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.TextDecorationLineStyle Other = int32(-1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextDecorationLineStyle.Other" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Text.TextDecorationLineStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Another text decoration line style not explicitly specified in the <see cref="T:System.Windows.Automation.Text.TextDecorationLineStyle" /> enumeration.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Single">
+      <MemberSignature Language="C#" Value="Single" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.TextDecorationLineStyle Single = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextDecorationLineStyle.Single" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Text.TextDecorationLineStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Single line.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ThickDash">
+      <MemberSignature Language="C#" Value="ThickDash" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.TextDecorationLineStyle ThickDash = int32(14)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextDecorationLineStyle.ThickDash" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Text.TextDecorationLineStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Thick dashed line.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ThickDashDot">
+      <MemberSignature Language="C#" Value="ThickDashDot" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.TextDecorationLineStyle ThickDashDot = int32(15)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextDecorationLineStyle.ThickDashDot" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Text.TextDecorationLineStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Thick alternating dash-dot line.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ThickDashDotDot">
+      <MemberSignature Language="C#" Value="ThickDashDotDot" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.TextDecorationLineStyle ThickDashDotDot = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextDecorationLineStyle.ThickDashDotDot" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Text.TextDecorationLineStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Thick alternating dash-dot-dot line.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ThickDot">
+      <MemberSignature Language="C#" Value="ThickDot" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.TextDecorationLineStyle ThickDot = int32(17)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextDecorationLineStyle.ThickDot" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Text.TextDecorationLineStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Thick dotted line.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ThickLongDash">
+      <MemberSignature Language="C#" Value="ThickLongDash" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.TextDecorationLineStyle ThickLongDash = int32(18)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextDecorationLineStyle.ThickLongDash" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Text.TextDecorationLineStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Thick long-dash line.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ThickSingle">
+      <MemberSignature Language="C#" Value="ThickSingle" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.TextDecorationLineStyle ThickSingle = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextDecorationLineStyle.ThickSingle" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Text.TextDecorationLineStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Thick single line.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ThickWavy">
+      <MemberSignature Language="C#" Value="ThickWavy" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.TextDecorationLineStyle ThickWavy = int32(12)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextDecorationLineStyle.ThickWavy" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Text.TextDecorationLineStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Thick wavy line.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Wavy">
+      <MemberSignature Language="C#" Value="Wavy" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.TextDecorationLineStyle Wavy = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextDecorationLineStyle.Wavy" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Text.TextDecorationLineStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Wavy line.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WordsOnly">
+      <MemberSignature Language="C#" Value="WordsOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.TextDecorationLineStyle WordsOnly = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextDecorationLineStyle.WordsOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Text.TextDecorationLineStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Words only.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

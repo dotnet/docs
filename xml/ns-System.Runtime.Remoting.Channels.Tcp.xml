@@ -1,0 +1,13 @@
+<Namespace Name="System.Runtime.Remoting.Channels.Tcp">
+  <Docs>
+    <summary>The <see cref="N:System.Runtime.Remoting.Channels.Tcp" /> namespace contains channels that use the TCP protocol to transport messages and objects to and from remote locations. By default, the TCP channels encode objects and method calls in binary format for transmission, but other encoding and decoding formatter sinks can be specified in the configuration properties of a channel. One of the most important classes of the <see cref="N:System.Runtime.Remoting.Channels.Tcp" /> namespace is the <see cref="T:System.Runtime.Remoting.Channels.Tcp.TcpChannel" /> class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Remoting.Channels.Tcp.TcpChannel> class combines the <xref:System.Runtime.Remoting.Channels.Tcp.TcpClientChannel> class and the <xref:System.Runtime.Remoting.Channels.Tcp.TcpServerChannel> class, and can be used to both receive and send messages using the TCP protocol.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Namespace>

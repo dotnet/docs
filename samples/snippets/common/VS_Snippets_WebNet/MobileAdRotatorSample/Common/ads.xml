@@ -1,0 +1,35 @@
+<!-- <Snippet2> -->
+<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+  <Ad>
+    <WebImgSrc>imgA1.gif</WebImgSrc>
+    <MobileImgSrc>imgA2.gif</MobileImgSrc>
+    <WmlImgSrc>imgA3.gif</WmlImgSrc>
+    <TargetUrl>http://msdn.microsoft.com/</TargetUrl>
+    <WmlTargetUrl>http://OurServer/MS-MSDN.wml</WmlTargetUrl>
+    <AlternateText>MSDN</AlternateText>
+    <Keyword>Developer</Keyword>
+    <Impressions>80</Impressions>
+  </Ad>
+  <Ad>
+    <WebImgSrc>imgB1.gif</WebImgSrc>
+    <MobileImgSrc>imgB2.gif</MobileImgSrc>
+    <WmlImgSrc>imgB3.gif</WmlImgSrc>
+    <TargetUrl>http://www.microsoft.com/</TargetUrl>
+    <WmlTargetUrl>http://OurServer/MS-Home.wml</WmlTargetUrl>
+    <AlternateText>Microsoft</AlternateText>
+    <Keyword>Customer</Keyword>
+    <Impressions>90</Impressions>
+  </Ad>
+  <Ad>
+    <WebImgSrc>imgC1.gif</WebImgSrc>
+    <MobileImgSrc>imgC2.gif</MobileImgSrc>
+    <WmlImgSrc>imgC3.gif</WmlImgSrc>
+    <TargetUrl>http://www.microsoft.com/net/</TargetUrl>
+    <WmlTargetUrl>http://OurServer/MS-Net.wml</WmlTargetUrl>
+    <AlternateText>.NET</AlternateText>
+    <Keyword>Developer</Keyword>
+    <Impressions>80</Impressions>
+  </Ad>
+</Advertisements>
+<!-- </Snippet2> -->

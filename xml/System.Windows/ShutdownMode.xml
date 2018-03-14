@@ -1,0 +1,66 @@
+<Type Name="ShutdownMode" FullName="System.Windows.ShutdownMode">
+  <TypeSignature Language="C#" Value="public enum ShutdownMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ShutdownMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.ShutdownMode" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies how an application will shutdown. Used by the <see cref="P:System.Windows.Application.ShutdownMode" /> property.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="OnExplicitShutdown">
+      <MemberSignature Language="C#" Value="OnExplicitShutdown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.ShutdownMode OnExplicitShutdown = unsigned int8(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.ShutdownMode.OnExplicitShutdown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.ShutdownMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An application shuts down only when <see cref="M:System.Windows.Application.Shutdown" /> is called.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OnLastWindowClose">
+      <MemberSignature Language="C#" Value="OnLastWindowClose" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.ShutdownMode OnLastWindowClose = unsigned int8(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.ShutdownMode.OnLastWindowClose" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.ShutdownMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An application shuts down when either the last window closes, or <see cref="M:System.Windows.Application.Shutdown" /> is called.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMainWindowClose">
+      <MemberSignature Language="C#" Value="OnMainWindowClose" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.ShutdownMode OnMainWindowClose = unsigned int8(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.ShutdownMode.OnMainWindowClose" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.ShutdownMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An application shuts down when either the main window closes, or <see cref="M:System.Windows.Application.Shutdown" /> is called.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

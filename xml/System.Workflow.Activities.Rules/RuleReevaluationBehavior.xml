@@ -1,0 +1,57 @@
+<Type Name="RuleReevaluationBehavior" FullName="System.Workflow.Activities.Rules.RuleReevaluationBehavior">
+  <TypeSignature Language="C#" Value="public enum RuleReevaluationBehavior" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RuleReevaluationBehavior extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RuleReevaluationBehavior" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies whether a <see cref="T:System.Workflow.Activities.Rules.Rule" /> can be reevaluated.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used to limit the number of times that a <xref:System.Workflow.Activities.Rules.Rule> runs, primarily to prevent infinite loops. The default value for this field is `Always`. This means that the number of times the <xref:System.Workflow.Activities.Rules.Rule> is run is not limited, and the <xref:System.Workflow.Activities.Rules.Rule> can be run as many times as determined by the chaining cycles in the <xref:System.Workflow.Activities.Rules.RuleSet> evaluation.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Always">
+      <MemberSignature Language="C#" Value="Always" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.Activities.Rules.RuleReevaluationBehavior Always = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.Rules.RuleReevaluationBehavior.Always" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Activities.Rules.RuleReevaluationBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the <see cref="T:System.Workflow.Activities.Rules.Rule" /> can be reevaluated multiple times. <see cref="F:System.Workflow.Activities.Rules.RuleReevaluationBehavior.Always" /> is the default value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Never">
+      <MemberSignature Language="C#" Value="Never" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.Activities.Rules.RuleReevaluationBehavior Never = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.Rules.RuleReevaluationBehavior.Never" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Activities.Rules.RuleReevaluationBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the <see cref="T:System.Workflow.Activities.Rules.Rule" /> is executed once.  A condition may be evaluated several times until the rule executes actions, but the rule will never be evaluated again.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

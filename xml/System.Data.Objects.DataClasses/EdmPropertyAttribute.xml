@@ -1,0 +1,30 @@
+<Type Name="EdmPropertyAttribute" FullName="System.Data.Objects.DataClasses.EdmPropertyAttribute">
+  <TypeSignature Language="C#" Value="public abstract class EdmPropertyAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit EdmPropertyAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Objects.DataClasses.EdmPropertyAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Base class for attributes that define how properties of types in the object layer are mapped to the properties of entity types or complex types in the conceptual model.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.Objects.DataClasses.EdmScalarPropertyAttribute> and <xref:System.Data.Objects.DataClasses.EdmComplexPropertyAttribute> are derived from <xref:System.Data.Objects.DataClasses.EdmPropertyAttribute>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

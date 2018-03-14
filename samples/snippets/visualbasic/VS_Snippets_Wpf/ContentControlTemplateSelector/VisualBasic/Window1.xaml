@@ -1,0 +1,55 @@
+﻿<Window x:Class="Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:ContentControlTemplateSelector" 
+    xmlns:sys="clr-namespace:System;assembly=mscorlib" 
+    Title="ContentControlTemplateSelector" Height="300" Width="300"
+    >
+  <Window.Resources>
+
+    <!--Create two DataTemplate objects to be 
+    selected by the DataTemplateSelector.-->
+    <DataTemplate x:Key="numberTemplate">
+      <Grid>
+        <Rectangle Stroke="Black" />
+        <TextBlock Margin="5" Text="{Binding}" FontSize="18"/>
+      </Grid>
+    </DataTemplate>
+
+    <DataTemplate x:Key="largeNumberTemplate">
+      <Grid>
+        <Ellipse Stroke="Green" StrokeThickness="4"/>
+        <TextBlock Margin="10" Text="{Binding}" FontSize="24" 
+                   Foreground="Red" FontWeight="Bold" />
+      </Grid>
+    </DataTemplate>
+
+    <local:NumberDataTemplateSelector x:Key="numberTemplateSelector"
+                                      NumberTemplate="{StaticResource numberTemplate}"
+                                      LargeNumberTemplate="{StaticResource largeNumberTemplate}"/>
+
+  </Window.Resources>
+  <StackPanel>
+
+    <!--Bind the content of the Label to the selected item 
+    in the ComboBox.-->
+    <Label  Foreground="Black"
+            Content="{Binding ElementName=numberList, Path=SelectedItem.Content}"
+            ContentTemplateSelector="{StaticResource numberTemplateSelector}">
+    </Label>
+
+    <ComboBox Name="numberList">
+      <ComboBoxItem>1</ComboBoxItem>
+      <ComboBoxItem>2</ComboBoxItem>
+      <ComboBoxItem>3</ComboBoxItem>
+      <ComboBoxItem>4</ComboBoxItem>
+      <ComboBoxItem>5</ComboBoxItem>
+      <ComboBoxItem>6</ComboBoxItem>
+      <ComboBoxItem IsSelected="True">7</ComboBoxItem>
+      <ComboBoxItem>8</ComboBoxItem>
+      <ComboBoxItem>9</ComboBoxItem>
+      <ComboBoxItem>10</ComboBoxItem>
+    </ComboBox>
+
+  </StackPanel>
+</Window>

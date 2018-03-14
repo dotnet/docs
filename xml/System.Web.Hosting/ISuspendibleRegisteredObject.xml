@@ -1,0 +1,62 @@
+<Type Name="ISuspendibleRegisteredObject" FullName="System.Web.Hosting.ISuspendibleRegisteredObject">
+  <TypeSignature Language="C#" Value="public interface ISuspendibleRegisteredObject : System.Web.Hosting.IRegisteredObject" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISuspendibleRegisteredObject implements class System.Web.Hosting.IRegisteredObject" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Hosting.ISuspendibleRegisteredObject" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Web.Hosting.IRegisteredObject</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
+  
+ Listens for suspend and resume notifications.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If an application passes to the <xref:System.Web.Hosting.HostingEnvironment.RegisterObject%2A> method an object that implements the <xref:System.Web.Hosting.ISuspendibleRegisteredObject> interface, the hosting environment will subscribe the object to listen for suspend or resume notifications.  
+  
+ ]]></format>
+    </remarks>
+    <threadsafe>Instance members of this type are not guaranteed to be thread safe. You can call the <see cref="M:System.Web.Hosting.ISuspendibleRegisteredObject.Suspend" /> method at any time, including during a call to another method on this same object, during calls to other objects' <see cref="M:System.Web.Hosting.ISuspendibleRegisteredObject.Suspend" /> methods, or even during a call to this object's <see cref="M:System.Web.Hosting.ISuspendibleRegisteredObject.Suspend" /> method. Because the execution of these methods is multithreaded, there is an interval in which the <see cref="M:System.Web.Hosting.ISuspendibleRegisteredObject.Suspend" /> method can be called even after a call to the <see cref="M:System.Web.Hosting.HostingEnvironment.UnregisterObject(System.Web.Hosting.IRegisteredObject)" /> method has completed.</threadsafe>
+  </Docs>
+  <Members>
+    <Member MemberName="Suspend">
+      <MemberSignature Language="C#" Value="public Action Suspend ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Action Suspend() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ISuspendibleRegisteredObject.Suspend" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Action</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
+  
+ Called when ASP.NET notifies an application that a process is being suspended.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Hosting.ISuspendibleRegisteredObject.Suspend%2A> method must not throw exceptions, otherwise the behavior is undefined and the process will likely be terminated. The <xref:System.Web.Hosting.ISuspendibleRegisteredObject.Suspend%2A> method should not block execution, because after five seconds ASP.NET will allow the process to be suspended, even if not all <xref:System.Web.Hosting.ISuspendibleRegisteredObject.Suspend%2A> methods have completed.  
+  
+ If a callback returns, it will be invoked when the process resumes from suspension. The <xref:System.Web.Hosting.ISuspendibleRegisteredObject.Suspend%2A> method may return `null` if it does not have to be notified when the process resumes.  
+  
+ The <xref:System.Web.Hosting.ISuspendibleRegisteredObject.Suspend%2A> method is supported only when running in IIS integrated mode. The ASP.NET runtime does not guarantee that the <xref:System.Web.Hosting.ISuspendibleRegisteredObject.Suspend%2A> method will ever fire.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

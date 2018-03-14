@@ -1,0 +1,105 @@
+<Type Name="VoiceAge" FullName="System.Speech.Synthesis.VoiceAge">
+  <TypeSignature Language="C#" Value="public enum VoiceAge" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed VoiceAge extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.VoiceAge" />
+  <AssemblyInfo>
+    <AssemblyName>System.Speech</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Defines the values for the age of a synthesized voice.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Speech.Synthesis.VoiceAge> can indicate the age of an existing voice or an age preference when selecting a voice. Three of the <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoiceByHints%2A> methods and two of the <xref:System.Speech.Synthesis.PromptBuilder.StartVoice%2A> methods use <xref:System.Speech.Synthesis.VoiceAge> to specify the age when selecting a voice. The <xref:System.Speech.Synthesis.VoiceInfo.Age%2A> property obtains the age of an existing voice using a <xref:System.Speech.Synthesis.VoiceAge> member.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Adult">
+      <MemberSignature Language="C#" Value="Adult" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.VoiceAge Adult = int32(30)" />
+      <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.VoiceAge.Adult" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Synthesis.VoiceAge</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates an adult voice (age 30).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Child">
+      <MemberSignature Language="C#" Value="Child" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.VoiceAge Child = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.VoiceAge.Child" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Synthesis.VoiceAge</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates a child voice (age 10).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotSet">
+      <MemberSignature Language="C#" Value="NotSet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.VoiceAge NotSet = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.VoiceAge.NotSet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Synthesis.VoiceAge</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that no voice age is specified.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Senior">
+      <MemberSignature Language="C#" Value="Senior" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.VoiceAge Senior = int32(65)" />
+      <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.VoiceAge.Senior" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Synthesis.VoiceAge</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates a senior voice (age 65).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Teen">
+      <MemberSignature Language="C#" Value="Teen" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.VoiceAge Teen = int32(15)" />
+      <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.VoiceAge.Teen" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Synthesis.VoiceAge</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates a teenage voice (age 15).</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

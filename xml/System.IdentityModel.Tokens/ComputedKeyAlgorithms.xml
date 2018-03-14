@@ -1,0 +1,36 @@
+<Type Name="ComputedKeyAlgorithms" FullName="System.IdentityModel.Tokens.ComputedKeyAlgorithms">
+  <TypeSignature Language="C#" Value="public static class ComputedKeyAlgorithms" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ComputedKeyAlgorithms extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.ComputedKeyAlgorithms" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Used in the RST to indicate the desired algorithm with which to compute a key based on the combined entropies from both the token requestor and the token issuer.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Psha1">
+      <MemberSignature Language="C#" Value="public const string Psha1;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Psha1" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.ComputedKeyAlgorithms.Psha1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The URI for the P-SHA1 hash algorithm; http://schemas.microsoft.com/idfx/computedkeyalgorithm/psha1.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

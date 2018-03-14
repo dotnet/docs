@@ -1,0 +1,13 @@
+﻿<!--<snippet3>-->
+<!ELEMENT book (title,price,misc)> 
+<!ATTLIST book 
+   genre CDATA "novel"
+   ISBN CDATA #REQUIRED>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT misc (#PCDATA)>
+<!ENTITY h "hardcover">
+<!ENTITY p "paperback">
+<!--</snippet3>-->
+
+

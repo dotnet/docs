@@ -1,0 +1,50 @@
+<Type Name="FlushIntention" FullName="System.Drawing.Drawing2D.FlushIntention">
+  <TypeSignature Language="C#" Value="public enum FlushIntention" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FlushIntention extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.FlushIntention" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies whether commands in the graphics stack are terminated (flushed) immediately or executed as soon as possible.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Flush">
+      <MemberSignature Language="C#" Value="Flush" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.FlushIntention Flush = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.FlushIntention.Flush" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.FlushIntention</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the stack of all graphics operations is flushed immediately.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Sync">
+      <MemberSignature Language="C#" Value="Sync" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.FlushIntention Sync = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.FlushIntention.Sync" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.FlushIntention</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that all graphics operations on the stack are executed as soon as possible. This synchronizes the graphics state.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

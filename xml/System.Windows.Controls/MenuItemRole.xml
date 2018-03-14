@@ -1,0 +1,82 @@
+<Type Name="MenuItemRole" FullName="System.Windows.Controls.MenuItemRole">
+  <TypeSignature Language="C#" Value="public enum MenuItemRole" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MenuItemRole extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.MenuItemRole" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Defines the different roles that a <see cref="T:System.Windows.Controls.MenuItem" /> can have.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="SubmenuHeader">
+      <MemberSignature Language="C#" Value="SubmenuHeader" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.MenuItemRole SubmenuHeader = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MenuItemRole.SubmenuHeader" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.MenuItemRole</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Header for a submenu.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SubmenuItem">
+      <MemberSignature Language="C#" Value="SubmenuItem" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.MenuItemRole SubmenuItem = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MenuItemRole.SubmenuItem" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.MenuItemRole</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Menu item in a submenu that can invoke commands.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TopLevelHeader">
+      <MemberSignature Language="C#" Value="TopLevelHeader" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.MenuItemRole TopLevelHeader = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MenuItemRole.TopLevelHeader" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.MenuItemRole</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Header for top-level menus.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TopLevelItem">
+      <MemberSignature Language="C#" Value="TopLevelItem" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.MenuItemRole TopLevelItem = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MenuItemRole.TopLevelItem" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.MenuItemRole</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Top-level menu item that can invoke commands.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

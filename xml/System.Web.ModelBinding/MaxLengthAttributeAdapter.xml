@@ -1,0 +1,66 @@
+<Type Name="MaxLengthAttributeAdapter" FullName="System.Web.ModelBinding.MaxLengthAttributeAdapter">
+  <TypeSignature Language="C#" Value="public sealed class MaxLengthAttributeAdapter : System.Web.ModelBinding.DataAnnotationsModelValidator&lt;System.ComponentModel.DataAnnotations.MaxLengthAttribute&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MaxLengthAttributeAdapter extends System.Web.ModelBinding.DataAnnotationsModelValidator`1&lt;class System.ComponentModel.DataAnnotations.MaxLengthAttribute&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.MaxLengthAttributeAdapter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.ModelBinding.DataAnnotationsModelValidator&lt;System.ComponentModel.DataAnnotations.MaxLengthAttribute&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="TAttribute">System.ComponentModel.DataAnnotations.MaxLengthAttribute</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides an adapter for the <see cref="T:System.ComponentModel.DataAnnotations.MaxLengthAttribute" /> attribute.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MaxLengthAttributeAdapter (System.Web.ModelBinding.ModelMetadata metadata, System.Web.ModelBinding.ModelBindingExecutionContext context, System.ComponentModel.DataAnnotations.MaxLengthAttribute attribute);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.ModelBinding.ModelMetadata metadata, class System.Web.ModelBinding.ModelBindingExecutionContext context, class System.ComponentModel.DataAnnotations.MaxLengthAttribute attribute) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.MaxLengthAttributeAdapter.#ctor(System.Web.ModelBinding.ModelMetadata,System.Web.ModelBinding.ModelBindingExecutionContext,System.ComponentModel.DataAnnotations.MaxLengthAttribute)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="metadata" Type="System.Web.ModelBinding.ModelMetadata" />
+        <Parameter Name="context" Type="System.Web.ModelBinding.ModelBindingExecutionContext" />
+        <Parameter Name="attribute" Type="System.ComponentModel.DataAnnotations.MaxLengthAttribute" />
+      </Parameters>
+      <Docs>
+        <param name="metadata">Specifies the metadata container for a model.</param>
+        <param name="context">Specifies the container for all of the information that is external to the model binding system.</param>
+        <param name="attribute">Specifies the maximum length of array or string data that is allowed in a property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.MaxLengthAttributeAdapter" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLocalizedErrorMessage">
+      <MemberSignature Language="C#" Value="protected override string GetLocalizedErrorMessage (string errorMessage);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetLocalizedErrorMessage(string errorMessage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.MaxLengthAttributeAdapter.GetLocalizedErrorMessage(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="errorMessage" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="errorMessage">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

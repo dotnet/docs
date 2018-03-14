@@ -1,0 +1,129 @@
+<Type Name="XmlMappingSource" FullName="System.Data.Linq.Mapping.XmlMappingSource">
+  <TypeSignature Language="C#" Value="public sealed class XmlMappingSource : System.Data.Linq.Mapping.MappingSource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XmlMappingSource extends System.Data.Linq.Mapping.MappingSource" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Linq.Mapping.XmlMappingSource" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Linq</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Data.Linq.Mapping.MappingSource</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a mapping source that uses an external XML mapping file to create the model.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateModel">
+      <MemberSignature Language="C#" Value="protected override System.Data.Linq.Mapping.MetaModel CreateModel (Type dataContextType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Data.Linq.Mapping.MetaModel CreateModel(class System.Type dataContextType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.XmlMappingSource.CreateModel(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Linq.Mapping.MetaModel</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dataContextType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="dataContextType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromReader">
+      <MemberSignature Language="C#" Value="public static System.Data.Linq.Mapping.XmlMappingSource FromReader (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Linq.Mapping.XmlMappingSource FromReader(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.XmlMappingSource.FromReader(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Linq.Mapping.XmlMappingSource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">An XML reader.</param>
+        <summary>Creates a mapping source from an XML reader.</summary>
+        <returns>The new XML mapping source, as type <see cref="T:System.Data.Linq.Mapping.XmlMappingSource" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromStream">
+      <MemberSignature Language="C#" Value="public static System.Data.Linq.Mapping.XmlMappingSource FromStream (System.IO.Stream stream);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Linq.Mapping.XmlMappingSource FromStream(class System.IO.Stream stream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.XmlMappingSource.FromStream(System.IO.Stream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Linq.Mapping.XmlMappingSource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="stream">A stream of XML.</param>
+        <summary>Creates a mapping source from XML in a stream.</summary>
+        <returns>The new XML mapping source, as type <see cref="T:System.Data.Linq.Mapping.XmlMappingSource" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromUrl">
+      <MemberSignature Language="C#" Value="public static System.Data.Linq.Mapping.XmlMappingSource FromUrl (string url);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Linq.Mapping.XmlMappingSource FromUrl(string url) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.XmlMappingSource.FromUrl(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Linq.Mapping.XmlMappingSource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="url" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="url">The URL pointing to the XML.</param>
+        <summary>Creates a mapping source from XML that is loaded from a URL.</summary>
+        <returns>The new XML mapping source, as type <see cref="T:System.Data.Linq.Mapping.XmlMappingSource" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromXml">
+      <MemberSignature Language="C#" Value="public static System.Data.Linq.Mapping.XmlMappingSource FromXml (string xml);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Linq.Mapping.XmlMappingSource FromXml(string xml) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.XmlMappingSource.FromXml(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Linq.Mapping.XmlMappingSource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xml" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="xml">A string that contains XML.</param>
+        <summary>Creates a mapping source from an XML string.</summary>
+        <returns>The new XML mapping source, as type <see cref="T:System.Data.Linq.Mapping.XmlMappingSource" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

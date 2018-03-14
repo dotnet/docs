@@ -1,0 +1,126 @@
+﻿<Window x:Class="VSMButtonTemplate.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:src="clr-namespace:VSMButtonTemplate"
+        Title="Window1">
+  <StackPanel>
+    <src:SkinnedButton/>
+    <src:ButtonStages/>
+
+    <Grid>
+      <Grid.Resources>
+        <Style TargetType="ComboBox">
+          <Setter Property="Padding" Value="6,2,25,2" />
+          <Setter Property="Background" Value="Green"/>
+          <Setter Property="HorizontalContentAlignment" Value="Left"/>
+          <Setter Property="FontSize" Value="11"/>
+          <Setter Property="BorderThickness" Value="1"/>
+
+          <Setter Property="Template">
+            <Setter.Value>
+              <!--<SnippetComboBoxTemplate>-->
+              <ControlTemplate TargetType="ComboBox">
+                <Grid>
+                  <ToggleButton x:Name="DropDownToggle"
+                    HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  
+                    Margin="-1" HorizontalContentAlignment="Right"
+                    IsChecked="{Binding Path=IsDropDownOpen,Mode=TwoWay,
+                                RelativeSource={RelativeSource TemplatedParent}}">
+                    <Path x:Name="BtnArrow" Height="4" Width="8" 
+                      Stretch="Uniform" Margin="0,0,6,0"  Fill="Black"
+                      Data="F1 M 300,-190L 310,-190L 305,-183L 301,-190 Z " />
+                  </ToggleButton>
+                  <ContentPresenter x:Name="ContentPresenter" Margin="6,2,25,2"
+                    Content="{TemplateBinding SelectionBoxItem}"
+                    ContentTemplate="{TemplateBinding SelectionBoxItemTemplate}"
+                    ContentTemplateSelector="{TemplateBinding ItemTemplateSelector}">
+                  </ContentPresenter>
+                  <TextBox x:Name="PART_EditableTextBox"
+                    Style="{x:Null}"
+                    Focusable="False"
+                    Background="{TemplateBinding Background}"
+                    HorizontalAlignment="Left" 
+                    VerticalAlignment="Center" 
+                    Margin="3,3,23,3"
+                    Visibility="Hidden"
+                    IsReadOnly="{TemplateBinding IsReadOnly}"/>
+
+                  <Popup x:Name="PART_Popup"
+                    IsOpen="{TemplateBinding IsDropDownOpen}">
+                    <Border x:Name="PopupBorder" 
+                      HorizontalAlignment="Stretch" Height="Auto" 
+                      MinWidth="{TemplateBinding ActualWidth}"
+                      MaxHeight="{TemplateBinding MaxDropDownHeight}"
+                      BorderThickness="{TemplateBinding BorderThickness}" 
+                      BorderBrush="Black" Background="White" CornerRadius="3">
+                      <ScrollViewer x:Name="ScrollViewer" BorderThickness="0" Padding="1">
+                        <ItemsPresenter/>
+                      </ScrollViewer>
+                    </Border>
+                  </Popup>
+
+                </Grid>
+              </ControlTemplate>
+              <!--</SnippetComboBoxTemplate>-->
+            </Setter.Value>
+          </Setter>
+        </Style>
+
+
+      </Grid.Resources>
+      <ComboBox Width="100" Height="30">
+        <ComboBoxItem Content="item1"/>
+        <ComboBoxItem Content="item2"/>
+        <ComboBoxItem Content="item3" IsSelected="True"/>
+        <ComboBoxItem Content="item4"/>
+        <ComboBoxItem Content="item5"/>
+      </ComboBox>
+
+    </Grid>
+
+    <Grid>
+      <Grid.Resources>
+        <Style TargetType="Button" x:Key="ButtonTemplate">
+          <Setter Property="Template">
+            <Setter.Value>
+
+              <!--<Snippet11>-->
+              <ControlTemplate TargetType="Button">
+                <Grid >
+                  <VisualStateManager.VisualStateGroups>
+                    <VisualStateGroup x:Name="CommonStates">
+
+                      <VisualStateGroup.Transitions>
+
+                        <!--Take one half second to trasition to the MouseOver state.-->
+                        <VisualTransition To="MouseOver" 
+                          GeneratedDuration="0:0:0.5"/>
+                      </VisualStateGroup.Transitions>
+
+                      <VisualState x:Name="Normal" />
+
+                      <!--Change the SolidColorBrush, ButtonBrush, to red when the
+                          mouse is over the button.-->
+                      <VisualState x:Name="MouseOver">
+                        <Storyboard>
+                          <ColorAnimation Storyboard.TargetName="ButtonBrush" 
+                            Storyboard.TargetProperty="Color" To="Red" />
+                        </Storyboard>
+                      </VisualState>
+                    </VisualStateGroup>
+                  </VisualStateManager.VisualStateGroups>
+                  <Grid.Background>
+                    <SolidColorBrush x:Name="ButtonBrush" Color="Green"/>
+                  </Grid.Background>
+                </Grid>
+              </ControlTemplate>
+              <!--</Snippet11>-->
+            </Setter.Value>
+          </Setter>
+        </Style>
+
+      </Grid.Resources>
+      <Button Width="100" Height="50" Style="{StaticResource ButtonTemplate}"/>
+    </Grid>
+  </StackPanel>
+</Window>

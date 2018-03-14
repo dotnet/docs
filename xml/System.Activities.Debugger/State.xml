@@ -1,0 +1,23 @@
+<Type Name="State" FullName="System.Activities.Debugger.State">
+  <TypeSignature Language="C#" Value="public class State" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit State extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Debugger.State" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerNonUserCode</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Maintains property information that pinpoints source code locations that can serve as breakpoints or be stepped to by the interpreter.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

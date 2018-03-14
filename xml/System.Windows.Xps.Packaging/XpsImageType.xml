@@ -1,0 +1,97 @@
+<Type Name="XpsImageType" FullName="System.Windows.Xps.Packaging.XpsImageType">
+  <TypeSignature Language="C#" Value="public enum XpsImageType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XpsImageType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Packaging.XpsImageType" />
+  <AssemblyInfo>
+    <AssemblyName>ReachFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies graphical formats for images that can be included in an <see cref="T:System.Windows.Xps.Packaging.XpsDocument" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this enumeration primarily as a parameter for methods that add images to [!INCLUDE[TLA#tla_metro](~/includes/tlasharptla-metro-md.md)] documents.  
+  
+   
+  
+## Examples  
+ The following example shows how to use this enumeration when you add images to an [!INCLUDE[TLA#tla_metro](~/includes/tlasharptla-metro-md.md)] document.  
+  
+ [!code-csharp[XpsReadWriteSign#CreateAndWriteToXpsDocument](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsReadWriteSign/CSharp/ReadingAndWritingXps.cs#createandwritetoxpsdocument)]
+ [!code-vb[XpsReadWriteSign#CreateAndWriteToXpsDocument](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsReadWriteSign/visualbasic/readingandwritingxps.vb#createandwritetoxpsdocument)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="JpegImageType">
+      <MemberSignature Language="C#" Value="JpegImageType" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Xps.Packaging.XpsImageType JpegImageType = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Packaging.XpsImageType.JpegImageType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Xps.Packaging.XpsImageType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>JPEG</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PngImageType">
+      <MemberSignature Language="C#" Value="PngImageType" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Xps.Packaging.XpsImageType PngImageType = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Packaging.XpsImageType.PngImageType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Xps.Packaging.XpsImageType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>PNG</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TiffImageType">
+      <MemberSignature Language="C#" Value="TiffImageType" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Xps.Packaging.XpsImageType TiffImageType = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Packaging.XpsImageType.TiffImageType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Xps.Packaging.XpsImageType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>TIFF</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WdpImageType">
+      <MemberSignature Language="C#" Value="WdpImageType" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Xps.Packaging.XpsImageType WdpImageType = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Packaging.XpsImageType.WdpImageType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Xps.Packaging.XpsImageType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>WDP</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

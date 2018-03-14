@@ -1,0 +1,16 @@
+<!--<Snippet4>-->
+<browsers>
+    <browser refID="WinCE">
+        <controlAdapters>
+            <adapter controlType="System.Web.UI.WebControls.Label" 
+                adapterType="Contoso.HideDisabledControlContosoAdapter" />
+        </controlAdapters>
+    </browser>
+    <browser refID="IE">
+        <controlAdapters>
+            <adapter controlType="System.Web.UI.WebControls.Label" 
+                adapterType="Contoso.HideDisabledControlContosoAdapter" />
+        </controlAdapters>
+    </browser>
+</browsers>
+<!--</Snippet4>-->

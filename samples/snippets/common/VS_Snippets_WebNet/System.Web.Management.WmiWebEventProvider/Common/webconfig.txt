@@ -1,0 +1,18 @@
+<healthMonitoring>
+  <providers>
+    <add name="WmiWebEventProvider"
+      type="System.Web.Management.WmiWebEventProvider,
+      System.Web,Version=2.0.3600.0,Culture=neutral,
+      PublicKeyToken=b03f5f7f11d50a3a"/>
+  </providers>
+
+  <rules>
+    <add 
+      name="Testing Wmi"
+      eventName="All Events" 
+      provider="WmiWebEventProvider" 
+      profile="Critical"/>
+  </rules>
+</healthMonitoring>
+
+

@@ -1,0 +1,51 @@
+﻿<Window x:Class="WCSamples.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="MouseSnippetSample"
+    MouseMove="GetMousePosition"  
+    PreviewMouseDown="MouseButtonDownHandler" 
+    Loaded="OnLoaded">
+  <!--MouseDown="MouseDownHandler"-->
+
+  <StackPanel
+        >
+    <Button Name="captureButton" MouseEnter="CaptureMouseOnMouseEnter" >Capture Mouse</Button>
+    <Button Name="captureTarget" >Target</Button>
+    <Button Name="btnSix" >Target</Button>
+    <Label Name="lblClickCount"
+       MouseDown="OnMouseDownClickCount"
+       Background="Blue"
+       Height="30"
+       Width="300" />
+    <TextBox MouseMove="GetMousePosition" Name="txtBox" Height="100" Width="100" />
+    <StackPanel Height="300" Width="300" Background="Bisque">
+      <Button  MouseMove="GetMousePosition" Height="200" Width="200" Background="Aqua" >
+        <Button Click="btn1Click" 
+                MouseMove="GetMousePosition" 
+
+                Height="100" Width="100" Background="Azure" >
+
+        </Button>
+      </Button>
+      <TextBox Height="50" Width="50"></TextBox>
+      <Label MouseDown="ClickCount" Height="50" Width="100" Background="Coral">Count Click</Label>
+    </StackPanel>
+    <Canvas Focusable="True" IsEnabled="True" IsHitTestVisible="True" Background="AntiqueWhite" Height="100" Width="100" MouseDown="MouseButtonEventHandler" MouseUp="MouseButtonEventHandler" />
+    <Canvas Name="MainCanvas"
+        Background="WhiteSmoke"
+        Height="400"
+        Width="400"
+        MouseWheel="MouseWheelHandler"
+        Focusable="True">
+      <Rectangle Focusable="True" IsEnabled="True" IsHitTestVisible="True"
+                 Height="40"
+                 Width="40"
+                 Name="box"
+                 Canvas.Top="0"
+                 Canvas.Bottom="0" 
+                 Fill="Gray"></Rectangle>
+    </Canvas>
+
+
+  </StackPanel>
+</Window>

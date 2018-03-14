@@ -1,0 +1,134 @@
+<Type Name="TabletHardwareCapabilities" FullName="System.Windows.Input.TabletHardwareCapabilities">
+  <TypeSignature Language="C#" Value="public enum TabletHardwareCapabilities" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed TabletHardwareCapabilities extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.TabletHardwareCapabilities" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines values that specify the hardware capabilities of a tablet device, including desktop digitizers and mice.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration has a <xref:System.FlagsAttribute> attribute that allows a bitwise combination of its member values.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to determine the hardware capabilities of a tablet device.  
+  
+ [!code-csharp[HwCaps#26](~/samples/snippets/csharp/VS_Snippets_Wpf/HwCaps/CSharp/Window1.xaml.cs#26)]
+ [!code-vb[HwCaps#26](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HwCaps/VisualBasic/Window1.xaml.vb#26)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="HardProximity">
+      <MemberSignature Language="C#" Value="HardProximity" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.TabletHardwareCapabilities HardProximity = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.TabletHardwareCapabilities.HardProximity" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.TabletHardwareCapabilities</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates the tablet device can generate in-air packets when the stylus is in the physical detection range (proximity) of the tablet device.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Integrated">
+      <MemberSignature Language="C#" Value="Integrated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.TabletHardwareCapabilities Integrated = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.TabletHardwareCapabilities.Integrated" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.TabletHardwareCapabilities</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates the digitizer is integrated with the display.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.TabletHardwareCapabilities None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.TabletHardwareCapabilities.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.TabletHardwareCapabilities</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates the tablet device cannot provide this information.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StylusHasPhysicalIds">
+      <MemberSignature Language="C#" Value="StylusHasPhysicalIds" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.TabletHardwareCapabilities StylusHasPhysicalIds = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.TabletHardwareCapabilities.StylusHasPhysicalIds" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.TabletHardwareCapabilities</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates the tablet device can uniquely identify the active stylus.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StylusMustTouch">
+      <MemberSignature Language="C#" Value="StylusMustTouch" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.TabletHardwareCapabilities StylusMustTouch = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.TabletHardwareCapabilities.StylusMustTouch" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.TabletHardwareCapabilities</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates the stylus must be in physical contact with the tablet device to report its position.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsPressure">
+      <MemberSignature Language="C#" Value="SupportsPressure" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.TabletHardwareCapabilities SupportsPressure = int32(1073741824)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.TabletHardwareCapabilities.SupportsPressure" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.TabletHardwareCapabilities</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the tablet device can detect the amount of pressure the user applies when using the stylus.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

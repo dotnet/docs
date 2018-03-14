@@ -1,0 +1,13 @@
+<Namespace Name="System.Net.Mime">
+  <Docs>
+    <summary>The <see cref="N:System.Net.Mime" /> namespace holds types that are used to represent Multipurpose Internet Mail Exchange (MIME) headers. These types are used with the types in the <see cref="N:System.Net.Mail" /> namespace to specify Content-Type, Content-Disposition and Content-transfer-Encoding headers when using the <see cref="T:System.Net.Mail.SmtpClient" /> class to send email.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ MIME data is represented by the <xref:System.Net.Mail.Attachment> class.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Namespace>

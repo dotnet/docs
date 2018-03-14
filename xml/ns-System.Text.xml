@@ -1,0 +1,25 @@
+<Namespace Name="System.Text">
+  <Docs>
+    <summary>The <see cref="N:System.Text" /> namespace contains classes that represent ASCII and Unicode character encodings; abstract base classes for converting blocks of characters to and from blocks of bytes; and a helper class that manipulates and formats <see cref="T:System.String" /> objects without creating intermediate instances of <see cref="T:System.String" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The encoding classes are primarily intended to convert between different encodings or code pages and a Unicode encoding. <xref:System.Text.Encoding.Unicode%2A?displayProperty=nameWithType> (UTF-16) encoding is used internally by the .NET Framework, and <xref:System.Text.Encoding.UTF8%2A?displayProperty=nameWithType> encoding is often used for storing character data to ensure portability across machines and cultures.  
+  
+ The classes derived from <xref:System.Text.Encoding> enable you to choose a fallback strategy, which determines how characters that cannot be encoded into a sequence of bytes, or bytes that cannot be decoded into characters, are handled. You can choose one of the following:  
+  
+-   Exception fallback. You can choose to throw exceptions on data errors either by using a `throwonerror` flag that is available in some class constructors or by using the <xref:System.Text.EncoderExceptionFallback> and <xref:System.Text.DecoderExceptionFallback> classes. If you are concerned about the integrity of the data stream, throwing on an exception is recommended.  
+  
+-   Replacement fallback. You can use the <xref:System.Text.EncoderFallback> and <xref:System.Text.DecoderFallback> classes to silently change a character to "?" or to the Unicode replacement character (U+FFFD).  
+  
+-   Best-fit fallback. This option maps a character in one encoding to a character in another encoding. Best fit fallback is often not recommended because it can cause data loss and confusion, and is slower than simple "?" character replacements. However, for ANSI code pages the best-fit behavior is the default.  
+  
+ The <xref:System.Text.StringBuilder> class is designed for operations that perform extensive manipulations on a single string. Unlike the <xref:System.String> class, the <xref:System.Text.StringBuilder> class is mutable and provides better performance when concatenating or deleting strings.  
+  
+ For more information about <xref:System.Text?displayProperty=nameWithType>, see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) .  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Namespace>

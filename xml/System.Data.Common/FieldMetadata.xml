@@ -1,0 +1,75 @@
+<Type Name="FieldMetadata" FullName="System.Data.Common.FieldMetadata">
+  <TypeSignature Language="C#" Value="public struct FieldMetadata" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit FieldMetadata extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Common.FieldMetadata" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides access to field metadata for a <see cref="T:System.Data.Common.DataRecordInfo" /> object.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FieldMetadata (int ordinal, System.Data.Metadata.Edm.EdmMember fieldType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 ordinal, class System.Data.Metadata.Edm.EdmMember fieldType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.FieldMetadata.#ctor(System.Int32,System.Data.Metadata.Edm.EdmMember)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+        <Parameter Name="fieldType" Type="System.Data.Metadata.Edm.EdmMember" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">An integer specified the location of the metadata.</param>
+        <param name="fieldType">The field type.</param>
+        <summary>Initializes a new <see cref="T:System.Data.Common.FieldMetadata" /> object with the specified ordinal value and field type.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FieldType">
+      <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.EdmMember FieldType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.EdmMember FieldType" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Common.FieldMetadata.FieldType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.EdmMember</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of field for this <see cref="T:System.Data.Common.FieldMetadata" /> object.</summary>
+        <value>The type of field for this <see cref="T:System.Data.Common.FieldMetadata" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ordinal">
+      <MemberSignature Language="C#" Value="public int Ordinal { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Ordinal" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Common.FieldMetadata.Ordinal" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the ordinal for this <see cref="T:System.Data.Common.FieldMetadata" /> object.</summary>
+        <value>An integer representing the ordinal value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

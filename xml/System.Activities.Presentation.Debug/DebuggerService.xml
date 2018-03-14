@@ -1,0 +1,301 @@
+<Type Name="DebuggerService" FullName="System.Activities.Presentation.Debug.DebuggerService">
+  <TypeSignature Language="C#" Value="public class DebuggerService : System.Activities.Presentation.Debug.IDesignerDebugView" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DebuggerService extends System.Object implements class System.Activities.Presentation.Debug.IDesignerDebugView" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Debug.DebuggerService" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Activities.Presentation.Debug.IDesignerDebugView</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Manages the placement of breakpoints for a debugging process.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DebuggerService (System.Activities.Presentation.EditingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Activities.Presentation.EditingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Debug.DebuggerService.#ctor(System.Activities.Presentation.EditingContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="context" Type="System.Activities.Presentation.EditingContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">The activity designer contextual state.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Presentation.Debug.DebuggerService" /> class with the specified editing context.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentContext">
+      <MemberSignature Language="C#" Value="public System.Activities.Debugger.SourceLocation CurrentContext { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Debugger.SourceLocation CurrentContext" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Debug.DebuggerService.CurrentContext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Debugger.SourceLocation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the current scope of execution in the source file.</summary>
+        <value>A position in the source file that marks the start of execution.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentLocation">
+      <MemberSignature Language="C#" Value="public System.Activities.Debugger.SourceLocation CurrentLocation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Debugger.SourceLocation CurrentLocation" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Debug.DebuggerService.CurrentLocation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Debugger.SourceLocation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the current location of execution.</summary>
+        <value>A location in the source file.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteBreakpoint">
+      <MemberSignature Language="C#" Value="public void DeleteBreakpoint (System.Activities.Debugger.SourceLocation sourceLocation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DeleteBreakpoint(class System.Activities.Debugger.SourceLocation sourceLocation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Debug.DebuggerService.DeleteBreakpoint(System.Activities.Debugger.SourceLocation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceLocation" Type="System.Activities.Debugger.SourceLocation" />
+      </Parameters>
+      <Docs>
+        <param name="sourceLocation">A location in the source file.</param>
+        <summary>Deletes a breakpoint from its location in the source file.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnsureVisible">
+      <MemberSignature Language="C#" Value="public void EnsureVisible (System.Activities.Debugger.SourceLocation sourceLocation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnsureVisible(class System.Activities.Debugger.SourceLocation sourceLocation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Debug.DebuggerService.EnsureVisible(System.Activities.Debugger.SourceLocation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceLocation" Type="System.Activities.Debugger.SourceLocation" />
+      </Parameters>
+      <Docs>
+        <param name="sourceLocation">A location in the source file.</param>
+        <summary>Ensures that the debugger service is visible.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBreakpointLocations">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;System.Activities.Debugger.SourceLocation,System.Activities.Presentation.Debug.BreakpointTypes&gt; GetBreakpointLocations ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IDictionary`2&lt;class System.Activities.Debugger.SourceLocation, valuetype System.Activities.Presentation.Debug.BreakpointTypes&gt; GetBreakpointLocations() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Debug.DebuggerService.GetBreakpointLocations" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.Activities.Debugger.SourceLocation,System.Activities.Presentation.Debug.BreakpointTypes&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a list of the latest breakpoint locations.</summary>
+        <returns>A list of breakpoints of type <see cref="P:System.Activities.Presentation.Debug.BreakpointInfo.SourceLocation" /> culled from the source file.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExactLocation">
+      <MemberSignature Language="C#" Value="public System.Activities.Debugger.SourceLocation GetExactLocation (System.Activities.Debugger.SourceLocation approximateLocation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Activities.Debugger.SourceLocation GetExactLocation(class System.Activities.Debugger.SourceLocation approximateLocation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Debug.DebuggerService.GetExactLocation(System.Activities.Debugger.SourceLocation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Debugger.SourceLocation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="approximateLocation" Type="System.Activities.Debugger.SourceLocation" />
+      </Parameters>
+      <Docs>
+        <param name="approximateLocation">A source file location known to be inexact.</param>
+        <summary>Returns an exact source file location based on the start and end line numbers of the activity in its serialized XAML form.</summary>
+        <returns>An exact location in the source file.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HideSourceFileName">
+      <MemberSignature Language="C#" Value="public bool HideSourceFileName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HideSourceFileName" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Debug.DebuggerService.HideSourceFileName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the source file name in the viewer is hidden.</summary>
+        <value>
+          <see langword="true" /> if the source file name is hidden; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertBreakpoint">
+      <MemberSignature Language="C#" Value="public void InsertBreakpoint (System.Activities.Debugger.SourceLocation sourceLocation, System.Activities.Presentation.Debug.BreakpointTypes breakpointType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InsertBreakpoint(class System.Activities.Debugger.SourceLocation sourceLocation, valuetype System.Activities.Presentation.Debug.BreakpointTypes breakpointType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Debug.DebuggerService.InsertBreakpoint(System.Activities.Debugger.SourceLocation,System.Activities.Presentation.Debug.BreakpointTypes)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceLocation" Type="System.Activities.Debugger.SourceLocation" />
+        <Parameter Name="breakpointType" Type="System.Activities.Presentation.Debug.BreakpointTypes" />
+      </Parameters>
+      <Docs>
+        <param name="sourceLocation">The location in the source file that receives the new breakpoint.</param>
+        <param name="breakpointType">The type of the breakpoint; for example, None, Enabled, Bounded, or Conditional.</param>
+        <summary>Inserts a new breakpoint of the specified type at the specified location.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDebugging">
+      <MemberSignature Language="C#" Value="public bool IsDebugging { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsDebugging" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Debug.DebuggerService.IsDebugging" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether debugging is the current state.</summary>
+        <value>
+          <see langword="true" /> if debugging is the current state; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetBreakpoints">
+      <MemberSignature Language="C#" Value="public void ResetBreakpoints ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ResetBreakpoints() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Debug.DebuggerService.ResetBreakpoints" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Resets breakpoints and prepares for breakpoint refresh.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedLocation">
+      <MemberSignature Language="C#" Value="public System.Activities.Debugger.SourceLocation SelectedLocation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Debugger.SourceLocation SelectedLocation" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Debug.DebuggerService.SelectedLocation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Debugger.SourceLocation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the currently selected location from the designer.</summary>
+        <value>The position in the source file that is currently selected.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateBreakpoint">
+      <MemberSignature Language="C#" Value="public void UpdateBreakpoint (System.Activities.Debugger.SourceLocation sourceLocation, System.Activities.Presentation.Debug.BreakpointTypes newBreakpointType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UpdateBreakpoint(class System.Activities.Debugger.SourceLocation sourceLocation, valuetype System.Activities.Presentation.Debug.BreakpointTypes newBreakpointType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Debug.DebuggerService.UpdateBreakpoint(System.Activities.Debugger.SourceLocation,System.Activities.Presentation.Debug.BreakpointTypes)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceLocation" Type="System.Activities.Debugger.SourceLocation" />
+        <Parameter Name="newBreakpointType" Type="System.Activities.Presentation.Debug.BreakpointTypes" />
+      </Parameters>
+      <Docs>
+        <param name="sourceLocation">The location of the breakpoint to update.</param>
+        <param name="newBreakpointType">A new breakpoint type from the <see cref="T:System.Activities.Presentation.Debug.BreakpointTypes" /> enumeration.</param>
+        <summary>Updates the appearance of a specified breakpoint to show the specified type.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateSourceLocations">
+      <MemberSignature Language="C#" Value="public void UpdateSourceLocations (System.Collections.Generic.Dictionary&lt;object,System.Activities.Debugger.SourceLocation&gt; newSourceLocationMapping);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UpdateSourceLocations(class System.Collections.Generic.Dictionary`2&lt;object, class System.Activities.Debugger.SourceLocation&gt; newSourceLocationMapping) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Debug.DebuggerService.UpdateSourceLocations(System.Collections.Generic.Dictionary{System.Object,System.Activities.Debugger.SourceLocation})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newSourceLocationMapping" Type="System.Collections.Generic.Dictionary&lt;System.Object,System.Activities.Debugger.SourceLocation&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="newSourceLocationMapping">A list of model item and breakpoint pairs.</param>
+        <summary>Collects the new mapping of model item and breakpoints from SourceLocationMapping.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,15 @@
+<Namespace Name="System.Data.Odbc">
+  <Docs>
+    <summary>The <see cref="N:System.Data.Odbc" /> namespace is the .NET Framework Data Provider for ODBC.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework Data Provider for ODBC describes a collection of classes used to access an ODBC data source in the managed space. Using the <xref:System.Data.Odbc.OdbcDataAdapter> class, you can fill a memory-resident <xref:System.Data.DataSet> that you can use to query and update the data source.  
+  
+ For more information about how to use this namespace, see the <xref:System.Data.Odbc.OdbcDataReader>, <xref:System.Data.Odbc.OdbcCommand>, and <xref:System.Data.Odbc.OdbcConnection> classes.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Namespace>

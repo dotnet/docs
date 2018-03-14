@@ -1,0 +1,123 @@
+<Type Name="Manipulation2DDeltaEventArgs" FullName="System.Windows.Input.Manipulations.Manipulation2DDeltaEventArgs">
+  <TypeSignature Language="C#" Value="public class Manipulation2DDeltaEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Manipulation2DDeltaEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.Manipulations.Manipulation2DDeltaEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents data that is sent with a <see cref="E:System.Windows.Input.Manipulations.ManipulationProcessor2D.Delta" /> event or an <see cref="E:System.Windows.Input.Manipulations.InertiaProcessor2D.Delta" /> event.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Cumulative">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.Manipulations.ManipulationDelta2D Cumulative { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.Manipulations.ManipulationDelta2D Cumulative" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.Manipulations.Manipulation2DDeltaEventArgs.Cumulative" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.Manipulations.ManipulationDelta2D</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the total amount of change since the manipulation started.</summary>
+        <value>The total amount of change since the manipulation started.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delta">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.Manipulations.ManipulationDelta2D Delta { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.Manipulations.ManipulationDelta2D Delta" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.Manipulations.Manipulation2DDeltaEventArgs.Delta" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.Manipulations.ManipulationDelta2D</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the amount of change since the last event.</summary>
+        <value>The amount of change since the last event.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OriginX">
+      <MemberSignature Language="C#" Value="public float OriginX { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 OriginX" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.Manipulations.Manipulation2DDeltaEventArgs.OriginX" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the new x-coordinate of the composite position of the manipulation.</summary>
+        <value>The new x-coordinate of the composite position of the manipulation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The origin point represented by the <xref:System.Windows.Input.Manipulations.Manipulation2DDeltaEventArgs.OriginX%2A> and <xref:System.Windows.Input.Manipulations.Manipulation2DDeltaEventArgs.OriginY%2A> properties is the average position of all manipulators associated with an element.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OriginY">
+      <MemberSignature Language="C#" Value="public float OriginY { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 OriginY" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.Manipulations.Manipulation2DDeltaEventArgs.OriginY" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the new y-coordinate of the composite position of the manipulation.</summary>
+        <value>The new y-coordinate of the composite position of the manipulation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The origin point represented by the <xref:System.Windows.Input.Manipulations.Manipulation2DDeltaEventArgs.OriginX%2A> and <xref:System.Windows.Input.Manipulations.Manipulation2DDeltaEventArgs.OriginY%2A> properties is the average position of all manipulators associated with an element.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Velocities">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.Manipulations.ManipulationVelocities2D Velocities { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.Manipulations.ManipulationVelocities2D Velocities" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.Manipulations.Manipulation2DDeltaEventArgs.Velocities" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.Manipulations.ManipulationVelocities2D</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the current velocities of the manipulation.</summary>
+        <value>The current velocities of the manipulation.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,33 @@
+<!-- <Snippet2> -->
+<?xml version="1.0"?>
+<Graduates xmlns:xsi="http://www.w3.org/2000/10/XMLSchema-instance" 
+xmlns:xsd="http://www.w3.org/2000/10/XMLSchema" 
+xmlns="http://www.cpandl.com">
+  <Alumni>
+    <University>Alma</University>
+    <Info>
+      <Object xsi:type="Address">
+        <City>Ionia</City>
+      </Object>
+      <Object xsi:type="Phone">
+        <Number>555-0101</Number>
+      </Object>
+    </Info>
+    <Name>Jacki</Name>
+    <ID>1</ID>
+  </Alumni>
+  <Alumni>
+    <University>CM</University>
+    <Info>
+      <Object xsi:type="Address">
+        <City>Stamford</City>
+      </Object>
+      <Object xsi:type="Phone">
+        <Number>555-0100</Number>
+      </Object>
+    </Info>
+    <Name>Megan</Name>
+    <ID>2</ID>
+  </Alumni>
+</Graduates>
+<!-- </Snippet2> -->

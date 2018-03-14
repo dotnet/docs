@@ -1,0 +1,25 @@
+<Type Name="InkCanvasSelectionEditingEventHandler" FullName="System.Windows.Controls.InkCanvasSelectionEditingEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void InkCanvasSelectionEditingEventHandler(object sender, InkCanvasSelectionEditingEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed InkCanvasSelectionEditingEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.InkCanvasSelectionEditingEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.Controls.InkCanvasSelectionEditingEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">The event data.</param>
+    <summary>Represents the method that handles two events raised when changes occur on an <see cref="T:System.Windows.Controls.InkCanvas" />: the <see cref="E:System.Windows.Controls.InkCanvas.SelectionMoving" /> event, or the <see cref="E:System.Windows.Controls.InkCanvas.SelectionResizing" /> event.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

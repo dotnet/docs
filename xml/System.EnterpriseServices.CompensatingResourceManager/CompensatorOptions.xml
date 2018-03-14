@@ -1,0 +1,114 @@
+<Type Name="CompensatorOptions" FullName="System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions">
+  <TypeSignature Language="C#" Value="public enum CompensatorOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed CompensatorOptions extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies flags that control which phases of transaction completion should be received by the Compensating Resource Manager (CRM) Compensator, and whether recovery should fail if questionable transactions remain after recovery has been attempted.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this enumeration.  
+  
+ [!code-cpp[EnterpriseServices_Crm#11](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServices_Crm/cpp/crmserver.cpp#11)]
+ [!code-csharp[EnterpriseServices_Crm#11](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServices_Crm/CS/crmserver.cs#11)]
+ [!code-vb[EnterpriseServices_Crm#11](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServices_Crm/VB/crmserver.vb#11)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AbortPhase">
+      <MemberSignature Language="C#" Value="AbortPhase" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions AbortPhase = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions.AbortPhase" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the abort phase.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AllPhases">
+      <MemberSignature Language="C#" Value="AllPhases" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions AllPhases = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions.AllPhases" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents all phases.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CommitPhase">
+      <MemberSignature Language="C#" Value="CommitPhase" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions CommitPhase = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions.CommitPhase" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the commit phase.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FailIfInDoubtsRemain">
+      <MemberSignature Language="C#" Value="FailIfInDoubtsRemain" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions FailIfInDoubtsRemain = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions.FailIfInDoubtsRemain" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Fails if in-doubt transactions remain after recovery has been attempted.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PreparePhase">
+      <MemberSignature Language="C#" Value="PreparePhase" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions PreparePhase = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions.PreparePhase" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the prepare phase.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

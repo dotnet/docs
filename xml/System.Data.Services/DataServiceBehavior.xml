@@ -1,0 +1,118 @@
+<Type Name="DataServiceBehavior" FullName="System.Data.Services.DataServiceBehavior">
+  <TypeSignature Language="C#" Value="public sealed class DataServiceBehavior" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DataServiceBehavior extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Services.DataServiceBehavior" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Adds settings that define behavior to a custom data service.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AcceptCountRequests">
+      <MemberSignature Language="C#" Value="public bool AcceptCountRequests { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AcceptCountRequests" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.DataServiceBehavior.AcceptCountRequests" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets whether requests with the <see langword="$count" /> path segment or the <see langword="$inlinecount" /> query options are accepted.</summary>
+        <value>
+          <see langword="true" /> if count requests are supported; otherwise <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AcceptProjectionRequests">
+      <MemberSignature Language="C#" Value="public bool AcceptProjectionRequests { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AcceptProjectionRequests" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.DataServiceBehavior.AcceptProjectionRequests" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets whether projection requests should be accepted.</summary>
+        <value>
+          <see langword="true" /> if projection requests are supported; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Projection requests are made by using the `$select` query option.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AcceptReplaceFunctionInQuery">
+      <MemberSignature Language="C#" Value="public bool AcceptReplaceFunctionInQuery { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AcceptReplaceFunctionInQuery" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.DataServiceBehavior.AcceptReplaceFunctionInQuery" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Allow replace functions in the request url.</summary>
+        <value>Returns <see cref="T:System.Boolean" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvokeInterceptorsOnLinkDelete">
+      <MemberSignature Language="C#" Value="public bool InvokeInterceptorsOnLinkDelete { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool InvokeInterceptorsOnLinkDelete" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.DataServiceBehavior.InvokeInterceptorsOnLinkDelete" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets whether to invoke change interceptors when a link is deleted.</summary>
+        <value>A <see cref="T:System.Boolean" /> value that is <see langword="true" /> when interceptors should be invoked; otherwise <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxProtocolVersion">
+      <MemberSignature Language="C#" Value="public System.Data.Services.Common.DataServiceProtocolVersion MaxProtocolVersion { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.Services.Common.DataServiceProtocolVersion MaxProtocolVersion" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.DataServiceBehavior.MaxProtocolVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Common.DataServiceProtocolVersion</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum protocol version that is supported by the response sent by the data service.</summary>
+        <value>A <see cref="T:System.Data.Services.Common.DataServiceProtocolVersion" /> that is the maximum version allowed in the response.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

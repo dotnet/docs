@@ -1,0 +1,15 @@
+﻿<Window x:Class="GestureSample.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="GestureSample"
+    >
+    <DockPanel Loaded="OnLoad" Name="root">
+
+        <StackPanel  Background="DarkSlateBlue">
+            <Button Name="button1" MinHeight="20" MaxHeight="50" MinWidth="40"
+              Click="button1_click">button1</Button>
+        </StackPanel>
+        <InkCanvas Name="inkCanvas1" Background="DarkSlateBlue"></InkCanvas>
+		<!--<Canvas Name="canvas1"></Canvas>-->
+    </DockPanel>
+</Window>

@@ -1,0 +1,70 @@
+<Type Name="QueryableDataSourceEditData" FullName="System.Web.UI.WebControls.QueryableDataSourceEditData">
+  <TypeSignature Language="C#" Value="public class QueryableDataSourceEditData" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit QueryableDataSourceEditData extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.QueryableDataSourceEditData" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents data that can be edited from a <see cref="T:System.Web.UI.WebControls.QueryableDataSource" /> object.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public QueryableDataSourceEditData ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.QueryableDataSourceEditData.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.QueryableDataSourceEditData" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewDataObject">
+      <MemberSignature Language="C#" Value="public object NewDataObject { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object NewDataObject" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.QueryableDataSourceEditData.NewDataObject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the edited data object.</summary>
+        <value>The value of the edited data object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OriginalDataObject">
+      <MemberSignature Language="C#" Value="public object OriginalDataObject { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object OriginalDataObject" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.QueryableDataSourceEditData.OriginalDataObject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the data object to edit before it was changed.</summary>
+        <value>The value of the data object to edit before it was changed.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

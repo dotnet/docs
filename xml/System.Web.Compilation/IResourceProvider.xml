@@ -1,0 +1,103 @@
+<Type Name="IResourceProvider" FullName="System.Web.Compilation.IResourceProvider">
+  <TypeSignature Language="C#" Value="public interface IResourceProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IResourceProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Compilation.IResourceProvider" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines the interface a class must implement to act as a resource provider.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A resource provider facilitates the retrieving of values from a resource file. When an expression of the form `<%$ Resources: classKey, resourceKey %>` is encountered during page parsing, the resource provider returns the localized value for the resource. The <xref:System.Web.Compilation.ResourceProviderFactory> class creates instances of <xref:System.Web.Compilation.IResourceProvider> objects for use in retrieving the values.  
+  
+   
+  
+## Examples  
+ The following code example shows a customized resource provider factory that retrieves cached values. The resource provider factory creates an instance of a class that implements <xref:System.Web.Compilation.IResourceProvider>.  
+  
+ [!code-csharp[System.Web.Compilation.ResourceProviderFactory#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Compilation.ResourceProviderFactory/CS/source.cs#2)]
+ [!code-vb[System.Web.Compilation.ResourceProviderFactory#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Compilation.ResourceProviderFactory/VB/source.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetObject">
+      <MemberSignature Language="C#" Value="public object GetObject (string resourceKey, System.Globalization.CultureInfo culture);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetObject(string resourceKey, class System.Globalization.CultureInfo culture) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.IResourceProvider.GetObject(System.String,System.Globalization.CultureInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceKey" Type="System.String" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+      </Parameters>
+      <Docs>
+        <param name="resourceKey">The key identifying a particular resource.</param>
+        <param name="culture">The culture identifying a localized value for the resource.</param>
+        <summary>Returns a resource object for the key and culture.</summary>
+        <returns>An <see cref="T:System.Object" /> that contains the resource value for the <paramref name="resourceKey" /> and <paramref name="culture" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When implemented, the <xref:System.Web.Compilation.IResourceProvider.GetObject%2A> method returns the localized value for a resource key based on the current culture. The implementing class could retrieve the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> property if a value for the `culture` parameter is not passed in.  
+  
+   
+  
+## Examples  
+ The following code example shows a customized resource provider factory that retrieves cached values. The resource provider factory creates an instance of a customized resource provider that implements <xref:System.Web.Compilation.IResourceProvider>. The resource provider includes a customized <xref:System.Web.Compilation.IResourceProvider.GetObject%2A> method.  
+  
+ [!code-csharp[System.Web.Compilation.ResourceProviderFactory#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Compilation.ResourceProviderFactory/CS/source.cs#2)]
+ [!code-vb[System.Web.Compilation.ResourceProviderFactory#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Compilation.ResourceProviderFactory/VB/source.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResourceReader">
+      <MemberSignature Language="C#" Value="public System.Resources.IResourceReader ResourceReader { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Resources.IResourceReader ResourceReader" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Compilation.IResourceProvider.ResourceReader" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Resources.IResourceReader</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an object to read resource values from a source.</summary>
+        <value>The <see cref="T:System.Resources.IResourceReader" /> associated with the current resource provider.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Resources.IResourceReader> object reads sequential name/value pairs from a source. The <xref:System.Resources.ResourceReader> and <xref:System.Resources.ResXResourceReader> classes provide default <xref:System.Resources.IResourceReader> interface implementation for reading from .resources and .resx files, respectively. Other implementations of the <xref:System.Web.Compilation.IResourceProvider> interface could read from any source containing resource values.  
+  
+   
+  
+## Examples  
+ The following code example shows a customized resource provider factory that retrieves cached values. The resource provider factory creates an instance of a customized resource provider that implements <xref:System.Web.Compilation.IResourceProvider>. The resource provider includes a customized <xref:System.Web.Compilation.IResourceProvider.ResourceReader%2A> property.  
+  
+ [!code-csharp[System.Web.Compilation.ResourceProviderFactory#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Compilation.ResourceProviderFactory/CS/source.cs#2)]
+ [!code-vb[System.Web.Compilation.ResourceProviderFactory#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Compilation.ResourceProviderFactory/VB/source.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

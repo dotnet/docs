@@ -1,0 +1,19 @@
+<Page 
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:local="clr-namespace:SDKSample" 
+  WindowTitle="Page3">
+
+  <Page.Resources>
+    <local:DateTime x:Key="dateTime" />
+  </Page.Resources>
+  
+  <TextBlock>
+    <TextBlock FontWeight="Bold" FontSize="15">Page 3</TextBlock>
+    <LineBreak />
+    <TextBlock HorizontalAlignment="Right" Text="{Binding Source={StaticResource dateTime},Path=Now}" />
+    <LineBreak />
+    <Hyperlink NavigateUri="Page1.xaml">Navigate to Page1</Hyperlink>
+  </TextBlock>
+ 
+</Page>

@@ -1,0 +1,166 @@
+<Type Name="MonoTlsConnectionInfo" FullName="Mono.Security.Interface.MonoTlsConnectionInfo">
+  <TypeSignature Language="C#" Value="public class MonoTlsConnectionInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MonoTlsConnectionInfo extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Mono.Security.Interface.MonoTlsConnectionInfo" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MonoTlsConnectionInfo ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.MonoTlsConnectionInfo.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CipherAlgorithmType">
+      <MemberSignature Language="C#" Value="public Mono.Security.Interface.CipherAlgorithmType CipherAlgorithmType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Mono.Security.Interface.CipherAlgorithmType CipherAlgorithmType" />
+      <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.MonoTlsConnectionInfo.CipherAlgorithmType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.CipherAlgorithmType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CipherSuiteCode">
+      <MemberSignature Language="C#" Value="public Mono.Security.Interface.CipherSuiteCode CipherSuiteCode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Mono.Security.Interface.CipherSuiteCode CipherSuiteCode" />
+      <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.MonoTlsConnectionInfo.CipherSuiteCode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.CipherSuiteCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExchangeAlgorithmType">
+      <MemberSignature Language="C#" Value="public Mono.Security.Interface.ExchangeAlgorithmType ExchangeAlgorithmType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Mono.Security.Interface.ExchangeAlgorithmType ExchangeAlgorithmType" />
+      <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.MonoTlsConnectionInfo.ExchangeAlgorithmType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.ExchangeAlgorithmType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HashAlgorithmType">
+      <MemberSignature Language="C#" Value="public Mono.Security.Interface.HashAlgorithmType HashAlgorithmType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Mono.Security.Interface.HashAlgorithmType HashAlgorithmType" />
+      <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.MonoTlsConnectionInfo.HashAlgorithmType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.HashAlgorithmType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PeerDomainName">
+      <MemberSignature Language="C#" Value="public string PeerDomainName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PeerDomainName" />
+      <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.MonoTlsConnectionInfo.PeerDomainName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProtocolVersion">
+      <MemberSignature Language="C#" Value="public Mono.Security.Interface.TlsProtocols ProtocolVersion { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Mono.Security.Interface.TlsProtocols ProtocolVersion" />
+      <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.MonoTlsConnectionInfo.ProtocolVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.TlsProtocols</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.MonoTlsConnectionInfo.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,101 @@
+<Type Name="IRemotingTypeInfo" FullName="System.Runtime.Remoting.IRemotingTypeInfo">
+  <TypeSignature Language="C#" Value="public interface IRemotingTypeInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRemotingTypeInfo" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.IRemotingTypeInfo" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides type information for an object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this interface to provide custom type information that is carried along with the <xref:System.Runtime.Remoting.ObjRef> objects.  
+  
+   
+  
+## Examples  
+ [!code-cpp[Remoting.ObjRef#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Remoting.ObjRef/CPP/client.cpp#1)]
+ [!code-csharp[Remoting.ObjRef#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Remoting.ObjRef/CS/client.cs#1)]
+ [!code-vb[Remoting.ObjRef#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Remoting.ObjRef/VB/client.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CanCastTo">
+      <MemberSignature Language="C#" Value="public bool CanCastTo (Type fromType, object o);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanCastTo(class System.Type fromType, object o) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.IRemotingTypeInfo.CanCastTo(System.Type,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fromType" Type="System.Type" />
+        <Parameter Name="o" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="fromType">The type to cast to.</param>
+        <param name="o">The object for which to check casting.</param>
+        <summary>Checks whether the proxy that represents the specified object type can be cast to the type represented by the <see cref="T:System.Runtime.Remoting.IRemotingTypeInfo" /> interface.</summary>
+        <returns>
+          <see langword="true" /> if cast will succeed; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The current method is called when an attempt is made to cast a proxy generated from a <xref:System.Runtime.Remoting.ObjRef>. This method takes into account the type information carried in the <xref:System.Runtime.Remoting.ObjRef>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller makes the call through a reference to the interface and does not have infrastructure permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeName">
+      <MemberSignature Language="C#" Value="public string TypeName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TypeName" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.IRemotingTypeInfo.TypeName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the fully qualified type name of the server object in a <see cref="T:System.Runtime.Remoting.ObjRef" />.</summary>
+        <value>The fully qualified type name of the server object in a <see cref="T:System.Runtime.Remoting.ObjRef" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[Remoting.ObjRef#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Remoting.ObjRef/CPP/client.cpp#1)]
+ [!code-csharp[Remoting.ObjRef#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Remoting.ObjRef/CS/client.cs#1)]
+ [!code-vb[Remoting.ObjRef#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Remoting.ObjRef/VB/client.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller makes the call through a reference to the interface and does not have infrastructure permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

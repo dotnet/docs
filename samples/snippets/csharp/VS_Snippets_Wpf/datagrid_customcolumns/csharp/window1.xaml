@@ -1,0 +1,47 @@
+﻿<!--<SnippetAll1>-->
+    <!--<SnippetComboBox1>-->
+    <!--<SnippetHyperlinkA>-->
+    <NavigationWindow x:Class="DataGrid_CustomColumns.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:core="clr-namespace:System;assembly=mscorlib"
+        xmlns:local="clr-namespace:DataGrid_CustomColumns"
+        Title="Customers" Height="300" Width="300" ShowsNavigationUI="False"  >
+        
+    <NavigationWindow.Resources>
+        <!--</SnippetHyperlinkA>-->
+        <!--Create list of enumeration values-->
+        <ObjectDataProvider x:Key="myEnum" MethodName="GetValues" ObjectType="{x:Type core:Enum}">
+            <ObjectDataProvider.MethodParameters>
+                <x:Type Type="local:OrderStatus"/>
+            </ObjectDataProvider.MethodParameters>
+        </ObjectDataProvider>
+        <!--<SnippetHyperlinkB>-->
+        <!--Create an instance of the converter for Email-->
+        <local:EmailConverter x:Key="EmailConverter" />
+    </NavigationWindow.Resources>
+    <NavigationWindow.Content>  
+        
+    <Grid>
+        <DataGrid Name="DG1" ItemsSource="{Binding}" AutoGenerateColumns="False" >
+            <DataGrid.Columns>
+                <!--</SnippetHyperlinkB>-->
+                <!--</SnippetComboBox1>-->
+                <DataGridTextColumn Header="First Name"  Binding="{Binding FirstName}"/>
+                <DataGridTextColumn Header="Last Name" Binding="{Binding LastName}" />
+                <!--<SnippetHyperlink1>-->
+                <!--The Email property contains a URI.  For example "mailto:lucy0@adventure-works.com"-->
+                <DataGridHyperlinkColumn Header="Email" Binding="{Binding Email}"  ContentBinding="{Binding Email, Converter={StaticResource EmailConverter}}" />
+                <!--</SnippetHyperlink1>-->
+                <DataGridCheckBoxColumn Header="Member?" Binding="{Binding IsMember}" />
+                <!--<SnippetComboBox2>-->
+                <DataGridComboBoxColumn Header="Order Status"  SelectedItemBinding="{Binding Status}" ItemsSource="{Binding Source={StaticResource myEnum}}" />
+                <!--<SnippetHyperlinkC>-->
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+    </NavigationWindow.Content>
+</NavigationWindow>
+    <!--</SnippetHyperlinkC>-->
+    <!--</SnippetComboBox2>-->
+<!--</SnippetAll1>-->

@@ -1,0 +1,24 @@
+﻿<!--<SnippetRefreshMARKUP1>-->
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+  <!--</SnippetRefreshMARKUP1>-->
+  <DockPanel>
+    <Menu DockPanel.Dock="Top">
+      <MenuItem Header="_Navigation">
+        <!--<SnippetRefreshMARKUP2>-->
+        <!-- NavigationCommands.Refresh -->
+        <MenuItem
+          Command="NavigationCommands.Refresh"
+          CommandTarget="{Binding ElementName=frame}" />
+        <!--</SnippetRefreshMARKUP2>-->
+      </MenuItem>
+    </Menu>
+    <Border Margin="5" Padding="5" BorderBrush="SteelBlue" BorderThickness="2" CornerRadius="5">
+      <!--<SnippetRefreshMARKUP3>-->
+      <!-- The following Frame is used to process NavigationCommands.Refresh commands -->
+      <Frame Name="frame" NavigationUIVisibility="Hidden" Source="Page1.xaml" />
+      <!--</SnippetRefreshMARKUP3>-->
+    </Border>
+  </DockPanel>
+  <!--<SnippetRefreshMARKUP4>-->
+</Window>
+<!--</SnippetRefreshMARKUP4>-->

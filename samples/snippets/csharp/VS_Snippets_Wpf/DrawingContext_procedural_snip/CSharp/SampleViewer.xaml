@@ -1,0 +1,23 @@
+<Page  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  x:Class="SDKSample.SampleViewer" 
+  xmlns:examples="clr-namespace:SDKSample">
+  <DockPanel Background="White">
+    <TabControl Name="sampleSelector">
+      <TabItem Header="DrawingContext.Pop">
+        <Frame Background="{StaticResource CheckeredBrushResource}">
+          <Frame.Content>
+            <examples:PopExample Margin="20" />
+          </Frame.Content>
+        </Frame>
+      </TabItem>
+      <TabItem Header="DrawingContext.PushEffect">
+        <Frame Background="{StaticResource CheckeredBrushResource}">
+          <Frame.Content>
+            <examples:PushEffectExample Margin="20" />
+          </Frame.Content>
+        </Frame>
+      </TabItem>    
+    </TabControl>
+  </DockPanel>
+</Page>

@@ -1,0 +1,106 @@
+<Type Name="ActivityCodeGenerator" FullName="System.Workflow.ComponentModel.Compiler.ActivityCodeGenerator">
+  <TypeSignature Language="C#" Value="public class ActivityCodeGenerator" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ActivityCodeGenerator extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Compiler.ActivityCodeGenerator" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Base class for code generator components that can be associated with activities.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ActivityCodeGenerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.ActivityCodeGenerator.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Compiler.ActivityCodeGenerator" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateCode">
+      <MemberSignature Language="C#" Value="public virtual void GenerateCode (System.Workflow.ComponentModel.Compiler.CodeGenerationManager manager, object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GenerateCode(class System.Workflow.ComponentModel.Compiler.CodeGenerationManager manager, object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.ActivityCodeGenerator.GenerateCode(System.Workflow.ComponentModel.Compiler.CodeGenerationManager,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="manager" Type="System.Workflow.ComponentModel.Compiler.CodeGenerationManager" />
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="manager">The <see cref="T:System.Workflow.ComponentModel.Compiler.CodeGenerationManager" /> to use in the code generation.</param>
+        <param name="obj">The <see cref="T:System.Object" /> to generate the code for.</param>
+        <summary>Generates code for the specified <see cref="T:System.Object" /> using the specific <see cref="T:System.Workflow.ComponentModel.Compiler.CodeGenerationManager" />.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="obj" /> is a null reference (<see langword="Nothing" />).</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="obj" /> cannot be cast to type <see cref="T:System.Workflow.ComponentModel.Activity" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCodeTypeDeclaration">
+      <MemberSignature Language="C#" Value="protected System.CodeDom.CodeTypeDeclaration GetCodeTypeDeclaration (System.Workflow.ComponentModel.Compiler.CodeGenerationManager manager, string fullClassName);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.CodeDom.CodeTypeDeclaration GetCodeTypeDeclaration(class System.Workflow.ComponentModel.Compiler.CodeGenerationManager manager, string fullClassName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.ActivityCodeGenerator.GetCodeTypeDeclaration(System.Workflow.ComponentModel.Compiler.CodeGenerationManager,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeTypeDeclaration</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="manager" Type="System.Workflow.ComponentModel.Compiler.CodeGenerationManager" />
+        <Parameter Name="fullClassName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="manager">The <see cref="T:System.Workflow.ComponentModel.Compiler.CodeGenerationManager" /> to use in the code generation.</param>
+        <param name="fullClassName">The fully qualified class name of the workflow that is currently being compiled.</param>
+        <summary>Returns the code type declaration for the workflow that is currently being compiled.</summary>
+        <returns>The <see cref="T:System.CodeDom.CodeTypeDeclaration" /> for the workflow that is currently being compiled.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The code type declaration is looked up in the CodeDOM statements that are already generated by preceding code generators. Alternatively, the user can use <xref:System.Workflow.ComponentModel.Compiler.CodeGenerationManager> directly to perform the necessary lookup.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,19 @@
+<Window x:Class="VisualBasic.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="VisualBasic" Height="300" Width="300"
+    >
+    <DockPanel>
+
+      <!--Menu Bar-->
+      <Menu DockPanel.Dock="Top">
+        <MenuItem Header="_File">
+        <MenuItem Name="fileExitMenuItem" Header="E_xit" Click="fileExitMenuItem_Click"></MenuItem>
+        </MenuItem>  
+      </Menu>
+      
+      <!--Content-->
+      <TextBox AcceptsReturn="True" AcceptsTab="True"></TextBox>
+      
+    </DockPanel>
+</Window>

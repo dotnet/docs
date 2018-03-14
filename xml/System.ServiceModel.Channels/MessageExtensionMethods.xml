@@ -1,0 +1,63 @@
+<Type Name="MessageExtensionMethods" FullName="System.ServiceModel.Channels.MessageExtensionMethods">
+  <TypeSignature Language="C#" Value="public static class MessageExtensionMethods" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit MessageExtensionMethods extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.MessageExtensionMethods" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Channels</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>A static extension methods class for getting either an <see cref="T:System.Net.Http.HttpRequestMessage" /> or <see cref="T:System.Net.Http.HttpResponseMessage" /> instance from a <see cref="T:System.ServiceModel.Channels.Message" /> instance.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ToHttpRequestMessage">
+      <MemberSignature Language="C#" Value="public static System.Net.Http.HttpRequestMessage ToHttpRequestMessage (this System.ServiceModel.Channels.Message message);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.Http.HttpRequestMessage ToHttpRequestMessage(class System.ServiceModel.Channels.Message message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageExtensionMethods.ToHttpRequestMessage(System.ServiceModel.Channels.Message)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Channels</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Http.HttpRequestMessage</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="message">The <see cref="T:System.ServiceModel.Channels.Message" /> instance from which to get the <see cref="T:System.Net.Http.HttpRequestMessage" /> instance.</param>
+        <summary>Creates a <see cref="T:System.Net.Http.HttpRequestMessage" /> instance from an <see cref="T:System.ServiceModel.Channels.Message" /> instance.</summary>
+        <returns>The <see cref="T:System.Net.Http.HttpRequestMessage" /> instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToHttpResponseMessage">
+      <MemberSignature Language="C#" Value="public static System.Net.Http.HttpResponseMessage ToHttpResponseMessage (this System.ServiceModel.Channels.Message message);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.Http.HttpResponseMessage ToHttpResponseMessage(class System.ServiceModel.Channels.Message message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageExtensionMethods.ToHttpResponseMessage(System.ServiceModel.Channels.Message)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Channels</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Http.HttpResponseMessage</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="message">The <see cref="T:System.ServiceModel.Channels.Message" /> instance from which to get the <see cref="T:System.Net.Http.HttpResponseMessage" /> instance.</param>
+        <summary>Creates a <see cref="T:System.Net.Http.HttpResponseMessage" /> instance from an <see cref="T:System.ServiceModel.Channels.Message" /> instance.</summary>
+        <returns>The <see cref="T:System.Net.Http.HttpResponseMessage" /> instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

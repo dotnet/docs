@@ -1,0 +1,20 @@
+
+    
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs) 
+        Dim extConfig As ExternalConfiguration = Nothing
+        
+        If Not IsPostBack Then
+            ' Instantiate ManageConfiguration.
+            extConfig = New ExternalConfiguration()
+        End If
+        ' HttpContext.Current.Application["MyKey"] = "Start";
+        
+        Dim postBackCount As Integer = _
+		Fix(HttpContext.Current.Application("postBackKey"))
+        ResultId.Text = postBackCount.ToString()
+        
+        HttpContext.Current.Application("postBackKey") = _
+		Fix(HttpContext.Current.Application("postBackKey")) + 1
+        
+        extConfig.UpdateAppSettngs()
+    

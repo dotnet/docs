@@ -1,0 +1,151 @@
+<Type Name="AssociationSetEnd" FullName="System.Data.Metadata.Edm.AssociationSetEnd">
+  <TypeSignature Language="C#" Value="public sealed class AssociationSetEnd : System.Data.Metadata.Edm.MetadataItem" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AssociationSetEnd extends System.Data.Metadata.Edm.MetadataItem" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.AssociationSetEnd" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Data.Metadata.Edm.MetadataItem</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the <see langword="End" /> of the association set in a conceptual model.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BuiltInTypeKind">
+      <MemberSignature Language="C#" Value="public override System.Data.Metadata.Edm.BuiltInTypeKind BuiltInTypeKind { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.Metadata.Edm.BuiltInTypeKind BuiltInTypeKind" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.AssociationSetEnd.BuiltInTypeKind" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the built-in type kind for this <see cref="T:System.Data.Metadata.Edm.AssociationSetEnd" />.</summary>
+        <value>A <see cref="T:System.Data.Metadata.Edm.BuiltInTypeKind" /> object that represents the built-in type kind for this <see cref="T:System.Data.Metadata.Edm.AssociationSetEnd" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CorrespondingAssociationEndMember">
+      <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.AssociationEndMember CorrespondingAssociationEndMember { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.AssociationEndMember CorrespondingAssociationEndMember" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.AssociationSetEnd.CorrespondingAssociationEndMember" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.AssociationEndMember</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see langword="End" /> member that this <see cref="T:System.Data.Metadata.Edm.AssociationSetEnd" /> object corresponds to.</summary>
+        <value>An <see cref="T:System.Data.Metadata.Edm.AssociationEndMember" /> object that represents the <see langword="End" /> member that this <see cref="T:System.Data.Metadata.Edm.AssociationSetEnd" /> object corresponds to.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EntitySet">
+      <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.EntitySet EntitySet { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.EntitySet EntitySet" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.AssociationSetEnd.EntitySet" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.EntitySet</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the entity set referenced by this <see langword="End" /> role.</summary>
+        <value>An <see cref="T:System.Data.Metadata.Edm.EntitySet" /> object that represents the entity set referred by this <see langword="End" /> role.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.AssociationSetEnd.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the End for this <see cref="T:System.Data.Metadata.Edm.AssociationSetEnd" />.</summary>
+        <value>The name of the End for this <see cref="T:System.Data.Metadata.Edm.AssociationSetEnd" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParentAssociationSet">
+      <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.AssociationSet ParentAssociationSet { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.AssociationSet ParentAssociationSet" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.AssociationSetEnd.ParentAssociationSet" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.AssociationSet</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the parent association set of this <see cref="T:System.Data.Metadata.Edm.AssociationSetEnd" />.</summary>
+        <value>An <see cref="T:System.Data.Metadata.Edm.AssociationSet" /> object that represents the parent association set of this <see cref="T:System.Data.Metadata.Edm.AssociationSetEnd" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Role">
+      <MemberSignature Language="C#" Value="public string Role { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Role" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.AssociationSetEnd.Role" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("This property is going away, please use the Name property instead")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the <see langword="End" /> role for this <see cref="T:System.Data.Metadata.Edm.AssociationSetEnd" />.</summary>
+        <value>The name of the <see langword="End" /> role for this <see cref="T:System.Data.Metadata.Edm.AssociationSetEnd" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.AssociationSetEnd.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the name of the <see langword="End" /> role for this <see cref="T:System.Data.Metadata.Edm.AssociationSetEnd" />.</summary>
+        <returns>The name of the <see langword="End" /> role for this <see cref="T:System.Data.Metadata.Edm.AssociationSetEnd" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

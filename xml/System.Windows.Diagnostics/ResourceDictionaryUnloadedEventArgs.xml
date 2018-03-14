@@ -1,0 +1,37 @@
+<Type Name="ResourceDictionaryUnloadedEventArgs" FullName="System.Windows.Diagnostics.ResourceDictionaryUnloadedEventArgs">
+  <TypeSignature Language="C#" Value="public class ResourceDictionaryUnloadedEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ResourceDictionaryUnloadedEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Diagnostics.ResourceDictionaryUnloadedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.Diagnostics.ResourceDictionaryDiagnostics.ThemedResourceDictionaryUnloaded" /> event.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ResourceDictionaryInfo">
+      <MemberSignature Language="C#" Value="public System.Windows.Diagnostics.ResourceDictionaryInfo ResourceDictionaryInfo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Diagnostics.ResourceDictionaryInfo ResourceDictionaryInfo" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Diagnostics.ResourceDictionaryUnloadedEventArgs.ResourceDictionaryInfo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Diagnostics.ResourceDictionaryInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets data for the <see cref="E:System.Windows.Diagnostics.ResourceDictionaryDiagnostics.ThemedResourceDictionaryUnloaded" /> event.</summary>
+        <value>Data for the <see cref="E:System.Windows.Diagnostics.ResourceDictionaryDiagnostics.ThemedResourceDictionaryUnloaded" /> event.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

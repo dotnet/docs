@@ -1,0 +1,178 @@
+<Type Name="EventRoute" FullName="System.Windows.EventRoute">
+  <TypeSignature Language="C#" Value="public sealed class EventRoute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EventRoute extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.EventRoute" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the container for the route to be followed by a routed event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class corresponds to a valid <xref:System.Windows.RoutedEvent>, and contains an ordered list of target object and handler list pairs that refer to the event route for that event. <xref:System.Windows.EventRoute> supports adding new entries to the list and also allows for the handlers in the list to be invoked.  
+  
+ Most normal operations for adding handlers for [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] events do not require working with this class (for instance, use <xref:System.Windows.EventManager> methods to add class handling, or query for existing handlers of an event). This class is mainly for use when elements have particular knowledge about child elements or parent elements that make it practical to either add elements to or remove elements from the default calculated event route.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EventRoute (System.Windows.RoutedEvent routedEvent);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.RoutedEvent routedEvent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.EventRoute.#ctor(System.Windows.RoutedEvent)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="routedEvent" Type="System.Windows.RoutedEvent" />
+      </Parameters>
+      <Docs>
+        <param name="routedEvent">The non-NULL event identifier to be associated with this event route.</param>
+        <summary>Initializes an instance of the <see cref="T:System.Windows.EventRoute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (object target, Delegate handler, bool handledEventsToo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(object target, class System.Delegate handler, bool handledEventsToo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.EventRoute.Add(System.Object,System.Delegate,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Object" />
+        <Parameter Name="handler" Type="System.Delegate" />
+        <Parameter Name="handledEventsToo" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="target">Specifies the target object of which the handler is to be added to the route.</param>
+        <param name="handler">Specifies the handler to be added to the route.</param>
+        <param name="handledEventsToo">Indicates whether or not the listener detects events that have already been handled.</param>
+        <summary>Adds the specified handler for the specified target to the route.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ It is not an error to add a handler for a particular target instance twice. In such a case, the handler will be called twice.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PeekBranchNode">
+      <MemberSignature Language="C#" Value="public object PeekBranchNode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object PeekBranchNode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.EventRoute.PeekBranchNode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the top-most element on the event route stack at which two logical trees diverge.</summary>
+        <returns>The top-most element on the event route stack at which two logical trees diverge.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PeekBranchSource">
+      <MemberSignature Language="C#" Value="public object PeekBranchSource ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object PeekBranchSource() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.EventRoute.PeekBranchSource" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the source for the top-most element on the event route stack at which two logical trees diverge.</summary>
+        <returns>The source for the top-most element on the event route stack at which two logical trees diverge.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PopBranchNode">
+      <MemberSignature Language="C#" Value="public object PopBranchNode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object PopBranchNode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.EventRoute.PopBranchNode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the top-most node on the event route stack at which two logical trees diverge.</summary>
+        <returns>The top-most node on the event route stack at which two logical trees diverge.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PushBranchNode">
+      <MemberSignature Language="C#" Value="public void PushBranchNode (object node, object source);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PushBranchNode(object node, object source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.EventRoute.PushBranchNode(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="node" Type="System.Object" />
+        <Parameter Name="source" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="node">The top-most element on the event route stack at which two logical trees diverge.</param>
+        <param name="source">The source for the top-most element on the event route stack at which two logical trees diverge.</param>
+        <summary>Adds the top-most node to the event route stack at which two logical trees diverge.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

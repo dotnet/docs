@@ -1,0 +1,39 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name":".NET Core Docker Launch (web)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "composeForDebug",
+            "cwd": "/app",
+            "program": "/app/api.dll",
+            "sourceFileMap": {
+                "/app": "${workspaceRoot}"
+            },
+
+            "launchBrowser": {
+                "enabled": true,
+                "args": "${auto-detect-url}",
+                "windows": {
+                    "command": "cmd.exe",
+                    "args": "/C start ${auto-detect-url}"
+                },
+                "osx": {
+                    "command": "open"
+                }
+            },
+
+            "pipeTransport": {
+                "pipeProgram": "/bin/bash",
+                "pipeCwd": "${workspaceRoot}",
+                "pipeArgs": [ "-c", "./dockerTask.sh startDebugging" ],
+                "windows": {
+                    "pipeProgram": "${env.windir}\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                    "pipeCwd": "${workspaceRoot}",
+                    "pipeArgs": [ ".\\dockerTask.ps1", "-StartDebugging" ]
+                }
+            }
+        }
+    ]
+}

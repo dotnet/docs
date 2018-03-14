@@ -1,0 +1,740 @@
+<Type Name="ApplicationGesture" FullName="System.Windows.Ink.ApplicationGesture">
+  <TypeSignature Language="C#" Value="public enum ApplicationGesture" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ApplicationGesture extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Ink.ApplicationGesture" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the available application-specific <paramref name="gesture" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlTextUsage_ApplicationGesture"></a>   
+## XAML Text Usage  
+ This class is not typically used in XAML.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to identify a gesture on an <xref:System.Windows.Controls.InkCanvas>. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1` and that its <xref:System.Windows.Controls.InkCanvas.Gesture> event has been connected to the event handler in this example.  
+  
+ [!code-csharp[GestureSample#1](~/samples/snippets/csharp/VS_Snippets_Wpf/GestureSample/CSharp/Window1.xaml.cs#1)]
+ [!code-vb[GestureSample#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GestureSample/VisualBasic/Window1.xaml.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AllGestures">
+      <MemberSignature Language="C#" Value="AllGestures" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.ApplicationGesture AllGestures = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.AllGestures" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.ApplicationGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Recognizes all application-specific gestures.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ArrowDown">
+      <MemberSignature Language="C#" Value="ArrowDown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.ApplicationGesture ArrowDown = int32(61497)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.ArrowDown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.ApplicationGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Has no suggested semantic behavior or action. The arrow can be drawn in single stroke or in two strokes where one stroke is the line and the other is the arrow head. Do not use more than two strokes to draw the arrow.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ArrowLeft">
+      <MemberSignature Language="C#" Value="ArrowLeft" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.ApplicationGesture ArrowLeft = int32(61498)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.ArrowLeft" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.ApplicationGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Has no suggested semantic behavior or action. The arrow can be drawn in single stroke or in two strokes where one stroke is the line and the other is the arrow head. Do not use more than two strokes to draw the arrow.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ArrowRight">
+      <MemberSignature Language="C#" Value="ArrowRight" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.ApplicationGesture ArrowRight = int32(61499)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.ArrowRight" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.ApplicationGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Has no suggested semantic behavior or action. The arrow can be drawn in single stroke or in two strokes where one stroke is the line and the other is the arrow head. Do not use more than two strokes to draw the arrow.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ArrowUp">
+      <MemberSignature Language="C#" Value="ArrowUp" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.ApplicationGesture ArrowUp = int32(61496)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.ArrowUp" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.ApplicationGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Has no suggested semantic behavior or action. The arrow can be drawn in single stroke or in two strokes where one stroke is the line and the other is the arrow head. Do not use more than two strokes to draw the arrow.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Check">
+      <MemberSignature Language="C#" Value="Check" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.ApplicationGesture Check = int32(61445)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.Check" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.ApplicationGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Has no suggested semantic behavior or action. The upward stroke must be twice as long as the smaller downward stroke.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ChevronDown">
+      <MemberSignature Language="C#" Value="ChevronDown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.ApplicationGesture ChevronDown = int32(61489)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.ChevronDown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.ApplicationGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Has no suggested semantic behavior or action. Both sides of the chevron must be drawn as equal as possible. The angle must be sharp and end in a point.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ChevronLeft">
+      <MemberSignature Language="C#" Value="ChevronLeft" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.ApplicationGesture ChevronLeft = int32(61490)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.ChevronLeft" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.ApplicationGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Has no suggested semantic behavior or action. Both sides of the chevron must be drawn as equal as possible. The angle must be sharp and end in a point.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ChevronRight">
+      <MemberSignature Language="C#" Value="ChevronRight" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.ApplicationGesture ChevronRight = int32(61491)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.ChevronRight" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.ApplicationGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Has no suggested semantic behavior or action. Both sides of the chevron must be drawn as equal as possible. The angle must be sharp and end in a point.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ChevronUp">
+      <MemberSignature Language="C#" Value="ChevronUp" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.ApplicationGesture ChevronUp = int32(61488)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.ChevronUp" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.ApplicationGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Has no suggested semantic behavior or action. Both sides of the chevron must be drawn as equal as possible. The angle must be sharp and end in a point.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Circle">
+      <MemberSignature Language="C#" Value="Circle" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.ApplicationGesture Circle = int32(61472)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.Circle" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.ApplicationGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Has no suggested semantic behavior or action. The circle must be drawn in a single stroke without lifting the pen.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Curlicue">
+      <MemberSignature Language="C#" Value="Curlicue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.ApplicationGesture Curlicue = int32(61456)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.Curlicue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.ApplicationGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Has no suggested semantic behavior or action. Start the curlicue on the word you intend to cut.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DoubleCircle">
+      <MemberSignature Language="C#" Value="DoubleCircle" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.ApplicationGesture DoubleCircle = int32(61473)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.DoubleCircle" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.ApplicationGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Has no suggested semantic behavior or action. The two circles must overlap each other and be drawn in a single stroke without lifting the pen.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DoubleCurlicue">
+      <MemberSignature Language="C#" Value="DoubleCurlicue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.ApplicationGesture DoubleCurlicue = int32(61457)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.DoubleCurlicue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.ApplicationGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Has no suggested semantic behavior or action. Start the double-curlicue on the word you intend to copy.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DoubleTap">
+      <MemberSignature Language="C#" Value="DoubleTap" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.ApplicationGesture DoubleTap = int32(61681)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.DoubleTap" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.ApplicationGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Signifies a mouse double-click. The two taps must be made quickly to result in the least amount of slippage and the least duration between taps. In addition, the taps must be as close to each other as possible.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Down">
+      <MemberSignature Language="C#" Value="Down" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.ApplicationGesture Down = int32(61529)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.Down" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.ApplicationGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Has no suggested semantic behavior or action. This gesture must be drawn as a single fast flick in the downward direction.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DownLeft">
+      <MemberSignature Language="C#" Value="DownLeft" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.ApplicationGesture DownLeft = int32(61546)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.DownLeft" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.ApplicationGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Has no suggested semantic behavior or action. This gesture must be drawn in a single stroke starting with the down stroke. The two sides must be as equal in length as possible and at a right angle.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DownLeftLong">
+      <MemberSignature Language="C#" Value="DownLeftLong" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.ApplicationGesture DownLeftLong = int32(61542)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.DownLeftLong" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.ApplicationGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Signifies pressing an ENTER key. This gesture must be drawn in a single stroke starting with the down stroke. The left stroke is about twice as long as the up stroke, and the two strokes must be at a right angle.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DownRight">
+      <MemberSignature Language="C#" Value="DownRight" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.ApplicationGesture DownRight = int32(61547)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.DownRight" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.ApplicationGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Has no suggested semantic behavior or action. This gesture must be drawn in a single stroke starting with the down stroke. The two sides must be as equal in length as possible and at a right angle.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DownRightLong">
+      <MemberSignature Language="C#" Value="DownRightLong" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.ApplicationGesture DownRightLong = int32(61543)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.DownRightLong" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.ApplicationGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Signifies pressing the spacebar. This gesture must be drawn in a single stroke starting with the down stroke. The right stroke must be about twice as long as the up stroke, and the two strokes must be at a right angle.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DownUp">
+      <MemberSignature Language="C#" Value="DownUp" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.ApplicationGesture DownUp = int32(61537)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.DownUp" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.ApplicationGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Has no suggested semantic behavior or action. This gesture must be drawn in a single stroke starting with the down stroke. The two strokes must be as close to each other as possible.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Exclamation">
+      <MemberSignature Language="C#" Value="Exclamation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.ApplicationGesture Exclamation = int32(61604)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.Exclamation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.ApplicationGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Has no suggested semantic behavior or action. The line must be drawn first and then the dot drawn quickly and as close to the line as possible.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Left">
+      <MemberSignature Language="C#" Value="Left" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.ApplicationGesture Left = int32(61530)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.Left" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.ApplicationGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a backspace. This gesture must be drawn as a single fast flick to the left.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LeftDown">
+      <MemberSignature Language="C#" Value="LeftDown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.ApplicationGesture LeftDown = int32(61549)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.LeftDown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.ApplicationGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Has no suggested semantic behavior or action. This gesture must be drawn in a single stroke starting with the left stroke. The two sides are as equal in length as possible and at a right angle.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LeftRight">
+      <MemberSignature Language="C#" Value="LeftRight" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.ApplicationGesture LeftRight = int32(61538)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.LeftRight" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.ApplicationGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Has no suggested semantic behavior or action. This gesture must be drawn in a single stroke starting with the left stroke. The two sides are as equal in length as possible and at a right angle.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LeftUp">
+      <MemberSignature Language="C#" Value="LeftUp" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.ApplicationGesture LeftUp = int32(61548)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.LeftUp" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.ApplicationGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Has no suggested semantic behavior or action. This gesture must be drawn in a single stroke starting with the left stroke. The two sides must be as equal in length as possible and at a right angle.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoGesture">
+      <MemberSignature Language="C#" Value="NoGesture" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.ApplicationGesture NoGesture = int32(61440)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.NoGesture" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.ApplicationGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Recognizes no application-specific gestures.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Right">
+      <MemberSignature Language="C#" Value="Right" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.ApplicationGesture Right = int32(61531)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.Right" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.ApplicationGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Signifies a space. This gesture must be drawn as a single fast flick to the right.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RightDown">
+      <MemberSignature Language="C#" Value="RightDown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.ApplicationGesture RightDown = int32(61551)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.RightDown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.ApplicationGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Has no suggested semantic behavior or action. This gesture must be drawn in a single stroke starting with the right stroke. The two sides must be as equal in length as possible and at a right angle.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RightLeft">
+      <MemberSignature Language="C#" Value="RightLeft" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.ApplicationGesture RightLeft = int32(61539)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.RightLeft" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.ApplicationGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Has no suggested semantic behavior or action. This gesture must be drawn in a single stroke starting with the right stroke. The two strokes must be as close to each other as possible.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RightUp">
+      <MemberSignature Language="C#" Value="RightUp" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.ApplicationGesture RightUp = int32(61550)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.RightUp" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.ApplicationGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Has no suggested semantic behavior or action. This gesture must be drawn in a single stroke starting with the right stroke. The two sides must be as equal in length as possible and at a right angle.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ScratchOut">
+      <MemberSignature Language="C#" Value="ScratchOut" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.ApplicationGesture ScratchOut = int32(61441)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.ScratchOut" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.ApplicationGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Erases content. This gesture must be drawn as a single stroke that has at least three back-and-forth motions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SemicircleLeft">
+      <MemberSignature Language="C#" Value="SemicircleLeft" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.ApplicationGesture SemicircleLeft = int32(61480)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.SemicircleLeft" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.ApplicationGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Has no suggested semantic behavior or action. The semicircle must be drawn from left to right. The two ends of the semicircle should be as horizontally even as possible.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SemicircleRight">
+      <MemberSignature Language="C#" Value="SemicircleRight" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.ApplicationGesture SemicircleRight = int32(61481)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.SemicircleRight" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.ApplicationGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Has no suggested semantic behavior or action. The semicircle must be drawn from right to left. The two ends of the semicircle should be as horizontally even as possible.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Square">
+      <MemberSignature Language="C#" Value="Square" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.ApplicationGesture Square = int32(61443)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.Square" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.ApplicationGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Has no suggested semantic behavior or action. The square can be drawn in one or two strokes. In one stroke, draw the entire square without lifting the pen. In two strokes, draw three sides of the square and use another stroke to draw the remaining side. Do not use more than two strokes to draw the square.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Star">
+      <MemberSignature Language="C#" Value="Star" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.ApplicationGesture Star = int32(61444)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.Star" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.ApplicationGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Has no suggested semantic behavior or action. The star must have exactly five points and be drawn in a single stroke without lifting the pen.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Tap">
+      <MemberSignature Language="C#" Value="Tap" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.ApplicationGesture Tap = int32(61680)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.Tap" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.ApplicationGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Signifies a mouse click. For the least amount of slippage, the tap must be made quickly.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Triangle">
+      <MemberSignature Language="C#" Value="Triangle" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.ApplicationGesture Triangle = int32(61442)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.Triangle" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.ApplicationGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Has no suggested semantic behavior or action. The triangle must be drawn in a single stroke, without lifting the pen.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Up">
+      <MemberSignature Language="C#" Value="Up" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.ApplicationGesture Up = int32(61528)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.Up" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.ApplicationGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Has no suggested semantic behavior or action. This gesture must be drawn as a single fast flick in the upward direction.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UpDown">
+      <MemberSignature Language="C#" Value="UpDown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.ApplicationGesture UpDown = int32(61536)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.UpDown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.ApplicationGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Has no suggested semantic behavior or action. This gesture must be drawn in a single stroke starting with the up stroke. The two strokes must be as close to each other as possible.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UpLeft">
+      <MemberSignature Language="C#" Value="UpLeft" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.ApplicationGesture UpLeft = int32(61544)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.UpLeft" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.ApplicationGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Has no suggested semantic behavior or action. This gesture must be drawn in a single stroke starting with the up stroke. The two sides must be as equal in length as possible and at a right angle.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UpLeftLong">
+      <MemberSignature Language="C#" Value="UpLeftLong" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.ApplicationGesture UpLeftLong = int32(61540)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.UpLeftLong" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.ApplicationGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Has no suggested semantic behavior or action. This gesture must be drawn in a single stroke starting with the up stroke. The left stroke must be about twice as long as the up stroke, and the two strokes must be at a right angle.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UpRight">
+      <MemberSignature Language="C#" Value="UpRight" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.ApplicationGesture UpRight = int32(61545)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.UpRight" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.ApplicationGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Has no suggested semantic behavior or action. This gesture must be drawn in a single stroke starting with the up stroke. The two sides must be as equal in length as possible and at a right angle.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UpRightLong">
+      <MemberSignature Language="C#" Value="UpRightLong" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.ApplicationGesture UpRightLong = int32(61541)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.ApplicationGesture.UpRightLong" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.ApplicationGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Signifies pressing a TAB key. This gesture must be drawn in a single stroke starting with the up stroke. The right stroke must be about twice as long as the up stroke, and the two strokes must be at a right angle.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

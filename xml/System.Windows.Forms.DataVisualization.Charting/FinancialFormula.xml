@@ -1,0 +1,537 @@
+<Type Name="FinancialFormula" FullName="System.Windows.Forms.DataVisualization.Charting.FinancialFormula">
+  <TypeSignature Language="C#" Value="public enum FinancialFormula" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FinancialFormula extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.FinancialFormula" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies a financial formula.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.FinancialFormula> enumeration is used in calls to the `FinancialFormula` methods that are contained in the <xref:System.Windows.Forms.DataVisualization.Charting.DataFormula> class, and specifies the type of financial formula to be used.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AccumulationDistribution">
+      <MemberSignature Language="C#" Value="AccumulationDistribution" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.FinancialFormula AccumulationDistribution = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.AccumulationDistribution" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Accumulation Distribution formula uses a relationship between volume and prices to estimate the strength of price movements; if volume is increased, there is a high probability that prices will go up.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AverageTrueRange">
+      <MemberSignature Language="C#" Value="AverageTrueRange" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.FinancialFormula AverageTrueRange = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.AverageTrueRange" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Average True Range indicator measures commitment and compares the range between the High, Low and Close prices.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BollingerBands">
+      <MemberSignature Language="C#" Value="BollingerBands" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.FinancialFormula BollingerBands = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.BollingerBands" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bollinger Bands indicators are plotted at standard deviation levels above and below a simple moving average.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ChaikinOscillator">
+      <MemberSignature Language="C#" Value="ChaikinOscillator" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.FinancialFormula ChaikinOscillator = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.ChaikinOscillator" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Chaikin Oscillator indicator is the difference between a 3-day exponential moving average and a 10-day exponential moving average applied to the accumulation distribution.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CommodityChannelIndex">
+      <MemberSignature Language="C#" Value="CommodityChannelIndex" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.FinancialFormula CommodityChannelIndex = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.CommodityChannelIndex" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Commodity Channel Index compares prices with their moving averages.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DetrendedPriceOscillator">
+      <MemberSignature Language="C#" Value="DetrendedPriceOscillator" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.FinancialFormula DetrendedPriceOscillator = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.DetrendedPriceOscillator" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Detrended Price Oscillator attempts to remove trends from prices.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EaseOfMovement">
+      <MemberSignature Language="C#" Value="EaseOfMovement" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.FinancialFormula EaseOfMovement = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.EaseOfMovement" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ease of Movement deals with the relationship between volume and price change, and uses volume to indicate how strong a trend is for prices.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Envelopes">
+      <MemberSignature Language="C#" Value="Envelopes" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.FinancialFormula Envelopes = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.Envelopes" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Envelopes are plotted above and below a moving average using a specified percentage as the shift.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ExponentialMovingAverage">
+      <MemberSignature Language="C#" Value="ExponentialMovingAverage" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.FinancialFormula ExponentialMovingAverage = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.ExponentialMovingAverage" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An Exponential Moving Average is an average of data calculated over a period of time where the most recent days have more weight.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Forecasting">
+      <MemberSignature Language="C#" Value="Forecasting" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.FinancialFormula Forecasting = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.Forecasting" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Forecasting predicts future values using historical observations.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MassIndex">
+      <MemberSignature Language="C#" Value="MassIndex" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.FinancialFormula MassIndex = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.MassIndex" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Mass Index is used to predict trend reversal by comparing the difference and range between High and Low prices.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MedianPrice">
+      <MemberSignature Language="C#" Value="MedianPrice" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.FinancialFormula MedianPrice = int32(12)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.MedianPrice" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Median prices are mid-point values of daily prices and can be used as a filter for trend indicators.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MoneyFlow">
+      <MemberSignature Language="C#" Value="MoneyFlow" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.FinancialFormula MoneyFlow = int32(13)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.MoneyFlow" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Money Flow indicator compares upward changes and downward changes of volume-weighted typical prices.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MovingAverage">
+      <MemberSignature Language="C#" Value="MovingAverage" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.FinancialFormula MovingAverage = int32(21)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.MovingAverage" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A Simple Moving Average is an average of data calculated over a period of time. The moving average is the most popular price indicator used in technical analysis, and can be used with any price, for example, Hi, Low, Open and Close, or can be applied to other indicators.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MovingAverageConvergenceDivergence">
+      <MemberSignature Language="C#" Value="MovingAverageConvergenceDivergence" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.FinancialFormula MovingAverageConvergenceDivergence = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.MovingAverageConvergenceDivergence" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Moving Average Convergence/Divergence indicator compares two moving averages of prices and is used with a 9-day Exponential Moving average as a signal that indicates buying and selling moments.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NegativeVolumeIndex">
+      <MemberSignature Language="C#" Value="NegativeVolumeIndex" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.FinancialFormula NegativeVolumeIndex = int32(14)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.NegativeVolumeIndex" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Negative Volume Index should be used with the Positive Volume index; the Negative Volume Index only changes if the volume decreases from the previous day.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OnBalanceVolume">
+      <MemberSignature Language="C#" Value="OnBalanceVolume" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.FinancialFormula OnBalanceVolume = int32(15)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.OnBalanceVolume" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The On Balance Volume indicator measures positive and negative volume flow.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Performance">
+      <MemberSignature Language="C#" Value="Performance" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.FinancialFormula Performance = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.Performance" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Performance indicator compares a current closing price or any other price with the first closing value from the first time period.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PositiveVolumeIndex">
+      <MemberSignature Language="C#" Value="PositiveVolumeIndex" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.FinancialFormula PositiveVolumeIndex = int32(17)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.PositiveVolumeIndex" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Positive Volume Index should be used with the Negative Volume index. The Positive volume index only changes if the volume decreases from the previous day.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PriceVolumeTrend">
+      <MemberSignature Language="C#" Value="PriceVolumeTrend" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.FinancialFormula PriceVolumeTrend = int32(18)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.PriceVolumeTrend" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Price Volume Trend is a cumulative volume total that is calculated using relative changes of the closing price, and should be used with other indicators.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RateOfChange">
+      <MemberSignature Language="C#" Value="RateOfChange" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.FinancialFormula RateOfChange = int32(19)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.RateOfChange" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Rate of Change indicator compares a specified closing price with the current price.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RelativeStrengthIndex">
+      <MemberSignature Language="C#" Value="RelativeStrengthIndex" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.FinancialFormula RelativeStrengthIndex = int32(20)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.RelativeStrengthIndex" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Relative Strength Index is a momentum oscillator that compares upward movements of the closing price with downward movements, and results in values that range from 0 to 100.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StandardDeviation">
+      <MemberSignature Language="C#" Value="StandardDeviation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.FinancialFormula StandardDeviation = int32(22)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.StandardDeviation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Standard Deviation is used to indicate volatility, and measures the difference between values, for example, closing price, and their moving average.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StochasticIndicator">
+      <MemberSignature Language="C#" Value="StochasticIndicator" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.FinancialFormula StochasticIndicator = int32(23)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.StochasticIndicator" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Stochastic Indicator helps to find trend reversal by searching in a period for when the closing prices are close to low prices in an upward trending market and when the closing prices are close to high prices in a downward trending market.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TriangularMovingAverage">
+      <MemberSignature Language="C#" Value="TriangularMovingAverage" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.FinancialFormula TriangularMovingAverage = int32(24)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.TriangularMovingAverage" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A Triangular Moving Average is an average of data calculated over a period of time where the middle portion of data has more weight.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TripleExponentialMovingAverage">
+      <MemberSignature Language="C#" Value="TripleExponentialMovingAverage" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.FinancialFormula TripleExponentialMovingAverage = int32(25)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.TripleExponentialMovingAverage" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Triple Exponential Moving Average is based on a triple moving average of the closing price. Its purpose is to eliminate short cycles. This indicator keeps the closing price in trends that are shorter than the specified period.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TypicalPrice">
+      <MemberSignature Language="C#" Value="TypicalPrice" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.FinancialFormula TypicalPrice = int32(26)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.TypicalPrice" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Typical Price is the average value of daily prices, and can be used as a filter for trend indicators.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="VolatilityChaikins">
+      <MemberSignature Language="C#" Value="VolatilityChaikins" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.FinancialFormula VolatilityChaikins = int32(27)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.VolatilityChaikins" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Volatility Chaikins indicator measures the difference between High and Low prices, and is used to indicate tops or bottoms of the market.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="VolumeOscillator">
+      <MemberSignature Language="C#" Value="VolumeOscillator" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.FinancialFormula VolumeOscillator = int32(28)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.VolumeOscillator" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Volume Oscillator attempts to identify trends in volume by comparing two moving averages: one with a short period and another with a longer period.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WeightedClose">
+      <MemberSignature Language="C#" Value="WeightedClose" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.FinancialFormula WeightedClose = int32(29)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.WeightedClose" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Weighted Close formula calculates the average value of daily prices. The only difference between Typical Price and the Weighted Close is that the closing price has extra weight, and is considered the most important price.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WeightedMovingAverage">
+      <MemberSignature Language="C#" Value="WeightedMovingAverage" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.FinancialFormula WeightedMovingAverage = int32(30)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.WeightedMovingAverage" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Weighted Moving Average is an average of data that is calculated over a period of time, where greater weight is attached to the most recent data.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WilliamsR">
+      <MemberSignature Language="C#" Value="WilliamsR" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.FinancialFormula WilliamsR = int32(31)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.FinancialFormula.WilliamsR" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.FinancialFormula</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Williams %R is a momentum indicator, and is used to measure overbought and oversold levels.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

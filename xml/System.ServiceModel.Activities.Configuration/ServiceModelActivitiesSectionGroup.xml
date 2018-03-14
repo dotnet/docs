@@ -1,0 +1,74 @@
+<Type Name="ServiceModelActivitiesSectionGroup" FullName="System.ServiceModel.Activities.Configuration.ServiceModelActivitiesSectionGroup">
+  <TypeSignature Language="C#" Value="public sealed class ServiceModelActivitiesSectionGroup : System.Configuration.ConfigurationSectionGroup" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ServiceModelActivitiesSectionGroup extends System.Configuration.ConfigurationSectionGroup" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.Configuration.ServiceModelActivitiesSectionGroup" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationSectionGroup</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a configuration section that contains workflow hosting options.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServiceModelActivitiesSectionGroup ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Configuration.ServiceModelActivitiesSectionGroup.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.Configuration.ServiceModelActivitiesSectionGroup" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSectionGroup">
+      <MemberSignature Language="C#" Value="public static System.ServiceModel.Activities.Configuration.ServiceModelActivitiesSectionGroup GetSectionGroup (System.Configuration.Configuration config);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Activities.Configuration.ServiceModelActivitiesSectionGroup GetSectionGroup(class System.Configuration.Configuration config) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Configuration.ServiceModelActivitiesSectionGroup.GetSectionGroup(System.Configuration.Configuration)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Activities.Configuration.ServiceModelActivitiesSectionGroup</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="config" Type="System.Configuration.Configuration" />
+      </Parameters>
+      <Docs>
+        <param name="config">The configuration from which to get the <see cref="T:System.ServiceModel.Activities.Configuration.ServiceModelActivitiesSectionGroup" />.</param>
+        <summary>Gets or sets the <see cref="T:System.ServiceModel.Activities.Configuration.ServiceModelActivitiesSectionGroup" /> from the given configuration.</summary>
+        <returns>The <see cref="T:System.ServiceModel.Activities.Configuration.ServiceModelActivitiesSectionGroup" /> from the given configuration.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkflowHostingOptionsSection">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Activities.Configuration.WorkflowHostingOptionsSection WorkflowHostingOptionsSection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Activities.Configuration.WorkflowHostingOptionsSection WorkflowHostingOptionsSection" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Configuration.ServiceModelActivitiesSectionGroup.WorkflowHostingOptionsSection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Activities.Configuration.WorkflowHostingOptionsSection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.ServiceModel.Activities.Configuration.WorkflowHostingOptionsSection" />.</summary>
+        <value>The workflow hosting options section.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

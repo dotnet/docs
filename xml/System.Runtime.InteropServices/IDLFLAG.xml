@@ -1,0 +1,112 @@
+<Type Name="IDLFLAG" FullName="System.Runtime.InteropServices.IDLFLAG">
+  <TypeSignature Language="C#" Value="public enum IDLFLAG" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed IDLFLAG extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.IDLFLAG" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Obsolete</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Use <see cref="T:System.Runtime.InteropServices.ComTypes.IDLFLAG" /> instead.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="IDLFLAG_FIN">
+      <MemberSignature Language="C#" Value="IDLFLAG_FIN" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.IDLFLAG IDLFLAG_FIN = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.IDLFLAG.IDLFLAG_FIN" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.IDLFLAG</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The parameter passes information from the caller to the callee.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IDLFLAG_FLCID">
+      <MemberSignature Language="C#" Value="IDLFLAG_FLCID" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.IDLFLAG IDLFLAG_FLCID = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.IDLFLAG.IDLFLAG_FLCID" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.IDLFLAG</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The parameter is the local identifier of a client application.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IDLFLAG_FOUT">
+      <MemberSignature Language="C#" Value="IDLFLAG_FOUT" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.IDLFLAG IDLFLAG_FOUT = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.IDLFLAG.IDLFLAG_FOUT" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.IDLFLAG</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The parameter returns information from the callee to the caller.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IDLFLAG_FRETVAL">
+      <MemberSignature Language="C#" Value="IDLFLAG_FRETVAL" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.IDLFLAG IDLFLAG_FRETVAL = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.IDLFLAG.IDLFLAG_FRETVAL" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.IDLFLAG</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The parameter is the return value of the member.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IDLFLAG_NONE">
+      <MemberSignature Language="C#" Value="IDLFLAG_NONE" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.IDLFLAG IDLFLAG_NONE = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.IDLFLAG.IDLFLAG_NONE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.IDLFLAG</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Whether the parameter passes or receives information is unspecified.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

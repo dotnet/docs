@@ -1,0 +1,48 @@
+<Type Name="IPartialSessionState" FullName="System.Web.SessionState.IPartialSessionState">
+  <TypeSignature Language="C#" Value="public interface IPartialSessionState" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPartialSessionState" />
+  <TypeSignature Language="DocId" Value="T:System.Web.SessionState.IPartialSessionState" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>When implemented in a type, returns a list of zero or more session keys that indicate to a session-state provider which session-state items have to be retrieved.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a type that implements this interface returns a non-null generic list of strings in the <xref:System.Web.SessionState.IPartialSessionState.PartialSessionStateKeys%2A> property, the list indicates to a session-state provider that the provider should retrieve only the session-state values that are specified in the list. If the type returns a `null` value for the <xref:System.Web.SessionState.IPartialSessionState.PartialSessionStateKeys%2A> property, a session-state provider should get all session-state values.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="PartialSessionStateKeys">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;string&gt; PartialSessionStateKeys { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;string&gt; PartialSessionStateKeys" />
+      <MemberSignature Language="DocId" Value="P:System.Web.SessionState.IPartialSessionState.PartialSessionStateKeys" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a list of keys that are associated with session-state values.</summary>
+        <value>A generic list of strings that serve as keys for session-state values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A `null` return value indicates to a session-state provider that the provider should return all session state values.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,290 @@
+<Type Name="ClassicBorderStyle" FullName="Microsoft.Windows.Themes.ClassicBorderStyle">
+  <TypeSignature Language="C#" Value="public enum ClassicBorderStyle" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ClassicBorderStyle extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Windows.Themes.ClassicBorderStyle" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework.Classic</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifics the type of <see cref="T:System.Windows.Controls.Border" /> to draw.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AltPressed">
+      <MemberSignature Language="C#" Value="AltPressed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Windows.Themes.ClassicBorderStyle AltPressed = int32(15)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ClassicBorderStyle.AltPressed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Windows.Themes.ClassicBorderStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used for the <see cref="T:System.Windows.Controls.Primitives.Thumb" /> on a <see cref="T:System.Windows.Controls.Primitives.ScrollBar" /> in their pressed state.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AltRaised">
+      <MemberSignature Language="C#" Value="AltRaised" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Windows.Themes.ClassicBorderStyle AltRaised = int32(14)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ClassicBorderStyle.AltRaised" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Windows.Themes.ClassicBorderStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used for the <see cref="T:System.Windows.Controls.Primitives.Thumb" /> on a <see cref="T:System.Windows.Controls.Primitives.ScrollBar" /> in a normal state.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Etched">
+      <MemberSignature Language="C#" Value="Etched" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Windows.Themes.ClassicBorderStyle Etched = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ClassicBorderStyle.Etched" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Windows.Themes.ClassicBorderStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used for <see cref="T:System.Windows.Controls.GroupBox" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HorizontalLine">
+      <MemberSignature Language="C#" Value="HorizontalLine" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Windows.Themes.ClassicBorderStyle HorizontalLine = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ClassicBorderStyle.HorizontalLine" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Windows.Themes.ClassicBorderStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used for horizontal <see cref="T:System.Windows.Controls.Separator" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Windows.Themes.ClassicBorderStyle None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ClassicBorderStyle.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Windows.Themes.ClassicBorderStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No border.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RadioButton">
+      <MemberSignature Language="C#" Value="RadioButton" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Windows.Themes.ClassicBorderStyle RadioButton = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ClassicBorderStyle.RadioButton" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Windows.Themes.ClassicBorderStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.Windows.Controls.RadioButton" /> border.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Raised">
+      <MemberSignature Language="C#" Value="Raised" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Windows.Themes.ClassicBorderStyle Raised = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ClassicBorderStyle.Raised" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Windows.Themes.ClassicBorderStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used for <see cref="T:System.Windows.Controls.Button" /> elements in their normal state.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RaisedFocused">
+      <MemberSignature Language="C#" Value="RaisedFocused" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Windows.Themes.ClassicBorderStyle RaisedFocused = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ClassicBorderStyle.RaisedFocused" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Windows.Themes.ClassicBorderStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used for <see cref="T:System.Windows.Controls.Button" /> elements that have keyboard focus or are the default <see cref="T:System.Windows.Controls.Button" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RaisedPressed">
+      <MemberSignature Language="C#" Value="RaisedPressed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Windows.Themes.ClassicBorderStyle RaisedPressed = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ClassicBorderStyle.RaisedPressed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Windows.Themes.ClassicBorderStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used for <see cref="T:System.Windows.Controls.Button" /> elements in their pressed state.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Sunken">
+      <MemberSignature Language="C#" Value="Sunken" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Windows.Themes.ClassicBorderStyle Sunken = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ClassicBorderStyle.Sunken" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Windows.Themes.ClassicBorderStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used for <see cref="T:System.Windows.Controls.ListBox" />, <see cref="T:System.Windows.Controls.TextBox" />, and <see cref="T:System.Windows.Controls.CheckBox" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TabBottom">
+      <MemberSignature Language="C#" Value="TabBottom" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Windows.Themes.ClassicBorderStyle TabBottom = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ClassicBorderStyle.TabBottom" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Windows.Themes.ClassicBorderStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used for <see cref="T:System.Windows.Controls.TabItem" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TabLeft">
+      <MemberSignature Language="C#" Value="TabLeft" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Windows.Themes.ClassicBorderStyle TabLeft = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ClassicBorderStyle.TabLeft" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Windows.Themes.ClassicBorderStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used for <see cref="T:System.Windows.Controls.TabItem" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TabRight">
+      <MemberSignature Language="C#" Value="TabRight" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Windows.Themes.ClassicBorderStyle TabRight = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ClassicBorderStyle.TabRight" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Windows.Themes.ClassicBorderStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used for <see cref="T:System.Windows.Controls.TabItem" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TabTop">
+      <MemberSignature Language="C#" Value="TabTop" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Windows.Themes.ClassicBorderStyle TabTop = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ClassicBorderStyle.TabTop" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Windows.Themes.ClassicBorderStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used for <see cref="T:System.Windows.Controls.TabItem" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ThinPressed">
+      <MemberSignature Language="C#" Value="ThinPressed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Windows.Themes.ClassicBorderStyle ThinPressed = int32(13)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ClassicBorderStyle.ThinPressed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Windows.Themes.ClassicBorderStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used for top level <see cref="T:System.Windows.Controls.MenuItem" /> in their pressed state.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ThinRaised">
+      <MemberSignature Language="C#" Value="ThinRaised" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Windows.Themes.ClassicBorderStyle ThinRaised = int32(12)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ClassicBorderStyle.ThinRaised" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Windows.Themes.ClassicBorderStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used for top level <see cref="T:System.Windows.Controls.MenuItem" /> when the mouse or other input device is hovering over them.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="VerticalLine">
+      <MemberSignature Language="C#" Value="VerticalLine" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Windows.Themes.ClassicBorderStyle VerticalLine = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ClassicBorderStyle.VerticalLine" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Windows.Themes.ClassicBorderStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used for vertical <see cref="T:System.Windows.Controls.Separator" />.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

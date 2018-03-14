@@ -1,0 +1,25 @@
+<Type Name="ToolStripArrowRenderEventHandler" FullName="System.Windows.Forms.ToolStripArrowRenderEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void ToolStripArrowRenderEventHandler(object sender, ToolStripArrowRenderEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ToolStripArrowRenderEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripArrowRenderEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.Forms.ToolStripArrowRenderEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event, the <see cref="T:System.Windows.Forms.ToolStripRenderer" />.</param>
+    <param name="e">A <see cref="T:System.Windows.Forms.ToolStripArrowRenderEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Windows.Forms.ToolStripRenderer.RenderArrow" /> event of a <see cref="T:System.Windows.Forms.ToolStripRenderer" />. This class cannot be inherited.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

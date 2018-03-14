@@ -1,0 +1,50 @@
+<Type Name="RibbonSplitButtonLabelPosition" FullName="System.Windows.Controls.Ribbon.RibbonSplitButtonLabelPosition">
+  <TypeSignature Language="C#" Value="public enum RibbonSplitButtonLabelPosition" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RibbonSplitButtonLabelPosition extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonSplitButtonLabelPosition" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Provides values that indicate the position of the label of a <see cref="T:System.Windows.Controls.Ribbon.RibbonSplitButton" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DropDown">
+      <MemberSignature Language="C#" Value="DropDown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.Ribbon.RibbonSplitButtonLabelPosition DropDown = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonSplitButtonLabelPosition.DropDown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.Ribbon.RibbonSplitButtonLabelPosition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the label should be positioned in the drop-down section of the <see cref="T:System.Windows.Controls.Ribbon.RibbonSplitButton" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Header">
+      <MemberSignature Language="C#" Value="Header" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.Ribbon.RibbonSplitButtonLabelPosition Header = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonSplitButtonLabelPosition.Header" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.Ribbon.RibbonSplitButtonLabelPosition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the label should be positioned in the header section of the <see cref="T:System.Windows.Controls.Ribbon.RibbonSplitButton" />.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

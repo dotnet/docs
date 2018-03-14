@@ -1,0 +1,68 @@
+<StackPanel
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="ControlProps.Pane1"
+>
+<StackPanel.Resources>
+   <!--<SnippetAdditionalControlProps16>-->
+   <ControlTemplate x:Key="template1">
+     <TextBlock Text="Control Template" FontSize="12" FontWeight="Bold" TextWrapping="Wrap">
+     </TextBlock>  
+   </ControlTemplate>
+   <!--</SnippetAdditionalControlProps16>-->
+</StackPanel.Resources>
+    
+    <TextBlock FontSize = "24.0">Control Properties</TextBlock>
+    <TextBlock FontSize = "12.0">Click the buttons to see the properties change.</TextBlock>
+    <!--<SnippetControlEvents11>-->
+    <Button Name="btn" Background="Red" 
+            MouseDoubleClick="ChangeBackground">
+      Background
+    </Button>
+    <!--</SnippetControlEvents11>-->
+
+    <!--<SnippetControlEvents12>-->
+    <Button Name="btn1" Foreground="Black" 
+            PreviewMouseDoubleClick="ChangeForeground">
+      Foreground
+    </Button>
+    <!--</SnippetControlEvents12>-->
+
+    <!--<SnippetAdditionalControlProps17>-->
+
+    <!--<SnippetAdditionalControlProps11>-->
+    <Button Name="btn9" BorderThickness="5.0" 
+            Click="ChangeBorderThickness" TabIndex="2">
+      BorderThickness
+    </Button>
+    <!--</SnippetAdditionalControlProps11>-->
+
+    <!--<SnippetAdditionalControlProps12>-->
+    <Button Name="btn10" FontStretch ="Condensed" 
+            Click="ChangeFontStretch" TabIndex="3">
+      FontStretch
+    </Button>
+    <!--</SnippetAdditionalControlProps12>-->
+
+    <!--<SnippetAdditionalControlProps13>-->
+    <Button Name="btn11" Padding = "5" 
+            Click="ChangePadding" TabIndex="1">
+      Padding
+    </Button>
+    <!--</SnippetAdditionalControlProps13>-->
+
+    <!--</SnippetAdditionalControlProps17>-->
+
+    <!--<SnippetAdditionalControlProps14>-->
+    <Button Name="btn12">
+          <Control Template="{StaticResource template1}"/>
+    </Button>
+    <!--</SnippetAdditionalControlProps14>-->
+
+    <!--<SnippetAdditionalControlProps15>-->
+    <Button Name="btn13" IsTabStop="true" Click="IsTabStop">
+      IsTabStop
+    </Button>
+    <!--</SnippetAdditionalControlProps15>-->
+
+ </StackPanel>

@@ -1,0 +1,25 @@
+<Type Name="HwndDpiChangedEventHandler" FullName="System.Windows.HwndDpiChangedEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void HwndDpiChangedEventHandler(object sender, HwndDpiChangedEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HwndDpiChangedEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.HwndDpiChangedEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.HwndDpiChangedEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The sender object.</param>
+    <param name="e">The HwndDpiChangedEventArgs object.</param>
+    <summary>The delegate to use for handlers that receive DPI change notification.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

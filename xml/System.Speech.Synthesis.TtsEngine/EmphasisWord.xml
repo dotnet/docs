@@ -1,0 +1,111 @@
+<Type Name="EmphasisWord" FullName="System.Speech.Synthesis.TtsEngine.EmphasisWord">
+  <TypeSignature Language="C#" Value="public enum EmphasisWord" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EmphasisWord extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.TtsEngine.EmphasisWord" />
+  <AssemblyInfo>
+    <AssemblyName>System.Speech</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Enumerates the values of <see langword="EmphasisWord" /> for a specific <see langword="TextFragment" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The word emphasis is set for <xref:System.Speech.Synthesis.TtsEngine.TextFragment> instances through the <xref:System.Speech.Synthesis.TtsEngine.FragmentState.Emphasis%2A> property on the <xref:System.Speech.Synthesis.TtsEngine.FragmentState> object returned by the <xref:System.Speech.Synthesis.TtsEngine.TextFragment.State%2A> property on an instance of <xref:System.Speech.Synthesis.TtsEngine.TextFragment>.  
+  
+ Each synthetic speech engine is free to determine how to render emphasis; the nature of emphasis differs between languages, dialects, genders, or voices.  
+  
+ Both <xref:System.Speech.Synthesis.TtsEngine.EmphasisWord> and <xref:System.Speech.Synthesis.TtsEngine.EmphasisBreak> may be used when setting or getting the <xref:System.Speech.Synthesis.TtsEngine.FragmentState.Emphasis%2A> on a <xref:System.Speech.Synthesis.TtsEngine.FragmentState> instance.  
+  
+ The two values may be distinguished by the fact that the actual values of <xref:System.Speech.Synthesis.TtsEngine.EmphasisWord> are greater than or equal to zero, and the values of <xref:System.Speech.Synthesis.TtsEngine.EmphasisBreak> are all less than zero; and by using the value of <xref:System.Speech.Synthesis.TtsEngine.TtsEngineAction> returned by the <xref:System.Speech.Synthesis.TtsEngine.FragmentState.Action%2A> property on the <xref:System.Speech.Synthesis.TtsEngine.FragmentState> object returned by the <xref:System.Speech.Synthesis.TtsEngine.TextFragment.State%2A> property on an instance. From more information, see <xref:System.Speech.Synthesis.TtsEngine.FragmentState.Action%2A>,and <xref:System.Speech.Synthesis.TtsEngine.FragmentState.Emphasis%2A>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.TtsEngine.EmphasisWord Default = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.EmphasisWord.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Synthesis.TtsEngine.EmphasisWord</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates an engine-specific default level of emphasis.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Moderate">
+      <MemberSignature Language="C#" Value="Moderate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.TtsEngine.EmphasisWord Moderate = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.EmphasisWord.Moderate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Synthesis.TtsEngine.EmphasisWord</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates moderate emphasis.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.TtsEngine.EmphasisWord None = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.EmphasisWord.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Synthesis.TtsEngine.EmphasisWord</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates no emphasis specified.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Reduced">
+      <MemberSignature Language="C#" Value="Reduced" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.TtsEngine.EmphasisWord Reduced = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.EmphasisWord.Reduced" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Synthesis.TtsEngine.EmphasisWord</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates reduced emphasis.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Strong">
+      <MemberSignature Language="C#" Value="Strong" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.TtsEngine.EmphasisWord Strong = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.EmphasisWord.Strong" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Synthesis.TtsEngine.EmphasisWord</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates strong emphasis.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

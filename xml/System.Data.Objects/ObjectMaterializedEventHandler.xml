@@ -1,0 +1,25 @@
+<Type Name="ObjectMaterializedEventHandler" FullName="System.Data.Objects.ObjectMaterializedEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void ObjectMaterializedEventHandler(object sender, ObjectMaterializedEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ObjectMaterializedEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Objects.ObjectMaterializedEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Data.Objects.ObjectMaterializedEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The <see cref="T:System.Data.Objects.ObjectContext" /> instance that triggered the event.</param>
+    <param name="e">An <see cref="T:System.Data.Objects.ObjectMaterializedEventArgs" /> object that contains the event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Data.Objects.ObjectContext.ObjectMaterialized" /> event of the <see cref="T:System.Data.Objects.ObjectContext" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

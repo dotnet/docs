@@ -1,0 +1,119 @@
+<Type Name="ResourcePropertyKind" FullName="System.Data.Services.Providers.ResourcePropertyKind">
+  <TypeSignature Language="C#" Value="public enum ResourcePropertyKind" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ResourcePropertyKind extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Services.Providers.ResourcePropertyKind" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Enumeration for the kinds of properties that a resource can have.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ComplexType">
+      <MemberSignature Language="C#" Value="ComplexType" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.Providers.ResourcePropertyKind ComplexType = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.Providers.ResourcePropertyKind.ComplexType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Providers.ResourcePropertyKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Complex or compound property.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ETag">
+      <MemberSignature Language="C#" Value="ETag" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.Providers.ResourcePropertyKind ETag = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.Providers.ResourcePropertyKind.ETag" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Providers.ResourcePropertyKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An <c>ETag</c> property.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Key">
+      <MemberSignature Language="C#" Value="Key" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.Providers.ResourcePropertyKind Key = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.Providers.ResourcePropertyKind.Key" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Providers.ResourcePropertyKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A property that is part of the key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Primitive">
+      <MemberSignature Language="C#" Value="Primitive" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.Providers.ResourcePropertyKind Primitive = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.Providers.ResourcePropertyKind.Primitive" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Providers.ResourcePropertyKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A primitive type property.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ResourceReference">
+      <MemberSignature Language="C#" Value="ResourceReference" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.Providers.ResourcePropertyKind ResourceReference = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.Providers.ResourcePropertyKind.ResourceReference" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Providers.ResourcePropertyKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A reference to another resource.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ResourceSetReference">
+      <MemberSignature Language="C#" Value="ResourceSetReference" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.Providers.ResourcePropertyKind ResourceSetReference = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.Providers.ResourcePropertyKind.ResourceSetReference" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Providers.ResourcePropertyKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A reference to a resource set.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

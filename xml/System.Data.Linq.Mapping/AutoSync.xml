@@ -1,0 +1,98 @@
+<Type Name="AutoSync" FullName="System.Data.Linq.Mapping.AutoSync">
+  <TypeSignature Language="C#" Value="public enum AutoSync" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AutoSync extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Linq.Mapping.AutoSync" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Linq</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Instructs the runtime how to retrieve the value after an insert or update operation.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Always">
+      <MemberSignature Language="C#" Value="Always" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Linq.Mapping.AutoSync Always = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Linq.Mapping.AutoSync.Always" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Linq.Mapping.AutoSync</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Always returns the value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Linq.Mapping.AutoSync Default = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Linq.Mapping.AutoSync.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Linq.Mapping.AutoSync</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Automatically selects the value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Never">
+      <MemberSignature Language="C#" Value="Never" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Linq.Mapping.AutoSync Never = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Linq.Mapping.AutoSync.Never" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Linq.Mapping.AutoSync</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Never returns the value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OnInsert">
+      <MemberSignature Language="C#" Value="OnInsert" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Linq.Mapping.AutoSync OnInsert = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Linq.Mapping.AutoSync.OnInsert" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Linq.Mapping.AutoSync</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the value only after an insert operation.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OnUpdate">
+      <MemberSignature Language="C#" Value="OnUpdate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Linq.Mapping.AutoSync OnUpdate = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Linq.Mapping.AutoSync.OnUpdate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Linq.Mapping.AutoSync</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the value only after an update operation.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

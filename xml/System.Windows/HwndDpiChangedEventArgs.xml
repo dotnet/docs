@@ -1,0 +1,73 @@
+<Type Name="HwndDpiChangedEventArgs" FullName="System.Windows.HwndDpiChangedEventArgs">
+  <TypeSignature Language="C#" Value="public sealed class HwndDpiChangedEventArgs : System.ComponentModel.HandledEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HwndDpiChangedEventArgs extends System.ComponentModel.HandledEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.HwndDpiChangedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.HandledEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a type of HandledEventArgs that     is relevant to a DpiChanged event.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="NewDpi">
+      <MemberSignature Language="C#" Value="public System.Windows.DpiScale NewDpi { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.DpiScale NewDpi" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.HwndDpiChangedEventArgs.NewDpi" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DpiScale</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the scale information after a DPI change.</summary>
+        <value>The new DPI scale information.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OldDpi">
+      <MemberSignature Language="C#" Value="public System.Windows.DpiScale OldDpi { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.DpiScale OldDpi" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.HwndDpiChangedEventArgs.OldDpi" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DpiScale</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the DPI cale information before a DPI change.</summary>
+        <value>Information about the previous DPI scale.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuggestedRect">
+      <MemberSignature Language="C#" Value="public System.Windows.Rect SuggestedRect { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Rect SuggestedRect" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.HwndDpiChangedEventArgs.SuggestedRect" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Rect</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Provides the size and position of the suggested window, scaled for the new DPI.</summary>
+        <value>A Rect representing the size and position of the window.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -73,7 +73,7 @@ C# provides many operators, which are symbols that specify which operations (mat
   
  [-x](../../../csharp/language-reference/operators/subtraction-operator.md) – numeric negation.  
   
- [!x](../../../csharp/language-reference/operators/logical-negation-operator.md) – logical negation.  
+ [\!x](../../../csharp/language-reference/operators/logical-negation-operator.md) – logical negation.  
   
  [~x](../../../csharp/language-reference/operators/bitwise-complement-operator.md) – bitwise complement.  
   

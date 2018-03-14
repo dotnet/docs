@@ -44,7 +44,7 @@ F# is about productivity at its heart. The tooling support for F# is ubiquitous 
 
 [Get Started with F# in Visual Studio Code](get-started/get-started-vscode.md) if you want a lightweight, cross-platform, and feature-packed IDE experience.
 
-[Get started with F# with the .NET Core CLI](get-started/get-started-command-line.md) if you just want a great set of command-line tools.
+[Get started with F# with the .NET Core CLI](get-started/get-started-command-line.md) if you want to use command-line tools.
 
 ## References
 
@@ -54,17 +54,17 @@ F# is about productivity at its heart. The tooling support for F# is ubiquitous 
 
 ## Additional guides
 
-[F# for Fun and Profit](https://swlaschin.gitbooks.io/fsharpforfunandprofit/content/) is a comprehensive and very detailed book on learning F#. Its contents and author are beloved by the F# community.
+[F# for Fun and Profit](https://swlaschin.gitbooks.io/fsharpforfunandprofit/content/) is a comprehensive and very detailed book on learning F#. Its contents and author are beloved by the F# community. The target audience is primarily developers with an object oriented programming background.
 
-[F# Programming Wikibook](https://en.wikibooks.org/wiki/F_Sharp_Programming) is a wikibook about learning F#. It is also a product of the F# community.
+[F# Programming Wikibook](https://en.wikibooks.org/wiki/F_Sharp_Programming) is a wikibook about learning F#. It is also a product of the F# community. The target audience is people who are new to F#, with a little bit of object oriented programming background.
 
 ## Learn F# through videos
 
-[F# tutorial on YouTube](https://www.youtube.com/watch?v=c7eNDJN758U) is a great introduction to F# using Visual Studio, showing lots of great examples over the course of 1.5 hours.
+[F# tutorial on YouTube](https://www.youtube.com/watch?v=c7eNDJN758U) is a great introduction to F# using Visual Studio, showing lots of great examples over the course of 1.5 hours. The target audience is Visual Studio developers who are new to F#.
 
-[Introduction to Programming with F#](https://www.youtube.com/watch?v=Teak30_pXHk&list=PLEoMzSkcN8oNiJ67Hd7oRGgD1d4YBxYGC) is a great video series that uses Visual Studio Code as the main editor. The video series starts from nothing and ends with building a text-based RPG video game.
+[Introduction to Programming with F#](https://www.youtube.com/watch?v=Teak30_pXHk&list=PLEoMzSkcN8oNiJ67Hd7oRGgD1d4YBxYGC) is a great video series that uses Visual Studio Code as the main editor. The video series starts from nothing and ends with building a text-based RPG video game. The target audience is developers who prefer Visual Studio Code (or a lightweight IDE) and are new to F#.
 
-[What's New in Visual Studio 2017 for F# For Developers](https://www.linkedin.com/learning/what-s-new-in-visual-studio-2017-for-f-sharp-for-developers) is a video course that shows some of the newer features for F# in Visual Studio 2017.
+[What's New in Visual Studio 2017 for F# For Developers](https://www.linkedin.com/learning/what-s-new-in-visual-studio-2017-for-f-sharp-for-developers) is a video course that shows some of the newer features for F# in Visual Studio 2017. The target audience is Visual Studio developers who are new to F#.
 
 ## Other useful resources
 

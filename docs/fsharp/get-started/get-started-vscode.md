@@ -14,11 +14,11 @@ ms.assetid: 49775139-082e-442f-b5a2-dd402399b5d2
 
 # Get Started with F# in Visual Studio Code
 
-You can write F# in [Visual Studio Code](https://code.visualstudio.com) with the [Ionide plugin](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp), to get a great cross-platform, lightweight IDE experience with IntelliSense and basic code refactorings.  Visit [Ionide.io](http://ionide.io) to learn more about the plugin suite.
+You can write F# in [Visual Studio Code](https://code.visualstudio.com) with the [Ionide plugin](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp), to get a great cross-platform, lightweight IDE (Integrade Development Enivronment) experience with IntelliSense and basic code refactorings.  Visit [Ionide.io](http://ionide.io) to learn more about the plugin suite.
 
 ## Prerequisites
 
-You must have [git installed](https://git-scm.com/download) and available on your PATH to make use of project templates in Ionide.  You can verify that it is installed correctly by typing `git` at a command prompt and pressing **Enter**.
+You must have [git installed](https://git-scm.com/download) and available on your PATH to make use of project templates in Ionide.  You can verify that it is installed correctly by typing `git --version` at a command prompt and pressing **Enter**.
 
 ### [macOS](#tab/macos)
 
@@ -28,30 +28,30 @@ Ionide uses [Mono](http://www.mono-project.com).  The easiest way to install Mon
 brew install mono
 ```
 
-You must also install the [.NET Core SDK](https://www.microsoft.com/net/download/macos).
+You must also install the [.NET Core SDK](https://www.microsoft.com/net/download).
 
 ### [Linux](#tab/linux)
 
-On Linux, Ionide also uses [Mono](http://www.mono-project.com).  If you're on Debian or Ubuntu, you can use the following:
+On Linux, Ionide also uses [Mono](https://www.mono-project.com). If you're on Debian or Ubuntu, you can use the following:
 
 ```
 sudo apt-get update
 sudo apt-get install mono-complete fsharp
 ```
 
-You must also install the [.NET Core SDK](https://www.microsoft.com/net/download/linux).
+You must also install the [.NET Core SDK](https://www.microsoft.com/net/download).
 
 ### [Windows](#tab/windows)
 
-If you're on Windows, you must [install Visual Studio with F# support](get-started-visual-studio.md#installing-f).  This installs all the necessary components to write, compile, and execute F# code.
+If you're on Windows, you must [install Visual Studio with F# support](get-started-visual-studio.md#installing-f). This installs all the necessary components to write, compile, and execute F# code.
 
-You must also install the [.NET Core SDK](https://www.microsoft.com/net/download/windows/).
+You must also install the [.NET Core SDK](https://www.microsoft.com/net/download/).
 
 ---
 
 ## Installing Visual Studio Code and the Ionide plugin
 
-You can install Visual Studio Code from the [code.visualstudio.com](https://code.visualstudio.com) website.  After that, there are two ways to find the Ionide plugin:
+You can install Visual Studio Code from the [code.visualstudio.com](https://code.visualstudio.com) website. After that, there are two ways to find the Ionide plugin:
 
 1. Use the Command Palette (Ctrl+Shift+P on Windows, ⌘+Shift+P on macOS, Ctrl+Shift+P on Linux) and type the following:
 
@@ -63,7 +63,7 @@ You can install Visual Studio Code from the [code.visualstudio.com](https://code
 
     ![](media/getting-started-vscode/vscode-ext.png)
 
-The only plugin required for F# support in Visual Studio Code is [Ionide-fsharp](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp).  However, you can also install [Ionide-FAKE](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-FAKE) and to get [FAKE](http://fsharp.github.io/FAKE/) support and [Ionide-Paket](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-Paket) to get [Paket](https://fsprojects.github.io/Paket/) support.  FAKE and Paket are additonal F# community tools for building projects and managing dependencies, respectively.
+The only plugin required for F# support in Visual Studio Code is [Ionide-fsharp](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp). However, you can also install [Ionide-FAKE](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-FAKE) and to get [FAKE](https://fsharp.github.io/FAKE/) support and [Ionide-Paket](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-Paket) to get [Paket](https://fsprojects.github.io/Paket/) support. FAKE and Paket are additonal F# community tools for building projects and managing dependencies, respectively.
 
 ## Creating your first project with Ionide
 
@@ -105,8 +105,8 @@ If you followed the previous step steps, you should get the Visual Studio Code W
 This template generates a few things you'll find useful:
 
 1. The F# project itself, underneath the `ClassLibraryDemo` folder.
-2. The correct directory structure for adding packages via [`Paket`](http://fsprojects.github.io/Paket/).
-3. A cross-platform build script with [`FAKE`](http://fsharp.github.io/FAKE/).
+2. The correct directory structure for adding packages via [`Paket`](https://fsprojects.github.io/Paket/).
+3. A cross-platform build script with [`FAKE`](https://fsharp.github.io/FAKE/).
 4. The `paket.exe` executable which can fetch packages and resolve dependencies for you.
 5. A `.gitignore` file if you wish to add this project to Git-based source control.
 

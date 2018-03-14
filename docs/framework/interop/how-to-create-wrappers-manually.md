@@ -3,7 +3,6 @@ title: "How to: Create Wrappers Manually"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
-ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
@@ -12,7 +11,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "wrappers, creating manually"
 ms.assetid: cc2a70d8-6a58-4071-a8cf-ce28c018c09b
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
@@ -38,7 +36,7 @@ If you decide to declare COM types manually in managed source code, the best pla
   
 3.  When the declarations are complete, compile the file as you compile any other managed source code.  
   
-4.  As with the types imported with Tlbimp.exe, some require additional information, which you can add directly to your code. For details, see [How to: Edit Interop Assemblies](http://msdn.microsoft.com/library/16aacb20-2269-42bf-a812-b6a7df17e277).  
+4.  As with the types imported with Tlbimp.exe, some require additional information, which you can add directly to your code. For details, see [How to: Edit Interop Assemblies](https://msdn.microsoft.com/library/16aacb20-2269-42bf-a812-b6a7df17e277(v=vs.100)).  
   
 ## Example  
  The following code shows an example of the `ISATest` interface and `SATest` class in IDL and the corresponding types in C# source code.  

@@ -38,7 +38,7 @@ F# is about productivity at its heart. The tooling support for F# is ubiquitous 
 
 [Tour of F#](tour.md) gives an overview of major language features with lots of code samples. This is recommended if you are new to F# and want to get a feel for how the language works.
 
-[Get started with F# in Visual Studio](get-started/get-started-visual-studio.md) if you're on Windows and want the full Visual Studio IDE experience.
+[Get started with F# in Visual Studio](get-started/get-started-visual-studio.md) if you're on Windows and want the full Visual Studio IDE (Integraded Development Environment) experience.
 
 [Get started with F# in Visual Studio for Mac](get-started/get-started-with-visual-studio-for-mac.md) if you're on macOS and want to use a Visual Studio IDE.
 
@@ -78,4 +78,4 @@ Although Microsoft is the primary developer of the F# language and its tools in 
 
 The mission of the F# Software Foundation is to promote, protect, and advance the F# programming language, and to support and facilitate the growth of a diverse and international community of F# programmers.
 
-To learn more and get involved, check out [fsharp.org](http://fsharp.org). It's 100% free to join, and the network of F# developers in the foundation is something you don't want to miss out on!
+To learn more and get involved, check out [fsharp.org](http://fsharp.org). It's free to join, and the network of F# developers in the foundation is something you don't want to miss out on!

@@ -4,7 +4,7 @@ description: Examine some of the key features of the F# programming language in 
 keywords: visual f#, f#, functional programming, .NET, tour
 author: cartermp
 ms.author: phcart
-ms.date: 01/24/2017
+ms.date: 02/28/2018
 ms.topic: article
 ms.prod: .net
 ms.technology: devlang-fsharp
@@ -17,13 +17,6 @@ ms.assetid: 49775139-082e-442f-b5a2-dd402399b5d2
 The best way to learn about F# is to read and write F# code.  This article will act as a tour through some of the key features of the F# language and give you some code snippets that you can execute on your machine.  To learn about setting up a development environment, check out [Getting Started](tutorials/getting-started/index.md).
 
 There are two primary concepts in F#: functions and types.  This tour will emphasize features of the language which fall into these two concepts.
-
-## How to Run the Code Samples
-
->[!NOTE]
-Two options for running the code samples are [Try F#](http://www.tryfsharp.org/Create) (requires Silverlight) and [F# for Azure Notebooks](https://notebooks.azure.com/Microsoft/libraries/fsharp/html/FSharp%20for%20Azure%20Notebooks.ipynb) on Microsoft Azure.
-
-The quickest way to run these code samples is to use [F# Interactive](tutorials/fsharp-interactive/index.md).  Just copy/paste the code samples and run them there.  Alternatively you can set up a project to compile and run the code as a Console Application.  See the [Get Started](./get-started/index.md) section to learn more.
 
 ## Functions and Modules
 

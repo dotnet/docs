@@ -61,7 +61,7 @@ In C#, an *operator* is a program element that is applied to one or more *operan
 |----------------|-----------------|  
 |[+](../../../csharp/language-reference/operators/addition-operator.md)x|Identity|  
 |[-](../../../csharp/language-reference/operators/subtraction-operator.md)x|Negation|  
-|[!](../../../csharp/language-reference/operators/logical-negation-operator.md)x|Logical negation|  
+|[\!](../../../csharp/language-reference/operators/logical-negation-operator.md)x|Logical negation|  
 |[~](../../../csharp/language-reference/operators/bitwise-complement-operator.md)x|Bitwise negation|  
 |[++](../../../csharp/language-reference/operators/increment-operator.md)x|Pre-increment|  
 |[--](../../../csharp/language-reference/operators/decrement-operator.md)x|Pre-decrement|  

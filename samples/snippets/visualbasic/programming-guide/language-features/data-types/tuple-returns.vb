@@ -22,7 +22,7 @@ Module Module1
         Dim numericString As String = "123456"
         Dim number As Integer
         Dim result = Int32.TryParse(numericString, number)
-        Console.WriteLine($"{IIf(result, $"Success: {number:N0}", "Failure")}")
+        Console.WriteLine($"{If(result, $"Success: {number:N0}", "Failure")}")
         '      Output: 123,456
         ' </Snippet1>
     End Sub
@@ -31,7 +31,7 @@ Module Module1
         ' <Snippet3>
         Dim numericString As String = "123,456"
         Dim result = ParseInteger(numericString)
-        Console.WriteLine($"{IIf(result.Success, $"Success: {result.Number:N0}", "Failure")}")
+        Console.WriteLine($"{If(result.Success, $"Success: {result.Number:N0}", "Failure")}")
         Console.ReadLine()
         '      Output: Success: 123,456
         ' </Snippet3>

@@ -29,8 +29,8 @@ ms.workload:
 The .NET Framework <xref:System.Net> namespace classes provide built-in support for popular Internet application authentication mechanisms and for .NET Framework code access permissions.  
   
 ## In This Section  
- [Transport Layer Security (TLS) best practices with .NET](xref:framework/network-programming/tls)
- Describes (TLS) best practices with .NET.
+ [Transport Layer Security (TLS) best practices with .NET Framework](xref:framework/network-programming/tls)
+ Describes (TLS) best practices with the .NET Framwork.
  
  [Using Secure Sockets Layer](../../../docs/framework/network-programming/using-secure-sockets-layer.md)  
  Describes how to use Secure Sockets Layer (SSL) connections.  

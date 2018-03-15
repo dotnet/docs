@@ -334,19 +334,19 @@
       </Docs>
     </Member>
     <Member MemberName="Keys">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.Dictionary&lt;string,object&gt;.KeyCollection Keys { get; }" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.Dictionary.KeyCollection&lt;string,object&gt; Keys { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.Dictionary`2/KeyCollection&lt;string, object&gt; Keys" />
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.RouteValueDictionary.Keys" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Keys As Dictionary(Of String, Object).KeyCollection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Keys As Dictionary.KeyCollection(Of String, Object)" />
       <MemberSignature Language="F#" Value="member this.Keys : System.Collections.Generic.Dictionary&lt;string, obj&gt;.KeyCollection" Usage="System.Web.Routing.RouteValueDictionary.Keys" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::Dictionary&lt;System::String ^, System::Object ^&gt;::KeyCollection ^ Keys { System::Collections::Generic::Dictionary&lt;System::String ^, System::Object ^&gt;::KeyCollection ^ get(); };" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::Dictionary::KeyCollection&lt;System::String ^, System::Object ^&gt; ^ Keys { System::Collections::Generic::Dictionary::KeyCollection&lt;System::String ^, System::Object ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,System.Object&gt;+KeyCollection</ReturnType>
+        <ReturnType>System.Collections.Generic.Dictionary+KeyCollection&lt;System.String,System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>Gets a collection that contains the keys in the dictionary.</summary>
@@ -653,19 +653,19 @@
       </Docs>
     </Member>
     <Member MemberName="Values">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.Dictionary&lt;string,object&gt;.ValueCollection Values { get; }" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.Dictionary.ValueCollection&lt;string,object&gt; Values { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.Dictionary`2/ValueCollection&lt;string, object&gt; Values" />
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.RouteValueDictionary.Values" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Values As Dictionary(Of String, Object).ValueCollection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Values As Dictionary.ValueCollection(Of String, Object)" />
       <MemberSignature Language="F#" Value="member this.Values : System.Collections.Generic.Dictionary&lt;string, obj&gt;.ValueCollection" Usage="System.Web.Routing.RouteValueDictionary.Values" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::Dictionary&lt;System::String ^, System::Object ^&gt;::ValueCollection ^ Values { System::Collections::Generic::Dictionary&lt;System::String ^, System::Object ^&gt;::ValueCollection ^ get(); };" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::Dictionary::ValueCollection&lt;System::String ^, System::Object ^&gt; ^ Values { System::Collections::Generic::Dictionary::ValueCollection&lt;System::String ^, System::Object ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,System.Object&gt;+ValueCollection</ReturnType>
+        <ReturnType>System.Collections.Generic.Dictionary+ValueCollection&lt;System.String,System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>Gets a collection that contains the values in the dictionary.</summary>

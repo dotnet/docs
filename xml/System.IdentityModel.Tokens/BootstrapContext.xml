@@ -78,42 +78,6 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public BootstrapContext (System.IdentityModel.Tokens.SecurityToken token, System.IdentityModel.Tokens.SecurityTokenHandler handler);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Tokens.SecurityToken token, class System.IdentityModel.Tokens.SecurityTokenHandler handler) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.BootstrapContext.#ctor(System.IdentityModel.Tokens.SecurityToken,System.IdentityModel.Tokens.SecurityTokenHandler)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (token As SecurityToken, handler As SecurityTokenHandler)" />
-      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.BootstrapContext : System.IdentityModel.Tokens.SecurityToken * System.IdentityModel.Tokens.SecurityTokenHandler -&gt; System.IdentityModel.Tokens.BootstrapContext" Usage="new System.IdentityModel.Tokens.BootstrapContext (token, handler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; BootstrapContext(System::IdentityModel::Tokens::SecurityToken ^ token, System::IdentityModel::Tokens::SecurityTokenHandler ^ handler);" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken" />
-        <Parameter Name="tokenHandler" Type="System.IdentityModel.Tokens.SecurityTokenHandler" />
-      </Parameters>
-      <Docs>
-        <param name="token">The security token to serialize.</param>
-        <param name="handler">To be added.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.BootstrapContext" /> class by using the specified security token and token handler.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The token handler is not used to deserialize the token because it cannot be assumed to exist at the time when the token is deserialized.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="token" /> is <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="tokenHandler" /> is <see langword="null" />.</exception>
-      </Docs>
-    </Member>
-    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected BootstrapContext (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.BootstrapContext.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
@@ -136,6 +100,49 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="info" /> is **null**.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BootstrapContext (System.IdentityModel.Tokens.SecurityToken token, System.IdentityModel.Tokens.SecurityTokenHandler tokenHandler);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Tokens.SecurityToken token, class System.IdentityModel.Tokens.SecurityTokenHandler tokenHandler) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.BootstrapContext.#ctor(System.IdentityModel.Tokens.SecurityToken,System.IdentityModel.Tokens.SecurityTokenHandler)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (token As SecurityToken, tokenHandler As SecurityTokenHandler)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.BootstrapContext : System.IdentityModel.Tokens.SecurityToken * System.IdentityModel.Tokens.SecurityTokenHandler -&gt; System.IdentityModel.Tokens.BootstrapContext" Usage="new System.IdentityModel.Tokens.BootstrapContext (token, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BootstrapContext(System::IdentityModel::Tokens::SecurityToken ^ token, System::IdentityModel::Tokens::SecurityTokenHandler ^ tokenHandler);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public BootstrapContext (System.IdentityModel.Tokens.SecurityToken token, System.IdentityModel.Tokens.SecurityTokenHandler handler);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Tokens.SecurityToken token, class System.IdentityModel.Tokens.SecurityTokenHandler handler) cil managed" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.BootstrapContext.#ctor(System.IdentityModel.Tokens.SecurityToken,System.IdentityModel.Tokens.SecurityTokenHandler)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (token As SecurityToken, handler As SecurityTokenHandler)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BootstrapContext(System::IdentityModel::Tokens::SecurityToken ^ token, System::IdentityModel::Tokens::SecurityTokenHandler ^ handler);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken" Index="0" />
+        <Parameter Name="tokenHandler" Type="System.IdentityModel.Tokens.SecurityTokenHandler" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="handler" Type="System.IdentityModel.Tokens.SecurityTokenHandler" Index="1" FrameworkAlternate="xamarinmac-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="token">The security token to serialize.</param>
+        <param name="tokenHandler">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.BootstrapContext" /> class by using the specified security token and token handler.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The token handler is not used to deserialize the token because it cannot be assumed to exist at the time when the token is deserialized.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="token" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="tokenHandler" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">

@@ -645,47 +645,6 @@
       </Docs>
     </Member>
     <Member MemberName="CreateMessage">
-      <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.Message CreateMessage (System.ServiceModel.Channels.MessageVersion version, System.ServiceModel.FaultCode code, string reason, string action);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.Message CreateMessage(class System.ServiceModel.Channels.MessageVersion version, class System.ServiceModel.FaultCode code, string reason, string action) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.CreateMessage(System.ServiceModel.Channels.MessageVersion,System.ServiceModel.FaultCode,System.String,System.String)" />
-      <MemberSignature Language="F#" Value="static member CreateMessage : System.ServiceModel.Channels.MessageVersion * System.ServiceModel.FaultCode * string * string -&gt; System.ServiceModel.Channels.Message" Usage="System.ServiceModel.Channels.Message.CreateMessage (version, code, reason, action)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateMessage (version As MessageVersion, code As FaultCode, reason As String, action As String) As Message" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::Message ^ CreateMessage(System::ServiceModel::Channels::MessageVersion ^ version, System::ServiceModel::FaultCode ^ code, System::String ^ reason, System::String ^ action);" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="version" Type="System.ServiceModel.Channels.MessageVersion" />
-        <Parameter Name="faultCode" Type="System.ServiceModel.FaultCode" />
-        <Parameter Name="reason" Type="System.String" />
-        <Parameter Name="action" Type="System.String" />
-      </Parameters>
-      <Docs>
-        <param name="version">A <see cref="T:System.ServiceModel.Channels.MessageVersion" /> object that specifies the SOAP version to use for the message.</param>
-        <param name="code">To be added.</param>
-        <param name="reason">The reason of the SOAP fault.</param>
-        <param name="action">A description of how the message should be processed.</param>
-        <summary>Creates a message that contains a SOAP fault, the reason for the fault, a version and an action.</summary>
-        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object for the message created.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This static method is used to create a new copy of message ready for sending.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="version" />, <paramref name="fault" />, <paramref name="action" /> or <paramref name="faultCode" /> is <see langword="null" />.</exception>
-      </Docs>
-    </Member>
-    <Member MemberName="CreateMessage">
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.Message CreateMessage (System.ServiceModel.Channels.MessageVersion version, string action, object body, System.Runtime.Serialization.XmlObjectSerializer serializer);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.Message CreateMessage(class System.ServiceModel.Channels.MessageVersion version, string action, object body, class System.Runtime.Serialization.XmlObjectSerializer serializer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.CreateMessage(System.ServiceModel.Channels.MessageVersion,System.String,System.Object,System.Runtime.Serialization.XmlObjectSerializer)" />
@@ -735,12 +694,17 @@
       </Docs>
     </Member>
     <Member MemberName="CreateMessage">
-      <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.Message CreateMessage (System.ServiceModel.Channels.MessageVersion version, System.ServiceModel.FaultCode code, string reason, object detail, string action);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.Message CreateMessage(class System.ServiceModel.Channels.MessageVersion version, class System.ServiceModel.FaultCode code, string reason, object detail, string action) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.CreateMessage(System.ServiceModel.Channels.MessageVersion,System.ServiceModel.FaultCode,System.String,System.Object,System.String)" />
-      <MemberSignature Language="F#" Value="static member CreateMessage : System.ServiceModel.Channels.MessageVersion * System.ServiceModel.FaultCode * string * obj * string -&gt; System.ServiceModel.Channels.Message" Usage="System.ServiceModel.Channels.Message.CreateMessage (version, code, reason, detail, action)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateMessage (version As MessageVersion, code As FaultCode, reason As String, detail As Object, action As String) As Message" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::Message ^ CreateMessage(System::ServiceModel::Channels::MessageVersion ^ version, System::ServiceModel::FaultCode ^ code, System::String ^ reason, System::Object ^ detail, System::String ^ action);" />
+      <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.Message CreateMessage (System.ServiceModel.Channels.MessageVersion version, System.ServiceModel.FaultCode faultCode, string reason, string action);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.Message CreateMessage(class System.ServiceModel.Channels.MessageVersion version, class System.ServiceModel.FaultCode faultCode, string reason, string action) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.CreateMessage(System.ServiceModel.Channels.MessageVersion,System.ServiceModel.FaultCode,System.String,System.String)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="F#" Value="static member CreateMessage : System.ServiceModel.Channels.MessageVersion * System.ServiceModel.FaultCode * string * string -&gt; System.ServiceModel.Channels.Message" Usage="System.ServiceModel.Channels.Message.CreateMessage (version, code, reason, action)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateMessage (version As MessageVersion, code As FaultCode, reason As String, action As String) As Message" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::Message ^ CreateMessage(System::ServiceModel::Channels::MessageVersion ^ version, System::ServiceModel::FaultCode ^ faultCode, System::String ^ reason, System::String ^ action);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.Message CreateMessage (System.ServiceModel.Channels.MessageVersion version, System.ServiceModel.FaultCode code, string reason, string action);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.Message CreateMessage(class System.ServiceModel.Channels.MessageVersion version, class System.ServiceModel.FaultCode code, string reason, string action) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.CreateMessage(System.ServiceModel.Channels.MessageVersion,System.ServiceModel.FaultCode,System.String,System.String)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateMessage (version As MessageVersion, code As FaultCode, reason As String, action As String) As Message" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::Message ^ CreateMessage(System::ServiceModel::Channels::MessageVersion ^ version, System::ServiceModel::FaultCode ^ code, System::String ^ reason, System::String ^ action);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -751,14 +715,64 @@
         <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="version" Type="System.ServiceModel.Channels.MessageVersion" />
-        <Parameter Name="faultCode" Type="System.ServiceModel.FaultCode" />
-        <Parameter Name="reason" Type="System.String" />
-        <Parameter Name="detail" Type="System.Object" />
-        <Parameter Name="action" Type="System.String" />
+        <Parameter Name="version" Type="System.ServiceModel.Channels.MessageVersion" Index="0" />
+        <Parameter Name="faultCode" Type="System.ServiceModel.FaultCode" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="code" Type="System.ServiceModel.FaultCode" Index="1" FrameworkAlternate="xamarinandroid-7.1" />
+        <Parameter Name="reason" Type="System.String" Index="2" />
+        <Parameter Name="action" Type="System.String" Index="3" />
       </Parameters>
       <Docs>
         <param name="version">A <see cref="T:System.ServiceModel.Channels.MessageVersion" /> object that specifies the SOAP version to use for the message.</param>
+        <param name="faultCode">To be added.</param>
+        <param name="code">To be added.</param>
+        <param name="reason">The reason of the SOAP fault.</param>
+        <param name="action">A description of how the message should be processed.</param>
+        <summary>Creates a message that contains a SOAP fault, the reason for the fault, a version and an action.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object for the message created.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This static method is used to create a new copy of message ready for sending.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="version" />, <paramref name="fault" />, <paramref name="action" /> or <paramref name="faultCode" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateMessage">
+      <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.Message CreateMessage (System.ServiceModel.Channels.MessageVersion version, System.ServiceModel.FaultCode faultCode, string reason, object detail, string action);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.Message CreateMessage(class System.ServiceModel.Channels.MessageVersion version, class System.ServiceModel.FaultCode faultCode, string reason, object detail, string action) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.CreateMessage(System.ServiceModel.Channels.MessageVersion,System.ServiceModel.FaultCode,System.String,System.Object,System.String)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="F#" Value="static member CreateMessage : System.ServiceModel.Channels.MessageVersion * System.ServiceModel.FaultCode * string * obj * string -&gt; System.ServiceModel.Channels.Message" Usage="System.ServiceModel.Channels.Message.CreateMessage (version, code, reason, detail, action)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateMessage (version As MessageVersion, code As FaultCode, reason As String, detail As Object, action As String) As Message" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::Message ^ CreateMessage(System::ServiceModel::Channels::MessageVersion ^ version, System::ServiceModel::FaultCode ^ faultCode, System::String ^ reason, System::Object ^ detail, System::String ^ action);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.Message CreateMessage (System.ServiceModel.Channels.MessageVersion version, System.ServiceModel.FaultCode code, string reason, object detail, string action);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.Message CreateMessage(class System.ServiceModel.Channels.MessageVersion version, class System.ServiceModel.FaultCode code, string reason, object detail, string action) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.CreateMessage(System.ServiceModel.Channels.MessageVersion,System.ServiceModel.FaultCode,System.String,System.Object,System.String)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateMessage (version As MessageVersion, code As FaultCode, reason As String, detail As Object, action As String) As Message" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::Message ^ CreateMessage(System::ServiceModel::Channels::MessageVersion ^ version, System::ServiceModel::FaultCode ^ code, System::String ^ reason, System::Object ^ detail, System::String ^ action);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="version" Type="System.ServiceModel.Channels.MessageVersion" Index="0" />
+        <Parameter Name="faultCode" Type="System.ServiceModel.FaultCode" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="code" Type="System.ServiceModel.FaultCode" Index="1" FrameworkAlternate="xamarinandroid-7.1" />
+        <Parameter Name="reason" Type="System.String" Index="2" />
+        <Parameter Name="detail" Type="System.Object" Index="3" />
+        <Parameter Name="action" Type="System.String" Index="4" />
+      </Parameters>
+      <Docs>
+        <param name="version">A <see cref="T:System.ServiceModel.Channels.MessageVersion" /> object that specifies the SOAP version to use for the message.</param>
+        <param name="faultCode">To be added.</param>
         <param name="code">To be added.</param>
         <param name="reason">The reason of the SOAP fault.</param>
         <param name="detail">The details of the SOAP fault.</param>

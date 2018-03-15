@@ -1,10 +1,10 @@
 ﻿<Type Name="ListView" FullName="System.Web.UI.WebControls.ListView">
-  <TypeSignature Language="C#" Value="public class ListView : System.Web.UI.WebControls.DataBoundControl, System.Web.UI.IDataKeysControl, System.Web.UI.INamingContainer, System.Web.UI.WebControls.IDataBoundListControl, System.Web.UI.WebControls.IPageableItemContainer, System.Web.UI.WebControls.IPersistedSelector" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ListView extends System.Web.UI.WebControls.DataBoundControl implements class System.Web.UI.IDataKeysControl, class System.Web.UI.INamingContainer, class System.Web.UI.WebControls.IDataBoundControl, class System.Web.UI.WebControls.IDataBoundListControl, class System.Web.UI.WebControls.IPageableItemContainer, class System.Web.UI.WebControls.IPersistedSelector" />
+  <TypeSignature Language="C#" Value="public class ListView : System.Web.UI.WebControls.DataBoundControl, System.Web.UI.IDataKeysControl, System.Web.UI.INamingContainer, System.Web.UI.WebControls.IDataBoundControl, System.Web.UI.WebControls.IDataBoundListControl, System.Web.UI.WebControls.IPageableItemContainer, System.Web.UI.WebControls.IPersistedSelector, System.Web.UI.WebControls.IWizardSideBarListControl" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ListView extends System.Web.UI.WebControls.DataBoundControl implements class System.Web.UI.IDataKeysControl, class System.Web.UI.INamingContainer, class System.Web.UI.WebControls.IDataBoundControl, class System.Web.UI.WebControls.IDataBoundListControl, class System.Web.UI.WebControls.IPageableItemContainer, class System.Web.UI.WebControls.IPersistedSelector, class System.Web.UI.WebControls.IWizardSideBarListControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ListView" />
-  <TypeSignature Language="VB.NET" Value="Public Class ListView&#xA;Inherits DataBoundControl&#xA;Implements IDataBoundListControl, IDataKeysControl, INamingContainer, IPageableItemContainer, IPersistedSelector" />
+  <TypeSignature Language="VB.NET" Value="Public Class ListView&#xA;Inherits DataBoundControl&#xA;Implements IDataBoundControl, IDataBoundListControl, IDataKeysControl, INamingContainer, IPageableItemContainer, IPersistedSelector, IWizardSideBarListControl" />
   <TypeSignature Language="F#" Value="type ListView = class&#xA;    inherit DataBoundControl&#xA;    interface INamingContainer&#xA;    interface IPageableItemContainer&#xA;    interface IPersistedSelector&#xA;    interface IDataKeysControl&#xA;    interface IDataBoundListControl&#xA;    interface IDataBoundControl&#xA;    interface IWizardSideBarListControl" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ListView : System::Web::UI::WebControls::DataBoundControl, System::Web::UI::IDataKeysControl, System::Web::UI::INamingContainer, System::Web::UI::WebControls::IDataBoundListControl, System::Web::UI::WebControls::IPageableItemContainer, System::Web::UI::WebControls::IPersistedSelector" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ListView : System::Web::UI::WebControls::DataBoundControl, System::Web::UI::IDataKeysControl, System::Web::UI::INamingContainer, System::Web::UI::WebControls::IDataBoundControl, System::Web::UI::WebControls::IDataBoundListControl, System::Web::UI::WebControls::IPageableItemContainer, System::Web::UI::WebControls::IPersistedSelector, System::Web::UI::WebControls::IWizardSideBarListControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +20,9 @@
       <InterfaceName>System.Web.UI.INamingContainer</InterfaceName>
     </Interface>
     <Interface>
+      <InterfaceName>System.Web.UI.WebControls.IDataBoundControl</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.Web.UI.WebControls.IDataBoundListControl</InterfaceName>
     </Interface>
     <Interface>
@@ -27,6 +30,9 @@
     </Interface>
     <Interface>
       <InterfaceName>System.Web.UI.WebControls.IPersistedSelector</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Web.UI.WebControls.IWizardSideBarListControl</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>
@@ -346,7 +352,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -430,10 +436,10 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.TemplateContainer(typeof(System.Web.UI.WebControls.ListViewDataItem), System.ComponentModel.BindingDirection.TwoWay)</AttributeName>
+          <AttributeName>System.Web.UI.TemplateContainer</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -490,7 +496,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -533,7 +539,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -576,7 +582,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -619,7 +625,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -653,9 +659,6 @@
       <MemberSignature Language="F#" Value="member this.ClientIDRowSuffix : string[] with get, set" Usage="System.Web.UI.WebControls.ListView.ClientIDRowSuffix" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::String ^&gt; ^ ClientIDRowSuffix { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundListControl.ClientIDRowSuffix</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -696,9 +699,6 @@
       <MemberSignature Language="F#" Value="member this.ClientIDRowSuffixDataKeys : System.Web.UI.WebControls.DataKeyArray" Usage="System.Web.UI.WebControls.ListView.ClientIDRowSuffixDataKeys" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::DataKeyArray ^ ClientIDRowSuffixDataKeys { System::Web::UI::WebControls::DataKeyArray ^ get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Web.UI.IDataKeysControl.ClientIDRowSuffixDataKeys</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -708,7 +708,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1290,7 +1290,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -1327,9 +1327,6 @@
       <MemberSignature Language="F#" Value="member this.DataKeyNames : string[] with get, set" Usage="System.Web.UI.WebControls.ListView.DataKeyNames" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::String ^&gt; ^ DataKeyNames { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundControl.DataKeyNames</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1392,9 +1389,6 @@
       <MemberSignature Language="F#" Value="member this.DataKeys : System.Web.UI.WebControls.DataKeyArray" Usage="System.Web.UI.WebControls.ListView.DataKeys" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::DataKeyArray ^ DataKeys { System::Web::UI::WebControls::DataKeyArray ^ get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundListControl.DataKeys</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1404,7 +1398,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1607,7 +1601,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1660,10 +1654,10 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.TemplateContainer(typeof(System.Web.UI.WebControls.ListViewDataItem), System.ComponentModel.BindingDirection.TwoWay)</AttributeName>
+          <AttributeName>System.Web.UI.TemplateContainer</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1729,7 +1723,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Web.UI.TemplateContainer(typeof(System.Web.UI.WebControls.ListView))</AttributeName>
@@ -1784,7 +1778,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Web.UI.TemplateContainer(typeof(System.Web.UI.WebControls.ListViewItem))</AttributeName>
@@ -1858,9 +1852,6 @@
       <MemberSignature Language="F#" Value="member this.EnablePersistedSelection : bool with get, set" Usage="System.Web.UI.WebControls.ListView.EnablePersistedSelection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool EnablePersistedSelection { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundListControl.EnablePersistedSelection</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -2017,7 +2008,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -2059,7 +2050,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -2206,7 +2197,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Web.UI.TemplateContainer(typeof(System.Web.UI.WebControls.ListViewItem))</AttributeName>
@@ -2265,7 +2256,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Web.UI.TemplateContainer(typeof(System.Web.UI.WebControls.ListViewItem))</AttributeName>
@@ -2321,7 +2312,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -2364,7 +2355,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2474,10 +2465,10 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.TemplateContainer(typeof(System.Web.UI.WebControls.ListViewItem), System.ComponentModel.BindingDirection.TwoWay)</AttributeName>
+          <AttributeName>System.Web.UI.TemplateContainer</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3424,7 +3415,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3474,7 +3465,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Web.UI.TemplateContainer(typeof(System.Web.UI.WebControls.ListViewItem))</AttributeName>
@@ -3519,9 +3510,6 @@
       <MemberSignature Language="F#" Value="member this.ItemTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.ListView.ItemTemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ ItemTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Web.UI.WebControls.IWizardSideBarListControl.ItemTemplate</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -3534,10 +3522,10 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.TemplateContainer(typeof(System.Web.UI.WebControls.ListViewDataItem), System.ComponentModel.BindingDirection.TwoWay)</AttributeName>
+          <AttributeName>System.Web.UI.TemplateContainer</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3748,7 +3736,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Web.UI.TemplateContainer(typeof(System.Web.UI.WebControls.ListView))</AttributeName>
@@ -5075,9 +5063,6 @@
       <MemberSignature Language="F#" Value="member this.SelectedDataKey : System.Web.UI.WebControls.DataKey" Usage="System.Web.UI.WebControls.ListView.SelectedDataKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::DataKey ^ SelectedDataKey { System::Web::UI::WebControls::DataKey ^ get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundListControl.SelectedDataKey</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -5087,7 +5072,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -5131,10 +5116,6 @@
       <MemberSignature Language="F#" Value="member this.SelectedIndex : int with get, set" Usage="System.Web.UI.WebControls.ListView.SelectedIndex" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int SelectedIndex { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundListControl.SelectedIndex</InterfaceMember>
-        <InterfaceMember>P:System.Web.UI.WebControls.IWizardSideBarListControl.SelectedIndex</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -5291,10 +5272,10 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.TemplateContainer(typeof(System.Web.UI.WebControls.ListViewDataItem), System.ComponentModel.BindingDirection.TwoWay)</AttributeName>
+          <AttributeName>System.Web.UI.TemplateContainer</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -5381,7 +5362,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -5591,13 +5572,13 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+          <AttributeName>System.ComponentModel.DefaultValue</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -5680,7 +5661,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -5789,9 +5770,6 @@
       <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.ListView.System.Web.UI.IDataKeysControl.ClientIDRowSuffixDataKeys" />
       <MemberSignature Language="C++ CLI" Value="property System::Web::UI::WebControls::DataKeyArray ^ System.Web.UI.IDataKeysControl.ClientIDRowSuffixDataKeys { System::Web::UI::WebControls::DataKeyArray ^ get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Web.UI.IDataKeysControl.ClientIDRowSuffixDataKeys</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -5820,9 +5798,6 @@
       <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.ListView.System.Web.UI.WebControls.IDataBoundControl.DataKeyNames" />
       <MemberSignature Language="C++ CLI" Value="property cli::array &lt;System::String ^&gt; ^ System.Web.UI.WebControls.IDataBoundControl.DataKeyNames { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundControl.DataKeyNames</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -5851,9 +5826,6 @@
       <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.ListView.System.Web.UI.WebControls.IDataBoundControl.DataMember" />
       <MemberSignature Language="C++ CLI" Value="property System::String ^ System.Web.UI.WebControls.IDataBoundControl.DataMember { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundControl.DataMember</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -5882,9 +5854,6 @@
       <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.ListView.System.Web.UI.WebControls.IDataBoundControl.DataSource" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Web.UI.WebControls.IDataBoundControl.DataSource { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundControl.DataSource</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -5913,9 +5882,6 @@
       <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.ListView.System.Web.UI.WebControls.IDataBoundControl.DataSourceID" />
       <MemberSignature Language="C++ CLI" Value="property System::String ^ System.Web.UI.WebControls.IDataBoundControl.DataSourceID { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundControl.DataSourceID</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -5944,9 +5910,6 @@
       <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.ListView.System.Web.UI.WebControls.IDataBoundControl.DataSourceObject" />
       <MemberSignature Language="C++ CLI" Value="property System::Web::UI::IDataSource ^ System.Web.UI.WebControls.IDataBoundControl.DataSourceObject { System::Web::UI::IDataSource ^ get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundControl.DataSourceObject</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -5975,9 +5938,6 @@
       <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.ListView.System.Web.UI.WebControls.IDataBoundListControl.ClientIDRowSuffix" />
       <MemberSignature Language="C++ CLI" Value="property cli::array &lt;System::String ^&gt; ^ System.Web.UI.WebControls.IDataBoundListControl.ClientIDRowSuffix { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundListControl.ClientIDRowSuffix</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -6006,9 +5966,6 @@
       <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.ListView.System.Web.UI.WebControls.IDataBoundListControl.DataKeys" />
       <MemberSignature Language="C++ CLI" Value="property System::Web::UI::WebControls::DataKeyArray ^ System.Web.UI.WebControls.IDataBoundListControl.DataKeys { System::Web::UI::WebControls::DataKeyArray ^ get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundListControl.DataKeys</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -6037,9 +5994,6 @@
       <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.ListView.System.Web.UI.WebControls.IDataBoundListControl.EnablePersistedSelection" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Web.UI.WebControls.IDataBoundListControl.EnablePersistedSelection { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundListControl.EnablePersistedSelection</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -6069,9 +6023,6 @@
       <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.ListView.System.Web.UI.WebControls.IDataBoundListControl.SelectedDataKey" />
       <MemberSignature Language="C++ CLI" Value="property System::Web::UI::WebControls::DataKey ^ System.Web.UI.WebControls.IDataBoundListControl.SelectedDataKey { System::Web::UI::WebControls::DataKey ^ get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundListControl.SelectedDataKey</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -6100,9 +6051,6 @@
       <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.ListView.System.Web.UI.WebControls.IDataBoundListControl.SelectedIndex" />
       <MemberSignature Language="C++ CLI" Value="property int System.Web.UI.WebControls.IDataBoundListControl.SelectedIndex { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Web.UI.WebControls.IDataBoundListControl.SelectedIndex</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -6255,9 +6203,6 @@
       <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.ListView.System.Web.UI.WebControls.IPersistedSelector.DataKey" />
       <MemberSignature Language="C++ CLI" Value="property System::Web::UI::WebControls::DataKey ^ System.Web.UI.WebControls.IPersistedSelector.DataKey { System::Web::UI::WebControls::DataKey ^ get(); void set(System::Web::UI::WebControls::DataKey ^ value); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Web.UI.WebControls.IPersistedSelector.DataKey</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -6278,6 +6223,26 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="System.Web.UI.WebControls.IWizardSideBarListControl.Items">
+      <MemberSignature Language="C#" Value="System.Collections.IEnumerable System.Web.UI.WebControls.IWizardSideBarListControl.Items { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IEnumerable System.Web.UI.WebControls.IWizardSideBarListControl.Items" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListView.System#Web#UI#WebControls#IWizardSideBarListControl#Items" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Items As IEnumerable Implements IWizardSideBarListControl.Items" />
+      <MemberSignature Language="C++ CLI" Value="property System::Collections::IEnumerable ^ System.Web.UI.WebControls.IWizardSideBarListControl.Items { System::Collections::IEnumerable ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="TabIndex">
       <MemberSignature Language="C#" Value="public override short TabIndex { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int16 TabIndex" />
@@ -6295,7 +6260,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -6338,7 +6303,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -6485,7 +6450,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>

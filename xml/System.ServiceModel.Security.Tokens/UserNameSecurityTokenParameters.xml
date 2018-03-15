@@ -88,12 +88,17 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected UserNameSecurityTokenParameters (System.ServiceModel.Security.Tokens.UserNameSecurityTokenParameters source);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Security.Tokens.UserNameSecurityTokenParameters source) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.UserNameSecurityTokenParameters.#ctor(System.ServiceModel.Security.Tokens.UserNameSecurityTokenParameters)" />
-      <MemberSignature Language="VB.NET" Value="Protected Sub New (source As UserNameSecurityTokenParameters)" />
+      <MemberSignature Language="C#" Value="protected UserNameSecurityTokenParameters (System.ServiceModel.Security.Tokens.UserNameSecurityTokenParameters other);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Security.Tokens.UserNameSecurityTokenParameters other) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.UserNameSecurityTokenParameters.#ctor(System.ServiceModel.Security.Tokens.UserNameSecurityTokenParameters)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (other As UserNameSecurityTokenParameters)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Security.Tokens.UserNameSecurityTokenParameters : System.ServiceModel.Security.Tokens.UserNameSecurityTokenParameters -&gt; System.ServiceModel.Security.Tokens.UserNameSecurityTokenParameters" Usage="new System.ServiceModel.Security.Tokens.UserNameSecurityTokenParameters source" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; UserNameSecurityTokenParameters(System::ServiceModel::Security::Tokens::UserNameSecurityTokenParameters ^ source);" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; UserNameSecurityTokenParameters(System::ServiceModel::Security::Tokens::UserNameSecurityTokenParameters ^ other);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="protected UserNameSecurityTokenParameters (System.ServiceModel.Security.Tokens.UserNameSecurityTokenParameters source);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Security.Tokens.UserNameSecurityTokenParameters source) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.UserNameSecurityTokenParameters.#ctor(System.ServiceModel.Security.Tokens.UserNameSecurityTokenParameters)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (source As UserNameSecurityTokenParameters)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; UserNameSecurityTokenParameters(System::ServiceModel::Security::Tokens::UserNameSecurityTokenParameters ^ source);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -101,7 +106,8 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="other" Type="System.ServiceModel.Security.Tokens.UserNameSecurityTokenParameters" />
+        <Parameter Name="other" Type="System.ServiceModel.Security.Tokens.UserNameSecurityTokenParameters" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="source" Type="System.ServiceModel.Security.Tokens.UserNameSecurityTokenParameters" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>

@@ -1,10 +1,10 @@
 ﻿<Type Name="DataView" FullName="System.Data.DataView">
-  <TypeSignature Language="C#" Value="public class DataView : System.ComponentModel.MarshalByValueComponent, System.Collections.IList, System.ComponentModel.IBindingListView, System.ComponentModel.ISupportInitializeNotification, System.ComponentModel.ITypedList" />
+  <TypeSignature Language="C#" Value="public class DataView : System.ComponentModel.MarshalByValueComponent, System.Collections.IList, System.ComponentModel.IBindingList, System.ComponentModel.IBindingListView, System.ComponentModel.ISupportInitialize, System.ComponentModel.ISupportInitializeNotification, System.ComponentModel.ITypedList" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataView extends System.ComponentModel.MarshalByValueComponent implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList, class System.ComponentModel.IBindingList, class System.ComponentModel.IBindingListView, class System.ComponentModel.ISupportInitialize, class System.ComponentModel.ISupportInitializeNotification, class System.ComponentModel.ITypedList" />
   <TypeSignature Language="DocId" Value="T:System.Data.DataView" />
-  <TypeSignature Language="VB.NET" Value="Public Class DataView&#xA;Inherits MarshalByValueComponent&#xA;Implements IBindingListView, IList, ISupportInitializeNotification, ITypedList" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataView&#xA;Inherits MarshalByValueComponent&#xA;Implements IBindingList, IBindingListView, IList, ISupportInitialize, ISupportInitializeNotification, ITypedList" />
   <TypeSignature Language="F#" Value="type DataView = class&#xA;    inherit MarshalByValueComponent&#xA;    interface IBindingListView&#xA;    interface ITypedList&#xA;    interface ISupportInitializeNotification&#xA;    interface IBindingList&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable&#xA;    interface ISupportInitialize" />
-  <TypeSignature Language="C++ CLI" Value="public ref class DataView : System::ComponentModel::MarshalByValueComponent, System::Collections::IList, System::ComponentModel::IBindingListView, System::ComponentModel::ISupportInitializeNotification, System::ComponentModel::ITypedList" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataView : System::ComponentModel::MarshalByValueComponent, System::Collections::IList, System::ComponentModel::IBindingList, System::ComponentModel::IBindingListView, System::ComponentModel::ISupportInitialize, System::ComponentModel::ISupportInitializeNotification, System::ComponentModel::ITypedList" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -26,7 +26,13 @@
       <InterfaceName>System.Collections.IList</InterfaceName>
     </Interface>
     <Interface>
+      <InterfaceName>System.ComponentModel.IBindingList</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.ComponentModel.IBindingListView</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ComponentModel.ISupportInitialize</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>System.ComponentModel.ISupportInitializeNotification</InterfaceName>
@@ -436,7 +442,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -457,9 +463,6 @@
       <MemberSignature Language="F#" Value="abstract member BeginInit : unit -&gt; unit&#xA;override this.BeginInit : unit -&gt; unit" Usage="dataView.BeginInit " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginInit();" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.ISupportInitialize.BeginInit</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -772,9 +775,6 @@
       <MemberSignature Language="F#" Value="abstract member EndInit : unit -&gt; unit&#xA;override this.EndInit : unit -&gt; unit" Usage="dataView.EndInit " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndInit();" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.ISupportInitialize.EndInit</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -1091,9 +1091,6 @@
       <MemberSignature Language="F#" Value="member this.Initialized : EventHandler " Usage="member this.Initialized : System.EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler ^ Initialized;" />
       <MemberType>Event</MemberType>
-      <Implements>
-        <InterfaceMember>E:System.ComponentModel.ISupportInitializeNotification.Initialized</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -1123,9 +1120,6 @@
       <MemberSignature Language="F#" Value="member this.IsInitialized : bool" Usage="System.Data.DataView.IsInitialized" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInitialized { bool get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.ISupportInitializeNotification.IsInitialized</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -1242,9 +1236,6 @@
       <MemberSignature Language="F#" Value="member this.ListChanged : System.ComponentModel.ListChangedEventHandler " Usage="member this.ListChanged : System.ComponentModel.ListChangedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event System::ComponentModel::ListChangedEventHandler ^ ListChanged;" />
       <MemberType>Event</MemberType>
-      <Implements>
-        <InterfaceMember>E:System.ComponentModel.IBindingList.ListChanged</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -2059,9 +2050,6 @@
       <MemberSignature Language="VB.NET" Value="Sub AddIndex (property As PropertyDescriptor) Implements IBindingList.AddIndex" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.IBindingList.AddIndex(System::ComponentModel::PropertyDescriptor ^ property) = System::ComponentModel::IBindingList::AddIndex;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.IBindingList.AddIndex(System.ComponentModel.PropertyDescriptor)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -2101,9 +2089,6 @@
       <MemberSignature Language="VB.NET" Value="Function AddNew () As Object Implements IBindingList.AddNew" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.ComponentModel.IBindingList.AddNew() = System::ComponentModel::IBindingList::AddNew;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.IBindingList.AddNew</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -2142,9 +2127,6 @@
       <MemberSignature Language="F#" Usage="System.Data.DataView.System.ComponentModel.IBindingList.AllowEdit" />
       <MemberSignature Language="C++ CLI" Value="property bool System.ComponentModel.IBindingList.AllowEdit { bool get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.IBindingList.AllowEdit</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -2182,9 +2164,6 @@
       <MemberSignature Language="F#" Usage="System.Data.DataView.System.ComponentModel.IBindingList.AllowNew" />
       <MemberSignature Language="C++ CLI" Value="property bool System.ComponentModel.IBindingList.AllowNew { bool get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.IBindingList.AllowNew</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -2222,9 +2201,6 @@
       <MemberSignature Language="F#" Usage="System.Data.DataView.System.ComponentModel.IBindingList.AllowRemove" />
       <MemberSignature Language="C++ CLI" Value="property bool System.ComponentModel.IBindingList.AllowRemove { bool get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.IBindingList.AllowRemove</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -2261,9 +2237,6 @@
       <MemberSignature Language="VB.NET" Value="Sub ApplySort (property As PropertyDescriptor, direction As ListSortDirection) Implements IBindingList.ApplySort" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.IBindingList.ApplySort(System::ComponentModel::PropertyDescriptor ^ property, System::ComponentModel::ListSortDirection direction) = System::ComponentModel::IBindingList::ApplySort;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.IBindingList.ApplySort(System.ComponentModel.PropertyDescriptor,System.ComponentModel.ListSortDirection)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -2305,9 +2278,6 @@
       <MemberSignature Language="VB.NET" Value="Function Find (property As PropertyDescriptor, key As Object) As Integer Implements IBindingList.Find" />
       <MemberSignature Language="C++ CLI" Value=" virtual int System.ComponentModel.IBindingList.Find(System::ComponentModel::PropertyDescriptor ^ property, System::Object ^ key) = System::ComponentModel::IBindingList::Find;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.IBindingList.Find(System.ComponentModel.PropertyDescriptor,System.Object)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -2351,9 +2321,6 @@
       <MemberSignature Language="F#" Usage="System.Data.DataView.System.ComponentModel.IBindingList.IsSorted" />
       <MemberSignature Language="C++ CLI" Value="property bool System.ComponentModel.IBindingList.IsSorted { bool get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.IBindingList.IsSorted</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -2390,9 +2357,6 @@
       <MemberSignature Language="VB.NET" Value="Sub RemoveIndex (property As PropertyDescriptor) Implements IBindingList.RemoveIndex" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.IBindingList.RemoveIndex(System::ComponentModel::PropertyDescriptor ^ property) = System::ComponentModel::IBindingList::RemoveIndex;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.IBindingList.RemoveIndex(System.ComponentModel.PropertyDescriptor)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -2432,9 +2396,6 @@
       <MemberSignature Language="VB.NET" Value="Sub RemoveSort () Implements IBindingList.RemoveSort" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.IBindingList.RemoveSort() = System::ComponentModel::IBindingList::RemoveSort;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.IBindingList.RemoveSort</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -2472,9 +2433,6 @@
       <MemberSignature Language="F#" Usage="System.Data.DataView.System.ComponentModel.IBindingList.SortDirection" />
       <MemberSignature Language="C++ CLI" Value="property System::ComponentModel::ListSortDirection System.ComponentModel.IBindingList.SortDirection { System::ComponentModel::ListSortDirection get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.IBindingList.SortDirection</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -2512,9 +2470,6 @@
       <MemberSignature Language="F#" Usage="System.Data.DataView.System.ComponentModel.IBindingList.SortProperty" />
       <MemberSignature Language="C++ CLI" Value="property System::ComponentModel::PropertyDescriptor ^ System.ComponentModel.IBindingList.SortProperty { System::ComponentModel::PropertyDescriptor ^ get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.IBindingList.SortProperty</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -2552,9 +2507,6 @@
       <MemberSignature Language="F#" Usage="System.Data.DataView.System.ComponentModel.IBindingList.SupportsChangeNotification" />
       <MemberSignature Language="C++ CLI" Value="property bool System.ComponentModel.IBindingList.SupportsChangeNotification { bool get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.IBindingList.SupportsChangeNotification</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -2592,9 +2544,6 @@
       <MemberSignature Language="F#" Usage="System.Data.DataView.System.ComponentModel.IBindingList.SupportsSearching" />
       <MemberSignature Language="C++ CLI" Value="property bool System.ComponentModel.IBindingList.SupportsSearching { bool get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.IBindingList.SupportsSearching</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -2632,9 +2581,6 @@
       <MemberSignature Language="F#" Usage="System.Data.DataView.System.ComponentModel.IBindingList.SupportsSorting" />
       <MemberSignature Language="C++ CLI" Value="property bool System.ComponentModel.IBindingList.SupportsSorting { bool get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.IBindingList.SupportsSorting</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -2671,9 +2617,6 @@
       <MemberSignature Language="VB.NET" Value="Sub ApplySort (sorts As ListSortDescriptionCollection) Implements IBindingListView.ApplySort" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.IBindingListView.ApplySort(System::ComponentModel::ListSortDescriptionCollection ^ sorts) = System::ComponentModel::IBindingListView::ApplySort;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.IBindingListView.ApplySort(System.ComponentModel.ListSortDescriptionCollection)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -2714,9 +2657,6 @@
       <MemberSignature Language="F#" Usage="System.Data.DataView.System.ComponentModel.IBindingListView.Filter" />
       <MemberSignature Language="C++ CLI" Value="property System::String ^ System.ComponentModel.IBindingListView.Filter { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.IBindingListView.Filter</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -2753,9 +2693,6 @@
       <MemberSignature Language="VB.NET" Value="Sub RemoveFilter () Implements IBindingListView.RemoveFilter" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.IBindingListView.RemoveFilter() = System::ComponentModel::IBindingListView::RemoveFilter;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.IBindingListView.RemoveFilter</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -2793,9 +2730,6 @@
       <MemberSignature Language="F#" Usage="System.Data.DataView.System.ComponentModel.IBindingListView.SortDescriptions" />
       <MemberSignature Language="C++ CLI" Value="property System::ComponentModel::ListSortDescriptionCollection ^ System.ComponentModel.IBindingListView.SortDescriptions { System::ComponentModel::ListSortDescriptionCollection ^ get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.IBindingListView.SortDescriptions</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -2833,9 +2767,6 @@
       <MemberSignature Language="F#" Usage="System.Data.DataView.System.ComponentModel.IBindingListView.SupportsAdvancedSorting" />
       <MemberSignature Language="C++ CLI" Value="property bool System.ComponentModel.IBindingListView.SupportsAdvancedSorting { bool get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.IBindingListView.SupportsAdvancedSorting</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -2873,9 +2804,6 @@
       <MemberSignature Language="F#" Usage="System.Data.DataView.System.ComponentModel.IBindingListView.SupportsFiltering" />
       <MemberSignature Language="C++ CLI" Value="property bool System.ComponentModel.IBindingListView.SupportsFiltering { bool get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.IBindingListView.SupportsFiltering</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -2912,9 +2840,6 @@
       <MemberSignature Language="VB.NET" Value="Function GetItemProperties (listAccessors As PropertyDescriptor()) As PropertyDescriptorCollection Implements ITypedList.GetItemProperties" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::ComponentModel::PropertyDescriptorCollection ^ System.ComponentModel.ITypedList.GetItemProperties(cli::array &lt;System::ComponentModel::PropertyDescriptor ^&gt; ^ listAccessors) = System::ComponentModel::ITypedList::GetItemProperties;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.ITypedList.GetItemProperties(System.ComponentModel.PropertyDescriptor[])</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -2955,9 +2880,6 @@
       <MemberSignature Language="VB.NET" Value="Function GetListName (listAccessors As PropertyDescriptor()) As String Implements ITypedList.GetListName" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.ComponentModel.ITypedList.GetListName(cli::array &lt;System::ComponentModel::PropertyDescriptor ^&gt; ^ listAccessors) = System::ComponentModel::ITypedList::GetListName;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.ITypedList.GetListName(System.ComponentModel.PropertyDescriptor[])</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -3017,7 +2939,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Data.DataTableTypeConverter))</AttributeName>

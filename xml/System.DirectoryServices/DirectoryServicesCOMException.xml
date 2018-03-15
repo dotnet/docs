@@ -1,10 +1,10 @@
 ﻿<Type Name="DirectoryServicesCOMException" FullName="System.DirectoryServices.DirectoryServicesCOMException">
-  <TypeSignature Language="C#" Value="public class DirectoryServicesCOMException : System.Runtime.InteropServices.COMException" />
+  <TypeSignature Language="C#" Value="public class DirectoryServicesCOMException : System.Runtime.InteropServices.COMException, System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit DirectoryServicesCOMException extends System.Runtime.InteropServices.COMException implements class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.DirectoryServicesCOMException" />
-  <TypeSignature Language="VB.NET" Value="Public Class DirectoryServicesCOMException&#xA;Inherits COMException" />
+  <TypeSignature Language="VB.NET" Value="Public Class DirectoryServicesCOMException&#xA;Inherits COMException&#xA;Implements ISerializable" />
   <TypeSignature Language="F#" Value="type DirectoryServicesCOMException = class&#xA;    inherit COMException&#xA;    interface ISerializable" />
-  <TypeSignature Language="C++ CLI" Value="public ref class DirectoryServicesCOMException : System::Runtime::InteropServices::COMException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DirectoryServicesCOMException : System::Runtime::InteropServices::COMException, System::Runtime::Serialization::ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -13,7 +13,11 @@
   <Base>
     <BaseTypeName>System.Runtime.InteropServices.COMException</BaseTypeName>
   </Base>
-  <Interfaces></Interfaces>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Runtime.Serialization.ISerializable</InterfaceName>
+    </Interface>
+  </Interfaces>
   <Docs>
     <summary>Contains extended error information about an error that occurred when the <see cref="M:System.DirectoryServices.DirectoryEntry.Invoke(System.String,System.Object[])" /> method is called.</summary>
     <remarks>To be added.</remarks>

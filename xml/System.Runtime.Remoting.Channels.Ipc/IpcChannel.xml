@@ -1,10 +1,10 @@
 ﻿<Type Name="IpcChannel" FullName="System.Runtime.Remoting.Channels.Ipc.IpcChannel">
-  <TypeSignature Language="C#" Value="public class IpcChannel : System.Runtime.Remoting.Channels.IChannelReceiver, System.Runtime.Remoting.Channels.IChannelSender, System.Runtime.Remoting.Channels.ISecurableChannel" />
+  <TypeSignature Language="C#" Value="public class IpcChannel : System.Runtime.Remoting.Channels.IChannel, System.Runtime.Remoting.Channels.IChannelReceiver, System.Runtime.Remoting.Channels.IChannelSender, System.Runtime.Remoting.Channels.ISecurableChannel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IpcChannel extends System.Object implements class System.Runtime.Remoting.Channels.IChannel, class System.Runtime.Remoting.Channels.IChannelReceiver, class System.Runtime.Remoting.Channels.IChannelSender, class System.Runtime.Remoting.Channels.ISecurableChannel" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.Ipc.IpcChannel" />
-  <TypeSignature Language="VB.NET" Value="Public Class IpcChannel&#xA;Implements IChannelReceiver, IChannelSender, ISecurableChannel" />
+  <TypeSignature Language="VB.NET" Value="Public Class IpcChannel&#xA;Implements IChannel, IChannelReceiver, IChannelSender, ISecurableChannel" />
   <TypeSignature Language="F#" Value="type IpcChannel = class&#xA;    interface IChannelReceiver&#xA;    interface IChannel&#xA;    interface IChannelSender&#xA;    interface ISecurableChannel" />
-  <TypeSignature Language="C++ CLI" Value="public ref class IpcChannel : System::Runtime::Remoting::Channels::IChannelReceiver, System::Runtime::Remoting::Channels::IChannelSender, System::Runtime::Remoting::Channels::ISecurableChannel" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IpcChannel : System::Runtime::Remoting::Channels::IChannel, System::Runtime::Remoting::Channels::IChannelReceiver, System::Runtime::Remoting::Channels::IChannelSender, System::Runtime::Remoting::Channels::ISecurableChannel" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Remoting</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -13,6 +13,9 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces>
+    <Interface>
+      <InterfaceName>System.Runtime.Remoting.Channels.IChannel</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>System.Runtime.Remoting.Channels.IChannelReceiver</InterfaceName>
     </Interface>
@@ -213,9 +216,6 @@
       <MemberSignature Language="F#" Value="member this.ChannelData : obj" Usage="System.Runtime.Remoting.Channels.Ipc.IpcChannel.ChannelData" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ChannelData { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Runtime.Remoting.Channels.IChannelReceiver.ChannelData</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -252,9 +252,6 @@
       <MemberSignature Language="F#" Value="member this.ChannelName : string" Usage="System.Runtime.Remoting.Channels.Ipc.IpcChannel.ChannelName" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ChannelName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Runtime.Remoting.Channels.IChannel.ChannelName</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -291,9 +288,6 @@
       <MemberSignature Language="F#" Value="member this.ChannelPriority : int" Usage="System.Runtime.Remoting.Channels.Ipc.IpcChannel.ChannelPriority" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ChannelPriority { int get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Runtime.Remoting.Channels.IChannel.ChannelPriority</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -330,9 +324,6 @@
       <MemberSignature Language="F#" Value="abstract member CreateMessageSink : string * obj *  -&gt; System.Runtime.Remoting.Messaging.IMessageSink&#xA;override this.CreateMessageSink : string * obj *  -&gt; System.Runtime.Remoting.Messaging.IMessageSink" Usage="ipcChannel.CreateMessageSink (url, remoteChannelData, objectURI)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Runtime::Remoting::Messaging::IMessageSink ^ CreateMessageSink(System::String ^ url, System::Object ^ remoteChannelData, [Runtime::InteropServices::Out] System::String ^ % objectURI);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Runtime.Remoting.Channels.IChannelSender.CreateMessageSink(System.String,System.Object,System.String@)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -379,9 +370,6 @@
       <MemberSignature Language="F#" Value="abstract member GetUrlsForUri : string -&gt; string[]&#xA;override this.GetUrlsForUri : string -&gt; string[]" Usage="ipcChannel.GetUrlsForUri objectURI" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::String ^&gt; ^ GetUrlsForUri(System::String ^ objectURI);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Runtime.Remoting.Channels.IChannelReceiver.GetUrlsForUri(System.String)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -422,9 +410,6 @@
       <MemberSignature Language="F#" Value="member this.IsSecured : bool with get, set" Usage="System.Runtime.Remoting.Channels.Ipc.IpcChannel.IsSecured" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSecured { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Runtime.Remoting.Channels.ISecurableChannel.IsSecured</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -453,9 +438,6 @@
       <MemberSignature Language="F#" Value="abstract member Parse : string *  -&gt; string&#xA;override this.Parse : string *  -&gt; string" Usage="ipcChannel.Parse (url, objectURI)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ Parse(System::String ^ url, [Runtime::InteropServices::Out] System::String ^ % objectURI);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Runtime.Remoting.Channels.IChannel.Parse(System.String,System.String@)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -498,9 +480,6 @@
       <MemberSignature Language="F#" Value="abstract member StartListening : obj -&gt; unit&#xA;override this.StartListening : obj -&gt; unit" Usage="ipcChannel.StartListening data" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void StartListening(System::Object ^ data);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Runtime.Remoting.Channels.IChannelReceiver.StartListening(System.Object)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -536,9 +515,6 @@
       <MemberSignature Language="F#" Value="abstract member StopListening : obj -&gt; unit&#xA;override this.StopListening : obj -&gt; unit" Usage="ipcChannel.StopListening data" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void StopListening(System::Object ^ data);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Runtime.Remoting.Channels.IChannelReceiver.StopListening(System.Object)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

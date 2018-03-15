@@ -151,7 +151,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -262,11 +262,15 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="GenerateXmlMappings">
-      <MemberSignature Language="C#" Value="public static bool GenerateXmlMappings (Type type, System.Collections.ArrayList mapping);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GenerateXmlMappings(class System.Type type, class System.Collections.ArrayList mapping) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings(System.Type,System.Collections.ArrayList)" />
+      <MemberSignature Language="C#" Value="public static bool GenerateXmlMappings (Type type, System.Collections.ArrayList mappings);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GenerateXmlMappings(class System.Type type, class System.Collections.ArrayList mappings) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings(System.Type,System.Collections.ArrayList)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
       <MemberSignature Language="F#" Value="static member GenerateXmlMappings : Type * System.Collections.ArrayList -&gt; bool" Usage="System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings (type, mapping)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GenerateXmlMappings(Type ^ type, System::Collections::ArrayList ^ mapping);" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GenerateXmlMappings(Type ^ type, System::Collections::ArrayList ^ mappings);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public static bool GenerateXmlMappings (Type type, System.Collections.ArrayList mapping);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GenerateXmlMappings(class System.Type type, class System.Collections.ArrayList mapping) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings(System.Type,System.Collections.ArrayList)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GenerateXmlMappings(Type ^ type, System::Collections::ArrayList ^ mapping);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -277,11 +281,13 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="type" Type="System.Type" />
-        <Parameter Name="mappings" Type="System.Collections.ArrayList" />
+        <Parameter Name="type" Type="System.Type" Index="0" />
+        <Parameter Name="mappings" Type="System.Collections.ArrayList" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="mapping" Type="System.Collections.ArrayList" Index="1" FrameworkAlternate="xamarinandroid-7.1" />
       </Parameters>
       <Docs>
         <param name="type">The <see cref="T:System.Type" /> that exposes the XML Web service methods.</param>
+        <param name="mappings">To be added.</param>
         <param name="mapping">To be added.</param>
         <summary>Gets the <see cref="T:System.Xml.Serialization.XmlMembersMapping" /> for each XML Web service method exposed by the specified type, and stores the mappings in the specified <see cref="T:System.Collections.ArrayList" />.</summary>
         <returns>
@@ -290,12 +296,17 @@
       </Docs>
     </Member>
     <Member MemberName="GenerateXmlMappings">
-      <MemberSignature Language="C#" Value="public static System.Collections.Hashtable GenerateXmlMappings (Type[] types, System.Collections.ArrayList mapping);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Hashtable GenerateXmlMappings(class System.Type[] types, class System.Collections.ArrayList mapping) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings(System.Type[],System.Collections.ArrayList)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function GenerateXmlMappings (types As Type(), mapping As ArrayList) As Hashtable" />
+      <MemberSignature Language="C#" Value="public static System.Collections.Hashtable GenerateXmlMappings (Type[] types, System.Collections.ArrayList mappings);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Hashtable GenerateXmlMappings(class System.Type[] types, class System.Collections.ArrayList mappings) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings(System.Type[],System.Collections.ArrayList)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GenerateXmlMappings (types As Type(), mappings As ArrayList) As Hashtable" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
       <MemberSignature Language="F#" Value="static member GenerateXmlMappings : Type[] * System.Collections.ArrayList -&gt; System.Collections.Hashtable" Usage="System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings (types, mapping)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Hashtable ^ GenerateXmlMappings(cli::array &lt;Type ^&gt; ^ types, System::Collections::ArrayList ^ mapping);" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Hashtable ^ GenerateXmlMappings(cli::array &lt;Type ^&gt; ^ types, System::Collections::ArrayList ^ mappings);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public static System.Collections.Hashtable GenerateXmlMappings (Type[] types, System.Collections.ArrayList mapping);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Hashtable GenerateXmlMappings(class System.Type[] types, class System.Collections.ArrayList mapping) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings(System.Type[],System.Collections.ArrayList)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GenerateXmlMappings (types As Type(), mapping As ArrayList) As Hashtable" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Hashtable ^ GenerateXmlMappings(cli::array &lt;Type ^&gt; ^ types, System::Collections::ArrayList ^ mapping);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -306,11 +317,13 @@
         <ReturnType>System.Collections.Hashtable</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="types" Type="System.Type[]" />
-        <Parameter Name="mappings" Type="System.Collections.ArrayList" />
+        <Parameter Name="types" Type="System.Type[]" Index="0" />
+        <Parameter Name="mappings" Type="System.Collections.ArrayList" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="mapping" Type="System.Collections.ArrayList" Index="1" FrameworkAlternate="xamarinandroid-7.1" />
       </Parameters>
       <Docs>
         <param name="types">An array of type <see cref="T:System.Type" /> that contains the types that expose the XML Web service methods.</param>
+        <param name="mappings">To be added.</param>
         <param name="mapping">To be added.</param>
         <summary>Gets the <see cref="T:System.Xml.Serialization.XmlMembersMapping" /> for each XML Web service method exposed by the specified types, and stores the mappings in the specified <see cref="T:System.Collections.ArrayList" />, as well as in a <see cref="T:System.Collections.Hashtable" /> that this method returns.</summary>
         <returns>A <see cref="T:System.Collections.Hashtable" /> that contains the <see cref="T:System.Xml.Serialization.XmlMembersMapping" /> for each XML Web service method exposed by the specified types. The types contained in <paramref name="types" /> are used as keys.</returns>
@@ -425,7 +438,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -475,7 +488,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -515,7 +528,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

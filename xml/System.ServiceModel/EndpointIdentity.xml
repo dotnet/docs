@@ -433,12 +433,17 @@
       </Docs>
     </Member>
     <Member MemberName="Equals">
-      <MemberSignature Language="C#" Value="public override bool Equals (object other);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object other) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointIdentity.Equals(System.Object)" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (other As Object) As Boolean" />
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointIdentity.Equals(System.Object)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="endpointIdentity.Equals other" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ other);" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8" />
+      <MemberSignature Language="C#" Value="public override bool Equals (object other);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object other) cil managed" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointIdentity.Equals(System.Object)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (other As Object) As Boolean" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ other);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -454,7 +459,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="obj" Type="System.Object" />
+        <Parameter Name="obj" Type="System.Object" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8" />
+        <Parameter Name="other" Type="System.Object" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="other">To be added.</param>
@@ -530,12 +536,16 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="Initialize">
-      <MemberSignature Language="C#" Value="protected void Initialize (System.IdentityModel.Claims.Claim claim);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void Initialize(class System.IdentityModel.Claims.Claim claim) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointIdentity.Initialize(System.IdentityModel.Claims.Claim)" />
+      <MemberSignature Language="C#" Value="protected void Initialize (System.IdentityModel.Claims.Claim identityClaim);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void Initialize(class System.IdentityModel.Claims.Claim identityClaim) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointIdentity.Initialize(System.IdentityModel.Claims.Claim)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8" />
       <MemberSignature Language="VB.NET" Value="Protected Sub Initialize (identityClaim As Claim)" />
       <MemberSignature Language="F#" Value="member this.Initialize : System.IdentityModel.Claims.Claim -&gt; unit" Usage="endpointIdentity.Initialize claim" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void Initialize(System::IdentityModel::Claims::Claim ^ claim);" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void Initialize(System::IdentityModel::Claims::Claim ^ identityClaim);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8" />
+      <MemberSignature Language="C#" Value="protected void Initialize (System.IdentityModel.Claims.Claim claim);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void Initialize(class System.IdentityModel.Claims.Claim claim) cil managed" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointIdentity.Initialize(System.IdentityModel.Claims.Claim)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void Initialize(System::IdentityModel::Claims::Claim ^ claim);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -545,7 +555,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="identityClaim" Type="System.IdentityModel.Claims.Claim" />
+        <Parameter Name="identityClaim" Type="System.IdentityModel.Claims.Claim" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8" />
+        <Parameter Name="claim" Type="System.IdentityModel.Claims.Claim" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="claim">To be added.</param>
@@ -561,12 +572,16 @@
       </Docs>
     </Member>
     <Member MemberName="Initialize">
-      <MemberSignature Language="C#" Value="protected void Initialize (System.IdentityModel.Claims.Claim claim, System.Collections.Generic.IEqualityComparer&lt;System.IdentityModel.Claims.Claim&gt; comparer);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void Initialize(class System.IdentityModel.Claims.Claim claim, class System.Collections.Generic.IEqualityComparer`1&lt;class System.IdentityModel.Claims.Claim&gt; comparer) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointIdentity.Initialize(System.IdentityModel.Claims.Claim,System.Collections.Generic.IEqualityComparer{System.IdentityModel.Claims.Claim})" />
+      <MemberSignature Language="C#" Value="protected void Initialize (System.IdentityModel.Claims.Claim identityClaim, System.Collections.Generic.IEqualityComparer&lt;System.IdentityModel.Claims.Claim&gt; claimComparer);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void Initialize(class System.IdentityModel.Claims.Claim identityClaim, class System.Collections.Generic.IEqualityComparer`1&lt;class System.IdentityModel.Claims.Claim&gt; claimComparer) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointIdentity.Initialize(System.IdentityModel.Claims.Claim,System.Collections.Generic.IEqualityComparer{System.IdentityModel.Claims.Claim})" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8" />
       <MemberSignature Language="VB.NET" Value="Protected Sub Initialize (identityClaim As Claim, claimComparer As IEqualityComparer(Of Claim))" />
       <MemberSignature Language="F#" Value="member this.Initialize : System.IdentityModel.Claims.Claim * System.Collections.Generic.IEqualityComparer&lt;System.IdentityModel.Claims.Claim&gt; -&gt; unit" Usage="endpointIdentity.Initialize (claim, comparer)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void Initialize(System::IdentityModel::Claims::Claim ^ claim, System::Collections::Generic::IEqualityComparer&lt;System::IdentityModel::Claims::Claim ^&gt; ^ comparer);" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void Initialize(System::IdentityModel::Claims::Claim ^ identityClaim, System::Collections::Generic::IEqualityComparer&lt;System::IdentityModel::Claims::Claim ^&gt; ^ claimComparer);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8" />
+      <MemberSignature Language="C#" Value="protected void Initialize (System.IdentityModel.Claims.Claim claim, System.Collections.Generic.IEqualityComparer&lt;System.IdentityModel.Claims.Claim&gt; comparer);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void Initialize(class System.IdentityModel.Claims.Claim claim, class System.Collections.Generic.IEqualityComparer`1&lt;class System.IdentityModel.Claims.Claim&gt; comparer) cil managed" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointIdentity.Initialize(System.IdentityModel.Claims.Claim,System.Collections.Generic.IEqualityComparer{System.IdentityModel.Claims.Claim})" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void Initialize(System::IdentityModel::Claims::Claim ^ claim, System::Collections::Generic::IEqualityComparer&lt;System::IdentityModel::Claims::Claim ^&gt; ^ comparer);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -576,11 +591,15 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="identityClaim" Type="System.IdentityModel.Claims.Claim" />
-        <Parameter Name="claimComparer" Type="System.Collections.Generic.IEqualityComparer&lt;System.IdentityModel.Claims.Claim&gt;" />
+        <Parameter Name="identityClaim" Type="System.IdentityModel.Claims.Claim" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8" />
+        <Parameter Name="claim" Type="System.IdentityModel.Claims.Claim" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="claimComparer" Type="System.Collections.Generic.IEqualityComparer&lt;System.IdentityModel.Claims.Claim&gt;" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;xamarinandroid-7.1;xamarinios-10.8" />
+        <Parameter Name="comparer" Type="System.Collections.Generic.IEqualityComparer&lt;System.IdentityModel.Claims.Claim&gt;" Index="1" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
+        <param name="identityClaim">To be added.</param>
         <param name="claim">To be added.</param>
+        <param name="claimComparer">To be added.</param>
         <param name="comparer">To be added.</param>
         <summary>Initializes an <see cref="T:System.ServiceModel.EndpointIdentity" /> with the specified claim and an interface and compares equality.</summary>
         <remarks>To be added.</remarks>

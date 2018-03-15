@@ -306,12 +306,17 @@
       </Docs>
     </Member>
     <Member MemberName="Union">
-      <MemberSignature Language="C#" Value="public void Union (System.ServiceModel.Security.MessagePartSpecification other);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Union(class System.ServiceModel.Security.MessagePartSpecification other) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.MessagePartSpecification.Union(System.ServiceModel.Security.MessagePartSpecification)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub Union (other As MessagePartSpecification)" />
+      <MemberSignature Language="C#" Value="public void Union (System.ServiceModel.Security.MessagePartSpecification specification);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Union(class System.ServiceModel.Security.MessagePartSpecification specification) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.MessagePartSpecification.Union(System.ServiceModel.Security.MessagePartSpecification)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Union (specification As MessagePartSpecification)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
       <MemberSignature Language="F#" Value="member this.Union : System.ServiceModel.Security.MessagePartSpecification -&gt; unit" Usage="messagePartSpecification.Union other" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Union(System::ServiceModel::Security::MessagePartSpecification ^ other);" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Union(System::ServiceModel::Security::MessagePartSpecification ^ specification);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public void Union (System.ServiceModel.Security.MessagePartSpecification other);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Union(class System.ServiceModel.Security.MessagePartSpecification other) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.MessagePartSpecification.Union(System.ServiceModel.Security.MessagePartSpecification)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Union (other As MessagePartSpecification)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Union(System::ServiceModel::Security::MessagePartSpecification ^ other);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -322,7 +327,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="specification" Type="System.ServiceModel.Security.MessagePartSpecification" />
+        <Parameter Name="specification" Type="System.ServiceModel.Security.MessagePartSpecification" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="other" Type="System.ServiceModel.Security.MessagePartSpecification" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
       </Parameters>
       <Docs>
         <param name="other">To be added.</param>

@@ -140,7 +140,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Configuration.ConfigurationProperty("storeLocation", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+          <AttributeName>System.Configuration.ConfigurationProperty</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -166,7 +166,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Configuration.ConfigurationProperty("storeName", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+          <AttributeName>System.Configuration.ConfigurationProperty</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -192,7 +192,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Configuration.ConfigurationProperty("x509FindType", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+          <AttributeName>System.Configuration.ConfigurationProperty</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

@@ -179,9 +179,6 @@
       <MemberSignature Language="F#" Value="override this.IsUnrestricted : unit -&gt; bool" Usage="configurationPermission.IsUnrestricted " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsUnrestricted();" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Security.Permissions.IUnrestrictedPermission.IsUnrestricted</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -258,7 +258,7 @@ Driver={SQL Server};Server="MyServer;NewValue=Bad"
           <AttributeName>System.ComponentModel.DisplayName("Driver")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -298,7 +298,7 @@ Driver={SQL Server};Server="MyServer;NewValue=Bad"
           <AttributeName>System.ComponentModel.DisplayName("Dsn")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

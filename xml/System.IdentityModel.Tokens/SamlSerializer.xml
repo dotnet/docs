@@ -46,12 +46,17 @@
       </Docs>
     </Member>
     <Member MemberName="LoadAdvice">
-      <MemberSignature Language="C#" Value="public virtual System.IdentityModel.Tokens.SamlAdvice LoadAdvice (System.Xml.XmlDictionaryReader reader, System.IdentityModel.Selectors.SecurityTokenSerializer tokenSerializer, System.IdentityModel.Selectors.SecurityTokenResolver tokenResolver);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Tokens.SamlAdvice LoadAdvice(class System.Xml.XmlDictionaryReader reader, class System.IdentityModel.Selectors.SecurityTokenSerializer tokenSerializer, class System.IdentityModel.Selectors.SecurityTokenResolver tokenResolver) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSerializer.LoadAdvice(System.Xml.XmlDictionaryReader,System.IdentityModel.Selectors.SecurityTokenSerializer,System.IdentityModel.Selectors.SecurityTokenResolver)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function LoadAdvice (reader As XmlDictionaryReader, tokenSerializer As SecurityTokenSerializer, tokenResolver As SecurityTokenResolver) As SamlAdvice" />
+      <MemberSignature Language="C#" Value="public virtual System.IdentityModel.Tokens.SamlAdvice LoadAdvice (System.Xml.XmlDictionaryReader reader, System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoSerializer, System.IdentityModel.Selectors.SecurityTokenResolver outOfBandTokenResolver);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Tokens.SamlAdvice LoadAdvice(class System.Xml.XmlDictionaryReader reader, class System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoSerializer, class System.IdentityModel.Selectors.SecurityTokenResolver outOfBandTokenResolver) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSerializer.LoadAdvice(System.Xml.XmlDictionaryReader,System.IdentityModel.Selectors.SecurityTokenSerializer,System.IdentityModel.Selectors.SecurityTokenResolver)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function LoadAdvice (reader As XmlDictionaryReader, keyInfoSerializer As SecurityTokenSerializer, outOfBandTokenResolver As SecurityTokenResolver) As SamlAdvice" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
       <MemberSignature Language="F#" Value="abstract member LoadAdvice : System.Xml.XmlDictionaryReader * System.IdentityModel.Selectors.SecurityTokenSerializer * System.IdentityModel.Selectors.SecurityTokenResolver -&gt; System.IdentityModel.Tokens.SamlAdvice&#xA;override this.LoadAdvice : System.Xml.XmlDictionaryReader * System.IdentityModel.Selectors.SecurityTokenSerializer * System.IdentityModel.Selectors.SecurityTokenResolver -&gt; System.IdentityModel.Tokens.SamlAdvice" Usage="samlSerializer.LoadAdvice (reader, tokenSerializer, tokenResolver)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IdentityModel::Tokens::SamlAdvice ^ LoadAdvice(System::Xml::XmlDictionaryReader ^ reader, System::IdentityModel::Selectors::SecurityTokenSerializer ^ tokenSerializer, System::IdentityModel::Selectors::SecurityTokenResolver ^ tokenResolver);" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IdentityModel::Tokens::SamlAdvice ^ LoadAdvice(System::Xml::XmlDictionaryReader ^ reader, System::IdentityModel::Selectors::SecurityTokenSerializer ^ keyInfoSerializer, System::IdentityModel::Selectors::SecurityTokenResolver ^ outOfBandTokenResolver);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public virtual System.IdentityModel.Tokens.SamlAdvice LoadAdvice (System.Xml.XmlDictionaryReader reader, System.IdentityModel.Selectors.SecurityTokenSerializer tokenSerializer, System.IdentityModel.Selectors.SecurityTokenResolver tokenResolver);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Tokens.SamlAdvice LoadAdvice(class System.Xml.XmlDictionaryReader reader, class System.IdentityModel.Selectors.SecurityTokenSerializer tokenSerializer, class System.IdentityModel.Selectors.SecurityTokenResolver tokenResolver) cil managed" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSerializer.LoadAdvice(System.Xml.XmlDictionaryReader,System.IdentityModel.Selectors.SecurityTokenSerializer,System.IdentityModel.Selectors.SecurityTokenResolver)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function LoadAdvice (reader As XmlDictionaryReader, tokenSerializer As SecurityTokenSerializer, tokenResolver As SecurityTokenResolver) As SamlAdvice" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IdentityModel::Tokens::SamlAdvice ^ LoadAdvice(System::Xml::XmlDictionaryReader ^ reader, System::IdentityModel::Selectors::SecurityTokenSerializer ^ tokenSerializer, System::IdentityModel::Selectors::SecurityTokenResolver ^ tokenResolver);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -61,13 +66,17 @@
         <ReturnType>System.IdentityModel.Tokens.SamlAdvice</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="reader" Type="System.Xml.XmlDictionaryReader" />
-        <Parameter Name="keyInfoSerializer" Type="System.IdentityModel.Selectors.SecurityTokenSerializer" />
-        <Parameter Name="outOfBandTokenResolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver" />
+        <Parameter Name="reader" Type="System.Xml.XmlDictionaryReader" Index="0" />
+        <Parameter Name="keyInfoSerializer" Type="System.IdentityModel.Selectors.SecurityTokenSerializer" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="tokenSerializer" Type="System.IdentityModel.Selectors.SecurityTokenSerializer" Index="1" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="outOfBandTokenResolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="tokenResolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver" Index="2" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="reader">An <see cref="T:System.Xml.XmlDictionaryReader" /> to read the additional information provided by the SAML authority.</param>
+        <param name="keyInfoSerializer">To be added.</param>
         <param name="tokenSerializer">To be added.</param>
+        <param name="outOfBandTokenResolver">To be added.</param>
         <param name="tokenResolver">To be added.</param>
         <summary>Reads the additional information provided by the SAML authority within a <see langword="&lt;saml:Advice&gt;" /> element of a SAML assertion using the specified XML reader.</summary>
         <returns>A <see cref="T:System.IdentityModel.Tokens.SamlAdvice" /> that contains additional information provided by the SAML authority within a <see langword="&lt;saml:Advice&gt;" /> element of a SAML assertion.</returns>
@@ -85,12 +94,17 @@
       </Docs>
     </Member>
     <Member MemberName="LoadAssertion">
-      <MemberSignature Language="C#" Value="public virtual System.IdentityModel.Tokens.SamlAssertion LoadAssertion (System.Xml.XmlDictionaryReader reader, System.IdentityModel.Selectors.SecurityTokenSerializer tokenSerializer, System.IdentityModel.Selectors.SecurityTokenResolver tokenResolver);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Tokens.SamlAssertion LoadAssertion(class System.Xml.XmlDictionaryReader reader, class System.IdentityModel.Selectors.SecurityTokenSerializer tokenSerializer, class System.IdentityModel.Selectors.SecurityTokenResolver tokenResolver) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSerializer.LoadAssertion(System.Xml.XmlDictionaryReader,System.IdentityModel.Selectors.SecurityTokenSerializer,System.IdentityModel.Selectors.SecurityTokenResolver)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function LoadAssertion (reader As XmlDictionaryReader, tokenSerializer As SecurityTokenSerializer, tokenResolver As SecurityTokenResolver) As SamlAssertion" />
+      <MemberSignature Language="C#" Value="public virtual System.IdentityModel.Tokens.SamlAssertion LoadAssertion (System.Xml.XmlDictionaryReader reader, System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoSerializer, System.IdentityModel.Selectors.SecurityTokenResolver outOfBandTokenResolver);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Tokens.SamlAssertion LoadAssertion(class System.Xml.XmlDictionaryReader reader, class System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoSerializer, class System.IdentityModel.Selectors.SecurityTokenResolver outOfBandTokenResolver) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSerializer.LoadAssertion(System.Xml.XmlDictionaryReader,System.IdentityModel.Selectors.SecurityTokenSerializer,System.IdentityModel.Selectors.SecurityTokenResolver)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function LoadAssertion (reader As XmlDictionaryReader, keyInfoSerializer As SecurityTokenSerializer, outOfBandTokenResolver As SecurityTokenResolver) As SamlAssertion" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
       <MemberSignature Language="F#" Value="abstract member LoadAssertion : System.Xml.XmlDictionaryReader * System.IdentityModel.Selectors.SecurityTokenSerializer * System.IdentityModel.Selectors.SecurityTokenResolver -&gt; System.IdentityModel.Tokens.SamlAssertion&#xA;override this.LoadAssertion : System.Xml.XmlDictionaryReader * System.IdentityModel.Selectors.SecurityTokenSerializer * System.IdentityModel.Selectors.SecurityTokenResolver -&gt; System.IdentityModel.Tokens.SamlAssertion" Usage="samlSerializer.LoadAssertion (reader, tokenSerializer, tokenResolver)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IdentityModel::Tokens::SamlAssertion ^ LoadAssertion(System::Xml::XmlDictionaryReader ^ reader, System::IdentityModel::Selectors::SecurityTokenSerializer ^ tokenSerializer, System::IdentityModel::Selectors::SecurityTokenResolver ^ tokenResolver);" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IdentityModel::Tokens::SamlAssertion ^ LoadAssertion(System::Xml::XmlDictionaryReader ^ reader, System::IdentityModel::Selectors::SecurityTokenSerializer ^ keyInfoSerializer, System::IdentityModel::Selectors::SecurityTokenResolver ^ outOfBandTokenResolver);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public virtual System.IdentityModel.Tokens.SamlAssertion LoadAssertion (System.Xml.XmlDictionaryReader reader, System.IdentityModel.Selectors.SecurityTokenSerializer tokenSerializer, System.IdentityModel.Selectors.SecurityTokenResolver tokenResolver);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Tokens.SamlAssertion LoadAssertion(class System.Xml.XmlDictionaryReader reader, class System.IdentityModel.Selectors.SecurityTokenSerializer tokenSerializer, class System.IdentityModel.Selectors.SecurityTokenResolver tokenResolver) cil managed" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSerializer.LoadAssertion(System.Xml.XmlDictionaryReader,System.IdentityModel.Selectors.SecurityTokenSerializer,System.IdentityModel.Selectors.SecurityTokenResolver)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function LoadAssertion (reader As XmlDictionaryReader, tokenSerializer As SecurityTokenSerializer, tokenResolver As SecurityTokenResolver) As SamlAssertion" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IdentityModel::Tokens::SamlAssertion ^ LoadAssertion(System::Xml::XmlDictionaryReader ^ reader, System::IdentityModel::Selectors::SecurityTokenSerializer ^ tokenSerializer, System::IdentityModel::Selectors::SecurityTokenResolver ^ tokenResolver);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -100,13 +114,17 @@
         <ReturnType>System.IdentityModel.Tokens.SamlAssertion</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="reader" Type="System.Xml.XmlDictionaryReader" />
-        <Parameter Name="keyInfoSerializer" Type="System.IdentityModel.Selectors.SecurityTokenSerializer" />
-        <Parameter Name="outOfBandTokenResolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver" />
+        <Parameter Name="reader" Type="System.Xml.XmlDictionaryReader" Index="0" />
+        <Parameter Name="keyInfoSerializer" Type="System.IdentityModel.Selectors.SecurityTokenSerializer" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="tokenSerializer" Type="System.IdentityModel.Selectors.SecurityTokenSerializer" Index="1" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="outOfBandTokenResolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="tokenResolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver" Index="2" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="reader">An <see cref="T:System.Xml.XmlDictionaryReader" /> to read the SAML assertion.</param>
+        <param name="keyInfoSerializer">To be added.</param>
         <param name="tokenSerializer">To be added.</param>
+        <param name="outOfBandTokenResolver">To be added.</param>
         <param name="tokenResolver">To be added.</param>
         <summary>Reads a SAML assertion from the specified XML reader.</summary>
         <returns>A <see cref="T:System.IdentityModel.Tokens.SamlAssertion" /> that represents the SAML assertion.</returns>
@@ -126,12 +144,17 @@
       </Docs>
     </Member>
     <Member MemberName="LoadAttribute">
-      <MemberSignature Language="C#" Value="public virtual System.IdentityModel.Tokens.SamlAttribute LoadAttribute (System.Xml.XmlDictionaryReader reader, System.IdentityModel.Selectors.SecurityTokenSerializer tokenSerializer, System.IdentityModel.Selectors.SecurityTokenResolver tokenResolver);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Tokens.SamlAttribute LoadAttribute(class System.Xml.XmlDictionaryReader reader, class System.IdentityModel.Selectors.SecurityTokenSerializer tokenSerializer, class System.IdentityModel.Selectors.SecurityTokenResolver tokenResolver) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSerializer.LoadAttribute(System.Xml.XmlDictionaryReader,System.IdentityModel.Selectors.SecurityTokenSerializer,System.IdentityModel.Selectors.SecurityTokenResolver)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function LoadAttribute (reader As XmlDictionaryReader, tokenSerializer As SecurityTokenSerializer, tokenResolver As SecurityTokenResolver) As SamlAttribute" />
+      <MemberSignature Language="C#" Value="public virtual System.IdentityModel.Tokens.SamlAttribute LoadAttribute (System.Xml.XmlDictionaryReader reader, System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoSerializer, System.IdentityModel.Selectors.SecurityTokenResolver outOfBandTokenResolver);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Tokens.SamlAttribute LoadAttribute(class System.Xml.XmlDictionaryReader reader, class System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoSerializer, class System.IdentityModel.Selectors.SecurityTokenResolver outOfBandTokenResolver) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSerializer.LoadAttribute(System.Xml.XmlDictionaryReader,System.IdentityModel.Selectors.SecurityTokenSerializer,System.IdentityModel.Selectors.SecurityTokenResolver)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function LoadAttribute (reader As XmlDictionaryReader, keyInfoSerializer As SecurityTokenSerializer, outOfBandTokenResolver As SecurityTokenResolver) As SamlAttribute" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
       <MemberSignature Language="F#" Value="abstract member LoadAttribute : System.Xml.XmlDictionaryReader * System.IdentityModel.Selectors.SecurityTokenSerializer * System.IdentityModel.Selectors.SecurityTokenResolver -&gt; System.IdentityModel.Tokens.SamlAttribute&#xA;override this.LoadAttribute : System.Xml.XmlDictionaryReader * System.IdentityModel.Selectors.SecurityTokenSerializer * System.IdentityModel.Selectors.SecurityTokenResolver -&gt; System.IdentityModel.Tokens.SamlAttribute" Usage="samlSerializer.LoadAttribute (reader, tokenSerializer, tokenResolver)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IdentityModel::Tokens::SamlAttribute ^ LoadAttribute(System::Xml::XmlDictionaryReader ^ reader, System::IdentityModel::Selectors::SecurityTokenSerializer ^ tokenSerializer, System::IdentityModel::Selectors::SecurityTokenResolver ^ tokenResolver);" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IdentityModel::Tokens::SamlAttribute ^ LoadAttribute(System::Xml::XmlDictionaryReader ^ reader, System::IdentityModel::Selectors::SecurityTokenSerializer ^ keyInfoSerializer, System::IdentityModel::Selectors::SecurityTokenResolver ^ outOfBandTokenResolver);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public virtual System.IdentityModel.Tokens.SamlAttribute LoadAttribute (System.Xml.XmlDictionaryReader reader, System.IdentityModel.Selectors.SecurityTokenSerializer tokenSerializer, System.IdentityModel.Selectors.SecurityTokenResolver tokenResolver);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Tokens.SamlAttribute LoadAttribute(class System.Xml.XmlDictionaryReader reader, class System.IdentityModel.Selectors.SecurityTokenSerializer tokenSerializer, class System.IdentityModel.Selectors.SecurityTokenResolver tokenResolver) cil managed" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSerializer.LoadAttribute(System.Xml.XmlDictionaryReader,System.IdentityModel.Selectors.SecurityTokenSerializer,System.IdentityModel.Selectors.SecurityTokenResolver)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function LoadAttribute (reader As XmlDictionaryReader, tokenSerializer As SecurityTokenSerializer, tokenResolver As SecurityTokenResolver) As SamlAttribute" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IdentityModel::Tokens::SamlAttribute ^ LoadAttribute(System::Xml::XmlDictionaryReader ^ reader, System::IdentityModel::Selectors::SecurityTokenSerializer ^ tokenSerializer, System::IdentityModel::Selectors::SecurityTokenResolver ^ tokenResolver);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -141,13 +164,17 @@
         <ReturnType>System.IdentityModel.Tokens.SamlAttribute</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="reader" Type="System.Xml.XmlDictionaryReader" />
-        <Parameter Name="keyInfoSerializer" Type="System.IdentityModel.Selectors.SecurityTokenSerializer" />
-        <Parameter Name="outOfBandTokenResolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver" />
+        <Parameter Name="reader" Type="System.Xml.XmlDictionaryReader" Index="0" />
+        <Parameter Name="keyInfoSerializer" Type="System.IdentityModel.Selectors.SecurityTokenSerializer" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="tokenSerializer" Type="System.IdentityModel.Selectors.SecurityTokenSerializer" Index="1" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="outOfBandTokenResolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="tokenResolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver" Index="2" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="reader">An <see cref="T:System.Xml.XmlDictionaryReader" /> to read the attributes.</param>
+        <param name="keyInfoSerializer">To be added.</param>
         <param name="tokenSerializer">To be added.</param>
+        <param name="outOfBandTokenResolver">To be added.</param>
         <param name="tokenResolver">To be added.</param>
         <summary>Reads an attribute of the subject of a SAML security token using the specified XML reader.</summary>
         <returns>A <see cref="T:System.IdentityModel.Tokens.SamlAttribute" /> that represents a claim that is an attribute of the subject of a SAML security token.</returns>
@@ -163,12 +190,17 @@
       </Docs>
     </Member>
     <Member MemberName="LoadCondition">
-      <MemberSignature Language="C#" Value="public virtual System.IdentityModel.Tokens.SamlCondition LoadCondition (System.Xml.XmlDictionaryReader reader, System.IdentityModel.Selectors.SecurityTokenSerializer tokenSerializer, System.IdentityModel.Selectors.SecurityTokenResolver tokenResolver);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Tokens.SamlCondition LoadCondition(class System.Xml.XmlDictionaryReader reader, class System.IdentityModel.Selectors.SecurityTokenSerializer tokenSerializer, class System.IdentityModel.Selectors.SecurityTokenResolver tokenResolver) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSerializer.LoadCondition(System.Xml.XmlDictionaryReader,System.IdentityModel.Selectors.SecurityTokenSerializer,System.IdentityModel.Selectors.SecurityTokenResolver)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function LoadCondition (reader As XmlDictionaryReader, tokenSerializer As SecurityTokenSerializer, tokenResolver As SecurityTokenResolver) As SamlCondition" />
+      <MemberSignature Language="C#" Value="public virtual System.IdentityModel.Tokens.SamlCondition LoadCondition (System.Xml.XmlDictionaryReader reader, System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoSerializer, System.IdentityModel.Selectors.SecurityTokenResolver outOfBandTokenResolver);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Tokens.SamlCondition LoadCondition(class System.Xml.XmlDictionaryReader reader, class System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoSerializer, class System.IdentityModel.Selectors.SecurityTokenResolver outOfBandTokenResolver) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSerializer.LoadCondition(System.Xml.XmlDictionaryReader,System.IdentityModel.Selectors.SecurityTokenSerializer,System.IdentityModel.Selectors.SecurityTokenResolver)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function LoadCondition (reader As XmlDictionaryReader, keyInfoSerializer As SecurityTokenSerializer, outOfBandTokenResolver As SecurityTokenResolver) As SamlCondition" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
       <MemberSignature Language="F#" Value="abstract member LoadCondition : System.Xml.XmlDictionaryReader * System.IdentityModel.Selectors.SecurityTokenSerializer * System.IdentityModel.Selectors.SecurityTokenResolver -&gt; System.IdentityModel.Tokens.SamlCondition&#xA;override this.LoadCondition : System.Xml.XmlDictionaryReader * System.IdentityModel.Selectors.SecurityTokenSerializer * System.IdentityModel.Selectors.SecurityTokenResolver -&gt; System.IdentityModel.Tokens.SamlCondition" Usage="samlSerializer.LoadCondition (reader, tokenSerializer, tokenResolver)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IdentityModel::Tokens::SamlCondition ^ LoadCondition(System::Xml::XmlDictionaryReader ^ reader, System::IdentityModel::Selectors::SecurityTokenSerializer ^ tokenSerializer, System::IdentityModel::Selectors::SecurityTokenResolver ^ tokenResolver);" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IdentityModel::Tokens::SamlCondition ^ LoadCondition(System::Xml::XmlDictionaryReader ^ reader, System::IdentityModel::Selectors::SecurityTokenSerializer ^ keyInfoSerializer, System::IdentityModel::Selectors::SecurityTokenResolver ^ outOfBandTokenResolver);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public virtual System.IdentityModel.Tokens.SamlCondition LoadCondition (System.Xml.XmlDictionaryReader reader, System.IdentityModel.Selectors.SecurityTokenSerializer tokenSerializer, System.IdentityModel.Selectors.SecurityTokenResolver tokenResolver);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Tokens.SamlCondition LoadCondition(class System.Xml.XmlDictionaryReader reader, class System.IdentityModel.Selectors.SecurityTokenSerializer tokenSerializer, class System.IdentityModel.Selectors.SecurityTokenResolver tokenResolver) cil managed" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSerializer.LoadCondition(System.Xml.XmlDictionaryReader,System.IdentityModel.Selectors.SecurityTokenSerializer,System.IdentityModel.Selectors.SecurityTokenResolver)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function LoadCondition (reader As XmlDictionaryReader, tokenSerializer As SecurityTokenSerializer, tokenResolver As SecurityTokenResolver) As SamlCondition" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IdentityModel::Tokens::SamlCondition ^ LoadCondition(System::Xml::XmlDictionaryReader ^ reader, System::IdentityModel::Selectors::SecurityTokenSerializer ^ tokenSerializer, System::IdentityModel::Selectors::SecurityTokenResolver ^ tokenResolver);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -178,13 +210,17 @@
         <ReturnType>System.IdentityModel.Tokens.SamlCondition</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="reader" Type="System.Xml.XmlDictionaryReader" />
-        <Parameter Name="keyInfoSerializer" Type="System.IdentityModel.Selectors.SecurityTokenSerializer" />
-        <Parameter Name="outOfBandTokenResolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver" />
+        <Parameter Name="reader" Type="System.Xml.XmlDictionaryReader" Index="0" />
+        <Parameter Name="keyInfoSerializer" Type="System.IdentityModel.Selectors.SecurityTokenSerializer" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="tokenSerializer" Type="System.IdentityModel.Selectors.SecurityTokenSerializer" Index="1" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="outOfBandTokenResolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="tokenResolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver" Index="2" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="reader">An <see cref="T:System.Xml.XmlDictionaryReader" /> to read the SAML condition.</param>
+        <param name="keyInfoSerializer">To be added.</param>
         <param name="tokenSerializer">To be added.</param>
+        <param name="outOfBandTokenResolver">To be added.</param>
         <param name="tokenResolver">To be added.</param>
         <summary>Reads a condition that must be taken into account when assessing the validity of a SAML assertion using the specified XML reader.</summary>
         <returns>A <see cref="T:System.IdentityModel.Tokens.SamlCondition" /> that specifies a condition that must be taken into account when assessing the validity of a SAML assertion.</returns>
@@ -202,12 +238,17 @@
       </Docs>
     </Member>
     <Member MemberName="LoadConditions">
-      <MemberSignature Language="C#" Value="public virtual System.IdentityModel.Tokens.SamlConditions LoadConditions (System.Xml.XmlDictionaryReader reader, System.IdentityModel.Selectors.SecurityTokenSerializer tokenSerializer, System.IdentityModel.Selectors.SecurityTokenResolver tokenResolver);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Tokens.SamlConditions LoadConditions(class System.Xml.XmlDictionaryReader reader, class System.IdentityModel.Selectors.SecurityTokenSerializer tokenSerializer, class System.IdentityModel.Selectors.SecurityTokenResolver tokenResolver) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSerializer.LoadConditions(System.Xml.XmlDictionaryReader,System.IdentityModel.Selectors.SecurityTokenSerializer,System.IdentityModel.Selectors.SecurityTokenResolver)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function LoadConditions (reader As XmlDictionaryReader, tokenSerializer As SecurityTokenSerializer, tokenResolver As SecurityTokenResolver) As SamlConditions" />
+      <MemberSignature Language="C#" Value="public virtual System.IdentityModel.Tokens.SamlConditions LoadConditions (System.Xml.XmlDictionaryReader reader, System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoSerializer, System.IdentityModel.Selectors.SecurityTokenResolver outOfBandTokenResolver);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Tokens.SamlConditions LoadConditions(class System.Xml.XmlDictionaryReader reader, class System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoSerializer, class System.IdentityModel.Selectors.SecurityTokenResolver outOfBandTokenResolver) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSerializer.LoadConditions(System.Xml.XmlDictionaryReader,System.IdentityModel.Selectors.SecurityTokenSerializer,System.IdentityModel.Selectors.SecurityTokenResolver)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function LoadConditions (reader As XmlDictionaryReader, keyInfoSerializer As SecurityTokenSerializer, outOfBandTokenResolver As SecurityTokenResolver) As SamlConditions" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
       <MemberSignature Language="F#" Value="abstract member LoadConditions : System.Xml.XmlDictionaryReader * System.IdentityModel.Selectors.SecurityTokenSerializer * System.IdentityModel.Selectors.SecurityTokenResolver -&gt; System.IdentityModel.Tokens.SamlConditions&#xA;override this.LoadConditions : System.Xml.XmlDictionaryReader * System.IdentityModel.Selectors.SecurityTokenSerializer * System.IdentityModel.Selectors.SecurityTokenResolver -&gt; System.IdentityModel.Tokens.SamlConditions" Usage="samlSerializer.LoadConditions (reader, tokenSerializer, tokenResolver)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IdentityModel::Tokens::SamlConditions ^ LoadConditions(System::Xml::XmlDictionaryReader ^ reader, System::IdentityModel::Selectors::SecurityTokenSerializer ^ tokenSerializer, System::IdentityModel::Selectors::SecurityTokenResolver ^ tokenResolver);" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IdentityModel::Tokens::SamlConditions ^ LoadConditions(System::Xml::XmlDictionaryReader ^ reader, System::IdentityModel::Selectors::SecurityTokenSerializer ^ keyInfoSerializer, System::IdentityModel::Selectors::SecurityTokenResolver ^ outOfBandTokenResolver);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public virtual System.IdentityModel.Tokens.SamlConditions LoadConditions (System.Xml.XmlDictionaryReader reader, System.IdentityModel.Selectors.SecurityTokenSerializer tokenSerializer, System.IdentityModel.Selectors.SecurityTokenResolver tokenResolver);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Tokens.SamlConditions LoadConditions(class System.Xml.XmlDictionaryReader reader, class System.IdentityModel.Selectors.SecurityTokenSerializer tokenSerializer, class System.IdentityModel.Selectors.SecurityTokenResolver tokenResolver) cil managed" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSerializer.LoadConditions(System.Xml.XmlDictionaryReader,System.IdentityModel.Selectors.SecurityTokenSerializer,System.IdentityModel.Selectors.SecurityTokenResolver)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function LoadConditions (reader As XmlDictionaryReader, tokenSerializer As SecurityTokenSerializer, tokenResolver As SecurityTokenResolver) As SamlConditions" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IdentityModel::Tokens::SamlConditions ^ LoadConditions(System::Xml::XmlDictionaryReader ^ reader, System::IdentityModel::Selectors::SecurityTokenSerializer ^ tokenSerializer, System::IdentityModel::Selectors::SecurityTokenResolver ^ tokenResolver);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -217,13 +258,17 @@
         <ReturnType>System.IdentityModel.Tokens.SamlConditions</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="reader" Type="System.Xml.XmlDictionaryReader" />
-        <Parameter Name="keyInfoSerializer" Type="System.IdentityModel.Selectors.SecurityTokenSerializer" />
-        <Parameter Name="outOfBandTokenResolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver" />
+        <Parameter Name="reader" Type="System.Xml.XmlDictionaryReader" Index="0" />
+        <Parameter Name="keyInfoSerializer" Type="System.IdentityModel.Selectors.SecurityTokenSerializer" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="tokenSerializer" Type="System.IdentityModel.Selectors.SecurityTokenSerializer" Index="1" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="outOfBandTokenResolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="tokenResolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver" Index="2" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="reader">An <see cref="T:System.Xml.XmlDictionaryReader" /> to read the SAML conditions.</param>
+        <param name="keyInfoSerializer">To be added.</param>
         <param name="tokenSerializer">To be added.</param>
+        <param name="outOfBandTokenResolver">To be added.</param>
         <param name="tokenResolver">To be added.</param>
         <summary>Reads a set of conditions that must be taken into account when assessing the validity of a SAML assertion using the specified XML reader.</summary>
         <returns>A <see cref="T:System.IdentityModel.Tokens.SamlConditions" /> that specifies a set of conditions that must be taken into account when assessing the validity of a SAML assertion.</returns>
@@ -241,12 +286,17 @@
       </Docs>
     </Member>
     <Member MemberName="LoadStatement">
-      <MemberSignature Language="C#" Value="public virtual System.IdentityModel.Tokens.SamlStatement LoadStatement (System.Xml.XmlDictionaryReader reader, System.IdentityModel.Selectors.SecurityTokenSerializer tokenSerializer, System.IdentityModel.Selectors.SecurityTokenResolver tokenResolver);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Tokens.SamlStatement LoadStatement(class System.Xml.XmlDictionaryReader reader, class System.IdentityModel.Selectors.SecurityTokenSerializer tokenSerializer, class System.IdentityModel.Selectors.SecurityTokenResolver tokenResolver) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSerializer.LoadStatement(System.Xml.XmlDictionaryReader,System.IdentityModel.Selectors.SecurityTokenSerializer,System.IdentityModel.Selectors.SecurityTokenResolver)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function LoadStatement (reader As XmlDictionaryReader, tokenSerializer As SecurityTokenSerializer, tokenResolver As SecurityTokenResolver) As SamlStatement" />
+      <MemberSignature Language="C#" Value="public virtual System.IdentityModel.Tokens.SamlStatement LoadStatement (System.Xml.XmlDictionaryReader reader, System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoSerializer, System.IdentityModel.Selectors.SecurityTokenResolver outOfBandTokenResolver);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Tokens.SamlStatement LoadStatement(class System.Xml.XmlDictionaryReader reader, class System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoSerializer, class System.IdentityModel.Selectors.SecurityTokenResolver outOfBandTokenResolver) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSerializer.LoadStatement(System.Xml.XmlDictionaryReader,System.IdentityModel.Selectors.SecurityTokenSerializer,System.IdentityModel.Selectors.SecurityTokenResolver)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function LoadStatement (reader As XmlDictionaryReader, keyInfoSerializer As SecurityTokenSerializer, outOfBandTokenResolver As SecurityTokenResolver) As SamlStatement" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
       <MemberSignature Language="F#" Value="abstract member LoadStatement : System.Xml.XmlDictionaryReader * System.IdentityModel.Selectors.SecurityTokenSerializer * System.IdentityModel.Selectors.SecurityTokenResolver -&gt; System.IdentityModel.Tokens.SamlStatement&#xA;override this.LoadStatement : System.Xml.XmlDictionaryReader * System.IdentityModel.Selectors.SecurityTokenSerializer * System.IdentityModel.Selectors.SecurityTokenResolver -&gt; System.IdentityModel.Tokens.SamlStatement" Usage="samlSerializer.LoadStatement (reader, tokenSerializer, tokenResolver)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IdentityModel::Tokens::SamlStatement ^ LoadStatement(System::Xml::XmlDictionaryReader ^ reader, System::IdentityModel::Selectors::SecurityTokenSerializer ^ tokenSerializer, System::IdentityModel::Selectors::SecurityTokenResolver ^ tokenResolver);" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IdentityModel::Tokens::SamlStatement ^ LoadStatement(System::Xml::XmlDictionaryReader ^ reader, System::IdentityModel::Selectors::SecurityTokenSerializer ^ keyInfoSerializer, System::IdentityModel::Selectors::SecurityTokenResolver ^ outOfBandTokenResolver);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public virtual System.IdentityModel.Tokens.SamlStatement LoadStatement (System.Xml.XmlDictionaryReader reader, System.IdentityModel.Selectors.SecurityTokenSerializer tokenSerializer, System.IdentityModel.Selectors.SecurityTokenResolver tokenResolver);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Tokens.SamlStatement LoadStatement(class System.Xml.XmlDictionaryReader reader, class System.IdentityModel.Selectors.SecurityTokenSerializer tokenSerializer, class System.IdentityModel.Selectors.SecurityTokenResolver tokenResolver) cil managed" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSerializer.LoadStatement(System.Xml.XmlDictionaryReader,System.IdentityModel.Selectors.SecurityTokenSerializer,System.IdentityModel.Selectors.SecurityTokenResolver)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function LoadStatement (reader As XmlDictionaryReader, tokenSerializer As SecurityTokenSerializer, tokenResolver As SecurityTokenResolver) As SamlStatement" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IdentityModel::Tokens::SamlStatement ^ LoadStatement(System::Xml::XmlDictionaryReader ^ reader, System::IdentityModel::Selectors::SecurityTokenSerializer ^ tokenSerializer, System::IdentityModel::Selectors::SecurityTokenResolver ^ tokenResolver);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -256,13 +306,17 @@
         <ReturnType>System.IdentityModel.Tokens.SamlStatement</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="reader" Type="System.Xml.XmlDictionaryReader" />
-        <Parameter Name="keyInfoSerializer" Type="System.IdentityModel.Selectors.SecurityTokenSerializer" />
-        <Parameter Name="outOfBandTokenResolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver" />
+        <Parameter Name="reader" Type="System.Xml.XmlDictionaryReader" Index="0" />
+        <Parameter Name="keyInfoSerializer" Type="System.IdentityModel.Selectors.SecurityTokenSerializer" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="tokenSerializer" Type="System.IdentityModel.Selectors.SecurityTokenSerializer" Index="1" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="outOfBandTokenResolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="tokenResolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver" Index="2" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="reader">An <see cref="T:System.Xml.XmlDictionaryReader" /> to read the SAML statement.</param>
+        <param name="keyInfoSerializer">To be added.</param>
         <param name="tokenSerializer">To be added.</param>
+        <param name="outOfBandTokenResolver">To be added.</param>
         <param name="tokenResolver">To be added.</param>
         <summary>Reads a SAML statement using the specified XML reader.</summary>
         <returns>A <see cref="T:System.IdentityModel.Tokens.SamlStatement" /> that represents the SAML statement.</returns>
@@ -333,12 +387,17 @@
       </Docs>
     </Member>
     <Member MemberName="ReadToken">
-      <MemberSignature Language="C#" Value="public virtual System.IdentityModel.Tokens.SamlSecurityToken ReadToken (System.Xml.XmlReader reader, System.IdentityModel.Selectors.SecurityTokenSerializer tokenSerializer, System.IdentityModel.Selectors.SecurityTokenResolver tokenResolver);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Tokens.SamlSecurityToken ReadToken(class System.Xml.XmlReader reader, class System.IdentityModel.Selectors.SecurityTokenSerializer tokenSerializer, class System.IdentityModel.Selectors.SecurityTokenResolver tokenResolver) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSerializer.ReadToken(System.Xml.XmlReader,System.IdentityModel.Selectors.SecurityTokenSerializer,System.IdentityModel.Selectors.SecurityTokenResolver)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadToken (reader As XmlReader, tokenSerializer As SecurityTokenSerializer, tokenResolver As SecurityTokenResolver) As SamlSecurityToken" />
+      <MemberSignature Language="C#" Value="public virtual System.IdentityModel.Tokens.SamlSecurityToken ReadToken (System.Xml.XmlReader reader, System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoSerializer, System.IdentityModel.Selectors.SecurityTokenResolver outOfBandTokenResolver);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Tokens.SamlSecurityToken ReadToken(class System.Xml.XmlReader reader, class System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoSerializer, class System.IdentityModel.Selectors.SecurityTokenResolver outOfBandTokenResolver) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSerializer.ReadToken(System.Xml.XmlReader,System.IdentityModel.Selectors.SecurityTokenSerializer,System.IdentityModel.Selectors.SecurityTokenResolver)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadToken (reader As XmlReader, keyInfoSerializer As SecurityTokenSerializer, outOfBandTokenResolver As SecurityTokenResolver) As SamlSecurityToken" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
       <MemberSignature Language="F#" Value="abstract member ReadToken : System.Xml.XmlReader * System.IdentityModel.Selectors.SecurityTokenSerializer * System.IdentityModel.Selectors.SecurityTokenResolver -&gt; System.IdentityModel.Tokens.SamlSecurityToken&#xA;override this.ReadToken : System.Xml.XmlReader * System.IdentityModel.Selectors.SecurityTokenSerializer * System.IdentityModel.Selectors.SecurityTokenResolver -&gt; System.IdentityModel.Tokens.SamlSecurityToken" Usage="samlSerializer.ReadToken (reader, tokenSerializer, tokenResolver)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IdentityModel::Tokens::SamlSecurityToken ^ ReadToken(System::Xml::XmlReader ^ reader, System::IdentityModel::Selectors::SecurityTokenSerializer ^ tokenSerializer, System::IdentityModel::Selectors::SecurityTokenResolver ^ tokenResolver);" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IdentityModel::Tokens::SamlSecurityToken ^ ReadToken(System::Xml::XmlReader ^ reader, System::IdentityModel::Selectors::SecurityTokenSerializer ^ keyInfoSerializer, System::IdentityModel::Selectors::SecurityTokenResolver ^ outOfBandTokenResolver);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public virtual System.IdentityModel.Tokens.SamlSecurityToken ReadToken (System.Xml.XmlReader reader, System.IdentityModel.Selectors.SecurityTokenSerializer tokenSerializer, System.IdentityModel.Selectors.SecurityTokenResolver tokenResolver);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Tokens.SamlSecurityToken ReadToken(class System.Xml.XmlReader reader, class System.IdentityModel.Selectors.SecurityTokenSerializer tokenSerializer, class System.IdentityModel.Selectors.SecurityTokenResolver tokenResolver) cil managed" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSerializer.ReadToken(System.Xml.XmlReader,System.IdentityModel.Selectors.SecurityTokenSerializer,System.IdentityModel.Selectors.SecurityTokenResolver)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadToken (reader As XmlReader, tokenSerializer As SecurityTokenSerializer, tokenResolver As SecurityTokenResolver) As SamlSecurityToken" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IdentityModel::Tokens::SamlSecurityToken ^ ReadToken(System::Xml::XmlReader ^ reader, System::IdentityModel::Selectors::SecurityTokenSerializer ^ tokenSerializer, System::IdentityModel::Selectors::SecurityTokenResolver ^ tokenResolver);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -348,13 +407,17 @@
         <ReturnType>System.IdentityModel.Tokens.SamlSecurityToken</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="reader" Type="System.Xml.XmlReader" />
-        <Parameter Name="keyInfoSerializer" Type="System.IdentityModel.Selectors.SecurityTokenSerializer" />
-        <Parameter Name="outOfBandTokenResolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver" />
+        <Parameter Name="reader" Type="System.Xml.XmlReader" Index="0" />
+        <Parameter Name="keyInfoSerializer" Type="System.IdentityModel.Selectors.SecurityTokenSerializer" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="tokenSerializer" Type="System.IdentityModel.Selectors.SecurityTokenSerializer" Index="1" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="outOfBandTokenResolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="tokenResolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver" Index="2" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="reader">An <see cref="T:System.Xml.XmlDictionaryReader" /> to read the <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> security token.</param>
+        <param name="keyInfoSerializer">To be added.</param>
         <param name="tokenSerializer">To be added.</param>
+        <param name="outOfBandTokenResolver">To be added.</param>
         <param name="tokenResolver">To be added.</param>
         <summary>Reads a SAML security token from the specified XML reader.</summary>
         <returns>A <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> security token.</returns>

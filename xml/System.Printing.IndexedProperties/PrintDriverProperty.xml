@@ -153,7 +153,6 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Printing.PrintDriver op_Implicit(class System.Printing.IndexedProperties.PrintDriverProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintDriverProperty.op_Implicit(System.Printing.IndexedProperties.PrintDriverProperty|System.Runtime.CompilerServices.IsImplicitlyDereferenced)~System.Printing.PrintDriver" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (attribRef As PrintDriverProperty) As PrintDriver" />
-      <MemberSignature Language="F#" Value="static member op_Implicit : System.Printing.IndexedProperties.PrintDriverProperty -&gt; System.Printing.PrintDriver" Usage="System.Printing.IndexedProperties.PrintDriverProperty.op_Implicit attribRef" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Printing::PrintDriver ^(System::Printing::IndexedProperties::PrintDriverProperty ^ attribRef);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

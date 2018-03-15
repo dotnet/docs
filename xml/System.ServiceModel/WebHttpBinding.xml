@@ -72,40 +72,6 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public WebHttpBinding (System.ServiceModel.WebHttpSecurityMode mode);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.ServiceModel.WebHttpSecurityMode mode) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.WebHttpBinding.#ctor(System.ServiceModel.WebHttpSecurityMode)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (mode As WebHttpSecurityMode)" />
-      <MemberSignature Language="F#" Value="new System.ServiceModel.WebHttpBinding : System.ServiceModel.WebHttpSecurityMode -&gt; System.ServiceModel.WebHttpBinding" Usage="new System.ServiceModel.WebHttpBinding mode" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebHttpBinding(System::ServiceModel::WebHttpSecurityMode mode);" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="securityMode" Type="System.ServiceModel.WebHttpSecurityMode" />
-      </Parameters>
-      <Docs>
-        <param name="mode">To be added.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.WebHttpBinding" /> class with the type of security used by the binding explicitly specified.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To use transport-level security for endpoints configured with this binding, the <xref:System.ServiceModel.WebHttpSecurityMode.Transport> value must be specified as a parameter in the <xref:System.ServiceModel.WebHttpBinding.%23ctor%28System.ServiceModel.WebHttpSecurityMode%29> constructor.  
-  
- To use HTTP authentication without HTTPS, the <xref:System.ServiceModel.WebHttpSecurityMode.TransportCredentialOnly> value must be specified as a parameter in the <xref:System.ServiceModel.WebHttpBinding.%23ctor%28System.ServiceModel.WebHttpSecurityMode%29> constructor.  
-  
- The value of <xref:System.ServiceModel.WebHttpSecurityMode> cannot be set again after the binding instance is created.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="mode" /> specified is not a valid <see cref="T:System.ServiceModel.WebHttpSecurityMode" />.</exception>
-      </Docs>
-    </Member>
-    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WebHttpBinding (string configurationName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string configurationName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WebHttpBinding.#ctor(System.String)" />
@@ -126,6 +92,46 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.WebHttpBinding" /> class with a binding specified by its configuration name.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">The binding element with the name <paramref name="configurationName" /> was not found.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebHttpBinding (System.ServiceModel.WebHttpSecurityMode securityMode);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.ServiceModel.WebHttpSecurityMode securityMode) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.WebHttpBinding.#ctor(System.ServiceModel.WebHttpSecurityMode)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (securityMode As WebHttpSecurityMode)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.WebHttpBinding : System.ServiceModel.WebHttpSecurityMode -&gt; System.ServiceModel.WebHttpBinding" Usage="new System.ServiceModel.WebHttpBinding mode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebHttpBinding(System::ServiceModel::WebHttpSecurityMode securityMode);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public WebHttpBinding (System.ServiceModel.WebHttpSecurityMode mode);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.ServiceModel.WebHttpSecurityMode mode) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.WebHttpBinding.#ctor(System.ServiceModel.WebHttpSecurityMode)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (mode As WebHttpSecurityMode)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebHttpBinding(System::ServiceModel::WebHttpSecurityMode mode);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="securityMode" Type="System.ServiceModel.WebHttpSecurityMode" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="mode" Type="System.ServiceModel.WebHttpSecurityMode" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
+      </Parameters>
+      <Docs>
+        <param name="mode">To be added.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.WebHttpBinding" /> class with the type of security used by the binding explicitly specified.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To use transport-level security for endpoints configured with this binding, the <xref:System.ServiceModel.WebHttpSecurityMode.Transport> value must be specified as a parameter in the <xref:System.ServiceModel.WebHttpBinding.%23ctor%28System.ServiceModel.WebHttpSecurityMode%29> constructor.  
+  
+ To use HTTP authentication without HTTPS, the <xref:System.ServiceModel.WebHttpSecurityMode.TransportCredentialOnly> value must be specified as a parameter in the <xref:System.ServiceModel.WebHttpBinding.%23ctor%28System.ServiceModel.WebHttpSecurityMode%29> constructor.  
+  
+ The value of <xref:System.ServiceModel.WebHttpSecurityMode> cannot be set again after the binding instance is created.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="mode" /> specified is not a valid <see cref="T:System.ServiceModel.WebHttpSecurityMode" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AllowCookies">

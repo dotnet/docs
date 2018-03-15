@@ -102,9 +102,6 @@
       <MemberSignature Language="F#" Value="member this.Deserialize : System.IO.Stream -&gt; obj" Usage="objectStateFormatter.Deserialize inputStream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Deserialize(System::IO::Stream ^ inputStream);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Runtime.Serialization.IFormatter.Deserialize(System.IO.Stream)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -251,9 +248,6 @@
       <MemberSignature Language="F#" Value="member this.Serialize : System.IO.Stream * obj -&gt; unit" Usage="objectStateFormatter.Serialize (outputStream, stateGraph)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Serialize(System::IO::Stream ^ outputStream, System::Object ^ stateGraph);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Runtime.Serialization.IFormatter.Serialize(System.IO.Stream,System.Object)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -296,9 +290,6 @@
       <MemberSignature Language="F#" Usage="System.Web.UI.ObjectStateFormatter.System.Runtime.Serialization.IFormatter.Binder" />
       <MemberSignature Language="C++ CLI" Value="property System::Runtime::Serialization::SerializationBinder ^ System.Runtime.Serialization.IFormatter.Binder { System::Runtime::Serialization::SerializationBinder ^ get(); void set(System::Runtime::Serialization::SerializationBinder ^ value); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Runtime.Serialization.IFormatter.Binder</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -327,9 +318,6 @@
       <MemberSignature Language="F#" Usage="System.Web.UI.ObjectStateFormatter.System.Runtime.Serialization.IFormatter.Context" />
       <MemberSignature Language="C++ CLI" Value="property System::Runtime::Serialization::StreamingContext System.Runtime.Serialization.IFormatter.Context { System::Runtime::Serialization::StreamingContext get(); void set(System::Runtime::Serialization::StreamingContext value); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Runtime.Serialization.IFormatter.Context</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -357,9 +345,6 @@
       <MemberSignature Language="VB.NET" Value="Function Deserialize (serializationStream As Stream) As Object Implements IFormatter.Deserialize" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.Runtime.Serialization.IFormatter.Deserialize(System::IO::Stream ^ serializationStream) = System::Runtime::Serialization::IFormatter::Deserialize;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Runtime.Serialization.IFormatter.Deserialize(System.IO.Stream)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -391,9 +376,6 @@
       <MemberSignature Language="VB.NET" Value="Sub Serialize (serializationStream As Stream, stateGraph As Object) Implements IFormatter.Serialize" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.Serialization.IFormatter.Serialize(System::IO::Stream ^ serializationStream, System::Object ^ stateGraph) = System::Runtime::Serialization::IFormatter::Serialize;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Runtime.Serialization.IFormatter.Serialize(System.IO.Stream,System.Object)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -427,9 +409,6 @@
       <MemberSignature Language="F#" Usage="System.Web.UI.ObjectStateFormatter.System.Runtime.Serialization.IFormatter.SurrogateSelector" />
       <MemberSignature Language="C++ CLI" Value="property System::Runtime::Serialization::ISurrogateSelector ^ System.Runtime.Serialization.IFormatter.SurrogateSelector { System::Runtime::Serialization::ISurrogateSelector ^ get(); void set(System::Runtime::Serialization::ISurrogateSelector ^ value); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Runtime.Serialization.IFormatter.SurrogateSelector</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

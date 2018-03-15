@@ -1,10 +1,10 @@
 ﻿<Type Name="IDesignerLoaderHost" FullName="System.ComponentModel.Design.Serialization.IDesignerLoaderHost">
-  <TypeSignature Language="C#" Value="public interface IDesignerLoaderHost : IServiceProvider, System.ComponentModel.Design.IDesignerHost" />
+  <TypeSignature Language="C#" Value="public interface IDesignerLoaderHost : System.ComponentModel.Design.IDesignerHost" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDesignerLoaderHost implements class System.ComponentModel.Design.IDesignerHost, class System.ComponentModel.Design.IServiceContainer, class System.IServiceProvider" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.IDesignerLoaderHost" />
-  <TypeSignature Language="VB.NET" Value="Public Interface IDesignerLoaderHost&#xA;Implements IDesignerHost, IServiceProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDesignerLoaderHost&#xA;Implements IDesignerHost" />
   <TypeSignature Language="F#" Value="type IDesignerLoaderHost = interface&#xA;    interface IDesignerHost&#xA;    interface IServiceContainer&#xA;    interface IServiceProvider" />
-  <TypeSignature Language="C++ CLI" Value="public interface class IDesignerLoaderHost : IServiceProvider, System::ComponentModel::Design::IDesignerHost" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDesignerLoaderHost : System::ComponentModel::Design::IDesignerHost" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -21,9 +21,6 @@
   <Interfaces>
     <Interface>
       <InterfaceName>System.ComponentModel.Design.IDesignerHost</InterfaceName>
-    </Interface>
-    <Interface>
-      <InterfaceName>System.IServiceProvider</InterfaceName>
     </Interface>
   </Interfaces>
   <Docs>

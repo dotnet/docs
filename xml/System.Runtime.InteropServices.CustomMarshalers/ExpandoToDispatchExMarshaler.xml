@@ -41,9 +41,6 @@ void UseCustomMarshaler([MarshalAs(UnmanagedType.CustomMarshaler, MarshalTypeRef
       <MemberSignature Language="F#" Value="abstract member CleanUpManagedData : obj -&gt; unit&#xA;override this.CleanUpManagedData : obj -&gt; unit" Usage="expandoToDispatchExMarshaler.CleanUpManagedData pManagedObj" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CleanUpManagedData(System::Object ^ pManagedObj);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices.ICustomMarshaler.CleanUpManagedData(System.Object)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>CustomMarshalers</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -75,9 +72,6 @@ void UseCustomMarshaler([MarshalAs(UnmanagedType.CustomMarshaler, MarshalTypeRef
       <MemberSignature Language="F#" Value="abstract member CleanUpNativeData : nativeint -&gt; unit&#xA;override this.CleanUpNativeData : nativeint -&gt; unit" Usage="expandoToDispatchExMarshaler.CleanUpNativeData pNativeData" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CleanUpNativeData(IntPtr pNativeData);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices.ICustomMarshaler.CleanUpNativeData(System.IntPtr)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>CustomMarshalers</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -143,9 +137,6 @@ void UseCustomMarshaler([MarshalAs(UnmanagedType.CustomMarshaler, MarshalTypeRef
       <MemberSignature Language="F#" Value="abstract member GetNativeDataSize : unit -&gt; int&#xA;override this.GetNativeDataSize : unit -&gt; int" Usage="expandoToDispatchExMarshaler.GetNativeDataSize " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetNativeDataSize();" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices.ICustomMarshaler.GetNativeDataSize</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>CustomMarshalers</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -175,9 +166,6 @@ void UseCustomMarshaler([MarshalAs(UnmanagedType.CustomMarshaler, MarshalTypeRef
       <MemberSignature Language="F#" Value="abstract member MarshalManagedToNative : obj -&gt; nativeint&#xA;override this.MarshalManagedToNative : obj -&gt; nativeint" Usage="expandoToDispatchExMarshaler.MarshalManagedToNative pManagedObj" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IntPtr MarshalManagedToNative(System::Object ^ pManagedObj);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices.ICustomMarshaler.MarshalManagedToNative(System.Object)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>CustomMarshalers</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -212,9 +200,6 @@ void UseCustomMarshaler([MarshalAs(UnmanagedType.CustomMarshaler, MarshalTypeRef
       <MemberSignature Language="F#" Value="abstract member MarshalNativeToManaged : nativeint -&gt; obj&#xA;override this.MarshalNativeToManaged : nativeint -&gt; obj" Usage="expandoToDispatchExMarshaler.MarshalNativeToManaged pNativeData" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ MarshalNativeToManaged(IntPtr pNativeData);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices.ICustomMarshaler.MarshalNativeToManaged(System.IntPtr)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>CustomMarshalers</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

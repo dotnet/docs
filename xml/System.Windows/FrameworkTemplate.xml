@@ -1,10 +1,10 @@
 ﻿<Type Name="FrameworkTemplate" FullName="System.Windows.FrameworkTemplate">
-  <TypeSignature Language="C#" Value="public abstract class FrameworkTemplate : System.Windows.Threading.DispatcherObject, System.Windows.Markup.INameScope, System.Windows.Markup.IQueryAmbient" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit FrameworkTemplate extends System.Windows.Threading.DispatcherObject implements class System.Windows.Markup.INameScope, class System.Windows.Markup.IQueryAmbient" />
+  <TypeSignature Language="C#" Value="public abstract class FrameworkTemplate : System.Windows.Threading.DispatcherObject, System.Windows.ISealable, System.Windows.Markup.INameScope, System.Windows.Markup.IQueryAmbient" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit FrameworkTemplate extends System.Windows.Threading.DispatcherObject implements class System.Windows.ISealable, class System.Windows.Markup.INameScope, class System.Windows.Markup.IQueryAmbient" />
   <TypeSignature Language="DocId" Value="T:System.Windows.FrameworkTemplate" />
-  <TypeSignature Language="VB.NET" Value="Public MustInherit Class FrameworkTemplate&#xA;Inherits DispatcherObject&#xA;Implements INameScope, IQueryAmbient" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class FrameworkTemplate&#xA;Inherits DispatcherObject&#xA;Implements INameScope, IQueryAmbient, ISealable" />
   <TypeSignature Language="F#" Value="type FrameworkTemplate = class&#xA;    inherit DispatcherObject&#xA;    interface INameScope&#xA;    interface ISealable&#xA;    interface IHaveResources&#xA;    interface IQueryAmbient" />
-  <TypeSignature Language="C++ CLI" Value="public ref class FrameworkTemplate abstract : System::Windows::Threading::DispatcherObject, System::Windows::Markup::INameScope, System::Windows::Markup::IQueryAmbient" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FrameworkTemplate abstract : System::Windows::Threading::DispatcherObject, System::Windows::ISealable, System::Windows::Markup::INameScope, System::Windows::Markup::IQueryAmbient" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -13,6 +13,9 @@
     <BaseTypeName>System.Windows.Threading.DispatcherObject</BaseTypeName>
   </Base>
   <Interfaces>
+    <Interface>
+      <InterfaceName>System.Windows.ISealable</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>System.Windows.Markup.INameScope</InterfaceName>
     </Interface>
@@ -114,9 +117,6 @@
       <MemberSignature Language="F#" Value="member this.IsSealed : bool" Usage="System.Windows.FrameworkTemplate.IsSealed" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSealed { bool get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Windows.ISealable.IsSealed</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -206,7 +206,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Windows.Markup.Ambient</AttributeName>
@@ -260,9 +260,6 @@
       <MemberSignature Language="F#" Value="member this.Seal : unit -&gt; unit" Usage="frameworkTemplate.Seal " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Seal();" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Windows.ISealable.Seal</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -332,6 +329,66 @@
         <summary>Returns a value that indicates whether serialization processes should serialize the value of the <see cref="P:System.Windows.FrameworkTemplate.VisualTree" /> property on instances of this class.</summary>
         <returns>
           <see langword="true" /> if the <see cref="P:System.Windows.FrameworkTemplate.VisualTree" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.ISealable.CanSeal">
+      <MemberSignature Language="C#" Value="bool System.Windows.ISealable.CanSeal { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Windows.ISealable.CanSeal" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkTemplate.System#Windows#ISealable#CanSeal" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property CanSeal As Boolean Implements ISealable.CanSeal" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Windows.ISealable.CanSeal { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.ISealable.IsSealed">
+      <MemberSignature Language="C#" Value="bool System.Windows.ISealable.IsSealed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Windows.ISealable.IsSealed" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkTemplate.System#Windows#ISealable#IsSealed" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSealed As Boolean Implements ISealable.IsSealed" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Windows.ISealable.IsSealed { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.ISealable.Seal">
+      <MemberSignature Language="C#" Value="void ISealable.Seal ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.ISealable.Seal() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkTemplate.System#Windows#ISealable#Seal" />
+      <MemberSignature Language="VB.NET" Value="Sub Seal () Implements ISealable.Seal" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.ISealable.Seal() = System::Windows::ISealable::Seal;" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -799,12 +799,17 @@
       </Docs>
     </Member>
     <Member MemberName="UrlDecode">
-      <MemberSignature Language="C#" Value="public static string UrlDecode (string s, System.Text.Encoding e);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string UrlDecode(string s, class System.Text.Encoding e) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.UrlDecode(System.String,System.Text.Encoding)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function UrlDecode (s As String, e As Encoding) As String" />
+      <MemberSignature Language="C#" Value="public static string UrlDecode (string str, System.Text.Encoding e);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string UrlDecode(string str, class System.Text.Encoding e) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.UrlDecode(System.String,System.Text.Encoding)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function UrlDecode (str As String, e As Encoding) As String" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
       <MemberSignature Language="F#" Value="static member UrlDecode : string * System.Text.Encoding -&gt; string" Usage="System.Web.HttpUtility.UrlDecode (s, e)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ UrlDecode(System::String ^ s, System::Text::Encoding ^ e);" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ UrlDecode(System::String ^ str, System::Text::Encoding ^ e);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="C#" Value="public static string UrlDecode (string s, System.Text.Encoding e);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string UrlDecode(string s, class System.Text.Encoding e) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.UrlDecode(System.String,System.Text.Encoding)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function UrlDecode (s As String, e As Encoding) As String" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ UrlDecode(System::String ^ s, System::Text::Encoding ^ e);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -827,10 +832,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="str" Type="System.String" />
-        <Parameter Name="e" Type="System.Text.Encoding" />
+        <Parameter Name="str" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+        <Parameter Name="s" Type="System.String" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
+        <Parameter Name="e" Type="System.Text.Encoding" Index="1" />
       </Parameters>
       <Docs>
+        <param name="str">To be added.</param>
         <param name="s">To be added.</param>
         <param name="e">The <see cref="T:System.Text.Encoding" /> that specifies the decoding scheme.</param>
         <summary>Converts a URL-encoded string into a decoded string, using the specified encoding object.</summary>
@@ -1241,56 +1248,6 @@
       </Docs>
     </Member>
     <Member MemberName="UrlEncode">
-      <MemberSignature Language="C#" Value="public static string UrlEncode (string s, System.Text.Encoding Enc);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string UrlEncode(string s, class System.Text.Encoding Enc) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.UrlEncode(System.String,System.Text.Encoding)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function UrlEncode (s As String, Enc As Encoding) As String" />
-      <MemberSignature Language="F#" Value="static member UrlEncode : string * System.Text.Encoding -&gt; string" Usage="System.Web.HttpUtility.UrlEncode (s, Enc)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ UrlEncode(System::String ^ s, System::Text::Encoding ^ Enc);" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Web.HttpUtility</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="str" Type="System.String" />
-        <Parameter Name="e" Type="System.Text.Encoding" />
-      </Parameters>
-      <Docs>
-        <param name="s">To be added.</param>
-        <param name="Enc">To be added.</param>
-        <summary>Encodes a URL string using the specified encoding object.</summary>
-        <returns>An encoded string.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method can be used to encode the entire URL, including query-string values. If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. URL encoding converts characters that are not allowed in a URL into character-entity equivalents; URL decoding reverses the encoding. For example, when the characters \< and > are embedded in a block of text to be transmitted in a URL, they are encoded as %3c and %3e.  
-  
- To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
-  
- ]]></format>
-        </remarks>
-        <altmember cref="M:System.Web.HttpUtility.UrlDecode(System.String)" />
-      </Docs>
-    </Member>
-    <Member MemberName="UrlEncode">
       <MemberSignature Language="C#" Value="public static string UrlEncode (byte[] bytes, int offset, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string UrlEncode(unsigned int8[] bytes, int32 offset, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.UrlEncode(System.Byte[],System.Int32,System.Int32)" />
@@ -1334,6 +1291,65 @@
   
 ## Remarks  
  The <xref:System.Web.HttpUtility.UrlEncode%28System.String%29> method can be used to encode the entire URL, including query-string values. If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. URL encoding converts characters that are not allowed in a URL into character-entity equivalents; URL decoding reverses the encoding. For example, when the characters \< and > are embedded in a block of text to be transmitted in a URL, they are encoded as %3c and %3e.  
+  
+ To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="M:System.Web.HttpUtility.UrlDecode(System.String)" />
+      </Docs>
+    </Member>
+    <Member MemberName="UrlEncode">
+      <MemberSignature Language="C#" Value="public static string UrlEncode (string str, System.Text.Encoding e);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string UrlEncode(string str, class System.Text.Encoding e) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.UrlEncode(System.String,System.Text.Encoding)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function UrlEncode (str As String, e As Encoding) As String" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="F#" Value="static member UrlEncode : string * System.Text.Encoding -&gt; string" Usage="System.Web.HttpUtility.UrlEncode (s, Enc)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ UrlEncode(System::String ^ str, System::Text::Encoding ^ e);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="C#" Value="public static string UrlEncode (string s, System.Text.Encoding Enc);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string UrlEncode(string s, class System.Text.Encoding Enc) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.UrlEncode(System.String,System.Text.Encoding)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function UrlEncode (s As String, Enc As Encoding) As String" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ UrlEncode(System::String ^ s, System::Text::Encoding ^ Enc);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.HttpUtility</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="str" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+        <Parameter Name="s" Type="System.String" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
+        <Parameter Name="e" Type="System.Text.Encoding" Index="1" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+        <Parameter Name="Enc" Type="System.Text.Encoding" Index="1" FrameworkAlternate="xamarinandroid-7.1" />
+      </Parameters>
+      <Docs>
+        <param name="str">To be added.</param>
+        <param name="s">To be added.</param>
+        <param name="e">To be added.</param>
+        <param name="Enc">To be added.</param>
+        <summary>Encodes a URL string using the specified encoding object.</summary>
+        <returns>An encoded string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be used to encode the entire URL, including query-string values. If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. URL encoding converts characters that are not allowed in a URL into character-entity equivalents; URL decoding reverses the encoding. For example, when the characters \< and > are embedded in a block of text to be transmitted in a URL, they are encoded as %3c and %3e.  
   
  To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
   
@@ -1650,12 +1666,17 @@
       </Docs>
     </Member>
     <Member MemberName="UrlPathEncode">
-      <MemberSignature Language="C#" Value="public static string UrlPathEncode (string s);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string UrlPathEncode(string s) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.UrlPathEncode(System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function UrlPathEncode (s As String) As String" />
+      <MemberSignature Language="C#" Value="public static string UrlPathEncode (string str);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string UrlPathEncode(string str) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.UrlPathEncode(System.String)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function UrlPathEncode (str As String) As String" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
       <MemberSignature Language="F#" Value="static member UrlPathEncode : string -&gt; string" Usage="System.Web.HttpUtility.UrlPathEncode s" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ UrlPathEncode(System::String ^ s);" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ UrlPathEncode(System::String ^ str);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="C#" Value="public static string UrlPathEncode (string s);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string UrlPathEncode(string s) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpUtility.UrlPathEncode(System.String)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function UrlPathEncode (s As String) As String" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ UrlPathEncode(System::String ^ s);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1678,7 +1699,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="str" Type="System.String" />
+        <Parameter Name="str" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+        <Parameter Name="s" Type="System.String" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
       </Parameters>
       <Docs>
         <param name="s">To be added.</param>

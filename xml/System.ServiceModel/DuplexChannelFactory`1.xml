@@ -59,37 +59,6 @@
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public DuplexChannelFactory (object callbackInstance);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object callbackInstance) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexChannelFactory`1.#ctor(System.Object)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (callbackInstance As Object)" />
-      <MemberSignature Language="F#" Value="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; : obj -&gt; System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt;" Usage="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; callbackInstance" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; DuplexChannelFactory(System::Object ^ callbackInstance);" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="callbackObject" Type="System.Object" />
-      </Parameters>
-      <Docs>
-        <param name="callbackInstance">To be added.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with an object that implements the callback contract.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this constructor to pass an object that implements the callback contract for the target service programmatically rather than by using an application configuration file.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="callbackInstance" /> is <see langword="null" />.</exception>
-      </Docs>
-    </Member>
-    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DuplexChannelFactory (System.ServiceModel.InstanceContext callbackInstance);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext callbackInstance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexChannelFactory`1.#ctor(System.ServiceModel.InstanceContext)" />
@@ -138,11 +107,17 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public DuplexChannelFactory (object callbackInstance, System.ServiceModel.Channels.Binding binding);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object callbackInstance, class System.ServiceModel.Channels.Binding binding) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexChannelFactory`1.#ctor(System.Object,System.ServiceModel.Channels.Binding)" />
-      <MemberSignature Language="F#" Value="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; : obj * System.ServiceModel.Channels.Binding -&gt; System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt;" Usage="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; (callbackInstance, binding)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; DuplexChannelFactory(System::Object ^ callbackInstance, System::ServiceModel::Channels::Binding ^ binding);" />
+      <MemberSignature Language="C#" Value="public DuplexChannelFactory (object callbackObject);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object callbackObject) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexChannelFactory`1.#ctor(System.Object)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (callbackObject As Object)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; : obj -&gt; System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt;" Usage="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; callbackInstance" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DuplexChannelFactory(System::Object ^ callbackObject);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public DuplexChannelFactory (object callbackInstance);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object callbackInstance) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexChannelFactory`1.#ctor(System.Object)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (callbackInstance As Object)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DuplexChannelFactory(System::Object ^ callbackInstance);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -150,89 +125,22 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="callbackObject" Type="System.Object" />
-        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
+        <Parameter Name="callbackObject" Type="System.Object" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="callbackInstance" Type="System.Object" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
       </Parameters>
       <Docs>
         <param name="callbackInstance">To be added.</param>
-        <param name="binding">The <see cref="T:System.ServiceModel.Channels.Binding" /> used to connect to the service by channels produced by the factory.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with an object that implements the callback contract and a specified binding.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with an object that implements the callback contract.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this constructor to pass an instance context object that implements the callback contract for the target service and to pass the binding information programmatically rather than by using an application configuration file.  
+ Use this constructor to pass an object that implements the callback contract for the target service programmatically rather than by using an application configuration file.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="callbackObject" /> or <paramref name="binding" /> is <see langword="null" />.</exception>
-      </Docs>
-    </Member>
-    <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public DuplexChannelFactory (object callbackInstance, System.ServiceModel.Description.ServiceEndpoint endpoint);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object callbackInstance, class System.ServiceModel.Description.ServiceEndpoint endpoint) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexChannelFactory`1.#ctor(System.Object,System.ServiceModel.Description.ServiceEndpoint)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (callbackInstance As Object, endpoint As ServiceEndpoint)" />
-      <MemberSignature Language="F#" Value="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; : obj * System.ServiceModel.Description.ServiceEndpoint -&gt; System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt;" Usage="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; (callbackInstance, endpoint)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; DuplexChannelFactory(System::Object ^ callbackInstance, System::ServiceModel::Description::ServiceEndpoint ^ endpoint);" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="callbackObject" Type="System.Object" />
-        <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
-      </Parameters>
-      <Docs>
-        <param name="callbackInstance">To be added.</param>
-        <param name="endpoint">The <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> to which channels produced by the factory connect.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with an object that implements the callback contract and a specified endpoint.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this constructor to pass a service object that implements the callback contract for the target service and to pass the service endpoint information programmatically rather than using an application configuration file.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="callbackObject" /> is <see langword="null" />.</exception>
-      </Docs>
-    </Member>
-    <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public DuplexChannelFactory (object callbackInstance, string endpointConfigurationName);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object callbackInstance, string endpointConfigurationName) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexChannelFactory`1.#ctor(System.Object,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (callbackInstance As Object, endpointConfigurationName As String)" />
-      <MemberSignature Language="F#" Value="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; : obj * string -&gt; System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt;" Usage="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; (callbackInstance, endpointConfigurationName)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; DuplexChannelFactory(System::Object ^ callbackInstance, System::String ^ endpointConfigurationName);" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="callbackObject" Type="System.Object" />
-        <Parameter Name="endpointConfigurationName" Type="System.String" />
-      </Parameters>
-      <Docs>
-        <param name="callbackInstance">To be added.</param>
-        <param name="endpointConfigurationName">The configuration name used for the endpoint.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with an object that implements the callback contract and a specified configuration.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this constructor to pass a service object that implements the callback contract for the target service and determine the target endpoint information from the client application configuration file.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="callbackObject" /> or <paramref name="endpointConfigurationName" /> is <see langword="null" />.</exception>
+          <paramref name="callbackInstance" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -423,11 +331,15 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public DuplexChannelFactory (object callbackInstance, System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object callbackInstance, class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexChannelFactory`1.#ctor(System.Object,System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)" />
-      <MemberSignature Language="F#" Value="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; : obj * System.ServiceModel.Channels.Binding * System.ServiceModel.EndpointAddress -&gt; System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt;" Usage="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; (callbackInstance, binding, remoteAddress)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; DuplexChannelFactory(System::Object ^ callbackInstance, System::ServiceModel::Channels::Binding ^ binding, System::ServiceModel::EndpointAddress ^ remoteAddress);" />
+      <MemberSignature Language="C#" Value="public DuplexChannelFactory (object callbackObject, System.ServiceModel.Channels.Binding binding);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object callbackObject, class System.ServiceModel.Channels.Binding binding) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexChannelFactory`1.#ctor(System.Object,System.ServiceModel.Channels.Binding)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; : obj * System.ServiceModel.Channels.Binding -&gt; System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt;" Usage="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; (callbackInstance, binding)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DuplexChannelFactory(System::Object ^ callbackObject, System::ServiceModel::Channels::Binding ^ binding);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public DuplexChannelFactory (object callbackInstance, System.ServiceModel.Channels.Binding binding);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object callbackInstance, class System.ServiceModel.Channels.Binding binding) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexChannelFactory`1.#ctor(System.Object,System.ServiceModel.Channels.Binding)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DuplexChannelFactory(System::Object ^ callbackInstance, System::ServiceModel::Channels::Binding ^ binding);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -435,33 +347,39 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="callbackObject" Type="System.Object" />
-        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
-        <Parameter Name="remoteAddress" Type="System.ServiceModel.EndpointAddress" />
+        <Parameter Name="callbackObject" Type="System.Object" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="callbackInstance" Type="System.Object" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
+        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" Index="1" />
       </Parameters>
       <Docs>
+        <param name="callbackObject">To be added.</param>
         <param name="callbackInstance">To be added.</param>
         <param name="binding">The <see cref="T:System.ServiceModel.Channels.Binding" /> used to connect to the service by channels produced by the factory.</param>
-        <param name="remoteAddress">The <see cref="T:System.ServiceModel.EndpointAddress" /> that provides the location of the service.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with an object that implements the callback contract and a specified binding and endpoint address.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with an object that implements the callback contract and a specified binding.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this constructor to pass a service object that implements the callback contract for the target service and pass in the binding and address information programmatically rather than using an application configuration file.  
+ Use this constructor to pass an instance context object that implements the callback contract for the target service and to pass the binding information programmatically rather than by using an application configuration file.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="callbackObject" /> or <paramref name="binding" /> or <paramref name="remoteAddress" /> is <see langword="null" />.</exception>
+          <paramref name="callbackObject" /> or <paramref name="binding" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public DuplexChannelFactory (object callbackInstance, System.ServiceModel.Channels.Binding binding, string remoteAddress);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object callbackInstance, class System.ServiceModel.Channels.Binding binding, string remoteAddress) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexChannelFactory`1.#ctor(System.Object,System.ServiceModel.Channels.Binding,System.String)" />
-      <MemberSignature Language="F#" Value="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; : obj * System.ServiceModel.Channels.Binding * string -&gt; System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt;" Usage="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; (callbackInstance, binding, remoteAddress)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; DuplexChannelFactory(System::Object ^ callbackInstance, System::ServiceModel::Channels::Binding ^ binding, System::String ^ remoteAddress);" />
+      <MemberSignature Language="C#" Value="public DuplexChannelFactory (object callbackObject, System.ServiceModel.Description.ServiceEndpoint endpoint);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object callbackObject, class System.ServiceModel.Description.ServiceEndpoint endpoint) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexChannelFactory`1.#ctor(System.Object,System.ServiceModel.Description.ServiceEndpoint)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (callbackObject As Object, endpoint As ServiceEndpoint)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; : obj * System.ServiceModel.Description.ServiceEndpoint -&gt; System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt;" Usage="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; (callbackInstance, endpoint)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DuplexChannelFactory(System::Object ^ callbackObject, System::ServiceModel::Description::ServiceEndpoint ^ endpoint);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public DuplexChannelFactory (object callbackInstance, System.ServiceModel.Description.ServiceEndpoint endpoint);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object callbackInstance, class System.ServiceModel.Description.ServiceEndpoint endpoint) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexChannelFactory`1.#ctor(System.Object,System.ServiceModel.Description.ServiceEndpoint)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (callbackInstance As Object, endpoint As ServiceEndpoint)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DuplexChannelFactory(System::Object ^ callbackInstance, System::ServiceModel::Description::ServiceEndpoint ^ endpoint);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -469,53 +387,65 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="callbackObject" Type="System.Object" />
-        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
-        <Parameter Name="remoteAddress" Type="System.String" />
+        <Parameter Name="callbackObject" Type="System.Object" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="callbackInstance" Type="System.Object" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
+        <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" Index="1" />
       </Parameters>
       <Docs>
+        <param name="callbackObject">To be added.</param>
         <param name="callbackInstance">To be added.</param>
-        <param name="binding">The <see cref="T:System.ServiceModel.Channels.Binding" /> used to connect to the service by channels produced by the factory.</param>
-        <param name="remoteAddress">The remote address that provides the location of the service.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with specified callback object, binding, and remote address.</summary>
-        <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="callbackObject" /> or <paramref name="binding" /> or <paramref name="remoteAddress" /> is <see langword="null" />.</exception>
-      </Docs>
-    </Member>
-    <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public DuplexChannelFactory (object callbackInstance, string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object callbackInstance, string endpointConfigurationName, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexChannelFactory`1.#ctor(System.Object,System.String,System.ServiceModel.EndpointAddress)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (callbackInstance As Object, endpointConfigurationName As String, remoteAddress As EndpointAddress)" />
-      <MemberSignature Language="F#" Value="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; : obj * string * System.ServiceModel.EndpointAddress -&gt; System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt;" Usage="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; (callbackInstance, endpointConfigurationName, remoteAddress)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; DuplexChannelFactory(System::Object ^ callbackInstance, System::String ^ endpointConfigurationName, System::ServiceModel::EndpointAddress ^ remoteAddress);" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="callbackObject" Type="System.Object" />
-        <Parameter Name="endpointConfigurationName" Type="System.String" />
-        <Parameter Name="remoteAddress" Type="System.ServiceModel.EndpointAddress" />
-      </Parameters>
-      <Docs>
-        <param name="callbackInstance">To be added.</param>
-        <param name="endpointConfigurationName">The name used for the endpoint configuration.</param>
-        <param name="remoteAddress">The <see cref="T:System.ServiceModel.EndpointAddress" /> that provides the location of the service.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with an object that implements the callback contract, and a specified configuration and endpoint address.</summary>
+        <param name="endpoint">The <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> to which channels produced by the factory connect.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with an object that implements the callback contract and a specified endpoint.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this constructor to pass a service object that implements the callback contract for the target service, pass in the address information programmatically, and determine the remaining target endpoint information from the client application configuration file.  
+ Use this constructor to pass a service object that implements the callback contract for the target service and to pass the service endpoint information programmatically rather than using an application configuration file.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="callbackObject" /> or <paramref name="endpointConfigurationName" /> or <paramref name="remoteAddress" /> is <see langword="null" />.</exception>
+          <paramref name="callbackObject" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DuplexChannelFactory (object callbackObject, string endpointConfigurationName);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object callbackObject, string endpointConfigurationName) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexChannelFactory`1.#ctor(System.Object,System.String)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (callbackObject As Object, endpointConfigurationName As String)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; : obj * string -&gt; System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt;" Usage="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; (callbackInstance, endpointConfigurationName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DuplexChannelFactory(System::Object ^ callbackObject, System::String ^ endpointConfigurationName);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public DuplexChannelFactory (object callbackInstance, string endpointConfigurationName);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object callbackInstance, string endpointConfigurationName) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexChannelFactory`1.#ctor(System.Object,System.String)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (callbackInstance As Object, endpointConfigurationName As String)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DuplexChannelFactory(System::Object ^ callbackInstance, System::String ^ endpointConfigurationName);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="callbackObject" Type="System.Object" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="callbackInstance" Type="System.Object" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
+        <Parameter Name="endpointConfigurationName" Type="System.String" Index="1" />
+      </Parameters>
+      <Docs>
+        <param name="callbackObject">To be added.</param>
+        <param name="callbackInstance">To be added.</param>
+        <param name="endpointConfigurationName">The configuration name used for the endpoint.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with an object that implements the callback contract and a specified configuration.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to pass a service object that implements the callback contract for the target service and determine the target endpoint information from the client application configuration file.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="callbackObject" /> or <paramref name="endpointConfigurationName" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -712,6 +642,121 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="callbackInstanceType" /> or <paramref name="endpointConfigurationName" /> or <paramref name="remoteAddress" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DuplexChannelFactory (object callbackObject, System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object callbackObject, class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexChannelFactory`1.#ctor(System.Object,System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; : obj * System.ServiceModel.Channels.Binding * System.ServiceModel.EndpointAddress -&gt; System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt;" Usage="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; (callbackInstance, binding, remoteAddress)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DuplexChannelFactory(System::Object ^ callbackObject, System::ServiceModel::Channels::Binding ^ binding, System::ServiceModel::EndpointAddress ^ remoteAddress);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public DuplexChannelFactory (object callbackInstance, System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object callbackInstance, class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexChannelFactory`1.#ctor(System.Object,System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DuplexChannelFactory(System::Object ^ callbackInstance, System::ServiceModel::Channels::Binding ^ binding, System::ServiceModel::EndpointAddress ^ remoteAddress);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="callbackObject" Type="System.Object" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="callbackInstance" Type="System.Object" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
+        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" Index="1" />
+        <Parameter Name="remoteAddress" Type="System.ServiceModel.EndpointAddress" Index="2" />
+      </Parameters>
+      <Docs>
+        <param name="callbackObject">To be added.</param>
+        <param name="callbackInstance">To be added.</param>
+        <param name="binding">The <see cref="T:System.ServiceModel.Channels.Binding" /> used to connect to the service by channels produced by the factory.</param>
+        <param name="remoteAddress">The <see cref="T:System.ServiceModel.EndpointAddress" /> that provides the location of the service.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with an object that implements the callback contract and a specified binding and endpoint address.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to pass a service object that implements the callback contract for the target service and pass in the binding and address information programmatically rather than using an application configuration file.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="callbackObject" /> or <paramref name="binding" /> or <paramref name="remoteAddress" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DuplexChannelFactory (object callbackObject, System.ServiceModel.Channels.Binding binding, string remoteAddress);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object callbackObject, class System.ServiceModel.Channels.Binding binding, string remoteAddress) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexChannelFactory`1.#ctor(System.Object,System.ServiceModel.Channels.Binding,System.String)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; : obj * System.ServiceModel.Channels.Binding * string -&gt; System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt;" Usage="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; (callbackInstance, binding, remoteAddress)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DuplexChannelFactory(System::Object ^ callbackObject, System::ServiceModel::Channels::Binding ^ binding, System::String ^ remoteAddress);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public DuplexChannelFactory (object callbackInstance, System.ServiceModel.Channels.Binding binding, string remoteAddress);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object callbackInstance, class System.ServiceModel.Channels.Binding binding, string remoteAddress) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexChannelFactory`1.#ctor(System.Object,System.ServiceModel.Channels.Binding,System.String)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DuplexChannelFactory(System::Object ^ callbackInstance, System::ServiceModel::Channels::Binding ^ binding, System::String ^ remoteAddress);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="callbackObject" Type="System.Object" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="callbackInstance" Type="System.Object" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
+        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" Index="1" />
+        <Parameter Name="remoteAddress" Type="System.String" Index="2" />
+      </Parameters>
+      <Docs>
+        <param name="callbackObject">To be added.</param>
+        <param name="callbackInstance">To be added.</param>
+        <param name="binding">The <see cref="T:System.ServiceModel.Channels.Binding" /> used to connect to the service by channels produced by the factory.</param>
+        <param name="remoteAddress">The remote address that provides the location of the service.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with specified callback object, binding, and remote address.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="callbackObject" /> or <paramref name="binding" /> or <paramref name="remoteAddress" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DuplexChannelFactory (object callbackObject, string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object callbackObject, string endpointConfigurationName, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexChannelFactory`1.#ctor(System.Object,System.String,System.ServiceModel.EndpointAddress)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (callbackObject As Object, endpointConfigurationName As String, remoteAddress As EndpointAddress)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; : obj * string * System.ServiceModel.EndpointAddress -&gt; System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt;" Usage="new System.ServiceModel.DuplexChannelFactory&lt;'Channel&gt; (callbackInstance, endpointConfigurationName, remoteAddress)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DuplexChannelFactory(System::Object ^ callbackObject, System::String ^ endpointConfigurationName, System::ServiceModel::EndpointAddress ^ remoteAddress);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public DuplexChannelFactory (object callbackInstance, string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object callbackInstance, string endpointConfigurationName, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexChannelFactory`1.#ctor(System.Object,System.String,System.ServiceModel.EndpointAddress)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (callbackInstance As Object, endpointConfigurationName As String, remoteAddress As EndpointAddress)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DuplexChannelFactory(System::Object ^ callbackInstance, System::String ^ endpointConfigurationName, System::ServiceModel::EndpointAddress ^ remoteAddress);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="callbackObject" Type="System.Object" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="callbackInstance" Type="System.Object" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
+        <Parameter Name="endpointConfigurationName" Type="System.String" Index="1" />
+        <Parameter Name="remoteAddress" Type="System.ServiceModel.EndpointAddress" Index="2" />
+      </Parameters>
+      <Docs>
+        <param name="callbackObject">To be added.</param>
+        <param name="callbackInstance">To be added.</param>
+        <param name="endpointConfigurationName">The name used for the endpoint configuration.</param>
+        <param name="remoteAddress">The <see cref="T:System.ServiceModel.EndpointAddress" /> that provides the location of the service.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexChannelFactory`1" /> class with an object that implements the callback contract, and a specified configuration and endpoint address.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to pass a service object that implements the callback contract for the target service, pass in the address information programmatically, and determine the remaining target endpoint information from the client application configuration file.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="callbackObject" /> or <paramref name="endpointConfigurationName" /> or <paramref name="remoteAddress" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="CreateChannel">

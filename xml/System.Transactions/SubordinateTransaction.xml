@@ -36,12 +36,17 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SubordinateTransaction (System.Transactions.IsolationLevel level, System.Transactions.ISimpleTransactionSuperior superior);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Transactions.IsolationLevel level, class System.Transactions.ISimpleTransactionSuperior superior) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Transactions.SubordinateTransaction.#ctor(System.Transactions.IsolationLevel,System.Transactions.ISimpleTransactionSuperior)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (level As IsolationLevel, superior As ISimpleTransactionSuperior)" />
+      <MemberSignature Language="C#" Value="public SubordinateTransaction (System.Transactions.IsolationLevel isoLevel, System.Transactions.ISimpleTransactionSuperior superior);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Transactions.IsolationLevel isoLevel, class System.Transactions.ISimpleTransactionSuperior superior) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.SubordinateTransaction.#ctor(System.Transactions.IsolationLevel,System.Transactions.ISimpleTransactionSuperior)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (isoLevel As IsolationLevel, superior As ISimpleTransactionSuperior)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
       <MemberSignature Language="F#" Value="new System.Transactions.SubordinateTransaction : System.Transactions.IsolationLevel * System.Transactions.ISimpleTransactionSuperior -&gt; System.Transactions.SubordinateTransaction" Usage="new System.Transactions.SubordinateTransaction (level, superior)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; SubordinateTransaction(System::Transactions::IsolationLevel level, System::Transactions::ISimpleTransactionSuperior ^ superior);" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SubordinateTransaction(System::Transactions::IsolationLevel isoLevel, System::Transactions::ISimpleTransactionSuperior ^ superior);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+      <MemberSignature Language="C#" Value="public SubordinateTransaction (System.Transactions.IsolationLevel level, System.Transactions.ISimpleTransactionSuperior superior);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Transactions.IsolationLevel level, class System.Transactions.ISimpleTransactionSuperior superior) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.SubordinateTransaction.#ctor(System.Transactions.IsolationLevel,System.Transactions.ISimpleTransactionSuperior)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (level As IsolationLevel, superior As ISimpleTransactionSuperior)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SubordinateTransaction(System::Transactions::IsolationLevel level, System::Transactions::ISimpleTransactionSuperior ^ superior);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -57,10 +62,12 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="isoLevel" Type="System.Transactions.IsolationLevel" />
-        <Parameter Name="superior" Type="System.Transactions.ISimpleTransactionSuperior" />
+        <Parameter Name="isoLevel" Type="System.Transactions.IsolationLevel" Index="0" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0" />
+        <Parameter Name="level" Type="System.Transactions.IsolationLevel" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
+        <Parameter Name="superior" Type="System.Transactions.ISimpleTransactionSuperior" Index="1" />
       </Parameters>
       <Docs>
+        <param name="isoLevel">To be added.</param>
         <param name="level">To be added.</param>
         <param name="superior">A <see cref="T:System.Transactions.ISimpleTransactionSuperior" /></param>
         <summary>Initializes a new instance of the <see cref="T:System.Transactions.SubordinateTransaction" /> class.</summary>

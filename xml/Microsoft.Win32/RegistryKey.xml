@@ -311,61 +311,6 @@
       </Docs>
     </Member>
     <Member MemberName="CreateSubKey">
-      <MemberSignature Language="C#" Value="public Microsoft.Win32.RegistryKey CreateSubKey (string subkey, Microsoft.Win32.RegistryKeyPermissionCheck permissionCheck, Microsoft.Win32.RegistryOptions options);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Win32.RegistryKey CreateSubKey(string subkey, valuetype Microsoft.Win32.RegistryKeyPermissionCheck permissionCheck, valuetype Microsoft.Win32.RegistryOptions options) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Win32.RegistryKey.CreateSubKey(System.String,Microsoft.Win32.RegistryKeyPermissionCheck,Microsoft.Win32.RegistryOptions)" />
-      <MemberSignature Language="F#" Value="member this.CreateSubKey : string * Microsoft.Win32.RegistryKeyPermissionCheck * Microsoft.Win32.RegistryOptions -&gt; Microsoft.Win32.RegistryKey" Usage="registryKey.CreateSubKey (subkey, permissionCheck, options)" />
-      <MemberSignature Language="VB.NET" Value="Public Function CreateSubKey (subkey As String, permissionCheck As RegistryKeyPermissionCheck, options As RegistryOptions) As RegistryKey" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Win32::RegistryKey ^ CreateSubKey(System::String ^ subkey, Microsoft::Win32::RegistryKeyPermissionCheck permissionCheck, Microsoft::Win32::RegistryOptions options);" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>Microsoft.Win32.RegistryKey</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="subkey" Type="System.String" />
-        <Parameter Name="permissionCheck" Type="Microsoft.Win32.RegistryKeyPermissionCheck" />
-        <Parameter Name="options" Type="Microsoft.Win32.RegistryOptions" />
-      </Parameters>
-      <Docs>
-        <param name="subkey">The name or path of the subkey to create or open.</param>
-        <param name="permissionCheck">One of the enumeration values that specifies whether the key is opened for read or read/write access.</param>
-        <param name="options">The registry option to use; for example, that creates a volatile key.</param>
-        <summary>Creates a subkey or opens a subkey for write access, using the specified permission check and registry options.</summary>
-        <returns>The newly created subkey, or <see langword="null" /> if the operation failed.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To obtain the current <xref:Microsoft.Win32.RegistryKey> object, specify an empty string ("") for `subkey`.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="subkey" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ObjectDisposedException">The current <see cref="T:Microsoft.Win32.RegistryKey" /> object is closed (closed keys cannot be accessed).</exception>
-        <exception cref="T:System.UnauthorizedAccessException">The current <see cref="T:Microsoft.Win32.RegistryKey" /> object cannot be written to; for example, it was not opened as a writable key, or the user does not have the required access rights.</exception>
-        <exception cref="T:System.IO.IOException">The nesting level exceeds 510.  
-  
- -or-  
-  
- A system error occurred, such as deletion of the key or an attempt to create a key in the <see cref="F:Microsoft.Win32.Registry.LocalMachine" /> root.</exception>
-        <exception cref="T:System.Security.SecurityException">The user does not have the permissions required to create or open the registry key.</exception>
-      </Docs>
-    </Member>
-    <Member MemberName="CreateSubKey">
       <MemberSignature Language="C#" Value="public Microsoft.Win32.RegistryKey CreateSubKey (string subkey, Microsoft.Win32.RegistryKeyPermissionCheck permissionCheck, System.Security.AccessControl.RegistrySecurity registrySecurity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Win32.RegistryKey CreateSubKey(string subkey, valuetype Microsoft.Win32.RegistryKeyPermissionCheck permissionCheck, class System.Security.AccessControl.RegistrySecurity registrySecurity) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.RegistryKey.CreateSubKey(System.String,Microsoft.Win32.RegistryKeyPermissionCheck,System.Security.AccessControl.RegistrySecurity)" />
@@ -500,6 +445,62 @@
  -or-  
   
  A system error occurred, such as deletion of the key, or an attempt to create a key in the <see cref="F:Microsoft.Win32.Registry.LocalMachine" /> root.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateSubKey">
+      <MemberSignature Language="C#" Value="public Microsoft.Win32.RegistryKey CreateSubKey (string subkey, Microsoft.Win32.RegistryKeyPermissionCheck permissionCheck, Microsoft.Win32.RegistryOptions options);" FrameworkAlternate="netcore-1.0;netcore-1.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Win32.RegistryKey CreateSubKey(string subkey, valuetype Microsoft.Win32.RegistryKeyPermissionCheck permissionCheck, valuetype Microsoft.Win32.RegistryOptions options) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Win32.RegistryKey.CreateSubKey(System.String,Microsoft.Win32.RegistryKeyPermissionCheck,Microsoft.Win32.RegistryOptions)" FrameworkAlternate="netcore-1.0;netcore-1.1" />
+      <MemberSignature Language="F#" Value="member this.CreateSubKey : string * Microsoft.Win32.RegistryKeyPermissionCheck * Microsoft.Win32.RegistryOptions -&gt; Microsoft.Win32.RegistryKey" Usage="registryKey.CreateSubKey (subkey, permissionCheck, options)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateSubKey (subkey As String, permissionCheck As RegistryKeyPermissionCheck, options As RegistryOptions) As RegistryKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Win32::RegistryKey ^ CreateSubKey(System::String ^ subkey, Microsoft::Win32::RegistryKeyPermissionCheck permissionCheck, Microsoft::Win32::RegistryOptions options);" FrameworkAlternate="netcore-1.0;netcore-1.1" />
+      <MemberSignature Language="C#" Value="public Microsoft.Win32.RegistryKey CreateSubKey (string subkey, Microsoft.Win32.RegistryKeyPermissionCheck permissionCheck, Microsoft.Win32.RegistryOptions registryOptions);" FrameworkAlternate="netcore-2.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Win32.RegistryKey CreateSubKey(string subkey, valuetype Microsoft.Win32.RegistryKeyPermissionCheck permissionCheck, valuetype Microsoft.Win32.RegistryOptions registryOptions) cil managed" FrameworkAlternate="netcore-2.0" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Win32.RegistryKey.CreateSubKey(System.String,Microsoft.Win32.RegistryKeyPermissionCheck,Microsoft.Win32.RegistryOptions)" FrameworkAlternate="netcore-2.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Win32::RegistryKey ^ CreateSubKey(System::String ^ subkey, Microsoft::Win32::RegistryKeyPermissionCheck permissionCheck, Microsoft::Win32::RegistryOptions registryOptions);" FrameworkAlternate="netcore-2.0" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.RegistryKey</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subkey" Type="System.String" Index="0" />
+        <Parameter Name="permissionCheck" Type="Microsoft.Win32.RegistryKeyPermissionCheck" Index="1" />
+        <Parameter Name="options" Type="Microsoft.Win32.RegistryOptions" Index="2" FrameworkAlternate="netcore-1.0;netcore-1.1" />
+        <Parameter Name="registryOptions" Type="Microsoft.Win32.RegistryOptions" Index="2" FrameworkAlternate="netcore-2.0" />
+      </Parameters>
+      <Docs>
+        <param name="subkey">The name or path of the subkey to create or open.</param>
+        <param name="permissionCheck">One of the enumeration values that specifies whether the key is opened for read or read/write access.</param>
+        <param name="options">The registry option to use; for example, that creates a volatile key.</param>
+        <param name="registryOptions">To be added.</param>
+        <summary>Creates a subkey or opens a subkey for write access, using the specified permission check and registry options.</summary>
+        <returns>The newly created subkey, or <see langword="null" /> if the operation failed.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To obtain the current <xref:Microsoft.Win32.RegistryKey> object, specify an empty string ("") for `subkey`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="subkey" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ObjectDisposedException">The current <see cref="T:Microsoft.Win32.RegistryKey" /> object is closed (closed keys cannot be accessed).</exception>
+        <exception cref="T:System.UnauthorizedAccessException">The current <see cref="T:Microsoft.Win32.RegistryKey" /> object cannot be written to; for example, it was not opened as a writable key, or the user does not have the required access rights.</exception>
+        <exception cref="T:System.IO.IOException">The nesting level exceeds 510.  
+  
+ -or-  
+  
+ A system error occurred, such as deletion of the key or an attempt to create a key in the <see cref="F:Microsoft.Win32.Registry.LocalMachine" /> root.</exception>
+        <exception cref="T:System.Security.SecurityException">The user does not have the permissions required to create or open the registry key.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateSubKey">

@@ -1,10 +1,10 @@
 ﻿<Type Name="DynamicHyperLink" FullName="System.Web.DynamicData.DynamicHyperLink">
-  <TypeSignature Language="C#" Value="public class DynamicHyperLink : System.Web.UI.WebControls.HyperLink" />
+  <TypeSignature Language="C#" Value="public class DynamicHyperLink : System.Web.UI.WebControls.HyperLink, System.Web.UI.IAttributeAccessor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DynamicHyperLink extends System.Web.UI.WebControls.HyperLink implements class System.Web.UI.IAttributeAccessor" />
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.DynamicHyperLink" />
-  <TypeSignature Language="VB.NET" Value="Public Class DynamicHyperLink&#xA;Inherits HyperLink" />
+  <TypeSignature Language="VB.NET" Value="Public Class DynamicHyperLink&#xA;Inherits HyperLink&#xA;Implements IAttributeAccessor" />
   <TypeSignature Language="F#" Value="type DynamicHyperLink = class&#xA;    inherit HyperLink&#xA;    interface IAttributeAccessor" />
-  <TypeSignature Language="C++ CLI" Value="public ref class DynamicHyperLink : System::Web::UI::WebControls::HyperLink" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DynamicHyperLink : System::Web::UI::WebControls::HyperLink, System::Web::UI::IAttributeAccessor" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -12,7 +12,11 @@
   <Base>
     <BaseTypeName>System.Web.UI.WebControls.HyperLink</BaseTypeName>
   </Base>
-  <Interfaces />
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Web.UI.IAttributeAccessor</InterfaceName>
+    </Interface>
+  </Interfaces>
   <Attributes>
     <Attribute>
       <AttributeName>System.ComponentModel.DefaultProperty("Action")</AttributeName>
@@ -284,9 +288,6 @@
       <MemberSignature Language="VB.NET" Value="Function GetAttribute (key As String) As String Implements IAttributeAccessor.GetAttribute" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.Web.UI.IAttributeAccessor.GetAttribute(System::String ^ key) = System::Web::UI::IAttributeAccessor::GetAttribute;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Web.UI.IAttributeAccessor.GetAttribute(System.String)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -312,9 +313,6 @@
       <MemberSignature Language="VB.NET" Value="Sub SetAttribute (key As String, value As String) Implements IAttributeAccessor.SetAttribute" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IAttributeAccessor.SetAttribute(System::String ^ key, System::String ^ value) = System::Web::UI::IAttributeAccessor::SetAttribute;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Web.UI.IAttributeAccessor.SetAttribute(System.String,System.String)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

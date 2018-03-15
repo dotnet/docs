@@ -133,12 +133,17 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected SynchronizedKeyedCollection (object syncRoot, System.Collections.Generic.IEqualityComparer&lt;K&gt; comparer, int capacity);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(object syncRoot, class System.Collections.Generic.IEqualityComparer`1&lt;!K&gt; comparer, int32 capacity) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SynchronizedKeyedCollection`2.#ctor(System.Object,System.Collections.Generic.IEqualityComparer{`0},System.Int32)" />
-      <MemberSignature Language="VB.NET" Value="Protected Sub New (syncRoot As Object, comparer As IEqualityComparer(Of K), capacity As Integer)" />
+      <MemberSignature Language="C#" Value="protected SynchronizedKeyedCollection (object syncRoot, System.Collections.Generic.IEqualityComparer&lt;K&gt; comparer, int dictionaryCreationThreshold);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(object syncRoot, class System.Collections.Generic.IEqualityComparer`1&lt;!K&gt; comparer, int32 dictionaryCreationThreshold) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SynchronizedKeyedCollection`2.#ctor(System.Object,System.Collections.Generic.IEqualityComparer{`0},System.Int32)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (syncRoot As Object, comparer As IEqualityComparer(Of K), dictionaryCreationThreshold As Integer)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
       <MemberSignature Language="F#" Value="new System.Collections.Generic.SynchronizedKeyedCollection&lt;'K, 'T&gt; : obj * System.Collections.Generic.IEqualityComparer&lt;'K&gt; * int -&gt; System.Collections.Generic.SynchronizedKeyedCollection&lt;'K, 'T&gt;" Usage="new System.Collections.Generic.SynchronizedKeyedCollection&lt;'K, 'T&gt; (syncRoot, comparer, capacity)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SynchronizedKeyedCollection(System::Object ^ syncRoot, System::Collections::Generic::IEqualityComparer&lt;K&gt; ^ comparer, int capacity);" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SynchronizedKeyedCollection(System::Object ^ syncRoot, System::Collections::Generic::IEqualityComparer&lt;K&gt; ^ comparer, int dictionaryCreationThreshold);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="protected SynchronizedKeyedCollection (object syncRoot, System.Collections.Generic.IEqualityComparer&lt;K&gt; comparer, int capacity);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(object syncRoot, class System.Collections.Generic.IEqualityComparer`1&lt;!K&gt; comparer, int32 capacity) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SynchronizedKeyedCollection`2.#ctor(System.Object,System.Collections.Generic.IEqualityComparer{`0},System.Int32)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (syncRoot As Object, comparer As IEqualityComparer(Of K), capacity As Integer)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SynchronizedKeyedCollection(System::Object ^ syncRoot, System::Collections::Generic::IEqualityComparer&lt;K&gt; ^ comparer, int capacity);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -146,13 +151,15 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="syncRoot" Type="System.Object" />
-        <Parameter Name="comparer" Type="System.Collections.Generic.IEqualityComparer&lt;K&gt;" />
-        <Parameter Name="dictionaryCreationThreshold" Type="System.Int32" />
+        <Parameter Name="syncRoot" Type="System.Object" Index="0" />
+        <Parameter Name="comparer" Type="System.Collections.Generic.IEqualityComparer&lt;K&gt;" Index="1" />
+        <Parameter Name="dictionaryCreationThreshold" Type="System.Int32" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="capacity" Type="System.Int32" Index="2" FrameworkAlternate="xamarinandroid-7.1" />
       </Parameters>
       <Docs>
         <param name="syncRoot">The object used to synchronize access to the thread-safe collection.</param>
         <param name="comparer">The <see cref="T:System.Collections.Generic.IEqualityComparer`1" /> of type <c>K</c> used to compare key objects of type <c>K</c> for equality.</param>
+        <param name="dictionaryCreationThreshold">To be added.</param>
         <param name="capacity">To be added.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.SynchronizedKeyedCollection`2" /> class with access synchronized by an explicitly specified object and with keys compared in a specified way.</summary>
         <remarks>

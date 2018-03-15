@@ -68,8 +68,7 @@ As such, the default choice for any asynchronous method should be to return a <x
       <Docs>
         <param name="task">The task.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Threading.Tasks.ValueTask`1" /> class using the supplied task that represents the operation.</summary>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="task" /> argument is <see langword="null" />.</exception>
       </Docs>
     </Member>
@@ -93,8 +92,7 @@ As such, the default choice for any asynchronous method should be to return a <x
       <Docs>
         <param name="result">The result.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Threading.Tasks.ValueTask`1" /> class using the supplied result of a successful operation.</summary>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="AsTask">
@@ -118,8 +116,7 @@ As such, the default choice for any asynchronous method should be to return a <x
       <Docs>
         <summary>Retrieves a <see cref="T:System.Threading.Tasks.Task`1" /> object that represents this <see cref="T:System.Threading.Tasks.ValueTask`1" />.</summary>
         <returns>The <see cref="T:System.Threading.Tasks.Task`1" /> object that is wrapped in this <see cref="T:System.Threading.Tasks.ValueTask`1" /> if one exists, or a new <see cref="T:System.Threading.Tasks.Task`1" /> object that represents the result.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ConfigureAwait">
@@ -408,8 +405,7 @@ As such, the default choice for any asynchronous method should be to return a <x
         <summary>Compares two values for equality.</summary>
         <returns>
           <see langword="true" /> if the two <see cref="T:System.Threading.Tasks.ValueTask`1" /> values are equal; otherwise, <see langword="false" />.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -439,8 +435,7 @@ As such, the default choice for any asynchronous method should be to return a <x
         <summary>Determines whether two <see cref="T:System.Threading.Tasks.ValueTask`1" /> values are unequal.</summary>
         <returns>
           <see langword="true" /> if the two <see cref="T:System.Threading.Tasks.ValueTask`1" /> values are not equal; otherwise, <see langword="false" />.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Result">

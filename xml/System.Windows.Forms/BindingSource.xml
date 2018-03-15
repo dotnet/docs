@@ -1,10 +1,10 @@
 ﻿<Type Name="BindingSource" FullName="System.Windows.Forms.BindingSource">
-  <TypeSignature Language="C#" Value="public class BindingSource : System.ComponentModel.Component, System.Collections.IList, System.ComponentModel.IBindingListView, System.ComponentModel.ICancelAddNew, System.ComponentModel.ISupportInitializeNotification, System.ComponentModel.ITypedList, System.Windows.Forms.ICurrencyManagerProvider" />
+  <TypeSignature Language="C#" Value="public class BindingSource : System.ComponentModel.Component, System.Collections.IList, System.ComponentModel.IBindingList, System.ComponentModel.IBindingListView, System.ComponentModel.ICancelAddNew, System.ComponentModel.ISupportInitialize, System.ComponentModel.ISupportInitializeNotification, System.ComponentModel.ITypedList, System.Windows.Forms.ICurrencyManagerProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BindingSource extends System.ComponentModel.Component implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList, class System.ComponentModel.IBindingList, class System.ComponentModel.IBindingListView, class System.ComponentModel.ICancelAddNew, class System.ComponentModel.ISupportInitialize, class System.ComponentModel.ISupportInitializeNotification, class System.ComponentModel.ITypedList, class System.Windows.Forms.ICurrencyManagerProvider" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.BindingSource" />
-  <TypeSignature Language="VB.NET" Value="Public Class BindingSource&#xA;Inherits Component&#xA;Implements IBindingListView, ICancelAddNew, ICurrencyManagerProvider, IList, ISupportInitializeNotification, ITypedList" />
+  <TypeSignature Language="VB.NET" Value="Public Class BindingSource&#xA;Inherits Component&#xA;Implements IBindingList, IBindingListView, ICancelAddNew, ICurrencyManagerProvider, IList, ISupportInitialize, ISupportInitializeNotification, ITypedList" />
   <TypeSignature Language="F#" Value="type BindingSource = class&#xA;    inherit Component&#xA;    interface IBindingListView&#xA;    interface IBindingList&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable&#xA;    interface ITypedList&#xA;    interface ICancelAddNew&#xA;    interface ISupportInitializeNotification&#xA;    interface ISupportInitialize&#xA;    interface ICurrencyManagerProvider" />
-  <TypeSignature Language="C++ CLI" Value="public ref class BindingSource : System::ComponentModel::Component, System::Collections::IList, System::ComponentModel::IBindingListView, System::ComponentModel::ICancelAddNew, System::ComponentModel::ISupportInitializeNotification, System::ComponentModel::ITypedList, System::Windows::Forms::ICurrencyManagerProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BindingSource : System::ComponentModel::Component, System::Collections::IList, System::ComponentModel::IBindingList, System::ComponentModel::IBindingListView, System::ComponentModel::ICancelAddNew, System::ComponentModel::ISupportInitialize, System::ComponentModel::ISupportInitializeNotification, System::ComponentModel::ITypedList, System::Windows::Forms::ICurrencyManagerProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -17,10 +17,16 @@
       <InterfaceName>System.Collections.IList</InterfaceName>
     </Interface>
     <Interface>
+      <InterfaceName>System.ComponentModel.IBindingList</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.ComponentModel.IBindingListView</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>System.ComponentModel.ICancelAddNew</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ComponentModel.ISupportInitialize</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>System.ComponentModel.ISupportInitializeNotification</InterfaceName>
@@ -294,9 +300,6 @@
       <MemberSignature Language="F#" Value="abstract member AddNew : unit -&gt; obj&#xA;override this.AddNew : unit -&gt; obj" Usage="bindingSource.AddNew " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ AddNew();" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.IBindingList.AddNew</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -355,9 +358,6 @@
       <MemberSignature Language="F#" Value="member this.AllowEdit : bool" Usage="System.Windows.Forms.BindingSource.AllowEdit" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AllowEdit { bool get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.IBindingList.AllowEdit</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -453,9 +453,6 @@
       <MemberSignature Language="F#" Value="member this.AllowRemove : bool" Usage="System.Windows.Forms.BindingSource.AllowRemove" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AllowRemove { bool get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.IBindingList.AllowRemove</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -499,9 +496,6 @@
       <MemberSignature Language="F#" Value="abstract member ApplySort : System.ComponentModel.ListSortDescriptionCollection -&gt; unit&#xA;override this.ApplySort : System.ComponentModel.ListSortDescriptionCollection -&gt; unit" Usage="bindingSource.ApplySort sorts" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ApplySort(System::ComponentModel::ListSortDescriptionCollection ^ sorts);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.IBindingListView.ApplySort(System.ComponentModel.ListSortDescriptionCollection)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -539,9 +533,6 @@
       <MemberSignature Language="F#" Value="abstract member ApplySort : System.ComponentModel.PropertyDescriptor * System.ComponentModel.ListSortDirection -&gt; unit&#xA;override this.ApplySort : System.ComponentModel.PropertyDescriptor * System.ComponentModel.ListSortDirection -&gt; unit" Usage="bindingSource.ApplySort (property, sort)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ApplySort(System::ComponentModel::PropertyDescriptor ^ property, System::ComponentModel::ListSortDirection sort);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.IBindingList.ApplySort(System.ComponentModel.PropertyDescriptor,System.ComponentModel.ListSortDirection)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1028,7 +1019,7 @@
           <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataMemberListEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1104,7 +1095,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1269,9 +1260,6 @@
       <MemberSignature Language="F#" Value="member this.Filter : string with get, set" Usage="System.Windows.Forms.BindingSource.Filter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Filter { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.IBindingListView.Filter</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1333,9 +1321,6 @@
       <MemberSignature Language="F#" Value="abstract member Find : System.ComponentModel.PropertyDescriptor * obj -&gt; int&#xA;override this.Find : System.ComponentModel.PropertyDescriptor * obj -&gt; int" Usage="bindingSource.Find (prop, key)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Find(System::ComponentModel::PropertyDescriptor ^ prop, System::Object ^ key);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.IBindingList.Find(System.ComponentModel.PropertyDescriptor,System.Object)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1459,9 +1444,6 @@
       <MemberSignature Language="F#" Value="abstract member GetItemProperties : System.ComponentModel.PropertyDescriptor[] -&gt; System.ComponentModel.PropertyDescriptorCollection&#xA;override this.GetItemProperties : System.ComponentModel.PropertyDescriptor[] -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="bindingSource.GetItemProperties listAccessors" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::PropertyDescriptorCollection ^ GetItemProperties(cli::array &lt;System::ComponentModel::PropertyDescriptor ^&gt; ^ listAccessors);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.ITypedList.GetItemProperties(System.ComponentModel.PropertyDescriptor[])</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1488,9 +1470,6 @@
       <MemberSignature Language="F#" Value="abstract member GetListName : System.ComponentModel.PropertyDescriptor[] -&gt; string&#xA;override this.GetListName : System.ComponentModel.PropertyDescriptor[] -&gt; string" Usage="bindingSource.GetListName listAccessors" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetListName(cli::array &lt;System::ComponentModel::PropertyDescriptor ^&gt; ^ listAccessors);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.ITypedList.GetListName(System.ComponentModel.PropertyDescriptor[])</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1745,9 +1724,6 @@
       <MemberSignature Language="F#" Value="member this.IsSorted : bool" Usage="System.Windows.Forms.BindingSource.IsSorted" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsSorted { bool get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.IBindingList.IsSorted</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1919,9 +1895,6 @@
       <MemberSignature Language="F#" Value="member this.ListChanged : System.ComponentModel.ListChangedEventHandler " Usage="member this.ListChanged : System.ComponentModel.ListChangedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event System::ComponentModel::ListChangedEventHandler ^ ListChanged;" />
       <MemberType>Event</MemberType>
-      <Implements>
-        <InterfaceMember>E:System.ComponentModel.IBindingList.ListChanged</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -2738,9 +2711,6 @@
       <MemberSignature Language="F#" Value="abstract member RemoveFilter : unit -&gt; unit&#xA;override this.RemoveFilter : unit -&gt; unit" Usage="bindingSource.RemoveFilter " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveFilter();" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.IBindingListView.RemoveFilter</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -2773,9 +2743,6 @@
       <MemberSignature Language="F#" Value="abstract member RemoveSort : unit -&gt; unit&#xA;override this.RemoveSort : unit -&gt; unit" Usage="bindingSource.RemoveSort " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveSort();" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.IBindingList.RemoveSort</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -3059,9 +3026,6 @@
       <MemberSignature Language="F#" Value="member this.SortDescriptions : System.ComponentModel.ListSortDescriptionCollection" Usage="System.Windows.Forms.BindingSource.SortDescriptions" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::ListSortDescriptionCollection ^ SortDescriptions { System::ComponentModel::ListSortDescriptionCollection ^ get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.IBindingListView.SortDescriptions</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -3100,9 +3064,6 @@
       <MemberSignature Language="F#" Value="member this.SortDirection : System.ComponentModel.ListSortDirection" Usage="System.Windows.Forms.BindingSource.SortDirection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::ListSortDirection SortDirection { System::ComponentModel::ListSortDirection get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.IBindingList.SortDirection</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -3139,9 +3100,6 @@
       <MemberSignature Language="F#" Value="member this.SortProperty : System.ComponentModel.PropertyDescriptor" Usage="System.Windows.Forms.BindingSource.SortProperty" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::PropertyDescriptor ^ SortProperty { System::ComponentModel::PropertyDescriptor ^ get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.IBindingList.SortProperty</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -3178,9 +3136,6 @@
       <MemberSignature Language="F#" Value="member this.SupportsAdvancedSorting : bool" Usage="System.Windows.Forms.BindingSource.SupportsAdvancedSorting" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsAdvancedSorting { bool get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.IBindingListView.SupportsAdvancedSorting</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -3215,9 +3170,6 @@
       <MemberSignature Language="F#" Value="member this.SupportsChangeNotification : bool" Usage="System.Windows.Forms.BindingSource.SupportsChangeNotification" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsChangeNotification { bool get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.IBindingList.SupportsChangeNotification</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -3245,9 +3197,6 @@
       <MemberSignature Language="F#" Value="member this.SupportsFiltering : bool" Usage="System.Windows.Forms.BindingSource.SupportsFiltering" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsFiltering { bool get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.IBindingListView.SupportsFiltering</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -3282,9 +3231,6 @@
       <MemberSignature Language="F#" Value="member this.SupportsSearching : bool" Usage="System.Windows.Forms.BindingSource.SupportsSearching" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsSearching { bool get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.IBindingList.SupportsSearching</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -3327,9 +3273,6 @@
       <MemberSignature Language="F#" Value="member this.SupportsSorting : bool" Usage="System.Windows.Forms.BindingSource.SupportsSorting" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsSorting { bool get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.IBindingList.SupportsSorting</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -3424,9 +3367,6 @@
       <MemberSignature Language="VB.NET" Value="Sub AddIndex (property As PropertyDescriptor) Implements IBindingList.AddIndex" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.IBindingList.AddIndex(System::ComponentModel::PropertyDescriptor ^ property) = System::ComponentModel::IBindingList::AddIndex;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.IBindingList.AddIndex(System.ComponentModel.PropertyDescriptor)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -3458,9 +3398,6 @@
       <MemberSignature Language="VB.NET" Value="Sub RemoveIndex (prop As PropertyDescriptor) Implements IBindingList.RemoveIndex" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.IBindingList.RemoveIndex(System::ComponentModel::PropertyDescriptor ^ prop) = System::ComponentModel::IBindingList::RemoveIndex;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.IBindingList.RemoveIndex(System.ComponentModel.PropertyDescriptor)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -3491,9 +3428,6 @@
       <MemberSignature Language="VB.NET" Value="Sub CancelNew (position As Integer) Implements ICancelAddNew.CancelNew" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.ICancelAddNew.CancelNew(int position) = System::ComponentModel::ICancelAddNew::CancelNew;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.ICancelAddNew.CancelNew(System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -3525,9 +3459,6 @@
       <MemberSignature Language="VB.NET" Value="Sub EndNew (position As Integer) Implements ICancelAddNew.EndNew" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.ICancelAddNew.EndNew(int position) = System::ComponentModel::ICancelAddNew::EndNew;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.ICancelAddNew.EndNew(System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -3559,9 +3490,6 @@
       <MemberSignature Language="VB.NET" Value="Sub BeginInit () Implements ISupportInitialize.BeginInit" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.ISupportInitialize.BeginInit() = System::ComponentModel::ISupportInitialize::BeginInit;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.ISupportInitialize.BeginInit</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -3582,9 +3510,6 @@
       <MemberSignature Language="VB.NET" Value="Sub EndInit () Implements ISupportInitialize.EndInit" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.ISupportInitialize.EndInit() = System::ComponentModel::ISupportInitialize::EndInit;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.ISupportInitialize.EndInit</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -3598,27 +3523,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="System.ComponentModel.ISupportInitializeNotification.Initialized">
-      <MemberSignature Language="C#" Value="event EventHandler System.ComponentModel.ISupportInitializeNotification.Initialized;" />
-      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler System.ComponentModel.ISupportInitializeNotification.Initialized" />
-      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.BindingSource.System#ComponentModel#ISupportInitializeNotification#Initialized" />
-      <MemberSignature Language="VB.NET" Value="Custom Event Initialized As EventHandler Implements System.ComponentModel.ISupportInitializeNotification" />
-      <MemberType>Event</MemberType>
-      <Implements>
-        <InterfaceMember>E:System.ComponentModel.ISupportInitializeNotification.Initialized</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.EventHandler</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="System.ComponentModel.ISupportInitializeNotification.IsInitialized">
       <MemberSignature Language="C#" Value="bool System.ComponentModel.ISupportInitializeNotification.IsInitialized { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.ComponentModel.ISupportInitializeNotification.IsInitialized" />
@@ -3627,9 +3531,6 @@
       <MemberSignature Language="F#" Usage="System.Windows.Forms.BindingSource.System.ComponentModel.ISupportInitializeNotification.IsInitialized" />
       <MemberSignature Language="C++ CLI" Value="property bool System.ComponentModel.ISupportInitializeNotification.IsInitialized { bool get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.ISupportInitializeNotification.IsInitialized</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

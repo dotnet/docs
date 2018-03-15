@@ -153,7 +153,6 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Printing.PrintQueue op_Implicit(class System.Printing.IndexedProperties.PrintQueueProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintQueueProperty.op_Implicit(System.Printing.IndexedProperties.PrintQueueProperty|System.Runtime.CompilerServices.IsImplicitlyDereferenced)~System.Printing.PrintQueue" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (attribRef As PrintQueueProperty) As PrintQueue" />
-      <MemberSignature Language="F#" Value="static member op_Implicit : System.Printing.IndexedProperties.PrintQueueProperty -&gt; System.Printing.PrintQueue" Usage="System.Printing.IndexedProperties.PrintQueueProperty.op_Implicit attribRef" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Printing::PrintQueue ^(System::Printing::IndexedProperties::PrintQueueProperty ^ attribRef);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

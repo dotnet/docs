@@ -146,9 +146,6 @@
       <MemberSignature Language="F#" Value="member this.ContainsListCollection : bool" Usage="System.Web.UI.WebControls.SiteMapDataSource.ContainsListCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ContainsListCollection { bool get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.IListSource.ContainsListCollection</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -158,7 +155,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -215,9 +212,6 @@
       <MemberSignature Language="F#" Value="abstract member GetList : unit -&gt; System.Collections.IList&#xA;override this.GetList : unit -&gt; System.Collections.IList" Usage="siteMapDataSource.GetList " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IList ^ GetList();" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.IListSource.GetList</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -331,7 +325,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -621,9 +615,6 @@
       <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.SiteMapDataSource.System.ComponentModel.IListSource.ContainsListCollection" />
       <MemberSignature Language="C++ CLI" Value="property bool System.ComponentModel.IListSource.ContainsListCollection { bool get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.IListSource.ContainsListCollection</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -653,9 +644,6 @@
       <MemberSignature Language="VB.NET" Value="Function GetList () As IList Implements IListSource.GetList" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IList ^ System.ComponentModel.IListSource.GetList() = System::ComponentModel::IListSource::GetList;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.IListSource.GetList</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

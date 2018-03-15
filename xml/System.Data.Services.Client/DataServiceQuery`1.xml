@@ -123,9 +123,6 @@
       <MemberSignature Language="F#" Value="member this.ElementType : Type" Usage="System.Data.Services.Client.DataServiceQuery&lt;'Element&gt;.ElementType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ ElementType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Linq.IQueryable.ElementType</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -239,9 +236,6 @@
       <MemberSignature Language="F#" Value="member this.Expression : System.Linq.Expressions.Expression" Usage="System.Data.Services.Client.DataServiceQuery&lt;'Element&gt;.Expression" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Linq::Expressions::Expression ^ Expression { System::Linq::Expressions::Expression ^ get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Linq.IQueryable.Expression</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -335,9 +329,6 @@
       <MemberSignature Language="F#" Value="member this.Provider : System.Linq.IQueryProvider" Usage="System.Data.Services.Client.DataServiceQuery&lt;'Element&gt;.Provider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Linq::IQueryProvider ^ Provider { System::Linq::IQueryProvider ^ get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Linq.IQueryable.Provider</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>

@@ -285,49 +285,6 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public StackTrace (Exception e, bool fNeedFileInfo);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Exception e, bool fNeedFileInfo) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackTrace.#ctor(System.Exception,System.Boolean)" />
-      <MemberSignature Language="F#" Value="new System.Diagnostics.StackTrace : Exception * bool -&gt; System.Diagnostics.StackTrace" Usage="new System.Diagnostics.StackTrace (e, fNeedFileInfo)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (e As Exception, fNeedFileInfo As Boolean)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; StackTrace(Exception ^ e, bool fNeedFileInfo);" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Diagnostics.StackTrace</AssemblyName>
-        <AssemblyVersion>4.0.2.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="exception" Type="System.Exception" />
-        <Parameter Name="needFileInfo" Type="System.Boolean" />
-      </Parameters>
-      <Docs>
-        <param name="e">The exception object from which to construct the stack trace.</param>
-        <param name="fNeedFileInfo">
-          <see langword="true" /> to capture the file name, line number, and column number; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.StackTrace" /> class, using the provided exception object and optionally capturing source information.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The resulting stack trace describes the stack at the time of the exception.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The parameter <paramref name="e" /> is <see langword="null" />.</exception>
-        <altmember cref="T:System.Exception" />
-      </Docs>
-    </Member>
-    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public StackTrace (Exception e, int skipFrames);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Exception e, int32 skipFrames) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackTrace.#ctor(System.Exception,System.Int32)" />
@@ -510,6 +467,58 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The parameter <paramref name="e" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="skipFrames" /> parameter is negative.</exception>
+        <altmember cref="T:System.Exception" />
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StackTrace (Exception exception, bool needFileInfo);" FrameworkAlternate="netcore-1.0;netcore-1.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Exception exception, bool needFileInfo) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackTrace.#ctor(System.Exception,System.Boolean)" FrameworkAlternate="netcore-1.0;netcore-1.1" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.StackTrace : Exception * bool -&gt; System.Diagnostics.StackTrace" Usage="new System.Diagnostics.StackTrace (e, fNeedFileInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (e As Exception, fNeedFileInfo As Boolean)" FrameworkAlternate="netcore-1.0;netcore-1.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StackTrace(Exception ^ exception, bool needFileInfo);" FrameworkAlternate="netcore-1.0;netcore-1.1" />
+      <MemberSignature Language="C#" Value="public StackTrace (Exception e, bool fNeedFileInfo);" FrameworkAlternate="netcore-2.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Exception e, bool fNeedFileInfo) cil managed" FrameworkAlternate="netcore-2.0" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackTrace.#ctor(System.Exception,System.Boolean)" FrameworkAlternate="netcore-2.0" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (e As Exception, fNeedFileInfo As Boolean)" FrameworkAlternate="netcore-2.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StackTrace(Exception ^ e, bool fNeedFileInfo);" FrameworkAlternate="netcore-2.0" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.StackTrace</AssemblyName>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="exception" Type="System.Exception" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1" />
+        <Parameter Name="e" Type="System.Exception" Index="0" FrameworkAlternate="netcore-2.0" />
+        <Parameter Name="needFileInfo" Type="System.Boolean" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1" />
+        <Parameter Name="fNeedFileInfo" Type="System.Boolean" Index="1" FrameworkAlternate="netcore-2.0" />
+      </Parameters>
+      <Docs>
+        <param name="e">The exception object from which to construct the stack trace.</param>
+        <param name="fNeedFileInfo">
+          <see langword="true" /> to capture the file name, line number, and column number; otherwise, <see langword="false" />.</param>
+        <param name="exception">To be added.</param>
+        <param name="needFileInfo">To be added.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.StackTrace" /> class, using the provided exception object and optionally capturing source information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The resulting stack trace describes the stack at the time of the exception.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The parameter <paramref name="e" /> is <see langword="null" />.</exception>
         <altmember cref="T:System.Exception" />
       </Docs>
     </Member>

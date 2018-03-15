@@ -314,47 +314,6 @@
       </Docs>
     </Member>
     <Member MemberName="ReadContent&lt;TContent&gt;">
-      <MemberSignature Language="C#" Value="public TContent ReadContent&lt;TContent&gt; (System.Runtime.Serialization.XmlObjectSerializer serializer);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!TContent ReadContent&lt;TContent&gt;(class System.Runtime.Serialization.XmlObjectSerializer serializer) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.XmlSyndicationContent.ReadContent``1(System.Runtime.Serialization.XmlObjectSerializer)" />
-      <MemberSignature Language="VB.NET" Value="Public Function ReadContent(Of TContent) (serializer As XmlObjectSerializer) As TContent" />
-      <MemberSignature Language="F#" Value="member this.ReadContent : System.Runtime.Serialization.XmlObjectSerializer -&gt; 'Content" Usage="xmlSyndicationContent.ReadContent serializer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TContent&gt;&#xA; TContent ReadContent(System::Runtime::Serialization::XmlObjectSerializer ^ serializer);" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>TContent</ReturnType>
-      </ReturnValue>
-      <TypeParameters>
-        <TypeParameter Name="TContent" />
-      </TypeParameters>
-      <Parameters>
-        <Parameter Name="dataContractSerializer" Type="System.Runtime.Serialization.XmlObjectSerializer" />
-      </Parameters>
-      <Docs>
-        <typeparam name="TContent">The type of content to read.</typeparam>
-        <param name="serializer">To be added.</param>
-        <summary>Reads the content of the specified type into the <see cref="T:System.ServiceModel.Syndication.XmlSyndicationContent" /> using the specified serializer.</summary>
-        <returns>An object of the specified type.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- On the receive/deserialization side, if the XML syndication content element is an empty XML element, then default(`TContent`) is returned. If not, the instance of <xref:System.Runtime.Serialization.XmlObjectSerializer> passed in is used to deserialize the inner XML of XML syndication content element into an instance of `TContent`.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.Runtime.Serialization.SerializationException">The input XML cannot be deserialized into the requested type.</exception>
-      </Docs>
-    </Member>
-    <Member MemberName="ReadContent&lt;TContent&gt;">
       <MemberSignature Language="C#" Value="public TContent ReadContent&lt;TContent&gt; (System.Xml.Serialization.XmlSerializer serializer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!TContent ReadContent&lt;TContent&gt;(class System.Xml.Serialization.XmlSerializer serializer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.XmlSyndicationContent.ReadContent``1(System.Xml.Serialization.XmlSerializer)" />
@@ -393,6 +352,53 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The input XML cannot be deserialized into the requested type.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadContent&lt;TContent&gt;">
+      <MemberSignature Language="C#" Value="public TContent ReadContent&lt;TContent&gt; (System.Runtime.Serialization.XmlObjectSerializer dataContractSerializer);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!TContent ReadContent&lt;TContent&gt;(class System.Runtime.Serialization.XmlObjectSerializer dataContractSerializer) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.XmlSyndicationContent.ReadContent``1(System.Runtime.Serialization.XmlObjectSerializer)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReadContent(Of TContent) (dataContractSerializer As XmlObjectSerializer) As TContent" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="F#" Value="member this.ReadContent : System.Runtime.Serialization.XmlObjectSerializer -&gt; 'Content" Usage="xmlSyndicationContent.ReadContent serializer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TContent&gt;&#xA; TContent ReadContent(System::Runtime::Serialization::XmlObjectSerializer ^ dataContractSerializer);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public TContent ReadContent&lt;TContent&gt; (System.Runtime.Serialization.XmlObjectSerializer serializer);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!TContent ReadContent&lt;TContent&gt;(class System.Runtime.Serialization.XmlObjectSerializer serializer) cil managed" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.XmlSyndicationContent.ReadContent``1(System.Runtime.Serialization.XmlObjectSerializer)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReadContent(Of TContent) (serializer As XmlObjectSerializer) As TContent" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TContent&gt;&#xA; TContent ReadContent(System::Runtime::Serialization::XmlObjectSerializer ^ serializer);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TContent</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TContent" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="dataContractSerializer" Type="System.Runtime.Serialization.XmlObjectSerializer" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="serializer" Type="System.Runtime.Serialization.XmlObjectSerializer" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TContent">The type of content to read.</typeparam>
+        <param name="serializer">To be added.</param>
+        <summary>Reads the content of the specified type into the <see cref="T:System.ServiceModel.Syndication.XmlSyndicationContent" /> using the specified serializer.</summary>
+        <returns>An object of the specified type.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ On the receive/deserialization side, if the XML syndication content element is an empty XML element, then default(`TContent`) is returned. If not, the instance of <xref:System.Runtime.Serialization.XmlObjectSerializer> passed in is used to deserialize the inner XML of XML syndication content element into an instance of `TContent`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Runtime.Serialization.SerializationException">The input XML cannot be deserialized into the requested type.</exception>
       </Docs>
     </Member>
     <Member MemberName="Type">

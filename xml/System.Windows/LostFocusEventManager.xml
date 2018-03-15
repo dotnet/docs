@@ -98,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.LostFocusEventManager.NewListenerList" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function NewListenerList () As WeakEventManager.ListenerList" />
       <MemberSignature Language="F#" Value="override this.NewListenerList : unit -&gt; System.Windows.WeakEventManager.ListenerList" Usage="lostFocusEventManager.NewListenerList " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::WeakEventManager::ListenerList ^ NewListenerList();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

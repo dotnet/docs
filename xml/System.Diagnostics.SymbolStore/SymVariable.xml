@@ -65,9 +65,6 @@
       <MemberSignature Language="F#" Value="member this.AddressField1 : int" Usage="System.Diagnostics.SymbolStore.SymVariable.AddressField1" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int AddressField1 { int get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Diagnostics.SymbolStore.ISymbolVariable.AddressField1</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -97,9 +94,6 @@
       <MemberSignature Language="F#" Value="member this.AddressField2 : int" Usage="System.Diagnostics.SymbolStore.SymVariable.AddressField2" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int AddressField2 { int get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Diagnostics.SymbolStore.ISymbolVariable.AddressField2</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -129,9 +123,6 @@
       <MemberSignature Language="F#" Value="member this.AddressField3 : int" Usage="System.Diagnostics.SymbolStore.SymVariable.AddressField3" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int AddressField3 { int get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Diagnostics.SymbolStore.ISymbolVariable.AddressField3</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -161,9 +152,6 @@
       <MemberSignature Language="F#" Value="member this.AddressKind : System.Diagnostics.SymbolStore.SymAddressKind" Usage="System.Diagnostics.SymbolStore.SymVariable.AddressKind" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Diagnostics::SymbolStore::SymAddressKind AddressKind { System::Diagnostics::SymbolStore::SymAddressKind get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Diagnostics.SymbolStore.ISymbolVariable.AddressKind</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -186,9 +174,6 @@
       <MemberSignature Language="F#" Value="member this.Attributes : obj" Usage="System.Diagnostics.SymbolStore.SymVariable.Attributes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ Attributes { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Diagnostics.SymbolStore.ISymbolVariable.Attributes</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -271,9 +256,6 @@
       <MemberSignature Language="F#" Value="member this.EndOffset : int" Usage="System.Diagnostics.SymbolStore.SymVariable.EndOffset" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int EndOffset { int get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Diagnostics.SymbolStore.ISymbolVariable.EndOffset</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -330,9 +312,6 @@
       <MemberSignature Language="F#" Value="abstract member GetSignature : unit -&gt; byte[]&#xA;override this.GetSignature : unit -&gt; byte[]" Usage="symVariable.GetSignature " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Byte&gt; ^ GetSignature();" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Diagnostics.SymbolStore.ISymbolVariable.GetSignature</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -355,9 +334,6 @@
       <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Diagnostics.SymbolStore.SymVariable.Name" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Diagnostics.SymbolStore.ISymbolVariable.Name</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -379,9 +355,6 @@
       <MemberSignature Language="F#" Value="member this.StartOffset : int" Usage="System.Diagnostics.SymbolStore.SymVariable.StartOffset" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int StartOffset { int get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Diagnostics.SymbolStore.ISymbolVariable.StartOffset</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

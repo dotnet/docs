@@ -54,9 +54,6 @@
       <MemberSignature Language="F#" Value="abstract member GetHandler : System.Web.HttpContext * string * string * string -&gt; System.Web.IHttpHandler&#xA;override this.GetHandler : System.Web.HttpContext * string * string * string -&gt; System.Web.IHttpHandler" Usage="httpRemotingHandlerFactory.GetHandler (context, verb, url, filePath)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::IHttpHandler ^ GetHandler(System::Web::HttpContext ^ context, System::String ^ verb, System::String ^ url, System::String ^ filePath);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Web.IHttpHandlerFactory.GetHandler(System.Web.HttpContext,System.String,System.String,System.String)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -95,9 +92,6 @@
       <MemberSignature Language="F#" Value="abstract member ReleaseHandler : System.Web.IHttpHandler -&gt; unit&#xA;override this.ReleaseHandler : System.Web.IHttpHandler -&gt; unit" Usage="httpRemotingHandlerFactory.ReleaseHandler handler" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ReleaseHandler(System::Web::IHttpHandler ^ handler);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Web.IHttpHandlerFactory.ReleaseHandler(System.Web.IHttpHandler)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

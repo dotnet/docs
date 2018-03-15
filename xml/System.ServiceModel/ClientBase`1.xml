@@ -150,46 +150,6 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected ClientBase (System.ServiceModel.InstanceContext instance);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext instance) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.ServiceModel.InstanceContext)" />
-      <MemberSignature Language="VB.NET" Value="Protected Sub New (instance As InstanceContext)" />
-      <MemberSignature Language="F#" Value="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; : System.ServiceModel.InstanceContext -&gt; System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; instance" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ClientBase(System::ServiceModel::InstanceContext ^ instance);" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="callbackInstance" Type="System.ServiceModel.InstanceContext" />
-      </Parameters>
-      <Docs>
-        <param name="instance">To be added.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ClientBase`1" /> class using the <paramref name="instance" /> as the callback object in a duplex conversation.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this constructor when the service contract requires a callback service instance. The target endpoint is constructed from the type parameter and information in the application configuration file.  
-  
-   
-  
-## Examples  
- The following code example shows how to use this constructor with a `SampleDuplexHelloClient` class to pass a callback object that listens for messages from the service.  
-  
- [!code-csharp[CallbackBehaviorAttribute#3](~/samples/snippets/csharp/VS_Snippets_CFX/callbackbehaviorattribute/cs/client.cs#3)]
- [!code-vb[CallbackBehaviorAttribute#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/callbackbehaviorattribute/vb/client.vb#3)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The callback instance is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">Either there is no default endpoint information in the configuration file, more than one endpoint in the file, or no configuration file.</exception>
-        <altmember cref="P:System.ServiceModel.ServiceContractAttribute.CallbackContract" />
-      </Docs>
-    </Member>
-    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected ClientBase (string endpointConfigurationName);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string endpointConfigurationName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.String)" />
@@ -257,12 +217,17 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected ClientBase (System.ServiceModel.InstanceContext instance, System.ServiceModel.Description.ServiceEndpoint endpoint);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext instance, class System.ServiceModel.Description.ServiceEndpoint endpoint) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.ServiceModel.InstanceContext,System.ServiceModel.Description.ServiceEndpoint)" />
-      <MemberSignature Language="VB.NET" Value="Protected Sub New (instance As InstanceContext, endpoint As ServiceEndpoint)" />
-      <MemberSignature Language="F#" Value="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; : System.ServiceModel.InstanceContext * System.ServiceModel.Description.ServiceEndpoint -&gt; System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; (instance, endpoint)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ClientBase(System::ServiceModel::InstanceContext ^ instance, System::ServiceModel::Description::ServiceEndpoint ^ endpoint);" />
+      <MemberSignature Language="C#" Value="protected ClientBase (System.ServiceModel.InstanceContext callbackInstance);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext callbackInstance) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.ServiceModel.InstanceContext)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (callbackInstance As InstanceContext)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; : System.ServiceModel.InstanceContext -&gt; System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; instance" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ClientBase(System::ServiceModel::InstanceContext ^ callbackInstance);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="protected ClientBase (System.ServiceModel.InstanceContext instance);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext instance) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.ServiceModel.InstanceContext)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (instance As InstanceContext)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ClientBase(System::ServiceModel::InstanceContext ^ instance);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -270,47 +235,31 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="callbackInstance" Type="System.ServiceModel.InstanceContext" />
-        <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
+        <Parameter Name="callbackInstance" Type="System.ServiceModel.InstanceContext" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="instance" Type="System.ServiceModel.InstanceContext" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
       </Parameters>
       <Docs>
         <param name="instance">To be added.</param>
-        <param name="endpoint">The endpoint for a service that allows clients to find and communicate with the service.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ClientBase`1" /> class using the specified  <see cref="T:System.ServiceModel.InstanceContext" /> and  <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> objects.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected ClientBase (System.ServiceModel.InstanceContext instance, string endpointConfigurationName);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext instance, string endpointConfigurationName) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.ServiceModel.InstanceContext,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Protected Sub New (instance As InstanceContext, endpointConfigurationName As String)" />
-      <MemberSignature Language="F#" Value="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; : System.ServiceModel.InstanceContext * string -&gt; System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; (instance, endpointConfigurationName)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ClientBase(System::ServiceModel::InstanceContext ^ instance, System::String ^ endpointConfigurationName);" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="callbackInstance" Type="System.ServiceModel.InstanceContext" />
-        <Parameter Name="endpointConfigurationName" Type="System.String" />
-      </Parameters>
-      <Docs>
-        <param name="instance">To be added.</param>
-        <param name="endpointConfigurationName">The name of the endpoint in the application configuration file.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ClientBase`1" /> class using the specified callback service and endpoint configuration information.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ClientBase`1" /> class using the <paramref name="instance" /> as the callback object in a duplex conversation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this constructor to pass a service object that implements the callback contract for the target service and determine the target endpoint information from the client application configuration file. The target value is located by finding the `name` attribute of the client [&lt;endpoint&gt;](~/docs/framework/configure-apps/file-schema/wcf/endpoint-of-client.md) element.  
+ Use this constructor when the service contract requires a callback service instance. The target endpoint is constructed from the type parameter and information in the application configuration file.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use this constructor with a `SampleDuplexHelloClient` class to pass a callback object that listens for messages from the service.  
+  
+ [!code-csharp[CallbackBehaviorAttribute#3](~/samples/snippets/csharp/VS_Snippets_CFX/callbackbehaviorattribute/cs/client.cs#3)]
+ [!code-vb[CallbackBehaviorAttribute#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/callbackbehaviorattribute/vb/client.vb#3)]  
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The endpoint is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The endpoint cannot be found or the endpoint contract is not valid.</exception>
+        <exception cref="T:System.ArgumentNullException">The callback instance is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">Either there is no default endpoint information in the configuration file, more than one endpoint in the file, or no configuration file.</exception>
+        <altmember cref="P:System.ServiceModel.ServiceContractAttribute.CallbackContract" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -393,11 +342,17 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected ClientBase (System.ServiceModel.InstanceContext instance, System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext instance, class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.ServiceModel.InstanceContext,System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)" />
-      <MemberSignature Language="F#" Value="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; : System.ServiceModel.InstanceContext * System.ServiceModel.Channels.Binding * System.ServiceModel.EndpointAddress -&gt; System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; (instance, binding, remoteAddress)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ClientBase(System::ServiceModel::InstanceContext ^ instance, System::ServiceModel::Channels::Binding ^ binding, System::ServiceModel::EndpointAddress ^ remoteAddress);" />
+      <MemberSignature Language="C#" Value="protected ClientBase (System.ServiceModel.InstanceContext callbackInstance, System.ServiceModel.Description.ServiceEndpoint endpoint);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext callbackInstance, class System.ServiceModel.Description.ServiceEndpoint endpoint) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.ServiceModel.InstanceContext,System.ServiceModel.Description.ServiceEndpoint)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (callbackInstance As InstanceContext, endpoint As ServiceEndpoint)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; : System.ServiceModel.InstanceContext * System.ServiceModel.Description.ServiceEndpoint -&gt; System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; (instance, endpoint)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ClientBase(System::ServiceModel::InstanceContext ^ callbackInstance, System::ServiceModel::Description::ServiceEndpoint ^ endpoint);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="protected ClientBase (System.ServiceModel.InstanceContext instance, System.ServiceModel.Description.ServiceEndpoint endpoint);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext instance, class System.ServiceModel.Description.ServiceEndpoint endpoint) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.ServiceModel.InstanceContext,System.ServiceModel.Description.ServiceEndpoint)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (instance As InstanceContext, endpoint As ServiceEndpoint)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ClientBase(System::ServiceModel::InstanceContext ^ instance, System::ServiceModel::Description::ServiceEndpoint ^ endpoint);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -405,11 +360,82 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="callbackInstance" Type="System.ServiceModel.InstanceContext" />
-        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
-        <Parameter Name="remoteAddress" Type="System.ServiceModel.EndpointAddress" />
+        <Parameter Name="callbackInstance" Type="System.ServiceModel.InstanceContext" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="instance" Type="System.ServiceModel.InstanceContext" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
+        <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" Index="1" />
       </Parameters>
       <Docs>
+        <param name="callbackInstance">To be added.</param>
+        <param name="instance">To be added.</param>
+        <param name="endpoint">The endpoint for a service that allows clients to find and communicate with the service.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ClientBase`1" /> class using the specified  <see cref="T:System.ServiceModel.InstanceContext" /> and  <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> objects.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ClientBase (System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.ServiceModel.InstanceContext,System.String)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (callbackInstance As InstanceContext, endpointConfigurationName As String)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; : System.ServiceModel.InstanceContext * string -&gt; System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; (instance, endpointConfigurationName)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ClientBase(System::ServiceModel::InstanceContext ^ callbackInstance, System::String ^ endpointConfigurationName);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="protected ClientBase (System.ServiceModel.InstanceContext instance, string endpointConfigurationName);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext instance, string endpointConfigurationName) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.ServiceModel.InstanceContext,System.String)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (instance As InstanceContext, endpointConfigurationName As String)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ClientBase(System::ServiceModel::InstanceContext ^ instance, System::String ^ endpointConfigurationName);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="callbackInstance" Type="System.ServiceModel.InstanceContext" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="instance" Type="System.ServiceModel.InstanceContext" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
+        <Parameter Name="endpointConfigurationName" Type="System.String" Index="1" />
+      </Parameters>
+      <Docs>
+        <param name="callbackInstance">To be added.</param>
+        <param name="instance">To be added.</param>
+        <param name="endpointConfigurationName">The name of the endpoint in the application configuration file.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ClientBase`1" /> class using the specified callback service and endpoint configuration information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to pass a service object that implements the callback contract for the target service and determine the target endpoint information from the client application configuration file. The target value is located by finding the `name` attribute of the client [&lt;endpoint&gt;](~/docs/framework/configure-apps/file-schema/wcf/endpoint-of-client.md) element.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The endpoint is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The endpoint cannot be found or the endpoint contract is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ClientBase (System.ServiceModel.InstanceContext callbackInstance, System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext callbackInstance, class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.ServiceModel.InstanceContext,System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; : System.ServiceModel.InstanceContext * System.ServiceModel.Channels.Binding * System.ServiceModel.EndpointAddress -&gt; System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; (instance, binding, remoteAddress)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ClientBase(System::ServiceModel::InstanceContext ^ callbackInstance, System::ServiceModel::Channels::Binding ^ binding, System::ServiceModel::EndpointAddress ^ remoteAddress);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="protected ClientBase (System.ServiceModel.InstanceContext instance, System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext instance, class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.ServiceModel.InstanceContext,System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ClientBase(System::ServiceModel::InstanceContext ^ instance, System::ServiceModel::Channels::Binding ^ binding, System::ServiceModel::EndpointAddress ^ remoteAddress);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="callbackInstance" Type="System.ServiceModel.InstanceContext" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="instance" Type="System.ServiceModel.InstanceContext" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
+        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" Index="1" />
+        <Parameter Name="remoteAddress" Type="System.ServiceModel.EndpointAddress" Index="2" />
+      </Parameters>
+      <Docs>
+        <param name="callbackInstance">To be added.</param>
         <param name="instance">To be added.</param>
         <param name="binding">The binding with which to call the service.</param>
         <param name="remoteAddress">The address of the service endpoint.</param>
@@ -419,12 +445,17 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected ClientBase (System.ServiceModel.InstanceContext instance, string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext instance, string endpointConfigurationName, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.ServiceModel.InstanceContext,System.String,System.ServiceModel.EndpointAddress)" />
-      <MemberSignature Language="VB.NET" Value="Protected Sub New (instance As InstanceContext, endpointConfigurationName As String, remoteAddress As EndpointAddress)" />
+      <MemberSignature Language="C#" Value="protected ClientBase (System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.ServiceModel.InstanceContext,System.String,System.ServiceModel.EndpointAddress)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (callbackInstance As InstanceContext, endpointConfigurationName As String, remoteAddress As EndpointAddress)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; : System.ServiceModel.InstanceContext * string * System.ServiceModel.EndpointAddress -&gt; System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; (instance, endpointConfigurationName, remoteAddress)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ClientBase(System::ServiceModel::InstanceContext ^ instance, System::String ^ endpointConfigurationName, System::ServiceModel::EndpointAddress ^ remoteAddress);" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ClientBase(System::ServiceModel::InstanceContext ^ callbackInstance, System::String ^ endpointConfigurationName, System::ServiceModel::EndpointAddress ^ remoteAddress);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="protected ClientBase (System.ServiceModel.InstanceContext instance, string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext instance, string endpointConfigurationName, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.ServiceModel.InstanceContext,System.String,System.ServiceModel.EndpointAddress)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (instance As InstanceContext, endpointConfigurationName As String, remoteAddress As EndpointAddress)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ClientBase(System::ServiceModel::InstanceContext ^ instance, System::String ^ endpointConfigurationName, System::ServiceModel::EndpointAddress ^ remoteAddress);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -432,11 +463,13 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="callbackInstance" Type="System.ServiceModel.InstanceContext" />
-        <Parameter Name="endpointConfigurationName" Type="System.String" />
-        <Parameter Name="remoteAddress" Type="System.ServiceModel.EndpointAddress" />
+        <Parameter Name="callbackInstance" Type="System.ServiceModel.InstanceContext" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="instance" Type="System.ServiceModel.InstanceContext" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
+        <Parameter Name="endpointConfigurationName" Type="System.String" Index="1" />
+        <Parameter Name="remoteAddress" Type="System.ServiceModel.EndpointAddress" Index="2" />
       </Parameters>
       <Docs>
+        <param name="callbackInstance">To be added.</param>
         <param name="instance">To be added.</param>
         <param name="endpointConfigurationName">The name of the endpoint in the application configuration file.</param>
         <param name="remoteAddress">The address of the service.</param>
@@ -455,12 +488,17 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected ClientBase (System.ServiceModel.InstanceContext instance, string endpointConfigurationName, string remoteAddress);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext instance, string endpointConfigurationName, string remoteAddress) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.ServiceModel.InstanceContext,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Protected Sub New (instance As InstanceContext, endpointConfigurationName As String, remoteAddress As String)" />
+      <MemberSignature Language="C#" Value="protected ClientBase (System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName, string remoteAddress);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName, string remoteAddress) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.ServiceModel.InstanceContext,System.String,System.String)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (callbackInstance As InstanceContext, endpointConfigurationName As String, remoteAddress As String)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; : System.ServiceModel.InstanceContext * string * string -&gt; System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt;" Usage="new System.ServiceModel.ClientBase&lt;'Channel (requires 'Channel : null)&gt; (instance, endpointConfigurationName, remoteAddress)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ClientBase(System::ServiceModel::InstanceContext ^ instance, System::String ^ endpointConfigurationName, System::String ^ remoteAddress);" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ClientBase(System::ServiceModel::InstanceContext ^ callbackInstance, System::String ^ endpointConfigurationName, System::String ^ remoteAddress);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="protected ClientBase (System.ServiceModel.InstanceContext instance, string endpointConfigurationName, string remoteAddress);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext instance, string endpointConfigurationName, string remoteAddress) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ClientBase`1.#ctor(System.ServiceModel.InstanceContext,System.String,System.String)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (instance As InstanceContext, endpointConfigurationName As String, remoteAddress As String)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ClientBase(System::ServiceModel::InstanceContext ^ instance, System::String ^ endpointConfigurationName, System::String ^ remoteAddress);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -468,11 +506,13 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="callbackInstance" Type="System.ServiceModel.InstanceContext" />
-        <Parameter Name="endpointConfigurationName" Type="System.String" />
-        <Parameter Name="remoteAddress" Type="System.String" />
+        <Parameter Name="callbackInstance" Type="System.ServiceModel.InstanceContext" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="instance" Type="System.ServiceModel.InstanceContext" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
+        <Parameter Name="endpointConfigurationName" Type="System.String" Index="1" />
+        <Parameter Name="remoteAddress" Type="System.String" Index="2" />
       </Parameters>
       <Docs>
+        <param name="callbackInstance">To be added.</param>
         <param name="instance">To be added.</param>
         <param name="endpointConfigurationName">The name of the endpoint in the application configuration file.</param>
         <param name="remoteAddress">The address of the service.</param>

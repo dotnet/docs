@@ -127,9 +127,6 @@
       <MemberSignature Language="F#" Value="abstract member GetPreviousVersion : System.Configuration.SettingsContext * System.Configuration.SettingsProperty -&gt; System.Configuration.SettingsPropertyValue&#xA;override this.GetPreviousVersion : System.Configuration.SettingsContext * System.Configuration.SettingsProperty -&gt; System.Configuration.SettingsPropertyValue" Usage="clientSettingsProvider.GetPreviousVersion (context, property)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Configuration::SettingsPropertyValue ^ GetPreviousVersion(System::Configuration::SettingsContext ^ context, System::Configuration::SettingsProperty ^ property);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Configuration.IApplicationSettingsProvider.GetPreviousVersion(System.Configuration.SettingsContext,System.Configuration.SettingsProperty)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -286,9 +283,6 @@
       <MemberSignature Language="F#" Value="abstract member Reset : System.Configuration.SettingsContext -&gt; unit&#xA;override this.Reset : System.Configuration.SettingsContext -&gt; unit" Usage="clientSettingsProvider.Reset context" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Reset(System::Configuration::SettingsContext ^ context);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Configuration.IApplicationSettingsProvider.Reset(System.Configuration.SettingsContext)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -441,9 +435,6 @@
       <MemberSignature Language="F#" Value="abstract member Upgrade : System.Configuration.SettingsContext * System.Configuration.SettingsPropertyCollection -&gt; unit&#xA;override this.Upgrade : System.Configuration.SettingsContext * System.Configuration.SettingsPropertyCollection -&gt; unit" Usage="clientSettingsProvider.Upgrade (context, properties)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Upgrade(System::Configuration::SettingsContext ^ context, System::Configuration::SettingsPropertyCollection ^ properties);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Configuration.IApplicationSettingsProvider.Upgrade(System.Configuration.SettingsContext,System.Configuration.SettingsPropertyCollection)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

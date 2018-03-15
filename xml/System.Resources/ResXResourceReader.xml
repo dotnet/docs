@@ -1,10 +1,10 @@
 ﻿<Type Name="ResXResourceReader" FullName="System.Resources.ResXResourceReader">
-  <TypeSignature Language="C#" Value="public class ResXResourceReader : System.Resources.IResourceReader" />
+  <TypeSignature Language="C#" Value="public class ResXResourceReader : IDisposable, System.Collections.IEnumerable, System.Resources.IResourceReader" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ResXResourceReader extends System.Object implements class System.Collections.IEnumerable, class System.IDisposable, class System.Resources.IResourceReader" />
   <TypeSignature Language="DocId" Value="T:System.Resources.ResXResourceReader" />
-  <TypeSignature Language="VB.NET" Value="Public Class ResXResourceReader&#xA;Implements IResourceReader" />
+  <TypeSignature Language="VB.NET" Value="Public Class ResXResourceReader&#xA;Implements IDisposable, IEnumerable, IResourceReader" />
   <TypeSignature Language="F#" Value="type ResXResourceReader = class&#xA;    interface IResourceReader&#xA;    interface IEnumerable&#xA;    interface IDisposable" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ResXResourceReader : System::Resources::IResourceReader" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ResXResourceReader : IDisposable, System::Collections::IEnumerable, System::Resources::IResourceReader" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -13,6 +13,12 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>System.Resources.IResourceReader</InterfaceName>
     </Interface>
@@ -360,9 +366,6 @@
       <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit&#xA;override this.Close : unit -&gt; unit" Usage="resXResourceReader.Close " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Close();" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Resources.IResourceReader.Close</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -555,9 +558,6 @@
       <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IDictionaryEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IDictionaryEnumerator" Usage="resXResourceReader.GetEnumerator " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IDictionaryEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Resources.IResourceReader.GetEnumerator</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

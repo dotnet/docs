@@ -277,9 +277,6 @@
       <MemberSignature Language="F#" Usage="System.Workflow.ComponentModel.Design.TypeBrowserDialog.System.ComponentModel.ISite.Component" />
       <MemberSignature Language="C++ CLI" Value="property System::ComponentModel::IComponent ^ System.ComponentModel.ISite.Component { System::ComponentModel::IComponent ^ get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.ISite.Component</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -310,9 +307,6 @@
       <MemberSignature Language="F#" Usage="System.Workflow.ComponentModel.Design.TypeBrowserDialog.System.ComponentModel.ISite.Container" />
       <MemberSignature Language="C++ CLI" Value="property System::ComponentModel::IContainer ^ System.ComponentModel.ISite.Container { System::ComponentModel::IContainer ^ get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.ISite.Container</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -343,9 +337,6 @@
       <MemberSignature Language="F#" Usage="System.Workflow.ComponentModel.Design.TypeBrowserDialog.System.ComponentModel.ISite.DesignMode" />
       <MemberSignature Language="C++ CLI" Value="property bool System.ComponentModel.ISite.DesignMode { bool get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.ISite.DesignMode</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -375,9 +366,6 @@
       <MemberSignature Language="F#" Usage="System.Workflow.ComponentModel.Design.TypeBrowserDialog.System.ComponentModel.ISite.Name" />
       <MemberSignature Language="C++ CLI" Value="property System::String ^ System.ComponentModel.ISite.Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.ISite.Name</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -405,9 +393,6 @@
       <MemberSignature Language="VB.NET" Value="Function GetService (serviceType As Type) As Object Implements IServiceProvider.GetService" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.IServiceProvider.GetService(Type ^ serviceType) = IServiceProvider::GetService;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.IServiceProvider.GetService(System.Type)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

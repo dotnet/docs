@@ -87,9 +87,6 @@
       <MemberSignature Language="F#" Value="member this.AddParsedSubObject : obj -&gt; unit" Usage="deviceSpecificChoice.AddParsedSubObject obj" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void AddParsedSubObject(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Web.UI.IParserAccessor.AddParsedSubObject(System.Object)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -155,7 +152,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -232,9 +229,6 @@ public bool myChoiceMethod(System.Web.Mobile.MobileCapabilities
       <MemberSignature Language="F#" Value="member this.GetAttribute : string -&gt; string" Usage="deviceSpecificChoice.GetAttribute key" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::String ^ GetAttribute(System::String ^ key);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Web.UI.IAttributeAccessor.GetAttribute(System.String)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -267,7 +261,7 @@ public bool myChoiceMethod(System.Web.Mobile.MobileCapabilities
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -288,9 +282,6 @@ public bool myChoiceMethod(System.Web.Mobile.MobileCapabilities
       <MemberSignature Language="F#" Value="member this.SetAttribute : string * string -&gt; unit" Usage="deviceSpecificChoice.SetAttribute (key, value)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SetAttribute(System::String ^ key, System::String ^ value);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Web.UI.IAttributeAccessor.SetAttribute(System.String,System.String)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -316,9 +307,6 @@ public bool myChoiceMethod(System.Web.Mobile.MobileCapabilities
       <MemberSignature Language="VB.NET" Value="Function GetAttribute (name As String) As String Implements IAttributeAccessor.GetAttribute" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.Web.UI.IAttributeAccessor.GetAttribute(System::String ^ name) = System::Web::UI::IAttributeAccessor::GetAttribute;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Web.UI.IAttributeAccessor.GetAttribute(System.String)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -350,9 +338,6 @@ public bool myChoiceMethod(System.Web.Mobile.MobileCapabilities
       <MemberSignature Language="VB.NET" Value="Sub SetAttribute (name As String, value As String) Implements IAttributeAccessor.SetAttribute" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IAttributeAccessor.SetAttribute(System::String ^ name, System::String ^ value) = System::Web::UI::IAttributeAccessor::SetAttribute;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Web.UI.IAttributeAccessor.SetAttribute(System.String,System.String)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -385,9 +370,6 @@ public bool myChoiceMethod(System.Web.Mobile.MobileCapabilities
       <MemberSignature Language="VB.NET" Value="Sub AddParsedSubObject (obj As Object) Implements IParserAccessor.AddParsedSubObject" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IParserAccessor.AddParsedSubObject(System::Object ^ obj) = System::Web::UI::IParserAccessor::AddParsedSubObject;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Web.UI.IParserAccessor.AddParsedSubObject(System.Object)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -425,7 +407,7 @@ public bool myChoiceMethod(System.Web.Mobile.MobileCapabilities
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

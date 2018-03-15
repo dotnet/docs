@@ -1,10 +1,10 @@
 ﻿<Type Name="ChartHttpHandler" FullName="System.Web.UI.DataVisualization.Charting.ChartHttpHandler">
-  <TypeSignature Language="C#" Value="public class ChartHttpHandler : System.Web.UI.Page, System.Web.SessionState.IRequiresSessionState" />
+  <TypeSignature Language="C#" Value="public class ChartHttpHandler : System.Web.UI.Page, System.Web.IHttpHandler, System.Web.SessionState.IRequiresSessionState" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ChartHttpHandler extends System.Web.UI.Page implements class System.Web.IHttpHandler, class System.Web.SessionState.IRequiresSessionState" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.ChartHttpHandler" />
-  <TypeSignature Language="VB.NET" Value="Public Class ChartHttpHandler&#xA;Inherits Page&#xA;Implements IRequiresSessionState" />
+  <TypeSignature Language="VB.NET" Value="Public Class ChartHttpHandler&#xA;Inherits Page&#xA;Implements IHttpHandler, IRequiresSessionState" />
   <TypeSignature Language="F#" Value="type ChartHttpHandler = class&#xA;    inherit Page&#xA;    interface IRequiresSessionState&#xA;    interface IHttpHandler" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ChartHttpHandler : System::Web::UI::Page, System::Web::SessionState::IRequiresSessionState" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ChartHttpHandler : System::Web::UI::Page, System::Web::IHttpHandler, System::Web::SessionState::IRequiresSessionState" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -13,6 +13,9 @@
     <BaseTypeName>System.Web.UI.Page</BaseTypeName>
   </Base>
   <Interfaces>
+    <Interface>
+      <InterfaceName>System.Web.IHttpHandler</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>System.Web.SessionState.IRequiresSessionState</InterfaceName>
     </Interface>
@@ -68,9 +71,6 @@
       <MemberSignature Language="F#" Usage="System.Web.UI.DataVisualization.Charting.ChartHttpHandler.System.Web.IHttpHandler.IsReusable" />
       <MemberSignature Language="C++ CLI" Value="property bool System.Web.IHttpHandler.IsReusable { bool get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Web.IHttpHandler.IsReusable</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -92,9 +92,6 @@
       <MemberSignature Language="VB.NET" Value="Sub ProcessRequest (context As HttpContext) Implements IHttpHandler.ProcessRequest" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.IHttpHandler.ProcessRequest(System::Web::HttpContext ^ context) = System::Web::IHttpHandler::ProcessRequest;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Web.IHttpHandler.ProcessRequest(System.Web.HttpContext)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

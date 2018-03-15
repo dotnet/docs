@@ -505,34 +505,6 @@
       </Docs>
     </Member>
     <Member MemberName="Read">
-      <MemberSignature Language="C#" Value="public static System.Web.Services.Description.ServiceDescription Read (System.IO.TextReader reader, bool validate);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Services.Description.ServiceDescription Read(class System.IO.TextReader reader, bool validate) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ServiceDescription.Read(System.IO.TextReader,System.Boolean)" />
-      <MemberSignature Language="F#" Value="static member Read : System.IO.TextReader * bool -&gt; System.Web.Services.Description.ServiceDescription" Usage="System.Web.Services.Description.ServiceDescription.Read (reader, validate)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function Read (reader As TextReader, validate As Boolean) As ServiceDescription" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::Services::Description::ServiceDescription ^ Read(System::IO::TextReader ^ reader, bool validate);" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Web.Services.Description.ServiceDescription</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="textReader" Type="System.IO.TextReader" />
-        <Parameter Name="validate" Type="System.Boolean" />
-      </Parameters>
-      <Docs>
-        <param name="reader">To be added.</param>
-        <param name="validate">A <see cref="T:System.Boolean" /> that indicates whether the XML should be validated against the schema specified by <see cref="P:System.Web.Services.Description.ServiceDescription.Schema" />.</param>
-        <summary>Initializes an instance of the <see cref="T:System.Web.Services.Description.ServiceDescription" /> class by directly loading the XML from a <see cref="T:System.IO.TextReader" />.</summary>
-        <returns>An instance of the <see cref="T:System.Web.Services.Description.ServiceDescription" />.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Read">
       <MemberSignature Language="C#" Value="public static System.Web.Services.Description.ServiceDescription Read (string fileName, bool validate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Services.Description.ServiceDescription Read(string fileName, bool validate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ServiceDescription.Read(System.String,System.Boolean)" />
@@ -584,6 +556,41 @@
         <param name="reader">An <see cref="T:System.Xml.XmlReader" />, passed by reference, which contains the XML data to be read.</param>
         <param name="validate">A <see cref="T:System.Boolean" /> that indicates whether the XML should be validated against the schema specified by <see cref="P:System.Web.Services.Description.ServiceDescription.Schema" />.</param>
         <summary>Initializes an instance of the <see cref="T:System.Web.Services.Description.ServiceDescription" /> class by directly loading the XML from an <see cref="T:System.Xml.XmlReader" />.</summary>
+        <returns>An instance of the <see cref="T:System.Web.Services.Description.ServiceDescription" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Read">
+      <MemberSignature Language="C#" Value="public static System.Web.Services.Description.ServiceDescription Read (System.IO.TextReader textReader, bool validate);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Services.Description.ServiceDescription Read(class System.IO.TextReader textReader, bool validate) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ServiceDescription.Read(System.IO.TextReader,System.Boolean)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="F#" Value="static member Read : System.IO.TextReader * bool -&gt; System.Web.Services.Description.ServiceDescription" Usage="System.Web.Services.Description.ServiceDescription.Read (reader, validate)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Read (reader As TextReader, validate As Boolean) As ServiceDescription" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::Services::Description::ServiceDescription ^ Read(System::IO::TextReader ^ textReader, bool validate);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public static System.Web.Services.Description.ServiceDescription Read (System.IO.TextReader reader, bool validate);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Services.Description.ServiceDescription Read(class System.IO.TextReader reader, bool validate) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ServiceDescription.Read(System.IO.TextReader,System.Boolean)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Read (reader As TextReader, validate As Boolean) As ServiceDescription" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::Services::Description::ServiceDescription ^ Read(System::IO::TextReader ^ reader, bool validate);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Description.ServiceDescription</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="textReader" Type="System.IO.TextReader" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="reader" Type="System.IO.TextReader" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
+        <Parameter Name="validate" Type="System.Boolean" Index="1" />
+      </Parameters>
+      <Docs>
+        <param name="textReader">To be added.</param>
+        <param name="reader">To be added.</param>
+        <param name="validate">A <see cref="T:System.Boolean" /> that indicates whether the XML should be validated against the schema specified by <see cref="P:System.Web.Services.Description.ServiceDescription.Schema" />.</param>
+        <summary>Initializes an instance of the <see cref="T:System.Web.Services.Description.ServiceDescription" /> class by directly loading the XML from a <see cref="T:System.IO.TextReader" />.</summary>
         <returns>An instance of the <see cref="T:System.Web.Services.Description.ServiceDescription" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>

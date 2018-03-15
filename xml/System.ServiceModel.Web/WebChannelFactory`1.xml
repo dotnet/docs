@@ -137,72 +137,6 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public WebChannelFactory (string configurationName);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string configurationName) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebChannelFactory`1.#ctor(System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (configurationName As String)" />
-      <MemberSignature Language="F#" Value="new System.ServiceModel.Web.WebChannelFactory&lt;'Channel&gt; : string -&gt; System.ServiceModel.Web.WebChannelFactory&lt;'Channel&gt;" Usage="new System.ServiceModel.Web.WebChannelFactory&lt;'Channel&gt; configurationName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebChannelFactory(System::String ^ configurationName);" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="endpointConfigurationName" Type="System.String" />
-      </Parameters>
-      <Docs>
-        <param name="configurationName">To be added.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Web.WebChannelFactory`1" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `endpointConfigurationName` parameter must be set to the same value as the `name` attribute of the `<endpoint>` element in the application configuration file.  
-  
-   
-  
-## Examples  
- The following code shows how use this constructor to create a <xref:System.ServiceModel.Web.WebChannelFactory%601> instance and use it to call a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service.  
-  
- [!code-csharp[BasicWebProgramming#3](~/samples/snippets/csharp/VS_Snippets_CFX/basicwebprogramming/cs/snippets.cs#3)]
- [!code-vb[BasicWebProgramming#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/basicwebprogramming/vb/snippets.vb#3)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public WebChannelFactory (Type serviceType);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type serviceType) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebChannelFactory`1.#ctor(System.Type)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (serviceType As Type)" />
-      <MemberSignature Language="F#" Value="new System.ServiceModel.Web.WebChannelFactory&lt;'Channel&gt; : Type -&gt; System.ServiceModel.Web.WebChannelFactory&lt;'Channel&gt;" Usage="new System.ServiceModel.Web.WebChannelFactory&lt;'Channel&gt; serviceType" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebChannelFactory(Type ^ serviceType);" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="channelType" Type="System.Type" />
-      </Parameters>
-      <Docs>
-        <param name="serviceType">To be added.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Web.WebChannelFactory`1" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The type passed for the type parameter must be an interface.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WebChannelFactory (Uri remoteAddress);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri remoteAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebChannelFactory`1.#ctor(System.Uri)" />
@@ -268,6 +202,49 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebChannelFactory (string endpointConfigurationName);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string endpointConfigurationName) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebChannelFactory`1.#ctor(System.String)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (endpointConfigurationName As String)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Web.WebChannelFactory&lt;'Channel&gt; : string -&gt; System.ServiceModel.Web.WebChannelFactory&lt;'Channel&gt;" Usage="new System.ServiceModel.Web.WebChannelFactory&lt;'Channel&gt; configurationName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebChannelFactory(System::String ^ endpointConfigurationName);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public WebChannelFactory (string configurationName);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string configurationName) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebChannelFactory`1.#ctor(System.String)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (configurationName As String)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebChannelFactory(System::String ^ configurationName);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="endpointConfigurationName" Type="System.String" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="configurationName" Type="System.String" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
+      </Parameters>
+      <Docs>
+        <param name="configurationName">To be added.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Web.WebChannelFactory`1" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `endpointConfigurationName` parameter must be set to the same value as the `name` attribute of the `<endpoint>` element in the application configuration file.  
+  
+   
+  
+## Examples  
+ The following code shows how use this constructor to create a <xref:System.ServiceModel.Web.WebChannelFactory%601> instance and use it to call a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service.  
+  
+ [!code-csharp[BasicWebProgramming#3](~/samples/snippets/csharp/VS_Snippets_CFX/basicwebprogramming/cs/snippets.cs#3)]
+ [!code-vb[BasicWebProgramming#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/basicwebprogramming/vb/snippets.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WebChannelFactory (string endpointConfigurationName, Uri remoteAddress);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string endpointConfigurationName, class System.Uri remoteAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebChannelFactory`1.#ctor(System.String,System.Uri)" />
@@ -301,6 +278,41 @@
   
  [!code-csharp[BasicWebProgramming#6](~/samples/snippets/csharp/VS_Snippets_CFX/basicwebprogramming/cs/snippets.cs#6)]
  [!code-vb[BasicWebProgramming#6](~/samples/snippets/visualbasic/VS_Snippets_CFX/basicwebprogramming/vb/snippets.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebChannelFactory (Type channelType);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type channelType) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebChannelFactory`1.#ctor(System.Type)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (channelType As Type)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Web.WebChannelFactory&lt;'Channel&gt; : Type -&gt; System.ServiceModel.Web.WebChannelFactory&lt;'Channel&gt;" Usage="new System.ServiceModel.Web.WebChannelFactory&lt;'Channel&gt; serviceType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebChannelFactory(Type ^ channelType);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public WebChannelFactory (Type serviceType);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type serviceType) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebChannelFactory`1.#ctor(System.Type)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (serviceType As Type)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebChannelFactory(Type ^ serviceType);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="channelType" Type="System.Type" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="serviceType" Type="System.Type" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
+      </Parameters>
+      <Docs>
+        <param name="serviceType">To be added.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Web.WebChannelFactory`1" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The type passed for the type parameter must be an interface.  
   
  ]]></format>
         </remarks>

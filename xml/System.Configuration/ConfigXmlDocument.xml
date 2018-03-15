@@ -125,12 +125,17 @@
       </Docs>
     </Member>
     <Member MemberName="CreateComment">
-      <MemberSignature Language="C#" Value="public override System.Xml.XmlComment CreateComment (string comment);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Xml.XmlComment CreateComment(string comment) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigXmlDocument.CreateComment(System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateComment (comment As String) As XmlComment" />
+      <MemberSignature Language="C#" Value="public override System.Xml.XmlComment CreateComment (string data);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Xml.XmlComment CreateComment(string data) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigXmlDocument.CreateComment(System.String)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateComment (data As String) As XmlComment" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
       <MemberSignature Language="F#" Value="override this.CreateComment : string -&gt; System.Xml.XmlComment" Usage="configXmlDocument.CreateComment comment" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xml::XmlComment ^ CreateComment(System::String ^ comment);" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xml::XmlComment ^ CreateComment(System::String ^ data);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public override System.Xml.XmlComment CreateComment (string comment);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Xml.XmlComment CreateComment(string comment) cil managed" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigXmlDocument.CreateComment(System.String)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateComment (comment As String) As XmlComment" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xml::XmlComment ^ CreateComment(System::String ^ comment);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -144,7 +149,8 @@
         <ReturnType>System.Xml.XmlComment</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="data" Type="System.String" />
+        <Parameter Name="data" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="comment" Type="System.String" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="comment">To be added.</param>

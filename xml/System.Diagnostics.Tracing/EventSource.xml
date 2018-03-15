@@ -2839,12 +2839,17 @@ class AnotherEventSource : EventSource {
       </Docs>
     </Member>
     <Member MemberName="WriteEventWithRelatedActivityId">
-      <MemberSignature Language="C#" Value="protected void WriteEventWithRelatedActivityId (int eventId, Guid relatedActivityId, params object[] args);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEventWithRelatedActivityId(int32 eventId, valuetype System.Guid relatedActivityId, object[] args) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityId(System.Int32,System.Guid,System.Object[])" />
-      <MemberSignature Language="VB.NET" Value="Protected Sub WriteEventWithRelatedActivityId (eventId As Integer, relatedActivityId As Guid, ParamArray args As Object())" />
+      <MemberSignature Language="C#" Value="protected void WriteEventWithRelatedActivityId (int eventId, Guid relatedActivityId, params object[] args);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEventWithRelatedActivityId(int32 eventId, valuetype System.Guid relatedActivityId, object[] args) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityId(System.Int32,System.Guid,System.Object[])" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub WriteEventWithRelatedActivityId (eventId As Integer, relatedActivityId As Guid, ParamArray args As Object())" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5" />
       <MemberSignature Language="F#" Value="member this.WriteEventWithRelatedActivityId : int * Guid * obj[] -&gt; unit" Usage="eventSource.WriteEventWithRelatedActivityId (eventId, relatedActivityId, args)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteEventWithRelatedActivityId(int eventId, Guid relatedActivityId, ... cli::array &lt;System::Object ^&gt; ^ args);" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteEventWithRelatedActivityId(int eventId, Guid relatedActivityId, ... cli::array &lt;System::Object ^&gt; ^ args);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5" />
+      <MemberSignature Language="C#" Value="protected void WriteEventWithRelatedActivityId (int eventId, Guid childActivityID, params object[] args);" FrameworkAlternate="netframework-4.5.1" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEventWithRelatedActivityId(int32 eventId, valuetype System.Guid childActivityID, object[] args) cil managed" FrameworkAlternate="netframework-4.5.1" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityId(System.Int32,System.Guid,System.Object[])" FrameworkAlternate="netframework-4.5.1" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub WriteEventWithRelatedActivityId (eventId As Integer, childActivityID As Guid, ParamArray args As Object())" FrameworkAlternate="netframework-4.5.1" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteEventWithRelatedActivityId(int eventId, Guid childActivityID, ... cli::array &lt;System::Object ^&gt; ^ args);" FrameworkAlternate="netframework-4.5.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -2862,13 +2867,19 @@ class AnotherEventSource : EventSource {
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="eventId" Type="System.Int32" />
-        <Parameter Name="relatedActivityId" Type="System.Guid" />
-        <Parameter Name="args" Type="System.Object[]">
+        <Parameter Name="eventId" Type="System.Int32" Index="0" />
+        <Parameter Name="relatedActivityId" Type="System.Guid" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5" />
+        <Parameter Name="childActivityID" Type="System.Guid" Index="1" FrameworkAlternate="netframework-4.5.1" />
+        <Parameter Name="args" Type="System.Object[]" Index="2">
           <Attributes>
             <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
@@ -2879,6 +2890,7 @@ class AnotherEventSource : EventSource {
       <Docs>
         <param name="eventId">An identifier that uniquely identifies this event within the <see cref="T:System.Diagnostics.Tracing.EventSource" />.</param>
         <param name="relatedActivityId">The related activity identifier.</param>
+        <param name="childActivityID">To be added.</param>
         <param name="args">An array of objects that contain data about the event.</param>
         <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
   
@@ -2913,11 +2925,15 @@ class AnotherEventSource : EventSource {
       </Docs>
     </Member>
     <Member MemberName="WriteEventWithRelatedActivityIdCore">
-      <MemberSignature Language="C#" Value="protected void WriteEventWithRelatedActivityIdCore (int eventId, Guid* relatedActivityId, int eventDataCount, System.Diagnostics.Tracing.EventSource.EventData* data);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEventWithRelatedActivityIdCore(int32 eventId, valuetype System.Guid* relatedActivityId, int32 eventDataCount, valuetype System.Diagnostics.Tracing.EventSource/EventData* data) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityIdCore(System.Int32,System.Guid*,System.Int32,System.Diagnostics.Tracing.EventSource.EventData*)" />
+      <MemberSignature Language="C#" Value="protected void WriteEventWithRelatedActivityIdCore (int eventId, Guid* relatedActivityId, int eventDataCount, System.Diagnostics.Tracing.EventSource.EventData* data);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEventWithRelatedActivityIdCore(int32 eventId, valuetype System.Guid* relatedActivityId, int32 eventDataCount, valuetype System.Diagnostics.Tracing.EventSource/EventData* data) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityIdCore(System.Int32,System.Guid*,System.Int32,System.Diagnostics.Tracing.EventSource.EventData*)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5" />
       <MemberSignature Language="F#" Value="member this.WriteEventWithRelatedActivityIdCore : int * nativeptr&lt;Guid&gt; * int * nativeptr&lt;System.Diagnostics.Tracing.EventSource.EventData&gt; -&gt; unit" Usage="eventSource.WriteEventWithRelatedActivityIdCore (eventId, relatedActivityId, eventDataCount, data)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteEventWithRelatedActivityIdCore(int eventId, Guid* relatedActivityId, int eventDataCount, System::Diagnostics::Tracing::EventSource::EventData* data);" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteEventWithRelatedActivityIdCore(int eventId, Guid* relatedActivityId, int eventDataCount, System::Diagnostics::Tracing::EventSource::EventData* data);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5" />
+      <MemberSignature Language="C#" Value="protected void WriteEventWithRelatedActivityIdCore (int eventId, Guid* childActivityID, int eventDataCount, System.Diagnostics.Tracing.EventSource.EventData* data);" FrameworkAlternate="netframework-4.5.1" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEventWithRelatedActivityIdCore(int32 eventId, valuetype System.Guid* childActivityID, int32 eventDataCount, valuetype System.Diagnostics.Tracing.EventSource/EventData* data) cil managed" FrameworkAlternate="netframework-4.5.1" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityIdCore(System.Int32,System.Guid*,System.Int32,System.Diagnostics.Tracing.EventSource.EventData*)" FrameworkAlternate="netframework-4.5.1" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteEventWithRelatedActivityIdCore(int eventId, Guid* childActivityID, int eventDataCount, System::Diagnostics::Tracing::EventSource::EventData* data);" FrameworkAlternate="netframework-4.5.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -2939,19 +2955,24 @@ class AnotherEventSource : EventSource {
         <Attribute>
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="eventId" Type="System.Int32" />
-        <Parameter Name="relatedActivityId" Type="System.Guid*" />
-        <Parameter Name="eventDataCount" Type="System.Int32" />
-        <Parameter Name="data" Type="System.Diagnostics.Tracing.EventSource+EventData*" />
+        <Parameter Name="eventId" Type="System.Int32" Index="0" />
+        <Parameter Name="relatedActivityId" Type="System.Guid*" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5" />
+        <Parameter Name="childActivityID" Type="System.Guid*" Index="1" FrameworkAlternate="netframework-4.5.1" />
+        <Parameter Name="eventDataCount" Type="System.Int32" Index="2" />
+        <Parameter Name="data" Type="System.Diagnostics.Tracing.EventSource+EventData*" Index="3" />
       </Parameters>
       <Docs>
         <param name="eventId">An identifier that uniquely identifies this event within the <see cref="T:System.Diagnostics.Tracing.EventSource" />.</param>
         <param name="relatedActivityId">A pointer to the GUID of the related activity ID.</param>
+        <param name="childActivityID">To be added.</param>
         <param name="eventDataCount">The number of items in the <c>data</c> field.</param>
         <param name="data">A pointer to the first item in the event data field.</param>
         <summary>[Supported in the .NET Framework 4.5.1 and later versions]  

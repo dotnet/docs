@@ -1,10 +1,10 @@
 ﻿<Type Name="ScriptManager" FullName="System.Web.UI.ScriptManager">
-  <TypeSignature Language="C#" Value="public class ScriptManager : System.Web.UI.Control, System.Web.UI.IPostBackDataHandler, System.Web.UI.IPostBackEventHandler" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi ScriptManager extends System.Web.UI.Control implements class System.Web.UI.IPostBackDataHandler, class System.Web.UI.IPostBackEventHandler" />
+  <TypeSignature Language="C#" Value="public class ScriptManager : System.Web.UI.Control, System.Web.UI.IPostBackDataHandler, System.Web.UI.IPostBackEventHandler, System.Web.UI.IScriptManager" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi ScriptManager extends System.Web.UI.Control implements class System.Web.UI.IPostBackDataHandler, class System.Web.UI.IPostBackEventHandler, class System.Web.UI.IScriptManager" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ScriptManager" />
-  <TypeSignature Language="VB.NET" Value="Public Class ScriptManager&#xA;Inherits Control&#xA;Implements IPostBackDataHandler, IPostBackEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Class ScriptManager&#xA;Inherits Control&#xA;Implements IPostBackDataHandler, IPostBackEventHandler, IScriptManager" />
   <TypeSignature Language="F#" Value="type ScriptManager = class&#xA;    inherit Control&#xA;    interface IPostBackDataHandler&#xA;    interface IPostBackEventHandler&#xA;    interface IControl&#xA;    interface IClientUrlResolver&#xA;    interface IScriptManager&#xA;    interface IScriptManagerInternal" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ScriptManager : System::Web::UI::Control, System::Web::UI::IPostBackDataHandler, System::Web::UI::IPostBackEventHandler" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ScriptManager : System::Web::UI::Control, System::Web::UI::IPostBackDataHandler, System::Web::UI::IPostBackEventHandler, System::Web::UI::IScriptManager" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +18,9 @@
     </Interface>
     <Interface>
       <InterfaceName>System.Web.UI.IPostBackEventHandler</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Web.UI.IScriptManager</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>
@@ -719,13 +722,13 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -803,13 +806,13 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1455,9 +1458,6 @@
       <MemberSignature Language="F#" Value="member this.IsDebuggingEnabled : bool" Usage="System.Web.UI.ScriptManager.IsDebuggingEnabled" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDebuggingEnabled { bool get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Web.UI.IScriptManager.IsDebuggingEnabled</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1505,7 +1505,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInAsyncPostBack { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
-        <InterfaceMember>P:System.Web.UI.IScriptManager.IsInAsyncPostBack</InterfaceMember>
         <InterfaceMember>P:System.Web.UI.IScriptManagerInternal.IsInAsyncPostBack</InterfaceMember>
       </Implements>
       <AssemblyInfo>
@@ -1577,9 +1576,6 @@
       <MemberSignature Language="F#" Value="abstract member LoadPostData : string * System.Collections.Specialized.NameValueCollection -&gt; bool&#xA;override this.LoadPostData : string * System.Collections.Specialized.NameValueCollection -&gt; bool" Usage="scriptManager.LoadPostData (postDataKey, postCollection)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool LoadPostData(System::String ^ postDataKey, System::Collections::Specialized::NameValueCollection ^ postCollection);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Web.UI.IPostBackDataHandler.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1868,13 +1864,13 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1912,9 +1908,6 @@
       <MemberSignature Language="F#" Value="abstract member RaisePostBackEvent : string -&gt; unit&#xA;override this.RaisePostBackEvent : string -&gt; unit" Usage="scriptManager.RaisePostBackEvent eventArgument" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RaisePostBackEvent(System::String ^ eventArgument);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1939,9 +1932,6 @@
       <MemberSignature Language="F#" Value="abstract member RaisePostDataChangedEvent : unit -&gt; unit&#xA;override this.RaisePostDataChangedEvent : unit -&gt; unit" Usage="scriptManager.RaisePostDataChangedEvent " />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RaisePostDataChangedEvent();" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1979,9 +1969,6 @@
       <MemberSignature Language="F#" Value="static member RegisterArrayDeclaration : System.Web.UI.Control * string * string -&gt; unit" Usage="System.Web.UI.ScriptManager.RegisterArrayDeclaration (control, arrayName, arrayValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterArrayDeclaration(System::Web::UI::Control ^ control, System::String ^ arrayName, System::String ^ arrayValue);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Web.UI.IScriptManager.RegisterArrayDeclaration(System.Web.UI.Control,System.String,System.String)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -2132,9 +2119,6 @@
       <MemberSignature Language="F#" Value="static member RegisterClientScriptBlock : System.Web.UI.Control * Type * string * string * bool -&gt; unit" Usage="System.Web.UI.ScriptManager.RegisterClientScriptBlock (control, type, key, script, addScriptTags)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterClientScriptBlock(System::Web::UI::Control ^ control, Type ^ type, System::String ^ key, System::String ^ script, bool addScriptTags);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Web.UI.IScriptManager.RegisterClientScriptBlock(System.Web.UI.Control,System.Type,System.String,System.String,System.Boolean)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -2251,9 +2235,6 @@
       <MemberSignature Language="F#" Value="static member RegisterClientScriptInclude : System.Web.UI.Control * Type * string * string -&gt; unit" Usage="System.Web.UI.ScriptManager.RegisterClientScriptInclude (control, type, key, url)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterClientScriptInclude(System::Web::UI::Control ^ control, Type ^ type, System::String ^ key, System::String ^ url);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Web.UI.IScriptManager.RegisterClientScriptInclude(System.Web.UI.Control,System.Type,System.String,System.String)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -2377,9 +2358,6 @@
       <MemberSignature Language="F#" Value="static member RegisterClientScriptResource : System.Web.UI.Control * Type * string -&gt; unit" Usage="System.Web.UI.ScriptManager.RegisterClientScriptResource (control, type, resourceName)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterClientScriptResource(System::Web::UI::Control ^ control, Type ^ type, System::String ^ resourceName);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Web.UI.IScriptManager.RegisterClientScriptResource(System.Web.UI.Control,System.Type,System.String)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -2591,9 +2569,6 @@
       <MemberSignature Language="F#" Value="member this.RegisterDispose : System.Web.UI.Control * string -&gt; unit" Usage="scriptManager.RegisterDispose (control, disposeScript)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterDispose(System::Web::UI::Control ^ control, System::String ^ disposeScript);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Web.UI.IScriptManager.RegisterDispose(System.Web.UI.Control,System.String)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -2645,9 +2620,6 @@
       <MemberSignature Language="F#" Value="static member RegisterExpandoAttribute : System.Web.UI.Control * string * string * string * bool -&gt; unit" Usage="System.Web.UI.ScriptManager.RegisterExpandoAttribute (control, controlId, attributeName, attributeValue, encode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterExpandoAttribute(System::Web::UI::Control ^ control, System::String ^ controlId, System::String ^ attributeName, System::String ^ attributeValue, bool encode);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Web.UI.IScriptManager.RegisterExpandoAttribute(System.Web.UI.Control,System.String,System.String,System.String,System.Boolean)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -2778,9 +2750,6 @@
       <MemberSignature Language="F#" Value="static member RegisterHiddenField : System.Web.UI.Control * string * string -&gt; unit" Usage="System.Web.UI.ScriptManager.RegisterHiddenField (control, hiddenFieldName, hiddenFieldInitialValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterHiddenField(System::Web::UI::Control ^ control, System::String ^ hiddenFieldName, System::String ^ hiddenFieldInitialValue);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Web.UI.IScriptManager.RegisterHiddenField(System.Web.UI.Control,System.String,System.String)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -2939,9 +2908,6 @@
       <MemberSignature Language="F#" Value="static member RegisterOnSubmitStatement : System.Web.UI.Control * Type * string * string -&gt; unit" Usage="System.Web.UI.ScriptManager.RegisterOnSubmitStatement (control, type, key, script)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterOnSubmitStatement(System::Web::UI::Control ^ control, Type ^ type, System::String ^ key, System::String ^ script);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Web.UI.IScriptManager.RegisterOnSubmitStatement(System.Web.UI.Control,System.Type,System.String,System.String)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -3046,7 +3012,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RegisterPostBackControl(System::Web::UI::Control ^ control);" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Web.UI.IScriptManager.RegisterPostBackControl(System.Web.UI.Control)</InterfaceMember>
         <InterfaceMember>M:System.Web.UI.IScriptManagerInternal.RegisterPostBackControl(System.Web.UI.Control)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
@@ -3225,9 +3190,6 @@
       <MemberSignature Language="F#" Value="static member RegisterStartupScript : System.Web.UI.Control * Type * string * string * bool -&gt; unit" Usage="System.Web.UI.ScriptManager.RegisterStartupScript (control, type, key, script, addScriptTags)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterStartupScript(System::Web::UI::Control ^ control, Type ^ type, System::String ^ key, System::String ^ script, bool addScriptTags);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Web.UI.IScriptManager.RegisterStartupScript(System.Web.UI.Control,System.Type,System.String,System.String,System.Boolean)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -3429,13 +3391,13 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3644,7 +3606,7 @@ ScriptManager.ScriptResourceMapping.AddDefinition("jquery", Nothing, myScriptRes
           <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3705,7 +3667,7 @@ ScriptManager.ScriptResourceMapping.AddDefinition("jquery", Nothing, myScriptRes
           <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3879,9 +3841,6 @@ ScriptManager.ScriptResourceMapping.AddDefinition("jquery", Nothing, myScriptRes
       <MemberSignature Language="VB.NET" Value="Function LoadPostData (postDataKey As String, postCollection As NameValueCollection) As Boolean Implements IPostBackDataHandler.LoadPostData" />
       <MemberSignature Language="C++ CLI" Value=" virtual bool System.Web.UI.IPostBackDataHandler.LoadPostData(System::String ^ postDataKey, System::Collections::Specialized::NameValueCollection ^ postCollection) = System::Web::UI::IPostBackDataHandler::LoadPostData;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Web.UI.IPostBackDataHandler.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -3918,9 +3877,6 @@ ScriptManager.ScriptResourceMapping.AddDefinition("jquery", Nothing, myScriptRes
       <MemberSignature Language="VB.NET" Value="Sub RaisePostDataChangedEvent () Implements IPostBackDataHandler.RaisePostDataChangedEvent" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent() = System::Web::UI::IPostBackDataHandler::RaisePostDataChangedEvent;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -3950,9 +3906,6 @@ ScriptManager.ScriptResourceMapping.AddDefinition("jquery", Nothing, myScriptRes
       <MemberSignature Language="VB.NET" Value="Sub RaisePostBackEvent (eventArgument As String) Implements IPostBackEventHandler.RaisePostBackEvent" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System::String ^ eventArgument) = System::Web::UI::IPostBackEventHandler::RaisePostBackEvent;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -3966,6 +3919,322 @@ ScriptManager.ScriptResourceMapping.AddDefinition("jquery", Nothing, myScriptRes
       <Docs>
         <param name="eventArgument">A string of key/value pairs that represent the history state of the Web page.</param>
         <summary>Enables the <see cref="T:System.Web.UI.ScriptManager" /> control to process a postback event and load the history state of the Web page.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IScriptManager.IsSecureConnection">
+      <MemberSignature Language="C#" Value="bool System.Web.UI.IScriptManager.IsSecureConnection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Web.UI.IScriptManager.IsSecureConnection" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManager.System#Web#UI#IScriptManager#IsSecureConnection" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSecureConnection As Boolean Implements IScriptManager.IsSecureConnection" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Web.UI.IScriptManager.IsSecureConnection { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IScriptManager.RegisterArrayDeclaration">
+      <MemberSignature Language="C#" Value="void IScriptManager.RegisterArrayDeclaration (System.Web.UI.Control control, string arrayName, string arrayValue);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IScriptManager.RegisterArrayDeclaration(class System.Web.UI.Control control, string arrayName, string arrayValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.System#Web#UI#IScriptManager#RegisterArrayDeclaration(System.Web.UI.Control,System.String,System.String)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IScriptManager.RegisterArrayDeclaration(System::Web::UI::Control ^ control, System::String ^ arrayName, System::String ^ arrayValue) = System::Web::UI::IScriptManager::RegisterArrayDeclaration;" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="control" Type="System.Web.UI.Control" />
+        <Parameter Name="arrayName" Type="System.String" />
+        <Parameter Name="arrayValue" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="control">To be added.</param>
+        <param name="arrayName">To be added.</param>
+        <param name="arrayValue">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IScriptManager.RegisterClientScriptBlock">
+      <MemberSignature Language="C#" Value="void IScriptManager.RegisterClientScriptBlock (System.Web.UI.Control control, Type type, string key, string script, bool addScriptTags);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IScriptManager.RegisterClientScriptBlock(class System.Web.UI.Control control, class System.Type type, string key, string script, bool addScriptTags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.System#Web#UI#IScriptManager#RegisterClientScriptBlock(System.Web.UI.Control,System.Type,System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IScriptManager.RegisterClientScriptBlock(System::Web::UI::Control ^ control, Type ^ type, System::String ^ key, System::String ^ script, bool addScriptTags) = System::Web::UI::IScriptManager::RegisterClientScriptBlock;" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="control" Type="System.Web.UI.Control" />
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="script" Type="System.String" />
+        <Parameter Name="addScriptTags" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="control">To be added.</param>
+        <param name="type">To be added.</param>
+        <param name="key">To be added.</param>
+        <param name="script">To be added.</param>
+        <param name="addScriptTags">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IScriptManager.RegisterClientScriptInclude">
+      <MemberSignature Language="C#" Value="void IScriptManager.RegisterClientScriptInclude (System.Web.UI.Control control, Type type, string key, string url);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IScriptManager.RegisterClientScriptInclude(class System.Web.UI.Control control, class System.Type type, string key, string url) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.System#Web#UI#IScriptManager#RegisterClientScriptInclude(System.Web.UI.Control,System.Type,System.String,System.String)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IScriptManager.RegisterClientScriptInclude(System::Web::UI::Control ^ control, Type ^ type, System::String ^ key, System::String ^ url) = System::Web::UI::IScriptManager::RegisterClientScriptInclude;" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="control" Type="System.Web.UI.Control" />
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="url" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="control">To be added.</param>
+        <param name="type">To be added.</param>
+        <param name="key">To be added.</param>
+        <param name="url">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IScriptManager.RegisterClientScriptResource">
+      <MemberSignature Language="C#" Value="void IScriptManager.RegisterClientScriptResource (System.Web.UI.Control control, Type type, string resourceName);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IScriptManager.RegisterClientScriptResource(class System.Web.UI.Control control, class System.Type type, string resourceName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.System#Web#UI#IScriptManager#RegisterClientScriptResource(System.Web.UI.Control,System.Type,System.String)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IScriptManager.RegisterClientScriptResource(System::Web::UI::Control ^ control, Type ^ type, System::String ^ resourceName) = System::Web::UI::IScriptManager::RegisterClientScriptResource;" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="control" Type="System.Web.UI.Control" />
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="resourceName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="control">To be added.</param>
+        <param name="type">To be added.</param>
+        <param name="resourceName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IScriptManager.RegisterDispose">
+      <MemberSignature Language="C#" Value="void IScriptManager.RegisterDispose (System.Web.UI.Control control, string disposeScript);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IScriptManager.RegisterDispose(class System.Web.UI.Control control, string disposeScript) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.System#Web#UI#IScriptManager#RegisterDispose(System.Web.UI.Control,System.String)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IScriptManager.RegisterDispose(System::Web::UI::Control ^ control, System::String ^ disposeScript) = System::Web::UI::IScriptManager::RegisterDispose;" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="control" Type="System.Web.UI.Control" />
+        <Parameter Name="disposeScript" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="control">To be added.</param>
+        <param name="disposeScript">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IScriptManager.RegisterExpandoAttribute">
+      <MemberSignature Language="C#" Value="void IScriptManager.RegisterExpandoAttribute (System.Web.UI.Control control, string controlId, string attributeName, string attributeValue, bool encode);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IScriptManager.RegisterExpandoAttribute(class System.Web.UI.Control control, string controlId, string attributeName, string attributeValue, bool encode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.System#Web#UI#IScriptManager#RegisterExpandoAttribute(System.Web.UI.Control,System.String,System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IScriptManager.RegisterExpandoAttribute(System::Web::UI::Control ^ control, System::String ^ controlId, System::String ^ attributeName, System::String ^ attributeValue, bool encode) = System::Web::UI::IScriptManager::RegisterExpandoAttribute;" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="control" Type="System.Web.UI.Control" />
+        <Parameter Name="controlId" Type="System.String" />
+        <Parameter Name="attributeName" Type="System.String" />
+        <Parameter Name="attributeValue" Type="System.String" />
+        <Parameter Name="encode" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="control">To be added.</param>
+        <param name="controlId">To be added.</param>
+        <param name="attributeName">To be added.</param>
+        <param name="attributeValue">To be added.</param>
+        <param name="encode">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IScriptManager.RegisterHiddenField">
+      <MemberSignature Language="C#" Value="void IScriptManager.RegisterHiddenField (System.Web.UI.Control control, string hiddenFieldName, string hiddenFieldValue);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IScriptManager.RegisterHiddenField(class System.Web.UI.Control control, string hiddenFieldName, string hiddenFieldValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.System#Web#UI#IScriptManager#RegisterHiddenField(System.Web.UI.Control,System.String,System.String)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IScriptManager.RegisterHiddenField(System::Web::UI::Control ^ control, System::String ^ hiddenFieldName, System::String ^ hiddenFieldValue) = System::Web::UI::IScriptManager::RegisterHiddenField;" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="control" Type="System.Web.UI.Control" />
+        <Parameter Name="hiddenFieldName" Type="System.String" />
+        <Parameter Name="hiddenFieldValue" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="control">To be added.</param>
+        <param name="hiddenFieldName">To be added.</param>
+        <param name="hiddenFieldValue">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IScriptManager.RegisterOnSubmitStatement">
+      <MemberSignature Language="C#" Value="void IScriptManager.RegisterOnSubmitStatement (System.Web.UI.Control control, Type type, string key, string script);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IScriptManager.RegisterOnSubmitStatement(class System.Web.UI.Control control, class System.Type type, string key, string script) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.System#Web#UI#IScriptManager#RegisterOnSubmitStatement(System.Web.UI.Control,System.Type,System.String,System.String)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IScriptManager.RegisterOnSubmitStatement(System::Web::UI::Control ^ control, Type ^ type, System::String ^ key, System::String ^ script) = System::Web::UI::IScriptManager::RegisterOnSubmitStatement;" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="control" Type="System.Web.UI.Control" />
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="script" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="control">To be added.</param>
+        <param name="type">To be added.</param>
+        <param name="key">To be added.</param>
+        <param name="script">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IScriptManager.RegisterPostBackControl">
+      <MemberSignature Language="C#" Value="void IScriptManager.RegisterPostBackControl (System.Web.UI.Control control);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IScriptManager.RegisterPostBackControl(class System.Web.UI.Control control) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.System#Web#UI#IScriptManager#RegisterPostBackControl(System.Web.UI.Control)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IScriptManager.RegisterPostBackControl(System::Web::UI::Control ^ control) = System::Web::UI::IScriptManager::RegisterPostBackControl;" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IScriptManagerInternal.RegisterPostBackControl(System.Web.UI.Control)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="control" Type="System.Web.UI.Control" />
+      </Parameters>
+      <Docs>
+        <param name="control">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IScriptManager.RegisterStartupScript">
+      <MemberSignature Language="C#" Value="void IScriptManager.RegisterStartupScript (System.Web.UI.Control control, Type type, string key, string script, bool addScriptTags);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IScriptManager.RegisterStartupScript(class System.Web.UI.Control control, class System.Type type, string key, string script, bool addScriptTags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.System#Web#UI#IScriptManager#RegisterStartupScript(System.Web.UI.Control,System.Type,System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IScriptManager.RegisterStartupScript(System::Web::UI::Control ^ control, Type ^ type, System::String ^ key, System::String ^ script, bool addScriptTags) = System::Web::UI::IScriptManager::RegisterStartupScript;" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="control" Type="System.Web.UI.Control" />
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="script" Type="System.String" />
+        <Parameter Name="addScriptTags" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="control">To be added.</param>
+        <param name="type">To be added.</param>
+        <param name="key">To be added.</param>
+        <param name="script">To be added.</param>
+        <param name="addScriptTags">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IScriptManager.SetFocusInternal">
+      <MemberSignature Language="C#" Value="void IScriptManager.SetFocusInternal (string clientID);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IScriptManager.SetFocusInternal(string clientID) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.System#Web#UI#IScriptManager#SetFocusInternal(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Sub SetFocusInternal (clientID As String) Implements IScriptManager.SetFocusInternal" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IScriptManager.SetFocusInternal(System::String ^ clientID) = System::Web::UI::IScriptManager::SetFocusInternal;" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="clientID" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="clientID">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3986,7 +4255,7 @@ ScriptManager.ScriptResourceMapping.AddDefinition("jquery", Nothing, myScriptRes
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>

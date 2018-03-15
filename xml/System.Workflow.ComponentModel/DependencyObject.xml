@@ -122,7 +122,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -782,9 +782,6 @@
       <MemberSignature Language="F#" Value="member this.Site : System.ComponentModel.ISite with get, set" Usage="System.Workflow.ComponentModel.DependencyObject.Site" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::ISite ^ Site { System::ComponentModel::ISite ^ get(); void set(System::ComponentModel::ISite ^ value); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.IComponent.Site</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -794,7 +791,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -806,27 +803,6 @@
       <Docs>
         <summary>Gets or sets a reference to the <see cref="P:System.Workflow.ComponentModel.DependencyObject.Site" /> component of the <see cref="T:System.Workflow.ComponentModel.DependencyObject" />.</summary>
         <value>The <see cref="P:System.Workflow.ComponentModel.DependencyObject.Site" /> component of the <see cref="T:System.Workflow.ComponentModel.DependencyObject" />.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="System.ComponentModel.IComponent.Disposed">
-      <MemberSignature Language="C#" Value="event EventHandler System.ComponentModel.IComponent.Disposed;" />
-      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler System.ComponentModel.IComponent.Disposed" />
-      <MemberSignature Language="DocId" Value="E:System.Workflow.ComponentModel.DependencyObject.System#ComponentModel#IComponent#Disposed" />
-      <MemberSignature Language="VB.NET" Value="Custom Event Disposed As EventHandler Implements System.ComponentModel.IComponent" />
-      <MemberType>Event</MemberType>
-      <Implements>
-        <InterfaceMember>E:System.ComponentModel.IComponent.Disposed</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.EventHandler</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -847,7 +823,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

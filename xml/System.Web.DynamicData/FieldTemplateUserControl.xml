@@ -392,9 +392,6 @@ public partial class ForeignKeyField :
       <MemberSignature Language="F#" Value="abstract member ExtractValues : System.Collections.Specialized.IOrderedDictionary -&gt; unit&#xA;override this.ExtractValues : System.Collections.Specialized.IOrderedDictionary -&gt; unit" Usage="fieldTemplateUserControl.ExtractValues dictionary" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ExtractValues(System::Collections::Specialized::IOrderedDictionary ^ dictionary);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Web.UI.IBindableControl.ExtractValues(System.Collections.Specialized.IOrderedDictionary)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -989,9 +986,6 @@ public partial class ForeignKeyField :
       <MemberSignature Language="VB.NET" Value="Sub ExtractValues (dictionary As IOrderedDictionary) Implements IBindableControl.ExtractValues" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IBindableControl.ExtractValues(System::Collections::Specialized::IOrderedDictionary ^ dictionary) = System::Web::UI::IBindableControl::ExtractValues;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Web.UI.IBindableControl.ExtractValues(System.Collections.Specialized.IOrderedDictionary)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

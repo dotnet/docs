@@ -555,9 +555,6 @@
       <MemberSignature Language="F#" Value="abstract member GetAttribute : string -&gt; string&#xA;override this.GetAttribute : string -&gt; string" Usage="dynamicField.GetAttribute key" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetAttribute(System::String ^ key);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Web.UI.IAttributeAccessor.GetAttribute(System.String)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -767,9 +764,6 @@
       <MemberSignature Language="F#" Value="abstract member SetAttribute : string * string -&gt; unit&#xA;override this.SetAttribute : string * string -&gt; unit" Usage="dynamicField.SetAttribute (key, value)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetAttribute(System::String ^ key, System::String ^ value);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Web.UI.IAttributeAccessor.SetAttribute(System.String,System.String)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -890,7 +884,7 @@
           <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+          <AttributeName>System.ComponentModel.DefaultValue</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

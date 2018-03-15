@@ -496,7 +496,6 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnInsertComplete(int32 index, object item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ServiceDescriptionCollection.OnInsertComplete(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInsertComplete (index As Integer, item As Object)" />
-      <MemberSignature Language="F#" Value="override this.OnInsertComplete : int * obj -&gt; unit" Usage="serviceDescriptionCollection.OnInsertComplete (index, item)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInsertComplete(int index, System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -509,7 +508,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
         <param name="index">To be added.</param>

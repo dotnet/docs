@@ -67,12 +67,17 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public OptionalReliableSession (System.ServiceModel.Channels.ReliableSessionBindingElement binding);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.ReliableSessionBindingElement binding) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.OptionalReliableSession.#ctor(System.ServiceModel.Channels.ReliableSessionBindingElement)" />
+      <MemberSignature Language="C#" Value="public OptionalReliableSession (System.ServiceModel.Channels.ReliableSessionBindingElement reliableSessionBindingElement);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.ReliableSessionBindingElement reliableSessionBindingElement) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.OptionalReliableSession.#ctor(System.ServiceModel.Channels.ReliableSessionBindingElement)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.OptionalReliableSession : System.ServiceModel.Channels.ReliableSessionBindingElement -&gt; System.ServiceModel.OptionalReliableSession" Usage="new System.ServiceModel.OptionalReliableSession binding" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (binding As ReliableSessionBindingElement)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; OptionalReliableSession(System::ServiceModel::Channels::ReliableSessionBindingElement ^ binding);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (binding As ReliableSessionBindingElement)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OptionalReliableSession(System::ServiceModel::Channels::ReliableSessionBindingElement ^ reliableSessionBindingElement);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public OptionalReliableSession (System.ServiceModel.Channels.ReliableSessionBindingElement binding);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.ReliableSessionBindingElement binding) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.OptionalReliableSession.#ctor(System.ServiceModel.Channels.ReliableSessionBindingElement)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (binding As ReliableSessionBindingElement)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OptionalReliableSession(System::ServiceModel::Channels::ReliableSessionBindingElement ^ binding);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -80,7 +85,8 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="reliableSessionBindingElement" Type="System.ServiceModel.Channels.ReliableSessionBindingElement" />
+        <Parameter Name="reliableSessionBindingElement" Type="System.ServiceModel.Channels.ReliableSessionBindingElement" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="binding" Type="System.ServiceModel.Channels.ReliableSessionBindingElement" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
       </Parameters>
       <Docs>
         <param name="binding">To be added.</param>

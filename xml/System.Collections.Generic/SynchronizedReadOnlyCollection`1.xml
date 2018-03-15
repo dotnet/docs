@@ -77,12 +77,17 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SynchronizedReadOnlyCollection (object sync_root);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object sync_root) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SynchronizedReadOnlyCollection`1.#ctor(System.Object)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (sync_root As Object)" />
+      <MemberSignature Language="C#" Value="public SynchronizedReadOnlyCollection (object syncRoot);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object syncRoot) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SynchronizedReadOnlyCollection`1.#ctor(System.Object)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (syncRoot As Object)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
       <MemberSignature Language="F#" Value="new System.Collections.Generic.SynchronizedReadOnlyCollection&lt;'T&gt; : obj -&gt; System.Collections.Generic.SynchronizedReadOnlyCollection&lt;'T&gt;" Usage="new System.Collections.Generic.SynchronizedReadOnlyCollection&lt;'T&gt; sync_root" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; SynchronizedReadOnlyCollection(System::Object ^ sync_root);" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SynchronizedReadOnlyCollection(System::Object ^ syncRoot);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public SynchronizedReadOnlyCollection (object sync_root);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object sync_root) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SynchronizedReadOnlyCollection`1.#ctor(System.Object)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (sync_root As Object)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SynchronizedReadOnlyCollection(System::Object ^ sync_root);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -90,7 +95,8 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="syncRoot" Type="System.Object" />
+        <Parameter Name="syncRoot" Type="System.Object" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="sync_root" Type="System.Object" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
       </Parameters>
       <Docs>
         <param name="sync_root">To be added.</param>
@@ -105,64 +111,6 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="sync_root" /> is <see langword="null" />.</exception>
-      </Docs>
-    </Member>
-    <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SynchronizedReadOnlyCollection (object sync_root, System.Collections.Generic.IEnumerable&lt;T&gt; list);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object sync_root, class System.Collections.Generic.IEnumerable`1&lt;!T&gt; list) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SynchronizedReadOnlyCollection`1.#ctor(System.Object,System.Collections.Generic.IEnumerable{`0})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (sync_root As Object, list As IEnumerable(Of T))" />
-      <MemberSignature Language="F#" Value="new System.Collections.Generic.SynchronizedReadOnlyCollection&lt;'T&gt; : obj * seq&lt;'T&gt; -&gt; System.Collections.Generic.SynchronizedReadOnlyCollection&lt;'T&gt;" Usage="new System.Collections.Generic.SynchronizedReadOnlyCollection&lt;'T&gt; (sync_root, list)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; SynchronizedReadOnlyCollection(System::Object ^ sync_root, System::Collections::Generic::IEnumerable&lt;T&gt; ^ list);" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="syncRoot" Type="System.Object" />
-        <Parameter Name="list" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
-      </Parameters>
-      <Docs>
-        <param name="sync_root">To be added.</param>
-        <param name="list">The <see cref="T:System.Collections.Generic.IEnumerable`1" /> collection of elements used to initialize the thread-safe, read-only collection.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.SynchronizedReadOnlyCollection`1" /> class from a specified enumerable list of elements and with the object used to synchronize access to the thread-safe, read-only collection.</summary>
-        <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="syncRoot" /> or <paramref name="list" /> is <see langword="null" />.</exception>
-      </Docs>
-    </Member>
-    <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SynchronizedReadOnlyCollection (object sync_root, params T[] list);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object sync_root, !T[] list) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SynchronizedReadOnlyCollection`1.#ctor(System.Object,`0[])" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (sync_root As Object, ParamArray list As T())" />
-      <MemberSignature Language="F#" Value="new System.Collections.Generic.SynchronizedReadOnlyCollection&lt;'T&gt; : obj * 'T[] -&gt; System.Collections.Generic.SynchronizedReadOnlyCollection&lt;'T&gt;" Usage="new System.Collections.Generic.SynchronizedReadOnlyCollection&lt;'T&gt; (sync_root, list)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; SynchronizedReadOnlyCollection(System::Object ^ sync_root, ... cli::array &lt;T&gt; ^ list);" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="syncRoot" Type="System.Object" />
-        <Parameter Name="list" Type="T[]">
-          <Attributes>
-            <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
-            </Attribute>
-          </Attributes>
-        </Parameter>
-      </Parameters>
-      <Docs>
-        <param name="sync_root">To be added.</param>
-        <param name="list">The <see cref="T:System.Array" /> of type <c>T</c> elements used to initialize the thread-safe, read-only collection.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.SynchronizedReadOnlyCollection`1" /> class from a specified array of elements and with the object used to synchronize access to the thread-safe, read-only collection.</summary>
-        <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="syncRoot" /> or <paramref name="list" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -189,6 +137,78 @@
         <param name="make_copy">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SynchronizedReadOnlyCollection (object syncRoot, System.Collections.Generic.IEnumerable&lt;T&gt; list);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object syncRoot, class System.Collections.Generic.IEnumerable`1&lt;!T&gt; list) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SynchronizedReadOnlyCollection`1.#ctor(System.Object,System.Collections.Generic.IEnumerable{`0})" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (syncRoot As Object, list As IEnumerable(Of T))" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="F#" Value="new System.Collections.Generic.SynchronizedReadOnlyCollection&lt;'T&gt; : obj * seq&lt;'T&gt; -&gt; System.Collections.Generic.SynchronizedReadOnlyCollection&lt;'T&gt;" Usage="new System.Collections.Generic.SynchronizedReadOnlyCollection&lt;'T&gt; (sync_root, list)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SynchronizedReadOnlyCollection(System::Object ^ syncRoot, System::Collections::Generic::IEnumerable&lt;T&gt; ^ list);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public SynchronizedReadOnlyCollection (object sync_root, System.Collections.Generic.IEnumerable&lt;T&gt; list);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object sync_root, class System.Collections.Generic.IEnumerable`1&lt;!T&gt; list) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SynchronizedReadOnlyCollection`1.#ctor(System.Object,System.Collections.Generic.IEnumerable{`0})" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (sync_root As Object, list As IEnumerable(Of T))" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SynchronizedReadOnlyCollection(System::Object ^ sync_root, System::Collections::Generic::IEnumerable&lt;T&gt; ^ list);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="syncRoot" Type="System.Object" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="sync_root" Type="System.Object" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
+        <Parameter Name="list" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" Index="1" />
+      </Parameters>
+      <Docs>
+        <param name="syncRoot">To be added.</param>
+        <param name="sync_root">To be added.</param>
+        <param name="list">The <see cref="T:System.Collections.Generic.IEnumerable`1" /> collection of elements used to initialize the thread-safe, read-only collection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.SynchronizedReadOnlyCollection`1" /> class from a specified enumerable list of elements and with the object used to synchronize access to the thread-safe, read-only collection.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="syncRoot" /> or <paramref name="list" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SynchronizedReadOnlyCollection (object syncRoot, params T[] list);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object syncRoot, !T[] list) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SynchronizedReadOnlyCollection`1.#ctor(System.Object,`0[])" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (syncRoot As Object, ParamArray list As T())" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="F#" Value="new System.Collections.Generic.SynchronizedReadOnlyCollection&lt;'T&gt; : obj * 'T[] -&gt; System.Collections.Generic.SynchronizedReadOnlyCollection&lt;'T&gt;" Usage="new System.Collections.Generic.SynchronizedReadOnlyCollection&lt;'T&gt; (sync_root, list)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SynchronizedReadOnlyCollection(System::Object ^ syncRoot, ... cli::array &lt;T&gt; ^ list);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public SynchronizedReadOnlyCollection (object sync_root, params T[] list);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object sync_root, !T[] list) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SynchronizedReadOnlyCollection`1.#ctor(System.Object,`0[])" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (sync_root As Object, ParamArray list As T())" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SynchronizedReadOnlyCollection(System::Object ^ sync_root, ... cli::array &lt;T&gt; ^ list);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="syncRoot" Type="System.Object" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="sync_root" Type="System.Object" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
+        <Parameter Name="list" Type="T[]" Index="1">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="syncRoot">To be added.</param>
+        <param name="sync_root">To be added.</param>
+        <param name="list">The <see cref="T:System.Array" /> of type <c>T</c> elements used to initialize the thread-safe, read-only collection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.SynchronizedReadOnlyCollection`1" /> class from a specified array of elements and with the object used to synchronize access to the thread-safe, read-only collection.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="syncRoot" /> or <paramref name="list" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Contains">

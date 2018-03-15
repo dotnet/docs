@@ -67,9 +67,6 @@
       <MemberSignature Language="F#" Value="abstract member AddInheritedComponents : System.ComponentModel.IComponent * System.ComponentModel.IContainer -&gt; unit&#xA;override this.AddInheritedComponents : System.ComponentModel.IComponent * System.ComponentModel.IContainer -&gt; unit" Usage="inheritanceService.AddInheritedComponents (component, container)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddInheritedComponents(System::ComponentModel::IComponent ^ component, System::ComponentModel::IContainer ^ container);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.IInheritanceService.AddInheritedComponents(System.ComponentModel.IComponent,System.ComponentModel.IContainer)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -218,9 +215,6 @@
       <MemberSignature Language="F#" Value="abstract member GetInheritanceAttribute : System.ComponentModel.IComponent -&gt; System.ComponentModel.InheritanceAttribute&#xA;override this.GetInheritanceAttribute : System.ComponentModel.IComponent -&gt; System.ComponentModel.InheritanceAttribute" Usage="inheritanceService.GetInheritanceAttribute component" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::InheritanceAttribute ^ GetInheritanceAttribute(System::ComponentModel::IComponent ^ component);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.IInheritanceService.GetInheritanceAttribute(System.ComponentModel.IComponent)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

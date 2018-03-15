@@ -136,12 +136,12 @@
       </Docs>
     </Member>
     <Member MemberName="CreateDecryptor">
-      <MemberSignature Language="C#" Value="public override System.Security.Cryptography.ICryptoTransform CreateDecryptor (byte[] key, byte[] iv);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Cryptography.ICryptoTransform CreateDecryptor(unsigned int8[] key, unsigned int8[] iv) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AesManaged.CreateDecryptor(System.Byte[],System.Byte[])" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateDecryptor (key As Byte(), iv As Byte()) As ICryptoTransform" />
       <MemberSignature Language="F#" Value="override this.CreateDecryptor : byte[] * byte[] -&gt; System.Security.Cryptography.ICryptoTransform" Usage="aesManaged.CreateDecryptor (key, iv)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::ICryptoTransform ^ CreateDecryptor(cli::array &lt;System::Byte&gt; ^ key, cli::array &lt;System::Byte&gt; ^ iv);" />
+      <MemberSignature Language="C#" Value="public override System.Security.Cryptography.ICryptoTransform CreateDecryptor (byte[] rgbKey, byte[] rgbIV);" FrameworkAlternate="netcore-2.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Cryptography.ICryptoTransform CreateDecryptor(unsigned int8[] rgbKey, unsigned int8[] rgbIV) cil managed" FrameworkAlternate="netcore-2.0" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AesManaged.CreateDecryptor(System.Byte[],System.Byte[])" FrameworkAlternate="netcore-2.0" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateDecryptor (rgbKey As Byte(), rgbIV As Byte()) As ICryptoTransform" FrameworkAlternate="netcore-2.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::ICryptoTransform ^ CreateDecryptor(cli::array &lt;System::Byte&gt; ^ rgbKey, cli::array &lt;System::Byte&gt; ^ rgbIV);" FrameworkAlternate="netcore-2.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -160,12 +160,14 @@
         <ReturnType>System.Security.Cryptography.ICryptoTransform</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.Byte[]" />
-        <Parameter Name="iv" Type="System.Byte[]" />
+        <Parameter Name="rgbKey" Type="System.Byte[]" Index="0" FrameworkAlternate="netcore-2.0" />
+        <Parameter Name="rgbIV" Type="System.Byte[]" Index="1" FrameworkAlternate="netcore-2.0" />
       </Parameters>
       <Docs>
         <param name="key">The secret key to use for the symmetric algorithm.</param>
         <param name="iv">The initialization vector to use for the symmetric algorithm.</param>
+        <param name="rgbKey">To be added.</param>
+        <param name="rgbIV">To be added.</param>
         <summary>Creates a symmetric decryptor object using the specified key and initialization vector (IV).</summary>
         <returns>A symmetric decryptor object.</returns>
         <remarks>
@@ -227,12 +229,12 @@
       </Docs>
     </Member>
     <Member MemberName="CreateEncryptor">
-      <MemberSignature Language="C#" Value="public override System.Security.Cryptography.ICryptoTransform CreateEncryptor (byte[] key, byte[] iv);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Cryptography.ICryptoTransform CreateEncryptor(unsigned int8[] key, unsigned int8[] iv) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AesManaged.CreateEncryptor(System.Byte[],System.Byte[])" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateEncryptor (key As Byte(), iv As Byte()) As ICryptoTransform" />
       <MemberSignature Language="F#" Value="override this.CreateEncryptor : byte[] * byte[] -&gt; System.Security.Cryptography.ICryptoTransform" Usage="aesManaged.CreateEncryptor (key, iv)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::ICryptoTransform ^ CreateEncryptor(cli::array &lt;System::Byte&gt; ^ key, cli::array &lt;System::Byte&gt; ^ iv);" />
+      <MemberSignature Language="C#" Value="public override System.Security.Cryptography.ICryptoTransform CreateEncryptor (byte[] rgbKey, byte[] rgbIV);" FrameworkAlternate="netcore-2.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Cryptography.ICryptoTransform CreateEncryptor(unsigned int8[] rgbKey, unsigned int8[] rgbIV) cil managed" FrameworkAlternate="netcore-2.0" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AesManaged.CreateEncryptor(System.Byte[],System.Byte[])" FrameworkAlternate="netcore-2.0" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateEncryptor (rgbKey As Byte(), rgbIV As Byte()) As ICryptoTransform" FrameworkAlternate="netcore-2.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::ICryptoTransform ^ CreateEncryptor(cli::array &lt;System::Byte&gt; ^ rgbKey, cli::array &lt;System::Byte&gt; ^ rgbIV);" FrameworkAlternate="netcore-2.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -251,12 +253,14 @@
         <ReturnType>System.Security.Cryptography.ICryptoTransform</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.Byte[]" />
-        <Parameter Name="iv" Type="System.Byte[]" />
+        <Parameter Name="rgbKey" Type="System.Byte[]" Index="0" FrameworkAlternate="netcore-2.0" />
+        <Parameter Name="rgbIV" Type="System.Byte[]" Index="1" FrameworkAlternate="netcore-2.0" />
       </Parameters>
       <Docs>
         <param name="key">The secret key to use for the symmetric algorithm.</param>
         <param name="iv">The initialization vector to use for the symmetric algorithm.</param>
+        <param name="rgbKey">To be added.</param>
+        <param name="rgbIV">To be added.</param>
         <summary>Creates a symmetric encryptor object using the specified key and initialization vector (IV).</summary>
         <returns>A symmetric encryptor object.</returns>
         <remarks>

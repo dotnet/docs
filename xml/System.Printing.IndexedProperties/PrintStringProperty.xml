@@ -171,7 +171,6 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname string op_Implicit(class System.Printing.IndexedProperties.PrintStringProperty attributeRef) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintStringProperty.op_Implicit(System.Printing.IndexedProperties.PrintStringProperty)~System.String" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (attributeRef As PrintStringProperty) As String" />
-      <MemberSignature Language="F#" Value="static member op_Implicit : System.Printing.IndexedProperties.PrintStringProperty -&gt; string" Usage="System.Printing.IndexedProperties.PrintStringProperty.op_Implicit attributeRef" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::String ^(System::Printing::IndexedProperties::PrintStringProperty ^ attributeRef);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

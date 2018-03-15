@@ -1,10 +1,10 @@
 ﻿<Type Name="DataSet" FullName="System.Data.DataSet">
-  <TypeSignature Language="C#" Value="public class DataSet : System.ComponentModel.MarshalByValueComponent, System.ComponentModel.IListSource, System.ComponentModel.ISupportInitializeNotification, System.Runtime.Serialization.ISerializable, System.Xml.Serialization.IXmlSerializable" />
+  <TypeSignature Language="C#" Value="public class DataSet : System.ComponentModel.MarshalByValueComponent, System.ComponentModel.IListSource, System.ComponentModel.ISupportInitialize, System.ComponentModel.ISupportInitializeNotification, System.Runtime.Serialization.ISerializable, System.Xml.Serialization.IXmlSerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit DataSet extends System.ComponentModel.MarshalByValueComponent implements class System.ComponentModel.IListSource, class System.ComponentModel.ISupportInitialize, class System.ComponentModel.ISupportInitializeNotification, class System.Runtime.Serialization.ISerializable, class System.Xml.Serialization.IXmlSerializable" />
   <TypeSignature Language="DocId" Value="T:System.Data.DataSet" />
-  <TypeSignature Language="VB.NET" Value="Public Class DataSet&#xA;Inherits MarshalByValueComponent&#xA;Implements IListSource, ISerializable, ISupportInitializeNotification, IXmlSerializable" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataSet&#xA;Inherits MarshalByValueComponent&#xA;Implements IListSource, ISerializable, ISupportInitialize, ISupportInitializeNotification, IXmlSerializable" />
   <TypeSignature Language="F#" Value="type DataSet = class&#xA;    inherit MarshalByValueComponent&#xA;    interface IListSource&#xA;    interface IXmlSerializable&#xA;    interface ISupportInitializeNotification&#xA;    interface ISerializable&#xA;    interface ISupportInitialize" />
-  <TypeSignature Language="C++ CLI" Value="public ref class DataSet : System::ComponentModel::MarshalByValueComponent, System::ComponentModel::IListSource, System::ComponentModel::ISupportInitializeNotification, System::Runtime::Serialization::ISerializable, System::Xml::Serialization::IXmlSerializable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataSet : System::ComponentModel::MarshalByValueComponent, System::ComponentModel::IListSource, System::ComponentModel::ISupportInitialize, System::ComponentModel::ISupportInitializeNotification, System::Runtime::Serialization::ISerializable, System::Xml::Serialization::IXmlSerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -24,6 +24,9 @@
   <Interfaces>
     <Interface>
       <InterfaceName>System.ComponentModel.IListSource</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ComponentModel.ISupportInitialize</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>System.ComponentModel.ISupportInitializeNotification</InterfaceName>
@@ -324,9 +327,6 @@
       <MemberSignature Language="F#" Value="abstract member BeginInit : unit -&gt; unit&#xA;override this.BeginInit : unit -&gt; unit" Usage="dataSet.BeginInit " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginInit();" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.ISupportInitialize.BeginInit</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -887,9 +887,6 @@
       <MemberSignature Language="F#" Value="abstract member EndInit : unit -&gt; unit&#xA;override this.EndInit : unit -&gt; unit" Usage="dataSet.EndInit " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndInit();" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.ISupportInitialize.EndInit</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -2004,9 +2001,6 @@ class Program {
       <MemberSignature Language="F#" Value="member this.Initialized : EventHandler " Usage="member this.Initialized : System.EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler ^ Initialized;" />
       <MemberType>Event</MemberType>
-      <Implements>
-        <InterfaceMember>E:System.ComponentModel.ISupportInitializeNotification.Initialized</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -2117,9 +2111,6 @@ class Program {
       <MemberSignature Language="F#" Value="member this.IsInitialized : bool" Usage="System.Data.DataSet.IsInitialized" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInitialized { bool get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.ISupportInitializeNotification.IsInitialized</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -4163,7 +4154,7 @@ class Program {
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4275,7 +4266,7 @@ class Program {
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4422,7 +4413,7 @@ class Program {
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4449,9 +4440,6 @@ class Program {
       <MemberSignature Language="F#" Usage="System.Data.DataSet.System.ComponentModel.IListSource.ContainsListCollection" />
       <MemberSignature Language="C++ CLI" Value="property bool System.ComponentModel.IListSource.ContainsListCollection { bool get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.IListSource.ContainsListCollection</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -4488,9 +4476,6 @@ class Program {
       <MemberSignature Language="VB.NET" Value="Function GetList () As IList Implements IListSource.GetList" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IList ^ System.ComponentModel.IListSource.GetList() = System::ComponentModel::IListSource::GetList;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.IListSource.GetList</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -4668,7 +4653,7 @@ class Program {
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

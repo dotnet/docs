@@ -492,41 +492,6 @@
       </Docs>
     </Member>
     <Member MemberName="CreateChannel">
-      <MemberSignature Language="C#" Value="public static TChannel CreateChannel (System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress address);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !TChannel CreateChannel(class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress address) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.CreateChannel(System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)" />
-      <MemberSignature Language="F#" Value="static member CreateChannel : System.ServiceModel.Channels.Binding * System.ServiceModel.EndpointAddress -&gt; 'Channel" Usage="System.ServiceModel.ChannelFactory&lt;'Channel&gt;.CreateChannel (binding, address)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static TChannel CreateChannel(System::ServiceModel::Channels::Binding ^ binding, System::ServiceModel::EndpointAddress ^ address);" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>TChannel</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
-        <Parameter Name="endpointAddress" Type="System.ServiceModel.EndpointAddress" />
-      </Parameters>
-      <Docs>
-        <param name="binding">The <see cref="T:System.ServiceModel.Channels.Binding" /> used to configure the endpoint.</param>
-        <param name="address">To be added.</param>
-        <summary>Creates a channel of a specified type that is used to send messages to a service endpoint that is configured with a specified binding.</summary>
-        <returns>The <paramref name="TChannel" /> of type <see cref="T:System.ServiceModel.Channels.IChannel" /> created by the factory.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-csharp[S_UEChannels#31](~/samples/snippets/csharp/VS_Snippets_CFX/s_uechannels/cs/clientsnippets.cs#31)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.ServiceModel.ChannelFactory" /> has duplex operations it does not support.</exception>
-      </Docs>
-    </Member>
-    <Member MemberName="CreateChannel">
       <MemberSignature Language="C#" Value="public virtual TChannel CreateChannel (System.ServiceModel.EndpointAddress address, Uri via);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TChannel CreateChannel(class System.ServiceModel.EndpointAddress address, class System.Uri via) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.CreateChannel(System.ServiceModel.EndpointAddress,System.Uri)" />
@@ -574,11 +539,15 @@
       </Docs>
     </Member>
     <Member MemberName="CreateChannel">
-      <MemberSignature Language="C#" Value="public static TChannel CreateChannel (System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress address, Uri via);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !TChannel CreateChannel(class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress address, class System.Uri via) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.CreateChannel(System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress,System.Uri)" />
-      <MemberSignature Language="F#" Value="static member CreateChannel : System.ServiceModel.Channels.Binding * System.ServiceModel.EndpointAddress * Uri -&gt; 'Channel" Usage="System.ServiceModel.ChannelFactory&lt;'Channel&gt;.CreateChannel (binding, address, via)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static TChannel CreateChannel(System::ServiceModel::Channels::Binding ^ binding, System::ServiceModel::EndpointAddress ^ address, Uri ^ via);" />
+      <MemberSignature Language="C#" Value="public static TChannel CreateChannel (System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress endpointAddress);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !TChannel CreateChannel(class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress endpointAddress) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.CreateChannel(System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="F#" Value="static member CreateChannel : System.ServiceModel.Channels.Binding * System.ServiceModel.EndpointAddress -&gt; 'Channel" Usage="System.ServiceModel.ChannelFactory&lt;'Channel&gt;.CreateChannel (binding, address)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static TChannel CreateChannel(System::ServiceModel::Channels::Binding ^ binding, System::ServiceModel::EndpointAddress ^ endpointAddress);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public static TChannel CreateChannel (System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress address);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !TChannel CreateChannel(class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress address) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.CreateChannel(System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static TChannel CreateChannel(System::ServiceModel::Channels::Binding ^ binding, System::ServiceModel::EndpointAddress ^ address);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -589,12 +558,55 @@
         <ReturnType>TChannel</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
-        <Parameter Name="endpointAddress" Type="System.ServiceModel.EndpointAddress" />
-        <Parameter Name="via" Type="System.Uri" />
+        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" Index="0" />
+        <Parameter Name="endpointAddress" Type="System.ServiceModel.EndpointAddress" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="address" Type="System.ServiceModel.EndpointAddress" Index="1" FrameworkAlternate="xamarinandroid-7.1" />
       </Parameters>
       <Docs>
         <param name="binding">The <see cref="T:System.ServiceModel.Channels.Binding" /> used to configure the endpoint.</param>
+        <param name="endpointAddress">To be added.</param>
+        <param name="address">To be added.</param>
+        <summary>Creates a channel of a specified type that is used to send messages to a service endpoint that is configured with a specified binding.</summary>
+        <returns>The <paramref name="TChannel" /> of type <see cref="T:System.ServiceModel.Channels.IChannel" /> created by the factory.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[S_UEChannels#31](~/samples/snippets/csharp/VS_Snippets_CFX/s_uechannels/cs/clientsnippets.cs#31)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.ServiceModel.ChannelFactory" /> has duplex operations it does not support.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateChannel">
+      <MemberSignature Language="C#" Value="public static TChannel CreateChannel (System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress endpointAddress, Uri via);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !TChannel CreateChannel(class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress endpointAddress, class System.Uri via) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.CreateChannel(System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress,System.Uri)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="F#" Value="static member CreateChannel : System.ServiceModel.Channels.Binding * System.ServiceModel.EndpointAddress * Uri -&gt; 'Channel" Usage="System.ServiceModel.ChannelFactory&lt;'Channel&gt;.CreateChannel (binding, address, via)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static TChannel CreateChannel(System::ServiceModel::Channels::Binding ^ binding, System::ServiceModel::EndpointAddress ^ endpointAddress, Uri ^ via);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public static TChannel CreateChannel (System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress address, Uri via);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !TChannel CreateChannel(class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress address, class System.Uri via) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory`1.CreateChannel(System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress,System.Uri)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static TChannel CreateChannel(System::ServiceModel::Channels::Binding ^ binding, System::ServiceModel::EndpointAddress ^ address, Uri ^ via);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TChannel</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" Index="0" />
+        <Parameter Name="endpointAddress" Type="System.ServiceModel.EndpointAddress" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="address" Type="System.ServiceModel.EndpointAddress" Index="1" FrameworkAlternate="xamarinandroid-7.1" />
+        <Parameter Name="via" Type="System.Uri" Index="2" />
+      </Parameters>
+      <Docs>
+        <param name="binding">The <see cref="T:System.ServiceModel.Channels.Binding" /> used to configure the endpoint.</param>
+        <param name="endpointAddress">To be added.</param>
         <param name="address">To be added.</param>
         <param name="via">The <see cref="T:System.Uri" /> that contains the transport address to which the channel sends messages.</param>
         <summary>Creates a channel of a specified type that is used to send messages to a service endpoint at a specified transport address that is configured with a specified binding.</summary>

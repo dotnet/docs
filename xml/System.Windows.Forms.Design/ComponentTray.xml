@@ -319,7 +319,7 @@
           <AttributeName>System.ComponentModel.Category("Layout")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.DesignOnly(true)</AttributeName>
@@ -913,9 +913,6 @@
       <MemberSignature Language="VB.NET" Value="Function CanExtend (component As Object) As Boolean Implements IExtenderProvider.CanExtend" />
       <MemberSignature Language="C++ CLI" Value=" virtual bool System.ComponentModel.IExtenderProvider.CanExtend(System::Object ^ component) = System::ComponentModel::IExtenderProvider::CanExtend;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.IExtenderProvider.CanExtend(System.Object)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

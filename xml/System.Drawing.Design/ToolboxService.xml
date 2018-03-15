@@ -68,9 +68,6 @@
       <MemberSignature Language="F#" Value="member this.CategoryNames : System.Drawing.Design.CategoryNameCollection" Usage="System.Drawing.Design.ToolboxService.CategoryNames" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract property System::Drawing::Design::CategoryNameCollection ^ CategoryNames { System::Drawing::Design::CategoryNameCollection ^ get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Drawing.Design.IToolboxService.CategoryNames</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -635,9 +632,6 @@
       <MemberSignature Language="F#" Value="abstract member Refresh : unit -&gt; unit" Usage="toolboxService.Refresh " />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void Refresh();" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Drawing.Design.IToolboxService.Refresh</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -666,9 +660,6 @@
       <MemberSignature Language="F#" Value="member this.SelectedCategory : string with get, set" Usage="System.Drawing.Design.ToolboxService.SelectedCategory" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract property System::String ^ SelectedCategory { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Drawing.Design.IToolboxService.SelectedCategory</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -746,9 +737,6 @@
       <MemberSignature Language="F#" Value="abstract member SetCursor : unit -&gt; bool&#xA;override this.SetCursor : unit -&gt; bool" Usage="toolboxService.SetCursor " />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool SetCursor();" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Drawing.Design.IToolboxService.SetCursor</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -778,9 +766,6 @@
       <MemberSignature Language="VB.NET" Value="Function GetComponentTypes (designerHost As IDesignerHost, baseType As Type) As ICollection Implements IComponentDiscoveryService.GetComponentTypes" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::ICollection ^ System.ComponentModel.Design.IComponentDiscoveryService.GetComponentTypes(System::ComponentModel::Design::IDesignerHost ^ designerHost, Type ^ baseType) = System::ComponentModel::Design::IComponentDiscoveryService::GetComponentTypes;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.IComponentDiscoveryService.GetComponentTypes(System.ComponentModel.Design.IDesignerHost,System.Type)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -816,9 +801,6 @@
       <MemberSignature Language="VB.NET" Value="Sub AddCreator (creator As ToolboxItemCreatorCallback, format As String) Implements IToolboxService.AddCreator" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Drawing.Design.IToolboxService.AddCreator(System::Drawing::Design::ToolboxItemCreatorCallback ^ creator, System::String ^ format) = System::Drawing::Design::IToolboxService::AddCreator;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Drawing.Design.IToolboxService.AddCreator(System.Drawing.Design.ToolboxItemCreatorCallback,System.String)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -851,9 +833,6 @@
       <MemberSignature Language="VB.NET" Value="Sub AddCreator (creator As ToolboxItemCreatorCallback, format As String, host As IDesignerHost) Implements IToolboxService.AddCreator" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Drawing.Design.IToolboxService.AddCreator(System::Drawing::Design::ToolboxItemCreatorCallback ^ creator, System::String ^ format, System::ComponentModel::Design::IDesignerHost ^ host) = System::Drawing::Design::IToolboxService::AddCreator;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Drawing.Design.IToolboxService.AddCreator(System.Drawing.Design.ToolboxItemCreatorCallback,System.String,System.ComponentModel.Design.IDesignerHost)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -896,9 +875,6 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxService.System#Drawing#Design#IToolboxService#AddLinkedToolboxItem(System.Drawing.Design.ToolboxItem,System.ComponentModel.Design.IDesignerHost)" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Drawing.Design.IToolboxService.AddLinkedToolboxItem(System::Drawing::Design::ToolboxItem ^ toolboxItem, System::ComponentModel::Design::IDesignerHost ^ host) = System::Drawing::Design::IToolboxService::AddLinkedToolboxItem;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Drawing.Design.IToolboxService.AddLinkedToolboxItem(System.Drawing.Design.ToolboxItem,System.ComponentModel.Design.IDesignerHost)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -930,9 +906,6 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxService.System#Drawing#Design#IToolboxService#AddLinkedToolboxItem(System.Drawing.Design.ToolboxItem,System.String,System.ComponentModel.Design.IDesignerHost)" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Drawing.Design.IToolboxService.AddLinkedToolboxItem(System::Drawing::Design::ToolboxItem ^ toolboxItem, System::String ^ category, System::ComponentModel::Design::IDesignerHost ^ host) = System::Drawing::Design::IToolboxService::AddLinkedToolboxItem;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Drawing.Design.IToolboxService.AddLinkedToolboxItem(System.Drawing.Design.ToolboxItem,System.String,System.ComponentModel.Design.IDesignerHost)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -975,9 +948,6 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxService.System#Drawing#Design#IToolboxService#AddToolboxItem(System.Drawing.Design.ToolboxItem)" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Drawing.Design.IToolboxService.AddToolboxItem(System::Drawing::Design::ToolboxItem ^ toolboxItem) = System::Drawing::Design::IToolboxService::AddToolboxItem;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Drawing.Design.IToolboxService.AddToolboxItem(System.Drawing.Design.ToolboxItem)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1007,9 +977,6 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxService.System#Drawing#Design#IToolboxService#AddToolboxItem(System.Drawing.Design.ToolboxItem,System.String)" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Drawing.Design.IToolboxService.AddToolboxItem(System::Drawing::Design::ToolboxItem ^ toolboxItem, System::String ^ category) = System::Drawing::Design::IToolboxService::AddToolboxItem;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Drawing.Design.IToolboxService.AddToolboxItem(System.Drawing.Design.ToolboxItem,System.String)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1043,9 +1010,6 @@
       <MemberSignature Language="F#" Usage="System.Drawing.Design.ToolboxService.System.Drawing.Design.IToolboxService.CategoryNames" />
       <MemberSignature Language="C++ CLI" Value="property System::Drawing::Design::CategoryNameCollection ^ System.Drawing.Design.IToolboxService.CategoryNames { System::Drawing::Design::CategoryNameCollection ^ get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Drawing.Design.IToolboxService.CategoryNames</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1082,9 +1046,6 @@
       <MemberSignature Language="VB.NET" Value="Function DeserializeToolboxItem (serializedObject As Object) As ToolboxItem Implements IToolboxService.DeserializeToolboxItem" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Drawing::Design::ToolboxItem ^ System.Drawing.Design.IToolboxService.DeserializeToolboxItem(System::Object ^ serializedObject) = System::Drawing::Design::IToolboxService::DeserializeToolboxItem;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Drawing.Design.IToolboxService.DeserializeToolboxItem(System.Object)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1116,9 +1077,6 @@
       <MemberSignature Language="VB.NET" Value="Function DeserializeToolboxItem (serializedObject As Object, host As IDesignerHost) As ToolboxItem Implements IToolboxService.DeserializeToolboxItem" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Drawing::Design::ToolboxItem ^ System.Drawing.Design.IToolboxService.DeserializeToolboxItem(System::Object ^ serializedObject, System::ComponentModel::Design::IDesignerHost ^ host) = System::Drawing::Design::IToolboxService::DeserializeToolboxItem;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Drawing.Design.IToolboxService.DeserializeToolboxItem(System.Object,System.ComponentModel.Design.IDesignerHost)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1161,9 +1119,6 @@
       <MemberSignature Language="VB.NET" Value="Function GetSelectedToolboxItem () As ToolboxItem Implements IToolboxService.GetSelectedToolboxItem" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Drawing::Design::ToolboxItem ^ System.Drawing.Design.IToolboxService.GetSelectedToolboxItem() = System::Drawing::Design::IToolboxService::GetSelectedToolboxItem;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Drawing.Design.IToolboxService.GetSelectedToolboxItem</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1192,9 +1147,6 @@
       <MemberSignature Language="VB.NET" Value="Function GetSelectedToolboxItem (host As IDesignerHost) As ToolboxItem Implements IToolboxService.GetSelectedToolboxItem" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Drawing::Design::ToolboxItem ^ System.Drawing.Design.IToolboxService.GetSelectedToolboxItem(System::ComponentModel::Design::IDesignerHost ^ host) = System::Drawing::Design::IToolboxService::GetSelectedToolboxItem;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Drawing.Design.IToolboxService.GetSelectedToolboxItem(System.ComponentModel.Design.IDesignerHost)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1235,9 +1187,6 @@
       <MemberSignature Language="VB.NET" Value="Function GetToolboxItems () As ToolboxItemCollection Implements IToolboxService.GetToolboxItems" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Drawing::Design::ToolboxItemCollection ^ System.Drawing.Design.IToolboxService.GetToolboxItems() = System::Drawing::Design::IToolboxService::GetToolboxItems;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Drawing.Design.IToolboxService.GetToolboxItems</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1259,9 +1208,6 @@
       <MemberSignature Language="VB.NET" Value="Function GetToolboxItems (host As IDesignerHost) As ToolboxItemCollection Implements IToolboxService.GetToolboxItems" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Drawing::Design::ToolboxItemCollection ^ System.Drawing.Design.IToolboxService.GetToolboxItems(System::ComponentModel::Design::IDesignerHost ^ host) = System::Drawing::Design::IToolboxService::GetToolboxItems;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Drawing.Design.IToolboxService.GetToolboxItems(System.ComponentModel.Design.IDesignerHost)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1288,9 +1234,6 @@
       <MemberSignature Language="VB.NET" Value="Function GetToolboxItems (category As String) As ToolboxItemCollection Implements IToolboxService.GetToolboxItems" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Drawing::Design::ToolboxItemCollection ^ System.Drawing.Design.IToolboxService.GetToolboxItems(System::String ^ category) = System::Drawing::Design::IToolboxService::GetToolboxItems;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Drawing.Design.IToolboxService.GetToolboxItems(System.String)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1317,9 +1260,6 @@
       <MemberSignature Language="VB.NET" Value="Function GetToolboxItems (category As String, host As IDesignerHost) As ToolboxItemCollection Implements IToolboxService.GetToolboxItems" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Drawing::Design::ToolboxItemCollection ^ System.Drawing.Design.IToolboxService.GetToolboxItems(System::String ^ category, System::ComponentModel::Design::IDesignerHost ^ host) = System::Drawing::Design::IToolboxService::GetToolboxItems;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Drawing.Design.IToolboxService.GetToolboxItems(System.String,System.ComponentModel.Design.IDesignerHost)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1357,9 +1297,6 @@
       <MemberSignature Language="VB.NET" Value="Function IsSupported (serializedObject As Object, filterAttributes As ICollection) As Boolean Implements IToolboxService.IsSupported" />
       <MemberSignature Language="C++ CLI" Value=" virtual bool System.Drawing.Design.IToolboxService.IsSupported(System::Object ^ serializedObject, System::Collections::ICollection ^ filterAttributes) = System::Drawing::Design::IToolboxService::IsSupported;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Drawing.Design.IToolboxService.IsSupported(System.Object,System.Collections.ICollection)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1389,9 +1326,6 @@
       <MemberSignature Language="VB.NET" Value="Function IsSupported (serializedObject As Object, host As IDesignerHost) As Boolean Implements IToolboxService.IsSupported" />
       <MemberSignature Language="C++ CLI" Value=" virtual bool System.Drawing.Design.IToolboxService.IsSupported(System::Object ^ serializedObject, System::ComponentModel::Design::IDesignerHost ^ host) = System::Drawing::Design::IToolboxService::IsSupported;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Drawing.Design.IToolboxService.IsSupported(System.Object,System.ComponentModel.Design.IDesignerHost)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1430,9 +1364,6 @@
       <MemberSignature Language="VB.NET" Value="Function IsToolboxItem (serializedObject As Object) As Boolean Implements IToolboxService.IsToolboxItem" />
       <MemberSignature Language="C++ CLI" Value=" virtual bool System.Drawing.Design.IToolboxService.IsToolboxItem(System::Object ^ serializedObject) = System::Drawing::Design::IToolboxService::IsToolboxItem;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Drawing.Design.IToolboxService.IsToolboxItem(System.Object)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1458,9 +1389,6 @@
       <MemberSignature Language="VB.NET" Value="Function IsToolboxItem (serializedObject As Object, host As IDesignerHost) As Boolean Implements IToolboxService.IsToolboxItem" />
       <MemberSignature Language="C++ CLI" Value=" virtual bool System.Drawing.Design.IToolboxService.IsToolboxItem(System::Object ^ serializedObject, System::ComponentModel::Design::IDesignerHost ^ host) = System::Drawing::Design::IToolboxService::IsToolboxItem;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Drawing.Design.IToolboxService.IsToolboxItem(System.Object,System.ComponentModel.Design.IDesignerHost)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1488,9 +1416,6 @@
       <MemberSignature Language="VB.NET" Value="Sub Refresh () Implements IToolboxService.Refresh" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Drawing.Design.IToolboxService.Refresh() = System::Drawing::Design::IToolboxService::Refresh;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Drawing.Design.IToolboxService.Refresh</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1520,9 +1445,6 @@
       <MemberSignature Language="VB.NET" Value="Sub RemoveCreator (format As String) Implements IToolboxService.RemoveCreator" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Drawing.Design.IToolboxService.RemoveCreator(System::String ^ format) = System::Drawing::Design::IToolboxService::RemoveCreator;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Drawing.Design.IToolboxService.RemoveCreator(System.String)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1548,9 +1470,6 @@
       <MemberSignature Language="VB.NET" Value="Sub RemoveCreator (format As String, host As IDesignerHost) Implements IToolboxService.RemoveCreator" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Drawing.Design.IToolboxService.RemoveCreator(System::String ^ format, System::ComponentModel::Design::IDesignerHost ^ host) = System::Drawing::Design::IToolboxService::RemoveCreator;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Drawing.Design.IToolboxService.RemoveCreator(System.String,System.ComponentModel.Design.IDesignerHost)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1586,9 +1505,6 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxService.System#Drawing#Design#IToolboxService#RemoveToolboxItem(System.Drawing.Design.ToolboxItem)" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Drawing.Design.IToolboxService.RemoveToolboxItem(System::Drawing::Design::ToolboxItem ^ toolboxItem) = System::Drawing::Design::IToolboxService::RemoveToolboxItem;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Drawing.Design.IToolboxService.RemoveToolboxItem(System.Drawing.Design.ToolboxItem)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1613,9 +1529,6 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxService.System#Drawing#Design#IToolboxService#RemoveToolboxItem(System.Drawing.Design.ToolboxItem,System.String)" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Drawing.Design.IToolboxService.RemoveToolboxItem(System::Drawing::Design::ToolboxItem ^ toolboxItem, System::String ^ category) = System::Drawing::Design::IToolboxService::RemoveToolboxItem;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Drawing.Design.IToolboxService.RemoveToolboxItem(System.Drawing.Design.ToolboxItem,System.String)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1644,9 +1557,6 @@
       <MemberSignature Language="F#" Usage="System.Drawing.Design.ToolboxService.System.Drawing.Design.IToolboxService.SelectedCategory" />
       <MemberSignature Language="C++ CLI" Value="property System::String ^ System.Drawing.Design.IToolboxService.SelectedCategory { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Drawing.Design.IToolboxService.SelectedCategory</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1674,9 +1584,6 @@
       <MemberSignature Language="VB.NET" Value="Sub SelectedToolboxItemUsed () Implements IToolboxService.SelectedToolboxItemUsed" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Drawing.Design.IToolboxService.SelectedToolboxItemUsed() = System::Drawing::Design::IToolboxService::SelectedToolboxItemUsed;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Drawing.Design.IToolboxService.SelectedToolboxItemUsed</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1696,9 +1603,6 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxService.System#Drawing#Design#IToolboxService#SerializeToolboxItem(System.Drawing.Design.ToolboxItem)" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.Drawing.Design.IToolboxService.SerializeToolboxItem(System::Drawing::Design::ToolboxItem ^ toolboxItem) = System::Drawing::Design::IToolboxService::SerializeToolboxItem;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Drawing.Design.IToolboxService.SerializeToolboxItem(System.Drawing.Design.ToolboxItem)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1725,9 +1629,6 @@
       <MemberSignature Language="VB.NET" Value="Function SetCursor () As Boolean Implements IToolboxService.SetCursor" />
       <MemberSignature Language="C++ CLI" Value=" virtual bool System.Drawing.Design.IToolboxService.SetCursor() = System::Drawing::Design::IToolboxService::SetCursor;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Drawing.Design.IToolboxService.SetCursor</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1749,9 +1650,6 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxService.System#Drawing#Design#IToolboxService#SetSelectedToolboxItem(System.Drawing.Design.ToolboxItem)" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Drawing.Design.IToolboxService.SetSelectedToolboxItem(System::Drawing::Design::ToolboxItem ^ toolboxItem) = System::Drawing::Design::IToolboxService::SetSelectedToolboxItem;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Drawing.Design.IToolboxService.SetSelectedToolboxItem(System.Drawing.Design.ToolboxItem)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

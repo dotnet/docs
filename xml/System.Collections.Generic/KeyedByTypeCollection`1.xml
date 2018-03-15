@@ -193,12 +193,17 @@
       </Docs>
     </Member>
     <Member MemberName="InsertItem">
-      <MemberSignature Language="C#" Value="protected override void InsertItem (int index, TItem kind);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InsertItem(int32 index, !TItem kind) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.KeyedByTypeCollection`1.InsertItem(System.Int32,`0)" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, kind As TItem)" />
+      <MemberSignature Language="C#" Value="protected override void InsertItem (int index, TItem item);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InsertItem(int32 index, !TItem item) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.KeyedByTypeCollection`1.InsertItem(System.Int32,`0)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, item As TItem)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
       <MemberSignature Language="F#" Value="override this.InsertItem : int * 'Item -&gt; unit" Usage="keyedByTypeCollection.InsertItem (index, kind)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, TItem kind);" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, TItem item);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="protected override void InsertItem (int index, TItem kind);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InsertItem(int32 index, !TItem kind) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.KeyedByTypeCollection`1.InsertItem(System.Int32,`0)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, kind As TItem)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, TItem kind);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -213,11 +218,13 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="item" Type="TItem" />
+        <Parameter Name="index" Type="System.Int32" Index="0" />
+        <Parameter Name="item" Type="TItem" Index="1" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="kind" Type="TItem" Index="1" FrameworkAlternate="xamarinandroid-7.1" />
       </Parameters>
       <Docs>
         <param name="index">The zero-based index at which <c>item</c> should be inserted.</param>
+        <param name="item">To be added.</param>
         <param name="kind">To be added.</param>
         <summary>Inserts an element into the collection at a specific location.</summary>
         <remarks>To be added.</remarks>
@@ -288,12 +295,17 @@
       </Docs>
     </Member>
     <Member MemberName="SetItem">
-      <MemberSignature Language="C#" Value="protected override void SetItem (int index, TItem kind);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetItem(int32 index, !TItem kind) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.KeyedByTypeCollection`1.SetItem(System.Int32,`0)" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, kind As TItem)" />
+      <MemberSignature Language="C#" Value="protected override void SetItem (int index, TItem item);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetItem(int32 index, !TItem item) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.KeyedByTypeCollection`1.SetItem(System.Int32,`0)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, item As TItem)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
       <MemberSignature Language="F#" Value="override this.SetItem : int * 'Item -&gt; unit" Usage="keyedByTypeCollection.SetItem (index, kind)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, TItem kind);" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, TItem item);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="protected override void SetItem (int index, TItem kind);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetItem(int32 index, !TItem kind) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.KeyedByTypeCollection`1.SetItem(System.Int32,`0)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, kind As TItem)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, TItem kind);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -308,11 +320,13 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="item" Type="TItem" />
+        <Parameter Name="index" Type="System.Int32" Index="0" />
+        <Parameter Name="item" Type="TItem" Index="1" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="kind" Type="TItem" Index="1" FrameworkAlternate="xamarinandroid-7.1" />
       </Parameters>
       <Docs>
         <param name="index">The zero-based index of the <c>item</c> to be replaced.</param>
+        <param name="item">To be added.</param>
         <param name="kind">To be added.</param>
         <summary>Replaces the item at the specified index with a new object.</summary>
         <remarks>To be added.</remarks>

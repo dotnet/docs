@@ -91,9 +91,6 @@
       <MemberSignature Language="F#" Value="member this.LoadPostData : string * System.Collections.Specialized.NameValueCollection -&gt; bool" Usage="textBox.LoadPostData (key, data)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool LoadPostData(System::String ^ key, System::Collections::Specialized::NameValueCollection ^ data);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Web.UI.IPostBackDataHandler.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -273,9 +270,6 @@
       <MemberSignature Language="F#" Value="member this.RaisePostDataChangedEvent : unit -&gt; unit" Usage="textBox.RaisePostDataChangedEvent " />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RaisePostDataChangedEvent();" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -343,9 +337,6 @@
       <MemberSignature Language="VB.NET" Value="Function LoadPostData (key As String, data As NameValueCollection) As Boolean Implements IPostBackDataHandler.LoadPostData" />
       <MemberSignature Language="C++ CLI" Value=" virtual bool System.Web.UI.IPostBackDataHandler.LoadPostData(System::String ^ key, System::Collections::Specialized::NameValueCollection ^ data) = System::Web::UI::IPostBackDataHandler::LoadPostData;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Web.UI.IPostBackDataHandler.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -381,9 +372,6 @@
       <MemberSignature Language="VB.NET" Value="Sub RaisePostDataChangedEvent () Implements IPostBackDataHandler.RaisePostDataChangedEvent" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent() = System::Web::UI::IPostBackDataHandler::RaisePostDataChangedEvent;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

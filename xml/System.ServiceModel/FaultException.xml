@@ -134,28 +134,6 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public FaultException (string msg);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string msg) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultException.#ctor(System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (msg As String)" />
-      <MemberSignature Language="F#" Value="new System.ServiceModel.FaultException : string -&gt; System.ServiceModel.FaultException" Usage="new System.ServiceModel.FaultException msg" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultException(System::String ^ msg);" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="reason" Type="System.String" />
-      </Parameters>
-      <Docs>
-        <param name="msg">To be added.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.FaultException" /> class with the specified fault reason.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected FaultException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
@@ -238,12 +216,17 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public FaultException (string msg, System.ServiceModel.FaultCode code);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string msg, class System.ServiceModel.FaultCode code) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultException.#ctor(System.String,System.ServiceModel.FaultCode)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (msg As String, code As FaultCode)" />
-      <MemberSignature Language="F#" Value="new System.ServiceModel.FaultException : string * System.ServiceModel.FaultCode -&gt; System.ServiceModel.FaultException" Usage="new System.ServiceModel.FaultException (msg, code)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultException(System::String ^ msg, System::ServiceModel::FaultCode ^ code);" />
+      <MemberSignature Language="C#" Value="public FaultException (string reason);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string reason) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultException.#ctor(System.String)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (reason As String)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.FaultException : string -&gt; System.ServiceModel.FaultException" Usage="new System.ServiceModel.FaultException msg" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultException(System::String ^ reason);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public FaultException (string msg);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string msg) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultException.#ctor(System.String)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (msg As String)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultException(System::String ^ msg);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -251,13 +234,12 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="reason" Type="System.String" />
-        <Parameter Name="code" Type="System.ServiceModel.FaultCode" />
+        <Parameter Name="reason" Type="System.String" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="msg" Type="System.String" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
       </Parameters>
       <Docs>
         <param name="msg">To be added.</param>
-        <param name="code">The SOAP fault code for the fault.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.FaultException" /> class using the specified reason and SOAP fault code.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.FaultException" /> class with the specified fault reason.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -316,6 +298,37 @@
         <param name="code">The fault code for the SOAP fault.</param>
         <param name="action">The action value for the SOAP fault.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.FaultException" /> class using the specified reason, fault code, and action value.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FaultException (string reason, System.ServiceModel.FaultCode code);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string reason, class System.ServiceModel.FaultCode code) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultException.#ctor(System.String,System.ServiceModel.FaultCode)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (reason As String, code As FaultCode)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.FaultException : string * System.ServiceModel.FaultCode -&gt; System.ServiceModel.FaultException" Usage="new System.ServiceModel.FaultException (msg, code)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultException(System::String ^ reason, System::ServiceModel::FaultCode ^ code);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public FaultException (string msg, System.ServiceModel.FaultCode code);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string msg, class System.ServiceModel.FaultCode code) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultException.#ctor(System.String,System.ServiceModel.FaultCode)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (msg As String, code As FaultCode)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultException(System::String ^ msg, System::ServiceModel::FaultCode ^ code);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="reason" Type="System.String" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="msg" Type="System.String" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
+        <Parameter Name="code" Type="System.ServiceModel.FaultCode" Index="1" />
+      </Parameters>
+      <Docs>
+        <param name="reason">To be added.</param>
+        <param name="msg">To be added.</param>
+        <param name="code">The SOAP fault code for the fault.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.FaultException" /> class using the specified reason and SOAP fault code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -85,9 +85,6 @@
       <MemberSignature Language="F#" Value="abstract member AddCommand : System.ComponentModel.Design.MenuCommand -&gt; unit&#xA;override this.AddCommand : System.ComponentModel.Design.MenuCommand -&gt; unit" Usage="menuCommandService.AddCommand command" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddCommand(System::ComponentModel::Design::MenuCommand ^ command);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.IMenuCommandService.AddCommand(System.ComponentModel.Design.MenuCommand)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -126,9 +123,6 @@
       <MemberSignature Language="F#" Value="abstract member AddVerb : System.ComponentModel.Design.DesignerVerb -&gt; unit&#xA;override this.AddVerb : System.ComponentModel.Design.DesignerVerb -&gt; unit" Usage="menuCommandService.AddVerb verb" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddVerb(System::ComponentModel::Design::DesignerVerb ^ verb);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.IMenuCommandService.AddVerb(System.ComponentModel.Design.DesignerVerb)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -289,9 +283,6 @@
       <MemberSignature Language="F#" Value="abstract member FindCommand : System.ComponentModel.Design.CommandID -&gt; System.ComponentModel.Design.MenuCommand&#xA;override this.FindCommand : System.ComponentModel.Design.CommandID -&gt; System.ComponentModel.Design.MenuCommand" Usage="menuCommandService.FindCommand commandID" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::Design::MenuCommand ^ FindCommand(System::ComponentModel::Design::CommandID ^ commandID);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.IMenuCommandService.FindCommand(System.ComponentModel.Design.CommandID)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -418,9 +409,6 @@
       <MemberSignature Language="F#" Value="abstract member GlobalInvoke : System.ComponentModel.Design.CommandID -&gt; bool&#xA;override this.GlobalInvoke : System.ComponentModel.Design.CommandID -&gt; bool" Usage="menuCommandService.GlobalInvoke commandID" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool GlobalInvoke(System::ComponentModel::Design::CommandID ^ commandID);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.IMenuCommandService.GlobalInvoke(System.ComponentModel.Design.CommandID)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -565,9 +553,6 @@
       <MemberSignature Language="F#" Value="abstract member RemoveCommand : System.ComponentModel.Design.MenuCommand -&gt; unit&#xA;override this.RemoveCommand : System.ComponentModel.Design.MenuCommand -&gt; unit" Usage="menuCommandService.RemoveCommand command" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveCommand(System::ComponentModel::Design::MenuCommand ^ command);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.IMenuCommandService.RemoveCommand(System.ComponentModel.Design.MenuCommand)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -605,9 +590,6 @@
       <MemberSignature Language="F#" Value="abstract member RemoveVerb : System.ComponentModel.Design.DesignerVerb -&gt; unit&#xA;override this.RemoveVerb : System.ComponentModel.Design.DesignerVerb -&gt; unit" Usage="menuCommandService.RemoveVerb verb" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveVerb(System::ComponentModel::Design::DesignerVerb ^ verb);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.IMenuCommandService.RemoveVerb(System.ComponentModel.Design.DesignerVerb)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -638,9 +620,6 @@
       <MemberSignature Language="F#" Value="abstract member ShowContextMenu : System.ComponentModel.Design.CommandID * int * int -&gt; unit&#xA;override this.ShowContextMenu : System.ComponentModel.Design.CommandID * int * int -&gt; unit" Usage="menuCommandService.ShowContextMenu (menuID, x, y)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ShowContextMenu(System::ComponentModel::Design::CommandID ^ menuID, int x, int y);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.IMenuCommandService.ShowContextMenu(System.ComponentModel.Design.CommandID,System.Int32,System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -680,9 +659,6 @@
       <MemberSignature Language="F#" Value="member this.Verbs : System.ComponentModel.Design.DesignerVerbCollection" Usage="System.ComponentModel.Design.MenuCommandService.Verbs" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::Design::DesignerVerbCollection ^ Verbs { System::ComponentModel::Design::DesignerVerbCollection ^ get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.Design.IMenuCommandService.Verbs</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

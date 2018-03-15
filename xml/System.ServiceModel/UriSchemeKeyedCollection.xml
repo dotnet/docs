@@ -31,12 +31,17 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public UriSchemeKeyedCollection (params Uri[] uris);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri[] uris) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.UriSchemeKeyedCollection.#ctor(System.Uri[])" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (ParamArray uris As Uri())" />
+      <MemberSignature Language="C#" Value="public UriSchemeKeyedCollection (params Uri[] addresses);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri[] addresses) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.UriSchemeKeyedCollection.#ctor(System.Uri[])" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (ParamArray addresses As Uri())" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.UriSchemeKeyedCollection : Uri[] -&gt; System.ServiceModel.UriSchemeKeyedCollection" Usage="new System.ServiceModel.UriSchemeKeyedCollection uris" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; UriSchemeKeyedCollection(... cli::array &lt;Uri ^&gt; ^ uris);" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UriSchemeKeyedCollection(... cli::array &lt;Uri ^&gt; ^ addresses);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public UriSchemeKeyedCollection (params Uri[] uris);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri[] uris) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.UriSchemeKeyedCollection.#ctor(System.Uri[])" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (ParamArray uris As Uri())" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UriSchemeKeyedCollection(... cli::array &lt;Uri ^&gt; ^ uris);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -44,7 +49,14 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="addresses" Type="System.Uri[]">
+        <Parameter Name="addresses" Type="System.Uri[]" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="uris" Type="System.Uri[]" Index="0" FrameworkAlternate="xamarinandroid-7.1">
           <Attributes>
             <Attribute>
               <AttributeName>System.ParamArray</AttributeName>

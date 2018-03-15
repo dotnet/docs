@@ -69,27 +69,6 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public DataContext (string connectionString);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string connectionString) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.Linq.DataContext.#ctor(System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (connectionString As String)" />
-      <MemberSignature Language="F#" Value="new System.Data.Linq.DataContext : string -&gt; System.Data.Linq.DataContext" Usage="new System.Data.Linq.DataContext connectionString" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataContext(System::String ^ connectionString);" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Linq</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="fileOrServerOrConnection" Type="System.String" />
-      </Parameters>
-      <Docs>
-        <param name="connectionString">To be added.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.Linq.DataContext" /> class by referencing a file source.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DataContext (System.Data.IDbConnection connection, System.Data.Linq.Mapping.MappingSource mapping);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Data.IDbConnection connection, class System.Data.Linq.Mapping.MappingSource mapping) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.DataContext.#ctor(System.Data.IDbConnection,System.Data.Linq.Mapping.MappingSource)" />
@@ -138,6 +117,33 @@
  A complete connection string. [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] just passes the string to the provider without modification.</param>
         <param name="mapping">A source for mapping.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.Linq.DataContext" /> class by referencing a file source and a mapping source.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataContext (string fileOrServerOrConnection);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string fileOrServerOrConnection) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Linq.DataContext.#ctor(System.String)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (fileOrServerOrConnection As String)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="F#" Value="new System.Data.Linq.DataContext : string -&gt; System.Data.Linq.DataContext" Usage="new System.Data.Linq.DataContext connectionString" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataContext(System::String ^ fileOrServerOrConnection);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public DataContext (string connectionString);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string connectionString) cil managed" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Linq.DataContext.#ctor(System.String)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (connectionString As String)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataContext(System::String ^ connectionString);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="fileOrServerOrConnection" Type="System.String" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="connectionString" Type="System.String" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="connectionString">To be added.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Linq.DataContext" /> class by referencing a file source.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

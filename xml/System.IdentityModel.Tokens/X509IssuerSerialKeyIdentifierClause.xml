@@ -178,39 +178,6 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="Matches">
-      <MemberSignature Language="C#" Value="public override bool Matches (System.IdentityModel.Tokens.SecurityKeyIdentifierClause clause);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Matches(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause clause) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.Matches(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function Matches (clause As SecurityKeyIdentifierClause) As Boolean" />
-      <MemberSignature Language="F#" Value="override this.Matches : System.IdentityModel.Tokens.SecurityKeyIdentifierClause -&gt; bool" Usage="x509IssuerSerialKeyIdentifierClause.Matches clause" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Matches(System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ clause);" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="keyIdentifierClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
-      </Parameters>
-      <Docs>
-        <param name="clause">To be added.</param>
-        <summary>Returns a value that indicates whether the key identifier for this instance matches the specified key identifier.</summary>
-        <returns>
-          <see langword="true" /> if <paramref name="clause" /> is a <see cref="T:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause" /> type and the key identifier clauses match; otherwise, <see langword="false" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For the <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause> class, the values of the key identifier clauses that are compared to determine if there is a match are the values of the <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.IssuerName%2A> and <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.IssuerSerialNumber%2A> properties.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Matches">
       <MemberSignature Language="C#" Value="public bool Matches (System.Security.Cryptography.X509Certificates.X509Certificate2 certificate);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Matches(class System.Security.Cryptography.X509Certificates.X509Certificate2 certificate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.Matches(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
@@ -238,6 +205,45 @@
   
 ## Remarks  
  The issuer name and issuer serial number are obtained from the `certificate` parameter, by getting the value of the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.IssuerName%2A> property and calling the <xref:System.Security.Cryptography.X509Certificates.X509Certificate.GetSerialNumber%2A> method, respectively.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Matches">
+      <MemberSignature Language="C#" Value="public override bool Matches (System.IdentityModel.Tokens.SecurityKeyIdentifierClause keyIdentifierClause);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Matches(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause keyIdentifierClause) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.Matches(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Matches (keyIdentifierClause As SecurityKeyIdentifierClause) As Boolean" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="F#" Value="override this.Matches : System.IdentityModel.Tokens.SecurityKeyIdentifierClause -&gt; bool" Usage="x509IssuerSerialKeyIdentifierClause.Matches clause" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Matches(System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ keyIdentifierClause);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public override bool Matches (System.IdentityModel.Tokens.SecurityKeyIdentifierClause clause);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Matches(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause clause) cil managed" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.Matches(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Matches (clause As SecurityKeyIdentifierClause) As Boolean" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Matches(System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ clause);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="keyIdentifierClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="clause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="clause">To be added.</param>
+        <summary>Returns a value that indicates whether the key identifier for this instance matches the specified key identifier.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="clause" /> is a <see cref="T:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause" /> type and the key identifier clauses match; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For the <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause> class, the values of the key identifier clauses that are compared to determine if there is a match are the values of the <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.IssuerName%2A> and <xref:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.IssuerSerialNumber%2A> properties.  
   
  ]]></format>
         </remarks>

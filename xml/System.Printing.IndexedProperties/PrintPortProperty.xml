@@ -153,7 +153,6 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Printing.PrintPort op_Implicit(class System.Printing.IndexedProperties.PrintPortProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintPortProperty.op_Implicit(System.Printing.IndexedProperties.PrintPortProperty|System.Runtime.CompilerServices.IsImplicitlyDereferenced)~System.Printing.PrintPort" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (attribRef As PrintPortProperty) As PrintPort" />
-      <MemberSignature Language="F#" Value="static member op_Implicit : System.Printing.IndexedProperties.PrintPortProperty -&gt; System.Printing.PrintPort" Usage="System.Printing.IndexedProperties.PrintPortProperty.op_Implicit attribRef" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Printing::PrintPort ^(System::Printing::IndexedProperties::PrintPortProperty ^ attribRef);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

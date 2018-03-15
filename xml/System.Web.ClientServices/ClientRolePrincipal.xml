@@ -92,9 +92,6 @@
       <MemberSignature Language="F#" Value="member this.Identity : System.Security.Principal.IIdentity" Usage="System.Web.ClientServices.ClientRolePrincipal.Identity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Principal::IIdentity ^ Identity { System::Security::Principal::IIdentity ^ get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Security.Principal.IPrincipal.Identity</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -129,9 +126,6 @@
       <MemberSignature Language="F#" Value="abstract member IsInRole : string -&gt; bool&#xA;override this.IsInRole : string -&gt; bool" Usage="clientRolePrincipal.IsInRole role" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsInRole(System::String ^ role);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Security.Principal.IPrincipal.IsInRole(System.String)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

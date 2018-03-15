@@ -631,12 +631,17 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="Item">
-      <MemberSignature Language="C#" Value="protected internal object this[System.Configuration.ConfigurationProperty property] { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance object Item(class System.Configuration.ConfigurationProperty)" />
-      <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationElement.Item(System.Configuration.ConfigurationProperty)" />
-      <MemberSignature Language="VB.NET" Value="Default Protected Friend Property Item(property As ConfigurationProperty) As Object" />
+      <MemberSignature Language="C#" Value="protected internal object this[System.Configuration.ConfigurationProperty prop] { get; set; }" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Item(class System.Configuration.ConfigurationProperty)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationElement.Item(System.Configuration.ConfigurationProperty)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Default Protected Friend Property Item(prop As ConfigurationProperty) As Object" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
       <MemberSignature Language="F#" Value="member this.Item(System.Configuration.ConfigurationProperty) : obj with get, set" Usage="System.Configuration.ConfigurationElement.Item" />
-      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::Object ^ default[System::Configuration::ConfigurationProperty ^] { System::Object ^ get(System::Configuration::ConfigurationProperty ^ property); void set(System::Configuration::ConfigurationProperty ^ property, System::Object ^ value); };" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::Object ^ default[System::Configuration::ConfigurationProperty ^] { System::Object ^ get(System::Configuration::ConfigurationProperty ^ prop); void set(System::Configuration::ConfigurationProperty ^ prop, System::Object ^ value); };" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="protected internal object this[System.Configuration.ConfigurationProperty property] { get; set; }" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Item(class System.Configuration.ConfigurationProperty)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationElement.Item(System.Configuration.ConfigurationProperty)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Default Protected Friend Property Item(property As ConfigurationProperty) As Object" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::Object ^ default[System::Configuration::ConfigurationProperty ^] { System::Object ^ get(System::Configuration::ConfigurationProperty ^ property); void set(System::Configuration::ConfigurationProperty ^ property, System::Object ^ value); };" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -650,7 +655,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="prop" Type="System.Configuration.ConfigurationProperty" />
+        <Parameter Name="prop" Type="System.Configuration.ConfigurationProperty" Index="0" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="property" Type="System.Configuration.ConfigurationProperty" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="property">To be added.</param>
@@ -673,12 +679,17 @@
       </Docs>
     </Member>
     <Member MemberName="Item">
-      <MemberSignature Language="C#" Value="protected internal object this[string property_name] { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance object Item(string)" />
-      <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationElement.Item(System.String)" />
-      <MemberSignature Language="VB.NET" Value="Default Protected Friend Property Item(property_name As String) As Object" />
+      <MemberSignature Language="C#" Value="protected internal object this[string propertyName] { get; set; }" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Item(string)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationElement.Item(System.String)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Default Protected Friend Property Item(propertyName As String) As Object" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
       <MemberSignature Language="F#" Value="member this.Item(string) : obj with get, set" Usage="System.Configuration.ConfigurationElement.Item" />
-      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ property_name); void set(System::String ^ property_name, System::Object ^ value); };" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ propertyName); void set(System::String ^ propertyName, System::Object ^ value); };" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="protected internal object this[string property_name] { get; set; }" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Item(string)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationElement.Item(System.String)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Default Protected Friend Property Item(property_name As String) As Object" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ property_name); void set(System::String ^ property_name, System::Object ^ value); };" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -692,7 +703,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="propertyName" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="property_name" Type="System.String" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="property_name">To be added.</param>
@@ -713,12 +725,17 @@
       </Docs>
     </Member>
     <Member MemberName="ListErrors">
-      <MemberSignature Language="C#" Value="protected virtual void ListErrors (System.Collections.IList list);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ListErrors(class System.Collections.IList list) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.ListErrors(System.Collections.IList)" />
-      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ListErrors (list As IList)" />
+      <MemberSignature Language="C#" Value="protected virtual void ListErrors (System.Collections.IList errorList);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ListErrors(class System.Collections.IList errorList) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.ListErrors(System.Collections.IList)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ListErrors (errorList As IList)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
       <MemberSignature Language="F#" Value="abstract member ListErrors : System.Collections.IList -&gt; unit&#xA;override this.ListErrors : System.Collections.IList -&gt; unit" Usage="configurationElement.ListErrors list" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ListErrors(System::Collections::IList ^ list);" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ListErrors(System::Collections::IList ^ errorList);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="protected virtual void ListErrors (System.Collections.IList list);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ListErrors(class System.Collections.IList list) cil managed" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.ListErrors(System.Collections.IList)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ListErrors (list As IList)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ListErrors(System::Collections::IList ^ list);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -732,7 +749,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="errorList" Type="System.Collections.IList" />
+        <Parameter Name="errorList" Type="System.Collections.IList" Index="0" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="list" Type="System.Collections.IList" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="list">To be added.</param>
@@ -1008,12 +1026,17 @@
       </Docs>
     </Member>
     <Member MemberName="OnDeserializeUnrecognizedElement">
-      <MemberSignature Language="C#" Value="protected virtual bool OnDeserializeUnrecognizedElement (string element, System.Xml.XmlReader reader);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnDeserializeUnrecognizedElement(string element, class System.Xml.XmlReader reader) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.OnDeserializeUnrecognizedElement(System.String,System.Xml.XmlReader)" />
-      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnDeserializeUnrecognizedElement (element As String, reader As XmlReader) As Boolean" />
+      <MemberSignature Language="C#" Value="protected virtual bool OnDeserializeUnrecognizedElement (string elementName, System.Xml.XmlReader reader);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnDeserializeUnrecognizedElement(string elementName, class System.Xml.XmlReader reader) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.OnDeserializeUnrecognizedElement(System.String,System.Xml.XmlReader)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnDeserializeUnrecognizedElement (elementName As String, reader As XmlReader) As Boolean" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
       <MemberSignature Language="F#" Value="abstract member OnDeserializeUnrecognizedElement : string * System.Xml.XmlReader -&gt; bool&#xA;override this.OnDeserializeUnrecognizedElement : string * System.Xml.XmlReader -&gt; bool" Usage="configurationElement.OnDeserializeUnrecognizedElement (element, reader)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool OnDeserializeUnrecognizedElement(System::String ^ element, System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool OnDeserializeUnrecognizedElement(System::String ^ elementName, System::Xml::XmlReader ^ reader);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="protected virtual bool OnDeserializeUnrecognizedElement (string element, System.Xml.XmlReader reader);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnDeserializeUnrecognizedElement(string element, class System.Xml.XmlReader reader) cil managed" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.OnDeserializeUnrecognizedElement(System.String,System.Xml.XmlReader)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnDeserializeUnrecognizedElement (element As String, reader As XmlReader) As Boolean" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool OnDeserializeUnrecognizedElement(System::String ^ element, System::Xml::XmlReader ^ reader);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1027,10 +1050,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="elementName" Type="System.String" />
-        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+        <Parameter Name="elementName" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="element" Type="System.String" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="reader" Type="System.Xml.XmlReader" Index="1" />
       </Parameters>
       <Docs>
+        <param name="elementName">To be added.</param>
         <param name="element">To be added.</param>
         <param name="reader">The <see cref="T:System.Xml.XmlReader" /> being used for deserialization.</param>
         <summary>Gets a value indicating whether an unknown element is encountered during deserialization.</summary>
@@ -1413,12 +1438,17 @@
       </Docs>
     </Member>
     <Member MemberName="Unmerge">
-      <MemberSignature Language="C#" Value="protected internal virtual void Unmerge (System.Configuration.ConfigurationElement source, System.Configuration.ConfigurationElement parent, System.Configuration.ConfigurationSaveMode updateMode);" />
-      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void Unmerge(class System.Configuration.ConfigurationElement source, class System.Configuration.ConfigurationElement parent, valuetype System.Configuration.ConfigurationSaveMode updateMode) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.Unmerge(System.Configuration.ConfigurationElement,System.Configuration.ConfigurationElement,System.Configuration.ConfigurationSaveMode)" />
-      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub Unmerge (source As ConfigurationElement, parent As ConfigurationElement, updateMode As ConfigurationSaveMode)" />
+      <MemberSignature Language="C#" Value="protected internal virtual void Unmerge (System.Configuration.ConfigurationElement sourceElement, System.Configuration.ConfigurationElement parentElement, System.Configuration.ConfigurationSaveMode saveMode);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void Unmerge(class System.Configuration.ConfigurationElement sourceElement, class System.Configuration.ConfigurationElement parentElement, valuetype System.Configuration.ConfigurationSaveMode saveMode) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.Unmerge(System.Configuration.ConfigurationElement,System.Configuration.ConfigurationElement,System.Configuration.ConfigurationSaveMode)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub Unmerge (sourceElement As ConfigurationElement, parentElement As ConfigurationElement, saveMode As ConfigurationSaveMode)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
       <MemberSignature Language="F#" Value="abstract member Unmerge : System.Configuration.ConfigurationElement * System.Configuration.ConfigurationElement * System.Configuration.ConfigurationSaveMode -&gt; unit&#xA;override this.Unmerge : System.Configuration.ConfigurationElement * System.Configuration.ConfigurationElement * System.Configuration.ConfigurationSaveMode -&gt; unit" Usage="configurationElement.Unmerge (source, parent, updateMode)" />
-      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void Unmerge(System::Configuration::ConfigurationElement ^ source, System::Configuration::ConfigurationElement ^ parent, System::Configuration::ConfigurationSaveMode updateMode);" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void Unmerge(System::Configuration::ConfigurationElement ^ sourceElement, System::Configuration::ConfigurationElement ^ parentElement, System::Configuration::ConfigurationSaveMode saveMode);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="protected internal virtual void Unmerge (System.Configuration.ConfigurationElement source, System.Configuration.ConfigurationElement parent, System.Configuration.ConfigurationSaveMode updateMode);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void Unmerge(class System.Configuration.ConfigurationElement source, class System.Configuration.ConfigurationElement parent, valuetype System.Configuration.ConfigurationSaveMode updateMode) cil managed" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElement.Unmerge(System.Configuration.ConfigurationElement,System.Configuration.ConfigurationElement,System.Configuration.ConfigurationSaveMode)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub Unmerge (source As ConfigurationElement, parent As ConfigurationElement, updateMode As ConfigurationSaveMode)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void Unmerge(System::Configuration::ConfigurationElement ^ source, System::Configuration::ConfigurationElement ^ parent, System::Configuration::ConfigurationSaveMode updateMode);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1432,13 +1462,19 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="sourceElement" Type="System.Configuration.ConfigurationElement" />
-        <Parameter Name="parentElement" Type="System.Configuration.ConfigurationElement" />
-        <Parameter Name="saveMode" Type="System.Configuration.ConfigurationSaveMode" />
+        <Parameter Name="sourceElement" Type="System.Configuration.ConfigurationElement" Index="0" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="source" Type="System.Configuration.ConfigurationElement" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="parentElement" Type="System.Configuration.ConfigurationElement" Index="1" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="parent" Type="System.Configuration.ConfigurationElement" Index="1" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="saveMode" Type="System.Configuration.ConfigurationSaveMode" Index="2" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="updateMode" Type="System.Configuration.ConfigurationSaveMode" Index="2" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
+        <param name="sourceElement">To be added.</param>
         <param name="source">To be added.</param>
+        <param name="parentElement">To be added.</param>
         <param name="parent">To be added.</param>
+        <param name="saveMode">To be added.</param>
         <param name="updateMode">To be added.</param>
         <summary>Modifies the <see cref="T:System.Configuration.ConfigurationElement" /> object to remove all values that should not be saved.</summary>
         <remarks>

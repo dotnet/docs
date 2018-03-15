@@ -70,9 +70,6 @@
       <MemberSignature Language="F#" Value="abstract member CreateUniqueMethodName : System.ComponentModel.IComponent * System.ComponentModel.EventDescriptor -&gt; string" Usage="eventBindingService.CreateUniqueMethodName (component, e)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::String ^ CreateUniqueMethodName(System::ComponentModel::IComponent ^ component, System::ComponentModel::EventDescriptor ^ e);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.IEventBindingService.CreateUniqueMethodName(System.ComponentModel.IComponent,System.ComponentModel.EventDescriptor)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -150,9 +147,6 @@
       <MemberSignature Language="F#" Value="abstract member GetCompatibleMethods : System.ComponentModel.EventDescriptor -&gt; System.Collections.ICollection" Usage="eventBindingService.GetCompatibleMethods e" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Collections::ICollection ^ GetCompatibleMethods(System::ComponentModel::EventDescriptor ^ e);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.IEventBindingService.GetCompatibleMethods(System.ComponentModel.EventDescriptor)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -224,9 +218,6 @@
       <MemberSignature Language="F#" Value="abstract member ShowCode : unit -&gt; bool" Usage="eventBindingService.ShowCode " />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract bool ShowCode();" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.IEventBindingService.ShowCode</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -257,9 +248,6 @@
       <MemberSignature Language="F#" Value="abstract member ShowCode : int -&gt; bool" Usage="eventBindingService.ShowCode lineNumber" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract bool ShowCode(int lineNumber);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.IEventBindingService.ShowCode(System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -332,9 +320,6 @@
       <MemberSignature Language="VB.NET" Value="Function CreateUniqueMethodName (component As IComponent, e As EventDescriptor) As String Implements IEventBindingService.CreateUniqueMethodName" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.ComponentModel.Design.IEventBindingService.CreateUniqueMethodName(System::ComponentModel::IComponent ^ component, System::ComponentModel::EventDescriptor ^ e) = System::ComponentModel::Design::IEventBindingService::CreateUniqueMethodName;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.IEventBindingService.CreateUniqueMethodName(System.ComponentModel.IComponent,System.ComponentModel.EventDescriptor)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -363,9 +348,6 @@
       <MemberSignature Language="VB.NET" Value="Function GetCompatibleMethods (e As EventDescriptor) As ICollection Implements IEventBindingService.GetCompatibleMethods" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::ICollection ^ System.ComponentModel.Design.IEventBindingService.GetCompatibleMethods(System::ComponentModel::EventDescriptor ^ e) = System::ComponentModel::Design::IEventBindingService::GetCompatibleMethods;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.IEventBindingService.GetCompatibleMethods(System.ComponentModel.EventDescriptor)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -401,9 +383,6 @@
       <MemberSignature Language="VB.NET" Value="Function GetEvent (property As PropertyDescriptor) As EventDescriptor Implements IEventBindingService.GetEvent" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::ComponentModel::EventDescriptor ^ System.ComponentModel.Design.IEventBindingService.GetEvent(System::ComponentModel::PropertyDescriptor ^ property) = System::ComponentModel::Design::IEventBindingService::GetEvent;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.IEventBindingService.GetEvent(System.ComponentModel.PropertyDescriptor)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -428,9 +407,6 @@
       <MemberSignature Language="VB.NET" Value="Function GetEventProperties (events As EventDescriptorCollection) As PropertyDescriptorCollection Implements IEventBindingService.GetEventProperties" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::ComponentModel::PropertyDescriptorCollection ^ System.ComponentModel.Design.IEventBindingService.GetEventProperties(System::ComponentModel::EventDescriptorCollection ^ events) = System::ComponentModel::Design::IEventBindingService::GetEventProperties;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.IEventBindingService.GetEventProperties(System.ComponentModel.EventDescriptorCollection)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -457,9 +433,6 @@
       <MemberSignature Language="VB.NET" Value="Function GetEventProperty (e As EventDescriptor) As PropertyDescriptor Implements IEventBindingService.GetEventProperty" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::ComponentModel::PropertyDescriptor ^ System.ComponentModel.Design.IEventBindingService.GetEventProperty(System::ComponentModel::EventDescriptor ^ e) = System::ComponentModel::Design::IEventBindingService::GetEventProperty;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.IEventBindingService.GetEventProperty(System.ComponentModel.EventDescriptor)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -495,9 +468,6 @@
       <MemberSignature Language="VB.NET" Value="Function ShowCode () As Boolean Implements IEventBindingService.ShowCode" />
       <MemberSignature Language="C++ CLI" Value=" virtual bool System.ComponentModel.Design.IEventBindingService.ShowCode() = System::ComponentModel::Design::IEventBindingService::ShowCode;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.IEventBindingService.ShowCode</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -520,9 +490,6 @@
       <MemberSignature Language="VB.NET" Value="Function ShowCode (lineNumber As Integer) As Boolean Implements IEventBindingService.ShowCode" />
       <MemberSignature Language="C++ CLI" Value=" virtual bool System.ComponentModel.Design.IEventBindingService.ShowCode(int lineNumber) = System::ComponentModel::Design::IEventBindingService::ShowCode;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.IEventBindingService.ShowCode(System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -548,9 +515,6 @@
       <MemberSignature Language="VB.NET" Value="Function ShowCode (component As IComponent, e As EventDescriptor) As Boolean Implements IEventBindingService.ShowCode" />
       <MemberSignature Language="C++ CLI" Value=" virtual bool System.ComponentModel.Design.IEventBindingService.ShowCode(System::ComponentModel::IComponent ^ component, System::ComponentModel::EventDescriptor ^ e) = System::ComponentModel::Design::IEventBindingService::ShowCode;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.IEventBindingService.ShowCode(System.ComponentModel.IComponent,System.ComponentModel.EventDescriptor)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

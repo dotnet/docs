@@ -24,7 +24,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property | System.AttributeTargets.Field | System.AttributeTargets.Event)</AttributeName>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Event | System.AttributeTargets.Field | System.AttributeTargets.Property)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>

@@ -153,7 +153,6 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname unsigned int8[] op_Implicit(class System.Printing.IndexedProperties.PrintByteArrayProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintByteArrayProperty.op_Implicit(System.Printing.IndexedProperties.PrintByteArrayProperty|System.Runtime.CompilerServices.IsImplicitlyDereferenced)~System.Byte[]" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (attribRef As PrintByteArrayProperty) As Byte()" />
-      <MemberSignature Language="F#" Value="static member op_Implicit : System.Printing.IndexedProperties.PrintByteArrayProperty -&gt; byte[]" Usage="System.Printing.IndexedProperties.PrintByteArrayProperty.op_Implicit attribRef" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator cli::array &lt;System::Byte&gt; ^(System::Printing::IndexedProperties::PrintByteArrayProperty ^ attribRef);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

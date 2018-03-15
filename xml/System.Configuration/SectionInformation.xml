@@ -373,12 +373,17 @@
       </Docs>
     </Member>
     <Member MemberName="ForceDeclaration">
-      <MemberSignature Language="C#" Value="public void ForceDeclaration (bool require);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ForceDeclaration(bool require) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Configuration.SectionInformation.ForceDeclaration(System.Boolean)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub ForceDeclaration (require As Boolean)" />
+      <MemberSignature Language="C#" Value="public void ForceDeclaration (bool force);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ForceDeclaration(bool force) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.SectionInformation.ForceDeclaration(System.Boolean)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ForceDeclaration (force As Boolean)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
       <MemberSignature Language="F#" Value="member this.ForceDeclaration : bool -&gt; unit" Usage="sectionInformation.ForceDeclaration require" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ForceDeclaration(bool require);" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ForceDeclaration(bool force);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public void ForceDeclaration (bool require);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ForceDeclaration(bool require) cil managed" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.SectionInformation.ForceDeclaration(System.Boolean)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ForceDeclaration (require As Boolean)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ForceDeclaration(bool require);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -392,7 +397,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="force" Type="System.Boolean" />
+        <Parameter Name="force" Type="System.Boolean" Index="0" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="require" Type="System.Boolean" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="require">To be added.</param>
@@ -960,12 +966,17 @@
       </Docs>
     </Member>
     <Member MemberName="ProtectSection">
-      <MemberSignature Language="C#" Value="public void ProtectSection (string provider);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProtectSection(string provider) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Configuration.SectionInformation.ProtectSection(System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub ProtectSection (provider As String)" />
+      <MemberSignature Language="C#" Value="public void ProtectSection (string protectionProvider);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProtectSection(string protectionProvider) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.SectionInformation.ProtectSection(System.String)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ProtectSection (protectionProvider As String)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
       <MemberSignature Language="F#" Value="member this.ProtectSection : string -&gt; unit" Usage="sectionInformation.ProtectSection provider" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ProtectSection(System::String ^ provider);" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ProtectSection(System::String ^ protectionProvider);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public void ProtectSection (string provider);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProtectSection(string provider) cil managed" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.SectionInformation.ProtectSection(System.String)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ProtectSection (provider As String)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ProtectSection(System::String ^ provider);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -979,7 +990,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="protectionProvider" Type="System.String" />
+        <Parameter Name="protectionProvider" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="provider" Type="System.String" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="provider">To be added.</param>
@@ -1209,12 +1221,17 @@ Dim apSection As AppSettingsSection = _
       </Docs>
     </Member>
     <Member MemberName="SetRawXml">
-      <MemberSignature Language="C#" Value="public void SetRawXml (string xml);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetRawXml(string xml) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Configuration.SectionInformation.SetRawXml(System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub SetRawXml (xml As String)" />
+      <MemberSignature Language="C#" Value="public void SetRawXml (string rawXml);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetRawXml(string rawXml) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.SectionInformation.SetRawXml(System.String)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetRawXml (rawXml As String)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
       <MemberSignature Language="F#" Value="member this.SetRawXml : string -&gt; unit" Usage="sectionInformation.SetRawXml xml" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetRawXml(System::String ^ xml);" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetRawXml(System::String ^ rawXml);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public void SetRawXml (string xml);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetRawXml(string xml) cil managed" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.SectionInformation.SetRawXml(System.String)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetRawXml (xml As String)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetRawXml(System::String ^ xml);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1228,7 +1245,8 @@ Dim apSection As AppSettingsSection = _
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="rawXml" Type="System.String" />
+        <Parameter Name="rawXml" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="xml" Type="System.String" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="xml">To be added.</param>

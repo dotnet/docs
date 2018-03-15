@@ -1,10 +1,10 @@
 ﻿<Type Name="ListViewItem" FullName="System.Web.UI.WebControls.ListViewItem">
-  <TypeSignature Language="C#" Value="public class ListViewItem : System.Web.UI.Control, System.Web.UI.IDataItemContainer" />
+  <TypeSignature Language="C#" Value="public class ListViewItem : System.Web.UI.Control, System.Web.UI.IDataItemContainer, System.Web.UI.INamingContainer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ListViewItem extends System.Web.UI.Control implements class System.Web.UI.IDataItemContainer, class System.Web.UI.INamingContainer" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ListViewItem" />
-  <TypeSignature Language="VB.NET" Value="Public Class ListViewItem&#xA;Inherits Control&#xA;Implements IDataItemContainer" />
+  <TypeSignature Language="VB.NET" Value="Public Class ListViewItem&#xA;Inherits Control&#xA;Implements IDataItemContainer, INamingContainer" />
   <TypeSignature Language="F#" Value="type ListViewItem = class&#xA;    inherit Control&#xA;    interface INamingContainer&#xA;    interface IDataItemContainer" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ListViewItem : System::Web::UI::Control, System::Web::UI::IDataItemContainer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ListViewItem : System::Web::UI::Control, System::Web::UI::IDataItemContainer, System::Web::UI::INamingContainer" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,6 +15,9 @@
   <Interfaces>
     <Interface>
       <InterfaceName>System.Web.UI.IDataItemContainer</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Web.UI.INamingContainer</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>
@@ -129,9 +132,6 @@
       <MemberSignature Language="F#" Value="member this.DataItemIndex : int" Usage="System.Web.UI.WebControls.ListViewItem.DataItemIndex" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int DataItemIndex { int get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Web.UI.IDataItemContainer.DataItemIndex</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -153,9 +153,6 @@
       <MemberSignature Language="F#" Value="member this.DisplayIndex : int" Usage="System.Web.UI.WebControls.ListViewItem.DisplayIndex" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int DisplayIndex { int get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Web.UI.IDataItemContainer.DisplayIndex</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

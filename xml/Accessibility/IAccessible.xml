@@ -15,7 +15,7 @@
       <AttributeName>System.Runtime.InteropServices.Guid("618736E0-3C3D-11CF-810C-00AA00389B71")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.TypeLibType(System.Runtime.InteropServices.TypeLibTypeFlags.FHidden | System.Runtime.InteropServices.TypeLibTypeFlags.FDual | System.Runtime.InteropServices.TypeLibTypeFlags.FDispatchable)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -50,7 +50,7 @@
           <AttributeName>get: System.Runtime.InteropServices.DispId(-5002)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(System.Runtime.InteropServices.TypeLibFuncFlags.FHidden)</AttributeName>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -93,7 +93,7 @@
           <AttributeName>get: System.Runtime.InteropServices.DispId(-5001)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(System.Runtime.InteropServices.TypeLibFuncFlags.FHidden)</AttributeName>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -132,7 +132,7 @@
           <AttributeName>get: System.Runtime.InteropServices.DispId(-5013)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(System.Runtime.InteropServices.TypeLibFuncFlags.FHidden)</AttributeName>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -175,7 +175,7 @@
           <AttributeName>get: System.Runtime.InteropServices.DispId(-5005)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(System.Runtime.InteropServices.TypeLibFuncFlags.FHidden)</AttributeName>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -214,7 +214,7 @@
           <AttributeName>System.Runtime.InteropServices.DispId(-5018)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(System.Runtime.InteropServices.TypeLibFuncFlags.FHidden)</AttributeName>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -256,7 +256,7 @@
           <AttributeName>get: System.Runtime.InteropServices.DispId(-5011)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(System.Runtime.InteropServices.TypeLibFuncFlags.FHidden)</AttributeName>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -295,7 +295,7 @@
           <AttributeName>get: System.Runtime.InteropServices.DispId(-5008)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(System.Runtime.InteropServices.TypeLibFuncFlags.FHidden)</AttributeName>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -338,7 +338,7 @@
           <AttributeName>get: System.Runtime.InteropServices.DispId(-5009)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(System.Runtime.InteropServices.TypeLibFuncFlags.FHidden)</AttributeName>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -380,7 +380,7 @@
           <AttributeName>System.Runtime.InteropServices.DispId(-5017)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(System.Runtime.InteropServices.TypeLibFuncFlags.FHidden)</AttributeName>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -425,7 +425,7 @@
           <AttributeName>get: System.Runtime.InteropServices.DispId(-5010)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(System.Runtime.InteropServices.TypeLibFuncFlags.FHidden)</AttributeName>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -464,7 +464,7 @@
           <AttributeName>System.Runtime.InteropServices.DispId(-5015)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(System.Runtime.InteropServices.TypeLibFuncFlags.FHidden)</AttributeName>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -514,13 +514,13 @@
           <AttributeName>get: System.Runtime.InteropServices.DispId(-5003)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(System.Runtime.InteropServices.TypeLibFuncFlags.FHidden)</AttributeName>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>set: System.Runtime.InteropServices.DispId(-5003)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>set: System.Runtime.InteropServices.TypeLibFunc(System.Runtime.InteropServices.TypeLibFuncFlags.FHidden)</AttributeName>
+          <AttributeName>set: System.Runtime.InteropServices.TypeLibFunc</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -559,7 +559,7 @@
           <AttributeName>System.Runtime.InteropServices.DispId(-5016)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(System.Runtime.InteropServices.TypeLibFuncFlags.FHidden)</AttributeName>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -604,7 +604,7 @@
           <AttributeName>get: System.Runtime.InteropServices.DispId(-5000)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(System.Runtime.InteropServices.TypeLibFuncFlags.FHidden)</AttributeName>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -643,7 +643,7 @@
           <AttributeName>get: System.Runtime.InteropServices.DispId(-5006)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(System.Runtime.InteropServices.TypeLibFuncFlags.FHidden)</AttributeName>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -682,7 +682,7 @@
           <AttributeName>System.Runtime.InteropServices.DispId(-5014)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(System.Runtime.InteropServices.TypeLibFuncFlags.FHidden)</AttributeName>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -726,7 +726,7 @@
           <AttributeName>get: System.Runtime.InteropServices.DispId(-5012)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(System.Runtime.InteropServices.TypeLibFuncFlags.FHidden)</AttributeName>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -765,7 +765,7 @@
           <AttributeName>get: System.Runtime.InteropServices.DispId(-5007)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(System.Runtime.InteropServices.TypeLibFuncFlags.FHidden)</AttributeName>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -808,13 +808,13 @@
           <AttributeName>get: System.Runtime.InteropServices.DispId(-5004)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(System.Runtime.InteropServices.TypeLibFuncFlags.FHidden)</AttributeName>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>set: System.Runtime.InteropServices.DispId(-5004)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>set: System.Runtime.InteropServices.TypeLibFunc(System.Runtime.InteropServices.TypeLibFuncFlags.FHidden)</AttributeName>
+          <AttributeName>set: System.Runtime.InteropServices.TypeLibFunc</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

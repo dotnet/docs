@@ -1656,9 +1656,6 @@ firstName = DirectCast(context.Session("FirstName"), String)
       <MemberSignature Language="VB.NET" Value="Function GetService (service As Type) As Object Implements IServiceProvider.GetService" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.IServiceProvider.GetService(Type ^ service) = IServiceProvider::GetService;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.IServiceProvider.GetService(System.Type)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

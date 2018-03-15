@@ -138,9 +138,6 @@
       <MemberSignature Language="F#" Usage="System.Data.Objects.ObjectResult.System.ComponentModel.IListSource.ContainsListCollection" />
       <MemberSignature Language="C++ CLI" Value="property bool System.ComponentModel.IListSource.ContainsListCollection { bool get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.IListSource.ContainsListCollection</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -162,9 +159,6 @@
       <MemberSignature Language="VB.NET" Value="Function GetList () As IList Implements IListSource.GetList" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IList ^ System.ComponentModel.IListSource.GetList() = System::ComponentModel::IListSource::GetList;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.IListSource.GetList</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

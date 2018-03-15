@@ -86,9 +86,6 @@
       <MemberSignature Language="F#" Value="abstract member CreateSink : System.Runtime.Remoting.Channels.IChannelReceiver -&gt; System.Runtime.Remoting.Channels.IServerChannelSink&#xA;override this.CreateSink : System.Runtime.Remoting.Channels.IChannelReceiver -&gt; System.Runtime.Remoting.Channels.IServerChannelSink" Usage="sdlChannelSinkProvider.CreateSink channel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Runtime::Remoting::Channels::IServerChannelSink ^ CreateSink(System::Runtime::Remoting::Channels::IChannelReceiver ^ channel);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Runtime.Remoting.Channels.IServerChannelSinkProvider.CreateSink(System.Runtime.Remoting.Channels.IChannelReceiver)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -114,9 +111,6 @@
       <MemberSignature Language="F#" Value="abstract member GetChannelData : System.Runtime.Remoting.Channels.IChannelDataStore -&gt; unit&#xA;override this.GetChannelData : System.Runtime.Remoting.Channels.IChannelDataStore -&gt; unit" Usage="sdlChannelSinkProvider.GetChannelData localChannelData" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetChannelData(System::Runtime::Remoting::Channels::IChannelDataStore ^ localChannelData);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Runtime.Remoting.Channels.IServerChannelSinkProvider.GetChannelData(System.Runtime.Remoting.Channels.IChannelDataStore)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -141,9 +135,6 @@
       <MemberSignature Language="F#" Value="member this.Next : System.Runtime.Remoting.Channels.IServerChannelSinkProvider with get, set" Usage="System.Runtime.Remoting.MetadataServices.SdlChannelSinkProvider.Next" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Remoting::Channels::IServerChannelSinkProvider ^ Next { System::Runtime::Remoting::Channels::IServerChannelSinkProvider ^ get(); void set(System::Runtime::Remoting::Channels::IServerChannelSinkProvider ^ value); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Runtime.Remoting.Channels.IServerChannelSinkProvider.Next</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

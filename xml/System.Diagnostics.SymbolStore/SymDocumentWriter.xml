@@ -184,9 +184,6 @@
       <MemberSignature Language="F#" Value="abstract member SetCheckSum : Guid * byte[] -&gt; unit&#xA;override this.SetCheckSum : Guid * byte[] -&gt; unit" Usage="symDocumentWriter.SetCheckSum (algorithmId, source)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetCheckSum(Guid algorithmId, cli::array &lt;System::Byte&gt; ^ source);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Diagnostics.SymbolStore.ISymbolDocumentWriter.SetCheckSum(System.Guid,System.Byte[])</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -214,9 +211,6 @@
       <MemberSignature Language="F#" Value="abstract member SetSource : byte[] -&gt; unit&#xA;override this.SetSource : byte[] -&gt; unit" Usage="symDocumentWriter.SetSource source" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetSource(cli::array &lt;System::Byte&gt; ^ source);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Diagnostics.SymbolStore.ISymbolDocumentWriter.SetSource(System.Byte[])</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

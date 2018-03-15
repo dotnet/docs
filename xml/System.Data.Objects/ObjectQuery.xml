@@ -1,10 +1,10 @@
 ﻿<Type Name="ObjectQuery" FullName="System.Data.Objects.ObjectQuery">
-  <TypeSignature Language="C#" Value="public abstract class ObjectQuery : System.Collections.IEnumerable, System.ComponentModel.IListSource, System.Linq.IOrderedQueryable" />
+  <TypeSignature Language="C#" Value="public abstract class ObjectQuery : System.Collections.IEnumerable, System.ComponentModel.IListSource, System.Linq.IOrderedQueryable, System.Linq.IQueryable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ObjectQuery extends System.Object implements class System.Collections.IEnumerable, class System.ComponentModel.IListSource, class System.Linq.IOrderedQueryable, class System.Linq.IQueryable" />
   <TypeSignature Language="DocId" Value="T:System.Data.Objects.ObjectQuery" />
-  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ObjectQuery&#xA;Implements IEnumerable, IListSource, IOrderedQueryable" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ObjectQuery&#xA;Implements IEnumerable, IListSource, IOrderedQueryable, IQueryable" />
   <TypeSignature Language="F#" Value="type ObjectQuery = class&#xA;    interface IEnumerable&#xA;    interface IQueryable&#xA;    interface IOrderedQueryable&#xA;    interface IListSource" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ObjectQuery abstract : System::Collections::IEnumerable, System::ComponentModel::IListSource, System::Linq::IOrderedQueryable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ObjectQuery abstract : System::Collections::IEnumerable, System::ComponentModel::IListSource, System::Linq::IOrderedQueryable, System::Linq::IQueryable" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -21,6 +21,9 @@
     </Interface>
     <Interface>
       <InterfaceName>System.Linq.IOrderedQueryable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Linq.IQueryable</InterfaceName>
     </Interface>
   </Interfaces>
   <Docs>
@@ -294,9 +297,6 @@
       <MemberSignature Language="F#" Usage="System.Data.Objects.ObjectQuery.System.ComponentModel.IListSource.ContainsListCollection" />
       <MemberSignature Language="C++ CLI" Value="property bool System.ComponentModel.IListSource.ContainsListCollection { bool get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.IListSource.ContainsListCollection</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -326,9 +326,6 @@
       <MemberSignature Language="VB.NET" Value="Function GetList () As IList Implements IListSource.GetList" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IList ^ System.ComponentModel.IListSource.GetList() = System::ComponentModel::IListSource::GetList;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.IListSource.GetList</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -360,9 +357,6 @@
       <MemberSignature Language="F#" Usage="System.Data.Objects.ObjectQuery.System.Linq.IQueryable.ElementType" />
       <MemberSignature Language="C++ CLI" Value="property Type ^ System.Linq.IQueryable.ElementType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Linq.IQueryable.ElementType</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -391,9 +385,6 @@
       <MemberSignature Language="F#" Usage="System.Data.Objects.ObjectQuery.System.Linq.IQueryable.Expression" />
       <MemberSignature Language="C++ CLI" Value="property System::Linq::Expressions::Expression ^ System.Linq.IQueryable.Expression { System::Linq::Expressions::Expression ^ get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Linq.IQueryable.Expression</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -424,9 +415,6 @@
       <MemberSignature Language="F#" Usage="System.Data.Objects.ObjectQuery.System.Linq.IQueryable.Provider" />
       <MemberSignature Language="C++ CLI" Value="property System::Linq::IQueryProvider ^ System.Linq.IQueryable.Provider { System::Linq::IQueryProvider ^ get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Linq.IQueryable.Provider</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

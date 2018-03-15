@@ -77,9 +77,6 @@
       <MemberSignature Language="F#" Value="member this.AuthenticationType : string" Usage="System.Web.Security.PassportIdentity.AuthenticationType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AuthenticationType { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Security.Principal.IIdentity.AuthenticationType</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1350,9 +1347,6 @@
       <MemberSignature Language="F#" Value="member this.IsAuthenticated : bool" Usage="System.Web.Security.PassportIdentity.IsAuthenticated" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAuthenticated { bool get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Security.Principal.IIdentity.IsAuthenticated</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -2049,9 +2043,6 @@
       <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Web.Security.PassportIdentity.Name" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Security.Principal.IIdentity.Name</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

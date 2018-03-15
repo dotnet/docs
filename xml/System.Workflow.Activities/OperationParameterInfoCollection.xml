@@ -1,10 +1,10 @@
 ﻿<Type Name="OperationParameterInfoCollection" FullName="System.Workflow.Activities.OperationParameterInfoCollection">
-  <TypeSignature Language="C#" Value="public sealed class OperationParameterInfoCollection : System.Collections.Generic.List&lt;System.Workflow.Activities.OperationParameterInfo&gt;, System.Collections.Generic.ICollection&lt;System.Workflow.Activities.OperationParameterInfo&gt;, System.Collections.Generic.IEnumerable&lt;System.Workflow.Activities.OperationParameterInfo&gt;, System.Collections.Generic.IList&lt;System.Workflow.Activities.OperationParameterInfo&gt;" />
+  <TypeSignature Language="C#" Value="public sealed class OperationParameterInfoCollection : System.Collections.Generic.List&lt;System.Workflow.Activities.OperationParameterInfo&gt;, System.Collections.Generic.ICollection&lt;System.Workflow.Activities.OperationParameterInfo&gt;, System.Collections.Generic.IEnumerable&lt;System.Workflow.Activities.OperationParameterInfo&gt;, System.Collections.Generic.IList&lt;System.Workflow.Activities.OperationParameterInfo&gt;, System.Collections.IList" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit OperationParameterInfoCollection extends System.Collections.Generic.List`1&lt;class System.Workflow.Activities.OperationParameterInfo&gt; implements class System.Collections.Generic.ICollection`1&lt;class System.Workflow.Activities.OperationParameterInfo&gt;, class System.Collections.Generic.IEnumerable`1&lt;class System.Workflow.Activities.OperationParameterInfo&gt;, class System.Collections.Generic.IList`1&lt;class System.Workflow.Activities.OperationParameterInfo&gt;, class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.OperationParameterInfoCollection" />
-  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OperationParameterInfoCollection&#xA;Inherits List(Of OperationParameterInfo)&#xA;Implements ICollection(Of OperationParameterInfo), IEnumerable(Of OperationParameterInfo), IList(Of OperationParameterInfo)" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OperationParameterInfoCollection&#xA;Inherits List(Of OperationParameterInfo)&#xA;Implements ICollection(Of OperationParameterInfo), IEnumerable(Of OperationParameterInfo), IList, IList(Of OperationParameterInfo)" />
   <TypeSignature Language="F#" Value="type OperationParameterInfoCollection = class&#xA;    inherit List&lt;OperationParameterInfo&gt;&#xA;    interface IList&lt;OperationParameterInfo&gt;&#xA;    interface ICollection&lt;OperationParameterInfo&gt;&#xA;    interface seq&lt;OperationParameterInfo&gt;&#xA;    interface IEnumerable&#xA;    interface IList&#xA;    interface ICollection" />
-  <TypeSignature Language="C++ CLI" Value="public ref class OperationParameterInfoCollection sealed : System::Collections::Generic::List&lt;System::Workflow::Activities::OperationParameterInfo ^&gt;, System::Collections::Generic::ICollection&lt;System::Workflow::Activities::OperationParameterInfo ^&gt;, System::Collections::Generic::IEnumerable&lt;System::Workflow::Activities::OperationParameterInfo ^&gt;, System::Collections::Generic::IList&lt;System::Workflow::Activities::OperationParameterInfo ^&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OperationParameterInfoCollection sealed : System::Collections::Generic::List&lt;System::Workflow::Activities::OperationParameterInfo ^&gt;, System::Collections::Generic::ICollection&lt;System::Workflow::Activities::OperationParameterInfo ^&gt;, System::Collections::Generic::IEnumerable&lt;System::Workflow::Activities::OperationParameterInfo ^&gt;, System::Collections::Generic::IList&lt;System::Workflow::Activities::OperationParameterInfo ^&gt;, System::Collections::IList" />
   <AssemblyInfo>
     <AssemblyName>System.WorkflowServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +24,9 @@
     </Interface>
     <Interface>
       <InterfaceName>System.Collections.Generic.IList&lt;System.Workflow.Activities.OperationParameterInfo&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IList</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>

@@ -153,7 +153,6 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.ValueType modopt(System.DateTime) modopt(System.Runtime.CompilerServices.IsBoxed) op_Implicit(class System.Printing.IndexedProperties.PrintDateTimeProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintDateTimeProperty.op_Implicit(System.Printing.IndexedProperties.PrintDateTimeProperty|System.Runtime.CompilerServices.IsImplicitlyDereferenced)~System.ValueType!System.DateTime!System.Runtime.CompilerServices.IsBoxed" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (attribRef As PrintDateTimeProperty) As ValueType" />
-      <MemberSignature Language="F#" Value="static member op_Implicit : System.Printing.IndexedProperties.PrintDateTimeProperty -&gt; ValueType" Usage="System.Printing.IndexedProperties.PrintDateTimeProperty.op_Implicit attribRef" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator ValueType ^(System::Printing::IndexedProperties::PrintDateTimeProperty ^ attribRef);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

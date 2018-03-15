@@ -1,10 +1,10 @@
 ﻿<Type Name="ConcurrentBag&lt;T&gt;" FullName="System.Collections.Concurrent.ConcurrentBag&lt;T&gt;">
-  <TypeSignature Language="C#" Value="public class ConcurrentBag&lt;T&gt; : System.Collections.Concurrent.IProducerConsumerCollection&lt;T&gt;, System.Collections.Generic.IEnumerable&lt;T&gt;, System.Collections.Generic.IReadOnlyCollection&lt;T&gt;" />
+  <TypeSignature Language="C#" Value="public class ConcurrentBag&lt;T&gt; : System.Collections.Concurrent.IProducerConsumerCollection&lt;T&gt;, System.Collections.Generic.IEnumerable&lt;T&gt;, System.Collections.Generic.IReadOnlyCollection&lt;T&gt;, System.Collections.ICollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ConcurrentBag`1&lt;T&gt; extends System.Object implements class System.Collections.Concurrent.IProducerConsumerCollection`1&lt;!T&gt;, class System.Collections.Generic.IEnumerable`1&lt;!T&gt;, class System.Collections.Generic.IReadOnlyCollection`1&lt;!T&gt;, class System.Collections.ICollection, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Concurrent.ConcurrentBag`1" />
-  <TypeSignature Language="VB.NET" Value="Public Class ConcurrentBag(Of T)&#xA;Implements IEnumerable(Of T), IProducerConsumerCollection(Of T), IReadOnlyCollection(Of T)" />
+  <TypeSignature Language="VB.NET" Value="Public Class ConcurrentBag(Of T)&#xA;Implements ICollection, IEnumerable(Of T), IProducerConsumerCollection(Of T), IReadOnlyCollection(Of T)" />
   <TypeSignature Language="F#" Value="type ConcurrentBag&lt;'T&gt; = class&#xA;    interface IProducerConsumerCollection&lt;'T&gt;&#xA;    interface IReadOnlyCollection&lt;'T&gt;&#xA;    interface seq&lt;'T&gt;&#xA;    interface IEnumerable&#xA;    interface ICollection" />
-  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class ConcurrentBag : System::Collections::Concurrent::IProducerConsumerCollection&lt;T&gt;, System::Collections::Generic::IEnumerable&lt;T&gt;, System::Collections::Generic::IReadOnlyCollection&lt;T&gt;" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class ConcurrentBag : System::Collections::Concurrent::IProducerConsumerCollection&lt;T&gt;, System::Collections::Generic::IEnumerable&lt;T&gt;, System::Collections::Generic::IReadOnlyCollection&lt;T&gt;, System::Collections::ICollection" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.Concurrent</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +35,9 @@
     </Interface>
     <Interface>
       <InterfaceName>System.Collections.Generic.IReadOnlyCollection&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.ICollection</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>
@@ -200,9 +203,6 @@
       <MemberSignature Language="F#" Value="abstract member CopyTo : 'T[] * int -&gt; unit&#xA;override this.CopyTo : 'T[] * int -&gt; unit" Usage="concurrentBag.CopyTo (array, index)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(cli::array &lt;T&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Collections.Concurrent.IProducerConsumerCollection`1.CopyTo(`0[],System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -248,6 +248,7 @@
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IReadOnlyCollection`1.Count</InterfaceMember>
+        <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -362,9 +363,6 @@
       <MemberSignature Language="VB.NET" Value="Function TryAdd (item As T) As Boolean Implements IProducerConsumerCollection(Of T).TryAdd" />
       <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.Concurrent.IProducerConsumerCollection&lt;T&gt;.TryAdd(T item) = System::Collections::Concurrent::IProducerConsumerCollection&lt;T&gt;::TryAdd;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Collections.Concurrent.IProducerConsumerCollection`1.TryAdd(`0)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -558,9 +556,6 @@
       <MemberSignature Language="F#" Value="abstract member ToArray : unit -&gt; 'T[]&#xA;override this.ToArray : unit -&gt; 'T[]" Usage="concurrentBag.ToArray " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;T&gt; ^ ToArray();" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Collections.Concurrent.IProducerConsumerCollection`1.ToArray</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -630,9 +625,6 @@
       <MemberSignature Language="F#" Value="abstract member TryTake :  -&gt; bool&#xA;override this.TryTake :  -&gt; bool" Usage="concurrentBag.TryTake result" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryTake([Runtime::InteropServices::Out] T % result);" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Collections.Concurrent.IProducerConsumerCollection`1.TryTake(`0@)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

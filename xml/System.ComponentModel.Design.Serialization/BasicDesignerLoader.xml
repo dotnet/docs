@@ -735,9 +735,6 @@
       <MemberSignature Language="VB.NET" Value="Sub AddLoadDependency () Implements IDesignerLoaderService.AddLoadDependency" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.Design.Serialization.IDesignerLoaderService.AddLoadDependency() = System::ComponentModel::Design::Serialization::IDesignerLoaderService::AddLoadDependency;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.Serialization.IDesignerLoaderService.AddLoadDependency</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -766,9 +763,6 @@
       <MemberSignature Language="VB.NET" Value="Sub DependentLoadComplete (successful As Boolean, errorCollection As ICollection) Implements IDesignerLoaderService.DependentLoadComplete" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.Design.Serialization.IDesignerLoaderService.DependentLoadComplete(bool successful, System::Collections::ICollection ^ errorCollection) = System::ComponentModel::Design::Serialization::IDesignerLoaderService::DependentLoadComplete;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.Serialization.IDesignerLoaderService.DependentLoadComplete(System.Boolean,System.Collections.ICollection)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -806,9 +800,6 @@
       <MemberSignature Language="VB.NET" Value="Function Reload () As Boolean Implements IDesignerLoaderService.Reload" />
       <MemberSignature Language="C++ CLI" Value=" virtual bool System.ComponentModel.Design.Serialization.IDesignerLoaderService.Reload() = System::ComponentModel::Design::Serialization::IDesignerLoaderService::Reload;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.Serialization.IDesignerLoaderService.Reload</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

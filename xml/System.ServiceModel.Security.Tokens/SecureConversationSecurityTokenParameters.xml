@@ -117,35 +117,6 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected SecureConversationSecurityTokenParameters (System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters source);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters source) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters.#ctor(System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters)" />
-      <MemberSignature Language="VB.NET" Value="Protected Sub New (source As SecureConversationSecurityTokenParameters)" />
-      <MemberSignature Language="F#" Value="new System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters : System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters -&gt; System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters" Usage="new System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters source" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SecureConversationSecurityTokenParameters(System::ServiceModel::Security::Tokens::SecureConversationSecurityTokenParameters ^ source);" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="other" Type="System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters" />
-      </Parameters>
-      <Docs>
-        <param name="source">To be added.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters" /> class from another instance of this class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor clones a new instance from an existing one.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SecureConversationSecurityTokenParameters (System.ServiceModel.Channels.SecurityBindingElement bootstrapSecurityBindingElement, bool requireCancellation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.SecurityBindingElement bootstrapSecurityBindingElement, bool requireCancellation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters.#ctor(System.ServiceModel.Channels.SecurityBindingElement,System.Boolean)" />
@@ -172,6 +143,41 @@
   
 ## Remarks  
  `bootstrapSecurityBindingElement` specifies the security binding element to use when securing the messages exchanged as part of the secure conversation token issuance. If `requireCancellation` is `true`, a session-based security context token is issued; otherwise, a cookie-based security context token is issued.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected SecureConversationSecurityTokenParameters (System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters other);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters other) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters.#ctor(System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (other As SecureConversationSecurityTokenParameters)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters : System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters -&gt; System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters" Usage="new System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters source" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SecureConversationSecurityTokenParameters(System::ServiceModel::Security::Tokens::SecureConversationSecurityTokenParameters ^ other);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="protected SecureConversationSecurityTokenParameters (System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters source);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters source) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters.#ctor(System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (source As SecureConversationSecurityTokenParameters)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SecureConversationSecurityTokenParameters(System::ServiceModel::Security::Tokens::SecureConversationSecurityTokenParameters ^ source);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="other" Type="System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="source" Type="System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters" /> class from another instance of this class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor clones a new instance from an existing one.  
   
  ]]></format>
         </remarks>

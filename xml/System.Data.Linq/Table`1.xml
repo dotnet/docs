@@ -765,9 +765,6 @@ db.SubmitChanges()
       <MemberSignature Language="F#" Usage="System.Data.Linq.Table&lt;'Entity (requires 'Entity : null)&gt;.System.ComponentModel.IListSource.ContainsListCollection" />
       <MemberSignature Language="C++ CLI" Value="property bool System.ComponentModel.IListSource.ContainsListCollection { bool get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.IListSource.ContainsListCollection</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -796,9 +793,6 @@ db.SubmitChanges()
       <MemberSignature Language="VB.NET" Value="Function GetList () As IList Implements IListSource.GetList" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IList ^ System.ComponentModel.IListSource.GetList() = System::ComponentModel::IListSource::GetList;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.IListSource.GetList</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1232,9 +1226,6 @@ db.SubmitChanges()
       <MemberSignature Language="F#" Usage="System.Data.Linq.Table&lt;'Entity (requires 'Entity : null)&gt;.System.Linq.IQueryable.ElementType" />
       <MemberSignature Language="C++ CLI" Value="property Type ^ System.Linq.IQueryable.ElementType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Linq.IQueryable.ElementType</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1263,9 +1254,6 @@ db.SubmitChanges()
       <MemberSignature Language="F#" Usage="System.Data.Linq.Table&lt;'Entity (requires 'Entity : null)&gt;.System.Linq.IQueryable.Expression" />
       <MemberSignature Language="C++ CLI" Value="property System::Linq::Expressions::Expression ^ System.Linq.IQueryable.Expression { System::Linq::Expressions::Expression ^ get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Linq.IQueryable.Expression</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1294,9 +1282,6 @@ db.SubmitChanges()
       <MemberSignature Language="F#" Usage="System.Data.Linq.Table&lt;'Entity (requires 'Entity : null)&gt;.System.Linq.IQueryable.Provider" />
       <MemberSignature Language="C++ CLI" Value="property System::Linq::IQueryProvider ^ System.Linq.IQueryable.Provider { System::Linq::IQueryProvider ^ get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Linq.IQueryable.Provider</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1323,9 +1308,6 @@ db.SubmitChanges()
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Table`1.System#Linq#IQueryProvider#CreateQuery(System.Linq.Expressions.Expression)" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Linq::IQueryable ^ System.Linq.IQueryProvider.CreateQuery(System::Linq::Expressions::Expression ^ expression) = System::Linq::IQueryProvider::CreateQuery;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Linq.IQueryProvider.CreateQuery(System.Linq.Expressions.Expression)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1356,9 +1338,6 @@ db.SubmitChanges()
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Table`1.System#Linq#IQueryProvider#CreateQuery``1(System.Linq.Expressions.Expression)" />
       <MemberSignature Language="C++ CLI" Value="generic &lt;typename TResult&gt;&#xA; virtual System::Linq::IQueryable&lt;TResult&gt; ^ System.Linq.IQueryProvider.CreateQuery(System::Linq::Expressions::Expression ^ expression) = System::Linq::IQueryProvider::CreateQuery;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Linq.IQueryProvider.CreateQuery``1(System.Linq.Expressions.Expression)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1393,9 +1372,6 @@ db.SubmitChanges()
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Table`1.System#Linq#IQueryProvider#Execute(System.Linq.Expressions.Expression)" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.Linq.IQueryProvider.Execute(System::Linq::Expressions::Expression ^ expression) = System::Linq::IQueryProvider::Execute;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Linq.IQueryProvider.Execute(System.Linq.Expressions.Expression)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1426,9 +1402,6 @@ db.SubmitChanges()
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Table`1.System#Linq#IQueryProvider#Execute``1(System.Linq.Expressions.Expression)" />
       <MemberSignature Language="C++ CLI" Value="generic &lt;typename TResult&gt;&#xA; virtual TResult System.Linq.IQueryProvider.Execute(System::Linq::Expressions::Expression ^ expression) = System::Linq::IQueryProvider::Execute;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Linq.IQueryProvider.Execute``1(System.Linq.Expressions.Expression)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
